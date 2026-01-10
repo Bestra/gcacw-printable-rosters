@@ -1,0 +1,6574 @@
+[
+  {
+    "number": 1,
+    "name": "The Warwick Line",
+    "start_page": 4,
+    "notes": "This scenario supposes that McClellan took advantage of the complexity. Unless otherwise noted in the following instructions, all units Union\u2019s substantial numerical advantage when his first five divisions begin the game with their front (normal) sides face-up at Fatigue Level 0 with encountered Magruder\u2019s Warwick River defense line on April 5. For a few organized Strength markers. Before starting, place the Turn marker on the Turn days, McClellan had an opportunity to breach these defenses befo",
+    "map_info": "Use only the south map. maps",
+    "game_length": "3 turns; April 5 to April 7, 1862.",
+    "special_rules": [
+      "scenarios use only one map; others use both maps. In setup instructions, hexes are listed by four-digit numbers preceded by \u201cN\u201d (north map), or \u201cS\u201d 1. Random Events: There are no random events in this scenario. (south map). For example, \u201cN0923\u201d means hex 0923 on the north map 2."
+    ],
+    "footnotes": {
+      "*": "Sedgwick is part of Heintzelman\u2019s III Corps in this scenario"
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Magruder",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ward",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Siege",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "10 GA",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S5017 (Mulberry Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wilcox-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "S4811, S4912 or S5017",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Colston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "S4811, S4912 or S5017",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pryor",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cobb-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "McLaws-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rains-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "S5211 (Lebanon Church)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Early-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Confederate Reinforcement",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Featherston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Confederate Reinforcement",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Griffith",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Confederate Reinforcement",
+        "side": "Confederate",
+        "notes": []
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5814 (Cockletown)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5814 (Cockletown)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "21",
+        "hex_location": "S5814 (Cockletown)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hamilton",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "S5815 (Howard's Bridge)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "S5816",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5518",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-A",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "S5518",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5518",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "S5618",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sykes-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "name": "Johnston's Retreat",
+    "start_page": 7,
+    "notes": "During the night of May 3, 1862, Johnston\u2019s army quietly slipped player may not make more than two embarkation attempts per out of its Warwick River defense line and retreated west towards Richmond. turn. They had escaped the upcoming cannonade from Union siege artillery that 7. Union Gunboats: The Union player has one Gunboat counter. McClellan had spent the better part of a month preparing for. The path Gunboat rules are presented in the Advanced Game (see 11.0), and was now clear, however, fo",
+    "map_info": "Use both the north and south maps. another box. \u2022 The Gunboat may perform \u201cDefensive Support\u201d and",
+    "game_length": "5 turns; May 4 to May 8, 1862. \u201cBombardment,\u201d but only in eligible hexes along the York\u2014",
+    "special_rules": [
+      "vIctory condItIons:",
+      "Random Events: Starting on Turn 1, in the Random Events Phase, one player rolls a single die to see if rain occurs. Rain occurs on the follow- The Confederate player gains and loses VPs for the following: ing rolls: on a 1-3 on Turn 1, on a 1-4 on Turn 2, and on a 1-5 on Turns 3-5. However, after th",
+      "First Initiative: The Confederate player automatically wins the County at the end of the game. initiative in the first Action Phase of Turn 1. After this, initiative is +5 For each Confederate wagon train unit ending the game in or determined normally. adjacent to New Kent Courthouse (N3127) or Balt",
+      "Confederate Wagon Trains: The Confederate player has two wagon (N2627) (for adjacency, the objective hex may not be occupied by train units, which move like Confederate infantry (although they may an undemoralized Union infantry unit). not force march) and have a Tactical value of 1 and Artillery va",
+      "If activated, they must perform a march action or an activate leader infantry units end the game in or to the west of the 3900 hex-row action by an infantry leader (in a leader action they get the leader on the OTR North map movement bonus). They may not participate in an assault action. If a +1 For",
+      "Fatigue: All Confederate infantry, wagon train, and artillery units start due to the three victory conditions marked with asterisks may not the game at Fatigue Level 1 on their normal sides. Cavalry units start at exceed 10. Fatigue Level 0. For example, if a wagon train suffers a \u201cD\u201d or \u201c1\u201d result ",
+      "Franklin\u2019s Division: Franklin\u2019s division (listed as a Union march (-3 VP) and is later eliminated (-10 VP), the total VP loss is 10, Reinforcement) is assumed to be just off the east map-edge in a landing not 13. However, Manpower value losses for wagon trains in combat, hex. It may only be placed o",
+      "Union Amphibious Movement: The Union player may move units amphibiously. Amphibious rules are presented in the Advanced At the end of the game, the Confederate VP total is calculated and the Game (see 10.0), and players should read that section before starting players consult the following chart to "
+    ],
+    "footnotes": {
+      "*": "All Confederate infantry, wagon train and artillery units start the game at Fatigue Level 1 on their normal sides."
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Johnston",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S4708",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Div",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S4708",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-A",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "12*",
+        "hex_location": "S4708",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "7*",
+        "hex_location": "S4607 (Ft. Magruder)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "1*",
+        "hex_location": "S4407 (Williamsburg)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wagon Train-A",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "2*",
+        "hex_location": "S4407 (Williamsburg)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Wagon Train-B",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "2*",
+        "hex_location": "S4307 (William & Mary Col.)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DR Jones-A",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "15*",
+        "hex_location": "S4608",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "DR Jones",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S4709",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "McLaws-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "18*",
+        "hex_location": "S4709",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wilcox-B",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "14*",
+        "hex_location": "S4809",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Longstreet",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S4910",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pickett",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "15*",
+        "hex_location": "S4910",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Early-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "11*",
+        "hex_location": "S4909 (Church)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5009 (Halfway House)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rains-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "12*",
+        "hex_location": "S5009 (Halfway House)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5213 (Monson House)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "4 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5412 (Wynn\u2019s Mill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stuart",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5410",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "1 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5410",
+        "side": "Confederate",
+        "notes": []
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5711",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5711",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "21",
+        "hex_location": "S5711",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "S5611 (Saw Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "S5611 (Saw Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5612",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5612",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5513 (Burnt Chimneys)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richardson",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "S5513 (Burnt Chimneys)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "S5513 (Burnt Chimneys)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "S5514",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "8 IL",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5514",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "S5512",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sykes-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "S5512",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "S5512",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5712",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5415",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "S5415",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-A",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "S5314 (Lee\u2019s Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Casey",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "S5314 (Lee\u2019s Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboat",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "Display \u2013 York River",
+        "side": "Union",
+        "notes": []
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "name": "The Gates of Richmond",
+    "start_page": 9,
+    "notes": "On May 17, 1862, General Irwin McDowell received authorization (This roll is in addition to his \u201crelease\u201d and \u201creinforcement\u201d from Secretary of War Stanton to march south from Fredericksburg with his I rolls; see Rules 3 and 5.) On a roll of 3 or less, Ewell\u2019s Corps to join McClellan. The only stipulation, to which McDowell objected, division arrives. On a roll of 4 or more, it does not arrive in was that I Corps must wait for Shields\u2019 division to arrive from the Shenandoah that phase. If it arr",
+    "map_info": "Use only the north map. which placement is possible. 7. Union Reinforcements: The Union Player rolls a die in each Turn",
+    "game_length": "7 turns; May 26 to June 1, 1862. Indication Phase starting with Turn 2. On a roll of 1, Shields\u2019 division",
+    "special_rules": [
+      "reinforcements arrive in that phase. If they arrive, reinforcements are placed in hex N0101 (Golonsville). If that hex is enemy-occupied, the",
+      "Random Events: Random events are determined every turn, even Turn Union player may place reinforcements in any hex on the north map-",
+      "The only applicable events are the various Rain results. Convert all edge unoccupied by enemy units. If reinforcements arrive, the Union Rain results to \u201cRain (Current),\u201d even if the event is for a longer rain player no longer rolls a die in the Turn Indication Phase. period. All non-Rain random eve",
+      "Destroyed Bridges: Place \u201cDestroyed\u201d markers over the following the N0733-N0833 hexside. bridges: 9. Union Control: The Union player controls the following objective hexes \u2022 N0206-N0307 (North Anna Ford) at the start of the game: \u2022 N2831-N2832 (Forge Bridge) \u2022 Savage\u2019s Station (N1627) \u2022 N0306-N0307 ",
+      "Confederate Movement Restrictions: Huger, Armistead, 32 NC, and \u2022 All Richmond city hexes (7 total) the four \u201cRichmond\u201d units may not move until \u201creleased.\u201d All of these \u2022 Chaffin\u2019s Bluff (N0934) units are released at the moment a Union unit enters a hex that is three \u2022 All redoubt hexes in Henrico ",
+      "River Fordability: All major and minor rivers hexsides are unfordable on of the game: Turn 1\u2014even if a Rain random event does not occur. Furthermore, ZOC do not extend across ford hexsides on Turn 1. Units may cross rivers only at VP Reason undestroyed bridges and ferries on Turn 1. If a Rain result",
+      "Confederate Reinforcements: Each Turn Indication Phase the +8 If the Union player controls Chaffin\u2019s Bluff (N0934) at the end of Confederate Player rolls a die. (This roll is in addition to his \u201crelease\u201d the game roll; see Rule 3.) This roll may be modified (see below). On the first +2 For each redo",
+      "Ewell\u2019s Division: Before the start of the game, the Confederate player -1 For each point of Union Manpower value lost in combat, retreat, must specify whether Ewell\u2019s division will arrive at Hanover Junction or cavalry retreat (not in extended march, force march, or moving or Richmond if it is made "
+    ],
+    "footnotes": {
+      "*": "93NY begins the game under a Fort-Complete marker",
+      "+": "56 VA, 32 NC and the four \u201cRichmond\u201d units begin the game under Fort-Complete markers",
+      "^": "King, McCall, Ricketts, 2 NY and 4PA begin the game on their exhausted sides at Fatigue Level 0"
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Johnston",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1028",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1028",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Longstreet",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1230",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pickett",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "N1230",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "RH Anderson",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "N1132",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1229",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "N1229",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Garland-A",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "N1228",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Div",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1227",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-A",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "N1227",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "N1226 (Old Tavern)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "McLaws-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "10",
+        "hex_location": "N1225",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "T Anderson",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0723",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Magruder",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0924",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cobb-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "N0924",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kershaw",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1024",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stuart",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0822",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cavalry",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2",
+        "hex_location": "N0822",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N0820 (Shop)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "AP Hill",
+        "size": "Div",
+        "command": "AH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0308 (Hanover Junction)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "JR Anderson",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "21*",
+        "hex_location": "N0308 (Hanover Junction)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Branch",
+        "size": "Brig",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "9*",
+        "hex_location": "N0913 (Hanover CH)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "56 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2+",
+        "hex_location": "N0934 (Chaffin\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "+"
+        ]
+      },
+      {
+        "unit_leader": "Huger-A",
+        "size": "Div",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "10^",
+        "hex_location": "N0734 (Drewry\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "32 NC",
+        "size": "Regt",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "2+^",
+        "hex_location": "N0734 (Drewry\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Armistead",
+        "size": "Brig",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "7^",
+        "hex_location": "N0534",
+        "side": "Confederate",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Wise-B",
+        "size": "Brig",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N0928",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "8 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N0623",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "9 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N2411 (Aylett\u2019s)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richmond-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "N0526 (Public Square)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "N0626 (President\u2019s House)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-3",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "N0727 (Union Hill)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-4",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "N0827 (Chimborazo Hill)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Ripley",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Reinforcement",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ewell",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "Reinforcement",
+        "side": "Confederate",
+        "notes": []
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1625 (Parker\u2019s Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1625 (Parker\u2019s Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1625 (Parker\u2019s Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richardson",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "N1725",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1428",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Casey",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "N1428",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N1528",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1828",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1828",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "N1830",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1930 (White Oak Bridge)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Franklin",
+        "size": "Corps",
+        "command": "VI",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1124",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-B",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "N1124",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Slocum",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "N1123 (Walnut Grove Ch)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Corps",
+        "command": "V",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Morell",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sykes-B",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "N1325 (Dr Gaines)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1325 (Dr Gaines)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stoneman",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N1122",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "1 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1022 (Nunley\u2019s Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "8 IL",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1020 (Washington Acad)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1321 (Bethesda Church)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1521 (Raleigh)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Warren",
+        "size": "Brig",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1720 (Old Church)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "93 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "N2823 (White House Stn)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "McDowell",
+        "size": "Corps",
+        "command": "I",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0101 (Golonsville)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "King",
+        "size": "Div",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "18^",
+        "hex_location": "N0101 (Golonsville)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "McCall-A",
+        "size": "Div",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "18^",
+        "hex_location": "N0101 (Golonsville)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Ricketts",
+        "size": "Div",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "18^",
+        "hex_location": "N0101 (Golonsville)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "2 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1^",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "4 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1^",
+        "hex_location": "N0704 (St Paul\u2019s Ch)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Shields",
+        "size": "Div",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "1 RI",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "name": "Seven Pines",
+    "start_page": 12,
+    "notes": "Johnston\u2019s late-May plan to concentrate the majority of his forces is removed from the map. The unit may not march or retreat across against the two Union corps isolated south of the Chickahominy River was that hexside. (In a retreat, a different retreat path must be found.) If sound. The heavy rain that fell on the night of May 30, which kept the river no attempt is made to cross one or both bridges in Turn 1, the Union swollen for days, helped to further isolate the enemy, as Union reinforceme",
+    "map_info": "Use only the north map. 7. Johnston: If the Confederate player attempts a grand assault, the army leader Johnston may be wounded. At the end of an action in which a",
+    "game_length": "2 turns; May 31 to June 1, 1862. Confederate grand assault is attempted, regardless of its outcome, the",
+    "special_rules": [
+      "an odd roll, Johnston is wounded and is removed from the map. The Confederate player must play the rest of the game without an army",
+      "Random Events: Random events are not rolled for. Instead, there is an leader. automatic \u201cRain (Current)\u201d result on Turn 1 and an automatic \u201cNo 8. Control: The Union player controls the following objective hexes at the Effect\u201d result on Turn 2. start of the game:",
+      "First Initiative: The Confederate player automatically wins the \u2022 Savage\u2019s Station (N1627) initiative in the first Action Phase of Turn 1. (Note the restriction on \u2022 N1928 Longstreet, Pickett, and RH Anderson in this phase; see Rule 4A.) \u2022 Fair Oaks Station (N1327)",
+      "Chickahominy River: Both players are subject to the following \u2022 N1827 movement restrictions over the Chickahominy River: \u2022 Seven Pines (N1328) A. Confederate units may not cross or attack across the Chickahominy River. vIctory condItIons: B. Union units may cross the Chickahominy River only at \u2022 Gra",
+      "Confederate Movement Restrictions: The Confederate player is subject end of the game. to the following movement restrictions: +1 For each point of Union Manpower value lost in combat, retreat, A. Longstreet, Pickett, and RH Anderson may not be activated in or cavalry retreat (not in extended march, ",
+      "Walker\u2019s Brigade: In the Turn Indication Phase of Turn 1 (i.e., at the end of the turn), the Confederate player rolls a die. On a roll of 1 or 2, 20 or more Confederate Decisive Victory Walker\u2019s brigade is \u201creleased\u201d and may activate on Turn 2. On a roll of 3 15 to 19 Confederate Substantive Victory",
+      "Union Pontoon Bridges: The Union player starts the game with two 10 to 14 Confederate Marginal Victory Minor River Bridge markers: \u201cGrapevine Bridge\u201d (N1625-N1626) and 5 to 9 Union Marginal Victory \u201cSumner\u2019s Lower Bridge\u201d (N1726-N1626). Both bridges are subject to \u201ccollapse\u201d due to the heavy rain on"
+    ],
+    "footnotes": {
+      "*": "McLaws, Ripley and Walker have special movement restrictions: see Rules 4 and 5.",
+      "^": "McLaws begins the game underneath a Breastworks-complete marker"
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Johnston",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1026",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Longstreet",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1026",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "RH Anderson",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "N1026",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pickett",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "N0827 (Chimborazo Hill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N0827 (Chimborazo Hill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ripley",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "5*",
+        "hex_location": "N0826",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Huger-B",
+        "size": "Div",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "N0828 (Toll Gate)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Div",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0624",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "N0624",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-A",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "N0624",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "8*",
+        "hex_location": "N0627 (Capitol)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1128",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Garland-A",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1128",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "N1229",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "McLaws-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "10*^",
+        "hex_location": "N1225",
+        "side": "Confederate",
+        "notes": [
+          "*",
+          "^"
+        ]
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "Casey",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "N1227",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1328 (Seven Pines)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "N1328 (Seven Pines)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Naglee-A",
+        "size": "Brig",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1327 (Fair Oaks Station)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1625 (Parker\u2019s Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1625 (Parker\u2019s Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richardson",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "N1726 (Barker\u2019s Store)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1627 (Savage Stn)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "N1627 (Savage Stn)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Jameson",
+        "size": "Brig",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1928",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "N1930 (White Oak Bridge)",
+        "side": "Union",
+        "notes": []
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "name": "Stuart's Ride",
+    "start_page": 14,
+    "notes": "This scenario recreates JEB Stuart\u2019s first daring raid of the war, After determining this penalty, the active unit may resume its the famous \u201cRide Around McClellan.\u201d Stuart made it seem easy, but he was movement. If it has sufficient MP to cross the bridge, it does so actually in peril of being cut off from Richmond at several points during the and may continue its march. If it does not have sufficient MP to ride, as depicted in this scenario. cross the bridge, the unit\u2019s activation ends and it ",
+    "map_info": "",
+    "game_length": "6 turns; June 12 to June 17, 1862. (Note: The game may the bridge.",
+    "special_rules": [
+      "player determines its Movement Allowance and then rolls two dice to calculate the MP penalty as described in Step A. If the",
+      "Random Events: Random events are not determined. unit\u2019s Movement Allowance is sufficient to cross the bridge after",
+      "Turn 1: Only the Confederate player may activate units on Turn 1. applying the penalty, it does so and it continues its march. If it Because no Union units may activate, do not perform initiative die does not have sufficient MP to cross the bridge, the Confederate rolls in this turn. The Confederate",
+      "Turn 2: The Confederate player automatically wins the initiative in the penalty). This one-hex move ends the unit\u2019s march. Crossing first Action Phase of Turn 2. In all succeeding Action Phases, initiative Forge Bridge without sufficient MP may only occur if the is determined normally. Confederate u",
+      "Confederate Movement Restrictions: The Confederate player is subject C. If a Confederate unit occupies hex N2831 or N2832 and it to the following movement restrictions: initiates a retreat, rout, or cavalry retreat, it may move across A. On Turn 1, Confederate units may not enter any hex whose first",
+      "Union Movement Restrictions: In addition to not being able to activate their markers to their organized sides\u2014they remain disorganized on Turn 1, the Union player is subject to the following movement throughout the game. If either of these units suffers a \u201cD\u201d result in restrictions: combat, it is el",
+      "General Movement Restrictions: Both players are subject to the fulfilled: following movement restrictions: A. The regiment must end the game in one of the seven hexes A. Units may not cross ford hexsides due to the recent heavy rains. comprising the city of Richmond. They may only cross rivers at un",
+      "Forge Bridge: Confederate units are subject to movement penalties when attempting to cross Forge Bridge (N2831-N2832). A. At the moment a Confederate unit first attempts to cross Forge Bridge in either direction, that unit\u2019s march is interrupted and the Confederate player rolls two dice. The sum of "
+    ],
+    "footnotes": {
+      "*": "The 2-5 US and 11PA cavalry units begin the game with disorganized strength markers.",
+      "^": "The 93 NY infantry unit begins the game underneath a Fort-complete marker."
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Stuart",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0526 (Pub Sq \u2013 Richmond)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "1 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N0526 (Pub Sq \u2013 Richmond)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "9 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N0526 (Pub Sq \u2013 Richmond)",
+        "side": "Confederate",
+        "notes": []
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1223",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Warren",
+        "size": "Brig",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N1123 (Walnut Grove Ch)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Buchanan",
+        "size": "Brig",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "N1123 (Walnut Grove Ch)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Reynolds",
+        "size": "Brig",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1927 (Despatch Station)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "93 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^",
+        "hex_location": "N2823 (White House Stn)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "11 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N2824 (White House)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Meade",
+        "size": "Brig",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1928",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1830",
+        "side": "Union",
+        "notes": []
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "name": "The Seven Days",
+    "start_page": 16,
+    "notes": "This scenario recreates the \u201cSeven Days\u201d battle. In this decisive box on the Gunboat Display. It remains in this box throughout the week, the new Army of Northern Virginia commander, Robert E. Lee, chose scenario on its \u201cnormal\u201d side and may provide \u201cdefensive support\u201d and to take the offensive and attempt to drive the enemy away from Richmond. \u201cbombardment\u201d in hexes along the James River on the south map only. Lee\u2019s vigorous attack presented McClellan with an important strategic choice: 9. Conf",
+    "map_info": "",
+    "game_length": "7 turns; June 25 to July 1, 1862. to a Richmond city hex.",
+    "special_rules": [
+      "die roll. In each Turn Indication Phase starting with the one at the end of Turn 2, the Confederate Player rolls a die. On an odd roll,",
+      "Random Events: Random events are determined every turn, even Turn no units are released. On an even roll, the Confederate player may",
+      "The only applicable events are the various Rain results. Convert all release Holmes, Wise, or 32 NC. A released unit may activate and Rain results to \u201cRain (Current),\u201d even if the event is for a longer rain entrench normally for the rest of the game. If all three units have period. All non-Rain rand",
+      "Destroyed Bridges/Ferries: Place Destroyed markers over the following 10. Union Movement Restrictions: The Union player is subject to the bridge/ferry hexsides: following movement restrictions on Turns 1 and 2: \u2022 N0311-N0312 (Ellett\u2019s Bridge) A. All Union units beginning the game north of the Chicka",
+      "Union Bridges: Place Union Minor River Bridge markers over the \u2022 A Confederate unit crosses a Chickahominy River hexside following Chickahominy River hexsides: from any hex on the north map whose first two digits number \u2022 N1325-N1326 \u201c05\u201d or more. Note: The Chickahominy River extends from \u2022 N1525-N1",
+      "Confederate Bridge: Place a Confederate Major River Bridge marker on two digits number \u201c14\u201d and whose last two digits number the N0733-N0833 hexside. from \u201c25\u201d to \u201c33\u201d, inclusive (i.e., the nine north map hexes in",
+      "Fords: All major and minor rivers are unfordable throughout the game. the \u201c1400\u201d hex column south of the Chickahominy River). Rivers may only be crossed at undestroyed bridges and ferries. Both \u2022 A Confederate unit enters the south map. players may build bridges in non-Rain turns (see 10.1). \u2022 Turn ",
+      "Union Wagon Trains: The Union player has two wagon train units, 11. Turn 1: The following special rules apply on Turn 1: which move like Union infantry (although they may not force march) A. Both players\u2019 units may not entrench or build bridges. and have Tactical/Artillery values of 0. If activated,",
+      "Union Amphibious Movement: The Union player may move activated as many times as desired, subject to fatigue limits. (Also, amphibiously only on the York\u2014Pamunkey\u2014Mattapony Rivers. see Rule \u201cE\u201d for Confederate Turn 1 movement restrictions.) Amphibious rules are presented in the Advanced Game (see 10.",
+      "Union Gunboats: Gunboat rules are presented in the Advanced Game E. The Confederate player is subject to the following movement (see 11.0). Players should read that section before starting this scenario. restrictions on Turn 1: The Union player has one Gunboat unit (\u201cGunboat-1\u201d), which remains \u2022 Con"
+    ],
+    "footnotes": {
+      "*": "Indicated units begin the game under Breastwork-Complete markers",
+      "^": "93NY begins the game under a Fort-Complete marker",
+      "$": "Indicated units begin the game at Fatigue Level 3 (normal sides)",
+      "+": "Indicated units may not activate or entrench until released (see Rule 9)"
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Lee",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0926",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Longstreet",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0926",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "RH Anderson",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "N0926",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pickett",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N0926",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N0927",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N0927",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0925",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-C",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "N0925",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Garland-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "N0925",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Magruder",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1227",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "McLaws-C",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "12*",
+        "hex_location": "N1227",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "DR Jones-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "10*",
+        "hex_location": "N1225",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Cobb-C",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "10*",
+        "hex_location": "N1226 (Old Tavern)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Huger-B",
+        "size": "Div",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "17*",
+        "hex_location": "N1228",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1130",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "5 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1132",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Wise-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3^+",
+        "hex_location": "S0501 (Chaffin\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Holmes",
+        "size": "Div",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "11+",
+        "hex_location": "S0301 (Drewry\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "+"
+        ]
+      },
+      {
+        "unit_leader": "32 NC",
+        "size": "Regt",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "S0301 (Drewry\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Naval Battery",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "S0301",
+        "hex_location": "(Drewry\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ransom",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "N1028",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stuart",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0526 (Public Square)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cavalry",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2",
+        "hex_location": "N0526 (Public Square)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "AP Hill",
+        "size": "Div",
+        "command": "AH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0723",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "JR Anderson",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N0723",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gregg",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "N0724 (Strawberry Hills)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "14 SC",
+        "size": "Regt",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0924",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Branch",
+        "size": "Brig",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "N0419 (Half Sink)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "4 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N0512 (Winston)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0110 (Hanover Academy)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-B",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "9$",
+        "hex_location": "N0110 (Hanover Academy)",
+        "side": "Confederate",
+        "notes": [
+          "$"
+        ]
+      },
+      {
+        "unit_leader": "Ewell",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "14$",
+        "hex_location": "N0112",
+        "side": "Confederate",
+        "notes": [
+          "$"
+        ]
+      },
+      {
+        "unit_leader": "Winder",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "15$",
+        "hex_location": "N0109 (Winston\u2019s Mill)",
+        "side": "Confederate",
+        "notes": [
+          "$"
+        ]
+      },
+      {
+        "unit_leader": "2 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1$",
+        "hex_location": "N0107 (Verdon Station)",
+        "side": "Confederate",
+        "notes": [
+          "$"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "N0526 (Public Square)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "N0626 (President\u2019s House)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-3",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "N0727 (Union Hill)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-4",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1^+",
+        "hex_location": "N0827 (Chimborazo Hill)",
+        "side": "Confederate",
+        "notes": [
+          "+",
+          "^"
+        ]
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "13 PA",
+        "size": "Regt",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "N0923 (Mechanicsville)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stoneman",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N1318 (Haws Shop)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1119 (Polly Hundley\u2019s)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1119 (Polly Hundley\u2019s)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "8 IL",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1020 (Washington Acad)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "4 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1020 (Washington Acad)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "McCall-B",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "9*",
+        "hex_location": "N1022 (Nunley\u2019s Mill)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Seymour",
+        "size": "Brig",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "7*",
+        "hex_location": "N1023 (Ellerson\u2019s Mill)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Corps",
+        "command": "V",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sykes-B",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "11*",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Morell",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "21",
+        "hex_location": "N1223",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Franklin",
+        "size": "Corps",
+        "command": "VI",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1326",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-B",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "20*",
+        "hex_location": "N1326",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Slocum",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "18*",
+        "hex_location": "N1326",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N1326",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "1 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1326",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1327 (Fair Oak Stn)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1327 (Fair Oak Stn)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richardson",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17*",
+        "hex_location": "N1327 (Fair Oak Stn)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "18*",
+        "hex_location": "N1327 (Fair Oak Stn)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N1327 (Fair Oak Stn)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1328 (Seven Pines)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "19*",
+        "hex_location": "N1328 (Seven Pines)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18*",
+        "hex_location": "N1329 (Portuguese Tavern)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Peck-A",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "N1429",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1529",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1529",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1430",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "93 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3^",
+        "hex_location": "N2823 (White House Stn)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Gunboat-1",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "York River Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Wagon Train-A",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "2",
+        "hex_location": "N1627 (Savage Station)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Wagon Train-B",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "2",
+        "hex_location": "N1728 (Watkins Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ferry",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement (see Rule 14)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kimball",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement (see Rule 14)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Tyler",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement (see Rule 14)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Carroll-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement (see Rule 14)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboat-2",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "Reinforcement (see Rule 8)",
+        "side": "Union",
+        "notes": []
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "name": "Gaines Mill",
+    "start_page": 20,
+    "notes": "During the second and third days of the Seven Days, Lee unleashed 5. Impassable Fords: All major and minor rivers are unfordable throughout a daring attack against Fitz John Porter\u2019s V Corps on the Union right, the game. Rivers may only be crossed at undestroyed bridges and ferries. dangerously isolated on the north bank of the Chickahominy River. Although Both players may build bridges at the end of Turn 1 (see 10.1). repeated Rebel assaults finally broke Porter\u2019s lines at Gaines Mill, the vict",
+    "map_info": "Use only the north map. Longstreet\u2019s, AP Hill\u2019s, and DH Hill\u2019s divisions may move (or attack) into a hex north of Totopotomoy Creek. Since the headwaters of this",
+    "game_length": "2 turns; June 26 to June 27, 1862. creek are in the 08xx hex column, there are no restrictions on these",
+    "special_rules": [
+      "and to the east, the units are restricted. (Example: In the 08xx column, they may move into hex 0819 but not 0818, 0817 or to the north; in",
+      "Random Events: Random events are not determined in this scenario. the 09xx column, they may move into 0920, but not 0919.) Units from",
+      "Destroyed Bridges/Ferries: Place destroyed markers over the following these divisions may retreat over the creek. If north of the creek due bridge/ferry hexsides: to a retreat, a unit may move freely until once again on the south side \u2022 N1929 to N2028 (Fisher\u2019s Bridge) of the creek. As soon as the u",
+      "Union Bridges: Place Union minor river Bridge markers over the restrictions apply to these two free actions: following Chickahominy River hexsides: \u2022 A Confederate unit may not enter a hex adjacent to a Union \u2022 N1325 to N1326 unit, and \u2022 N1325 to N1425 \u2022 A Confederate unit may not cross a Chickahomi",
+      "Movement Restrictions: No unit may cross the Pamunkey or South Anna Note: The Chickahominy River extends from hex N0822 to N0117 Rivers for the duration of the game. In addition, no unit may enter any even though that portion is categorized as a creek. 20 \u00a9 2023 Multi-Man PublisHing, llC 403 Headqua"
+    ],
+    "footnotes": {
+      "^": "93NY begins the game under a Fort-Complete marker.",
+      "*": "Indicated units begin the game under a Breastworks-Complete marker.",
+      "$": "Naglee may not activate or entrench on Turn 1."
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Lee",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0926",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Longstreet",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0926",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0925",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stuart",
+        "size": "Div",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0515 (Perrin Mill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cavalry",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2",
+        "hex_location": "N0515 (Perrin Mill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "AP Hill",
+        "size": "Div",
+        "command": "AH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0723",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Branch",
+        "size": "Brig",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "N0419 (Half Sink)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "4VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N0512 (Winston)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0214 (Race Course)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-B",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "9*",
+        "hex_location": "N0214 (Race Course)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Ewell",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "14*",
+        "hex_location": "N0415",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Winder",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "15*",
+        "hex_location": "N0213 (Mill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "2VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1*",
+        "hex_location": "N0113 (Independence Ch)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "18*",
+        "hex_location": "N1327 (Fair Oak Stn)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N1327 (Fair Oak Stn)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1328 (Seven Pines)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "19*",
+        "hex_location": "N1328 (Seven Pines)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18*",
+        "hex_location": "N1329 (Portuguese Tavern)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Peck-A",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "N1429",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1529",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1529",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1430",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "93 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3^",
+        "hex_location": "N2823 (White House Stn)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Gunboat-1",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "York River Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Wagon Train-A",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "2",
+        "hex_location": "N1627 (Savage Station)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Wagon Train-B",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "2",
+        "hex_location": "N1728 (Watkins Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ferry",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement (see Rule 14)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kimball",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement (see Rule 14)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Tyler",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement (see Rule 14)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Carroll-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement (see Rule 14)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboat-2",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "Reinforcement (see Rule 8)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stoneman",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N1318 (Haw's Shop)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6PA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1119 (Polly Hundley's)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6US",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1119 (Polly Hundley's)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "8IL",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1020 (Washington Acad)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "4PA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N1020 (Washington Acad)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "McCall-B",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "9*",
+        "hex_location": "N1022 (Nunley's Mill)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Seymour",
+        "size": "Brig",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "9*",
+        "hex_location": "N1023 (Ellerson's Mill)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Morell",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "21",
+        "hex_location": "N1223",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Corps",
+        "command": "V",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sykes-B",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "11*",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N1224",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Slocum",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "N1326",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richardson",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1327 (Fair Oaks St)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Peck-B",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "N1429",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Naglee-B",
+        "size": "Brig",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "5$",
+        "hex_location": "N1928",
+        "side": "Union",
+        "notes": [
+          "$"
+        ]
+      },
+      {
+        "unit_leader": "93NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3^",
+        "hex_location": "N2823 (White House Stn)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Gunboat-1",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "York River Box",
+        "side": "Union",
+        "notes": []
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "name": "Retreat to the James",
+    "start_page": 23,
+    "notes": "During the last three days of the Seven Days, Lee had a golden Leader, or Assault action, using units from either Jackson\u2019s or D.H. opportunity to cripple McClellan\u2019s army during its hasty retreat to the James Hill\u2019s command. As part of this action, the Confederate player must River. However, Lee\u2019s plan to trap McClellan was flawed. The Rebels\u2019 pursuit move one or more units across the new bridge or attempt an attack or ended with the disastrous assault on Malvern Hill, marking the effective end",
+    "map_info": "Use both the north and south maps. Phases; see 10.1.) The new bridge can be destroyed or dismantled (see 10.2).",
+    "game_length": "3 turns; June 29 to July 1, 1862. Note: The Confederate player is not obligated to move D.H. Hill\u2019s and",
+    "special_rules": [
+      "any other site if desired.",
+      "Turn 1 Recovery Phase: If the Confederate player fails in all bridge-",
+      "Random Events: There are no random events in this scenario. building attempts (or does not make an attempt at all) in the Turn 1",
+      "Destroyed Bridges: Place Destroyed markers on the following bridge Action Cycle, he may automatically build a pontoon bridge over either hexsides: the N1525-N1526 or N1625-N1626 hexside (not both) in Step 1 \u2022 N1827-N1927 (RR Bridge) of the Turn 1, 2, or 3 Recovery Phase, assuming all conditions and ",
+      "Confederate Bridge: Place a Confederate Major River Bridge marker on bridge-building attempts over other hexsides, normal rules (including the N0733-N0833 hexside. the die roll made to determine whether or not the attempt succeeds)",
+      "Fords: All major and minor rivers are unfordable throughout the game. are adhered to. Rivers may only be crossed at undestroyed bridges and ferries. Both 7. Union Gunboats: Gunboat rules are presented in the Advanced Game players may build bridges. (see 11.0). Players should read that section before",
+      "Grapevine Bridge: To simulate the Confederate attempt to rebuild The Union player has two Gunboat units, which remain in the \u201cJames the partially destroyed \u201cGrapevine\u201d and \u201cAlexander\u2019s\u201d Bridges River-East\u201d box on the Gunboat Display throughout the scenario (N1625-N1626 and N1525-N1526), the Confeder",
+      "Control: The Union player controls the following objective hexes at the 2 F S S S S S start of the game: \u2022 Malvern Hill (S1301) 3 F F S S S S \u2022 Berkeley (S1707) 4 F F F S S S \u2022 Haxall\u2019s Landing (S1403) \u2022 Westover (S1806) 5 F F F F S S \u2022 Shirley (S1305) 6 F F F F F S vIctory condItIons: S = Success F"
+    ],
+    "footnotes": {
+      "*": "Confederate units are out of supply only if Union player currently controls",
+      "^": "Indicated units begin the game under Breastwork-complete markers",
+      "$": "Ferry may not activate or entrench on Turn 1"
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Lee",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1423 (New Cold Harbor)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Longstreet",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1423 (New Cold Harbor)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "RH Anderson",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "9",
+        "hex_location": "N1423 (New Cold Harbor)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pickett",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "N1423 (New Cold Harbor)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1228",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1625 (Parker\u2019s Mill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-C",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "10",
+        "hex_location": "N1625 (Parker\u2019s Mill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Garland-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "N1625 (Parker\u2019s Mill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Magruder",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1227",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "McLaws-C",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "12*",
+        "hex_location": "N1227",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1227",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DR Jones-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "9*",
+        "hex_location": "N1225",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Cobb-C",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "10*",
+        "hex_location": "N1226 (Old Tavern)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Huger-B",
+        "size": "Div",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "16*",
+        "hex_location": "N1228",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Ransom",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "N1228",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Holmes",
+        "size": "Div",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "S0301 (Drewry\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Naval Battery",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "S0301",
+        "hex_location": "(Drewry\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "AP Hill",
+        "size": "Div",
+        "command": "AH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1523 (Old Cold Harbor)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "JR Anderson",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N1523 (Old Cold Harbor)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gregg",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "N1523 (Old Cold Harbor)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Branch",
+        "size": "Brig",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "N1523 (Old Cold Harbor)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1525",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-B",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "N1525",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ewell",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "N1927 (Despatch Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Winder",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N1524 (Watt)",
+        "side": "Confederate",
+        "notes": []
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1932",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Corps",
+        "command": "V",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1932",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Morell",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "17*",
+        "hex_location": "N1932",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1932",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Naglee-B",
+        "size": "Brig",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1928",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "McCall-B",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "9*",
+        "hex_location": "N1930 (White Oak Bridge)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1930 (White Oak Bridge)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Regt",
+        "command": "AP",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N1931",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sykes-B",
+        "size": "Div",
+        "command": "V",
+        "unit_type": "Inf",
+        "manpower_value": "9",
+        "hex_location": "N1730 (Brackett\u2019s Ford)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Franklin",
+        "size": "Corps",
+        "command": "VI",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1426 (Golding\u2019s Farm)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-B",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "20",
+        "hex_location": "N1426 (Golding\u2019s Farm)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Slocum",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "19*",
+        "hex_location": "N1426 (Golding\u2019s Farm)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1327 (Fair Oaks Station)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richardson",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "12^",
+        "hex_location": "N1327 (Fair Oaks Station)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "18^",
+        "hex_location": "N1327 (Fair Oaks Station)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1328 (Seven Pines)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18^",
+        "hex_location": "N1328 (Seven Pines)",
+        "side": "Union",
+        "notes": [
+          "^"
+        ]
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1329 (Portuguese Tavern)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Meagher",
+        "size": "Brig",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1627 (Savage Stn)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N1732 (Glendale)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Peck-B",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "N1732 (Glendale)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N1732 (Glendale)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ferry",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5$",
+        "hex_location": "S1707 (Berkeley)",
+        "side": "Union",
+        "notes": [
+          "$"
+        ]
+      },
+      {
+        "unit_leader": "Gunboat-1",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "James River East",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboat-2",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "James River East",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kimball",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Tyler",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Reinforcement",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "gunboat",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "name, while the reverse side has \u201cBombardment Used\u201d",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "gunboat",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "to the next higher number space on the Defensive Support Track in",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboats",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "and brIdGes/ferrIes the box the gunboat occupies; on the first use, the gunboat is moved to the",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboats",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "and combat Phase.",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboats",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "may provide two kinds of \u201csupport\u201d to the Union player: \u201cdefensive \u2022 The Confederate unit to be bombarded must occupy a hex containing",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboat",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "on the display. corresponding to the Turn box occupied by the Gunboat, it is returned to the",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Naval Battery",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "",
+        "side": "Union",
+        "notes": []
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "name": "The Peninsula Campaign",
+    "start_page": 46,
+    "notes": "Released units may activate, entrench, and attach normally for their normal sides at Fatigue Level 0 with organized Strength markers. Some the rest of the game. units begin the game in off-map boxes. Do not place Strength markers under 5. If the Virginia has not been destroyed, the Union player may not build these units until they are placed on the map. (Exceptions: Place Strength a bridge across any Warwick River hexside if the last two digits of markers under units in the Fort Monroe, Norfolk,",
+    "map_info": "",
+    "game_length": "112 turns: April 5 to July 25, 1862. Note: The game may select units of their own commands to join in an Activate Leader or",
+    "special_rules": [
+      "of VP on a separate sheet of paper in case the markers get jostled.) If the Union VP total is a negative number, flip the VP markers over to their reverse side.",
+      "If the Union player invades the Peninsula, the following Union units are available as reinforcements at the start of Turn 2 (April 6): VP Reason \u2022 Sykes-A +100 If the Union player controls Henrico County at the end of the game. \u2022 3/8 PA (These VP are in addition to those received in the VP Segment.)",
+      "The Confederate Siege unit may not activate. If forced to retreat, it is cupied by an undemoralized Union infantry division or artillery eliminated and does count for manpower loss VPs. It may not attack. It unit that is adjacent to a Richmond city hex. The maximum VPs may participate in a grand ass",
+      "Random events are determined each turn starting on Turn 1. VPs are not awarded if the Union player gains VPs from occupy-",
+      "The Confederate player is subject to the following movement ing a Richmond city hex or controlling Henrico County. restrictions: +1 At the end of the game, the Union gains 1 VP for each A. Wise\u2019s brigade may not activate, entrench, or attach until Turn undemoralized Union infantry division within 3 "
+    ],
+    "footnotes": {
+      "*": "Indicated units begin game under Fort-Complete Markers"
+    },
+    "confederate_units": [
+      {
+        "unit_leader": "Ward",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Siege",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Crump",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5608 (Gloucester Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "10 GA",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S5017 (Mulberry Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wilcox-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "S4912",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Colston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "S4811 (Grove Wharf)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Magruder",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pryor",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cobb-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S4511 (King\u2019s Mill Wharf)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Featherston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "S1403 (Haxall\u2019s Landing)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Grifffith",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "S1806 (Westover)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richmond-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0526 (Public Square)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0626 (President\u2019s House)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-3",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0727 (Union Hill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-4",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0827 (Chimborazo Hill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wise-B",
+        "size": "Brig",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N0728 (Church Hill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N0627 (Capitol)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Toombs",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0527 (Hollywood Cemetery)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "7 VA",
+        "size": "Regt",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S0413 (Petersburg)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "S0513 (Petersburg)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kershaw",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0314 (Ashland)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Johnston",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Div",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S4717 (Harden\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Longstreet",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Turn 7 Reinforcements (see 13.1)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stuart",
+        "size": "Div",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Turn 7 Reinforcements (see 13.1)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cavalry",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2",
+        "hex_location": "Turn 7 Reinforcements (see 13.1)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Huger-A",
+        "size": "Div",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "Norfolk Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Mahone",
+        "size": "Brig",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "Norfolk Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Armistead",
+        "size": "Brig",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "Norfolk Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "22 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "28 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "47 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "55 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "56 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "59 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "60 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "63 VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "4 VA HA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Regt",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-3",
+        "size": "Regt",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "5 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "10 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "13 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Branch",
+        "size": "Brig",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "9",
+        "hex_location": "Dept. of S.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ripley",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "Dept. of S.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Martin",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "9",
+        "hex_location": "Dept. of S.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Lawton",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "9",
+        "hex_location": "Dept. of S.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Drayton",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "Dept. of S.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Evans",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "Dept. of S.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DeSaussure",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "Dept. of S.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "40VA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "Rappahannock Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "9VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Rappahannock Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Holmes",
+        "size": "Div",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "Dept of N.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ransom",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "Dept of N.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "1 NC",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Dept of N.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Valley Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Winder",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "15",
+        "hex_location": "Valley Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ewell",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "Valley Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "2 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Valley Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "AP Hill",
+        "size": "Div",
+        "command": "AH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "See 13.1",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ward",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Siege",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Crump",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5608 (Gloucester Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Pryor",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4*",
+        "hex_location": "S5510 (Yorktown) or S5608 (Gloucester Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "10 GA",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S5017 (Mulberry Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wilcox-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "N4226 (West Point)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Colston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "S4811 (Grove Wharf)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Magruder",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cobb-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "S4407 (Williamsburg)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Featherston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Grifffith",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richmond-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0526 (Public Square)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0626 (President\u2019s House)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-3",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0727 (Union Hill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-4",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0827 (Chimborazo Hill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wise-B",
+        "size": "Brig",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N0728 (Church Hill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N0627 (Capitol)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Toombs",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0527 (Hollywood Cemetery)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "7 VA",
+        "size": "Regt",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S0413 (Petersburg)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "S0513 (Petersburg)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kershaw",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0314 (Ashland)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Johnston",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Div",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S4717 (Harden\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Ward",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown) or S5608 (Gloucester Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Siege",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Crump",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5608 (Gloucester Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "10 GA",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S5017 (Mulberry Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wilcox-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "N4226 (West Point)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Colston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "S4811 (Grove Wharf)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Magruder",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cobb-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pryor",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "N2917 (King William Court House)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N3121 (Lanesville)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Featherston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Grifffith",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richmond-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0526 (Public Square)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0626 (President\u2019s House)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-3",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0727 (Union Hill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-4",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0827 (Chimborazo Hill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wise-B",
+        "size": "Brig",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N0728 (Church Hill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N0627 (Capitol)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Toombs",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0527 (Hollywood Cemetery)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "7 VA",
+        "size": "Regt",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S0413 (Petersburg)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "S0513 (Petersburg)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kershaw",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0314 (Ashland)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Johnston",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Div",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S4717 (Harden\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Ward",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown) or S5608 (Gloucester Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Siege",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "S5510 (Yorktown)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Crump",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "S5608 (Gloucester Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "10 GA",
+        "size": "Regt",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S5017 (Mulberry Point)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wilcox-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "N4226 (West Point)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Colston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "S4811 (Grove Wharf)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Magruder",
+        "size": "Div",
+        "command": "M",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Cobb-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pryor",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "N2411 (Aylett\u2019s)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-A",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2917 (King William Court House)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "DH Hill",
+        "size": "Div",
+        "command": "DH",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Featherston",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Grifffith",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richmond-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0526 (Public Square)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0626 (President\u2019s House)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-3",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0727 (Union Hill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Richmond-4",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "N0827 (Chimborazo Hill)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Wise-B",
+        "size": "Brig",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "N0728 (Church Hill)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Brig",
+        "command": "ANV",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "N0627 (Capitol)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Toombs",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0314 (Ashland)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "7 VA",
+        "size": "Regt",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S0413 (Petersburg)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Brig",
+        "command": "HO",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "S0513 (Petersburg)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kershaw",
+        "size": "Brig",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1209 (Capt. White)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Johnston",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "3 VA",
+        "size": "Regt",
+        "command": "HU",
+        "unit_type": "Inf",
+        "manpower_value": "1*",
+        "hex_location": "S4717 (Harden\u2019s Bluff)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ]
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5814 (Cockletown)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "21",
+        "hex_location": "S5814 (Cockletown)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "S5815 (Howard's Bridge)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "S5816",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5518",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-A",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "S5518",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5518",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "S5618",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Reinforcement: see Special Rule 1",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Reinforcement: see Special Rule 1",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sykes-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Reinforcement: see Special Rule 1",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "Reinforcement: see Special Rule 1",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "Reinforcement: see Special Rule 1",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2",
+        "hex_location": "Reinforcement: see Special Rule 1",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Turn 7 Reinforcement (see 13.2)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Turn 7 Reinforcement (see 13.2)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Richardson",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "16",
+        "hex_location": "Turn 7 Reinforcement (see 13.2)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "Turn 7 Reinforcement (see 13.2)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Casey",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "Turn 7 Reinforcement (see 13.2)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Franklin",
+        "size": "Div",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "Turn 14 Reinforcement (see 13.2)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "McDowell",
+        "size": "Corps",
+        "command": "I",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "McCall-A",
+        "size": "Div",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "King",
+        "size": "Div",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Ord",
+        "size": "Div",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Shields",
+        "size": "Div",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Doubleday",
+        "size": "Brig",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Carroll-B",
+        "size": "Brig",
+        "command": "I",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "2 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "4 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "1 RI",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Fredericksburg Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Viele",
+        "size": "Brig",
+        "command": "DV",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "Fort Monroe Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Weber",
+        "size": "Brig",
+        "command": "DV",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Fort Monroe Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Robinson",
+        "size": "Brig",
+        "command": "DV",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "Fort Monroe Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "11 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Fort Monroe Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboat-1",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "Hampton Roads Box (Gunboat Display)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gunboat-2",
+        "size": "-",
+        "command": "-",
+        "unit_type": "Special",
+        "manpower_value": "-",
+        "hex_location": "Hampton Roads Box (Gunboat Display)#",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "1 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "8 IL",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "1 NY Mrif",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "59/101 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "3/4 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "12/25 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "7/69 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "71/148 NY",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "99/115 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "11/91 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "67/87 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "2DE/32MA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5MD/19WI",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "Baltimore/DC box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Burnside",
+        "size": "Corps",
+        "command": "IX",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "Atlantic Coast Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Reno",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Atlantic Coast Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Parke",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Atlantic Coast Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Foster",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Atlantic Coast Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Stevens",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Atlantic Coast Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Wright",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Atlantic Coast Box",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5503",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "21",
+        "hex_location": "S5503",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "S5602",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "S5502",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "S5702",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-A",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "S5702",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "S5702",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "S5401",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1*",
+        "hex_location": "S5803",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1*",
+        "hex_location": "S5803",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Sykes-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "8*",
+        "hex_location": "S5601",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "S5601",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "S5601",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "S5601",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N5219",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "21",
+        "hex_location": "N5219",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "N5319",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N5318",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N5217",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-A",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "N5217",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N5317",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N5118",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1*",
+        "hex_location": "N5418 (Urbana)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1*",
+        "hex_location": "N5418 (Urbana)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Sykes-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "8*",
+        "hex_location": "N5418 (Urbana)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N5418 (Urbana)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N5418 (Urbana)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N5418 (Urbana)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N3402 (Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "21",
+        "hex_location": "N3402 (Mill)",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Kearny",
+        "size": "Div",
+        "command": "III",
+        "unit_type": "Inf",
+        "manpower_value": "18",
+        "hex_location": "N3503",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N3502",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Keyes",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N3604",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Smith-A",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "19",
+        "hex_location": "N3604",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N3603",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "5/6 US",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "N3403",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "6 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1*",
+        "hex_location": "N3602 (Tappahannock)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "3/8 PA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1*",
+        "hex_location": "N3602 (Tappahannock)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Sykes-A",
+        "size": "Brig",
+        "command": "-",
+        "unit_type": "Inf",
+        "manpower_value": "8*",
+        "hex_location": "N3602 (Tappahannock)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-1",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N3602 (Tappahannock)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Art Res-2",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N3602 (Tappahannock)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      },
+      {
+        "unit_leader": "Horse Art",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Art",
+        "manpower_value": "2*",
+        "hex_location": "N3602 (Tappahannock)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ]
+      }
+    ]
+  }
+]

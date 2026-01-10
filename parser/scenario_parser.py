@@ -1,0 +1,407 @@
+"""
+GCACW Scenario Parser
+Parses PDF scenario documents from Great Campaigns of the American Civil War series.
+Extracts scenario metadata and unit setup tables.
+"""
+
+import pdfplumber
+import pandas as pd
+import re
+import json
+from dataclasses import dataclass, field, asdict
+from typing import Optional
+
+
+@dataclass
+class Unit:
+    """Represents a military unit in a scenario setup."""
+    unit_leader: str
+    size: str
+    command: str
+    unit_type: str
+    manpower_value: str
+    hex_location: str
+    side: str  # 'Confederate' or 'Union'
+    notes: list = field(default_factory=list)  # Footnote markers like *, ^
+
+
+@dataclass 
+class Scenario:
+    """Represents a complete scenario with metadata and units."""
+    number: int
+    name: str
+    start_page: int
+    notes: str = ""
+    map_info: str = ""
+    game_length: str = ""
+    special_rules: list = field(default_factory=list)
+    footnotes: dict = field(default_factory=dict)  # Maps symbols to explanations
+    confederate_units: list = field(default_factory=list)
+    union_units: list = field(default_factory=list)
+
+
+class ScenarioParser:
+    """Parser for GCACW scenario PDFs."""
+    
+    # Valid unit sizes - order matters for matching
+    VALID_SIZES = ['Army', 'Corps', 'Demi-Div', 'Div', 'Brig', 'Regt']
+    VALID_TYPES = ['Ldr', 'Inf', 'Cav', 'Art']
+    
+    def __init__(self, pdf_path: str):
+        self.pdf_path = pdf_path
+        self.scenarios: list[Scenario] = []
+        
+    def parse(self) -> list[Scenario]:
+        """Parse the entire PDF and extract all scenarios."""
+        with pdfplumber.open(self.pdf_path) as pdf:
+            # First pass: find all scenario start pages
+            scenario_pages = self._find_scenario_pages(pdf)
+            
+            # Second pass: parse each scenario
+            for i, (page_num, scenario_num, scenario_name) in enumerate(scenario_pages):
+                # Determine end page (start of next scenario or end of doc)
+                if i + 1 < len(scenario_pages):
+                    end_page = scenario_pages[i + 1][0]
+                else:
+                    end_page = len(pdf.pages)
+                
+                scenario = self._parse_scenario(pdf, page_num, end_page, scenario_num, scenario_name)
+                self.scenarios.append(scenario)
+        
+        return self.scenarios
+    
+    def _find_scenario_pages(self, pdf) -> list[tuple[int, int, str]]:
+        """Find all scenario header pages. Returns [(page_num, scenario_num, name), ...]"""
+        # Pattern to find scenario number
+        scenario_pattern = re.compile(r'scenario\s+(\d+):', re.IGNORECASE)
+        
+        # Known scenario names from TOC for validation/cleanup
+        known_names = {
+            1: "The Warwick Line",
+            2: "Johnston's Retreat", 
+            3: "The Gates of Richmond",
+            4: "Seven Pines",
+            5: "Stuart's Ride",
+            6: "The Seven Days",
+            7: "Gaines Mill",
+            8: "Retreat to the James",
+            9: "The Peninsula Campaign"
+        }
+        
+        results = []
+        seen_scenarios = set()  # Avoid duplicates
+        
+        for i, page in enumerate(pdf.pages):
+            text = page.extract_text()
+            if not text:
+                continue
+            
+            # Skip table of contents pages (page 2-3)
+            if i < 3:
+                continue
+                
+            for line in text.split('\n'):
+                match = scenario_pattern.search(line)
+                if match:
+                    scenario_num = int(match.group(1))
+                    # Skip if we've already seen this scenario
+                    if scenario_num in seen_scenarios:
+                        continue
+                    seen_scenarios.add(scenario_num)
+                    
+                    # Use known name
+                    scenario_name = known_names.get(scenario_num, f"Scenario {scenario_num}")
+                    results.append((i, scenario_num, scenario_name))
+                    break  # Only first match per page
+        
+        return results
+    
+    def _parse_scenario(self, pdf, start_page: int, end_page: int, 
+                        scenario_num: int, scenario_name: str) -> Scenario:
+        """Parse a single scenario from the given page range."""
+        scenario = Scenario(
+            number=scenario_num,
+            name=scenario_name,
+            start_page=start_page + 1  # Convert to 1-indexed
+        )
+        
+        # Collect all text from scenario pages
+        # Include one extra page to catch continuation tables
+        all_footnotes = {}
+        current_side = None  # Track side across pages
+        
+        # Extend parsing to include the "end_page" to catch continuations
+        actual_end = min(end_page + 1, len(pdf.pages))
+        
+        for page_idx in range(start_page, actual_end):
+            page = pdf.pages[page_idx]
+            text = page.extract_text()
+            if not text:
+                continue
+            
+            # Extract metadata from first scenario page
+            if page_idx == start_page:
+                scenario.notes = self._extract_notes(text)
+                scenario.map_info = self._extract_map_info(text)
+                scenario.game_length = self._extract_game_length(text)
+                scenario.special_rules = self._extract_special_rules(text)
+            
+            # Extract units
+            lines = text.split('\n')
+            stop_parsing = False
+            
+            for line in lines:
+                line_stripped = line.strip()
+                line_lower = line_stripped.lower()
+                
+                # Stop if we hit the next scenario header (but not on start page)
+                if page_idx > start_page:
+                    scenario_match = re.search(r'scenario\s+(\d+):', line_lower)
+                    if scenario_match:
+                        next_scenario_num = int(scenario_match.group(1))
+                        if next_scenario_num != scenario_num:
+                            stop_parsing = True
+                            break
+                
+                # Detect section headers (including continuations like "cntd")
+                if 'confederate set-up' in line_lower:
+                    current_side = 'Confederate'
+                    continue
+                elif 'union set-up' in line_lower:
+                    current_side = 'Union'
+                    continue
+                
+                # Skip header rows
+                if 'unit/leader' in line_lower or 'unIt/leader' in line_lower:
+                    continue
+                
+                # Capture footnotes (lines starting with * or ^ or $)
+                footnote_match = re.match(r'^([\*\^†‡§\$\+]+)\s+(.+)$', line_stripped)
+                if footnote_match:
+                    symbol = footnote_match.group(1)
+                    explanation = footnote_match.group(2)
+                    all_footnotes[symbol] = explanation
+                    continue
+                
+                # Try to parse as unit row
+                if current_side:
+                    unit = self._parse_unit_line(line_stripped, current_side)
+                    if unit:
+                        if current_side == 'Confederate':
+                            scenario.confederate_units.append(unit)
+                        else:
+                            scenario.union_units.append(unit)
+            
+            # Stop parsing if we've hit the next scenario
+            if stop_parsing:
+                break
+        
+        scenario.footnotes = all_footnotes
+        return scenario
+    
+    def _parse_unit_line(self, line: str, side: str) -> Optional[Unit]:
+        """Parse a single line as a unit entry."""
+        parts = line.split()
+        
+        if len(parts) < 4:
+            return None
+        
+        # Handle special units first (Gunboat, Wagon Train, Naval Battery)
+        # These have format: "Name - - - - Location" or similar
+        first_part = parts[0].lower()
+        if any(x in first_part for x in ['gunboat', 'wagon', 'naval']):
+            # Special unit - parse differently
+            unit_name = parts[0]
+            if parts[0].lower() == 'wagon' and len(parts) > 1:
+                unit_name = f"{parts[0]} {parts[1]}"  # "Wagon Train-A"
+            elif parts[0].lower() == 'naval' and len(parts) > 1:
+                unit_name = f"{parts[0]} {parts[1]}"  # "Naval Battery"
+            
+            # Find manpower value (first non-dash numeric-ish value or dash)
+            manpower = '-'
+            hex_location = ''
+            for i, p in enumerate(parts):
+                if p not in ['-', unit_name] and not p.startswith('-'):
+                    if any(c.isdigit() for c in p) or p == '-':
+                        # Check if this could be manpower
+                        if i > 1 and parts[i-1] == '-':
+                            manpower = p
+                            hex_location = ' '.join(parts[i+1:])
+                            break
+            
+            # For gunboats, location is usually the last part(s)
+            if 'gunboat' in first_part:
+                hex_location = ' '.join([p for p in parts if p not in [parts[0], '-']])
+            
+            return Unit(
+                unit_leader=unit_name,
+                size='-',
+                command='-',
+                unit_type='Special',
+                manpower_value=manpower,
+                hex_location=hex_location,
+                side=side,
+                notes=[]
+            )
+        
+        # Find the size column for regular units
+        size_idx = None
+        size_value = None
+        
+        for i, part in enumerate(parts):
+            # Check for Demi-Div which might appear as one token
+            if part == 'Demi-Div':
+                size_idx = i
+                size_value = 'Demi-Div'
+                break
+            elif part in self.VALID_SIZES:
+                size_idx = i
+                size_value = part
+                break
+        
+        if size_idx is None:
+            return None
+        
+        # Parse the fields relative to size position
+        unit_name = ' '.join(parts[:size_idx])
+        
+        # Remaining parts after size
+        remaining = parts[size_idx + 1:]
+        
+        if len(remaining) < 3:
+            return None
+        
+        command = remaining[0]
+        unit_type = remaining[1]
+        manpower = remaining[2]
+        hex_location = ' '.join(remaining[3:]) if len(remaining) > 3 else ''
+        
+        # Validate unit type
+        if unit_type not in self.VALID_TYPES:
+            return None
+        
+        # Extract footnote markers from unit name and manpower (including $ marker)
+        note_markers = set()  # Use set to avoid duplicates
+        for marker in ['*', '^', '†', '‡', '§', '$', '+']:
+            if marker in unit_name:
+                note_markers.add(marker)
+                unit_name = unit_name.replace(marker, '')
+            if marker in manpower:
+                note_markers.add(marker)
+        
+        return Unit(
+            unit_leader=unit_name.strip(),
+            size=size_value,
+            command=command,
+            unit_type=unit_type,
+            manpower_value=manpower,
+            hex_location=hex_location,
+            side=side,
+            notes=sorted(list(note_markers))  # Convert back to sorted list
+        )
+    
+    def _extract_notes(self, text: str) -> str:
+        """Extract the NOTES section from scenario text."""
+        match = re.search(r'NOTES?:\s*(.+?)(?=MAP:|GAME LENGTH:|SPECIAL RULES:|$)', 
+                          text, re.IGNORECASE | re.DOTALL)
+        if match:
+            return ' '.join(match.group(1).split())[:500]  # Limit length
+        return ""
+    
+    def _extract_map_info(self, text: str) -> str:
+        """Extract MAP information."""
+        match = re.search(r'MAP:\s*(.+?)(?=GAME LENGTH:|SPECIAL RULES:|NOTES:|$)', 
+                          text, re.IGNORECASE | re.DOTALL)
+        if match:
+            return ' '.join(match.group(1).split())[:200]
+        return ""
+    
+    def _extract_game_length(self, text: str) -> str:
+        """Extract GAME LENGTH information."""
+        match = re.search(r'GAME LENGTH:\s*(.+?)(?=SPECIAL RULES:|MAP:|NOTES:|$)', 
+                          text, re.IGNORECASE | re.DOTALL)
+        if match:
+            result = match.group(1).strip()
+            # Get just the first line
+            return result.split('\n')[0].strip()
+        return ""
+    
+    def _extract_special_rules(self, text: str) -> list[str]:
+        """Extract SPECIAL RULES as a list."""
+        match = re.search(r'SPECIAL RULES:\s*(.+?)(?=confederate set-up|union set-up|$)', 
+                          text, re.IGNORECASE | re.DOTALL)
+        if match:
+            rules_text = match.group(1)
+            # Split by numbered items
+            rules = re.split(r'\n\s*\d+\.', rules_text)
+            return [' '.join(r.split())[:300] for r in rules if r.strip()][:10]
+        return []
+    
+    def to_dataframe(self) -> pd.DataFrame:
+        """Convert all units to a pandas DataFrame."""
+        rows = []
+        for scenario in self.scenarios:
+            for unit in scenario.confederate_units + scenario.union_units:
+                row = asdict(unit)
+                row['scenario_number'] = scenario.number
+                row['scenario_name'] = scenario.name
+                rows.append(row)
+        return pd.DataFrame(rows)
+    
+    def to_json(self) -> str:
+        """Convert all scenarios to JSON."""
+        def serialize(obj):
+            if hasattr(obj, '__dataclass_fields__'):
+                return asdict(obj)
+            return str(obj)
+        
+        return json.dumps([asdict(s) for s in self.scenarios], indent=2, default=serialize)
+
+
+def main():
+    import sys
+    
+    # Accept PDF path as argument, default to ../data/OTR2_Rules.pdf
+    if len(sys.argv) > 1:
+        pdf_path = sys.argv[1]
+    else:
+        pdf_path = "../data/OTR2_Rules.pdf"
+    
+    print(f"Parsing: {pdf_path}")
+    parser = ScenarioParser(pdf_path)
+    scenarios = parser.parse()
+    
+    print(f"Found {len(scenarios)} scenarios\n")
+    print("=" * 70)
+    
+    for scenario in scenarios:
+        print(f"\nScenario {scenario.number}: {scenario.name}")
+        print(f"  Start page: {scenario.start_page}")
+        print(f"  Game length: {scenario.game_length}")
+        print(f"  Map: {scenario.map_info[:60]}..." if len(scenario.map_info) > 60 else f"  Map: {scenario.map_info}")
+        print(f"  Confederate units: {len(scenario.confederate_units)}")
+        print(f"  Union units: {len(scenario.union_units)}")
+        if scenario.footnotes:
+            print(f"  Footnotes: {scenario.footnotes}")
+    
+    # Export all data
+    df = parser.to_dataframe()
+    df.to_csv('all_scenarios_units.csv', index=False)
+    print(f"\n\nExported {len(df)} total units to all_scenarios_units.csv")
+    
+    # Export JSON
+    with open('all_scenarios.json', 'w') as f:
+        f.write(parser.to_json())
+    print("Exported scenario data to all_scenarios.json")
+    
+    # Show sample units from first scenario
+    print("\n" + "=" * 70)
+    print("Sample units from Scenario 1:")
+    print("=" * 70)
+    if scenarios:
+        for unit in scenarios[0].confederate_units[:5]:
+            print(f"  {unit.unit_leader:15} {unit.size:10} {unit.command:5} {unit.unit_type:4} {unit.manpower_value:5} {unit.hex_location}")
+
+
+if __name__ == "__main__":
+    main()

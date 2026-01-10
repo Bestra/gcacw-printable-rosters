@@ -1,0 +1,605 @@
+unit_leader,size,command,unit_type,manpower_value,hex_location,side,notes,scenario_number,scenario_name
+Magruder,Div,M,Ldr,-,S5510 (Yorktown),Confederate,[],1,The Warwick Line
+Ward,Brig,M,Inf,2*,S5510 (Yorktown),Confederate,['*'],1,The Warwick Line
+Siege,Regt,M,Art,2*,S5510 (Yorktown),Confederate,['*'],1,The Warwick Line
+10 GA,Regt,M,Inf,1*,S5017 (Mulberry Point),Confederate,['*'],1,The Warwick Line
+Wilcox-A,Brig,M,Inf,6,"S4811, S4912 or S5017",Confederate,[],1,The Warwick Line
+Colston,Brig,M,Inf,4,"S4811, S4912 or S5017",Confederate,[],1,The Warwick Line
+3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],1,The Warwick Line
+Pryor,Brig,M,Inf,4,Any hex within 5 hexes of S5113,Confederate,[],1,The Warwick Line
+Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],1,The Warwick Line
+McLaws-A,Brig,M,Inf,5,Any hex within 5 hexes of S5113,Confederate,[],1,The Warwick Line
+Rains-A,Brig,M,Inf,4,Any hex within 5 hexes of S5113,Confederate,[],1,The Warwick Line
+Rodes-A,Brig,M,Inf,5,S5211 (Lebanon Church),Confederate,[],1,The Warwick Line
+Early-A,Brig,M,Inf,5,Confederate Reinforcement,Confederate,[],1,The Warwick Line
+Featherston,Brig,M,Inf,5,Confederate Reinforcement,Confederate,[],1,The Warwick Line
+Griffith,Brig,M,Inf,5,Confederate Reinforcement,Confederate,[],1,The Warwick Line
+McClellan,Army,AP,Ldr,-,S5814 (Cockletown),Union,[],1,The Warwick Line
+Heintzelman,Corps,III,Ldr,-,S5814 (Cockletown),Union,[],1,The Warwick Line
+Porter,Div,III,Inf,21,S5814 (Cockletown),Union,[],1,The Warwick Line
+Hamilton,Div,III,Inf,18,S5815 (Howard's Bridge),Union,[],1,The Warwick Line
+Sedgwick,Div,II,Inf,17,S5816,Union,['*'],1,The Warwick Line
+Keyes,Corps,IV,Ldr,-,S5518,Union,[],1,The Warwick Line
+Smith-A,Div,IV,Inf,19,S5518,Union,[],1,The Warwick Line
+5/6 US,Regt,-,Cav,1,S5518,Union,[],1,The Warwick Line
+Couch,Div,IV,Inf,17,S5618,Union,[],1,The Warwick Line
+6 PA,Regt,-,Cav,1,Reinforcement,Union,[],1,The Warwick Line
+3/8 PA,Regt,-,Cav,1,Reinforcement,Union,[],1,The Warwick Line
+Sykes-A,Brig,-,Inf,8,Reinforcement,Union,[],1,The Warwick Line
+Art Res-1,Brig,AP,Art,2,Reinforcement,Union,[],1,The Warwick Line
+Art Res-2,Brig,AP,Art,2,Reinforcement,Union,[],1,The Warwick Line
+Horse Art,Brig,AP,Art,2,Reinforcement,Union,[],1,The Warwick Line
+Johnston,Army,ANV,Ldr,-,S4708,Confederate,[],2,Johnston's Retreat
+Smith,Div,S,Ldr,-,S4708,Confederate,[],2,Johnston's Retreat
+Whiting-A,Demi-Div,S,Inf,12*,S4708,Confederate,['*'],2,Johnston's Retreat
+Hood,Demi-Div,S,Inf,7*,S4607 (Ft. Magruder),Confederate,['*'],2,Johnston's Retreat
+Art Res-1,Brig,ANV,Art,1*,S4407 (Williamsburg),Confederate,['*'],2,Johnston's Retreat
+Wagon Train-A,-,-,Special,2*,S4407 (Williamsburg),Confederate,[],2,Johnston's Retreat
+Wagon Train-B,-,-,Special,2*,S4307 (William & Mary Col.),Confederate,[],2,Johnston's Retreat
+DR Jones-A,Demi-Div,M,Inf,15*,S4608,Confederate,['*'],2,Johnston's Retreat
+DR Jones,Div,M,Ldr,-,S4709,Confederate,[],2,Johnston's Retreat
+McLaws-B,Demi-Div,M,Inf,18*,S4709,Confederate,['*'],2,Johnston's Retreat
+Wilcox-B,Demi-Div,L,Inf,14*,S4809,Confederate,['*'],2,Johnston's Retreat
+Longstreet,Div,L,Ldr,-,S4910,Confederate,[],2,Johnston's Retreat
+Pickett,Demi-Div,L,Inf,15*,S4910,Confederate,['*'],2,Johnston's Retreat
+Early-B,Demi-Div,DH,Inf,11*,S4909 (Church),Confederate,['*'],2,Johnston's Retreat
+DH Hill,Div,DH,Ldr,-,S5009 (Halfway House),Confederate,[],2,Johnston's Retreat
+Rains-B,Demi-Div,DH,Inf,12*,S5009 (Halfway House),Confederate,['*'],2,Johnston's Retreat
+3 VA,Regt,Cav,Cav,1,S5213 (Monson House),Confederate,[],2,Johnston's Retreat
+4 VA,Regt,Cav,Cav,1,S5412 (Wynn’s Mill),Confederate,[],2,Johnston's Retreat
+Stuart,Brig,Cav,Ldr,-,S5410,Confederate,[],2,Johnston's Retreat
+1 VA,Regt,Cav,Cav,1,S5410,Confederate,[],2,Johnston's Retreat
+McClellan,Army,AP,Ldr,-,S5711,Union,[],2,Johnston's Retreat
+Heintzelman,Corps,III,Ldr,-,S5711,Union,[],2,Johnston's Retreat
+Porter,Div,III,Inf,21,S5711,Union,[],2,Johnston's Retreat
+Hooker,Div,III,Inf,19,S5611 (Saw Mill),Union,[],2,Johnston's Retreat
+Art Res-1,Brig,AP,Art,2,S5611 (Saw Mill),Union,[],2,Johnston's Retreat
+5/6 US,Regt,-,Cav,1,S5612,Union,[],2,Johnston's Retreat
+6 PA,Regt,-,Cav,1,S5612,Union,[],2,Johnston's Retreat
+Sumner,Corps,II,Ldr,-,S5513 (Burnt Chimneys),Union,[],2,Johnston's Retreat
+Richardson,Div,II,Inf,16,S5513 (Burnt Chimneys),Union,[],2,Johnston's Retreat
+Horse Art,Brig,AP,Art,2,S5513 (Burnt Chimneys),Union,[],2,Johnston's Retreat
+Sedgwick,Div,II,Inf,17,S5514,Union,[],2,Johnston's Retreat
+8 IL,Regt,-,Cav,1,S5514,Union,[],2,Johnston's Retreat
+Kearny,Div,III,Inf,18,S5512,Union,[],2,Johnston's Retreat
+Sykes-A,Brig,-,Inf,8,S5512,Union,[],2,Johnston's Retreat
+Art Res-2,Brig,AP,Art,2,S5512,Union,[],2,Johnston's Retreat
+3/8 PA,Regt,-,Cav,1,S5712,Union,[],2,Johnston's Retreat
+Keyes,Corps,IV,Ldr,-,S5415,Union,[],2,Johnston's Retreat
+Couch,Div,IV,Inf,17,S5415,Union,[],2,Johnston's Retreat
+Smith-A,Div,IV,Inf,19,S5314 (Lee’s Mill),Union,[],2,Johnston's Retreat
+Casey,Div,IV,Inf,18,S5314 (Lee’s Mill),Union,[],2,Johnston's Retreat
+Gunboat,-,-,Special,-,Display – York River,Union,[],2,Johnston's Retreat
+Johnston,Army,ANV,Ldr,-,N1028,Confederate,[],3,The Gates of Richmond
+Art Res-1,Brig,ANV,Art,2,N1028,Confederate,[],3,The Gates of Richmond
+Longstreet,Div,L,Ldr,-,N1230,Confederate,[],3,The Gates of Richmond
+Pickett,Demi-Div,L,Inf,16,N1230,Confederate,[],3,The Gates of Richmond
+RH Anderson,Demi-Div,L,Inf,13,N1132,Confederate,[],3,The Gates of Richmond
+DH Hill,Div,DH,Ldr,-,N1229,Confederate,[],3,The Gates of Richmond
+Rodes-B,Demi-Div,DH,Inf,11,N1229,Confederate,[],3,The Gates of Richmond
+Garland-A,Demi-Div,DH,Inf,12,N1228,Confederate,[],3,The Gates of Richmond
+Smith,Div,S,Ldr,-,N1227,Confederate,[],3,The Gates of Richmond
+Whiting-A,Demi-Div,S,Inf,13,N1227,Confederate,[],3,The Gates of Richmond
+Hood,Demi-Div,S,Inf,8,N1226 (Old Tavern),Confederate,[],3,The Gates of Richmond
+McLaws-B,Demi-Div,M,Inf,10,N1225,Confederate,[],3,The Gates of Richmond
+T Anderson,Brig,M,Inf,5,N0723,Confederate,[],3,The Gates of Richmond
+Magruder,Div,M,Ldr,-,N0924,Confederate,[],3,The Gates of Richmond
+Cobb-B,Demi-Div,M,Inf,12,N0924,Confederate,[],3,The Gates of Richmond
+Kershaw,Brig,M,Inf,5,N1024,Confederate,[],3,The Gates of Richmond
+Stuart,Brig,Cav,Ldr,-,N0822,Confederate,[],3,The Gates of Richmond
+Cavalry,Brig,Cav,Cav,2,N0822,Confederate,[],3,The Gates of Richmond
+3 VA,Regt,Cav,Cav,1,N0820 (Shop),Confederate,[],3,The Gates of Richmond
+AP Hill,Div,AH,Ldr,-,N0308 (Hanover Junction),Confederate,[],3,The Gates of Richmond
+JR Anderson,Demi-Div,AH,Inf,21*,N0308 (Hanover Junction),Confederate,['*'],3,The Gates of Richmond
+Branch,Brig,AH,Inf,9*,N0913 (Hanover CH),Confederate,['*'],3,The Gates of Richmond
+56 VA,Regt,-,Inf,2+,N0934 (Chaffin’s Bluff),Confederate,['+'],3,The Gates of Richmond
+Huger-A,Div,HU,Inf,10^,N0734 (Drewry’s Bluff),Confederate,['^'],3,The Gates of Richmond
+32 NC,Regt,HU,Inf,2+^,N0734 (Drewry’s Bluff),Confederate,"['+', '^']",3,The Gates of Richmond
+Armistead,Brig,HU,Inf,7^,N0534,Confederate,['^'],3,The Gates of Richmond
+Wise-B,Brig,DH,Inf,3,N0928,Confederate,[],3,The Gates of Richmond
+8 VA,Regt,Cav,Cav,1,N0623,Confederate,[],3,The Gates of Richmond
+9 VA,Regt,Cav,Cav,1,N2411 (Aylett’s),Confederate,[],3,The Gates of Richmond
+Richmond-1,Regt,-,Inf,1^+,N0526 (Public Square),Confederate,"['+', '^']",3,The Gates of Richmond
+Richmond-2,Regt,-,Inf,1^+,N0626 (President’s House),Confederate,"['+', '^']",3,The Gates of Richmond
+Richmond-3,Regt,-,Inf,1^+,N0727 (Union Hill),Confederate,"['+', '^']",3,The Gates of Richmond
+Richmond-4,Regt,-,Inf,1^+,N0827 (Chimborazo Hill),Confederate,"['+', '^']",3,The Gates of Richmond
+Ripley,Brig,HO,Inf,5,Reinforcement,Confederate,[],3,The Gates of Richmond
+Walker,Brig,HO,Inf,8,Reinforcement,Confederate,[],3,The Gates of Richmond
+Ewell,Div,J,Inf,19,Reinforcement,Confederate,[],3,The Gates of Richmond
+McClellan,Army,AP,Ldr,-,N1625 (Parker’s Mill),Union,[],3,The Gates of Richmond
+Sumner,Corps,II,Ldr,-,N1625 (Parker’s Mill),Union,[],3,The Gates of Richmond
+Sedgwick,Div,II,Inf,17,N1625 (Parker’s Mill),Union,[],3,The Gates of Richmond
+Richardson,Div,II,Inf,16,N1725,Union,[],3,The Gates of Richmond
+Keyes,Corps,IV,Ldr,-,N1428,Union,[],3,The Gates of Richmond
+Casey,Div,IV,Inf,16,N1428,Union,[],3,The Gates of Richmond
+Couch,Div,IV,Inf,14,N1528,Union,[],3,The Gates of Richmond
+Heintzelman,Corps,III,Ldr,-,N1828,Union,[],3,The Gates of Richmond
+Kearny,Div,III,Inf,17,N1828,Union,[],3,The Gates of Richmond
+Hooker,Div,III,Inf,16,N1830,Union,[],3,The Gates of Richmond
+3/8 PA,Regt,-,Cav,1,N1930 (White Oak Bridge),Union,[],3,The Gates of Richmond
+Franklin,Corps,VI,Ldr,-,N1124,Union,[],3,The Gates of Richmond
+Smith-B,Div,VI,Inf,19,N1124,Union,[],3,The Gates of Richmond
+Slocum,Div,VI,Inf,18,N1123 (Walnut Grove Ch),Union,[],3,The Gates of Richmond
+Porter,Corps,V,Ldr,-,N1224,Union,[],3,The Gates of Richmond
+Morell,Div,V,Inf,17,N1224,Union,[],3,The Gates of Richmond
+Art Res-1,Brig,AP,Art,2,N1224,Union,[],3,The Gates of Richmond
+Horse Art,Brig,AP,Art,2,N1224,Union,[],3,The Gates of Richmond
+Sykes-B,Div,V,Inf,8,N1325 (Dr Gaines),Union,[],3,The Gates of Richmond
+Art Res-2,Brig,AP,Art,2,N1325 (Dr Gaines),Union,[],3,The Gates of Richmond
+Stoneman,Brig,-,Inf,3,N1122,Union,[],3,The Gates of Richmond
+1 NY,Regt,-,Cav,1,N1022 (Nunley’s Mill),Union,[],3,The Gates of Richmond
+8 IL,Regt,-,Cav,1,N1020 (Washington Acad),Union,[],3,The Gates of Richmond
+5/6 US,Regt,-,Cav,1,N1321 (Bethesda Church),Union,[],3,The Gates of Richmond
+6 PA,Regt,-,Cav,1,N1521 (Raleigh),Union,[],3,The Gates of Richmond
+Warren,Brig,V,Inf,5,N1720 (Old Church),Union,[],3,The Gates of Richmond
+93 NY,Regt,-,Inf,2*,N2823 (White House Stn),Union,['*'],3,The Gates of Richmond
+McDowell,Corps,I,Ldr,-,N0101 (Golonsville),Union,[],3,The Gates of Richmond
+King,Div,I,Inf,18^,N0101 (Golonsville),Union,['^'],3,The Gates of Richmond
+McCall-A,Div,I,Inf,18^,N0101 (Golonsville),Union,['^'],3,The Gates of Richmond
+Ricketts,Div,I,Inf,18^,N0101 (Golonsville),Union,['^'],3,The Gates of Richmond
+2 NY,Regt,-,Cav,1^,N0304 (Chester Depot),Union,['^'],3,The Gates of Richmond
+4 PA,Regt,-,Cav,1^,N0704 (St Paul’s Ch),Union,['^'],3,The Gates of Richmond
+Shields,Div,I,Inf,13,Reinforcement,Union,[],3,The Gates of Richmond
+1 RI,Regt,-,Cav,1,Reinforcement,Union,[],3,The Gates of Richmond
+Johnston,Army,ANV,Ldr,-,N1026,Confederate,[],4,Seven Pines
+Longstreet,Div,L,Ldr,-,N1026,Confederate,[],4,Seven Pines
+RH Anderson,Demi-Div,L,Inf,13,N1026,Confederate,[],4,Seven Pines
+Pickett,Demi-Div,L,Inf,16,N0827 (Chimborazo Hill),Confederate,[],4,Seven Pines
+Art Res-1,Brig,ANV,Art,2,N0827 (Chimborazo Hill),Confederate,[],4,Seven Pines
+Ripley,Brig,HO,Inf,5*,N0826,Confederate,['*'],4,Seven Pines
+Huger-B,Div,HU,Inf,18,N0828 (Toll Gate),Confederate,[],4,Seven Pines
+Smith,Div,S,Ldr,-,N0624,Confederate,[],4,Seven Pines
+Hood,Demi-Div,S,Inf,8,N0624,Confederate,[],4,Seven Pines
+Whiting-A,Demi-Div,S,Inf,13,N0624,Confederate,[],4,Seven Pines
+Walker,Brig,HO,Inf,8*,N0627 (Capitol),Confederate,['*'],4,Seven Pines
+DH Hill,Div,DH,Ldr,-,N1128,Confederate,[],4,Seven Pines
+Garland-A,Demi-Div,DH,Inf,17,N1128,Confederate,[],4,Seven Pines
+Rodes-B,Demi-Div,DH,Inf,6,N1229,Confederate,[],4,Seven Pines
+McLaws-B,Demi-Div,M,Inf,10*^,N1225,Confederate,"['*', '^']",4,Seven Pines
+Casey,Div,IV,Inf,13,N1227,Union,[],4,Seven Pines
+Keyes,Corps,IV,Ldr,-,N1328 (Seven Pines),Union,[],4,Seven Pines
+Couch,Div,IV,Inf,12,N1328 (Seven Pines),Union,[],4,Seven Pines
+Naglee-A,Brig,IV,Inf,5,N1327 (Fair Oaks Station),Union,[],4,Seven Pines
+Sumner,Corps,II,Ldr,-,N1625 (Parker’s Mill),Union,[],4,Seven Pines
+Sedgwick,Div,II,Inf,17,N1625 (Parker’s Mill),Union,[],4,Seven Pines
+Richardson,Div,II,Inf,16,N1726 (Barker’s Store),Union,[],4,Seven Pines
+Heintzelman,Corps,III,Ldr,-,N1627 (Savage Stn),Union,[],4,Seven Pines
+Kearny,Div,III,Inf,12,N1627 (Savage Stn),Union,[],4,Seven Pines
+Jameson,Brig,III,Inf,5,N1928,Union,[],4,Seven Pines
+Hooker,Div,III,Inf,16,N1930 (White Oak Bridge),Union,[],4,Seven Pines
+Stuart,Brig,Cav,Ldr,-,N0526 (Pub Sq – Richmond),Confederate,[],5,Stuart's Ride
+1 VA,Regt,Cav,Cav,1,N0526 (Pub Sq – Richmond),Confederate,[],5,Stuart's Ride
+9 VA,Regt,Cav,Cav,1,N0526 (Pub Sq – Richmond),Confederate,[],5,Stuart's Ride
+5/6 US,Regt,-,Cav,1,N1223,Union,[],5,Stuart's Ride
+Warren,Brig,V,Inf,3,N1123 (Walnut Grove Ch),Union,[],5,Stuart's Ride
+Buchanan,Brig,V,Inf,4,N1123 (Walnut Grove Ch),Union,[],5,Stuart's Ride
+Reynolds,Brig,V,Inf,5,N1927 (Despatch Station),Union,[],5,Stuart's Ride
+93 NY,Regt,-,Inf,1^,N2823 (White House Stn),Union,['^'],5,Stuart's Ride
+11 PA,Regt,-,Inf,1*,N2824 (White House),Union,['*'],5,Stuart's Ride
+Meade,Brig,V,Inf,5,N1928,Union,[],5,Stuart's Ride
+3/8 PA,Regt,-,Cav,1,N1830,Union,[],5,Stuart's Ride
+Lee,Army,ANV,Ldr,-,N0926,Confederate,[],6,The Seven Days
+Longstreet,Div,L,Ldr,-,N0926,Confederate,[],6,The Seven Days
+RH Anderson,Demi-Div,L,Inf,11,N0926,Confederate,[],6,The Seven Days
+Pickett,Demi-Div,L,Inf,14,N0926,Confederate,[],6,The Seven Days
+Art Res-1,Brig,ANV,Art,2,N0927,Confederate,[],6,The Seven Days
+Art Res-2,Brig,ANV,Art,2,N0927,Confederate,[],6,The Seven Days
+DH Hill,Div,DH,Ldr,-,N0925,Confederate,[],6,The Seven Days
+Rodes-C,Demi-Div,DH,Inf,11,N0925,Confederate,[],6,The Seven Days
+Garland-B,Demi-Div,DH,Inf,11,N0925,Confederate,[],6,The Seven Days
+Magruder,Div,M,Ldr,-,N1227,Confederate,[],6,The Seven Days
+McLaws-C,Demi-Div,M,Inf,12*,N1227,Confederate,['*'],6,The Seven Days
+DR Jones-B,Demi-Div,M,Inf,10*,N1225,Confederate,['*'],6,The Seven Days
+Cobb-C,Demi-Div,M,Inf,10*,N1226 (Old Tavern),Confederate,['*'],6,The Seven Days
+Huger-B,Div,HU,Inf,17*,N1228,Confederate,['*'],6,The Seven Days
+3 VA,Regt,Cav,Cav,1,N1130,Confederate,[],6,The Seven Days
+5 VA,Regt,Cav,Cav,1,N1132,Confederate,[],6,The Seven Days
+Wise-A,Brig,-,Inf,3^+,S0501 (Chaffin’s Bluff),Confederate,"['+', '^']",6,The Seven Days
+Holmes,Div,HO,Inf,11+,S0301 (Drewry’s Bluff),Confederate,['+'],6,The Seven Days
+32 NC,Regt,HU,Inf,1^+,S0301 (Drewry’s Bluff),Confederate,"['+', '^']",6,The Seven Days
+Naval Battery,-,-,Special,S0301,(Drewry’s Bluff),Confederate,[],6,The Seven Days
+Ransom,Brig,HO,Inf,7,N1028,Confederate,[],6,The Seven Days
+Stuart,Brig,Cav,Ldr,-,N0526 (Public Square),Confederate,[],6,The Seven Days
+Cavalry,Brig,Cav,Cav,2,N0526 (Public Square),Confederate,[],6,The Seven Days
+AP Hill,Div,AH,Ldr,-,N0723,Confederate,[],6,The Seven Days
+JR Anderson,Demi-Div,AH,Inf,17,N0723,Confederate,[],6,The Seven Days
+Gregg,Demi-Div,AH,Inf,12,N0724 (Strawberry Hills),Confederate,[],6,The Seven Days
+14 SC,Regt,AH,Inf,1*,N0924,Confederate,['*'],6,The Seven Days
+Branch,Brig,AH,Inf,7,N0419 (Half Sink),Confederate,[],6,The Seven Days
+4 VA,Regt,Cav,Cav,1,N0512 (Winston),Confederate,[],6,The Seven Days
+Jackson,Div,J,Ldr,-,N0110 (Hanover Academy),Confederate,[],6,The Seven Days
+Whiting-B,Div,J,Inf,9$,N0110 (Hanover Academy),Confederate,['$'],6,The Seven Days
+Ewell,Div,J,Inf,14$,N0112,Confederate,['$'],6,The Seven Days
+Winder,Div,J,Inf,15$,N0109 (Winston’s Mill),Confederate,['$'],6,The Seven Days
+2 VA,Regt,Cav,Cav,1$,N0107 (Verdon Station),Confederate,['$'],6,The Seven Days
+Richmond-1,Regt,-,Inf,1^+,N0526 (Public Square),Confederate,"['+', '^']",6,The Seven Days
+Richmond-2,Regt,-,Inf,1^+,N0626 (President’s House),Confederate,"['+', '^']",6,The Seven Days
+Richmond-3,Regt,-,Inf,1^+,N0727 (Union Hill),Confederate,"['+', '^']",6,The Seven Days
+Richmond-4,Regt,-,Inf,1^+,N0827 (Chimborazo Hill),Confederate,"['+', '^']",6,The Seven Days
+13 PA,Regt,V,Inf,2,N0923 (Mechanicsville),Union,[],6,The Seven Days
+Stoneman,Brig,-,Inf,3,N1318 (Haws Shop),Union,[],6,The Seven Days
+6 PA,Regt,-,Cav,1,N1119 (Polly Hundley’s),Union,[],6,The Seven Days
+5/6 US,Regt,-,Cav,1,N1119 (Polly Hundley’s),Union,[],6,The Seven Days
+8 IL,Regt,-,Cav,1,N1020 (Washington Acad),Union,[],6,The Seven Days
+4 PA,Regt,-,Cav,1,N1020 (Washington Acad),Union,[],6,The Seven Days
+McCall-B,Div,V,Inf,9*,N1022 (Nunley’s Mill),Union,['*'],6,The Seven Days
+Seymour,Brig,V,Inf,7*,N1023 (Ellerson’s Mill),Union,['*'],6,The Seven Days
+Porter,Corps,V,Ldr,-,N1224,Union,[],6,The Seven Days
+Sykes-B,Div,V,Inf,11*,N1224,Union,['*'],6,The Seven Days
+Horse Art,Brig,AP,Art,2*,N1224,Union,['*'],6,The Seven Days
+Morell,Div,V,Inf,21,N1223,Union,[],6,The Seven Days
+Franklin,Corps,VI,Ldr,-,N1326,Union,[],6,The Seven Days
+Smith-B,Div,VI,Inf,20*,N1326,Union,['*'],6,The Seven Days
+Slocum,Div,VI,Inf,18*,N1326,Union,['*'],6,The Seven Days
+Art Res-1,Brig,AP,Art,2*,N1326,Union,['*'],6,The Seven Days
+1 NY,Regt,-,Cav,1,N1326,Union,[],6,The Seven Days
+McClellan,Army,AP,Ldr,-,N1327 (Fair Oak Stn),Union,[],6,The Seven Days
+Sumner,Corps,II,Ldr,-,N1327 (Fair Oak Stn),Union,[],6,The Seven Days
+Richardson,Div,II,Inf,17*,N1327 (Fair Oak Stn),Union,['*'],6,The Seven Days
+Sedgwick,Div,II,Inf,18*,N1327 (Fair Oak Stn),Union,['*'],6,The Seven Days
+Art Res-2,Brig,AP,Art,2*,N1327 (Fair Oak Stn),Union,['*'],6,The Seven Days
+Heintzelman,Corps,III,Ldr,-,N1328 (Seven Pines),Union,[],6,The Seven Days
+Hooker,Div,III,Inf,19*,N1328 (Seven Pines),Union,['*'],6,The Seven Days
+Kearny,Div,III,Inf,18*,N1329 (Portuguese Tavern),Union,['*'],6,The Seven Days
+Peck-A,Div,IV,Inf,13,N1429,Union,[],6,The Seven Days
+Keyes,Corps,IV,Ldr,-,N1529,Union,[],6,The Seven Days
+Couch,Div,IV,Inf,17,N1529,Union,[],6,The Seven Days
+3/8 PA,Regt,-,Cav,1,N1430,Union,[],6,The Seven Days
+93 NY,Regt,-,Inf,3^,N2823 (White House Stn),Union,['^'],6,The Seven Days
+Gunboat-1,-,-,Special,-,York River Box,Union,[],6,The Seven Days
+Wagon Train-A,-,-,Special,2,N1627 (Savage Station),Union,[],6,The Seven Days
+Wagon Train-B,-,-,Special,2,N1728 (Watkins Mill),Union,[],6,The Seven Days
+Ferry,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],6,The Seven Days
+Kimball,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],6,The Seven Days
+Tyler,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],6,The Seven Days
+Carroll-A,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],6,The Seven Days
+Gunboat-2,-,-,Special,-,Reinforcement (see Rule 8),Union,[],6,The Seven Days
+Lee,Army,ANV,Ldr,-,N0926,Confederate,[],7,Gaines Mill
+Longstreet,Div,L,Ldr,-,N0926,Confederate,[],7,Gaines Mill
+DH Hill,Div,DH,Ldr,-,N0925,Confederate,[],7,Gaines Mill
+Stuart,Div,Cav,Ldr,-,N0515 (Perrin Mill),Confederate,[],7,Gaines Mill
+Cavalry,Brig,Cav,Cav,2,N0515 (Perrin Mill),Confederate,[],7,Gaines Mill
+AP Hill,Div,AH,Ldr,-,N0723,Confederate,[],7,Gaines Mill
+Branch,Brig,AH,Inf,7,N0419 (Half Sink),Confederate,[],7,Gaines Mill
+4VA,Regt,Cav,Cav,1,N0512 (Winston),Confederate,[],7,Gaines Mill
+Jackson,Div,J,Ldr,-,N0214 (Race Course),Confederate,[],7,Gaines Mill
+Whiting-B,Div,J,Inf,9*,N0214 (Race Course),Confederate,['*'],7,Gaines Mill
+Ewell,Div,J,Inf,14*,N0415,Confederate,['*'],7,Gaines Mill
+Winder,Div,J,Inf,15*,N0213 (Mill),Confederate,['*'],7,Gaines Mill
+2VA,Regt,Cav,Cav,1*,N0113 (Independence Ch),Confederate,['*'],7,Gaines Mill
+Sedgwick,Div,II,Inf,18*,N1327 (Fair Oak Stn),Union,['*'],7,Gaines Mill
+Art Res-2,Brig,AP,Art,2*,N1327 (Fair Oak Stn),Union,['*'],7,Gaines Mill
+Heintzelman,Corps,III,Ldr,-,N1328 (Seven Pines),Union,[],7,Gaines Mill
+Hooker,Div,III,Inf,19*,N1328 (Seven Pines),Union,['*'],7,Gaines Mill
+Kearny,Div,III,Inf,18*,N1329 (Portuguese Tavern),Union,['*'],7,Gaines Mill
+Peck-A,Div,IV,Inf,13,N1429,Union,[],7,Gaines Mill
+Keyes,Corps,IV,Ldr,-,N1529,Union,[],7,Gaines Mill
+Couch,Div,IV,Inf,17,N1529,Union,[],7,Gaines Mill
+3/8 PA,Regt,-,Cav,1,N1430,Union,[],7,Gaines Mill
+93 NY,Regt,-,Inf,3^,N2823 (White House Stn),Union,['^'],7,Gaines Mill
+Gunboat-1,-,-,Special,-,York River Box,Union,[],7,Gaines Mill
+Wagon Train-A,-,-,Special,2,N1627 (Savage Station),Union,[],7,Gaines Mill
+Wagon Train-B,-,-,Special,2,N1728 (Watkins Mill),Union,[],7,Gaines Mill
+Ferry,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],7,Gaines Mill
+Kimball,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],7,Gaines Mill
+Tyler,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],7,Gaines Mill
+Carroll-A,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],7,Gaines Mill
+Gunboat-2,-,-,Special,-,Reinforcement (see Rule 8),Union,[],7,Gaines Mill
+Stoneman,Brig,AP,Inf,3,N1318 (Haw's Shop),Union,[],7,Gaines Mill
+6PA,Regt,Cav,Cav,1,N1119 (Polly Hundley's),Union,[],7,Gaines Mill
+5/6US,Regt,Cav,Cav,1,N1119 (Polly Hundley's),Union,[],7,Gaines Mill
+8IL,Regt,Cav,Cav,1,N1020 (Washington Acad),Union,[],7,Gaines Mill
+4PA,Regt,Cav,Cav,1,N1020 (Washington Acad),Union,[],7,Gaines Mill
+McCall-B,Div,V,Inf,9*,N1022 (Nunley's Mill),Union,['*'],7,Gaines Mill
+Seymour,Brig,V,Inf,9*,N1023 (Ellerson's Mill),Union,['*'],7,Gaines Mill
+Morell,Div,V,Inf,21,N1223,Union,[],7,Gaines Mill
+Porter,Corps,V,Ldr,-,N1224,Union,[],7,Gaines Mill
+Sykes-B,Div,V,Inf,11*,N1224,Union,['*'],7,Gaines Mill
+Horse Art,Brig,AP,Art,2*,N1224,Union,['*'],7,Gaines Mill
+Slocum,Div,VI,Inf,18,N1326,Union,[],7,Gaines Mill
+Richardson,Div,II,Inf,17,N1327 (Fair Oaks St),Union,[],7,Gaines Mill
+Peck-B,Div,IV,Inf,8,N1429,Union,[],7,Gaines Mill
+Naglee-B,Brig,IV,Inf,5$,N1928,Union,['$'],7,Gaines Mill
+93NY,Regt,-,Inf,3^,N2823 (White House Stn),Union,['^'],7,Gaines Mill
+Gunboat-1,-,-,Special,-,York River Box,Union,[],7,Gaines Mill
+Lee,Army,ANV,Ldr,-,N1423 (New Cold Harbor),Confederate,[],8,Retreat to the James
+Longstreet,Div,L,Ldr,-,N1423 (New Cold Harbor),Confederate,[],8,Retreat to the James
+RH Anderson,Demi-Div,L,Inf,9,N1423 (New Cold Harbor),Confederate,[],8,Retreat to the James
+Pickett,Demi-Div,L,Inf,11,N1423 (New Cold Harbor),Confederate,[],8,Retreat to the James
+Art Res-2,Brig,ANV,Art,2,N1228,Confederate,[],8,Retreat to the James
+DH Hill,Div,DH,Ldr,-,N1625 (Parker’s Mill),Confederate,[],8,Retreat to the James
+Rodes-C,Demi-Div,DH,Inf,10,N1625 (Parker’s Mill),Confederate,[],8,Retreat to the James
+Garland-B,Demi-Div,DH,Inf,8,N1625 (Parker’s Mill),Confederate,[],8,Retreat to the James
+Magruder,Div,M,Ldr,-,N1227,Confederate,[],8,Retreat to the James
+McLaws-C,Demi-Div,M,Inf,12*,N1227,Confederate,['*'],8,Retreat to the James
+Art Res-1,Brig,ANV,Art,2,N1227,Confederate,[],8,Retreat to the James
+DR Jones-B,Demi-Div,M,Inf,9*,N1225,Confederate,['*'],8,Retreat to the James
+Cobb-C,Demi-Div,M,Inf,10*,N1226 (Old Tavern),Confederate,['*'],8,Retreat to the James
+Huger-B,Div,HU,Inf,16*,N1228,Confederate,['*'],8,Retreat to the James
+Ransom,Brig,HO,Inf,7,N1228,Confederate,[],8,Retreat to the James
+Holmes,Div,HO,Inf,13,S0301 (Drewry’s Bluff),Confederate,[],8,Retreat to the James
+Naval Battery,-,-,Special,S0301,(Drewry’s Bluff),Confederate,[],8,Retreat to the James
+AP Hill,Div,AH,Ldr,-,N1523 (Old Cold Harbor),Confederate,[],8,Retreat to the James
+JR Anderson,Demi-Div,AH,Inf,14,N1523 (Old Cold Harbor),Confederate,[],8,Retreat to the James
+Gregg,Demi-Div,AH,Inf,8,N1523 (Old Cold Harbor),Confederate,[],8,Retreat to the James
+Branch,Brig,AH,Inf,7,N1523 (Old Cold Harbor),Confederate,[],8,Retreat to the James
+Jackson,Div,J,Ldr,-,N1525,Confederate,[],8,Retreat to the James
+Whiting-B,Div,J,Inf,7,N1525,Confederate,[],8,Retreat to the James
+Ewell,Div,J,Inf,13,N1927 (Despatch Station),Confederate,[],8,Retreat to the James
+Winder,Div,J,Inf,14,N1524 (Watt),Confederate,[],8,Retreat to the James
+McClellan,Army,AP,Ldr,-,N1932,Union,[],8,Retreat to the James
+Porter,Corps,V,Ldr,-,N1932,Union,[],8,Retreat to the James
+Morell,Div,V,Inf,17*,N1932,Union,['*'],8,Retreat to the James
+Horse Art,Brig,AP,Art,2,N1932,Union,[],8,Retreat to the James
+Naglee-B,Brig,IV,Inf,5,N1928,Union,[],8,Retreat to the James
+McCall-B,Div,V,Inf,9*,N1930 (White Oak Bridge),Union,['*'],8,Retreat to the James
+Art Res-1,Brig,AP,Art,2,N1930 (White Oak Bridge),Union,[],8,Retreat to the James
+Art Res-2,Regt,AP,Art,2,N1931,Union,[],8,Retreat to the James
+Sykes-B,Div,V,Inf,9,N1730 (Brackett’s Ford),Union,[],8,Retreat to the James
+Franklin,Corps,VI,Ldr,-,N1426 (Golding’s Farm),Union,[],8,Retreat to the James
+Smith-B,Div,VI,Inf,20,N1426 (Golding’s Farm),Union,[],8,Retreat to the James
+Slocum,Div,VI,Inf,19*,N1426 (Golding’s Farm),Union,['*'],8,Retreat to the James
+Sumner,Corps,II,Ldr,-,N1327 (Fair Oaks Station),Union,[],8,Retreat to the James
+Richardson,Div,II,Inf,12^,N1327 (Fair Oaks Station),Union,['^'],8,Retreat to the James
+Sedgwick,Div,II,Inf,18^,N1327 (Fair Oaks Station),Union,['^'],8,Retreat to the James
+Heintzelman,Corps,III,Ldr,-,N1328 (Seven Pines),Union,[],8,Retreat to the James
+Hooker,Div,III,Inf,18^,N1328 (Seven Pines),Union,['^'],8,Retreat to the James
+Kearny,Div,III,Inf,17,N1329 (Portuguese Tavern),Union,[],8,Retreat to the James
+Meagher,Brig,II,Inf,5,N1627 (Savage Stn),Union,[],8,Retreat to the James
+Keyes,Corps,IV,Ldr,-,N1732 (Glendale),Union,[],8,Retreat to the James
+Peck-B,Div,IV,Inf,8,N1732 (Glendale),Union,[],8,Retreat to the James
+Couch,Div,IV,Inf,17,N1732 (Glendale),Union,[],8,Retreat to the James
+Ferry,Brig,-,Inf,5$,S1707 (Berkeley),Union,['$'],8,Retreat to the James
+Gunboat-1,-,-,Special,-,James River East,Union,[],8,Retreat to the James
+Gunboat-2,-,-,Special,-,James River East,Union,[],8,Retreat to the James
+Kimball,Brig,-,Inf,5,Reinforcement,Union,[],8,Retreat to the James
+Tyler,Brig,-,Inf,5,Reinforcement,Union,[],8,Retreat to the James
+gunboat,-,-,Special,-,"name, while the reverse side has “Bombardment Used”",Union,[],8,Retreat to the James
+gunboat,-,-,Special,-,to the next higher number space on the Defensive Support Track in,Union,[],8,Retreat to the James
+Gunboats,-,-,Special,-,"and brIdGes/ferrIes the box the gunboat occupies; on the first use, the gunboat is moved to the",Union,[],8,Retreat to the James
+Gunboats,-,-,Special,-,and combat Phase.,Union,[],8,Retreat to the James
+Gunboats,-,-,Special,-,may provide two kinds of “support” to the Union player: “defensive • The Confederate unit to be bombarded must occupy a hex containing,Union,[],8,Retreat to the James
+Gunboat,-,-,Special,-,"on the display. corresponding to the Turn box occupied by the Gunboat, it is returned to the",Union,[],8,Retreat to the James
+Naval Battery,-,-,Special,-,,Union,[],8,Retreat to the James
+Ward,Brig,M,Inf,2*,S5510 (Yorktown),Confederate,['*'],9,The Peninsula Campaign
+Siege,Regt,M,Art,2*,S5510 (Yorktown),Confederate,['*'],9,The Peninsula Campaign
+Crump,Brig,M,Inf,2*,S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
+10 GA,Regt,M,Inf,1*,S5017 (Mulberry Point),Confederate,['*'],9,The Peninsula Campaign
+Wilcox-A,Brig,M,Inf,6,S4912,Confederate,[],9,The Peninsula Campaign
+Colston,Brig,M,Inf,4,S4811 (Grove Wharf),Confederate,[],9,The Peninsula Campaign
+Magruder,Div,M,Ldr,-,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Pryor,Brig,M,Inf,4,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Rodes-A,Brig,M,Inf,5,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+DH Hill,Div,DH,Ldr,-,S4511 (King’s Mill Wharf),Confederate,[],9,The Peninsula Campaign
+Featherston,Brig,M,Inf,5,S1403 (Haxall’s Landing),Confederate,[],9,The Peninsula Campaign
+Grifffith,Brig,M,Inf,5,S1806 (Westover),Confederate,[],9,The Peninsula Campaign
+Richmond-1,Regt,-,Inf,1*,N0526 (Public Square),Confederate,['*'],9,The Peninsula Campaign
+Richmond-2,Regt,-,Inf,1*,N0626 (President’s House),Confederate,['*'],9,The Peninsula Campaign
+Richmond-3,Regt,-,Inf,1*,N0727 (Union Hill),Confederate,['*'],9,The Peninsula Campaign
+Richmond-4,Regt,-,Inf,1*,N0827 (Chimborazo Hill),Confederate,['*'],9,The Peninsula Campaign
+Wise-B,Brig,DH,Inf,3,N0728 (Church Hill),Confederate,[],9,The Peninsula Campaign
+Art Res-1,Brig,ANV,Art,2,N0627 (Capitol),Confederate,[],9,The Peninsula Campaign
+Toombs,Brig,M,Inf,5,N0527 (Hollywood Cemetery),Confederate,[],9,The Peninsula Campaign
+7 VA,Regt,HO,Inf,1*,S0413 (Petersburg),Confederate,['*'],9,The Peninsula Campaign
+Walker,Brig,HO,Inf,8,S0513 (Petersburg),Confederate,[],9,The Peninsula Campaign
+Kershaw,Brig,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
+Johnston,Army,ANV,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Smith,Div,S,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+3 VA,Regt,HU,Inf,1*,S4717 (Harden’s Bluff),Confederate,['*'],9,The Peninsula Campaign
+Longstreet,Div,L,Ldr,-,Turn 7 Reinforcements (see 13.1),Confederate,[],9,The Peninsula Campaign
+Stuart,Div,Cav,Ldr,-,Turn 7 Reinforcements (see 13.1),Confederate,[],9,The Peninsula Campaign
+Cavalry,Regt,Cav,Cav,2,Turn 7 Reinforcements (see 13.1),Confederate,[],9,The Peninsula Campaign
+Huger-A,Div,HU,Inf,7,Norfolk Box,Confederate,[],9,The Peninsula Campaign
+Mahone,Brig,HU,Inf,6,Norfolk Box,Confederate,[],9,The Peninsula Campaign
+Armistead,Brig,HU,Inf,6,Norfolk Box,Confederate,[],9,The Peninsula Campaign
+22 VA,Regt,-,Inf,1,Richmond Box,Confederate,[],9,The Peninsula Campaign
+28 VA,Regt,-,Inf,1,Richmond Box,Confederate,[],9,The Peninsula Campaign
+47 VA,Regt,-,Inf,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+55 VA,Regt,-,Inf,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+56 VA,Regt,-,Inf,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+59 VA,Regt,-,Inf,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+60 VA,Regt,-,Inf,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+63 VA,Regt,-,Inf,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+4 VA HA,Regt,-,Inf,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+Art Res-2,Regt,ANV,Art,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+Art Res-3,Regt,ANV,Art,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
+5 VA,Regt,Cav,Cav,1,Richmond Box,Confederate,[],9,The Peninsula Campaign
+10 VA,Regt,Cav,Cav,1,Richmond Box,Confederate,[],9,The Peninsula Campaign
+13 VA,Regt,Cav,Cav,1,Richmond Box,Confederate,[],9,The Peninsula Campaign
+Branch,Brig,AH,Inf,9,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
+Ripley,Brig,HO,Inf,6,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
+Martin,Brig,-,Inf,9,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
+Lawton,Brig,-,Inf,9,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
+Drayton,Brig,-,Inf,6,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
+Evans,Brig,-,Inf,6,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
+DeSaussure,Brig,-,Inf,6,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
+40VA,Regt,-,Inf,2,Rappahannock Box,Confederate,[],9,The Peninsula Campaign
+9VA,Regt,Cav,Cav,1,Rappahannock Box,Confederate,[],9,The Peninsula Campaign
+Holmes,Div,HO,Inf,4,Dept of N.C. Box,Confederate,[],9,The Peninsula Campaign
+Ransom,Brig,HO,Inf,7,Dept of N.C. Box,Confederate,[],9,The Peninsula Campaign
+1 NC,Regt,Cav,Cav,1,Dept of N.C. Box,Confederate,[],9,The Peninsula Campaign
+Jackson,Div,J,Ldr,-,Valley Box,Confederate,[],9,The Peninsula Campaign
+Winder,Div,J,Inf,15,Valley Box,Confederate,[],9,The Peninsula Campaign
+Ewell,Div,J,Inf,17,Valley Box,Confederate,[],9,The Peninsula Campaign
+2 VA,Regt,Cav,Cav,1,Valley Box,Confederate,[],9,The Peninsula Campaign
+AP Hill,Div,AH,Ldr,-,See 13.1,Confederate,[],9,The Peninsula Campaign
+Ward,Brig,M,Inf,2*,S5510 (Yorktown),Confederate,['*'],9,The Peninsula Campaign
+Siege,Regt,M,Art,2*,S5510 (Yorktown),Confederate,['*'],9,The Peninsula Campaign
+Crump,Brig,M,Inf,2*,S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
+Pryor,Brig,M,Inf,4*,S5510 (Yorktown) or S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
+10 GA,Regt,M,Inf,1*,S5017 (Mulberry Point),Confederate,['*'],9,The Peninsula Campaign
+Wilcox-A,Brig,M,Inf,6,N4226 (West Point),Confederate,[],9,The Peninsula Campaign
+Colston,Brig,M,Inf,4,S4811 (Grove Wharf),Confederate,[],9,The Peninsula Campaign
+Magruder,Div,M,Ldr,-,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Rodes-A,Brig,M,Inf,5,S4407 (Williamsburg),Confederate,[],9,The Peninsula Campaign
+DH Hill,Div,DH,Ldr,-,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Featherston,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Grifffith,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Richmond-1,Regt,-,Inf,1*,N0526 (Public Square),Confederate,['*'],9,The Peninsula Campaign
+Richmond-2,Regt,-,Inf,1*,N0626 (President’s House),Confederate,['*'],9,The Peninsula Campaign
+Richmond-3,Regt,-,Inf,1*,N0727 (Union Hill),Confederate,['*'],9,The Peninsula Campaign
+Richmond-4,Regt,-,Inf,1*,N0827 (Chimborazo Hill),Confederate,['*'],9,The Peninsula Campaign
+Wise-B,Brig,DH,Inf,3,N0728 (Church Hill),Confederate,[],9,The Peninsula Campaign
+Art Res-1,Brig,ANV,Art,2,N0627 (Capitol),Confederate,[],9,The Peninsula Campaign
+Toombs,Brig,M,Inf,5,N0527 (Hollywood Cemetery),Confederate,[],9,The Peninsula Campaign
+7 VA,Regt,HO,Inf,1*,S0413 (Petersburg),Confederate,['*'],9,The Peninsula Campaign
+Walker,Brig,HO,Inf,8,S0513 (Petersburg),Confederate,[],9,The Peninsula Campaign
+Kershaw,Brig,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
+Johnston,Army,ANV,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Smith,Div,S,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+3 VA,Regt,HU,Inf,1*,S4717 (Harden’s Bluff),Confederate,['*'],9,The Peninsula Campaign
+Ward,Brig,M,Inf,2*,S5510 (Yorktown) or S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
+Siege,Regt,M,Art,2*,S5510 (Yorktown),Confederate,['*'],9,The Peninsula Campaign
+Crump,Brig,M,Inf,2*,S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
+10 GA,Regt,M,Inf,1*,S5017 (Mulberry Point),Confederate,['*'],9,The Peninsula Campaign
+Wilcox-A,Brig,M,Inf,6,N4226 (West Point),Confederate,[],9,The Peninsula Campaign
+Colston,Brig,M,Inf,4,S4811 (Grove Wharf),Confederate,[],9,The Peninsula Campaign
+Magruder,Div,M,Ldr,-,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Pryor,Brig,M,Inf,4,N2917 (King William Court House),Confederate,[],9,The Peninsula Campaign
+Rodes-A,Brig,M,Inf,5,N3121 (Lanesville),Confederate,[],9,The Peninsula Campaign
+DH Hill,Div,DH,Ldr,-,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Featherston,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Grifffith,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Richmond-1,Regt,-,Inf,1*,N0526 (Public Square),Confederate,['*'],9,The Peninsula Campaign
+Richmond-2,Regt,-,Inf,1*,N0626 (President’s House),Confederate,['*'],9,The Peninsula Campaign
+Richmond-3,Regt,-,Inf,1*,N0727 (Union Hill),Confederate,['*'],9,The Peninsula Campaign
+Richmond-4,Regt,-,Inf,1*,N0827 (Chimborazo Hill),Confederate,['*'],9,The Peninsula Campaign
+Wise-B,Brig,DH,Inf,3,N0728 (Church Hill),Confederate,[],9,The Peninsula Campaign
+Art Res-1,Brig,ANV,Art,2,N0627 (Capitol),Confederate,[],9,The Peninsula Campaign
+Toombs,Brig,M,Inf,5,N0527 (Hollywood Cemetery),Confederate,[],9,The Peninsula Campaign
+7 VA,Regt,HO,Inf,1*,S0413 (Petersburg),Confederate,['*'],9,The Peninsula Campaign
+Walker,Brig,HO,Inf,8,S0513 (Petersburg),Confederate,[],9,The Peninsula Campaign
+Kershaw,Brig,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
+Johnston,Army,ANV,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Smith,Div,S,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+3 VA,Regt,HU,Inf,1*,S4717 (Harden’s Bluff),Confederate,['*'],9,The Peninsula Campaign
+Ward,Brig,M,Inf,2*,S5510 (Yorktown) or S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
+Siege,Regt,M,Art,2*,S5510 (Yorktown),Confederate,['*'],9,The Peninsula Campaign
+Crump,Brig,M,Inf,2*,S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
+10 GA,Regt,M,Inf,1*,S5017 (Mulberry Point),Confederate,['*'],9,The Peninsula Campaign
+Wilcox-A,Brig,M,Inf,6,N4226 (West Point),Confederate,[],9,The Peninsula Campaign
+Colston,Brig,M,Inf,4,S4811 (Grove Wharf),Confederate,[],9,The Peninsula Campaign
+Magruder,Div,M,Ldr,-,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Pryor,Brig,M,Inf,4,N2411 (Aylett’s),Confederate,[],9,The Peninsula Campaign
+Rodes-A,Brig,M,Inf,5,N2917 (King William Court House),Confederate,[],9,The Peninsula Campaign
+DH Hill,Div,DH,Ldr,-,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Featherston,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Grifffith,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Richmond-1,Regt,-,Inf,1*,N0526 (Public Square),Confederate,['*'],9,The Peninsula Campaign
+Richmond-2,Regt,-,Inf,1*,N0626 (President’s House),Confederate,['*'],9,The Peninsula Campaign
+Richmond-3,Regt,-,Inf,1*,N0727 (Union Hill),Confederate,['*'],9,The Peninsula Campaign
+Richmond-4,Regt,-,Inf,1*,N0827 (Chimborazo Hill),Confederate,['*'],9,The Peninsula Campaign
+Wise-B,Brig,DH,Inf,3,N0728 (Church Hill),Confederate,[],9,The Peninsula Campaign
+Art Res-1,Brig,ANV,Art,2,N0627 (Capitol),Confederate,[],9,The Peninsula Campaign
+Toombs,Brig,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
+7 VA,Regt,HO,Inf,1*,S0413 (Petersburg),Confederate,['*'],9,The Peninsula Campaign
+Walker,Brig,HO,Inf,8,S0513 (Petersburg),Confederate,[],9,The Peninsula Campaign
+Kershaw,Brig,M,Inf,5,N1209 (Capt. White),Confederate,[],9,The Peninsula Campaign
+Johnston,Army,ANV,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+3 VA,Regt,HU,Inf,1*,S4717 (Harden’s Bluff),Confederate,['*'],9,The Peninsula Campaign
+Heintzelman,Corps,III,Ldr,-,S5814 (Cockletown),Union,[],9,The Peninsula Campaign
+Porter,Div,III,Inf,21,S5814 (Cockletown),Union,[],9,The Peninsula Campaign
+Kearny,Div,III,Inf,18,S5815 (Howard's Bridge),Union,[],9,The Peninsula Campaign
+Sedgwick,Div,II,Inf,17,S5816,Union,[],9,The Peninsula Campaign
+Keyes,Corps,IV,Ldr,-,S5518,Union,[],9,The Peninsula Campaign
+Smith-A,Div,IV,Inf,19,S5518,Union,[],9,The Peninsula Campaign
+5/6 US,Regt,-,Cav,1,S5518,Union,[],9,The Peninsula Campaign
+Couch,Div,IV,Inf,17,S5618,Union,[],9,The Peninsula Campaign
+6 PA,Regt,-,Cav,1,Reinforcement: see Special Rule 1,Union,[],9,The Peninsula Campaign
+3/8 PA,Regt,-,Cav,1,Reinforcement: see Special Rule 1,Union,[],9,The Peninsula Campaign
+Sykes-A,Brig,-,Inf,8,Reinforcement: see Special Rule 1,Union,[],9,The Peninsula Campaign
+Art Res-1,Regt,-,Art,2,Reinforcement: see Special Rule 1,Union,[],9,The Peninsula Campaign
+Art Res-2,Regt,-,Art,2,Reinforcement: see Special Rule 1,Union,[],9,The Peninsula Campaign
+Horse Art,Regt,-,Art,2,Reinforcement: see Special Rule 1,Union,[],9,The Peninsula Campaign
+McClellan,Army,AP,Ldr,-,Turn 7 Reinforcement (see 13.2),Union,[],9,The Peninsula Campaign
+Sumner,Corps,II,Ldr,-,Turn 7 Reinforcement (see 13.2),Union,[],9,The Peninsula Campaign
+Richardson,Div,II,Inf,16,Turn 7 Reinforcement (see 13.2),Union,[],9,The Peninsula Campaign
+Hooker,Div,III,Inf,19,Turn 7 Reinforcement (see 13.2),Union,[],9,The Peninsula Campaign
+Casey,Div,IV,Inf,18,Turn 7 Reinforcement (see 13.2),Union,[],9,The Peninsula Campaign
+Franklin,Div,-,Inf,18,Turn 14 Reinforcement (see 13.2),Union,[],9,The Peninsula Campaign
+McDowell,Corps,I,Ldr,-,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+McCall-A,Div,I,Inf,18,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+King,Div,I,Inf,18,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+Ord,Div,I,Inf,18,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+Shields,Div,I,Inf,13,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+Doubleday,Brig,I,Inf,4,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+Carroll-B,Brig,I,Inf,4,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+2 NY,Regt,-,Cav,1,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+4 PA,Regt,-,Cav,1,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+1 RI,Regt,-,Cav,1,Fredericksburg Box,Union,[],9,The Peninsula Campaign
+Viele,Brig,DV,Inf,7,Fort Monroe Box,Union,[],9,The Peninsula Campaign
+Weber,Brig,DV,Inf,5,Fort Monroe Box,Union,[],9,The Peninsula Campaign
+Robinson,Brig,DV,Inf,4,Fort Monroe Box,Union,[],9,The Peninsula Campaign
+11 PA,Regt,-,Cav,1,Fort Monroe Box,Union,[],9,The Peninsula Campaign
+Gunboat-1,-,-,Special,-,Hampton Roads Box (Gunboat Display),Union,[],9,The Peninsula Campaign
+Gunboat-2,-,-,Special,-,Hampton Roads Box (Gunboat Display)#,Union,[],9,The Peninsula Campaign
+1 NY,Regt,-,Cav,1,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+8 IL,Regt,-,Cav,1,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+5 PA,Regt,-,Cav,1,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+1 NY Mrif,Regt,-,Cav,1,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+59/101 NY,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+3/4 NY,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+12/25 NY,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+7/69 NY,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+71/148 NY,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+99/115 PA,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+11/91 PA,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+67/87 PA,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+2DE/32MA,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+5MD/19WI,Regt,-,Inf,3,Baltimore/DC box,Union,[],9,The Peninsula Campaign
+Burnside,Corps,IX,Ldr,-,Atlantic Coast Box,Union,[],9,The Peninsula Campaign
+Reno,Div,IX,Inf,8,Atlantic Coast Box,Union,[],9,The Peninsula Campaign
+Parke,Div,IX,Inf,8,Atlantic Coast Box,Union,[],9,The Peninsula Campaign
+Foster,Div,IX,Inf,8,Atlantic Coast Box,Union,[],9,The Peninsula Campaign
+Stevens,Div,IX,Inf,8,Atlantic Coast Box,Union,[],9,The Peninsula Campaign
+Wright,Div,IX,Inf,8,Atlantic Coast Box,Union,[],9,The Peninsula Campaign
+Heintzelman,Corps,III,Ldr,-,S5503,Union,[],9,The Peninsula Campaign
+Porter,Div,III,Inf,21,S5503,Union,[],9,The Peninsula Campaign
+Kearny,Div,III,Inf,18,S5602,Union,[],9,The Peninsula Campaign
+Sedgwick,Div,II,Inf,17,S5502,Union,[],9,The Peninsula Campaign
+Keyes,Corps,IV,Ldr,-,S5702,Union,[],9,The Peninsula Campaign
+Smith-A,Div,IV,Inf,19,S5702,Union,[],9,The Peninsula Campaign
+Couch,Div,IV,Inf,17,S5702,Union,[],9,The Peninsula Campaign
+5/6 US,Regt,-,Cav,1,S5401,Union,[],9,The Peninsula Campaign
+6 PA,Regt,-,Cav,1*,S5803,Union,['*'],9,The Peninsula Campaign
+3/8 PA,Regt,-,Cav,1*,S5803,Union,['*'],9,The Peninsula Campaign
+Sykes-A,Brig,-,Inf,8*,S5601,Union,['*'],9,The Peninsula Campaign
+Art Res-1,Regt,-,Art,2*,S5601,Union,['*'],9,The Peninsula Campaign
+Art Res-2,Regt,-,Art,2*,S5601,Union,['*'],9,The Peninsula Campaign
+Horse Art,Regt,-,Art,2*,S5601,Union,['*'],9,The Peninsula Campaign
+Heintzelman,Corps,III,Ldr,-,N5219,Union,[],9,The Peninsula Campaign
+Porter,Div,III,Inf,21,N5219,Union,[],9,The Peninsula Campaign
+Kearny,Div,III,Inf,18,N5319,Union,[],9,The Peninsula Campaign
+Sedgwick,Div,II,Inf,17,N5318,Union,[],9,The Peninsula Campaign
+Keyes,Corps,IV,Ldr,-,N5217,Union,[],9,The Peninsula Campaign
+Smith-A,Div,IV,Inf,19,N5217,Union,[],9,The Peninsula Campaign
+Couch,Div,IV,Inf,17,N5317,Union,[],9,The Peninsula Campaign
+5/6 US,Regt,-,Cav,1,N5118,Union,[],9,The Peninsula Campaign
+6 PA,Regt,-,Cav,1*,N5418 (Urbana),Union,['*'],9,The Peninsula Campaign
+3/8 PA,Regt,-,Cav,1*,N5418 (Urbana),Union,['*'],9,The Peninsula Campaign
+Sykes-A,Brig,-,Inf,8*,N5418 (Urbana),Union,['*'],9,The Peninsula Campaign
+Art Res-1,Regt,-,Art,2*,N5418 (Urbana),Union,['*'],9,The Peninsula Campaign
+Art Res-2,Regt,-,Art,2*,N5418 (Urbana),Union,['*'],9,The Peninsula Campaign
+Horse Art,Regt,-,Art,2*,N5418 (Urbana),Union,['*'],9,The Peninsula Campaign
+Heintzelman,Corps,III,Ldr,-,N3402 (Mill),Union,[],9,The Peninsula Campaign
+Porter,Div,III,Inf,21,N3402 (Mill),Union,[],9,The Peninsula Campaign
+Kearny,Div,III,Inf,18,N3503,Union,[],9,The Peninsula Campaign
+Sedgwick,Div,II,Inf,17,N3502,Union,[],9,The Peninsula Campaign
+Keyes,Corps,IV,Ldr,-,N3604,Union,[],9,The Peninsula Campaign
+Smith-A,Div,IV,Inf,19,N3604,Union,[],9,The Peninsula Campaign
+Couch,Div,IV,Inf,17,N3603,Union,[],9,The Peninsula Campaign
+5/6 US,Regt,-,Cav,1,N3403,Union,[],9,The Peninsula Campaign
+6 PA,Regt,-,Cav,1*,N3602 (Tappahannock),Union,['*'],9,The Peninsula Campaign
+3/8 PA,Regt,-,Cav,1*,N3602 (Tappahannock),Union,['*'],9,The Peninsula Campaign
+Sykes-A,Brig,-,Inf,8*,N3602 (Tappahannock),Union,['*'],9,The Peninsula Campaign
+Art Res-1,Regt,-,Art,2*,N3602 (Tappahannock),Union,['*'],9,The Peninsula Campaign
+Art Res-2,Regt,-,Art,2*,N3602 (Tappahannock),Union,['*'],9,The Peninsula Campaign
+Horse Art,Regt,-,Art,2*,N3602 (Tappahannock),Union,['*'],9,The Peninsula Campaign

@@ -1,0 +1,21 @@
+# Python
+parser/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data files (PDFs are copyrighted)
+data/*.pdf
+
+# Node.js
+web/node_modules/
+web/dist/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
