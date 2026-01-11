@@ -19,6 +19,11 @@
       "id": "hcr",
       "name": "Here Come the Rebels!",
       "file": "hcr.json"
+    },
+    {
+      "id": "rtg2",
+      "name": "Roads to Gettysburg 2",
+      "file": "rtg2.json"
     }
   ]
 }

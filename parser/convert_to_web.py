@@ -31,6 +31,12 @@ GAMES = [
         "parser_output": "hcr_scenarios.json",
         "web_output": "hcr.json",
     },
+    {
+        "id": "rtg2",
+        "name": "Roads to Gettysburg 2",
+        "parser_output": "rtg2_scenarios.json",
+        "web_output": "rtg2.json",
+    },
 ]
 
 

@@ -95,6 +95,18 @@ class ScenarioParser:
             7: "From Frederick to Sharpsburg",
             8: "The Maryland Campaign",
         },
+        "rtg2": {
+            1: "Meade Moves North",
+            2: "Stuart Rides North",
+            3: "Confederate High Tide",
+            4: "First Day at Gettysburg",
+            5: "Battle of Gettysburg",
+            6: "The Pipe Creek Plan",
+            7: "The Battle Continues",
+            8: "The Wagoneer's Fight",
+            9: "The Battle that Never Happened",
+            10: "The Gettysburg Campaign",
+        },
     }
     
     def __init__(self, pdf_path: str, game_id: str = "otr2"):
@@ -137,8 +149,15 @@ class ScenarioParser:
             if not text:
                 continue
             
-            # Skip table of contents pages (page 2-3)
+            # Skip table of contents pages
+            # Early TOC pages (usually pages 1-3)
             if i < 3:
+                continue
+            
+            # Also skip pages that contain TOC markers like "Table of Contents" or "Basic Game Scenarios"
+            # (RTG2 has its TOC on page 45)
+            text_lower = text.lower()
+            if 'table of contents' in text_lower or 'basic game scenarios' in text_lower:
                 continue
                 
             for line in text.split('\n'):
@@ -222,13 +241,24 @@ class ScenarioParser:
                         stop_parsing = True
                         break
                 
-                # Stop if we hit Advanced Game Rules section (marks end of basic scenarios)
-                if re.search(r'advanced game (rules|sequence of play)', line_lower):
-                    stop_parsing = True
-                    break
-                if re.match(r'^\d+\.\d*\s+advanced game', line_lower):
-                    stop_parsing = True
-                    break
+                # Stop if we hit Advanced Game Rules SECTION HEADER - but not just
+                # references to advanced game rules within scenario text.
+                # The actual section header is a line that STARTS with the section indicator,
+                # like "1.0 advanced Game sequence of play" or "advanced Game Rules" as a title.
+                # Skip lines that just mention "Advanced Game" in the middle of other text.
+                is_advanced_game_section_header = (
+                    # Numbered section header like "1.0 advanced Game sequence of play"
+                    re.match(r'^\d+\.\d*\s+advanced\s+game', line_lower) or
+                    # Line starts with "advanced game rules" as a title
+                    re.match(r'^advanced\s+game\s+rules\b', line_lower) or
+                    # The intro line for the advanced rules section (but must start with it)
+                    re.match(r'^the following rules are used only in advanced game', line_lower)
+                )
+                if is_advanced_game_section_header:
+                    # Only stop if we haven't started collecting units
+                    if not scenario.confederate_units and not scenario.union_units:
+                        stop_parsing = True
+                        break
                 
                 # Detect section headers (including continuations like "cntd")
                 # But IGNORE continuations "(cntd)" as they belong to previous scenario
@@ -368,6 +398,11 @@ class ScenarioParser:
         # HSN has an extra "Set" column (reinforcement arrival turn) between name and size
         # Strip the trailing number if it's a standalone digit (1-9)
         if self.game_id == "hsn" and name_parts and re.match(r'^\d$', name_parts[-1]):
+            name_parts = name_parts[:-1]
+        
+        # RTG2 has "Wagon Train" special units that appear in tables as "Wagon Train 1", "Wagon Train 2", etc.
+        # Strip the trailing number for these units
+        if self.game_id == "rtg2" and len(name_parts) >= 2 and name_parts[0] == "Wagon" and name_parts[1] == "Train" and re.match(r'^\d$', name_parts[-1]):
             name_parts = name_parts[:-1]
         
         unit_name = ' '.join(name_parts)
