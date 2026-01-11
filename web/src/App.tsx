@@ -5,6 +5,9 @@ import { RosterSheet } from "./components/RosterSheet";
 import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
 
+// Get base path from Vite (handles GitHub Pages deployment)
+const BASE_URL = import.meta.env.BASE_URL;
+
 function App() {
   const [games, setGames] = useState<GameInfo[]>([]);
   const [selectedGameId, setSelectedGameId] = useState<string | null>(null);
@@ -15,7 +18,7 @@ function App() {
 
   // Load games index on mount
   useEffect(() => {
-    fetch("/data/games.json")
+    fetch(`${BASE_URL}data/games.json`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load games index");
         return res.json();
@@ -45,7 +48,7 @@ function App() {
     setGameData(null);
     setSelectedScenario(null);
 
-    fetch(`/data/${game.file}`)
+    fetch(`${BASE_URL}data/${game.file}`)
       .then((res) => {
         if (!res.ok) throw new Error(`Failed to load ${game.name} data`);
         return res.json();
