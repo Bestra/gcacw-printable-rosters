@@ -359,6 +359,12 @@ function LeaderHeader({
   
   return (
     <div className="flow-leader-header">
+      <div className="flow-leader-header__counter">
+        <div className="flow-leader-header__counter-box">
+          <span className="flow-leader-header__name">{leader.name}</span>
+          {notes && <span className="flow-leader-header__notes">{notes}</span>}
+        </div>
+      </div>
       <div className="flow-leader-header__setup">
         {showHexLocation && (
           <>
@@ -371,12 +377,6 @@ function LeaderHeader({
           <span className="flow-leader-header__reinforcement">Reinf Set {leader.reinforcementSet}</span>
         )}
         {fatigue && <span className="flow-leader-header__fatigue">{fatigue}</span>}
-      </div>
-      <div className="flow-leader-header__counter">
-        <div className="flow-leader-header__counter-box">
-          <span className="flow-leader-header__name">{leader.name}</span>
-          {notes && <span className="flow-leader-header__notes">{notes}</span>}
-        </div>
       </div>
     </div>
   );

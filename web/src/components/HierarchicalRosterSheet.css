@@ -150,7 +150,9 @@
 /* Leader header */
 .hier-leader-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.25rem;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 2px;
@@ -159,11 +161,10 @@
 
 .hier-leader-header__setup {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.125rem;
   font-size: 0.75rem;
-  margin-bottom: 0.125rem;
 }
 
 .hier-leader-header__hex {
