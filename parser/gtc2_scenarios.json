@@ -1032,7 +1032,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "N1701",
         "side": "Union",
         "notes": []
       },
@@ -1042,7 +1042,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "N1701",
         "side": "Union",
         "notes": []
       },
@@ -1052,7 +1052,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "N1701",
         "side": "Union",
         "notes": []
       },
@@ -3777,47 +3777,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "is only for use in the GTC Grand Campaigns (see Grand",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "gunboat",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "is available only on the James River. Place each marker on the Bombardment is not an action; it must be performed before the player holding",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "GUnboats",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "and bridGes/ferries other than the Manpower value reduction of 1. The units in the target",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Gunboats",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "may provide two kinds of \u201csupport\u201d: \u201cdefensive support\u201d or \u201cbom-",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "gunboat",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "may only provide support in hexes containing at least one eligible Each Turn (County Control Phase): Each turn, during the County Control",
+        "hex_location": "",
         "side": "Union",
         "notes": []
       }
@@ -6213,26 +6173,6 @@
         "hex_location": "Special Reinforcement",
         "side": "Union",
         "notes": []
-      },
-      {
-        "unit_leader": "gunboat",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "is still available only on the James River. The Confederate is",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "gunboat",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "may only provide support in hexes containing at least one major river",
-        "side": "Union",
-        "notes": []
       }
     ]
   },
@@ -6600,7 +6540,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "N0734 (Drewry\u2019s Bluff)",
         "side": "Confederate",
         "notes": []
       },
@@ -6622,7 +6562,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "N0934 (Chaffin\u2019s Bluff)",
         "side": "Confederate",
         "notes": []
       },
@@ -6632,7 +6572,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "S0709 (Fort Clifton)",
         "side": "Confederate",
         "notes": []
       },
@@ -7808,7 +7748,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "N0734 (Drewry\u2019s Bluff)",
         "side": "Confederate",
         "notes": []
       },
@@ -7828,7 +7768,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "N0934 (Chaffin\u2019s Bluff)",
         "side": "Confederate",
         "notes": []
       },
@@ -8084,7 +8024,7 @@
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "S0709 (Fort Clifton)",
         "side": "Confederate",
         "notes": []
       },
@@ -8833,16 +8773,6 @@
         "unit_type": "Cav",
         "manpower_value": "2",
         "hex_location": "Special Reinforcement",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "wagons",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "",
         "side": "Union",
         "notes": []
       }

@@ -75,16 +75,23 @@
 
 .unit-card__mp {
   font-weight: 600;
+  font-size: 0.55rem;
   display: block;
-}
-
-.unit-card__hex {
-  display: block;
+  margin: auto 0;
 }
 
 .unit-card__fatigue {
   font-weight: 600;
   color: #000;
+}
+
+.unit-card__setup-info {
+  margin-top: auto;
+  text-align: center;
+}
+
+.unit-card__hex {
+  display: block;
 }
 
 .unit-card__location {
@@ -95,7 +102,6 @@
   overflow-wrap: break-word;
   text-align: center;
   line-height: 1.1;
-  margin-top: auto;
 }
 
 /* Print styles */

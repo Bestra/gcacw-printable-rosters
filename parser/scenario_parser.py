@@ -264,8 +264,20 @@ class ScenarioParser:
         
         # Handle special units first (Gunboat, Wagon Train, Naval Battery)
         # These have format: "Name - - - - Location" or similar
+        # Valid patterns: "Gunboat-1", "Gunboat-2", "Naval Battery", "Wagon Train-A"
+        # Skip lines that are clearly rules text (lowercase "gunboat" in explanatory text)
         first_part = parts[0].lower()
-        if any(x in first_part for x in ['gunboat', 'wagon', 'naval']):
+        
+        # More specific check for valid special unit names
+        # Gunboat must start with uppercase G (to avoid "gunboat" in rules text)
+        is_gunboat = re.match(r'^Gunboat-?\d*$', parts[0]) is not None
+        is_naval = first_part == 'naval' and len(parts) > 1 and parts[1].lower() == 'battery'
+        is_wagon = first_part == 'wagon' and len(parts) > 1 and parts[1].lower().startswith('train')
+        
+        # Also accept parenthesized gunboat like "(Gunboat-2)"
+        is_paren_gunboat = parts[0].startswith('(Gunboat')
+        
+        if is_gunboat or is_naval or is_wagon or is_paren_gunboat:
             # Special unit - parse differently
             unit_name = parts[0]
             if parts[0].lower() == 'wagon' and len(parts) > 1:
@@ -273,28 +285,31 @@ class ScenarioParser:
             elif parts[0].lower() == 'naval' and len(parts) > 1:
                 unit_name = f"{parts[0]} {parts[1]}"  # "Naval Battery"
             
-            # Find manpower value (first non-dash numeric-ish value or dash)
-            manpower = '-'
-            hex_location = ''
-            for i, p in enumerate(parts):
-                if p not in ['-', unit_name] and not p.startswith('-'):
-                    if any(c.isdigit() for c in p) or p == '-':
-                        # Check if this could be manpower
-                        if i > 1 and parts[i-1] == '-':
-                            manpower = p
-                            hex_location = ' '.join(parts[i+1:])
-                            break
+            # For special units, find location after the dashes
+            # Expected format: "Gunboat-1 - - - - Location" or "Naval Battery - - - Location"
+            # Find the last dash and take everything after it as location
+            dash_indices = [i for i, p in enumerate(parts) if p == '-']
+            if dash_indices:
+                last_dash = dash_indices[-1]
+                hex_location = ' '.join(parts[last_dash + 1:])
+            else:
+                # No dashes - look for hex pattern or box/river keywords
+                hex_location = ''
+                for i, p in enumerate(parts):
+                    if re.match(r'^[NS]\d{4}', p) or 'Box' in p or 'River' in p or 'Display' in p or 'Reinforcement' in p:
+                        hex_location = ' '.join(parts[i:])
+                        break
             
-            # For gunboats, location is usually the last part(s)
-            if 'gunboat' in first_part:
-                hex_location = ' '.join([p for p in parts if p not in [parts[0], '-']])
+            # Sanity check: if hex_location is too long, it's probably rules text
+            if len(hex_location) > 60:
+                hex_location = ''
             
             return Unit(
                 unit_leader=unit_name,
                 size='-',
                 command='-',
                 unit_type='Special',
-                manpower_value=manpower,
+                manpower_value='-',
                 hex_location=hex_location,
                 side=side,
                 notes=[]

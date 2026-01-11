@@ -411,8 +411,8 @@
         "size": "-",
         "command": "-",
         "unit_type": "Special",
-        "manpower_value": "2*",
-        "hex_location": "S4407 (Williamsburg)",
+        "manpower_value": "-",
+        "hex_location": "2* S4407 (Williamsburg)",
         "side": "Confederate",
         "notes": []
       },
@@ -421,8 +421,8 @@
         "size": "-",
         "command": "-",
         "unit_type": "Special",
-        "manpower_value": "2*",
-        "hex_location": "S4307 (William & Mary Col.)",
+        "manpower_value": "-",
+        "hex_location": "2* S4307 (William & Mary Col.)",
         "side": "Confederate",
         "notes": []
       },
@@ -2235,8 +2235,8 @@
         "size": "-",
         "command": "-",
         "unit_type": "Special",
-        "manpower_value": "S0301",
-        "hex_location": "(Drewry\u2019s Bluff)",
+        "manpower_value": "-",
+        "hex_location": "S0301 (Drewry\u2019s Bluff)",
         "side": "Confederate",
         "notes": []
       },
@@ -2785,8 +2785,8 @@
         "size": "-",
         "command": "-",
         "unit_type": "Special",
-        "manpower_value": "2",
-        "hex_location": "N1627 (Savage Station)",
+        "manpower_value": "-",
+        "hex_location": "2 N1627 (Savage Station)",
         "side": "Union",
         "notes": []
       },
@@ -2795,8 +2795,8 @@
         "size": "-",
         "command": "-",
         "unit_type": "Special",
-        "manpower_value": "2",
-        "hex_location": "N1728 (Watkins Mill)",
+        "manpower_value": "-",
+        "hex_location": "2 N1728 (Watkins Mill)",
         "side": "Union",
         "notes": []
       },
@@ -3458,8 +3458,8 @@
         "size": "-",
         "command": "-",
         "unit_type": "Special",
-        "manpower_value": "S0301",
-        "hex_location": "(Drewry\u2019s Bluff)",
+        "manpower_value": "-",
+        "hex_location": "S0301 (Drewry\u2019s Bluff)",
         "side": "Confederate",
         "notes": []
       },
@@ -3830,62 +3830,12 @@
         "notes": []
       },
       {
-        "unit_leader": "gunboat",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "name, while the reverse side has \u201cBombardment Used\u201d",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "gunboat",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "to the next higher number space on the Defensive Support Track in",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Gunboats",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "and brIdGes/ferrIes the box the gunboat occupies; on the first use, the gunboat is moved to the",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Gunboats",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "and combat Phase.",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Gunboats",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "may provide two kinds of \u201csupport\u201d to the Union player: \u201cdefensive \u2022 The Confederate unit to be bombarded must occupy a hex containing",
-        "side": "Union",
-        "notes": []
-      },
-      {
         "unit_leader": "Gunboat",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "on the display. corresponding to the Turn box occupied by the Gunboat, it is returned to the",
+        "hex_location": "",
         "side": "Union",
         "notes": []
       },

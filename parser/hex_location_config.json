@@ -1,0 +1,141 @@
+{
+    "_comment": "Configuration for parsing and displaying hex locations. Add new patterns when encountering edge cases in new scenario PDFs.",
+    "gameMapPrefixes": [
+        "GTC",
+        "OTR",
+        "SIV",
+        "SJW"
+    ],
+    "boxAbbreviations": {
+        "Bermuda Hundred Box": "Bermuda Hund. Box",
+        "Port Walthall Station Box": "Pt Walthall Sta Box"
+    },
+    "locationAbbreviations": {
+        "Junction": "Jct",
+        "Station": "Sta",
+        "Church": "Ch",
+        "Courthouse": "Ct Hse",
+        "Court House": "Ct Hse",
+        "Crossroads": "X-Roads",
+        "Cross Roads": "X-Roads",
+        "County": "Co."
+    },
+    "specialLocations": {
+        "Upon CSA reorganization": {
+            "hexCode": "CSA Reorg.",
+            "locationName": null
+        }
+    },
+    "patterns": [
+        {
+            "_comment": "Standard hex codes with optional game prefix: 'GTC N2311 (Locust Grove)'",
+            "type": "hex",
+            "regex": "^((?:GTC|OTR|SIV|SJW)\\s+)?([NSM]\\d{4})(?:\\s+\\(([^)]+)\\))?$",
+            "hexCodeGroups": [
+                1,
+                2
+            ],
+            "locationGroup": 3
+        },
+        {
+            "_comment": "River box locations: 'York River Box', 'James River East'",
+            "type": "riverBox",
+            "regex": "^(York|James)\\s+River\\s*(Box|East|West)?$",
+            "hexCodeTemplate": "{1} River {2}"
+        },
+        {
+            "_comment": "Display locations: 'Display – York River'",
+            "type": "display",
+            "regex": "^Display\\s*[–-]\\s*(.+)$",
+            "hexCodeTemplate": "Display: {1}"
+        },
+        {
+            "_comment": "Turn reinforcements: 'Turn 7 Reinforcements (see 13.1)'",
+            "type": "turnReinforcement",
+            "regex": "^Turn\\s+(\\d+)\\s+Reinforcements?.*$",
+            "hexCodeTemplate": "Turn {1} Reinf."
+        },
+        {
+            "_comment": "Reinforcement with see rule: 'Reinforcement: see Special Rule 1'",
+            "type": "seeRuleReinforcement",
+            "regex": "^Reinforcement:?\\s+see\\s+(.+)$",
+            "hexCodeTemplate": "Reinf. (see rule)"
+        },
+        {
+            "_comment": "See rule reference: 'See 13.1'",
+            "type": "seeRule",
+            "regex": "^See\\s+(\\d+\\.\\d+)$",
+            "hexCodeTemplate": "See {1}"
+        },
+        {
+            "_comment": "Box locations: 'Winchester Box', 'Drewry's Bluff box'",
+            "type": "box",
+            "regex": "^(.+?)\\s+[Bb]ox$",
+            "hexCodeTemplate": "{1} Box"
+        },
+        {
+            "_comment": "Date reinforcements: 'May 5 Reinforcement' -> 'May 5 Reinf.'",
+            "type": "dateReinforcement",
+            "regex": "^([A-Z][a-z]+\\s+\\d+)\\s+[Rr]einforcement$",
+            "hexCodeTemplate": "{1} Reinf."
+        },
+        {
+            "_comment": "Named reinforcements: 'Special Reinforcement' -> 'Special Reinf.'",
+            "type": "namedReinforcement",
+            "regex": "^(.+?)\\s+[Rr]einforcement$",
+            "hexCodeTemplate": "{1} Reinf."
+        },
+        {
+            "_comment": "Radius locations: 'Within 12 hexes of Hanover Junction'",
+            "type": "radius",
+            "regex": "^Within\\s+(\\d+)\\s+hexes?\\s+of\\s+(.+?)(?:\\s+\\([^)]+\\))?$",
+            "hexCodeTemplate": "{1} hex radius",
+            "locationGroup": 2
+        },
+        {
+            "_comment": "Any hex within radius: 'Any hex within 5 hexes of S5113'",
+            "type": "anyHexRadius",
+            "regex": "^Any\\s+hex\\s+within\\s+(\\d+)\\s+hexes?\\s+of\\s+([NSM]\\d{4})$",
+            "hexCodeTemplate": "{1}hex of {2}"
+        },
+        {
+            "_comment": "Multi-hex locations: 'S4811, S4912 or S5017'",
+            "type": "multiHex",
+            "regex": "^([NSM]\\d{4}),?\\s+([NSM]\\d{4})(?:\\s+or\\s+([NSM]\\d{4}))?$",
+            "hexCodeTemplate": "{1}/{2}"
+        },
+        {
+            "_comment": "County locations: 'In Hanover County'",
+            "type": "county",
+            "regex": "^[Ii]n\\s+(.+?)\\s+[Cc]ounty$",
+            "hexCodeTemplate": "In {1} Co."
+        },
+        {
+            "_comment": "Near locations: 'Near Petersburg'",
+            "type": "near",
+            "regex": "^[Nn]ear\\s+(.+)$",
+            "hexCodeTemplate": "Near {1}"
+        }
+    ],
+    "knownUnparseable": [
+        "is only for use in the GTC Grand Campaigns",
+        "may only provide support in hexes",
+        "is available only on the James River",
+        "is still available only on the James River",
+        "and bridGes/ferries other than",
+        "and brIdGes/ferrIes",
+        "may provide two kinds of",
+        "name, while the reverse side",
+        "to the next higher number space",
+        "the box the gunboat occupies",
+        "and combat Phase",
+        "on the display. corresponding"
+    ],
+    "emptyLocationUnits": [
+        "_comment: These unit types often have empty locations due to PDF parsing issues or special rules",
+        "Wagon Train",
+        "Naval Battery",
+        "Gunboat",
+        "gunboat"
+    ]
+}

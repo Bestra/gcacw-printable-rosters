@@ -919,7 +919,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N1701",
           "notes": []
         },
         {
@@ -928,7 +928,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N1701",
           "notes": []
         },
         {
@@ -937,7 +937,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N1701",
           "notes": []
         },
         {
@@ -3351,43 +3351,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "is only for use in the GTC Grand Campaigns (see Grand",
-          "notes": []
-        },
-        {
-          "name": "gunboat",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "is available only on the James River. Place each marker on the Bombardment is not an action; it must be performed before the player holding",
-          "notes": []
-        },
-        {
-          "name": "GUnboats",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "and bridGes/ferries other than the Manpower value reduction of 1. The units in the target",
-          "notes": []
-        },
-        {
-          "name": "Gunboats",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "may provide two kinds of \u201csupport\u201d: \u201cdefensive support\u201d or \u201cbom-",
-          "notes": []
-        },
-        {
-          "name": "gunboat",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "may only provide support in hexes containing at least one eligible Each Turn (County Control Phase): Each turn, during the County Control",
+          "hexLocation": "",
           "notes": []
         }
       ]
@@ -5538,24 +5502,6 @@
           "manpowerValue": "2",
           "hexLocation": "Special Reinforcement",
           "notes": []
-        },
-        {
-          "name": "gunboat",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "is still available only on the James River. The Confederate is",
-          "notes": []
-        },
-        {
-          "name": "gunboat",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "may only provide support in hexes containing at least one major river",
-          "notes": []
         }
       ]
     },
@@ -5882,7 +5828,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N0734 (Drewry\u2019s Bluff)",
           "notes": []
         },
         {
@@ -5902,7 +5848,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N0934 (Chaffin\u2019s Bluff)",
           "notes": []
         },
         {
@@ -5911,7 +5857,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "S0709 (Fort Clifton)",
           "notes": []
         },
         {
@@ -6967,7 +6913,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N0734 (Drewry\u2019s Bluff)",
           "notes": []
         },
         {
@@ -6985,7 +6931,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N0934 (Chaffin\u2019s Bluff)",
           "notes": []
         },
         {
@@ -7217,7 +7163,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "S0709 (Fort Clifton)",
           "notes": []
         },
         {
@@ -7896,15 +7842,6 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "Special Reinforcement",
-          "notes": []
-        },
-        {
-          "name": "wagons",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "",
           "notes": []
         }
       ]
