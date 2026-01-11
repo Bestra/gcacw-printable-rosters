@@ -5,7 +5,6 @@ Extracts scenario metadata and unit setup tables.
 """
 
 import pdfplumber
-import pandas as pd
 import re
 import json
 from dataclasses import dataclass, field, asdict
@@ -48,8 +47,38 @@ class ScenarioParser:
     VALID_SIZES = ['Army', 'Corps', 'Demi-Div', 'D-Div', 'Div', 'Brig', 'Regt']
     VALID_TYPES = ['Ldr', 'Inf', 'Cav', 'Art']
     
-    def __init__(self, pdf_path: str):
+    # Known scenario names by game
+    SCENARIO_NAMES = {
+        "otr2": {
+            1: "The Warwick Line",
+            2: "Johnston's Retreat", 
+            3: "The Gates of Richmond",
+            4: "Seven Pines",
+            5: "Stuart's Ride",
+            6: "The Seven Days",
+            7: "Gaines Mill",
+            8: "Retreat to the James",
+            9: "The Peninsula Campaign",
+        },
+        "gtc2": {
+            1: "The Battle of the Wilderness",
+            2: "Grant Crosses the Rapidan",
+            3: "Race for Spotsylvania",
+            4: "Bloody Spotsylvania",
+            5: "Sheridan Rides South",
+            6: "Strike Them a Blow!",
+            7: "Bethesda Church",
+            8: "Trevilian Station",
+            9: "The Overland Campaign",
+            10: "Grant Takes Command",
+            11: "The Overland Campaign (Advanced)",
+            12: "Grant Takes Command (Advanced)",
+        },
+    }
+    
+    def __init__(self, pdf_path: str, game_id: str = "otr2"):
         self.pdf_path = pdf_path
+        self.game_id = game_id
         self.scenarios: list[Scenario] = []
         
     def parse(self) -> list[Scenario]:
@@ -77,17 +106,7 @@ class ScenarioParser:
         scenario_pattern = re.compile(r'scenario\s+(\d+):', re.IGNORECASE)
         
         # Known scenario names from TOC for validation/cleanup
-        known_names = {
-            1: "The Warwick Line",
-            2: "Johnston's Retreat", 
-            3: "The Gates of Richmond",
-            4: "Seven Pines",
-            5: "Stuart's Ride",
-            6: "The Seven Days",
-            7: "Gaines Mill",
-            8: "Retreat to the James",
-            9: "The Peninsula Campaign"
-        }
+        known_names = self.SCENARIO_NAMES.get(self.game_id, {})
         
         results = []
         seen_scenarios = set()  # Avoid duplicates
@@ -374,17 +393,6 @@ class ScenarioParser:
             return [' '.join(r.split())[:300] for r in rules if r.strip()][:10]
         return []
     
-    def to_dataframe(self) -> pd.DataFrame:
-        """Convert all units to a pandas DataFrame."""
-        rows = []
-        for scenario in self.scenarios:
-            for unit in scenario.confederate_units + scenario.union_units:
-                row = asdict(unit)
-                row['scenario_number'] = scenario.number
-                row['scenario_name'] = scenario.name
-                rows.append(row)
-        return pd.DataFrame(rows)
-    
     def to_json(self) -> str:
         """Convert all scenarios to JSON."""
         def serialize(obj):
@@ -398,14 +406,27 @@ class ScenarioParser:
 def main():
     import sys
     
-    # Accept PDF path as argument, default to ../data/OTR2_Rules.pdf
+    # Accept PDF path and optional game_id as arguments
+    # Usage: python scenario_parser.py [pdf_path] [game_id]
+    # game_id: "otr2" (default) or "gtc2"
     if len(sys.argv) > 1:
         pdf_path = sys.argv[1]
     else:
         pdf_path = "../data/OTR2_Rules.pdf"
     
-    print(f"Parsing: {pdf_path}")
-    parser = ScenarioParser(pdf_path)
+    # Determine game_id from argument or infer from filename
+    if len(sys.argv) > 2:
+        game_id = sys.argv[2]
+    elif "GTC2" in pdf_path.upper():
+        game_id = "gtc2"
+    else:
+        game_id = "otr2"
+    
+    # Set output filename based on game_id
+    output_json = f"{game_id}_scenarios.json" if game_id != "otr2" else "all_scenarios.json"
+    
+    print(f"Parsing: {pdf_path} (game: {game_id})")
+    parser = ScenarioParser(pdf_path, game_id)
     scenarios = parser.parse()
     
     print(f"Found {len(scenarios)} scenarios\n")
@@ -423,15 +444,10 @@ def main():
         if scenario.union_footnotes:
             print(f"  Union footnotes: {scenario.union_footnotes}")
     
-    # Export all data
-    df = parser.to_dataframe()
-    df.to_csv('all_scenarios_units.csv', index=False)
-    print(f"\n\nExported {len(df)} total units to all_scenarios_units.csv")
-    
     # Export JSON
-    with open('all_scenarios.json', 'w') as f:
+    with open(output_json, 'w') as f:
         f.write(parser.to_json())
-    print("Exported scenario data to all_scenarios.json")
+    print(f"\nExported scenario data to {output_json}")
     
     # Show sample units from first scenario
     print("\n" + "=" * 70)
