@@ -1,257 +1,5 @@
 [
   {
-    "number": 1,
-    "name": "Here Come the Rebels!",
-    "start_page": 4,
-    "notes": "This quick scenario is ideal for new players to learn the game, either p against a hex with an undestroyed Union fort. (Union forts solitaire or with an opponent. There are only a few units for each side and are only used in the Advanced Game and in Basic Game minimal special rules. Also, many Standard Rules sections are not required scenario 5.) for this scenario such as Recovery. This scenario covers the opening of the The Hood Assault Bonus may never be applied to an assault campaign when Con",
-    "map_info": "",
-    "game_length": "1 turn, November 24, 1864.",
-    "special_rules": [
-      "In any Confederate attack or assault against a hex with an undestroyed 1. Start: The Confederate player automatically wins the first initiative Union fort, if the Confederate player gains an artillery modifier of +1 or without the need for a die roll. After this, initiative is determined +2, that mo",
-      "Hatch: Throughout this scenario, Croxton\u2019s cavalry brigade may be activated by Hatch as part of an Activate Leader action even though",
-      "0 entrenchments Croxton belongs to a different division.",
-      "Moore: The first time the Union player activates Moore, he may move unIon redoubts Moore up to 43 hexes as long as this movement follows railroad hexes only. If such a move is undertaken, Moore gains two Fatigue Levels. All redoubts on the map are Union redoubts. The Union Moore may never enter an e",
-      "0 brIdGes vIctory condItIons: In Hood Strikes North scenarios, standard rules for \u201cBridges, Dams, and The Confederate player gains and loses Victory Points (VP) for the following Ferries\u201d apply. However, Hood Strikes North features no dams or ferries. The occurrences at the end of the game: number o"
-    ],
-    "confederate_footnotes": {},
-    "union_footnotes": {
-      "*": "Begins game under Fort marker",
-      "\u2020": "Begins game on Exhausted side"
-    },
-    "confederate_units": [
-      {
-        "unit_leader": "Forrest",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0511 (Poplar Grove)",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Chalmers",
-        "size": "Div",
-        "command": "C-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0511 (Poplar Grove)",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Rucker",
-        "size": "Brig",
-        "command": "C-Cav",
-        "unit_type": "Cav",
-        "manpower_value": "2",
-        "hex_location": "0511 (Poplar Grove)",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Biffle",
-        "size": "Brig",
-        "command": "C-Cav",
-        "unit_type": "Cav",
-        "manpower_value": "1",
-        "hex_location": "0511 (Poplar Grove)",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Jackson",
-        "size": "Div",
-        "command": "J-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0118",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Armstrong",
-        "size": "Brig",
-        "command": "J-Cav",
-        "unit_type": "Cav",
-        "manpower_value": "2#",
-        "hex_location": "0118",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Ross",
-        "size": "Brig",
-        "command": "J-Cav",
-        "unit_type": "Cav",
-        "manpower_value": "1#",
-        "hex_location": "0118",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Buford",
-        "size": "Div",
-        "command": "B-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0119",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Bell",
-        "size": "Brig",
-        "command": "B-Cav",
-        "unit_type": "Cav",
-        "manpower_value": "2#",
-        "hex_location": "0119",
-        "side": "Confederate",
-        "notes": []
-      },
-      {
-        "unit_leader": "Crossland",
-        "size": "Brig",
-        "command": "B-Cav",
-        "unit_type": "Cav",
-        "manpower_value": "1#",
-        "hex_location": "0119",
-        "side": "Confederate",
-        "notes": []
-      }
-    ],
-    "union_units": [
-      {
-        "unit_leader": "Cox",
-        "size": "Div",
-        "command": "XXIII",
-        "unit_type": "Inf",
-        "manpower_value": "11",
-        "hex_location": "1220 (Pleasant Grove)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Ruger",
-        "size": "Div",
-        "command": "XXIII",
-        "unit_type": "Inf",
-        "manpower_value": "2*",
-        "hex_location": "1715 (Columbia)",
-        "side": "Union",
-        "notes": [
-          "*"
-        ]
-      },
-      {
-        "unit_leader": "O. Moore",
-        "size": "Brig",
-        "command": "XXIII",
-        "unit_type": "Inf",
-        "manpower_value": "4",
-        "hex_location": "5707 (Nashville)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Wagner",
-        "size": "Div",
-        "command": "IV",
-        "unit_type": "Inf",
-        "manpower_value": "11",
-        "hex_location": "0423 (Lynnville)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Stanley",
-        "size": "Corps",
-        "command": "IV",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0324 (Colored Church)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Whitaker",
-        "size": "Div",
-        "command": "IV",
-        "unit_type": "Inf",
-        "manpower_value": "5",
-        "hex_location": "0324 (Colored Church)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Wood",
-        "size": "Div",
-        "command": "IV",
-        "unit_type": "Inf",
-        "manpower_value": "9",
-        "hex_location": "0224 (Saw Mill)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Waters",
-        "size": "Brig",
-        "command": "IV",
-        "unit_type": "Inf",
-        "manpower_value": "3",
-        "hex_location": "0125",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Hatch",
-        "size": "Div",
-        "command": "Cav-5",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0420",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Coon",
-        "size": "Brig",
-        "command": "Cav-1",
-        "unit_type": "Cav",
-        "manpower_value": "2#\u2020",
-        "hex_location": "0420",
-        "side": "Union",
-        "notes": [
-          "\u2020"
-        ]
-      },
-      {
-        "unit_leader": "Croxton-A",
-        "size": "Brig",
-        "command": "Cav-5",
-        "unit_type": "Cav",
-        "manpower_value": "2#\u2020",
-        "hex_location": "0221",
-        "side": "Union",
-        "notes": [
-          "\u2020"
-        ]
-      },
-      {
-        "unit_leader": "Capron-A",
-        "size": "Brig",
-        "command": "Cav-6",
-        "unit_type": "Cav",
-        "manpower_value": "2#\u2020",
-        "hex_location": "0711 (Mt. Pleasant)",
-        "side": "Union",
-        "notes": [
-          "\u2020"
-        ]
-      }
-    ]
-  },
-  {
     "number": 2,
     "name": "The Race for Columbia",
     "start_page": 6,
@@ -531,6 +279,16 @@
       }
     ],
     "union_units": [
+      {
+        "unit_leader": "Schofield",
+        "size": "District",
+        "command": "Ohio",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0523 (Laurine)",
+        "side": "Union",
+        "notes": []
+      },
       {
         "unit_leader": "Cox",
         "size": "Div",
@@ -1106,6 +864,18 @@
     ],
     "union_units": [
       {
+        "unit_leader": "Schofield",
+        "size": "District",
+        "command": "Ohio",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "1814 (Annoatuck)",
+        "side": "Union",
+        "notes": [
+          "+"
+        ]
+      },
+      {
         "unit_leader": "Cox",
         "size": "Div",
         "command": "XXIII",
@@ -1617,6 +1387,16 @@
     ],
     "union_units": [
       {
+        "unit_leader": "Schofield",
+        "size": "District",
+        "command": "Ohio",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "3911 (Carter)",
+        "side": "Union",
+        "notes": []
+      },
+      {
         "unit_leader": "Cox",
         "size": "Div",
         "command": "XXIII",
@@ -1952,6 +1732,16 @@
     ],
     "union_units": [
       {
+        "unit_leader": "Milroy",
+        "size": "District",
+        "command": "DMT",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5232 (Murfreesboro)",
+        "side": "Union",
+        "notes": []
+      },
+      {
         "unit_leader": "Thomas",
         "size": "Brig",
         "command": "DMT",
@@ -2255,6 +2045,16 @@
         "unit_type": "Inf",
         "manpower_value": "4",
         "hex_location": "5708",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Schofield",
+        "size": "District",
+        "command": "Ohio",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5607 (Fort Negley)",
         "side": "Union",
         "notes": []
       },
@@ -2912,7 +2712,7 @@
     ],
     "confederate_footnotes": {},
     "union_footnotes": {
-      "*": "Begins game on normal side with Fatigue Level 1 marker"
+      "*": "Convert to \u201cNo Effect\u201d if winter weather is in effect (see 4.0)."
     },
     "confederate_units": [
       {
@@ -3508,6 +3308,16 @@
     ],
     "union_units": [
       {
+        "unit_leader": "Schofield",
+        "size": "District",
+        "command": "Ohio",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0523 (Laurine)",
+        "side": "Union",
+        "notes": []
+      },
+      {
         "unit_leader": "Cox",
         "size": "Div",
         "command": "XXIII",
@@ -3888,6 +3698,16 @@
         "command": "DE",
         "unit_type": "Inf",
         "manpower_value": "11",
+        "hex_location": "M",
+        "side": "Union",
+        "notes": []
+      },
+      {
+        "unit_leader": "Milroy",
+        "size": "District",
+        "command": "DN",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
         "hex_location": "M",
         "side": "Union",
         "notes": []

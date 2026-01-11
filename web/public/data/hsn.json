@@ -3,229 +3,6 @@
   "name": "Hood Strikes North",
   "scenarios": [
     {
-      "number": 1,
-      "name": "Here Come the Rebels!",
-      "gameLength": "1 turn, November 24, 1864.",
-      "mapInfo": "",
-      "confederateFootnotes": {},
-      "unionFootnotes": {
-        "*": "Begins game under Fort marker",
-        "\u2020": "Begins game on Exhausted side"
-      },
-      "confederateUnits": [
-        {
-          "name": "Forrest",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0511 (Poplar Grove)",
-          "notes": []
-        },
-        {
-          "name": "Chalmers",
-          "size": "Div",
-          "command": "C-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0511 (Poplar Grove)",
-          "notes": []
-        },
-        {
-          "name": "Rucker",
-          "size": "Brig",
-          "command": "C-Cav",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "0511 (Poplar Grove)",
-          "notes": []
-        },
-        {
-          "name": "Biffle",
-          "size": "Brig",
-          "command": "C-Cav",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "0511 (Poplar Grove)",
-          "notes": []
-        },
-        {
-          "name": "Jackson",
-          "size": "Div",
-          "command": "J-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0118",
-          "notes": []
-        },
-        {
-          "name": "Armstrong",
-          "size": "Brig",
-          "command": "J-Cav",
-          "type": "Cav",
-          "manpowerValue": "2#",
-          "hexLocation": "0118",
-          "notes": []
-        },
-        {
-          "name": "Ross",
-          "size": "Brig",
-          "command": "J-Cav",
-          "type": "Cav",
-          "manpowerValue": "1#",
-          "hexLocation": "0118",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "B-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0119",
-          "notes": []
-        },
-        {
-          "name": "Bell",
-          "size": "Brig",
-          "command": "B-Cav",
-          "type": "Cav",
-          "manpowerValue": "2#",
-          "hexLocation": "0119",
-          "notes": []
-        },
-        {
-          "name": "Crossland",
-          "size": "Brig",
-          "command": "B-Cav",
-          "type": "Cav",
-          "manpowerValue": "1#",
-          "hexLocation": "0119",
-          "notes": []
-        }
-      ],
-      "unionUnits": [
-        {
-          "name": "Cox",
-          "size": "Div",
-          "command": "XXIII",
-          "type": "Inf",
-          "manpowerValue": "11",
-          "hexLocation": "1220 (Pleasant Grove)",
-          "notes": []
-        },
-        {
-          "name": "Ruger",
-          "size": "Div",
-          "command": "XXIII",
-          "type": "Inf",
-          "manpowerValue": "2*",
-          "hexLocation": "1715 (Columbia)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "O. Moore",
-          "size": "Brig",
-          "command": "XXIII",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "5707 (Nashville)",
-          "notes": []
-        },
-        {
-          "name": "Wagner",
-          "size": "Div",
-          "command": "IV",
-          "type": "Inf",
-          "manpowerValue": "11",
-          "hexLocation": "0423 (Lynnville)",
-          "notes": []
-        },
-        {
-          "name": "Stanley",
-          "size": "Corps",
-          "command": "IV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0324 (Colored Church)",
-          "notes": []
-        },
-        {
-          "name": "Whitaker",
-          "size": "Div",
-          "command": "IV",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "0324 (Colored Church)",
-          "notes": []
-        },
-        {
-          "name": "Wood",
-          "size": "Div",
-          "command": "IV",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "0224 (Saw Mill)",
-          "notes": []
-        },
-        {
-          "name": "Waters",
-          "size": "Brig",
-          "command": "IV",
-          "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "0125",
-          "notes": []
-        },
-        {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "Cav-5",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0420",
-          "notes": []
-        },
-        {
-          "name": "Coon",
-          "size": "Brig",
-          "command": "Cav-1",
-          "type": "Cav",
-          "manpowerValue": "2#\u2020",
-          "hexLocation": "0420",
-          "notes": [
-            "\u2020"
-          ]
-        },
-        {
-          "name": "Croxton-A",
-          "size": "Brig",
-          "command": "Cav-5",
-          "type": "Cav",
-          "manpowerValue": "2#\u2020",
-          "hexLocation": "0221",
-          "notes": [
-            "\u2020"
-          ]
-        },
-        {
-          "name": "Capron-A",
-          "size": "Brig",
-          "command": "Cav-6",
-          "type": "Cav",
-          "manpowerValue": "2#\u2020",
-          "hexLocation": "0711 (Mt. Pleasant)",
-          "notes": [
-            "\u2020"
-          ]
-        }
-      ],
-      "confederateGunboats": [],
-      "unionGunboats": []
-    },
-    {
       "number": 2,
       "name": "The Race for Columbia",
       "gameLength": "7 turns, November 23\u2013November 29, 1864.",
@@ -468,6 +245,15 @@
         }
       ],
       "unionUnits": [
+        {
+          "name": "Schofield",
+          "size": "District",
+          "command": "Ohio",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0523 (Laurine)",
+          "notes": []
+        },
         {
           "name": "Cox",
           "size": "Div",
@@ -983,6 +769,17 @@
       ],
       "unionUnits": [
         {
+          "name": "Schofield",
+          "size": "District",
+          "command": "Ohio",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "1814 (Annoatuck)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
           "name": "Cox",
           "size": "Div",
           "command": "XXIII",
@@ -1440,6 +1237,15 @@
       ],
       "unionUnits": [
         {
+          "name": "Schofield",
+          "size": "District",
+          "command": "Ohio",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "3911 (Carter)",
+          "notes": []
+        },
+        {
           "name": "Cox",
           "size": "Div",
           "command": "XXIII",
@@ -1740,6 +1546,15 @@
       ],
       "unionUnits": [
         {
+          "name": "Milroy",
+          "size": "District",
+          "command": "DMT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5232 (Murfreesboro)",
+          "notes": []
+        },
+        {
           "name": "Thomas",
           "size": "Brig",
           "command": "DMT",
@@ -2010,6 +1825,15 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "5708",
+          "notes": []
+        },
+        {
+          "name": "Schofield",
+          "size": "District",
+          "command": "Ohio",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5607 (Fort Negley)",
           "notes": []
         },
         {
@@ -2592,7 +2416,7 @@
       "mapInfo": "",
       "confederateFootnotes": {},
       "unionFootnotes": {
-        "*": "Begins game on normal side with Fatigue Level 1 marker"
+        "*": "Convert to \u201cNo Effect\u201d if winter weather is in effect (see 4.0)."
       },
       "confederateUnits": [
         {
@@ -3125,6 +2949,15 @@
       ],
       "unionUnits": [
         {
+          "name": "Schofield",
+          "size": "District",
+          "command": "Ohio",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0523 (Laurine)",
+          "notes": []
+        },
+        {
           "name": "Cox",
           "size": "Div",
           "command": "XXIII",
@@ -3471,6 +3304,15 @@
           "command": "DE",
           "type": "Inf",
           "manpowerValue": "11",
+          "hexLocation": "M",
+          "notes": []
+        },
+        {
+          "name": "Milroy",
+          "size": "District",
+          "command": "DN",
+          "type": "Ldr",
+          "manpowerValue": "-",
           "hexLocation": "M",
           "notes": []
         },

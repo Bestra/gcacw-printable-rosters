@@ -44,7 +44,8 @@ class ScenarioParser:
     """Parser for GCACW scenario PDFs."""
     
     # Valid unit sizes - order matters for matching (D-Div is abbreviation for Demi-Div)
-    VALID_SIZES = ['Army', 'Corps', 'Demi-Div', 'D-Div', 'Div', 'Brig', 'Regt']
+    # District is used for HSN (Schofield, Milroy) as a district leader level
+    VALID_SIZES = ['Army', 'District', 'Corps', 'Demi-Div', 'D-Div', 'Div', 'Brig', 'Regt']
     VALID_TYPES = ['Ldr', 'Inf', 'Cav', 'Art']
     
     # Page ranges for games that share a PDF (1-indexed, inclusive)
