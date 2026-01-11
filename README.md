@@ -33,13 +33,12 @@ Open http://localhost:5173, select a game and scenario, then `Cmd+P` / `Ctrl+P` 
 
 ## Supported Games
 
-| Game                       | Status | Scenarios | Units |
-| -------------------------- | ------ | --------- | ----- |
-| On To Richmond! (OTR2)     | ✅     | 9         | 604   |
-| Grant Takes Command (GTC2) | ✅     | 12        | ~800+ |
-| Stonewall Jackson's Way    | ⬜     | -         | -     |
-| Here Come the Rebels       | ⬜     | -         | -     |
-| Roads to Gettysburg        | ⬜     | -         | -     |
+- ✅ On To Richmond!
+- ✅ Grant Takes Command
+- ✅ Hood Strikes North
+- ✅ Here Come the Rebels!
+- ✅ Roads to Gettysburg 2
+- ✅ Rebels in the White House
 
 ## Adding More Games
 
