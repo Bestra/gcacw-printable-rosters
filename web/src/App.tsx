@@ -3,9 +3,12 @@ import { Routes, Route, Navigate, useParams, useNavigate } from "react-router-do
 import { GameSelector } from "./components/GameSelector";
 import { ScenarioSelector } from "./components/ScenarioSelector";
 import { RosterSheet } from "./components/RosterSheet";
+import { HierarchicalRosterSheet } from "./components/HierarchicalRosterSheet";
 import { getGameIdFromSlug, getGameSlug, getScenarioSlug, getScenarioNumberFromSlug } from "./utils/slugs";
 import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
+
+type LayoutMode = "grid" | "hierarchical";
 
 // Get base path from Vite (handles GitHub Pages deployment)
 const BASE_URL = import.meta.env.BASE_URL;
@@ -13,9 +16,13 @@ const BASE_URL = import.meta.env.BASE_URL;
 function ScenarioView({
   games,
   gamesLoading,
+  layoutMode,
+  onLayoutChange,
 }: {
   games: GameInfo[];
   gamesLoading: boolean;
+  layoutMode: LayoutMode;
+  onLayoutChange: (mode: LayoutMode) => void;
 }) {
   const { gameSlug, scenarioSlug } = useParams<{ gameSlug: string; scenarioSlug: string }>();
   const navigate = useNavigate();
@@ -113,9 +120,23 @@ function ScenarioView({
             onSelect={handleScenarioSelect}
           />
         )}
+        <div className="layout-toggle">
+          <label>
+            <span>Layout:</span>
+            <select 
+              value={layoutMode} 
+              onChange={(e) => onLayoutChange(e.target.value as LayoutMode)}
+            >
+              <option value="grid">Grid</option>
+              <option value="hierarchical">Hierarchical</option>
+            </select>
+          </label>
+        </div>
       </div>
       {scenario && gameData && (
-        <RosterSheet scenario={scenario} gameName={gameData.name} />
+        layoutMode === "hierarchical" 
+          ? <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} />
+          : <RosterSheet scenario={scenario} gameName={gameData.name} />
       )}
     </div>
   );
@@ -171,6 +192,7 @@ function App() {
   const [games, setGames] = useState<GameInfo[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [layoutMode, setLayoutMode] = useState<LayoutMode>("grid");
 
   // Load games index on mount
   useEffect(() => {
@@ -207,7 +229,14 @@ function App() {
       <Route path="/:gameSlug" element={<GameRedirect games={games} />} />
       <Route
         path="/:gameSlug/:scenarioSlug"
-        element={<ScenarioView games={games} gamesLoading={loading} />}
+        element={
+          <ScenarioView 
+            games={games} 
+            gamesLoading={loading} 
+            layoutMode={layoutMode}
+            onLayoutChange={setLayoutMode}
+          />
+        }
       />
     </Routes>
   );

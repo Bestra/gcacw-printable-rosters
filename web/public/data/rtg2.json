@@ -4058,7 +4058,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "1"
         },
         {
           "name": "Jones",
@@ -4067,7 +4068,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "2"
         },
         {
           "name": "Robertson",
@@ -4076,7 +4078,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "2"
         },
         {
           "name": "54 NC",
@@ -4085,7 +4088,8 @@
           "type": "Inf",
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "3"
         },
         {
           "name": "58 VA",
@@ -4094,7 +4098,8 @@
           "type": "Inf",
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "3"
         },
         {
           "name": "12 VA",
@@ -4103,7 +4108,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "4"
         },
         {
           "name": "Corse",
@@ -4112,7 +4118,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "1"
         },
         {
           "name": "M.Jenkins",
@@ -4121,7 +4128,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "2"
         },
         {
           "name": "Cooke",
@@ -4130,7 +4138,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "3"
         },
         {
           "name": "Wise",
@@ -4139,7 +4148,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 3.2",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "4"
         }
       ],
       "unionUnits": [
@@ -4687,7 +4697,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "1"
         },
         {
           "name": "Mulligan",
@@ -4696,7 +4707,8 @@
           "type": "Inf",
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "2"
         },
         {
           "name": "Campbell",
@@ -4705,7 +4717,8 @@
           "type": "Inf",
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "2"
         },
         {
           "name": "Wilkinson",
@@ -4714,7 +4727,8 @@
           "type": "Inf",
           "manpowerValue": "2",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "2"
         },
         {
           "name": "Pierce",
@@ -4723,7 +4737,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "3"
         },
         {
           "name": "1 CT",
@@ -4732,7 +4747,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "1"
         },
         {
           "name": "Briggs",
@@ -4741,7 +4757,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "2"
         },
         {
           "name": "Spinola",
@@ -4750,7 +4767,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "3"
         },
         {
           "name": "39 MA",
@@ -4759,7 +4777,8 @@
           "type": "Inf",
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "3"
         },
         {
           "name": "Wells",
@@ -4768,7 +4787,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "4"
         },
         {
           "name": "Sickel",
@@ -4777,7 +4797,8 @@
           "type": "Inf",
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "5"
         },
         {
           "name": "Fessendon",
@@ -4786,7 +4807,8 @@
           "type": "Inf",
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 4.0",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "6"
         },
         {
           "name": "Frick",
@@ -4795,7 +4817,8 @@
           "type": "Inf",
           "manpowerValue": "3",
           "hexLocation": "N4907 (Camp Curtin)",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "1"
         },
         {
           "name": "Franklin",
@@ -4804,7 +4827,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "N4907 (Camp Curtin)",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "2"
         },
         {
           "name": "Nagle",
@@ -4813,7 +4837,8 @@
           "type": "Inf",
           "manpowerValue": "10",
           "hexLocation": "N4907 (Camp Curtin)",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "3"
         },
         {
           "name": "Beaver",
@@ -4822,7 +4847,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "N4907 (Camp Curtin)",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "4"
         },
         {
           "name": "20 PA",
@@ -4831,7 +4857,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "N4907 (Camp Curtin)",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "5"
         },
         {
           "name": "1PA",
@@ -4840,7 +4867,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "N4907 (Camp Curtin)",
-          "notes": []
+          "notes": [],
+          "reinforcementSet": "6"
         }
       ],
       "confederateGunboats": [],

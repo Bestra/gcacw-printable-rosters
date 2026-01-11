@@ -7,6 +7,7 @@ Operational guide for working on this codebase.
 **CRITICAL: Always use `uv run python` to execute Python. Never use bare `python`, `python3`, or `pip`.**
 
 **CRITICAL: Avoid shell quoting issues with complex Python code:**
+
 - ✅ Create a temporary `.py` file and run it with `uv run python temp_script.py`
 - ✅ Use heredoc syntax for multi-line Python
 - ❌ NEVER use `uv run python -c` with complex Python code containing nested quotes
@@ -37,6 +38,12 @@ cd web && npm run build    # Build to web/dist/
 cd parser && uv run python parse_raw_tables.py --all   # Parse all games
 cd parser && uv run python convert_to_web.py           # Generate web JSON
 ```
+
+## Dev Server
+
+**When the dev server is running, do NOT restart it or run `npm run build`.**
+
+Vite provides hot module replacement (HMR) - changes to `.tsx`, `.ts`, and `.css` files are automatically reflected in the browser without any action needed. Just edit the file and save.
 
 ## File Locations
 

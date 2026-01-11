@@ -6,6 +6,7 @@ export interface Unit {
   manpowerValue: string;
   hexLocation: string;
   notes: string[];
+  reinforcementSet?: string;
 }
 
 export interface Gunboat {

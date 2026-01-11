@@ -22,7 +22,7 @@ GAMES = [
 
 def convert_unit(unit: dict) -> dict:
     """Convert a unit from parser format to web format."""
-    return {
+    result = {
         "name": unit["unit_leader"],
         "size": unit["size"],
         "command": unit["command"],
@@ -31,6 +31,10 @@ def convert_unit(unit: dict) -> dict:
         "hexLocation": unit["hex_location"],
         "notes": unit["notes"],
     }
+    # Include reinforcement set if present
+    if unit.get("reinforcement_set"):
+        result["reinforcementSet"] = unit["reinforcement_set"]
+    return result
 
 
 def is_gunboat(unit: dict) -> bool:

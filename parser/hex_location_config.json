@@ -111,6 +111,12 @@
             "hexCodeTemplate": "{1}/{2}"
         },
         {
+            "_comment": "Hex range locations: 'S3134 to S5833^' (preserving footnote symbol)",
+            "type": "hexRange",
+            "regex": "^([NSM]\\d{4})\\s+to\\s+([NSM]\\d{4}[*^†‡§$+#]*)$",
+            "hexCodeTemplate": "{1} to {2}"
+        },
+        {
             "_comment": "County locations: 'In Hanover County'",
             "type": "county",
             "regex": "^[Ii]n\\s+(.+?)\\s+[Cc]ounty$",
