@@ -10,6 +10,7 @@ import {
   splitLargeGroups,
 } from "../utils/rosterUtils";
 import { getUnitImage } from "../data/imageMap";
+import { RosterProvider, useRoster } from "../context/RosterContext";
 import { FootnotesLegend } from "./shared/FootnotesLegend";
 import { GunboatsList } from "./shared/GunboatsList";
 import "./FlowRosterSheet.css";
@@ -18,6 +19,7 @@ interface FlowRosterSheetProps {
   scenario: Scenario;
   gameName: string;
   gameId?: string;
+  showImages: boolean;
 }
 
 // Maximum units per column before splitting into multiple columns
@@ -27,14 +29,11 @@ const MAX_UNITS_PER_COLUMN = 6;
 function UnitRow({ 
   unit, 
   footnotes,
-  gameId,
-  side,
 }: { 
   unit: Unit;
   footnotes: Record<string, string>;
-  gameId?: string;
-  side?: "confederate" | "union";
 }) {
+  const { gameId, side, showImages } = useRoster();
   const { hexCode, locationName } = parseHexLocation(unit.hexLocation);
   const fatigue = getStartingFatigue(unit, footnotes);
   const notes = getNoteSymbols(unit);
@@ -42,7 +41,7 @@ function UnitRow({
   const tableAbbrev = getTableAbbreviation(unit.tableName);
   
   // Look up unit counter image
-  const imageFilename = gameId && side ? getUnitImage(gameId, side, unit.name) : undefined;
+  const imageFilename = gameId && showImages ? getUnitImage(gameId, side, unit.name) : undefined;
   const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
   
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
@@ -95,21 +94,18 @@ function UnitRow({
 function LeaderHeader({ 
   leader, 
   footnotes,
-  gameId,
-  side,
 }: { 
   leader: Unit;
   footnotes: Record<string, string>;
-  gameId?: string;
-  side?: "confederate" | "union";
 }) {
+  const { gameId, side, showImages } = useRoster();
   const { hexCode, locationName } = parseHexLocation(leader.hexLocation);
   const fatigue = getStartingFatigue(leader, footnotes);
   const notes = getNoteSymbols(leader);
   const tableAbbrev = getTableAbbreviation(leader.tableName);
   
   // Look up leader counter image
-  const imageFilename = gameId && side ? getUnitImage(gameId, side, leader.name) : undefined;
+  const imageFilename = gameId && showImages ? getUnitImage(gameId, side, leader.name) : undefined;
   const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
   
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
@@ -152,16 +148,13 @@ function LeaderHeader({
 function CommandGroupSection({ 
   group, 
   footnotes,
-  side,
-  gameId,
   isSubgroup = false,
 }: { 
   group: CommandGroup;
   footnotes: Record<string, string>;
-  side: "confederate" | "union";
-  gameId?: string;
   isSubgroup?: boolean;
 }) {
+  const { side } = useRoster();
   const isContinuation = group.columnIndex && group.columnIndex > 1;
   
   // Build the title with continuation indicator if needed
@@ -178,7 +171,7 @@ function CommandGroupSection({
       </h4>
       
       {group.leader && (
-        <LeaderHeader leader={group.leader} footnotes={footnotes} gameId={gameId} side={side} />
+        <LeaderHeader leader={group.leader} footnotes={footnotes} />
       )}
       
       {/* Direct units for this command */}
@@ -189,8 +182,6 @@ function CommandGroupSection({
               key={`${unit.name}-${idx}`}
               unit={unit}
               footnotes={footnotes}
-              gameId={gameId}
-              side={side}
             />
           ))}
         </div>
@@ -204,8 +195,6 @@ function CommandGroupSection({
               key={`${subgroup.commandCode}-${idx}`}
               group={subgroup}
               footnotes={footnotes}
-              side={side}
-              gameId={gameId}
               isSubgroup={true}
             />
           ))}
@@ -223,6 +212,7 @@ function ArmySection({
   gunboats,
   side,
   gameId,
+  showImages,
 }: {
   title: string;
   units: Unit[];
@@ -230,6 +220,7 @@ function ArmySection({
   gunboats: import("../types").Gunboat[];
   side: "confederate" | "union";
   gameId?: string;
+  showImages: boolean;
 }) {
   const armyLeader = getArmyLeader(units);
   const hierarchy = buildCommandHierarchy(units);
@@ -238,34 +229,34 @@ function ArmySection({
   const splitGroups = splitLargeGroups(hierarchy, MAX_UNITS_PER_COLUMN);
   
   return (
-    <section className={`flow-army-section flow-army-section--${side}`}>
-      <div className="flow-army-section__header">
-        <h3 className="flow-army-section__title">{title}</h3>
-        {armyLeader && (
-          <LeaderHeader leader={armyLeader} footnotes={footnotes} gameId={gameId} side={side} />
-        )}
-      </div>
-      
-      {/* Multi-column flow container */}
-      <div className="flow-army-section__columns">
-        {splitGroups.map((group, idx) => (
-          <CommandGroupSection 
-            key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
-            group={group}
-            footnotes={footnotes}
-            side={side}
-            gameId={gameId}
-          />
-        ))}
-      </div>
-      
-      <GunboatsList gunboats={gunboats} />
-      <FootnotesLegend footnotes={footnotes} />
-    </section>
+    <RosterProvider gameId={gameId} side={side} showImages={showImages}>
+      <section className={`flow-army-section flow-army-section--${side}`}>
+        <div className="flow-army-section__header">
+          <h3 className="flow-army-section__title">{title}</h3>
+          {armyLeader && (
+            <LeaderHeader leader={armyLeader} footnotes={footnotes} />
+          )}
+        </div>
+        
+        {/* Multi-column flow container */}
+        <div className="flow-army-section__columns">
+          {splitGroups.map((group, idx) => (
+            <CommandGroupSection 
+              key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
+              group={group}
+              footnotes={footnotes}
+            />
+          ))}
+        </div>
+        
+        <GunboatsList gunboats={gunboats} />
+        <FootnotesLegend footnotes={footnotes} />
+      </section>
+    </RosterProvider>
   );
 }
 
-export function FlowRosterSheet({ scenario, gameName, gameId }: FlowRosterSheetProps) {
+export function FlowRosterSheet({ scenario, gameName, gameId, showImages }: FlowRosterSheetProps) {
   return (
     <div className="flow-roster-sheet">
       <header className="flow-roster-sheet__header">
@@ -280,6 +271,7 @@ export function FlowRosterSheet({ scenario, gameName, gameId }: FlowRosterSheetP
           gunboats={scenario.confederateGunboats}
           side="confederate"
           gameId={gameId}
+          showImages={showImages}
         />
         
         <ArmySection
@@ -289,6 +281,7 @@ export function FlowRosterSheet({ scenario, gameName, gameId }: FlowRosterSheetP
           gunboats={scenario.unionGunboats}
           side="union"
           gameId={gameId}
+          showImages={showImages}
         />
       </div>
     </div>

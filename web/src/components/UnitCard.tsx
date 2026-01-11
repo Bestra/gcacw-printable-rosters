@@ -2,6 +2,7 @@ import type { Unit } from "../types";
 import { parseHexLocation } from "../hexLocationConfig";
 import { getTableAbbreviation } from "../tableNameConfig";
 import { getUnitImage } from "../data/imageMap";
+import { useRosterOptional } from "../context/RosterContext";
 import "./UnitCard.css";
 
 interface UnitCardProps {
@@ -11,9 +12,15 @@ interface UnitCardProps {
   startingFatigue?: string;
   leaderName?: string;
   gameId?: string;
+  showImages?: boolean;
 }
 
-export function UnitCard({ unit, side, empty, startingFatigue, leaderName, gameId }: UnitCardProps) {
+export function UnitCard({ unit, side: propSide, empty, startingFatigue, leaderName, gameId: propGameId, showImages: propShowImages }: UnitCardProps) {
+  // Use context if available, fall back to props
+  const context = useRosterOptional();
+  const gameId = context?.gameId ?? propGameId;
+  const side = context?.side ?? propSide;
+  const showImages = context?.showImages ?? propShowImages ?? true;
   if (empty || !unit) {
     return (
       <div className="unit-card unit-card--empty">
@@ -39,7 +46,7 @@ export function UnitCard({ unit, side, empty, startingFatigue, leaderName, gameI
   const mpDisplay = unit.manpowerValue !== "-" ? unit.manpowerValue : "";
   
   // Look up unit counter image
-  const imageFilename = gameId && side ? getUnitImage(gameId, side, unit.name) : undefined;
+  const imageFilename = gameId && side && showImages ? getUnitImage(gameId, side, unit.name) : undefined;
   const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
 
   return (
