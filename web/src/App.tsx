@@ -2,14 +2,12 @@ import { useEffect, useState } from "react";
 import { Routes, Route, Navigate, useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { GameSelector } from "./components/GameSelector";
 import { ScenarioSelector } from "./components/ScenarioSelector";
-import { HierarchicalRosterSheet } from "./components/HierarchicalRosterSheet";
-import { FlowRosterSheet } from "./components/FlowRosterSheet";
+import { RosterSheet, type RosterVariant } from "./components/RosterSheet";
 import { getGameIdFromSlug, getGameSlug, getScenarioSlug, getScenarioNumberFromSlug } from "./utils/slugs";
 import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
 
-type LayoutMode = "hierarchical" | "flow";
-const DEFAULT_LAYOUT: LayoutMode = "hierarchical";
+const DEFAULT_LAYOUT: RosterVariant = "hierarchical";
 
 // Get base path from Vite (handles GitHub Pages deployment)
 const BASE_URL = import.meta.env.BASE_URL;
@@ -30,7 +28,7 @@ function ScenarioView({
 
   // Get layout mode from query param, default to hierarchical
   const viewParam = searchParams.get("view");
-  const layoutMode: LayoutMode = viewParam === "hierarchical" || viewParam === "flow"
+  const layoutMode: RosterVariant = viewParam === "hierarchical" || viewParam === "flow"
     ? viewParam 
     : DEFAULT_LAYOUT;
 
@@ -38,7 +36,7 @@ function ScenarioView({
   const imagesParam = searchParams.get("images");
   const showImages = imagesParam !== "off"; // Default ON unless explicitly "off"
 
-  const handleLayoutChange = (mode: LayoutMode) => {
+  const handleLayoutChange = (mode: RosterVariant) => {
     if (mode === DEFAULT_LAYOUT) {
       // Remove param if it's the default
       searchParams.delete("view");
@@ -161,7 +159,7 @@ function ScenarioView({
             <span>Layout:</span>
             <select 
               value={layoutMode} 
-              onChange={(e) => handleLayoutChange(e.target.value as LayoutMode)}
+              onChange={(e) => handleLayoutChange(e.target.value as RosterVariant)}
             >
               <option value="hierarchical">Hierarchical</option>
               <option value="flow">Flow (compact)</option>
@@ -180,9 +178,13 @@ function ScenarioView({
         </div>
       </div>
       {scenario && gameData && (
-        layoutMode === "flow"
-          ? <FlowRosterSheet scenario={scenario} gameName={gameData.name} gameId={gameId ?? undefined} showImages={showImages} />
-          : <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} gameId={gameId ?? undefined} showImages={showImages} />
+        <RosterSheet 
+          scenario={scenario} 
+          gameName={gameData.name} 
+          gameId={gameId ?? undefined} 
+          showImages={showImages}
+          variant={layoutMode}
+        />
       )}
     </div>
   );
