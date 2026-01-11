@@ -40,7 +40,7 @@ interface CommandGroup {
 }
 
 // Maximum units per column before splitting into multiple columns
-const MAX_UNITS_PER_COLUMN = 8;
+const MAX_UNITS_PER_COLUMN = 6;
 
 // Check if a command is subordinate to another (e.g., C-Cav is subordinate to Cav)
 function isSubordinateCommand(childCmd: string, parentCmd: string): boolean {
