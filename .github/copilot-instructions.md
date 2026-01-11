@@ -16,7 +16,14 @@ Examples:
 ## Commands
 
 ```bash
-# Web app
+# Build pipeline (preferred)
+make              # Build all web JSON files
+make gtc2         # Build a single game
+make reparse-otr2 # Force rebuild a game
+make dev          # Start dev server
+make build        # Production build
+
+# Manual commands (if needed)
 cd web && npm run dev      # Dev server at localhost:5173
 cd web && npm run build    # Build to web/dist/
 
@@ -92,12 +99,12 @@ See `parser/RAW_TABLE_EXTRACTOR.md` for detailed instructions.
 
 Quick summary:
 
-1. Extract raw tables: `uv run python raw_table_extractor.py ../data/NewGame.pdf newgame`
+1. Extract raw tables: `make extract-newgame` (or manually run raw_table_extractor.py)
 2. Add column config to `game_configs.json` if needed
 3. Add game to `GAMES` list in `convert_to_web.py`
-4. Add URL slug mapping in `web/src/utils/slugs.ts`
-5. Parse: `uv run python parse_raw_tables.py newgame`
-6. Convert: `uv run python convert_to_web.py`
+4. Add game to `ALL_GAMES` in `Makefile`
+5. Add URL slug mapping in `web/src/utils/slugs.ts`
+6. Build: `make newgame`
 
 ## Validation
 
