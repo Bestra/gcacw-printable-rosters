@@ -25,7 +25,8 @@ def convert_scenario(scenario: dict) -> dict:
         "name": scenario["name"],
         "gameLength": scenario["game_length"],
         "mapInfo": scenario["map_info"],
-        "footnotes": scenario["footnotes"],
+        "confederateFootnotes": scenario["confederate_footnotes"],
+        "unionFootnotes": scenario["union_footnotes"],
         "confederateUnits": [convert_unit(u) for u in scenario["confederate_units"]],
         "unionUnits": [convert_unit(u) for u in scenario["union_units"]],
     }

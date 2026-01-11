@@ -13,7 +13,8 @@ export interface Scenario {
   name: string;
   gameLength: string;
   mapInfo: string;
-  footnotes: Record<string, string>;
+  confederateFootnotes: Record<string, string>;
+  unionFootnotes: Record<string, string>;
   confederateUnits: Unit[];
   unionUnits: Unit[];
 }

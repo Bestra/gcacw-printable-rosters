@@ -7,7 +7,10 @@
       "name": "The Warwick Line",
       "gameLength": "3 turns; April 5 to April 7, 1862.",
       "mapInfo": "Use only the south map. maps",
-      "footnotes": {
+      "confederateFootnotes": {
+        "*": "Units setup under Fort-Complete markers"
+      },
+      "unionFootnotes": {
         "*": "Sedgwick is part of Heintzelman\u2019s III Corps in this scenario"
       },
       "confederateUnits": [
@@ -298,9 +301,10 @@
       "name": "Johnston's Retreat",
       "gameLength": "5 turns; May 4 to May 8, 1862. \u201cBombardment,\u201d but only in eligible hexes along the York\u2014",
       "mapInfo": "Use both the north and south maps. another box. \u2022 The Gunboat may perform \u201cDefensive Support\u201d and",
-      "footnotes": {
+      "confederateFootnotes": {
         "*": "All Confederate infantry, wagon train and artillery units start the game at Fatigue Level 1 on their normal sides."
       },
+      "unionFootnotes": {},
       "confederateUnits": [
         {
           "name": "Johnston",
@@ -698,9 +702,13 @@
       "name": "The Gates of Richmond",
       "gameLength": "7 turns; May 26 to June 1, 1862. Indication Phase starting with Turn 2. On a roll of 1, Shields\u2019 division",
       "mapInfo": "Use only the north map. which placement is possible. 7. Union Reinforcements: The Union Player rolls a die in each Turn",
-      "footnotes": {
-        "*": "93NY begins the game under a Fort-Complete marker",
+      "confederateFootnotes": {
+        "*": "JR Anderson and Branch begin the game on their exhausted sides at Fatigue Level 0",
         "+": "56 VA, 32 NC and the four \u201cRichmond\u201d units begin the game under Fort-Complete markers",
+        "^": "Huger, Armistead, 32 NC and the four \u201cRichmond\u201d units may not be moved until \u201cReleased\u201d"
+      },
+      "unionFootnotes": {
+        "*": "93NY begins the game under a Fort-Complete marker",
         "^": "King, McCall, Ricketts, 2 NY and 4PA begin the game on their exhausted sides at Fatigue Level 0"
       },
       "confederateUnits": [
@@ -1389,10 +1397,11 @@
       "name": "Seven Pines",
       "gameLength": "2 turns; May 31 to June 1, 1862. Confederate grand assault is attempted, regardless of its outcome, the",
       "mapInfo": "Use only the north map. 7. Johnston: If the Confederate player attempts a grand assault, the army leader Johnston may be wounded. At the end of an action in which a",
-      "footnotes": {
+      "confederateFootnotes": {
         "*": "McLaws, Ripley and Walker have special movement restrictions: see Rules 4 and 5.",
         "^": "McLaws begins the game underneath a Breastworks-complete marker"
       },
+      "unionFootnotes": {},
       "confederateUnits": [
         {
           "name": "Johnston",
@@ -1644,7 +1653,8 @@
       "name": "Stuart's Ride",
       "gameLength": "6 turns; June 12 to June 17, 1862. (Note: The game may the bridge.",
       "mapInfo": "",
-      "footnotes": {
+      "confederateFootnotes": {},
+      "unionFootnotes": {
         "*": "The 2-5 US and 11PA cavalry units begin the game with disorganized strength markers.",
         "^": "The 93 NY infantry unit begins the game underneath a Fort-complete marker."
       },
@@ -1761,11 +1771,15 @@
       "name": "The Seven Days",
       "gameLength": "7 turns; June 25 to July 1, 1862. to a Richmond city hex.",
       "mapInfo": "",
-      "footnotes": {
-        "*": "Indicated units begin the game under Breastwork-Complete markers",
-        "^": "93NY begins the game under a Fort-Complete marker",
+      "confederateFootnotes": {
+        "*": "Indicated units begin the game under Breastwork complete markers",
+        "^": "Indicated units begin the game under Fort-Complete markers",
         "$": "Indicated units begin the game at Fatigue Level 3 (normal sides)",
         "+": "Indicated units may not activate or entrench until released (see Rule 9)"
+      },
+      "unionFootnotes": {
+        "^": "93NY begins the game under a Fort-Complete marker",
+        "*": "Indicated units begin the game under Breastwork-Complete markers"
       },
       "confederateUnits": [
         {
@@ -2525,7 +2539,10 @@
       "name": "Gaines Mill",
       "gameLength": "2 turns; June 26 to June 27, 1862. creek are in the 08xx hex column, there are no restrictions on these",
       "mapInfo": "Use only the north map. Longstreet\u2019s, AP Hill\u2019s, and DH Hill\u2019s divisions may move (or attack) into a hex north of Totopotomoy Creek. Since the headwaters of this",
-      "footnotes": {
+      "confederateFootnotes": {
+        "*": "Indicated units begin the game at Fatigue Level 1 on their exhausted side."
+      },
+      "unionFootnotes": {
         "^": "93NY begins the game under a Fort-Complete marker.",
         "*": "Indicated units begin the game under a Breastworks-Complete marker.",
         "$": "Naglee may not activate or entrench on Turn 1."
@@ -3002,7 +3019,10 @@
       "name": "Retreat to the James",
       "gameLength": "3 turns; June 29 to July 1, 1862. Note: The Confederate player is not obligated to move D.H. Hill\u2019s and",
       "mapInfo": "Use both the north and south maps. Phases; see 10.1.) The new bridge can be destroyed or dismantled (see 10.2).",
-      "footnotes": {
+      "confederateFootnotes": {
+        "*": "Indicated units begin the game under Breastwork-complete markers."
+      },
+      "unionFootnotes": {
         "*": "Confederate units are out of supply only if Union player currently controls",
         "^": "Indicated units begin the game under Breastwork-complete markers",
         "$": "Ferry may not activate or entrench on Turn 1"
@@ -3570,9 +3590,10 @@
       "name": "The Peninsula Campaign",
       "gameLength": "112 turns: April 5 to July 25, 1862. Note: The game may select units of their own commands to join in an Activate Leader or",
       "mapInfo": "",
-      "footnotes": {
+      "confederateFootnotes": {
         "*": "Indicated units begin game under Fort-Complete Markers"
       },
+      "unionFootnotes": {},
       "confederateUnits": [
         {
           "name": "Ward",

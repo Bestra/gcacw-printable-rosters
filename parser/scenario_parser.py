@@ -35,7 +35,8 @@ class Scenario:
     map_info: str = ""
     game_length: str = ""
     special_rules: list = field(default_factory=list)
-    footnotes: dict = field(default_factory=dict)  # Maps symbols to explanations
+    confederate_footnotes: dict = field(default_factory=dict)  # Maps symbols to explanations for Confederate setup
+    union_footnotes: dict = field(default_factory=dict)  # Maps symbols to explanations for Union setup
     confederate_units: list = field(default_factory=list)
     union_units: list = field(default_factory=list)
 
@@ -127,7 +128,8 @@ class ScenarioParser:
         
         # Collect all text from scenario pages
         # Include one extra page to catch continuation tables
-        all_footnotes = {}
+        confederate_footnotes = {}
+        union_footnotes = {}
         current_side = None  # Track side across pages
         
         # Extend parsing to include the "end_page" to catch continuations
@@ -180,7 +182,11 @@ class ScenarioParser:
                 if footnote_match:
                     symbol = footnote_match.group(1)
                     explanation = footnote_match.group(2)
-                    all_footnotes[symbol] = explanation
+                    # Store footnote in the appropriate side's dict
+                    if current_side == 'Confederate':
+                        confederate_footnotes[symbol] = explanation
+                    elif current_side == 'Union':
+                        union_footnotes[symbol] = explanation
                     continue
                 
                 # Try to parse as unit row
@@ -196,7 +202,8 @@ class ScenarioParser:
             if stop_parsing:
                 break
         
-        scenario.footnotes = all_footnotes
+        scenario.confederate_footnotes = confederate_footnotes
+        scenario.union_footnotes = union_footnotes
         return scenario
     
     def _parse_unit_line(self, line: str, side: str) -> Optional[Unit]:
@@ -381,8 +388,10 @@ def main():
         print(f"  Map: {scenario.map_info[:60]}..." if len(scenario.map_info) > 60 else f"  Map: {scenario.map_info}")
         print(f"  Confederate units: {len(scenario.confederate_units)}")
         print(f"  Union units: {len(scenario.union_units)}")
-        if scenario.footnotes:
-            print(f"  Footnotes: {scenario.footnotes}")
+        if scenario.confederate_footnotes:
+            print(f"  Confederate footnotes: {scenario.confederate_footnotes}")
+        if scenario.union_footnotes:
+            print(f"  Union footnotes: {scenario.union_footnotes}")
     
     # Export all data
     df = parser.to_dataframe()

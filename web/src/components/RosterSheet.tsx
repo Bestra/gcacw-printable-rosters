@@ -32,6 +32,23 @@ function padToFillRows<T>(items: T[], unitsPerRow: number): (T | null)[] {
   return [...items, ...Array(padding).fill(null)];
 }
 
+// Render footnotes legend
+function FootnotesLegend({ footnotes }: { footnotes: Record<string, string> }) {
+  const entries = Object.entries(footnotes);
+  if (entries.length === 0) return null;
+  
+  return (
+    <div className="roster-sheet__footnotes">
+      {entries.map(([symbol, text]) => (
+        <div key={symbol} className="roster-sheet__footnote">
+          <span className="roster-sheet__footnote-symbol">{symbol}</span>
+          <span className="roster-sheet__footnote-text">{text}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
   const paddedConfederate = padToFillRows(scenario.confederateUnits, UNITS_PER_ROW);
   const paddedUnion = padToFillRows(scenario.unionUnits, UNITS_PER_ROW);
@@ -55,10 +72,11 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
               unit={unit ?? undefined}
               side="confederate"
               empty={!unit}
-              startingFatigue={unit ? getStartingFatigue(unit, scenario.footnotes) : undefined}
+              startingFatigue={unit ? getStartingFatigue(unit, scenario.confederateFootnotes) : undefined}
             />
           ))}
         </div>
+        <FootnotesLegend footnotes={scenario.confederateFootnotes} />
       </section>
 
       <section className="roster-sheet__section">
@@ -70,10 +88,11 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
               unit={unit ?? undefined}
               side="union"
               empty={!unit}
-              startingFatigue={unit ? getStartingFatigue(unit, scenario.footnotes) : undefined}
+              startingFatigue={unit ? getStartingFatigue(unit, scenario.unionFootnotes) : undefined}
             />
           ))}
         </div>
+        <FootnotesLegend footnotes={scenario.unionFootnotes} />
       </section>
     </div>
   );

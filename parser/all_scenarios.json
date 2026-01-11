@@ -9,7 +9,10 @@
     "special_rules": [
       "scenarios use only one map; others use both maps. In setup instructions, hexes are listed by four-digit numbers preceded by \u201cN\u201d (north map), or \u201cS\u201d 1. Random Events: There are no random events in this scenario. (south map). For example, \u201cN0923\u201d means hex 0923 on the north map 2."
     ],
-    "footnotes": {
+    "confederate_footnotes": {
+      "*": "Units setup under Fort-Complete markers"
+    },
+    "union_footnotes": {
       "*": "Sedgwick is part of Heintzelman\u2019s III Corps in this scenario"
     },
     "confederate_units": [
@@ -342,9 +345,10 @@
       "Franklin\u2019s Division: Franklin\u2019s division (listed as a Union march (-3 VP) and is later eliminated (-10 VP), the total VP loss is 10, Reinforcement) is assumed to be just off the east map-edge in a landing not 13. However, Manpower value losses for wagon trains in combat, hex. It may only be placed o",
       "Union Amphibious Movement: The Union player may move units amphibiously. Amphibious rules are presented in the Advanced At the end of the game, the Confederate VP total is calculated and the Game (see 10.0), and players should read that section before starting players consult the following chart to "
     ],
-    "footnotes": {
+    "confederate_footnotes": {
       "*": "All Confederate infantry, wagon train and artillery units start the game at Fatigue Level 1 on their normal sides."
     },
+    "union_footnotes": {},
     "confederate_units": [
       {
         "unit_leader": "Johnston",
@@ -795,9 +799,13 @@
       "Confederate Reinforcements: Each Turn Indication Phase the +8 If the Union player controls Chaffin\u2019s Bluff (N0934) at the end of Confederate Player rolls a die. (This roll is in addition to his \u201crelease\u201d the game roll; see Rule 3.) This roll may be modified (see below). On the first +2 For each redo",
       "Ewell\u2019s Division: Before the start of the game, the Confederate player -1 For each point of Union Manpower value lost in combat, retreat, must specify whether Ewell\u2019s division will arrive at Hanover Junction or cavalry retreat (not in extended march, force march, or moving or Richmond if it is made "
     ],
-    "footnotes": {
-      "*": "93NY begins the game under a Fort-Complete marker",
+    "confederate_footnotes": {
+      "*": "JR Anderson and Branch begin the game on their exhausted sides at Fatigue Level 0",
       "+": "56 VA, 32 NC and the four \u201cRichmond\u201d units begin the game under Fort-Complete markers",
+      "^": "Huger, Armistead, 32 NC and the four \u201cRichmond\u201d units may not be moved until \u201cReleased\u201d"
+    },
+    "union_footnotes": {
+      "*": "93NY begins the game under a Fort-Complete marker",
       "^": "King, McCall, Ricketts, 2 NY and 4PA begin the game on their exhausted sides at Fatigue Level 0"
     },
     "confederate_units": [
@@ -1568,10 +1576,11 @@
       "Walker\u2019s Brigade: In the Turn Indication Phase of Turn 1 (i.e., at the end of the turn), the Confederate player rolls a die. On a roll of 1 or 2, 20 or more Confederate Decisive Victory Walker\u2019s brigade is \u201creleased\u201d and may activate on Turn 2. On a roll of 3 15 to 19 Confederate Substantive Victory",
       "Union Pontoon Bridges: The Union player starts the game with two 10 to 14 Confederate Marginal Victory Minor River Bridge markers: \u201cGrapevine Bridge\u201d (N1625-N1626) and 5 to 9 Union Marginal Victory \u201cSumner\u2019s Lower Bridge\u201d (N1726-N1626). Both bridges are subject to \u201ccollapse\u201d due to the heavy rain on"
     ],
-    "footnotes": {
+    "confederate_footnotes": {
       "*": "McLaws, Ripley and Walker have special movement restrictions: see Rules 4 and 5.",
       "^": "McLaws begins the game underneath a Breastworks-complete marker"
     },
+    "union_footnotes": {},
     "confederate_units": [
       {
         "unit_leader": "Johnston",
@@ -1861,7 +1870,8 @@
       "General Movement Restrictions: Both players are subject to the fulfilled: following movement restrictions: A. The regiment must end the game in one of the seven hexes A. Units may not cross ford hexsides due to the recent heavy rains. comprising the city of Richmond. They may only cross rivers at un",
       "Forge Bridge: Confederate units are subject to movement penalties when attempting to cross Forge Bridge (N2831-N2832). A. At the moment a Confederate unit first attempts to cross Forge Bridge in either direction, that unit\u2019s march is interrupted and the Confederate player rolls two dice. The sum of "
     ],
-    "footnotes": {
+    "confederate_footnotes": {},
+    "union_footnotes": {
       "*": "The 2-5 US and 11PA cavalry units begin the game with disorganized strength markers.",
       "^": "The 93 NY infantry unit begins the game underneath a Fort-complete marker."
     },
@@ -2003,11 +2013,15 @@
       "Union Amphibious Movement: The Union player may move activated as many times as desired, subject to fatigue limits. (Also, amphibiously only on the York\u2014Pamunkey\u2014Mattapony Rivers. see Rule \u201cE\u201d for Confederate Turn 1 movement restrictions.) Amphibious rules are presented in the Advanced Game (see 10.",
       "Union Gunboats: Gunboat rules are presented in the Advanced Game E. The Confederate player is subject to the following movement (see 11.0). Players should read that section before starting this scenario. restrictions on Turn 1: The Union player has one Gunboat unit (\u201cGunboat-1\u201d), which remains \u2022 Con"
     ],
-    "footnotes": {
-      "*": "Indicated units begin the game under Breastwork-Complete markers",
-      "^": "93NY begins the game under a Fort-Complete marker",
+    "confederate_footnotes": {
+      "*": "Indicated units begin the game under Breastwork complete markers",
+      "^": "Indicated units begin the game under Fort-Complete markers",
       "$": "Indicated units begin the game at Fatigue Level 3 (normal sides)",
       "+": "Indicated units may not activate or entrench until released (see Rule 9)"
+    },
+    "union_footnotes": {
+      "^": "93NY begins the game under a Fort-Complete marker",
+      "*": "Indicated units begin the game under Breastwork-Complete markers"
     },
     "confederate_units": [
       {
@@ -2852,7 +2866,10 @@
       "Union Bridges: Place Union minor river Bridge markers over the restrictions apply to these two free actions: following Chickahominy River hexsides: \u2022 A Confederate unit may not enter a hex adjacent to a Union \u2022 N1325 to N1326 unit, and \u2022 N1325 to N1425 \u2022 A Confederate unit may not cross a Chickahomi",
       "Movement Restrictions: No unit may cross the Pamunkey or South Anna Note: The Chickahominy River extends from hex N0822 to N0117 Rivers for the duration of the game. In addition, no unit may enter any even though that portion is categorized as a creek. 20 \u00a9 2023 Multi-Man PublisHing, llC 403 Headqua"
     ],
-    "footnotes": {
+    "confederate_footnotes": {
+      "*": "Indicated units begin the game at Fatigue Level 1 on their exhausted side."
+    },
+    "union_footnotes": {
       "^": "93NY begins the game under a Fort-Complete marker.",
       "*": "Indicated units begin the game under a Breastworks-Complete marker.",
       "$": "Naglee may not activate or entrench on Turn 1."
@@ -3389,7 +3406,10 @@
       "Grapevine Bridge: To simulate the Confederate attempt to rebuild The Union player has two Gunboat units, which remain in the \u201cJames the partially destroyed \u201cGrapevine\u201d and \u201cAlexander\u2019s\u201d Bridges River-East\u201d box on the Gunboat Display throughout the scenario (N1625-N1626 and N1525-N1526), the Confeder",
       "Control: The Union player controls the following objective hexes at the 2 F S S S S S start of the game: \u2022 Malvern Hill (S1301) 3 F F S S S S \u2022 Berkeley (S1707) 4 F F F S S S \u2022 Haxall\u2019s Landing (S1403) \u2022 Westover (S1806) 5 F F F F S S \u2022 Shirley (S1305) 6 F F F F F S vIctory condItIons: S = Success F"
     ],
-    "footnotes": {
+    "confederate_footnotes": {
+      "*": "Indicated units begin the game under Breastwork-complete markers."
+    },
+    "union_footnotes": {
       "*": "Confederate units are out of supply only if Union player currently controls",
       "^": "Indicated units begin the game under Breastwork-complete markers",
       "$": "Ferry may not activate or entrench on Turn 1"
@@ -4025,9 +4045,10 @@
       "Random events are determined each turn starting on Turn 1. VPs are not awarded if the Union player gains VPs from occupy-",
       "The Confederate player is subject to the following movement ing a Richmond city hex or controlling Henrico County. restrictions: +1 At the end of the game, the Union gains 1 VP for each A. Wise\u2019s brigade may not activate, entrench, or attach until Turn undemoralized Union infantry division within 3 "
     ],
-    "footnotes": {
+    "confederate_footnotes": {
       "*": "Indicated units begin game under Fort-Complete Markers"
     },
+    "union_footnotes": {},
     "confederate_units": [
       {
         "unit_leader": "Ward",
