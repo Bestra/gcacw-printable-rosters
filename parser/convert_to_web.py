@@ -5,6 +5,23 @@ import json
 from pathlib import Path
 
 
+# Game configurations
+GAMES = [
+    {
+        "id": "otr2",
+        "name": "On To Richmond!",
+        "parser_output": "all_scenarios.json",
+        "web_output": "otr2.json",
+    },
+    {
+        "id": "gtc2",
+        "name": "Grant Takes Command",
+        "parser_output": "gtc2_scenarios.json",
+        "web_output": "gtc2.json",
+    },
+]
+
+
 def convert_unit(unit: dict) -> dict:
     """Convert a unit from parser format to web format."""
     return {
@@ -42,26 +59,50 @@ def convert_game_data(scenarios: list, game_id: str, game_name: str) -> dict:
 
 
 def main():
-    parser_output = Path(__file__).parent / "all_scenarios.json"
-    web_output = Path(__file__).parent.parent / "web" / "public" / "data" / "otr2.json"
+    parser_dir = Path(__file__).parent
+    web_data_dir = Path(__file__).parent.parent / "web" / "public" / "data"
 
     # Ensure output directory exists
-    web_output.parent.mkdir(parents=True, exist_ok=True)
+    web_data_dir.mkdir(parents=True, exist_ok=True)
 
-    # Load parser output
-    with open(parser_output) as f:
-        scenarios = json.load(f)
+    # Create games index
+    games_index = {"games": []}
 
-    # Convert to web format
-    game_data = convert_game_data(scenarios, "otr2", "On To Richmond!")
+    for game in GAMES:
+        parser_output = parser_dir / game["parser_output"]
+        web_output = web_data_dir / game["web_output"]
 
-    # Write web output
-    with open(web_output, "w") as f:
-        json.dump(game_data, f, indent=2)
+        if not parser_output.exists():
+            print(f"Skipping {game['name']}: {parser_output} not found")
+            continue
 
-    print(f"Converted {len(scenarios)} scenarios to {web_output}")
-    print(f"Total Confederate units: {sum(len(s['confederateUnits']) for s in game_data['scenarios'])}")
-    print(f"Total Union units: {sum(len(s['unionUnits']) for s in game_data['scenarios'])}")
+        # Load parser output
+        with open(parser_output) as f:
+            scenarios = json.load(f)
+
+        # Convert to web format
+        game_data = convert_game_data(scenarios, game["id"], game["name"])
+
+        # Write web output
+        with open(web_output, "w") as f:
+            json.dump(game_data, f, indent=2)
+
+        print(f"Converted {len(scenarios)} scenarios to {web_output}")
+        print(f"  Confederate units: {sum(len(s['confederateUnits']) for s in game_data['scenarios'])}")
+        print(f"  Union units: {sum(len(s['unionUnits']) for s in game_data['scenarios'])}")
+
+        # Add to games index
+        games_index["games"].append({
+            "id": game["id"],
+            "name": game["name"],
+            "file": game["web_output"],
+        })
+
+    # Write games index
+    games_index_path = web_data_dir / "games.json"
+    with open(games_index_path, "w") as f:
+        json.dump(games_index, f, indent=2)
+    print(f"\nWrote games index to {games_index_path}")
 
 
 if __name__ == "__main__":

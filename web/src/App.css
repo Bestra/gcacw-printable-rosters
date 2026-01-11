@@ -3,6 +3,15 @@
   background: #fafafa;
 }
 
+.selectors {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
 .loading,
 .error {
   display: flex;

@@ -1,0 +1,14 @@
+{
+  "games": [
+    {
+      "id": "otr2",
+      "name": "On To Richmond!",
+      "file": "otr2.json"
+    },
+    {
+      "id": "gtc2",
+      "name": "Grant Takes Command",
+      "file": "gtc2.json"
+    }
+  ]
+}

@@ -24,3 +24,13 @@ export interface GameData {
   name: string;
   scenarios: Scenario[];
 }
+
+export interface GameInfo {
+  id: string;
+  name: string;
+  file: string;
+}
+
+export interface GamesIndex {
+  games: GameInfo[];
+}
