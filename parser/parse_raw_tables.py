@@ -341,6 +341,28 @@ class RawTableParser:
         
         return units
     
+    def deduplicate_leaders(self, units: list[Unit]) -> list[Unit]:
+        """
+        Deduplicate leader units that appear in multiple setup tables.
+        Keeps unique combinations of (unit_leader, hex_location) for leaders.
+        Non-leader units are kept as-is.
+        """
+        leaders = []
+        non_leaders = []
+        seen_leaders = set()
+        
+        for unit in units:
+            if unit.unit_type == "Ldr":
+                # Create a key from leader name and hex
+                key = (unit.unit_leader, unit.hex_location)
+                if key not in seen_leaders:
+                    leaders.append(unit)
+                    seen_leaders.add(key)
+            else:
+                non_leaders.append(unit)
+        
+        return leaders + non_leaders
+    
     def parse_scenario(self, raw_scenario: dict) -> ParsedScenario:
         """Parse a raw scenario into structured data."""
         scenario = ParsedScenario(
@@ -357,6 +379,9 @@ class RawTableParser:
             for sym, text in table.get("annotations", {}).items():
                 scenario.confederate_footnotes[sym] = text
         
+        # Deduplicate Confederate leaders (for scenarios with multiple setup tables)
+        scenario.confederate_units = self.deduplicate_leaders(scenario.confederate_units)
+        
         # Parse Union tables
         for table in raw_scenario.get("union_tables", []):
             units = self.parse_table(table, "Union", scenario.number)
@@ -364,6 +389,9 @@ class RawTableParser:
             # Collect footnotes
             for sym, text in table.get("annotations", {}).items():
                 scenario.union_footnotes[sym] = text
+        
+        # Deduplicate Union leaders (for scenarios with multiple setup tables)
+        scenario.union_units = self.deduplicate_leaders(scenario.union_units)
         
         return scenario
     

@@ -6,12 +6,18 @@ Operational guide for working on this codebase.
 
 **CRITICAL: Always use `uv run python` to execute Python. Never use bare `python`, `python3`, or `pip`.**
 
+**CRITICAL: Avoid shell quoting issues with complex Python code:**
+- ✅ Create a temporary `.py` file and run it with `uv run python temp_script.py`
+- ✅ Use heredoc syntax for multi-line Python
+- ❌ NEVER use `uv run python -c` with complex Python code containing nested quotes
+
 Examples:
 
 - ✅ `cd parser && uv run python script.py`
-- ✅ `uv run python -c "print('hello')"`
+- ✅ `uv run python -c "print('hello')"` (simple one-liners only)
+- ✅ Create temp script: `echo 'import json...' > temp.py && uv run python temp.py`
 - ❌ `python3 script.py`
-- ❌ `python -c "..."`
+- ❌ `uv run python -c "import json; data['key']..."` (nested quotes will fail)
 
 ## Commands
 
