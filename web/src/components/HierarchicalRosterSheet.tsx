@@ -33,6 +33,13 @@ interface CommandGroup {
   displayName: string;
   size: string;
   units: Unit[];
+  subgroups: CommandGroup[]; // Nested groups for Corps -> Div hierarchy
+  parentCommand?: string; // Track which Corps this Div belongs to
+}
+
+// Check if a command is subordinate to another (e.g., C-Cav is subordinate to Cav)
+function isSubordinateCommand(childCmd: string, parentCmd: string): boolean {
+  return childCmd.includes(`-${parentCmd}`) || childCmd.endsWith(`-${parentCmd}`);
 }
 
 // Build command hierarchy from units
@@ -58,13 +65,8 @@ function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
     unitsByCommand[cmd].push(unit);
   }
   
-  // Build groups - start with known leaders (to maintain hierarchy order)
-  const groups: CommandGroup[] = [];
-  const processedCommands = new Set<string>();
-  
-  // First add leader-based groups (Corps, Div leaders)
+  // Sort leaders by size priority
   const sortedLeaders = [...leaders].sort((a, b) => {
-    // Sort by size priority: Army > District > Corps > Div > Brig
     const sizePriority: Record<string, number> = {
       "Army": 0,
       "District": 1,
@@ -78,6 +80,26 @@ function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
     return a.name.localeCompare(b.name);
   });
   
+  // Identify Corps leaders and their subordinate Div commands
+  const corpsLeaders = sortedLeaders.filter(l => l.size === "Corps");
+  const divLeaders = sortedLeaders.filter(l => l.size === "Div");
+  
+  // Map Div commands to their parent Corps command
+  const divToCorps: Record<string, string> = {};
+  for (const corpsLeader of corpsLeaders) {
+    const corpsCmd = corpsLeader.command;
+    for (const divLeader of divLeaders) {
+      const divCmd = divLeader.command;
+      if (isSubordinateCommand(divCmd, corpsCmd)) {
+        divToCorps[divCmd] = corpsCmd;
+      }
+    }
+  }
+  
+  // Build groups
+  const groups: CommandGroup[] = [];
+  const processedCommands = new Set<string>();
+  
   for (const leader of sortedLeaders) {
     const cmd = leader.command;
     if (cmd === "-" || cmd === "—") continue;
@@ -85,18 +107,73 @@ function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
     // Skip army/district leaders as they don't have direct units
     if (leader.size === "Army" || leader.size === "District") continue;
     
+    // Skip if already processed (as subgroup of a Corps)
+    if (processedCommands.has(cmd)) continue;
+    
     processedCommands.add(cmd);
     
-    // Get units for this command or commands that are subordinate
+    // For Corps leaders: check if they have subordinate Div leaders
+    if (leader.size === "Corps") {
+      const subordinateDivCmds = Object.entries(divToCorps)
+        .filter(([, corpsCmd]) => corpsCmd === cmd)
+        .map(([divCmd]) => divCmd);
+      
+      if (subordinateDivCmds.length > 0) {
+        // Corps has subordinate divisions with their own leaders
+        // Build subgroups for each division
+        const subgroups: CommandGroup[] = [];
+        
+        for (const divCmd of subordinateDivCmds) {
+          const divLeader = leaderByCommand[divCmd];
+          if (!divLeader) continue;
+          
+          processedCommands.add(divCmd);
+          
+          const divUnits = unitsByCommand[divCmd] || [];
+          if (divUnits.length > 0 || divLeader) {
+            subgroups.push({
+              leader: divLeader,
+              commandCode: divCmd,
+              displayName: `${divCmd} — ${divLeader.name}`,
+              size: divLeader.size,
+              units: divUnits,
+              subgroups: [],
+              parentCommand: cmd,
+            });
+          }
+        }
+        
+        // Corps direct units (if any)
+        const corpsDirectUnits = unitsByCommand[cmd] || [];
+        
+        groups.push({
+          leader,
+          commandCode: cmd,
+          displayName: `${cmd} — ${leader.name}`,
+          size: leader.size,
+          units: corpsDirectUnits,
+          subgroups,
+        });
+        continue;
+      }
+    }
+    
+    // For Div leaders that are subordinate to a Corps: skip (handled by Corps)
+    if (leader.size === "Div" && divToCorps[cmd]) {
+      continue;
+    }
+    
+    // Standard processing: direct units + subordinate units without their own leader
     const directUnits = unitsByCommand[cmd] || [];
     
-    // Also look for sub-commands (e.g., P-I is subordinate to I)
-    // This handles div-level commands under corps
     const subordinateUnits: Unit[] = [];
     for (const [otherCmd, otherUnits] of Object.entries(unitsByCommand)) {
-      if (otherCmd.includes(`-${cmd}`) || otherCmd.endsWith(`-${cmd}`)) {
-        subordinateUnits.push(...otherUnits);
-        processedCommands.add(otherCmd);
+      if (isSubordinateCommand(otherCmd, cmd)) {
+        const hasOwnLeader = leaderByCommand[otherCmd] !== undefined;
+        if (!hasOwnLeader) {
+          subordinateUnits.push(...otherUnits);
+          processedCommands.add(otherCmd);
+        }
       }
     }
     
@@ -108,6 +185,7 @@ function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
         displayName: `${cmd} — ${leader.name}`,
         size: leader.size,
         units: allUnits,
+        subgroups: [],
       });
     }
   }
@@ -123,6 +201,7 @@ function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
       displayName: cmd === "-" || cmd === "—" ? "Independent" : cmd,
       size: "",
       units: cmdUnits,
+      subgroups: [],
     });
   }
   
@@ -199,11 +278,21 @@ function LeaderHeader({
   const fatigue = getStartingFatigue(leader, footnotes);
   const notes = getNoteSymbols(leader);
   
+  // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
+  const showHexLocation = !leader.reinforcementSet || !leader.hexLocation.toLowerCase().startsWith("see");
+  
   return (
     <div className="hier-leader-header">
       <div className="hier-leader-header__setup">
-        <span className="hier-leader-header__hex">{hexCode}</span>
-        {locationName && <span className="hier-leader-header__location">({locationName})</span>}
+        {showHexLocation && (
+          <>
+            <span className="hier-leader-header__hex">{hexCode}</span>
+            {locationName && <span className="hier-leader-header__location">({locationName})</span>}
+          </>
+        )}
+        {leader.reinforcementSet && (
+          <span className="hier-leader-header__reinforcement">Reinf Set {leader.reinforcementSet}</span>
+        )}
         {fatigue && <span className="hier-leader-header__fatigue">{fatigue}</span>}
       </div>
       <div className="hier-leader-header__counter">
@@ -221,14 +310,18 @@ function CommandGroupSection({
   group, 
   footnotes,
   side,
+  isSubgroup = false,
 }: { 
   group: CommandGroup;
   footnotes: Record<string, string>;
   side: "confederate" | "union";
+  isSubgroup?: boolean;
 }) {
+  const hasSubgroups = group.subgroups.length > 0;
+  
   return (
-    <div className={`hier-command-group hier-command-group--${side}`}>
-      <h4 className="hier-command-group__title">
+    <div className={`hier-command-group hier-command-group--${side} ${isSubgroup ? 'hier-command-group--subgroup' : ''} ${hasSubgroups ? 'hier-command-group--has-subgroups' : ''}`}>
+      <h4 className={`hier-command-group__title ${isSubgroup ? 'hier-command-group__title--subgroup' : ''}`}>
         {group.displayName}
         {group.size && <span className="hier-command-group__size"> ({group.size})</span>}
       </h4>
@@ -237,15 +330,33 @@ function CommandGroupSection({
         <LeaderHeader leader={group.leader} footnotes={footnotes} />
       )}
       
-      <div className="hier-command-group__units">
-        {group.units.map((unit, idx) => (
-          <UnitRow 
-            key={`${unit.name}-${idx}`}
-            unit={unit}
-            footnotes={footnotes}
-          />
-        ))}
-      </div>
+      {/* Direct units for this command */}
+      {group.units.length > 0 && (
+        <div className="hier-command-group__units">
+          {group.units.map((unit, idx) => (
+            <UnitRow 
+              key={`${unit.name}-${idx}`}
+              unit={unit}
+              footnotes={footnotes}
+            />
+          ))}
+        </div>
+      )}
+      
+      {/* Subgroups (e.g., Divisions under a Corps) */}
+      {group.subgroups.length > 0 && (
+        <div className="hier-command-group__subgroups">
+          {group.subgroups.map((subgroup, idx) => (
+            <CommandGroupSection
+              key={`${subgroup.commandCode}-${idx}`}
+              group={subgroup}
+              footnotes={footnotes}
+              side={side}
+              isSubgroup={true}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -305,6 +416,10 @@ function ArmySection({
   const armyLeader = getArmyLeader(units);
   const hierarchy = buildCommandHierarchy(units);
   
+  // Separate groups with subgroups (Corps with divisions) from flat groups
+  const nestedGroups = hierarchy.filter(g => g.subgroups.length > 0);
+  const flatGroups = hierarchy.filter(g => g.subgroups.length === 0);
+  
   return (
     <section className={`hier-army-section hier-army-section--${side}`}>
       <h3 className="hier-army-section__title">{title}</h3>
@@ -315,16 +430,29 @@ function ArmySection({
         </div>
       )}
       
-      <div className="hier-army-section__groups">
-        {hierarchy.map((group, idx) => (
-          <CommandGroupSection 
-            key={`${group.commandCode}-${idx}`}
-            group={group}
-            footnotes={footnotes}
-            side={side}
-          />
-        ))}
-      </div>
+      {/* Flat groups in 3-column grid */}
+      {flatGroups.length > 0 && (
+        <div className="hier-army-section__groups">
+          {flatGroups.map((group, idx) => (
+            <CommandGroupSection 
+              key={`${group.commandCode}-${idx}`}
+              group={group}
+              footnotes={footnotes}
+              side={side}
+            />
+          ))}
+        </div>
+      )}
+      
+      {/* Nested groups (Corps with divisions) - full width, each with its own 3-column grid */}
+      {nestedGroups.map((group, idx) => (
+        <CommandGroupSection 
+          key={`${group.commandCode}-${idx}`}
+          group={group}
+          footnotes={footnotes}
+          side={side}
+        />
+      ))}
       
       <GunboatsList gunboats={gunboats} />
       <FootnotesLegend footnotes={footnotes} />
