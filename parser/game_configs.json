@@ -1,0 +1,112 @@
+{
+    "_comment": "Configuration for parsing raw table rows into structured unit data",
+    "_column_types": {
+        "name": "Unit/leader name tokens (variable length, ends when size detected)",
+        "size": "Unit size: Army, District, Corps, Demi-Div, D-Div, Div, Brig, Regt",
+        "command": "Command designation (single token)",
+        "type": "Unit type: Ldr, Inf, Cav, Art",
+        "manpower": "Manpower value (may have footnote symbols)",
+        "hex": "Hex location tokens (variable length, may include location name)",
+        "turn": "Arrival turn number (HCR reinforcements)",
+        "set": "Reinforcement set number (HSN, RTG2)"
+    },
+    "defaults": {
+        "columns": [
+            "name",
+            "size",
+            "command",
+            "type",
+            "manpower",
+            "hex"
+        ],
+        "valid_sizes": [
+            "Army",
+            "District",
+            "Corps",
+            "Demi-Div",
+            "D-Div",
+            "Div",
+            "Brig",
+            "Regt"
+        ],
+        "valid_types": [
+            "Ldr",
+            "Inf",
+            "Cav",
+            "Art"
+        ],
+        "footnote_symbols": [
+            "*",
+            "^",
+            "†",
+            "‡",
+            "§",
+            "$",
+            "+",
+            "•"
+        ],
+        "special_unit_patterns": [
+            "^Gunboat",
+            "^Naval Battery",
+            "^Wagon Train"
+        ]
+    },
+    "otr2": {
+        "name": "On to Richmond 2nd Edition",
+        "table_patterns": {}
+    },
+    "gtc2": {
+        "name": "Grant Takes Command 2nd Edition",
+        "table_patterns": {}
+    },
+    "hcr": {
+        "name": "Here Come the Rebels",
+        "table_patterns": {
+            ".*Scenario 7.*|.*Scenario 8.*": {
+                "_comment": "Advanced scenarios with turn-based reinforcements",
+                "columns": [
+                    "turn",
+                    "name",
+                    "size",
+                    "command",
+                    "type",
+                    "manpower",
+                    "hex"
+                ]
+            }
+        }
+    },
+    "rtg2": {
+        "name": "Roads to Gettysburg 2nd Edition",
+        "table_patterns": {
+            ".*Reinforcement Track|.*Garrison Track": {
+                "_comment": "Reinforcement tracks have set number at end",
+                "columns": [
+                    "name",
+                    "size",
+                    "command",
+                    "type",
+                    "manpower",
+                    "hex",
+                    "set"
+                ]
+            },
+            ".*Increment|Placed Upon Stuart": {
+                "_comment": "Entry increments - units placed at entry, hex is entry zone"
+            }
+        }
+    },
+    "hsn": {
+        "name": "Hood Strikes North",
+        "table_patterns": {
+            "Confederate Set-Up|Union Set-Up": {
+                "_comment": "HSN has Set column but header detection varies; use header detection"
+            }
+        },
+        "_note": "HSN headers vary - some have 'Set' column, parser should detect from header_row"
+    },
+    "rtw": {
+        "name": "Rally Round the Flag",
+        "table_patterns": {}
+    }
+}

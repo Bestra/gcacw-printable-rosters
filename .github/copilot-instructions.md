@@ -4,7 +4,14 @@ Operational guide for working on this codebase.
 
 ## Python
 
-- Always use `uv` to run Python scripts, never bare `python` or `pip`.
+**CRITICAL: Always use `uv run python` to execute Python. Never use bare `python`, `python3`, or `pip`.**
+
+Examples:
+
+- ✅ `cd parser && uv run python script.py`
+- ✅ `uv run python -c "print('hello')"`
+- ❌ `python3 script.py`
+- ❌ `python -c "..."`
 
 ## Commands
 
