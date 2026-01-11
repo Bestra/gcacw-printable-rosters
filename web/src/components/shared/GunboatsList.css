@@ -1,0 +1,43 @@
+.gunboats-list {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: #f0f4f8;
+  border-radius: 4px;
+}
+
+.gunboats-list__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #456;
+}
+
+.gunboats-list__items {
+  margin: 0;
+  padding-left: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.gunboats-list__item {
+  margin-bottom: 0.25rem;
+}
+
+.gunboats-list__name {
+  font-weight: 500;
+}
+
+.gunboats-list__location {
+  color: #666;
+}
+
+@media print {
+  .gunboats-list {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .gunboats-list__title {
+    font-size: 0.8rem;
+  }
+}

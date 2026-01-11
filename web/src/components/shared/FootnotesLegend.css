@@ -1,0 +1,34 @@
+.footnotes-legend {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: #f8f8f8;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.footnotes-legend__item {
+  break-inside: avoid;
+  margin-bottom: 0.25rem;
+}
+
+.footnotes-legend__symbol {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #666;
+}
+
+.footnotes-legend__text {
+  color: #333;
+}
+
+@media print {
+  .footnotes-legend {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    column-count: 3;
+  }
+}
