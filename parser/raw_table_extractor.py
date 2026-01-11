@@ -16,6 +16,7 @@ and for manually reviewing how tables are parsed before unit conversion.
 import pdfplumber
 import re
 import json
+import os
 from dataclasses import dataclass, field, asdict
 from typing import Optional
 

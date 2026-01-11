@@ -3,6 +3,236 @@
   "name": "Hood Strikes North",
   "scenarios": [
     {
+      "number": 1,
+      "name": "Here Come the Rebels!",
+      "confederateFootnotes": {},
+      "unionFootnotes": {
+        "*": "Begins game under Fort marker",
+        "\u2020": "Begins game on Exhausted side"
+      },
+      "confederateUnits": [
+        {
+          "name": "Forrest",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0511 (Poplar Grove)",
+          "notes": []
+        },
+        {
+          "name": "Chalmers",
+          "size": "Div",
+          "command": "C-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0511 (Poplar Grove)",
+          "notes": []
+        },
+        {
+          "name": "Jackson",
+          "size": "Div",
+          "command": "J-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0118",
+          "notes": []
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "B-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0119",
+          "notes": []
+        },
+        {
+          "name": "Rucker",
+          "size": "Brig",
+          "command": "C-Cav",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "0511 (Poplar Grove)",
+          "notes": []
+        },
+        {
+          "name": "Biffle",
+          "size": "Brig",
+          "command": "C-Cav",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "0511 (Poplar Grove)",
+          "notes": []
+        },
+        {
+          "name": "Armstrong",
+          "size": "Brig",
+          "command": "J-Cav",
+          "type": "Cav",
+          "manpowerValue": "2#",
+          "hexLocation": "0118",
+          "notes": []
+        },
+        {
+          "name": "Ross",
+          "size": "Brig",
+          "command": "J-Cav",
+          "type": "Cav",
+          "manpowerValue": "1#",
+          "hexLocation": "0118",
+          "notes": []
+        },
+        {
+          "name": "Bell",
+          "size": "Brig",
+          "command": "B-Cav",
+          "type": "Cav",
+          "manpowerValue": "2#",
+          "hexLocation": "0119",
+          "notes": []
+        },
+        {
+          "name": "Crossland",
+          "size": "Brig",
+          "command": "B-Cav",
+          "type": "Cav",
+          "manpowerValue": "1#",
+          "hexLocation": "0119",
+          "notes": []
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Schofield",
+          "size": "District",
+          "command": "Ohio",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "1220 (Pleasant Grove)",
+          "notes": []
+        },
+        {
+          "name": "Stanley",
+          "size": "Corps",
+          "command": "IV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0324 (Colored Church)",
+          "notes": []
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "Cav-5",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0420",
+          "notes": []
+        },
+        {
+          "name": "Cox",
+          "size": "Div",
+          "command": "XXIII",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "1220 (Pleasant Grove)",
+          "notes": []
+        },
+        {
+          "name": "Ruger",
+          "size": "Div",
+          "command": "XXIII",
+          "type": "Inf",
+          "manpowerValue": "2*",
+          "hexLocation": "1715 (Columbia)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "O. Moore",
+          "size": "Brig",
+          "command": "XXIII",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "5707 (Nashville)",
+          "notes": []
+        },
+        {
+          "name": "Wagner",
+          "size": "Div",
+          "command": "IV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "0423 (Lynnville)",
+          "notes": []
+        },
+        {
+          "name": "Whitaker",
+          "size": "Div",
+          "command": "IV",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "0324 (Colored Church)",
+          "notes": []
+        },
+        {
+          "name": "Wood",
+          "size": "Div",
+          "command": "IV",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "0224 (Saw Mill)",
+          "notes": []
+        },
+        {
+          "name": "Waters",
+          "size": "Brig",
+          "command": "IV",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "0125",
+          "notes": []
+        },
+        {
+          "name": "Coon",
+          "size": "Brig",
+          "command": "Cav-1",
+          "type": "Cav",
+          "manpowerValue": "2#\u2020",
+          "hexLocation": "0420",
+          "notes": [
+            "\u2020"
+          ]
+        },
+        {
+          "name": "Croxton-A",
+          "size": "Brig",
+          "command": "Cav-5",
+          "type": "Cav",
+          "manpowerValue": "2#\u2020",
+          "hexLocation": "0221",
+          "notes": [
+            "\u2020"
+          ]
+        },
+        {
+          "name": "Capron-A",
+          "size": "Brig",
+          "command": "Cav-6",
+          "type": "Cav",
+          "manpowerValue": "2#\u2020",
+          "hexLocation": "0711 (Mt. Pleasant)",
+          "notes": [
+            "\u2020"
+          ]
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
       "number": 2,
       "name": "The Race for Columbia",
       "confederateFootnotes": {
@@ -33,6 +263,64 @@
           "notes": []
         },
         {
+          "name": "Buford",
+          "size": "Div",
+          "command": "B-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "0119",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Jackson",
+          "size": "Div",
+          "command": "J-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "0119",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Lee",
+          "size": "Corps",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0110 to 0114 0101 to 0109",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0110 to 0114 0101 to 0109",
+          "notes": []
+        },
+        {
+          "name": "Cheatham",
+          "size": "Corps",
+          "command": "C",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0110 to 0114 0101 to 0109",
+          "notes": []
+        },
+        {
+          "name": "Stewart",
+          "size": "Corps",
+          "command": "S",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0110 to 0114 0101 to 0109",
+          "notes": []
+        },
+        {
           "name": "Rucker",
           "size": "Brig",
           "command": "C-Cav",
@@ -52,17 +340,6 @@
           "hexLocation": "0111",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "B-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "0119",
-          "notes": [
-            "+"
           ]
         },
         {
@@ -90,17 +367,6 @@
           ]
         },
         {
-          "name": "Jackson",
-          "size": "Div",
-          "command": "J-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "0119",
-          "notes": [
-            "+"
-          ]
-        },
-        {
           "name": "Armstrong",
           "size": "Brig",
           "command": "J-Cav",
@@ -123,15 +389,6 @@
             "*",
             "+"
           ]
-        },
-        {
-          "name": "Lee",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0110 to 0114 0101 to 0109",
-          "notes": []
         },
         {
           "name": "Johnson",
@@ -161,24 +418,6 @@
           "notes": []
         },
         {
-          "name": "Hood",
-          "size": "Army",
-          "command": "AT",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0110 to 0114 0101 to 0109",
-          "notes": []
-        },
-        {
-          "name": "Cheatham",
-          "size": "Corps",
-          "command": "C",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0110 to 0114 0101 to 0109",
-          "notes": []
-        },
-        {
           "name": "Cleburne",
           "size": "Div",
           "command": "C",
@@ -202,15 +441,6 @@
           "command": "C",
           "type": "Inf",
           "manpowerValue": "5",
-          "hexLocation": "0110 to 0114 0101 to 0109",
-          "notes": []
-        },
-        {
-          "name": "Stewart",
-          "size": "Corps",
-          "command": "S",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "0110 to 0114 0101 to 0109",
           "notes": []
         },
@@ -251,6 +481,46 @@
           "manpowerValue": "-",
           "hexLocation": "0523 (Laurine)",
           "notes": []
+        },
+        {
+          "name": "Wilson",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4010 (Franklin)",
+          "notes": []
+        },
+        {
+          "name": "R. Johnson",
+          "size": "Div",
+          "command": "Cav-6",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4010 (Franklin)",
+          "notes": []
+        },
+        {
+          "name": "Stanley",
+          "size": "Corps",
+          "command": "IV",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "0423 (Lynnville)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "Cav-5",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "0420",
+          "notes": [
+            "+"
+          ]
         },
         {
           "name": "Cox",
@@ -331,24 +601,6 @@
           ]
         },
         {
-          "name": "Wilson",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4010 (Franklin)",
-          "notes": []
-        },
-        {
-          "name": "R. Johnson",
-          "size": "Div",
-          "command": "Cav-6",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4010 (Franklin)",
-          "notes": []
-        },
-        {
           "name": "Lowe",
           "size": "Brig",
           "command": "Cav-6",
@@ -356,17 +608,6 @@
           "manpowerValue": "1",
           "hexLocation": "4010 (Franklin)",
           "notes": []
-        },
-        {
-          "name": "Stanley",
-          "size": "Corps",
-          "command": "IV",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "0423 (Lynnville)",
-          "notes": [
-            "+"
-          ]
         },
         {
           "name": "Wagner",
@@ -471,17 +712,6 @@
           "notes": []
         },
         {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "Cav-5",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "0420",
-          "notes": [
-            "+"
-          ]
-        },
-        {
           "name": "Coon",
           "size": "Brig",
           "command": "Cav-5",
@@ -553,6 +783,64 @@
           ]
         },
         {
+          "name": "Stewart",
+          "size": "Corps",
+          "command": "S",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "1317 (Parsonage)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Lee",
+          "size": "Corps",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "1615 (Thomas\u2019 Springs)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Forrest",
+          "size": "Corps",
+          "command": "C",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "1519 (Hurricane Switch)",
+          "notes": []
+        },
+        {
+          "name": "Chalmers",
+          "size": "Div",
+          "command": "C-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "1519 (Hurricane Switch)",
+          "notes": []
+        },
+        {
+          "name": "Jackson",
+          "size": "Div",
+          "command": "J-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "1220 (Pleasant Grove)",
+          "notes": []
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "B-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "1828 (Rady)",
+          "notes": []
+        },
+        {
           "name": "Cleburne",
           "size": "Div",
           "command": "C",
@@ -581,17 +869,6 @@
           "type": "Inf",
           "manpowerValue": "8+",
           "hexLocation": "1417",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Stewart",
-          "size": "Corps",
-          "command": "S",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "1317 (Parsonage)",
           "notes": [
             "+"
           ]
@@ -642,17 +919,6 @@
           ]
         },
         {
-          "name": "Lee",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "1615 (Thomas\u2019 Springs)",
-          "notes": [
-            "+"
-          ]
-        },
-        {
           "name": "Stevenson-A",
           "size": "Div",
           "command": "L",
@@ -675,24 +941,6 @@
           ]
         },
         {
-          "name": "Forrest",
-          "size": "Corps",
-          "command": "C",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "1519 (Hurricane Switch)",
-          "notes": []
-        },
-        {
-          "name": "Chalmers",
-          "size": "Div",
-          "command": "C-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "1519 (Hurricane Switch)",
-          "notes": []
-        },
-        {
           "name": "Biffle",
           "size": "Brig",
           "command": "C-Cav",
@@ -711,15 +959,6 @@
           "notes": []
         },
         {
-          "name": "Jackson",
-          "size": "Div",
-          "command": "J-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "1220 (Pleasant Grove)",
-          "notes": []
-        },
-        {
           "name": "Armstrong",
           "size": "Brig",
           "command": "J-Cav",
@@ -735,15 +974,6 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "1220 (Pleasant Grove)",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "B-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "1828 (Rady)",
           "notes": []
         },
         {
@@ -776,6 +1006,44 @@
           "notes": [
             "+"
           ]
+        },
+        {
+          "name": "Stanley",
+          "size": "Corps",
+          "command": "IV",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "2413 (Judge Cooper)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "Cav-5",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "2017",
+          "notes": []
+        },
+        {
+          "name": "R. Johnson",
+          "size": "Div",
+          "command": "Cav-6",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "2219",
+          "notes": []
+        },
+        {
+          "name": "Wilson",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "2621 (Collins)",
+          "notes": []
         },
         {
           "name": "Cox",
@@ -821,17 +1089,6 @@
           "hexLocation": "1916",
           "notes": [
             "*",
-            "+"
-          ]
-        },
-        {
-          "name": "Stanley",
-          "size": "Corps",
-          "command": "IV",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "2413 (Judge Cooper)",
-          "notes": [
             "+"
           ]
         },
@@ -896,15 +1153,6 @@
           ]
         },
         {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "Cav-5",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "2017",
-          "notes": []
-        },
-        {
           "name": "Coon",
           "size": "Brig",
           "command": "Cav-5",
@@ -914,30 +1162,12 @@
           "notes": []
         },
         {
-          "name": "R. Johnson",
-          "size": "Div",
-          "command": "Cav-6",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "2219",
-          "notes": []
-        },
-        {
           "name": "Croxton-A",
           "size": "Brig",
           "command": "Cav-1",
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "2219",
-          "notes": []
-        },
-        {
-          "name": "Wilson",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "2621 (Collins)",
           "notes": []
         },
         {
@@ -1016,6 +1246,60 @@
           "notes": []
         },
         {
+          "name": "Stewart",
+          "size": "Corps",
+          "command": "S",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "2914 (Spring Hill)",
+          "notes": []
+        },
+        {
+          "name": "Lee",
+          "size": "Corps",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "2413 (Judge Cooper)",
+          "notes": []
+        },
+        {
+          "name": "Forrest",
+          "size": "Corps",
+          "command": "C",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "2915 (Jimeson)",
+          "notes": []
+        },
+        {
+          "name": "Chalmers",
+          "size": "Div",
+          "command": "C-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "2915 (Jimeson)",
+          "notes": []
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "B-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "2915 (Jimeson)",
+          "notes": []
+        },
+        {
+          "name": "Jackson",
+          "size": "Div",
+          "command": "J-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "3315 (Kernan)",
+          "notes": []
+        },
+        {
           "name": "Cleburne",
           "size": "Div",
           "command": "C",
@@ -1047,15 +1331,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Stewart",
-          "size": "Corps",
-          "command": "S",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "2914 (Spring Hill)",
-          "notes": []
         },
         {
           "name": "Loring",
@@ -1102,15 +1377,6 @@
           ]
         },
         {
-          "name": "Lee",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "2413 (Judge Cooper)",
-          "notes": []
-        },
-        {
           "name": "Clayton",
           "size": "Div",
           "command": "L",
@@ -1126,24 +1392,6 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "2314 (Cottage Home)",
-          "notes": []
-        },
-        {
-          "name": "Forrest",
-          "size": "Corps",
-          "command": "C",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "2915 (Jimeson)",
-          "notes": []
-        },
-        {
-          "name": "Chalmers",
-          "size": "Div",
-          "command": "C-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "2915 (Jimeson)",
           "notes": []
         },
         {
@@ -1169,15 +1417,6 @@
           ]
         },
         {
-          "name": "Buford",
-          "size": "Div",
-          "command": "B-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "2915 (Jimeson)",
-          "notes": []
-        },
-        {
           "name": "Bell",
           "size": "Brig",
           "command": "B-Cav",
@@ -1198,15 +1437,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Jackson",
-          "size": "Div",
-          "command": "J-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "3315 (Kernan)",
-          "notes": []
         },
         {
           "name": "Armstrong",
@@ -1240,6 +1470,53 @@
           "manpowerValue": "-",
           "hexLocation": "3911 (Carter)",
           "notes": []
+        },
+        {
+          "name": "Stanley",
+          "size": "Corps",
+          "command": "IV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "3612 (Cotton Gin)",
+          "notes": []
+        },
+        {
+          "name": "Wilson",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4113",
+          "notes": []
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "Cav-5",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4113",
+          "notes": []
+        },
+        {
+          "name": "R. Johnson",
+          "size": "Div",
+          "command": "Cav-6",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4113",
+          "notes": []
+        },
+        {
+          "name": "Smith",
+          "size": "Corps",
+          "command": "DAT",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "5706 (Nashville)",
+          "notes": [
+            "+"
+          ]
         },
         {
           "name": "Cox",
@@ -1287,15 +1564,6 @@
           "notes": []
         },
         {
-          "name": "Stanley",
-          "size": "Corps",
-          "command": "IV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "3612 (Cotton Gin)",
-          "notes": []
-        },
-        {
           "name": "Wood",
           "size": "Div",
           "command": "IV",
@@ -1338,15 +1606,6 @@
           ]
         },
         {
-          "name": "Wilson",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4113",
-          "notes": []
-        },
-        {
           "name": "Croxton-A",
           "size": "Brig",
           "command": "Cav-1",
@@ -1358,15 +1617,6 @@
           ]
         },
         {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "Cav-5",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4113",
-          "notes": []
-        },
-        {
           "name": "Coon",
           "size": "Brig",
           "command": "Cav-5",
@@ -1376,15 +1626,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "R. Johnson",
-          "size": "Div",
-          "command": "Cav-6",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4113",
-          "notes": []
         },
         {
           "name": "Harrison",
@@ -1417,17 +1658,6 @@
           "hexLocation": "4910 (Brentwood)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Smith",
-          "size": "Corps",
-          "command": "DAT",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "5706 (Nashville)",
-          "notes": [
-            "+"
           ]
         },
         {
@@ -1484,6 +1714,15 @@
           "notes": []
         },
         {
+          "name": "Buford",
+          "size": "Div",
+          "command": "B-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5712 (Kline)",
+          "notes": []
+        },
+        {
           "name": "Armstrong",
           "size": "Brig",
           "command": "J-Cav",
@@ -1499,15 +1738,6 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "5810 (Franklin College)",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "B-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5712 (Kline)",
           "notes": []
         },
         {
@@ -1634,6 +1864,42 @@
           "notes": []
         },
         {
+          "name": "Hood",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5208",
+          "notes": []
+        },
+        {
+          "name": "Lee",
+          "size": "Corps",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5308",
+          "notes": []
+        },
+        {
+          "name": "Stewart",
+          "size": "Corps",
+          "command": "S",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5206 (Tyne)",
+          "notes": []
+        },
+        {
+          "name": "Chalmers",
+          "size": "Div",
+          "command": "C-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5303 (School)",
+          "notes": []
+        },
+        {
           "name": "Smith-A",
           "size": "Div",
           "command": "C",
@@ -1667,15 +1933,6 @@
           ]
         },
         {
-          "name": "Hood",
-          "size": "Army",
-          "command": "AT",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5208",
-          "notes": []
-        },
-        {
           "name": "Johnson",
           "size": "Div",
           "command": "L",
@@ -1685,15 +1942,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Lee",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5308",
-          "notes": []
         },
         {
           "name": "Clayton",
@@ -1716,15 +1964,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Stewart",
-          "size": "Corps",
-          "command": "S",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5206 (Tyne)",
-          "notes": []
         },
         {
           "name": "Loring",
@@ -1760,15 +1999,6 @@
           ]
         },
         {
-          "name": "Chalmers",
-          "size": "Div",
-          "command": "C-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5303 (School)",
-          "notes": []
-        },
-        {
           "name": "Rucker",
           "size": "Brig",
           "command": "C-Cav",
@@ -1792,6 +2022,78 @@
         }
       ],
       "unionUnits": [
+        {
+          "name": "Schofield",
+          "size": "District",
+          "command": "Ohio",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5607 (Fort Negley)",
+          "notes": []
+        },
+        {
+          "name": "Thomas",
+          "size": "Army",
+          "command": "DC",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5507 (Fort Casino)",
+          "notes": []
+        },
+        {
+          "name": "Wood",
+          "size": "Corps",
+          "command": "IV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5507 (Fort Casino)",
+          "notes": []
+        },
+        {
+          "name": "Smith",
+          "size": "Corps",
+          "command": "DAT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5505",
+          "notes": []
+        },
+        {
+          "name": "Wilson",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5604 (Fort Garesch\u00e9)",
+          "notes": []
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "Cav-5",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5604 (Fort Garesch\u00e9)",
+          "notes": []
+        },
+        {
+          "name": "R. Johnson",
+          "size": "Div",
+          "command": "Cav-6",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5604 (Fort Garesch\u00e9)",
+          "notes": []
+        },
+        {
+          "name": "Knipe",
+          "size": "Div",
+          "command": "Cav-7",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5604 (Fort Garesch\u00e9)",
+          "notes": []
+        },
         {
           "name": "Steedman",
           "size": "Div",
@@ -1820,15 +2122,6 @@
           "notes": []
         },
         {
-          "name": "Schofield",
-          "size": "District",
-          "command": "Ohio",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5607 (Fort Negley)",
-          "notes": []
-        },
-        {
           "name": "Cox",
           "size": "Div",
           "command": "XXIII",
@@ -1844,24 +2137,6 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "5607 (Fort Negley)",
-          "notes": []
-        },
-        {
-          "name": "Thomas",
-          "size": "Army",
-          "command": "DC",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5507 (Fort Casino)",
-          "notes": []
-        },
-        {
-          "name": "Wood",
-          "size": "Corps",
-          "command": "IV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5507 (Fort Casino)",
           "notes": []
         },
         {
@@ -1892,15 +2167,6 @@
           "notes": []
         },
         {
-          "name": "Smith",
-          "size": "Corps",
-          "command": "DAT",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5505",
-          "notes": []
-        },
-        {
           "name": "Garrard",
           "size": "Div",
           "command": "DAT",
@@ -1928,24 +2194,6 @@
           "notes": []
         },
         {
-          "name": "Wilson",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5604 (Fort Garesch\u00e9)",
-          "notes": []
-        },
-        {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "Cav-5",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5604 (Fort Garesch\u00e9)",
-          "notes": []
-        },
-        {
           "name": "Coon",
           "size": "Brig",
           "command": "Cav-5",
@@ -1960,15 +2208,6 @@
           "command": "Cav-5",
           "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "5604 (Fort Garesch\u00e9)",
-          "notes": []
-        },
-        {
-          "name": "R. Johnson",
-          "size": "Div",
-          "command": "Cav-6",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "5604 (Fort Garesch\u00e9)",
           "notes": []
         },
@@ -1998,15 +2237,6 @@
           "command": "Cav-1",
           "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "5604 (Fort Garesch\u00e9)",
-          "notes": []
-        },
-        {
-          "name": "Knipe",
-          "size": "Div",
-          "command": "Cav-7",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "5604 (Fort Garesch\u00e9)",
           "notes": []
         },
@@ -2053,6 +2283,71 @@
           "notes": []
         },
         {
+          "name": "Lee",
+          "size": "Corps",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4410 (Hollow Tree Gap)",
+          "notes": []
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "B-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4111 (Ft. Granger)",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4110",
+          "notes": []
+        },
+        {
+          "name": "Cheatham",
+          "size": "Corps",
+          "command": "C",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4110",
+          "notes": []
+        },
+        {
+          "name": "Stewart",
+          "size": "Corps",
+          "command": "S",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4010 (Franklin)",
+          "notes": []
+        },
+        {
+          "name": "Forrest",
+          "size": "Corps",
+          "command": "C",
+          "type": "Ldr",
+          "manpowerValue": "-\u2022",
+          "hexLocation": "5027 (Wilkerson\u2019s Crossroads)",
+          "notes": [
+            "\u2022"
+          ]
+        },
+        {
+          "name": "Jackson",
+          "size": "Div",
+          "command": "J-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5027 (Wilkerson\u2019s Crossroads)",
+          "notes": []
+        },
+        {
           "name": "Biffle",
           "size": "Brig",
           "command": "C-Cav",
@@ -2062,15 +2357,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Lee",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4410 (Hollow Tree Gap)",
-          "notes": []
         },
         {
           "name": "Clayton",
@@ -2104,15 +2390,6 @@
           "notes": []
         },
         {
-          "name": "Buford",
-          "size": "Div",
-          "command": "B-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4111 (Ft. Granger)",
-          "notes": []
-        },
-        {
           "name": "Bell",
           "size": "Brig",
           "command": "B-Cav",
@@ -2133,24 +2410,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Hood",
-          "size": "Army",
-          "command": "AT",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4110",
-          "notes": []
-        },
-        {
-          "name": "Cheatham",
-          "size": "Corps",
-          "command": "C",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4110",
-          "notes": []
         },
         {
           "name": "Smith-A",
@@ -2180,15 +2439,6 @@
           "notes": []
         },
         {
-          "name": "Stewart",
-          "size": "Corps",
-          "command": "S",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4010 (Franklin)",
-          "notes": []
-        },
-        {
           "name": "Loring",
           "size": "Div",
           "command": "S",
@@ -2204,26 +2454,6 @@
           "type": "Inf",
           "manpowerValue": "4#",
           "hexLocation": "4010 (Franklin)",
-          "notes": []
-        },
-        {
-          "name": "Forrest",
-          "size": "Corps",
-          "command": "C",
-          "type": "Ldr",
-          "manpowerValue": "-\u2022",
-          "hexLocation": "5027 (Wilkerson\u2019s Crossroads)",
-          "notes": [
-            "\u2022"
-          ]
-        },
-        {
-          "name": "Jackson",
-          "size": "Div",
-          "command": "J-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5027 (Wilkerson\u2019s Crossroads)",
           "notes": []
         },
         {
@@ -2256,6 +2486,42 @@
           "notes": []
         },
         {
+          "name": "Wilson",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5008 (Blacksmith)",
+          "notes": []
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "Cav-5",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5008 (Blacksmith)",
+          "notes": []
+        },
+        {
+          "name": "Knipe",
+          "size": "Div",
+          "command": "Cav-7",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5008 (Blacksmith)",
+          "notes": []
+        },
+        {
+          "name": "R. Johnson",
+          "size": "Div",
+          "command": "Cav-6",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "5107 (Compton)",
+          "notes": []
+        },
+        {
           "name": "Kimball",
           "size": "Div",
           "command": "IV",
@@ -2285,24 +2551,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Wilson",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5008 (Blacksmith)",
-          "notes": []
-        },
-        {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "Cav-5",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5008 (Blacksmith)",
-          "notes": []
         },
         {
           "name": "Coon",
@@ -2338,15 +2586,6 @@
           ]
         },
         {
-          "name": "Knipe",
-          "size": "Div",
-          "command": "Cav-7",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5008 (Blacksmith)",
-          "notes": []
-        },
-        {
           "name": "Hammond",
           "size": "Brig",
           "command": "Cav-7",
@@ -2367,15 +2606,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "R. Johnson",
-          "size": "Div",
-          "command": "Cav-6",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "5107 (Compton)",
-          "notes": []
         },
         {
           "name": "Harrison",
@@ -2428,6 +2658,24 @@
           "notes": []
         },
         {
+          "name": "Jackson",
+          "size": "Div",
+          "command": "J-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0820 (Ingram\u2019s Mill)",
+          "notes": []
+        },
+        {
+          "name": "Chalmers",
+          "size": "Div",
+          "command": "C-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "1022 (Campbell Station)",
+          "notes": []
+        },
+        {
           "name": "Bell",
           "size": "Brig",
           "command": "B-Cav",
@@ -2442,15 +2690,6 @@
           "command": "B-Cav",
           "type": "Cav",
           "manpowerValue": "1",
-          "hexLocation": "0820 (Ingram\u2019s Mill)",
-          "notes": []
-        },
-        {
-          "name": "Jackson",
-          "size": "Div",
-          "command": "J-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "0820 (Ingram\u2019s Mill)",
           "notes": []
         },
@@ -2470,15 +2709,6 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "0820 (Ingram\u2019s Mill)",
-          "notes": []
-        },
-        {
-          "name": "Chalmers",
-          "size": "Div",
-          "command": "C-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "1022 (Campbell Station)",
           "notes": []
         },
         {
@@ -2511,6 +2741,24 @@
           "notes": []
         },
         {
+          "name": "Wilson",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "1715 (Columbia)",
+          "notes": []
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "Cav-5",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "1715 (Columbia)",
+          "notes": []
+        },
+        {
           "name": "Kimball",
           "size": "Div",
           "command": "IV",
@@ -2534,15 +2782,6 @@
           "command": "IV",
           "type": "Inf",
           "manpowerValue": "8",
-          "hexLocation": "1715 (Columbia)",
-          "notes": []
-        },
-        {
-          "name": "Wilson",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "1715 (Columbia)",
           "notes": []
         },
@@ -2578,15 +2817,6 @@
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "Cav-5",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "1715 (Columbia)",
-          "notes": []
         },
         {
           "name": "Coon",
@@ -2645,6 +2875,82 @@
           "notes": []
         },
         {
+          "name": "Buford",
+          "size": "Div",
+          "command": "B-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "0119",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Jackson",
+          "size": "Div",
+          "command": "J-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "0119",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Lee",
+          "size": "Corps",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0110 to 0114 0101 to 0109",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0110 to 0114 0101 to 0109",
+          "notes": []
+        },
+        {
+          "name": "Cheatham",
+          "size": "Corps",
+          "command": "C",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0110 to 0114 0101 to 0109",
+          "notes": []
+        },
+        {
+          "name": "Stewart",
+          "size": "Corps",
+          "command": "S",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0110 to 0114 0101 to 0109",
+          "notes": []
+        },
+        {
+          "name": "Roddey",
+          "size": "Div",
+          "command": "R-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0107 to 0114",
+          "notes": []
+        },
+        {
+          "name": "Adams",
+          "size": "Div",
+          "command": "A-Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0107 to 0114",
+          "notes": []
+        },
+        {
           "name": "Rucker",
           "size": "Brig",
           "command": "C-Cav",
@@ -2664,17 +2970,6 @@
           "hexLocation": "0111",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "B-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "0119",
-          "notes": [
-            "+"
           ]
         },
         {
@@ -2702,17 +2997,6 @@
           ]
         },
         {
-          "name": "Jackson",
-          "size": "Div",
-          "command": "J-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "0119",
-          "notes": [
-            "+"
-          ]
-        },
-        {
           "name": "Armstrong",
           "size": "Brig",
           "command": "J-Cav",
@@ -2735,15 +3019,6 @@
             "*",
             "+"
           ]
-        },
-        {
-          "name": "Lee",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0110 to 0114 0101 to 0109",
-          "notes": []
         },
         {
           "name": "Johnson",
@@ -2773,24 +3048,6 @@
           "notes": []
         },
         {
-          "name": "Hood",
-          "size": "Army",
-          "command": "AT",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0110 to 0114 0101 to 0109",
-          "notes": []
-        },
-        {
-          "name": "Cheatham",
-          "size": "Corps",
-          "command": "C",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0110 to 0114 0101 to 0109",
-          "notes": []
-        },
-        {
           "name": "Cleburne",
           "size": "Div",
           "command": "C",
@@ -2814,15 +3071,6 @@
           "command": "C",
           "type": "Inf",
           "manpowerValue": "5",
-          "hexLocation": "0110 to 0114 0101 to 0109",
-          "notes": []
-        },
-        {
-          "name": "Stewart",
-          "size": "Corps",
-          "command": "S",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "0110 to 0114 0101 to 0109",
           "notes": []
         },
@@ -2863,15 +3111,6 @@
           "notes": []
         },
         {
-          "name": "Roddey",
-          "size": "Div",
-          "command": "R-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0107 to 0114",
-          "notes": []
-        },
-        {
           "name": "Pickett",
           "size": "Brig",
           "command": "R-Cav",
@@ -2895,15 +3134,6 @@
           "command": "R-Cav",
           "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "0107 to 0114",
-          "notes": []
-        },
-        {
-          "name": "Adams",
-          "size": "Div",
-          "command": "A-Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "0107 to 0114",
           "notes": []
         },
@@ -2944,6 +3174,102 @@
           "manpowerValue": "-",
           "hexLocation": "0523 (Laurine)",
           "notes": []
+        },
+        {
+          "name": "Wilson",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4010 (Franklin)",
+          "notes": []
+        },
+        {
+          "name": "R. Johnson",
+          "size": "Div",
+          "command": "Cav-6",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "4010 (Franklin)",
+          "notes": []
+        },
+        {
+          "name": "Stanley",
+          "size": "Corps",
+          "command": "IV",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "0423 (Lynnville)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "Cav-5",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "0420",
+          "notes": []
+        },
+        {
+          "name": "Knipe",
+          "size": "Div",
+          "command": "Cav-7",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "M",
+          "notes": []
+        },
+        {
+          "name": "Thomas",
+          "size": "Army",
+          "command": "DC",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N",
+          "notes": []
+        },
+        {
+          "name": "Smith",
+          "size": "Corps",
+          "command": "DAT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N",
+          "notes": []
+        },
+        {
+          "name": "Milroy",
+          "size": "District",
+          "command": "DN",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "M",
+          "notes": []
+        },
+        {
+          "name": "McCook 13",
+          "size": "Div",
+          "command": "Cav-1",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Long 15",
+          "size": "Div",
+          "command": "Cav-2",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N",
+          "notes": [
+            "*"
+          ]
         },
         {
           "name": "Cox",
@@ -3013,24 +3339,6 @@
           ]
         },
         {
-          "name": "Wilson",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4010 (Franklin)",
-          "notes": []
-        },
-        {
-          "name": "R. Johnson",
-          "size": "Div",
-          "command": "Cav-6",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "4010 (Franklin)",
-          "notes": []
-        },
-        {
           "name": "Lowe",
           "size": "Brig",
           "command": "Cav-6",
@@ -3038,17 +3346,6 @@
           "manpowerValue": "1",
           "hexLocation": "4010 (Franklin)",
           "notes": []
-        },
-        {
-          "name": "Stanley",
-          "size": "Corps",
-          "command": "IV",
-          "type": "Ldr",
-          "manpowerValue": "-+",
-          "hexLocation": "0423 (Lynnville)",
-          "notes": [
-            "+"
-          ]
         },
         {
           "name": "Wagner",
@@ -3128,15 +3425,6 @@
           "type": "Cav",
           "manpowerValue": "1#",
           "hexLocation": "0711 (Mt. Pleasant)",
-          "notes": []
-        },
-        {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "Cav-5",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "0420",
           "notes": []
         },
         {
@@ -3226,39 +3514,12 @@
           "notes": []
         },
         {
-          "name": "Knipe",
-          "size": "Div",
-          "command": "Cav-7",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "M",
-          "notes": []
-        },
-        {
           "name": "G. Johnson-A",
           "size": "Brig",
           "command": "Cav-7",
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "M",
-          "notes": []
-        },
-        {
-          "name": "Thomas",
-          "size": "Army",
-          "command": "DC",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N",
-          "notes": []
-        },
-        {
-          "name": "Smith",
-          "size": "Corps",
-          "command": "DAT",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N",
           "notes": []
         },
         {
@@ -3294,15 +3555,6 @@
           "command": "DE",
           "type": "Inf",
           "manpowerValue": "11",
-          "hexLocation": "M",
-          "notes": []
-        },
-        {
-          "name": "Milroy",
-          "size": "District",
-          "command": "DN",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "M",
           "notes": []
         },
@@ -3361,17 +3613,6 @@
           "notes": []
         },
         {
-          "name": "McCook 13",
-          "size": "Div",
-          "command": "Cav-1",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N",
-          "notes": [
-            "*"
-          ]
-        },
-        {
           "name": "LaGrange 13",
           "size": "Brig",
           "command": "Cav-1",
@@ -3388,17 +3629,6 @@
           "command": "Cav-1",
           "type": "Cav",
           "manpowerValue": "3",
-          "hexLocation": "N",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Long 15",
-          "size": "Div",
-          "command": "Cav-2",
-          "type": "Ldr",
-          "manpowerValue": "-",
           "hexLocation": "N",
           "notes": [
             "*"

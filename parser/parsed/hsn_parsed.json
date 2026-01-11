@@ -1,5 +1,307 @@
 [
   {
+    "number": 1,
+    "name": "Here Come the Rebels!",
+    "start_page": 4,
+    "confederate_units": [
+      {
+        "unit_leader": "Forrest",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0511 (Poplar Grove)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Chalmers",
+        "size": "Div",
+        "command": "C-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0511 (Poplar Grove)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0118",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Buford",
+        "size": "Div",
+        "command": "B-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0119",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Rucker",
+        "size": "Brig",
+        "command": "C-Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2",
+        "hex_location": "0511 (Poplar Grove)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Biffle",
+        "size": "Brig",
+        "command": "C-Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "0511 (Poplar Grove)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Armstrong",
+        "size": "Brig",
+        "command": "J-Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2#",
+        "hex_location": "0118",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Ross",
+        "size": "Brig",
+        "command": "J-Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1#",
+        "hex_location": "0118",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Bell",
+        "size": "Brig",
+        "command": "B-Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2#",
+        "hex_location": "0119",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Crossland",
+        "size": "Brig",
+        "command": "B-Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1#",
+        "hex_location": "0119",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      }
+    ],
+    "union_units": [
+      {
+        "unit_leader": "Schofield",
+        "size": "District",
+        "command": "Ohio",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "1220 (Pleasant Grove)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Stanley",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0324 (Colored Church)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hatch",
+        "size": "Div",
+        "command": "Cav-5",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0420",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Cox",
+        "size": "Div",
+        "command": "XXIII",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "1220 (Pleasant Grove)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Ruger",
+        "size": "Div",
+        "command": "XXIII",
+        "unit_type": "Inf",
+        "manpower_value": "2*",
+        "hex_location": "1715 (Columbia)",
+        "side": "Union",
+        "notes": [
+          "*"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "O. Moore",
+        "size": "Brig",
+        "command": "XXIII",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "5707 (Nashville)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wagner",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "0423 (Lynnville)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Whitaker",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "0324 (Colored Church)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wood",
+        "size": "Div",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "9",
+        "hex_location": "0224 (Saw Mill)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Waters",
+        "size": "Brig",
+        "command": "IV",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "0125",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Coon",
+        "size": "Brig",
+        "command": "Cav-1",
+        "unit_type": "Cav",
+        "manpower_value": "2#\u2020",
+        "hex_location": "0420",
+        "side": "Union",
+        "notes": [
+          "\u2020"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Croxton-A",
+        "size": "Brig",
+        "command": "Cav-5",
+        "unit_type": "Cav",
+        "manpower_value": "2#\u2020",
+        "hex_location": "0221",
+        "side": "Union",
+        "notes": [
+          "\u2020"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Capron-A",
+        "size": "Brig",
+        "command": "Cav-6",
+        "unit_type": "Cav",
+        "manpower_value": "2#\u2020",
+        "hex_location": "0711 (Mt. Pleasant)",
+        "side": "Union",
+        "notes": [
+          "\u2020"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      }
+    ],
+    "confederate_footnotes": {},
+    "union_footnotes": {
+      "*": "Begins game under Fort marker",
+      "\u2020": "Begins game on Exhausted side"
+    },
+    "notes": "",
+    "map_info": "",
+    "game_length": "",
+    "special_rules": []
+  },
+  {
     "number": 2,
     "name": "The Race for Columbia",
     "start_page": 6,
@@ -29,6 +331,82 @@
         "reinforcement_set": null
       },
       {
+        "unit_leader": "Buford",
+        "size": "Div",
+        "command": "B-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "0119",
+        "side": "Confederate",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "0119",
+        "side": "Confederate",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Lee",
+        "size": "Corps",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0110 to 0114 0101 to 0109",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "1"
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Army",
+        "command": "AT",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0110 to 0114 0101 to 0109",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "4"
+      },
+      {
+        "unit_leader": "Cheatham",
+        "size": "Corps",
+        "command": "C",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0110 to 0114 0101 to 0109",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "4"
+      },
+      {
+        "unit_leader": "Stewart",
+        "size": "Corps",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0110 to 0114 0101 to 0109",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "7"
+      },
+      {
         "unit_leader": "Rucker",
         "size": "Brig",
         "command": "C-Cav",
@@ -52,20 +430,6 @@
         "side": "Confederate",
         "notes": [
           "*"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Buford",
-        "size": "Div",
-        "command": "B-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "0119",
-        "side": "Confederate",
-        "notes": [
-          "+"
         ],
         "turn": null,
         "reinforcement_set": null
@@ -101,20 +465,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Jackson",
-        "size": "Div",
-        "command": "J-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "0119",
-        "side": "Confederate",
-        "notes": [
-          "+"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Armstrong",
         "size": "Brig",
         "command": "J-Cav",
@@ -143,18 +493,6 @@
         ],
         "turn": null,
         "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Lee",
-        "size": "Corps",
-        "command": "L",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0110 to 0114 0101 to 0109",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "1"
       },
       {
         "unit_leader": "Johnson",
@@ -193,30 +531,6 @@
         "reinforcement_set": "3"
       },
       {
-        "unit_leader": "Hood",
-        "size": "Army",
-        "command": "AT",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0110 to 0114 0101 to 0109",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "4"
-      },
-      {
-        "unit_leader": "Cheatham",
-        "size": "Corps",
-        "command": "C",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0110 to 0114 0101 to 0109",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "4"
-      },
-      {
         "unit_leader": "Cleburne",
         "size": "Div",
         "command": "C",
@@ -251,18 +565,6 @@
         "notes": [],
         "turn": null,
         "reinforcement_set": "6"
-      },
-      {
-        "unit_leader": "Stewart",
-        "size": "Corps",
-        "command": "S",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0110 to 0114 0101 to 0109",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "7"
       },
       {
         "unit_leader": "Loring",
@@ -311,6 +613,58 @@
         "hex_location": "0523 (Laurine)",
         "side": "Union",
         "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wilson",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4010 (Franklin)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "R. Johnson",
+        "size": "Div",
+        "command": "Cav-6",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4010 (Franklin)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Stanley",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "0423 (Lynnville)",
+        "side": "Union",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hatch",
+        "size": "Div",
+        "command": "Cav-5",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "0420",
+        "side": "Union",
+        "notes": [
+          "+"
+        ],
         "turn": null,
         "reinforcement_set": null
       },
@@ -414,30 +768,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Wilson",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4010 (Franklin)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "R. Johnson",
-        "size": "Div",
-        "command": "Cav-6",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4010 (Franklin)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Lowe",
         "size": "Brig",
         "command": "Cav-6",
@@ -446,20 +776,6 @@
         "hex_location": "4010 (Franklin)",
         "side": "Union",
         "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stanley",
-        "size": "Corps",
-        "command": "IV",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "0423 (Lynnville)",
-        "side": "Union",
-        "notes": [
-          "+"
-        ],
         "turn": null,
         "reinforcement_set": null
       },
@@ -596,20 +912,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Hatch",
-        "size": "Div",
-        "command": "Cav-5",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "0420",
-        "side": "Union",
-        "notes": [
-          "+"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Coon",
         "size": "Brig",
         "command": "Cav-5",
@@ -699,6 +1001,82 @@
         "reinforcement_set": null
       },
       {
+        "unit_leader": "Stewart",
+        "size": "Corps",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "1317 (Parsonage)",
+        "side": "Confederate",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Lee",
+        "size": "Corps",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "1615 (Thomas\u2019 Springs)",
+        "side": "Confederate",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Forrest",
+        "size": "Corps",
+        "command": "C",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "1519 (Hurricane Switch)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Chalmers",
+        "size": "Div",
+        "command": "C-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "1519 (Hurricane Switch)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "1220 (Pleasant Grove)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Buford",
+        "size": "Div",
+        "command": "B-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "1828 (Rady)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
         "unit_leader": "Cleburne",
         "size": "Div",
         "command": "C",
@@ -733,20 +1111,6 @@
         "unit_type": "Inf",
         "manpower_value": "8+",
         "hex_location": "1417",
-        "side": "Confederate",
-        "notes": [
-          "+"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stewart",
-        "size": "Corps",
-        "command": "S",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "1317 (Parsonage)",
         "side": "Confederate",
         "notes": [
           "+"
@@ -812,20 +1176,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Lee",
-        "size": "Corps",
-        "command": "L",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "1615 (Thomas\u2019 Springs)",
-        "side": "Confederate",
-        "notes": [
-          "+"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Stevenson-A",
         "size": "Div",
         "command": "L",
@@ -854,30 +1204,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Forrest",
-        "size": "Corps",
-        "command": "C",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "1519 (Hurricane Switch)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Chalmers",
-        "size": "Div",
-        "command": "C-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "1519 (Hurricane Switch)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Biffle",
         "size": "Brig",
         "command": "C-Cav",
@@ -902,18 +1228,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Jackson",
-        "size": "Div",
-        "command": "J-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "1220 (Pleasant Grove)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Armstrong",
         "size": "Brig",
         "command": "J-Cav",
@@ -932,18 +1246,6 @@
         "unit_type": "Cav",
         "manpower_value": "1",
         "hex_location": "1220 (Pleasant Grove)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Buford",
-        "size": "Div",
-        "command": "B-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "1828 (Rady)",
         "side": "Confederate",
         "notes": [],
         "turn": null,
@@ -986,6 +1288,56 @@
         "notes": [
           "+"
         ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Stanley",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "2413 (Judge Cooper)",
+        "side": "Union",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hatch",
+        "size": "Div",
+        "command": "Cav-5",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "2017",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "R. Johnson",
+        "size": "Div",
+        "command": "Cav-6",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "2219",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wilson",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "2621 (Collins)",
+        "side": "Union",
+        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -1043,20 +1395,6 @@
         "side": "Union",
         "notes": [
           "*",
-          "+"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stanley",
-        "size": "Corps",
-        "command": "IV",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "2413 (Judge Cooper)",
-        "side": "Union",
-        "notes": [
           "+"
         ],
         "turn": null,
@@ -1141,18 +1479,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Hatch",
-        "size": "Div",
-        "command": "Cav-5",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "2017",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Coon",
         "size": "Brig",
         "command": "Cav-5",
@@ -1165,36 +1491,12 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "R. Johnson",
-        "size": "Div",
-        "command": "Cav-6",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "2219",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Croxton-A",
         "size": "Brig",
         "command": "Cav-1",
         "unit_type": "Cav",
         "manpower_value": "2",
         "hex_location": "2219",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Wilson",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "2621 (Collins)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -1298,6 +1600,78 @@
         "reinforcement_set": null
       },
       {
+        "unit_leader": "Stewart",
+        "size": "Corps",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "2914 (Spring Hill)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Lee",
+        "size": "Corps",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "2413 (Judge Cooper)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Forrest",
+        "size": "Corps",
+        "command": "C",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "2915 (Jimeson)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Chalmers",
+        "size": "Div",
+        "command": "C-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "2915 (Jimeson)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Buford",
+        "size": "Div",
+        "command": "B-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "2915 (Jimeson)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "3315 (Kernan)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
         "unit_leader": "Cleburne",
         "size": "Div",
         "command": "C",
@@ -1336,18 +1710,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stewart",
-        "size": "Corps",
-        "command": "S",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "2914 (Spring Hill)",
-        "side": "Confederate",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -1408,18 +1770,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Lee",
-        "size": "Corps",
-        "command": "L",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "2413 (Judge Cooper)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Clayton",
         "size": "Div",
         "command": "L",
@@ -1438,30 +1788,6 @@
         "unit_type": "Inf",
         "manpower_value": "7",
         "hex_location": "2314 (Cottage Home)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Forrest",
-        "size": "Corps",
-        "command": "C",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "2915 (Jimeson)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Chalmers",
-        "size": "Div",
-        "command": "C-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "2915 (Jimeson)",
         "side": "Confederate",
         "notes": [],
         "turn": null,
@@ -1496,18 +1822,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Buford",
-        "size": "Div",
-        "command": "B-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "2915 (Jimeson)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Bell",
         "size": "Brig",
         "command": "B-Cav",
@@ -1532,18 +1846,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Jackson",
-        "size": "Div",
-        "command": "J-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "3315 (Kernan)",
-        "side": "Confederate",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -1586,6 +1888,68 @@
         "hex_location": "3911 (Carter)",
         "side": "Union",
         "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Stanley",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "3612 (Cotton Gin)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wilson",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4113",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hatch",
+        "size": "Div",
+        "command": "Cav-5",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4113",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "R. Johnson",
+        "size": "Div",
+        "command": "Cav-6",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4113",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Corps",
+        "command": "DAT",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "5706 (Nashville)",
+        "side": "Union",
+        "notes": [
+          "+"
+        ],
         "turn": null,
         "reinforcement_set": null
       },
@@ -1650,18 +2014,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Stanley",
-        "size": "Corps",
-        "command": "IV",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "3612 (Cotton Gin)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Wood",
         "size": "Div",
         "command": "IV",
@@ -1716,18 +2068,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Wilson",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4113",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Croxton-A",
         "size": "Brig",
         "command": "Cav-1",
@@ -1742,18 +2082,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Hatch",
-        "size": "Div",
-        "command": "Cav-5",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4113",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Coon",
         "size": "Brig",
         "command": "Cav-5",
@@ -1764,18 +2092,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "R. Johnson",
-        "size": "Div",
-        "command": "Cav-6",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4113",
-        "side": "Union",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -1817,20 +2133,6 @@
         "side": "Union",
         "notes": [
           "*"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Smith",
-        "size": "Corps",
-        "command": "DAT",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "5706 (Nashville)",
-        "side": "Union",
-        "notes": [
-          "+"
         ],
         "turn": null,
         "reinforcement_set": null
@@ -1906,6 +2208,18 @@
         "reinforcement_set": null
       },
       {
+        "unit_leader": "Buford",
+        "size": "Div",
+        "command": "B-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5712 (Kline)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
         "unit_leader": "Armstrong",
         "size": "Brig",
         "command": "J-Cav",
@@ -1924,18 +2238,6 @@
         "unit_type": "Cav",
         "manpower_value": "1",
         "hex_location": "5810 (Franklin College)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Buford",
-        "size": "Div",
-        "command": "B-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5712 (Kline)",
         "side": "Confederate",
         "notes": [],
         "turn": null,
@@ -2100,6 +2402,54 @@
         "reinforcement_set": null
       },
       {
+        "unit_leader": "Hood",
+        "size": "Army",
+        "command": "AT",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5208",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Lee",
+        "size": "Corps",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5308",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Stewart",
+        "size": "Corps",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5206 (Tyne)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Chalmers",
+        "size": "Div",
+        "command": "C-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5303 (School)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
         "unit_leader": "Smith-A",
         "size": "Div",
         "command": "C",
@@ -2142,18 +2492,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Hood",
-        "size": "Army",
-        "command": "AT",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5208",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Johnson",
         "size": "Div",
         "command": "L",
@@ -2164,18 +2502,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Lee",
-        "size": "Corps",
-        "command": "L",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5308",
-        "side": "Confederate",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -2204,18 +2530,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stewart",
-        "size": "Corps",
-        "command": "S",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5206 (Tyne)",
-        "side": "Confederate",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -2262,18 +2576,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Chalmers",
-        "size": "Div",
-        "command": "C-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5303 (School)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Rucker",
         "size": "Brig",
         "command": "C-Cav",
@@ -2303,6 +2605,102 @@
       }
     ],
     "union_units": [
+      {
+        "unit_leader": "Schofield",
+        "size": "District",
+        "command": "Ohio",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5607 (Fort Negley)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Thomas",
+        "size": "Army",
+        "command": "DC",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5507 (Fort Casino)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wood",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5507 (Fort Casino)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Corps",
+        "command": "DAT",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5505",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wilson",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5604 (Fort Garesch\u00e9)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hatch",
+        "size": "Div",
+        "command": "Cav-5",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5604 (Fort Garesch\u00e9)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "R. Johnson",
+        "size": "Div",
+        "command": "Cav-6",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5604 (Fort Garesch\u00e9)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Knipe",
+        "size": "Div",
+        "command": "Cav-7",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5604 (Fort Garesch\u00e9)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
       {
         "unit_leader": "Steedman",
         "size": "Div",
@@ -2340,18 +2738,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Schofield",
-        "size": "District",
-        "command": "Ohio",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5607 (Fort Negley)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Cox",
         "size": "Div",
         "command": "XXIII",
@@ -2370,30 +2756,6 @@
         "unit_type": "Inf",
         "manpower_value": "11",
         "hex_location": "5607 (Fort Negley)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Thomas",
-        "size": "Army",
-        "command": "DC",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5507 (Fort Casino)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Wood",
-        "size": "Corps",
-        "command": "IV",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5507 (Fort Casino)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -2436,18 +2798,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Smith",
-        "size": "Corps",
-        "command": "DAT",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5505",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Garrard",
         "size": "Div",
         "command": "DAT",
@@ -2484,30 +2834,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Wilson",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5604 (Fort Garesch\u00e9)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hatch",
-        "size": "Div",
-        "command": "Cav-5",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5604 (Fort Garesch\u00e9)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Coon",
         "size": "Brig",
         "command": "Cav-5",
@@ -2525,18 +2851,6 @@
         "command": "Cav-5",
         "unit_type": "Cav",
         "manpower_value": "2",
-        "hex_location": "5604 (Fort Garesch\u00e9)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "R. Johnson",
-        "size": "Div",
-        "command": "Cav-6",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
         "hex_location": "5604 (Fort Garesch\u00e9)",
         "side": "Union",
         "notes": [],
@@ -2575,18 +2889,6 @@
         "command": "Cav-1",
         "unit_type": "Cav",
         "manpower_value": "2",
-        "hex_location": "5604 (Fort Garesch\u00e9)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Knipe",
-        "size": "Div",
-        "command": "Cav-7",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
         "hex_location": "5604 (Fort Garesch\u00e9)",
         "side": "Union",
         "notes": [],
@@ -2647,6 +2949,92 @@
         "reinforcement_set": null
       },
       {
+        "unit_leader": "Lee",
+        "size": "Corps",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4410 (Hollow Tree Gap)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Buford",
+        "size": "Div",
+        "command": "B-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4111 (Ft. Granger)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Army",
+        "command": "AT",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4110",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Cheatham",
+        "size": "Corps",
+        "command": "C",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4110",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Stewart",
+        "size": "Corps",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4010 (Franklin)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Forrest",
+        "size": "Corps",
+        "command": "C",
+        "unit_type": "Ldr",
+        "manpower_value": "-\u2022",
+        "hex_location": "5027 (Wilkerson\u2019s Crossroads)",
+        "side": "Confederate",
+        "notes": [
+          "\u2022"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5027 (Wilkerson\u2019s Crossroads)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
         "unit_leader": "Biffle",
         "size": "Brig",
         "command": "C-Cav",
@@ -2657,18 +3045,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Lee",
-        "size": "Corps",
-        "command": "L",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4410 (Hollow Tree Gap)",
-        "side": "Confederate",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -2713,18 +3089,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Buford",
-        "size": "Div",
-        "command": "B-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4111 (Ft. Granger)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Bell",
         "size": "Brig",
         "command": "B-Cav",
@@ -2749,30 +3113,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hood",
-        "size": "Army",
-        "command": "AT",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4110",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Cheatham",
-        "size": "Corps",
-        "command": "C",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4110",
-        "side": "Confederate",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -2813,18 +3153,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Stewart",
-        "size": "Corps",
-        "command": "S",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4010 (Franklin)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Loring",
         "size": "Div",
         "command": "S",
@@ -2843,32 +3171,6 @@
         "unit_type": "Inf",
         "manpower_value": "4#",
         "hex_location": "4010 (Franklin)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Forrest",
-        "size": "Corps",
-        "command": "C",
-        "unit_type": "Ldr",
-        "manpower_value": "-\u2022",
-        "hex_location": "5027 (Wilkerson\u2019s Crossroads)",
-        "side": "Confederate",
-        "notes": [
-          "\u2022"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Jackson",
-        "size": "Div",
-        "command": "J-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5027 (Wilkerson\u2019s Crossroads)",
         "side": "Confederate",
         "notes": [],
         "turn": null,
@@ -2907,6 +3209,54 @@
         "unit_type": "Ldr",
         "manpower_value": "-",
         "hex_location": "5110 (Toll Gate)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wilson",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5008 (Blacksmith)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hatch",
+        "size": "Div",
+        "command": "Cav-5",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5008 (Blacksmith)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Knipe",
+        "size": "Div",
+        "command": "Cav-7",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5008 (Blacksmith)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "R. Johnson",
+        "size": "Div",
+        "command": "Cav-6",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "5107 (Compton)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -2953,30 +3303,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Wilson",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5008 (Blacksmith)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hatch",
-        "size": "Div",
-        "command": "Cav-5",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5008 (Blacksmith)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Coon",
         "size": "Brig",
         "command": "Cav-5",
@@ -3019,18 +3345,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Knipe",
-        "size": "Div",
-        "command": "Cav-7",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5008 (Blacksmith)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Hammond",
         "size": "Brig",
         "command": "Cav-7",
@@ -3055,18 +3369,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "R. Johnson",
-        "size": "Div",
-        "command": "Cav-6",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "5107 (Compton)",
-        "side": "Union",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -3139,6 +3441,30 @@
         "reinforcement_set": null
       },
       {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0820 (Ingram\u2019s Mill)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Chalmers",
+        "size": "Div",
+        "command": "C-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "1022 (Campbell Station)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
         "unit_leader": "Bell",
         "size": "Brig",
         "command": "B-Cav",
@@ -3156,18 +3482,6 @@
         "command": "B-Cav",
         "unit_type": "Cav",
         "manpower_value": "1",
-        "hex_location": "0820 (Ingram\u2019s Mill)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Jackson",
-        "size": "Div",
-        "command": "J-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
         "hex_location": "0820 (Ingram\u2019s Mill)",
         "side": "Confederate",
         "notes": [],
@@ -3193,18 +3507,6 @@
         "unit_type": "Cav",
         "manpower_value": "1",
         "hex_location": "0820 (Ingram\u2019s Mill)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Chalmers",
-        "size": "Div",
-        "command": "C-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "1022 (Campbell Station)",
         "side": "Confederate",
         "notes": [],
         "turn": null,
@@ -3240,6 +3542,30 @@
         "unit_leader": "Wood",
         "size": "Corps",
         "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "1715 (Columbia)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wilson",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "1715 (Columbia)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hatch",
+        "size": "Div",
+        "command": "Cav-5",
         "unit_type": "Ldr",
         "manpower_value": "-",
         "hex_location": "1715 (Columbia)",
@@ -3285,18 +3611,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Wilson",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "1715 (Columbia)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Croxton-B",
         "size": "Brig",
         "command": "Cav-1",
@@ -3335,18 +3649,6 @@
         "notes": [
           "*"
         ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hatch",
-        "size": "Div",
-        "command": "Cav-5",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "1715 (Columbia)",
-        "side": "Union",
-        "notes": [],
         "turn": null,
         "reinforcement_set": null
       },
@@ -3418,6 +3720,106 @@
         "reinforcement_set": null
       },
       {
+        "unit_leader": "Buford",
+        "size": "Div",
+        "command": "B-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "0119",
+        "side": "Confederate",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Div",
+        "command": "J-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "0119",
+        "side": "Confederate",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Lee",
+        "size": "Corps",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0110 to 0114 0101 to 0109",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "1"
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Army",
+        "command": "AT",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0110 to 0114 0101 to 0109",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "4"
+      },
+      {
+        "unit_leader": "Cheatham",
+        "size": "Corps",
+        "command": "C",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0110 to 0114 0101 to 0109",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "4"
+      },
+      {
+        "unit_leader": "Stewart",
+        "size": "Corps",
+        "command": "S",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0110 to 0114 0101 to 0109",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "7"
+      },
+      {
+        "unit_leader": "Roddey",
+        "size": "Div",
+        "command": "R-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0107 to 0114",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "1"
+      },
+      {
+        "unit_leader": "Adams",
+        "size": "Div",
+        "command": "A-Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0107 to 0114",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "4"
+      },
+      {
         "unit_leader": "Rucker",
         "size": "Brig",
         "command": "C-Cav",
@@ -3441,20 +3843,6 @@
         "side": "Confederate",
         "notes": [
           "*"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Buford",
-        "size": "Div",
-        "command": "B-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "0119",
-        "side": "Confederate",
-        "notes": [
-          "+"
         ],
         "turn": null,
         "reinforcement_set": null
@@ -3490,20 +3878,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Jackson",
-        "size": "Div",
-        "command": "J-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "0119",
-        "side": "Confederate",
-        "notes": [
-          "+"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Armstrong",
         "size": "Brig",
         "command": "J-Cav",
@@ -3532,18 +3906,6 @@
         ],
         "turn": null,
         "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Lee",
-        "size": "Corps",
-        "command": "L",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0110 to 0114 0101 to 0109",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "1"
       },
       {
         "unit_leader": "Johnson",
@@ -3582,30 +3944,6 @@
         "reinforcement_set": "3"
       },
       {
-        "unit_leader": "Hood",
-        "size": "Army",
-        "command": "AT",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0110 to 0114 0101 to 0109",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "4"
-      },
-      {
-        "unit_leader": "Cheatham",
-        "size": "Corps",
-        "command": "C",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0110 to 0114 0101 to 0109",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "4"
-      },
-      {
         "unit_leader": "Cleburne",
         "size": "Div",
         "command": "C",
@@ -3640,18 +3978,6 @@
         "notes": [],
         "turn": null,
         "reinforcement_set": "6"
-      },
-      {
-        "unit_leader": "Stewart",
-        "size": "Corps",
-        "command": "S",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0110 to 0114 0101 to 0109",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "7"
       },
       {
         "unit_leader": "Loring",
@@ -3702,18 +4028,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Roddey",
-        "size": "Div",
-        "command": "R-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0107 to 0114",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "1"
-      },
-      {
         "unit_leader": "Pickett",
         "size": "Brig",
         "command": "R-Cav",
@@ -3748,18 +4062,6 @@
         "notes": [],
         "turn": null,
         "reinforcement_set": "3"
-      },
-      {
-        "unit_leader": "Adams",
-        "size": "Div",
-        "command": "A-Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0107 to 0114",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "4"
       },
       {
         "unit_leader": "Armistead",
@@ -3808,6 +4110,132 @@
         "hex_location": "0523 (Laurine)",
         "side": "Union",
         "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Wilson",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4010 (Franklin)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "R. Johnson",
+        "size": "Div",
+        "command": "Cav-6",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "4010 (Franklin)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Stanley",
+        "size": "Corps",
+        "command": "IV",
+        "unit_type": "Ldr",
+        "manpower_value": "-+",
+        "hex_location": "0423 (Lynnville)",
+        "side": "Union",
+        "notes": [
+          "+"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Hatch",
+        "size": "Div",
+        "command": "Cav-5",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "0420",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Knipe",
+        "size": "Div",
+        "command": "Cav-7",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "M",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "2"
+      },
+      {
+        "unit_leader": "Thomas",
+        "size": "Army",
+        "command": "DC",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "3"
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Corps",
+        "command": "DAT",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "3"
+      },
+      {
+        "unit_leader": "Milroy",
+        "size": "District",
+        "command": "DN",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "M",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": "7"
+      },
+      {
+        "unit_leader": "McCook 13",
+        "size": "Div",
+        "command": "Cav-1",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N",
+        "side": "Union",
+        "notes": [
+          "*"
+        ],
+        "turn": null,
+        "reinforcement_set": null
+      },
+      {
+        "unit_leader": "Long 15",
+        "size": "Div",
+        "command": "Cav-2",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "N",
+        "side": "Union",
+        "notes": [
+          "*"
+        ],
         "turn": null,
         "reinforcement_set": null
       },
@@ -3897,30 +4325,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "Wilson",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4010 (Franklin)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "R. Johnson",
-        "size": "Div",
-        "command": "Cav-6",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "4010 (Franklin)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Lowe",
         "size": "Brig",
         "command": "Cav-6",
@@ -3929,20 +4333,6 @@
         "hex_location": "4010 (Franklin)",
         "side": "Union",
         "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stanley",
-        "size": "Corps",
-        "command": "IV",
-        "unit_type": "Ldr",
-        "manpower_value": "-+",
-        "hex_location": "0423 (Lynnville)",
-        "side": "Union",
-        "notes": [
-          "+"
-        ],
         "turn": null,
         "reinforcement_set": null
       },
@@ -4045,18 +4435,6 @@
         "unit_type": "Cav",
         "manpower_value": "1#",
         "hex_location": "0711 (Mt. Pleasant)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hatch",
-        "size": "Div",
-        "command": "Cav-5",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "0420",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -4173,18 +4551,6 @@
         "reinforcement_set": "1"
       },
       {
-        "unit_leader": "Knipe",
-        "size": "Div",
-        "command": "Cav-7",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "M",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "2"
-      },
-      {
         "unit_leader": "G. Johnson-A",
         "size": "Brig",
         "command": "Cav-7",
@@ -4195,30 +4561,6 @@
         "notes": [],
         "turn": null,
         "reinforcement_set": "2"
-      },
-      {
-        "unit_leader": "Thomas",
-        "size": "Army",
-        "command": "DC",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "N",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "3"
-      },
-      {
-        "unit_leader": "Smith",
-        "size": "Corps",
-        "command": "DAT",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "N",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "3"
       },
       {
         "unit_leader": "McArthur",
@@ -4267,18 +4609,6 @@
         "notes": [],
         "turn": null,
         "reinforcement_set": "6"
-      },
-      {
-        "unit_leader": "Milroy",
-        "size": "District",
-        "command": "DN",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "M",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": "7"
       },
       {
         "unit_leader": "Thomas",
@@ -4353,20 +4683,6 @@
         "reinforcement_set": null
       },
       {
-        "unit_leader": "McCook 13",
-        "size": "Div",
-        "command": "Cav-1",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "N",
-        "side": "Union",
-        "notes": [
-          "*"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "LaGrange 13",
         "size": "Brig",
         "command": "Cav-1",
@@ -4386,20 +4702,6 @@
         "command": "Cav-1",
         "unit_type": "Cav",
         "manpower_value": "3",
-        "hex_location": "N",
-        "side": "Union",
-        "notes": [
-          "*"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Long 15",
-        "size": "Div",
-        "command": "Cav-2",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
         "hex_location": "N",
         "side": "Union",
         "notes": [
