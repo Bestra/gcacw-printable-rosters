@@ -46,6 +46,14 @@
   color: #555;
 }
 
+.roster-sheet__cav-leader {
+  display: block;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #555;
+}
+
 .roster-sheet__units {
   display: flex;
   flex-wrap: wrap;

@@ -91,6 +91,15 @@ function getArmyLeaders(units: Unit[]): string {
   return armyLeaders.map(l => `${l.name} (${l.hexLocation})`).join(", ");
 }
 
+// Get corps-level cavalry leaders (like Forrest) who need to stack with their command
+function getCavLeaders(units: Unit[]): string {
+  const cavLeaders = units.filter(u => 
+    u.type === "Ldr" && u.size === "Corps" && u.command === "Cav"
+  );
+  if (cavLeaders.length === 0) return "";
+  return cavLeaders.map(l => `${l.name} (${l.hexLocation})`).join(", ");
+}
+
 // Key explaining conventions shown on web but not in print
 function ConventionsKey() {
   return (
@@ -108,6 +117,10 @@ function ConventionsKey() {
         <div className="roster-sheet__key-item">
           <dt>Army Leader (hex)</dt>
           <dd>Army leader's starting hex shown in header</dd>
+        </div>
+        <div className="roster-sheet__key-item">
+          <dt>Cav Leader (hex)</dt>
+          <dd>Cavalry corps leader's starting hex shown in header</dd>
         </div>
         <div className="roster-sheet__key-item">
           <dt>F1, F2, etc.</dt>
@@ -160,6 +173,10 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
   // Get army leader summaries
   const confederateArmyLeader = getArmyLeaders(scenario.confederateUnits);
   const unionArmyLeader = getArmyLeaders(scenario.unionUnits);
+  
+  // Get cavalry leader summaries
+  const confederateCavLeader = getCavLeaders(scenario.confederateUnits);
+  const unionCavLeader = getCavLeaders(scenario.unionUnits);
 
   return (
     <div className="roster-sheet">
@@ -176,6 +193,7 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
         <h3 className="roster-sheet__section-title">
           Confederate
           {confederateArmyLeader && <span className="roster-sheet__army-leader"> — Army Leader: {confederateArmyLeader}</span>}
+          {confederateCavLeader && <span className="roster-sheet__cav-leader"> — Cav Leader: {confederateCavLeader}</span>}
         </h3>
         <div className="roster-sheet__units">
           {paddedConfederate.map((unit, index) => (
@@ -197,6 +215,7 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
         <h3 className="roster-sheet__section-title">
           Union
           {unionArmyLeader && <span className="roster-sheet__army-leader"> — Army Leader: {unionArmyLeader}</span>}
+          {unionCavLeader && <span className="roster-sheet__cav-leader"> — Cav Leader: {unionCavLeader}</span>}
         </h3>
         <div className="roster-sheet__units">
           {paddedUnion.map((unit, index) => (

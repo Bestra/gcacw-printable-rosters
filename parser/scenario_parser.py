@@ -74,6 +74,17 @@ class ScenarioParser:
             11: "Grant's 1864 Offensive",
             12: "If It Takes All Summer",
         },
+        "hsn": {
+            1: "Here Come the Rebels!",
+            2: "The Race for Columbia",
+            3: "A Great Chance Was Lost",
+            4: "We Will Make the Fight",
+            5: "The Enemy Was Badly Whipped",
+            6: "The Battle of Nashville",
+            7: "Hood's Retreat",
+            8: "That Devil Forrest",
+            9: "Hood Strikes North",
+        },
     }
     
     def __init__(self, pdf_path: str, game_id: str = "otr2"):
@@ -342,7 +353,14 @@ class ScenarioParser:
             return None
         
         # Parse the fields relative to size position
-        unit_name = ' '.join(parts[:size_idx])
+        name_parts = parts[:size_idx]
+        
+        # HSN has an extra "Set" column (reinforcement arrival turn) between name and size
+        # Strip the trailing number if it's a standalone digit (1-9)
+        if self.game_id == "hsn" and name_parts and re.match(r'^\d$', name_parts[-1]):
+            name_parts = name_parts[:-1]
+        
+        unit_name = ' '.join(name_parts)
         
         # Remaining parts after size
         remaining = parts[size_idx + 1:]

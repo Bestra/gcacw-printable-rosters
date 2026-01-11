@@ -9,6 +9,11 @@
       "id": "gtc2",
       "name": "Grant Takes Command",
       "file": "gtc2.json"
+    },
+    {
+      "id": "hsn",
+      "name": "Hood Strikes North",
+      "file": "hsn.json"
     }
   ]
 }

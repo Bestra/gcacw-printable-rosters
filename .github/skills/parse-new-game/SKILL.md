@@ -36,7 +36,23 @@ with pdfplumber.open("../data/NewGame.pdf") as pdf:
 
 Manually verify each scenario name by looking at the PDF.
 
-## Step 2: Add Scenario Names
+## Step 2: Diagnose Table Structure
+
+Before parsing, check for column anomalies that may require game-specific handling:
+
+```bash
+cd parser && uv run python diagnose_pdf.py ../data/NewGame.pdf
+```
+
+This tool scans all unit tables and flags:
+
+- **Trailing numbers in names**: May indicate an extra column (like HSN's "Set" column for reinforcement turns)
+- **Inconsistent column counts**: Different table structures on different pages
+- **Multi-word names**: May be picking up extra columns
+
+If anomalies are found, you may need to add game-specific parsing logic to `scenario_parser.py`.
+
+## Step 3: Add Scenario Names
 
 Edit `parser/scenario_parser.py` and add entries to the `SCENARIO_NAMES` dict (~line 40):
 
@@ -67,7 +83,25 @@ GAMES = [
 ]
 ```
 
-## Step 4: Run Parser
+## Step 4: Add URL Slug Mapping
+
+Edit `web/src/utils/slugs.ts` and add the game to both slug mappings:
+
+```typescript
+const gameIdToSlug: Record<string, string> = {
+  // ... existing games ...
+  newgame: "NEWGAME", // URL-friendly slug (typically uppercase abbreviation)
+};
+
+const slugToGameId: Record<string, string> = {
+  // ... existing games ...
+  newgame: "newgame", // lowercase version maps back to game ID
+};
+```
+
+**Note**: The `slugToGameId` key must be lowercase since lookups are case-insensitive.
+
+## Step 5: Run Parser
 
 ```bash
 cd parser && uv run python scenario_parser.py ../data/NewGame.pdf newgame
@@ -79,7 +113,7 @@ Review the output for:
 - Reasonable unit counts per scenario
 - Game length format (should be like "X turns; Month Day to Month Day, Year.")
 
-## Step 5: Generate Web Data
+## Step 6: Generate Web Data
 
 ```bash
 cd parser && uv run python convert_to_web.py
@@ -87,7 +121,7 @@ cd parser && uv run python convert_to_web.py
 
 This creates `web/public/data/newgame.json` and updates `games.json`.
 
-## Step 6: Validate
+## Step 7: Validate
 
 1. Run `cd web && npm run build` to catch TypeScript errors
 2. Run `cd web && npm run dev` and visually inspect the new game
@@ -96,6 +130,8 @@ This creates `web/public/data/newgame.json` and updates `games.json`.
 
 ## Common Issues
 
+- **"Game not found" error**: Missing slug mapping in `web/src/utils/slugs.ts`
+- **Trailing numbers in unit names**: Game has extra columns (like HSN's "Set" column). Add game-specific logic to strip them in `_parse_unit_line()` - see the `hsn` handling as an example
 - **Zero units parsed**: Check if the PDF table format differs from expected
 - **Wrong game length text**: The `_extract_game_length` regex may need adjustment
 - **Missing scenarios**: Check if scenario headers are on unusual pages or have different formatting

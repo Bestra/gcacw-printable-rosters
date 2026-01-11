@@ -19,6 +19,12 @@ GAMES = [
         "parser_output": "gtc2_scenarios.json",
         "web_output": "gtc2.json",
     },
+    {
+        "id": "hsn",
+        "name": "Hood Strikes North",
+        "parser_output": "hsn_scenarios.json",
+        "web_output": "hsn.json",
+    },
 ]
 
 

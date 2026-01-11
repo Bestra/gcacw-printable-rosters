@@ -4,11 +4,13 @@
 const gameIdToSlug: Record<string, string> = {
   otr2: "OTRII",
   gtc2: "GTCII",
+  hsn: "HSN",
 };
 
 const slugToGameId: Record<string, string> = {
   otrii: "otr2",
   gtcii: "gtc2",
+  hsn: "hsn",
 };
 
 /**
