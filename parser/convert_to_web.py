@@ -1,48 +1,22 @@
 #!/usr/bin/env python3
-"""Convert parser output to web-friendly JSON format."""
+"""Convert parsed scenario data to web-friendly JSON format.
+
+Reads from parsed/{game}_parsed.json (output of parse_raw_tables.py)
+and writes to web/public/data/{game}.json
+"""
 
 import json
 from pathlib import Path
 
 
-# Game configurations
+# Game configurations - now using parsed/ directory output
 GAMES = [
-    {
-        "id": "otr2",
-        "name": "On To Richmond!",
-        "parser_output": "all_scenarios.json",
-        "web_output": "otr2.json",
-    },
-    {
-        "id": "gtc2",
-        "name": "Grant Takes Command",
-        "parser_output": "gtc2_scenarios.json",
-        "web_output": "gtc2.json",
-    },
-    {
-        "id": "hsn",
-        "name": "Hood Strikes North",
-        "parser_output": "hsn_scenarios.json",
-        "web_output": "hsn.json",
-    },
-    {
-        "id": "hcr",
-        "name": "Here Come the Rebels!",
-        "parser_output": "hcr_scenarios.json",
-        "web_output": "hcr.json",
-    },
-    {
-        "id": "rtg2",
-        "name": "Roads to Gettysburg 2",
-        "parser_output": "rtg2_scenarios.json",
-        "web_output": "rtg2.json",
-    },
-    {
-        "id": "rtw",
-        "name": "Rebels in the White House",
-        "parser_output": "rtw_scenarios.json",
-        "web_output": "rtw.json",
-    },
+    {"id": "otr2", "name": "On To Richmond!"},
+    {"id": "gtc2", "name": "Grant Takes Command"},
+    {"id": "hsn", "name": "Hood Strikes North"},
+    {"id": "hcr", "name": "Here Come the Rebels!"},
+    {"id": "rtg2", "name": "Roads to Gettysburg 2"},
+    {"id": "rtw", "name": "Rebels in the White House"},
 ]
 
 
@@ -86,10 +60,8 @@ def convert_scenario(scenario: dict) -> dict:
     return {
         "number": scenario["number"],
         "name": scenario["name"],
-        "gameLength": scenario["game_length"],
-        "mapInfo": scenario["map_info"],
-        "confederateFootnotes": scenario["confederate_footnotes"],
-        "unionFootnotes": scenario["union_footnotes"],
+        "confederateFootnotes": scenario.get("confederate_footnotes", {}),
+        "unionFootnotes": scenario.get("union_footnotes", {}),
         "confederateUnits": [convert_unit(u) for u in csa_units],
         "unionUnits": [convert_unit(u) for u in usa_units],
         "confederateGunboats": [convert_gunboat(u) for u in csa_gunboats],
@@ -108,7 +80,8 @@ def convert_game_data(scenarios: list, game_id: str, game_name: str) -> dict:
 
 def main():
     parser_dir = Path(__file__).parent
-    web_data_dir = Path(__file__).parent.parent / "web" / "public" / "data"
+    parsed_dir = parser_dir / "parsed"
+    web_data_dir = parser_dir.parent / "web" / "public" / "data"
 
     # Ensure output directory exists
     web_data_dir.mkdir(parents=True, exist_ok=True)
@@ -117,8 +90,9 @@ def main():
     games_index = {"games": []}
 
     for game in GAMES:
-        parser_output = parser_dir / game["parser_output"]
-        web_output = web_data_dir / game["web_output"]
+        game_id = game["id"]
+        parser_output = parsed_dir / f"{game_id}_parsed.json"
+        web_output = web_data_dir / f"{game_id}.json"
 
         if not parser_output.exists():
             print(f"Skipping {game['name']}: {parser_output} not found")
@@ -129,7 +103,7 @@ def main():
             scenarios = json.load(f)
 
         # Convert to web format
-        game_data = convert_game_data(scenarios, game["id"], game["name"])
+        game_data = convert_game_data(scenarios, game_id, game["name"])
 
         # Write web output
         with open(web_output, "w") as f:
@@ -141,9 +115,9 @@ def main():
 
         # Add to games index
         games_index["games"].append({
-            "id": game["id"],
+            "id": game_id,
             "name": game["name"],
-            "file": game["web_output"],
+            "file": f"{game_id}.json",
         })
 
     # Write games index

@@ -2,16 +2,16 @@
 
 ## Current State (Jan 2026)
 
-**Status: Phase 2 Complete** - All games extracted and parsed via data-driven unit parser.
+**Status: Fully Integrated** - All games extracted, parsed, and feeding the web app.
 
-| Game | Raw Tables                 | Parsed Units              | Status      |
-| ---- | -------------------------- | ------------------------- | ----------- |
-| OTR2 | `raw/otr2_raw_tables.json` | `parsed/otr2_parsed.json` | ✅ Verified |
-| RTG2 | `raw/rtg2_raw_tables.json` | `parsed/rtg2_parsed.json` | ✅ Verified |
-| GTC2 | `raw/gtc2_raw_tables.json` | `parsed/gtc2_parsed.json` | ✅ Verified |
-| HCR  | `raw/hcr_raw_tables.json`  | `parsed/hcr_parsed.json`  | ✅ Verified |
-| HSN  | `raw/hsn_raw_tables.json`  | `parsed/hsn_parsed.json`  | ✅ Verified |
-| RTW  | `raw/rtw_raw_tables.json`  | `parsed/rtw_parsed.json`  | ✅ Verified |
+| Game | Raw Tables                 | Parsed Units              | Web Output                  | Status  |
+| ---- | -------------------------- | ------------------------- | --------------------------- | ------- |
+| OTR2 | `raw/otr2_raw_tables.json` | `parsed/otr2_parsed.json` | `web/public/data/otr2.json` | ✅ Live |
+| RTG2 | `raw/rtg2_raw_tables.json` | `parsed/rtg2_parsed.json` | `web/public/data/rtg2.json` | ✅ Live |
+| GTC2 | `raw/gtc2_raw_tables.json` | `parsed/gtc2_parsed.json` | `web/public/data/gtc2.json` | ✅ Live |
+| HCR  | `raw/hcr_raw_tables.json`  | `parsed/hcr_parsed.json`  | `web/public/data/hcr.json`  | ✅ Live |
+| HSN  | `raw/hsn_raw_tables.json`  | `parsed/hsn_parsed.json`  | `web/public/data/hsn.json`  | ✅ Live |
+| RTW  | `raw/rtw_raw_tables.json`  | `parsed/rtw_parsed.json`  | `web/public/data/rtw.json`  | ✅ Live |
 
 ---
 
@@ -296,8 +296,34 @@ Example from `game_configs.json`:
 
 ## Next Steps
 
-Phase 2 is complete. Remaining work:
+Phase 2 integration is complete. The pipeline is now:
 
-1. **Integrate with web pipeline** - Update `convert_to_web.py` to use `{game}_parsed.json` instead of the old `scenario_parser.py` output
-2. **Add table metadata** - Preserve table name (e.g., "Reinforcement Track") in parsed output for UI grouping
-3. **Handle HCR scenarios 7/8 turn display** - Turn field needs to be shown in roster UI
+```
+PDF → raw_table_extractor.py → raw/{game}_raw_tables.json
+                                       ↓
+                              game_configs.json (column mappings)
+                                       ↓
+                              parse_raw_tables.py → parsed/{game}_parsed.json
+                                       ↓
+                              convert_to_web.py → web/public/data/{game}.json
+```
+
+### Regenerating Data
+
+To regenerate all web data from parsed files:
+
+```bash
+cd parser && uv run python convert_to_web.py
+```
+
+To re-parse raw tables (if column configs change):
+
+```bash
+cd parser && uv run python parse_raw_tables.py --all
+cd parser && uv run python convert_to_web.py
+```
+
+### Remaining Improvements (Optional)
+
+1. **Add table metadata** - Preserve table name (e.g., "Reinforcement Track") in parsed output for UI grouping
+2. **Handle HCR scenarios 7/8 turn display** - Turn field needs to be shown in roster UI

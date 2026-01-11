@@ -185,7 +185,6 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
         <h2 className="roster-sheet__scenario">
           Scenario {scenario.number}: {scenario.name}
         </h2>
-        <p className="roster-sheet__length">{scenario.gameLength}</p>
         <ConventionsKey />
       </header>
 

@@ -12,58 +12,56 @@ This skill guides the process of adding a new game from the Great Campaigns of t
 - PDF rulebook in `data/` directory (e.g., `data/NewGame_Rules.pdf`)
 - Python environment with pdfplumber (managed by uv)
 
-## Step 1: Discover Scenario Names
+## Step 1: Extract Raw Tables
 
-PDF text extraction is unreliable—scenario titles often merge with adjacent text due to multi-column layouts. Run this to see what the parser finds:
-
-```bash
-cd parser && uv run python -c '
-import pdfplumber, re
-with pdfplumber.open("../data/NewGame.pdf") as pdf:
-    for i, page in enumerate(pdf.pages[3:], start=4):
-        text = page.extract_text() or ""
-        for line in text.split("\n")[:15]:
-            if re.search(r"scenario\s+\d+:", line, re.IGNORECASE):
-                print(f"Page {i}: {line.strip()[:80]}")
-'
-```
-
-**CRITICAL**: Cross-reference the output against the actual PDF. The extracted text will have:
-
-- Weird capitalization (from small caps fonts)
-- Extra text merged from adjacent columns
-- Missing or corrupted characters
-
-Manually verify each scenario name by looking at the PDF.
-
-## Step 2: Diagnose Table Structure
-
-Before parsing, check for column anomalies that may require game-specific handling:
+Run the raw table extractor to capture table structure from the PDF:
 
 ```bash
-cd parser && uv run python diagnose_pdf.py ../data/NewGame.pdf
+cd parser && uv run python raw_table_extractor.py ../data/NewGame.pdf newgame
 ```
 
-This tool scans all unit tables and flags:
+This creates `raw/newgame_raw_tables.json` containing all scenario tables with:
 
-- **Trailing numbers in names**: May indicate an extra column (like HSN's "Set" column for reinforcement turns)
-- **Inconsistent column counts**: Different table structures on different pages
-- **Multi-word names**: May be picking up extra columns
+- Scenario names and page ranges
+- Confederate and Union tables
+- Raw row tokens (not yet parsed)
+- Footnote annotations
 
-If anomalies are found, you may need to add game-specific parsing logic to `scenario_parser.py`.
+Review the output to verify scenarios were detected correctly.
 
-## Step 3: Add Scenario Names
+## Step 2: Check Column Structure
 
-Edit `parser/scenario_parser.py` and add entries to the `SCENARIO_NAMES` dict (~line 40):
+Examine the raw tables to understand the column layout. Most games use:
 
-```python
-SCENARIO_NAMES = {
-    # ... existing games ...
-    "newgame": {
-        1: "Scenario One Name",
-        2: "Scenario Two Name",
-        # etc.
-    },
+```
+Unit/Leader | Size | Command | Type | Manpower | Hex
+```
+
+Some games have variations:
+
+- **HCR Scenarios 7-8**: Have a leading "Turn" column
+- **RTG2**: Has trailing "Set #" column for reinforcements
+- **HSN**: Has "Set" column in some tables
+
+If the game has non-standard columns, add a config entry to `game_configs.json`:
+
+```json
+{
+  "newgame": {
+    "table_patterns": {
+      ".*Reinforcement.*": {
+        "columns": [
+          "turn",
+          "name",
+          "size",
+          "command",
+          "type",
+          "manpower",
+          "hex"
+        ]
+      }
+    }
+  }
 }
 ```
 
@@ -74,12 +72,7 @@ Edit `parser/convert_to_web.py` and add to the `GAMES` list:
 ```python
 GAMES = [
     # ... existing games ...
-    {
-        "id": "newgame",
-        "name": "Full Game Name",
-        "parser_output": "newgame_scenarios.json",
-        "web_output": "newgame.json",
-    },
+    {"id": "newgame", "name": "Full Game Name"},
 ]
 ```
 
@@ -101,17 +94,19 @@ const slugToGameId: Record<string, string> = {
 
 **Note**: The `slugToGameId` key must be lowercase since lookups are case-insensitive.
 
-## Step 5: Run Parser
+## Step 5: Parse Raw Tables
 
 ```bash
-cd parser && uv run python scenario_parser.py ../data/NewGame.pdf newgame
+cd parser && uv run python parse_raw_tables.py newgame
 ```
+
+This creates `parsed/newgame_parsed.json` with structured unit data.
 
 Review the output for:
 
 - Correct scenario count
 - Reasonable unit counts per scenario
-- Game length format (should be like "X turns; Month Day to Month Day, Year.")
+- Footnotes captured correctly
 
 ## Step 6: Generate Web Data
 
@@ -131,7 +126,6 @@ This creates `web/public/data/newgame.json` and updates `games.json`.
 ## Common Issues
 
 - **"Game not found" error**: Missing slug mapping in `web/src/utils/slugs.ts`
-- **Trailing numbers in unit names**: Game has extra columns (like HSN's "Set" column). Add game-specific logic to strip them in `_parse_unit_line()` - see the `hsn` handling as an example
-- **Zero units parsed**: Check if the PDF table format differs from expected
-- **Wrong game length text**: The `_extract_game_length` regex may need adjustment
-- **Missing scenarios**: Check if scenario headers are on unusual pages or have different formatting
+- **Wrong column parsing**: Check `game_configs.json` for table pattern overrides
+- **Zero units parsed**: Check if the PDF table format differs from expected; may need to re-extract raw tables
+- **Missing scenarios**: Check raw tables JSON to see if scenario headers were detected

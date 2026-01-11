@@ -5,183 +5,726 @@
     {
       "number": 1,
       "name": "Meade Moves North",
-      "gameLength": "1 turn, September 14, 1862.",
-      "mapInfo": "Use only the west map. +7 If a Union infantry unit occupies Boonsboro (W2910). +4 If a Union infantry unit occupies Zittlestown (W3111).",
       "confederateFootnotes": {},
-      "unionFootnotes": {},
+      "unionFootnotes": {
+        "*": "Indicated units begin the game at Fatigue Level 1 on their normal sides",
+        "+": "Indicated units begin the game under fort markers"
+      },
       "confederateUnits": [
         {
-          "name": "5 VA",
-          "size": "Regt",
+          "name": "Stuart",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4529 (Hood\u2019s Mill)",
+          "notes": []
+        },
+        {
+          "name": "F. Lee",
+          "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W3212",
+          "manpowerValue": "3",
+          "hexLocation": "S4529 (Hood\u2019s Mill)",
           "notes": []
         },
         {
-          "name": "Garland",
+          "name": "Hampton",
           "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "W3211 (Mountain House)",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S4530",
           "notes": []
         },
         {
-          "name": "Colquitt",
+          "name": "Chambliss",
           "size": "Brig",
-          "command": "L",
-          "type": "Inf",
+          "command": "Cav",
+          "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "W3312",
+          "hexLocation": "S4531 (Cooksville)",
           "notes": []
         },
         {
-          "name": "D.H. Hill-A",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W3111 (Zittlestown)",
-          "notes": []
-        },
-        {
-          "name": "Rodes-A",
+          "name": "Jones",
           "size": "Brig",
-          "command": "L",
-          "type": "Inf",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": []
+        },
+        {
+          "name": "Robertson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "W2910 (Boonsboro)",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": []
+        },
+        {
+          "name": "Lee",
+          "size": "Army",
+          "command": "ANV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N0929 (Chambersburg)",
           "notes": []
         },
         {
           "name": "Longstreet",
           "size": "Corps",
-          "command": "L",
+          "command": "I",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W2502 (Hagerstown)",
-          "notes": []
-        },
-        {
-          "name": "D.R. Jones",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W2502 (Hagerstown)",
+          "hexLocation": "N0929 (Chambersburg)",
           "notes": []
         },
         {
           "name": "Hood",
           "size": "Div",
-          "command": "L",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2501",
+          "manpowerValue": "12",
+          "hexLocation": "N0929 (Chambersburg)",
           "notes": []
         },
         {
-          "name": "Evans",
-          "size": "Brig",
-          "command": "L",
+          "name": "McLaws",
+          "size": "Div",
+          "command": "I",
           "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N0929 (Chambersburg)",
+          "notes": []
+        },
+        {
+          "name": "Imboden",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N0929 (Chambersburg)",
+          "notes": []
+        },
+        {
+          "name": "Pickett",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "N1128",
+          "notes": []
+        },
+        {
+          "name": "Hill",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1229",
+          "notes": []
+        },
+        {
+          "name": "Anderson",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N1229",
+          "notes": []
+        },
+        {
+          "name": "Pender",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N1330",
+          "notes": []
+        },
+        {
+          "name": "Heth",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "17",
+          "hexLocation": "N1430",
+          "notes": []
+        },
+        {
+          "name": "Law",
+          "size": "Brig",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "N1432 (New Guilford)",
+          "notes": []
+        },
+        {
+          "name": "Ewell",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3411 (Carlisle Barracks)",
+          "notes": []
+        },
+        {
+          "name": "Rodes",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "16",
+          "hexLocation": "N3411 (Carlisle Barracks)",
+          "notes": []
+        },
+        {
+          "name": "Johnson",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N3312 (Carlisle)",
+          "notes": []
+        },
+        {
+          "name": "A. Jenkins",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "W2401",
+          "hexLocation": "N4311 (Mechanicsburg)",
+          "notes": []
+        },
+        {
+          "name": "Early",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "N5826 (York)",
+          "notes": []
+        },
+        {
+          "name": "17 VA",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "N5825 (Prospect Hill Cemetery)",
           "notes": []
         }
       ],
       "unionUnits": [
         {
-          "name": "8 IL-A",
+          "name": "7 NY",
           "size": "Regt",
-          "command": "-",
+          "command": "Balt",
+          "type": "Inf",
+          "manpowerValue": "1+",
+          "hexLocation": "S5734 (Ellicott Mills)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "6 NY",
+          "size": "Regt",
+          "command": "Balt",
+          "type": "Inf",
+          "manpowerValue": "1+",
+          "hexLocation": "S5734 (Ellicott Mills)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Huey",
+          "size": "Brig",
+          "command": "2nd",
           "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W3414",
+          "manpowerValue": "2",
+          "hexLocation": "S3328",
           "notes": []
         },
         {
-          "name": "Reno",
-          "size": "Corps",
-          "command": "IX",
+          "name": "JI Gregg",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3128 (New Market)",
+          "notes": []
+        },
+        {
+          "name": "McIntosh",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3128 (New Market)",
+          "notes": []
+        },
+        {
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
           "type": "Ldr",
-          "manpowerValue": "W3814",
-          "hexLocation": "",
+          "manpowerValue": "-",
+          "hexLocation": "S3128 (New Market)",
           "notes": []
         },
         {
-          "name": "Sturgis",
+          "name": "Sedgwick",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3129 (Monrovia)",
+          "notes": []
+        },
+        {
+          "name": "Wright",
           "size": "Div",
-          "command": "IX",
+          "command": "VI",
           "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W3814",
-          "notes": []
+          "manpowerValue": "9*",
+          "hexLocation": "S3129 (Monrovia)",
+          "notes": [
+            "*"
+          ]
         },
         {
-          "name": "Willcox-A",
+          "name": "Howe",
           "size": "Div",
-          "command": "IX",
+          "command": "VI",
           "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W3714",
-          "notes": []
+          "manpowerValue": "8*",
+          "hexLocation": "S3129 (Monrovia)",
+          "notes": [
+            "*"
+          ]
         },
         {
-          "name": "Cox",
+          "name": "Newton",
           "size": "Div",
-          "command": "IX",
+          "command": "VI",
           "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W3513",
+          "manpowerValue": "10*",
+          "hexLocation": "S3129 (Monrovia)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Stannard",
+          "size": "Brig",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "S2530",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Sickles",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3017",
           "notes": []
         },
         {
-          "name": "Rodman",
+          "name": "Birney",
           "size": "Div",
-          "command": "IX",
+          "command": "III",
           "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W4115",
+          "manpowerValue": "11#",
+          "hexLocation": "S3017",
           "notes": []
         },
         {
-          "name": "Hooker",
+          "name": "Humphreys",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "10#",
+          "hexLocation": "S3017",
+          "notes": []
+        },
+        {
+          "name": "Reynolds",
           "size": "Corps",
           "command": "I",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W4214 (Frederick)",
+          "hexLocation": "S2219 (Lewistown)",
           "notes": []
+        },
+        {
+          "name": "Wadsworth",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "S2219 (Lewistown)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Robinson",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "S2219 (Lewistown)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Doubleday",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "5*",
+          "hexLocation": "S2219 (Lewistown)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Howard",
+          "size": "Corps",
+          "command": "XI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2419 (Utica)",
+          "notes": []
+        },
+        {
+          "name": "Barlow",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "5*",
+          "hexLocation": "S2419 (Utica)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Steinwehr",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "5*",
+          "hexLocation": "S2419 (Utica)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Schurz",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "S2419 (Utica)",
+          "notes": [
+            "*"
+          ]
         },
         {
           "name": "Meade",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W4214 (Frederick)",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2722 (Walkersville)",
           "notes": []
         },
         {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4315",
+          "name": "Slocum",
+          "size": "Corps",
+          "command": "XII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2722 (Walkersville)",
           "notes": []
         },
         {
-          "name": "Ricketts-A",
+          "name": "Williams",
           "size": "Div",
-          "command": "I",
+          "command": "XII",
           "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W4415",
+          "manpowerValue": "7*",
+          "hexLocation": "S2722 (Walkersville)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Geary",
+          "size": "Div",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "S2722 (Walkersville)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Art Res-1",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2*",
+          "hexLocation": "S2722 (Walkersville)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Art Res-2",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2*",
+          "hexLocation": "S2722 (Walkersville)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Art Res-3",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2*",
+          "hexLocation": "S2722 (Walkersville)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Merritt",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S1725 (Middletown)",
           "notes": []
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S1624",
+          "notes": []
+        },
+        {
+          "name": "Gamble",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S1624",
+          "notes": []
+        },
+        {
+          "name": "Devin",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S1624",
+          "notes": []
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2426",
+          "notes": []
+        },
+        {
+          "name": "Farnsworth",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S2426",
+          "notes": []
+        },
+        {
+          "name": "Custer",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S2426",
+          "notes": []
+        },
+        {
+          "name": "Hancock",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2924 (Mt Pleasant)",
+          "notes": []
+        },
+        {
+          "name": "Caldwell",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "7*",
+          "hexLocation": "S2924 (Mt Pleasant)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Gibbon",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "7*",
+          "hexLocation": "S2924 (Mt Pleasant)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Hays",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "S2924 (Mt Pleasant)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Sykes",
+          "size": "Corps",
+          "command": "V",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2424 (Harmony Grove)",
+          "notes": []
+        },
+        {
+          "name": "Barnes",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "7*",
+          "hexLocation": "S2424 (Harmony Grove)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Ayres",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "S2424 (Harmony Grove)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Crawford",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "S2424 (Harmony Grove)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Lockwood",
+          "size": "Brig",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "S2326 (Frederick)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Knipe",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "N4609 (Stonepeace Church)",
+          "notes": []
+        },
+        {
+          "name": "Ewen",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "4+",
+          "hexLocation": "N4809 (Bridgeport)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Brisbane",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "5+",
+          "hexLocation": "N4809 (Bridgeport)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Yates",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "N4603 (Marysville)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "J. Smith",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "5+",
+          "hexLocation": "N4909 (Harrisburg)",
+          "notes": [
+            "+"
+          ]
         }
       ],
       "confederateGunboats": [],
@@ -190,130 +733,25 @@
     {
       "number": 2,
       "name": "Stuart Rides North",
-      "gameLength": "4 turns, September 12 to September 15, 1862.",
-      "mapInfo": "Use only the west map. +8 For each undemoralized Confederate infantry division or brigade in or adjacent to Sharpsburg (W2413). However, the",
-      "confederateFootnotes": {
-        "*": "Indicated units begin the game on their exhausted sides at Fatigue Level 0 with organized strength makers"
-      },
-      "unionFootnotes": {
-        "*": "Ward begins the game under a Fort marker"
-      },
+      "confederateFootnotes": {},
+      "unionFootnotes": {},
       "confederateUnits": [
-        {
-          "name": "7 VA",
-          "size": "Regt",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "1*",
-          "hexLocation": "W1207 (Hedgesville)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Jackson",
-          "size": "Corps",
-          "command": "J",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W1509",
-          "notes": []
-        },
-        {
-          "name": "A.P. Hill",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "10*",
-          "hexLocation": "W1509",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "J.R. Jones",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "7*",
-          "hexLocation": "W1307 (North Mt. Depot)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Lawton",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "7*",
-          "hexLocation": "W1407 (Falling Waters Church)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "McLaws-A",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "9*",
-          "hexLocation": "W2917 (Brownsville)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Anderson-A",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "4*",
-          "hexLocation": "W2917 (Brownsville)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Kershaw",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "6*",
-          "hexLocation": "W2918",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Parham",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2*",
-          "hexLocation": "W3017 (Brownsville Gap)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Semmes",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "3*",
-          "hexLocation": "W3017 (Brownsville Gap)",
-          "notes": [
-            "*"
-          ]
-        },
         {
           "name": "Stuart",
           "size": "Corps",
           "command": "Cav",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W3117 (Burkittsville)",
+          "hexLocation": "S4529 (Hood\u2019s Mill)",
+          "notes": []
+        },
+        {
+          "name": "F. Lee",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S4529 (Hood\u2019s Mill)",
           "notes": []
         },
         {
@@ -321,138 +759,151 @@
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "W3117 (Burkittsville)",
+          "manpowerValue": "3",
+          "hexLocation": "S4530",
           "notes": []
         },
         {
-          "name": "Munford",
+          "name": "Wagon Train",
+          "size": "-",
+          "command": "-",
+          "type": "Special",
+          "manpowerValue": "-",
+          "hexLocation": "S4530",
+          "notes": []
+        },
+        {
+          "name": "Chambliss",
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W3718",
+          "manpowerValue": "2",
+          "hexLocation": "S4531 (Cooksville)",
           "notes": []
         },
         {
-          "name": "Walker",
+          "name": "Early",
           "size": "Div",
-          "command": "L",
+          "command": "II",
           "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "W3524",
+          "manpowerValue": "11",
+          "hexLocation": "N5826 (York)",
+          "notes": []
+        },
+        {
+          "name": "17 VA",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "N5825 (Prospect Hill Cemetery)",
           "notes": []
         }
       ],
       "unionUnits": [
         {
-          "name": "12 IL",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W1312",
+          "name": "Knipe",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "N4609 (Stonepeace Church)",
           "notes": []
         },
         {
-          "name": "White",
+          "name": "Ewen",
           "size": "Brig",
-          "command": "Shen",
+          "command": "PA",
           "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "W1314 (Martinsburg)",
-          "notes": []
-        },
-        {
-          "name": "D\u2019Utassy",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "4#",
-          "hexLocation": "W2420 (Bolivar Heights)",
-          "notes": []
-        },
-        {
-          "name": "Trimble",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "4#",
-          "hexLocation": "W2421 (Chambers Farm)",
-          "notes": []
-        },
-        {
-          "name": "Ward",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "3*",
-          "hexLocation": "W2521 (Harpers Ferry/Bolivar)",
+          "manpowerValue": "4*",
+          "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "*"
           ]
         },
         {
-          "name": "8 NY",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W2620 (Naval Battery)",
-          "notes": []
-        },
-        {
-          "name": "Ford",
+          "name": "Brisbane",
           "size": "Brig",
-          "command": "RR",
+          "command": "PA",
           "type": "Inf",
-          "manpowerValue": "5%",
-          "hexLocation": "W2720",
-          "notes": []
+          "manpowerValue": "5*",
+          "hexLocation": "N4809 (Bridgeport)",
+          "notes": [
+            "*"
+          ]
         },
         {
-          "name": "6 PA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4527 (Barnesville)",
-          "notes": []
+          "name": "J. Smith",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "5*",
+          "hexLocation": "N4909 (Harrisburg)",
+          "notes": [
+            "*"
+          ]
         },
         {
-          "name": "Franklin",
-          "size": "Corps",
-          "command": "VI",
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W4527 (Barnesville)",
+          "hexLocation": "S3128 (New Market)",
           "notes": []
         },
         {
-          "name": "Slocum",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4527 (Barnesville)",
+          "name": "JI Gregg",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3128 (New Market)",
           "notes": []
         },
         {
-          "name": "Smith",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W4527 (Barnesville)",
+          "name": "McIntosh",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3128 (New Market)",
           "notes": []
         },
         {
-          "name": "Couch",
+          "name": "Huey",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3328",
+          "notes": []
+        },
+        {
+          "name": "Kilpatrick",
           "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "W4431 (Poolesville)",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2426",
+          "notes": []
+        },
+        {
+          "name": "Farnsworth",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S2426",
+          "notes": []
+        },
+        {
+          "name": "Custer",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S2426",
           "notes": []
         }
       ],
@@ -462,514 +913,110 @@
     {
       "number": 3,
       "name": "Confederate High Tide",
-      "gameLength": "3 turns, September 15 to September 17, 1862.",
-      "mapInfo": "Use only the west map. \u2022 +12 If a qualifying Union unit occupies any one hex adjacent to Sharpsburg.",
-      "confederateFootnotes": {
-        "*": "Indicated units begin the game on their exhausted sides at Fatigue Level 1 with disorganized strength markers"
-      },
+      "confederateFootnotes": {},
       "unionFootnotes": {
-        "*": "Indicated units begin the game on their exhausted sides at Fatigue Level 1 with disorganized strength markers"
+        "*": "Indicated units begin the game under fort markers"
       },
       "confederateUnits": [
         {
-          "name": "Lee",
-          "size": "Army",
-          "command": "ANV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W2910 (Boonsboro)",
-          "notes": []
-        },
-        {
-          "name": "Longstreet",
+          "name": "Ewell",
           "size": "Corps",
-          "command": "L",
+          "command": "II",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W2910 (Boonsboro)",
+          "hexLocation": "N3411 (Carlisle Barracks)",
           "notes": []
         },
         {
-          "name": "D.R. Jones",
+          "name": "Rodes",
           "size": "Div",
-          "command": "L",
+          "command": "II",
           "type": "Inf",
-          "manpowerValue": "9*",
-          "hexLocation": "W2910 (Boonsboro)",
-          "notes": [
-            "*"
-          ]
+          "manpowerValue": "16",
+          "hexLocation": "N3411 (Carlisle Barracks)",
+          "notes": []
         },
         {
-          "name": "Evans",
-          "size": "Brig",
-          "command": "L",
+          "name": "Johnson",
+          "size": "Div",
+          "command": "II",
           "type": "Inf",
-          "manpowerValue": "2*",
-          "hexLocation": "W2910 (Boonsboro)",
-          "notes": [
-            "*"
-          ]
+          "manpowerValue": "14",
+          "hexLocation": "N3312 (Carlisle)",
+          "notes": []
         },
         {
-          "name": "F. Lee",
+          "name": "A. Jenkins",
           "size": "Brig",
-          "command": "Cav",
+          "command": "-",
           "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "W3010",
+          "hexLocation": "N4311 (Mechanicsburg)",
           "notes": []
         },
         {
-          "name": "D.H. Hill-B",
+          "name": "Early",
           "size": "Div",
-          "command": "L",
+          "command": "II",
           "type": "Inf",
-          "manpowerValue": "8*",
-          "hexLocation": "W2912 (Springvale)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Hood",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "4*",
-          "hexLocation": "W2913",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Toombs",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "W2502 (Hagerstown)",
+          "manpowerValue": "11",
+          "hexLocation": "N5826 (York)",
           "notes": []
-        },
-        {
-          "name": "Anderson-A",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "5*",
-          "hexLocation": "W2818",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "McLaws-B",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "8*",
-          "hexLocation": "W2918",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Stuart",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W2920 (Weverton)",
-          "notes": []
-        },
-        {
-          "name": "Hampton",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "W2920 (Weverton)",
-          "notes": []
-        },
-        {
-          "name": "Wright",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2920 (Weverton)",
-          "notes": []
-        },
-        {
-          "name": "Armistead",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "5*",
-          "hexLocation": "W2620 (Naval Battery)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Walker",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "W2621",
-          "notes": []
-        },
-        {
-          "name": "Jackson",
-          "size": "Corps",
-          "command": "J",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W2420 (Bolivar Heights)",
-          "notes": []
-        },
-        {
-          "name": "Lawton",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "7%",
-          "hexLocation": "W2420 (Bolivar Heights)",
-          "notes": []
-        },
-        {
-          "name": "J.R. Jones",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "7%",
-          "hexLocation": "W2421 (Chambers Farm)",
-          "notes": []
-        },
-        {
-          "name": "A.P. Hill",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "9%",
-          "hexLocation": "W2521 (Harpers Ferry/Bolivar)",
-          "notes": []
-        },
-        {
-          "name": "Thomas",
-          "size": "Brig",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "2%",
-          "hexLocation": "W2521 (Harpers Ferry/Bolivar)",
-          "notes": []
-        },
-        {
-          "name": "7 VA",
-          "size": "Regt",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W2419 (Old Furnace)",
-          "notes": []
-        },
-        {
-          "name": "Munford",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "1*",
-          "hexLocation": "W2814",
-          "notes": [
-            "*"
-          ]
         }
       ],
       "unionUnits": [
         {
-          "name": "Cox",
-          "size": "Corps",
-          "command": "IX",
-          "type": "Ldr",
-          "manpowerValue": "W3212",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Sturgis",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7*",
-          "hexLocation": "W3212",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Willcox-A",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6*",
-          "hexLocation": "W3212",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Scammon",
-          "size": "Div",
-          "command": "IX",
+          "name": "Brisbane",
+          "size": "Brig",
+          "command": "PA",
           "type": "Inf",
           "manpowerValue": "5*",
-          "hexLocation": "W3212",
+          "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "*"
           ]
         },
         {
-          "name": "Rodman",
-          "size": "Div",
-          "command": "IX",
+          "name": "Ewen",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "N4809 (Bridgeport)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Yates",
+          "size": "Brig",
+          "command": "PA",
           "type": "Inf",
           "manpowerValue": "6*",
-          "hexLocation": "W3313 (Mentzer\u2019s Saw Mill)",
+          "hexLocation": "N4603 (Marysville)",
           "notes": [
             "*"
           ]
         },
         {
-          "name": "Hooker",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W3211 (Mountain House)",
+          "name": "Knipe",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "N4609 (Stonepeace Church)",
           "notes": []
         },
         {
-          "name": "Doubleday",
-          "size": "Div",
-          "command": "I",
+          "name": "J. Smith",
+          "size": "Brig",
+          "command": "PA",
           "type": "Inf",
-          "manpowerValue": "9*",
-          "hexLocation": "W3211 (Mountain House)",
+          "manpowerValue": "5*",
+          "hexLocation": "N4909 (Harrisburg)",
           "notes": [
             "*"
           ]
-        },
-        {
-          "name": "Meade",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "8*",
-          "hexLocation": "W3211 (Mountain House)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Ricketts-A",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "9*",
-          "hexLocation": "W3211 (Mountain House)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Sumner",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W3312",
-          "notes": []
-        },
-        {
-          "name": "Richardson",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W3312",
-          "notes": []
-        },
-        {
-          "name": "Sedgwick",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W3312",
-          "notes": []
-        },
-        {
-          "name": "McClellan",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W3412 (Bolivar)",
-          "notes": []
-        },
-        {
-          "name": "Mansfield",
-          "size": "Corps",
-          "command": "XII",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W3412 (Bolivar)",
-          "notes": []
-        },
-        {
-          "name": "Williams",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W3412 (Bolivar)",
-          "notes": []
-        },
-        {
-          "name": "Greene",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W3513",
-          "notes": []
-        },
-        {
-          "name": "Sykes",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "8",
-          "hexLocation": "W3613 (Middletown)",
-          "notes": []
-        },
-        {
-          "name": "French",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4214 (Frederick)",
-          "notes": []
-        },
-        {
-          "name": "Porter",
-          "size": "Corps",
-          "command": "V",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W4317 (Frederick Junction)",
-          "notes": []
-        },
-        {
-          "name": "Morell",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W4317 (Frederick Junction)",
-          "notes": []
-        },
-        {
-          "name": "Humphreys",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "W5329 (Middlebrook)",
-          "notes": []
-        },
-        {
-          "name": "Franklin",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W2917 (Brownsville)",
-          "notes": []
-        },
-        {
-          "name": "Slocum",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "9#",
-          "hexLocation": "W2917 (Brownsville)",
-          "notes": []
-        },
-        {
-          "name": "Smith",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "13%",
-          "hexLocation": "W3016",
-          "notes": []
-        },
-        {
-          "name": "Couch",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "12%",
-          "hexLocation": "W3117 (Burkittsville)",
-          "notes": []
-        },
-        {
-          "name": "6 US",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W3506 (Wolfsville)",
-          "notes": []
-        },
-        {
-          "name": "8 IL-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W3309",
-          "notes": []
-        },
-        {
-          "name": "1 RI",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W3614",
-          "notes": []
-        },
-        {
-          "name": "6 PA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W3120",
-          "notes": []
-        },
-        {
-          "name": "8 NY",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W2412 (Dunker Church)",
-          "notes": []
         }
       ],
       "confederateGunboats": [],
@@ -978,450 +1025,222 @@
     {
       "number": 4,
       "name": "First Day at Gettysburg",
-      "gameLength": "6 turns, Sept. 13 to Sept. 18, 1862.",
-      "mapInfo": "Use only the west map. holds a gala ball and he only adds +1 to movement rolls this turn instead of +3.",
-      "confederateFootnotes": {
-        "^": "Indicated units have a turn 1 movement restriction \u2013 see special rules",
-        "*": "Indicated units begin the game on their exhausted sides at fatigue level 0"
-      },
+      "confederateFootnotes": {},
       "unionFootnotes": {
-        "^": "Humphreys may not move on turn 1",
-        "+": "Ward begins the game under a fort marker",
-        "*": "1 RI begins the game on his exhausted side at fatigue level 0"
+        "*": "Indicated units begin the game at fatigue level 0 on their exhausted sides"
       },
       "confederateUnits": [
         {
-          "name": "7 VA",
-          "size": "Regt",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W1514 (Opequon Station)",
-          "notes": []
-        },
-        {
-          "name": "Jackson",
+          "name": "Hill",
           "size": "Corps",
-          "command": "J",
+          "command": "III",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W1514 (Opequon Station)",
+          "hexLocation": "N2230 (Union Hotel)",
           "notes": []
         },
         {
-          "name": "A.P. Hill",
+          "name": "Pender",
           "size": "Div",
-          "command": "J",
+          "command": "III",
           "type": "Inf",
-          "manpowerValue": "10*",
-          "hexLocation": "W1514 (Opequon Station)",
-          "notes": [
-            "*"
-          ]
+          "manpowerValue": "14",
+          "hexLocation": "N2230 (Union Hotel)",
+          "notes": []
         },
         {
-          "name": "J.R. Jones",
+          "name": "Heth",
           "size": "Div",
-          "command": "J",
+          "command": "III",
           "type": "Inf",
-          "manpowerValue": "7*",
-          "hexLocation": "W1414",
-          "notes": [
-            "*"
-          ]
+          "manpowerValue": "17",
+          "hexLocation": "N2532 (Cashtown)",
+          "notes": []
         },
         {
-          "name": "Lawton",
+          "name": "Anderson",
           "size": "Div",
-          "command": "J",
+          "command": "III",
           "type": "Inf",
-          "manpowerValue": "7*",
-          "hexLocation": "W1414",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Walker",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "W2729 (Hillsborough)",
+          "manpowerValue": "15",
+          "hexLocation": "N1531 (Fayetteville)",
           "notes": []
         },
         {
-          "name": "Kershaw",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W2720",
-          "notes": []
-        },
-        {
-          "name": "Anderson-A",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2920 (Weverton)",
-          "notes": []
-        },
-        {
-          "name": "Parham",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "W3017 (Brownsville Gap)",
-          "notes": []
-        },
-        {
-          "name": "Semmes",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "W3017 (Brownsville Gap)",
-          "notes": []
-        },
-        {
-          "name": "McLaws-A",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W2819",
-          "notes": []
-        },
-        {
-          "name": "Stuart",
+          "name": "Ewell",
           "size": "Corps",
-          "command": "Cav",
+          "command": "II",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W3613 (Middletown)",
+          "hexLocation": "N3627 (Heidlersburg)",
           "notes": []
         },
         {
-          "name": "Hampton",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "W3613 (Middletown)",
-          "notes": []
-        },
-        {
-          "name": "F. Lee",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "W4110 (Bethel)",
-          "notes": []
-        },
-        {
-          "name": "Munford",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W3718",
-          "notes": []
-        },
-        {
-          "name": "Lee",
-          "size": "Army",
-          "command": "ANV",
-          "type": "Ldr",
-          "manpowerValue": "-^",
-          "hexLocation": "W2502 (Hagerstown)",
-          "notes": [
-            "^"
-          ]
-        },
-        {
-          "name": "Longstreet",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-^",
-          "hexLocation": "W2502 (Hagerstown)",
-          "notes": [
-            "^"
-          ]
-        },
-        {
-          "name": "D.R. Jones",
+          "name": "Rodes",
           "size": "Div",
-          "command": "L",
+          "command": "II",
           "type": "Inf",
-          "manpowerValue": "10^",
-          "hexLocation": "W2502 (Hagerstown)",
+          "manpowerValue": "16*",
+          "hexLocation": "N3627 (Heidlersburg)",
           "notes": [
-            "^"
+            "*"
           ]
         },
         {
-          "name": "Hood",
+          "name": "Early",
           "size": "Div",
-          "command": "L",
+          "command": "II",
           "type": "Inf",
-          "manpowerValue": "4^",
-          "hexLocation": "W2501",
+          "manpowerValue": "11*",
+          "hexLocation": "N3927 (Coach Shop)",
           "notes": [
-            "^"
+            "*"
           ]
         },
         {
-          "name": "Evans",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2^",
-          "hexLocation": "W2401",
-          "notes": [
-            "^"
-          ]
-        },
-        {
-          "name": "D.H. Hill-A",
+          "name": "Johnson",
           "size": "Div",
-          "command": "L",
+          "command": "II",
           "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2910 (Boonsboro)",
-          "notes": []
-        },
-        {
-          "name": "Rodes-A",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "W2910 (Boonsboro)",
-          "notes": []
-        },
-        {
-          "name": "Garland",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "W2910 (Boonsboro)",
-          "notes": []
-        },
-        {
-          "name": "Colquitt",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "W2910 (Boonsboro)",
+          "manpowerValue": "14",
+          "hexLocation": "N1226 (Scotland)",
           "notes": []
         }
       ],
       "unionUnits": [
         {
-          "name": "Ward",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "3+",
-          "hexLocation": "W2521 (Harpers Ferry)",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "White",
-          "size": "Brig",
-          "command": "Shen",
-          "type": "Inf",
-          "manpowerValue": "3#",
-          "hexLocation": "W2521 (Harpers Ferry)",
-          "notes": []
-        },
-        {
-          "name": "12 IL",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W2521 (Harpers Ferry)",
-          "notes": []
-        },
-        {
-          "name": "8 NY",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W2521 (Harpers Ferry)",
-          "notes": []
-        },
-        {
-          "name": "D\u2019Utassy",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "4@",
-          "hexLocation": "W2420 (Bolivar Heights)",
-          "notes": []
-        },
-        {
-          "name": "Trimble",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "4@",
-          "hexLocation": "W2421 (Chambers Farm)",
-          "notes": []
-        },
-        {
-          "name": "Ford",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "W2620 (Naval Battery)",
-          "notes": []
-        },
-        {
-          "name": "6 US",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4214 (Frederick)",
-          "notes": []
-        },
-        {
-          "name": "1 NY-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4214 (Frederick)",
-          "notes": []
-        },
-        {
-          "name": "1 MA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4214 (Frederick)",
-          "notes": []
-        },
-        {
-          "name": "8 IL-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4115",
-          "notes": []
-        },
-        {
-          "name": "Reno",
-          "size": "Corps",
-          "command": "IX",
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W4115",
+          "hexLocation": "N3134 (Seminary)",
           "notes": []
         },
         {
-          "name": "Willcox-A",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W4115",
+          "name": "Gamble",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N3134 (Seminary)",
           "notes": []
         },
         {
-          "name": "Sturgis",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W4115",
+          "name": "Devin",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3233 (Alms House)",
           "notes": []
         },
         {
-          "name": "Rodman",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W4115",
-          "notes": []
-        },
-        {
-          "name": "Cox",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W4115",
-          "notes": []
-        },
-        {
-          "name": "Hooker",
+          "name": "Reynolds",
           "size": "Corps",
           "command": "I",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W5016 (New Market)",
+          "hexLocation": "S3103 (Peach Orchard)",
           "notes": []
         },
         {
-          "name": "Hatch",
+          "name": "Wadsworth",
           "size": "Div",
           "command": "I",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "S3103 (Peach Orchard)",
+          "notes": []
+        },
+        {
+          "name": "Doubleday",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "S3004",
+          "notes": []
+        },
+        {
+          "name": "Robinson",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "6#",
+          "hexLocation": "S3005 (Greenmount PO)",
+          "notes": []
+        },
+        {
+          "name": "Howard",
+          "size": "Corps",
+          "command": "XI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2906",
+          "notes": []
+        },
+        {
+          "name": "Barlow",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "S2906",
+          "notes": []
+        },
+        {
+          "name": "Steinwehr",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "S3007",
+          "notes": []
+        },
+        {
+          "name": "Schurz",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "6#",
+          "hexLocation": "S3107 (Mill)",
+          "notes": []
+        },
+        {
+          "name": "Sickles",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": []
+        },
+        {
+          "name": "Humphreys",
+          "size": "Div",
+          "command": "III",
           "type": "Inf",
           "manpowerValue": "10",
-          "hexLocation": "W5016 (New Market)",
+          "hexLocation": "S3310 (Bridgeport)",
           "notes": []
         },
         {
-          "name": "Ricketts-A",
+          "name": "Birney",
           "size": "Div",
-          "command": "I",
+          "command": "III",
           "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W5016 (New Market)",
+          "manpowerValue": "11",
+          "hexLocation": "S3110",
           "notes": []
         },
         {
-          "name": "Meade",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W5016 (New Market)",
-          "notes": []
-        },
-        {
-          "name": "McClellan",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W4818 (Ijamsville)",
-          "notes": []
-        },
-        {
-          "name": "Mansfield",
+          "name": "Slocum",
           "size": "Corps",
           "command": "XII",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W4818 (Ijamsville)",
+          "hexLocation": "S4007",
           "notes": []
         },
         {
@@ -1429,157 +1248,22 @@
           "size": "Div",
           "command": "XII",
           "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4818 (Ijamsville)",
-          "notes": []
-        },
-        {
-          "name": "Greene",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W4818 (Ijamsville)",
-          "notes": []
-        },
-        {
-          "name": "Sumner",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W4620 (Urbana)",
-          "notes": []
-        },
-        {
-          "name": "Richardson",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W4620 (Urbana)",
-          "notes": []
-        },
-        {
-          "name": "Sedgwick",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W4620 (Urbana)",
-          "notes": []
-        },
-        {
-          "name": "French",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4923 (Hyattstown)",
-          "notes": []
-        },
-        {
-          "name": "6 PA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4419 (Hope Hill Church)",
-          "notes": []
-        },
-        {
-          "name": "Franklin",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W4520",
-          "notes": []
-        },
-        {
-          "name": "Slocum",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4520",
-          "notes": []
-        },
-        {
-          "name": "Smith",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W4520",
-          "notes": []
-        },
-        {
-          "name": "Couch",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "W4527 (Barnesville)",
-          "notes": []
-        },
-        {
-          "name": "1 RI",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1*",
-          "hexLocation": "W5826 (Cracklintown)",
+          "manpowerValue": "7*",
+          "hexLocation": "S4007",
           "notes": [
             "*"
           ]
         },
         {
-          "name": "1 ME",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "Porter",
-          "size": "Corps",
-          "command": "V",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "Morell",
+          "name": "Geary",
           "size": "Div",
-          "command": "V",
+          "command": "XII",
           "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "Humphreys",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "14^",
-          "hexLocation": "W5833",
+          "manpowerValue": "8*",
+          "hexLocation": "S4007",
           "notes": [
-            "^"
+            "*"
           ]
-        },
-        {
-          "name": "Sykes",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "8",
-          "hexLocation": "W4620 (Urbana)",
-          "notes": []
         }
       ],
       "confederateGunboats": [],
@@ -1588,11 +1272,11 @@
     {
       "number": 5,
       "name": "Battle of Gettysburg",
-      "gameLength": "7 turns, Sept. 10 to Sept. 16, 1862.",
-      "mapInfo": "Use only the east map. \u2022 Owings Mills (E2207) \u2022 Gambrills Station (E2927)",
-      "confederateFootnotes": {},
+      "confederateFootnotes": {
+        "*": "Indicated units begin the game on their exhausted sides at fatigue Level 0"
+      },
       "unionFootnotes": {
-        "*": "138 PA starts the game under a fort marker"
+        "*": "Indicated units begin the game on their exhausted sides at fatigue Level 0"
       },
       "confederateUnits": [
         {
@@ -1601,7 +1285,7 @@
           "command": "Cav",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "E0211 (Parrsville)",
+          "hexLocation": "N5223 (Dover)",
           "notes": []
         },
         {
@@ -1609,130 +1293,621 @@
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "E0211 (Parrsville)",
-          "notes": []
+          "manpowerValue": "3*",
+          "hexLocation": "N5223 (Dover)",
+          "notes": [
+            "*"
+          ]
         },
         {
           "name": "Hampton",
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "E0210 (Mt. Airy)",
-          "notes": []
-        },
-        {
-          "name": "Munford",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "E0111 (Ridgeville)",
-          "notes": []
-        }
-      ],
-      "unionUnits": [
-        {
-          "name": "1 MA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E0120 (Goshen)",
-          "notes": []
-        },
-        {
-          "name": "8 IL-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E1020 (Brighton)",
-          "notes": []
-        },
-        {
-          "name": "1 NY-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E1526 (Burton\u2019s)",
-          "notes": []
-        },
-        {
-          "name": "1 RI",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E1634 (Hyattsville)",
-          "notes": []
-        },
-        {
-          "name": "141 NY",
-          "size": "Regt",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "1",
-          "hexLocation": "E2026 (Laurel)",
-          "notes": []
-        },
-        {
-          "name": "109 NY",
-          "size": "Regt",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "1",
-          "hexLocation": "E2223 (Annapolis Junction)",
-          "notes": []
-        },
-        {
-          "name": "138 PA",
-          "size": "Regt",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "1*",
-          "hexLocation": "E2518 (Relay House)",
+          "manpowerValue": "3*",
+          "hexLocation": "N5223 (Dover)",
           "notes": [
             "*"
           ]
         },
         {
-          "name": "Johnson",
+          "name": "Chambliss",
           "size": "Brig",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "E2116 (Ellicott Mills)",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "N5223 (Dover)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Jones",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S0116 (Williamsport)",
           "notes": []
         },
         {
-          "name": "12 PA",
+          "name": "Robertson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": []
+        },
+        {
+          "name": "Lee",
+          "size": "Army",
+          "command": "ANV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": []
+        },
+        {
+          "name": "Longstreet",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": []
+        },
+        {
+          "name": "McLaws",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": []
+        },
+        {
+          "name": "Law",
+          "size": "Brig",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "N1432 (New Guilford)",
+          "notes": []
+        },
+        {
+          "name": "Pickett",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "N1128",
+          "notes": []
+        },
+        {
+          "name": "Imboden",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N0929 (Chambersburg)",
+          "notes": []
+        },
+        {
+          "name": "Hill",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N2230 (Union Hotel)",
+          "notes": []
+        },
+        {
+          "name": "Pender",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N2230 (Union Hotel)",
+          "notes": []
+        },
+        {
+          "name": "Heth",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "17",
+          "hexLocation": "N2532 (Cashtown)",
+          "notes": []
+        },
+        {
+          "name": "Anderson",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N1531 (Fayetteville)",
+          "notes": []
+        },
+        {
+          "name": "Johnson",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N1226 (Scotland)",
+          "notes": []
+        },
+        {
+          "name": "Ewell",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3627 (Heidlersburg)",
+          "notes": []
+        },
+        {
+          "name": "Rodes",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "16*",
+          "hexLocation": "N3627 (Heidlersburg)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Early",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "11*",
+          "hexLocation": "N3927 (Coach Shop)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "A. Jenkins",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3824 (Petersburg)",
+          "notes": []
+        },
+        {
+          "name": "17VA",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
           "manpowerValue": "1",
-          "hexLocation": "E2510 (US Arsenal)",
+          "hexLocation": "N3827",
+          "notes": []
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Reynolds",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2906",
           "notes": []
         },
         {
-          "name": "18 CT",
-          "size": "Regt",
-          "command": "Balt",
+          "name": "Wadsworth",
+          "size": "Div",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "1",
-          "hexLocation": "E3712 (Back River Bridge)",
+          "manpowerValue": "8",
+          "hexLocation": "S2906",
           "notes": []
         },
         {
-          "name": "Staunton-A",
+          "name": "Doubleday",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "S2906",
+          "notes": []
+        },
+        {
+          "name": "Robinson",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "S2808",
+          "notes": []
+        },
+        {
+          "name": "Stannard",
           "size": "Brig",
-          "command": "Balt",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "E3330 (Crownsville)",
+          "manpowerValue": "4*",
+          "hexLocation": "S2711",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Howard",
+          "size": "Corps",
+          "command": "XI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2709 (Emmitsburg)",
           "notes": []
+        },
+        {
+          "name": "Barlow",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "S2709 (Emmitsburg)",
+          "notes": []
+        },
+        {
+          "name": "Steinwehr",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "S2709 (Emmitsburg)",
+          "notes": []
+        },
+        {
+          "name": "Schurz",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "S2709 (Emmitsburg)",
+          "notes": []
+        },
+        {
+          "name": "Meade",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": []
+        },
+        {
+          "name": "Sickles",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": []
+        },
+        {
+          "name": "Humphreys",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": []
+        },
+        {
+          "name": "Birney",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "S3110",
+          "notes": []
+        },
+        {
+          "name": "Slocum",
+          "size": "Corps",
+          "command": "XII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4007",
+          "notes": []
+        },
+        {
+          "name": "Williams",
+          "size": "Div",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "7*",
+          "hexLocation": "S4007",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Geary",
+          "size": "Div",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "S4007",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Lockwood",
+          "size": "Brig",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "S2709 (Emmitsburg)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Hancock",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": []
+        },
+        {
+          "name": "Caldwell",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": []
+        },
+        {
+          "name": "Gibbon",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": []
+        },
+        {
+          "name": "Hays",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": []
+        },
+        {
+          "name": "Sykes",
+          "size": "Corps",
+          "command": "V",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": []
+        },
+        {
+          "name": "Barnes",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "7#",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": []
+        },
+        {
+          "name": "Ayres",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": []
+        },
+        {
+          "name": "Crawford",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "6#",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": []
+        },
+        {
+          "name": "Sedgwick",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S5211",
+          "notes": []
+        },
+        {
+          "name": "Wright",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "9*",
+          "hexLocation": "S5211",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Howe",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "S5211",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Newton",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "10*",
+          "hexLocation": "S5211",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Art Res-1",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "Art Res-2",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "Art Res-3",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3134 (Seminary)",
+          "notes": []
+        },
+        {
+          "name": "Gamble",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N3134 (Seminary)",
+          "notes": []
+        },
+        {
+          "name": "Devin",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3233 (PA College)",
+          "notes": []
+        },
+        {
+          "name": "Merritt",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S2314 (Mechanicstown)",
+          "notes": []
+        },
+        {
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": []
+        },
+        {
+          "name": "JI Gregg",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "McIntosh",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Huey",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4503 (Hanover)",
+          "notes": []
+        },
+        {
+          "name": "Farnsworth",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3*",
+          "hexLocation": "S4503 (Hanover)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Custer",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3*",
+          "hexLocation": "S4503 (Hanover)",
+          "notes": [
+            "*"
+          ]
         }
       ],
       "confederateGunboats": [],
@@ -1741,146 +1916,20 @@
     {
       "number": 6,
       "name": "The Pipe Creek Plan",
-      "gameLength": "3 turns, Sept. 12 to Sept. 14, 1862.",
-      "mapInfo": "Use only the east map. +? For each of the following RR stations, it is +1 VP if there is a Damage marker in the hex, and +2 VP for a Destroy marker. If a",
-      "confederateFootnotes": {},
+      "confederateFootnotes": {
+        "*": "Indicated units begin the game on their exhausted sides at fatigue Level 0"
+      },
       "unionFootnotes": {
-        "^": "Humphreys & Whipple may not move on turn 1"
+        "*": "Indicated units begin the game on their exhausted sides at fatigue Level 0"
       },
       "confederateUnits": [
-        {
-          "name": "Lee",
-          "size": "Army",
-          "command": "ANV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E0122",
-          "notes": []
-        },
-        {
-          "name": "Longstreet",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E0122",
-          "notes": []
-        },
-        {
-          "name": "D.H. Hill-B",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "E0122",
-          "notes": []
-        },
-        {
-          "name": "Anderson-B",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "E0122",
-          "notes": []
-        },
-        {
-          "name": "D.R. Jones",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "E0122",
-          "notes": []
-        },
-        {
-          "name": "Evans",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "E0122",
-          "notes": []
-        },
-        {
-          "name": "McLaws-B",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "E0121",
-          "notes": []
-        },
-        {
-          "name": "Walker",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "E0121",
-          "notes": []
-        },
-        {
-          "name": "Hood",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "E0121",
-          "notes": []
-        },
-        {
-          "name": "Munford",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "E0125",
-          "notes": []
-        },
-        {
-          "name": "Jackson",
-          "size": "Corps",
-          "command": "J",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E0320 (Cracklintown)",
-          "notes": []
-        },
-        {
-          "name": "A.P. Hill",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "E0320 (Cracklintown)",
-          "notes": []
-        },
-        {
-          "name": "Lawton",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "E0219",
-          "notes": []
-        },
-        {
-          "name": "J.R. Jones",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "8",
-          "hexLocation": "E0120 (Goshen)",
-          "notes": []
-        },
         {
           "name": "Stuart",
           "size": "Corps",
           "command": "Cav",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "E0819 (Triadelphia)",
+          "hexLocation": "N5223 (Dover)",
           "notes": []
         },
         {
@@ -1888,127 +1937,337 @@
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "E0819 (Triadelphia)",
-          "notes": []
+          "manpowerValue": "3*",
+          "hexLocation": "N5223 (Dover)",
+          "notes": [
+            "*"
+          ]
         },
         {
           "name": "Hampton",
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
+          "manpowerValue": "3*",
+          "hexLocation": "N5223 (Dover)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Chambliss",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "N5223 (Dover)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Jones",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": []
+        },
+        {
+          "name": "Robertson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "E0719 (Unity)",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": []
+        },
+        {
+          "name": "Lee",
+          "size": "Army",
+          "command": "ANV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": []
+        },
+        {
+          "name": "Longstreet",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": []
+        },
+        {
+          "name": "McLaws",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": []
+        },
+        {
+          "name": "Law",
+          "size": "Brig",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "N1432 (New Guilford)",
+          "notes": []
+        },
+        {
+          "name": "Pickett",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "N1128",
+          "notes": []
+        },
+        {
+          "name": "Imboden",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N0929 (Chambersburg)",
+          "notes": []
+        },
+        {
+          "name": "Hill",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N2230 (Union Hotel)",
+          "notes": []
+        },
+        {
+          "name": "Pender",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N2230 (Union Hotel)",
+          "notes": []
+        },
+        {
+          "name": "Heth",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "17",
+          "hexLocation": "N2532 (Cashtown)",
+          "notes": []
+        },
+        {
+          "name": "Anderson",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N1531 (Fayetteville)",
+          "notes": []
+        },
+        {
+          "name": "Johnson",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N1226 (Scotland)",
+          "notes": []
+        },
+        {
+          "name": "Ewell",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3627 (Heidlersburg)",
+          "notes": []
+        },
+        {
+          "name": "Rodes",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "16*",
+          "hexLocation": "N3627 (Heidlersburg)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Early",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "11*",
+          "hexLocation": "N3927 (Coach Shop)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "A. Jenkins",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3824 (Petersburg)",
+          "notes": []
+        },
+        {
+          "name": "17VA",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "N3827",
           "notes": []
         }
       ],
       "unionUnits": [
         {
-          "name": "1 MA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E0131",
-          "notes": []
-        },
-        {
-          "name": "8 IL-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E0328 (Rockville)",
-          "notes": []
-        },
-        {
-          "name": "Franklin",
+          "name": "Reynolds",
           "size": "Corps",
-          "command": "VI",
+          "command": "I",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "E0428",
+          "hexLocation": "S2906",
           "notes": []
         },
         {
-          "name": "Smith",
+          "name": "Wadsworth",
           "size": "Div",
-          "command": "VI",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "E0428",
+          "manpowerValue": "8",
+          "hexLocation": "S2906",
           "notes": []
         },
         {
-          "name": "Slocum",
+          "name": "Doubleday",
           "size": "Div",
-          "command": "VI",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "E0429",
+          "manpowerValue": "5",
+          "hexLocation": "S2906",
           "notes": []
         },
         {
-          "name": "Couch",
+          "name": "Robinson",
           "size": "Div",
-          "command": "VI",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "E0530 (Montrose)",
+          "manpowerValue": "6",
+          "hexLocation": "S2808",
           "notes": []
         },
         {
-          "name": "Sumner",
+          "name": "Stannard",
+          "size": "Brig",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "S2711",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Howard",
           "size": "Corps",
-          "command": "II",
+          "command": "XI",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "E0728",
+          "hexLocation": "S2709 (Emmitsburg)",
           "notes": []
         },
         {
-          "name": "Richardson",
+          "name": "Barlow",
           "size": "Div",
-          "command": "II",
+          "command": "XI",
           "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "E0728",
+          "manpowerValue": "5",
+          "hexLocation": "S2709 (Emmitsburg)",
           "notes": []
         },
         {
-          "name": "Sedgwick",
+          "name": "Steinwehr",
           "size": "Div",
-          "command": "II",
+          "command": "XI",
           "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "E0729 (Enster PO)",
+          "manpowerValue": "5",
+          "hexLocation": "S2709 (Emmitsburg)",
           "notes": []
         },
         {
-          "name": "French",
+          "name": "Schurz",
           "size": "Div",
-          "command": "II",
+          "command": "XI",
           "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "E1033 (Silver Spring)",
+          "manpowerValue": "6",
+          "hexLocation": "S2709 (Emmitsburg)",
           "notes": []
         },
         {
-          "name": "Burnside-A",
+          "name": "Meade",
           "size": "Army",
           "command": "AP",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "E0835 (Tennallytown)",
+          "hexLocation": "S3310 (Bridgeport)",
           "notes": []
         },
         {
-          "name": "Mansfield",
+          "name": "Sickles",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": []
+        },
+        {
+          "name": "Humphreys",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": []
+        },
+        {
+          "name": "Birney",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "S3110",
+          "notes": []
+        },
+        {
+          "name": "Slocum",
           "size": "Corps",
           "command": "XII",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "E0835 (Tennallytown)",
+          "hexLocation": "S4007",
           "notes": []
         },
         {
@@ -2016,76 +2275,283 @@
           "size": "Div",
           "command": "XII",
           "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "E0835 (Tennallytown)",
-          "notes": []
+          "manpowerValue": "7*",
+          "hexLocation": "S4007",
+          "notes": [
+            "*"
+          ]
         },
         {
-          "name": "Greene",
+          "name": "Geary",
           "size": "Div",
           "command": "XII",
           "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "E0835 (Tennallytown)",
+          "manpowerValue": "8*",
+          "hexLocation": "S4007",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Lockwood",
+          "size": "Brig",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "S2709 (Emmitsburg)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Hancock",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3915 (Uniontown)",
           "notes": []
         },
         {
-          "name": "Humphreys",
+          "name": "Caldwell",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": []
+        },
+        {
+          "name": "Gibbon",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": []
+        },
+        {
+          "name": "Hays",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": []
+        },
+        {
+          "name": "Sykes",
+          "size": "Corps",
+          "command": "V",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": []
+        },
+        {
+          "name": "Barnes",
           "size": "Div",
           "command": "V",
           "type": "Inf",
-          "manpowerValue": "14^",
-          "hexLocation": "E1036 (Columbia College)",
-          "notes": [
-            "^"
-          ]
+          "manpowerValue": "7#",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": []
         },
         {
-          "name": "Whipple",
+          "name": "Ayres",
           "size": "Div",
-          "command": "DC",
+          "command": "V",
           "type": "Inf",
-          "manpowerValue": "8^",
-          "hexLocation": "E0939 (The White House)",
+          "manpowerValue": "8#",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": []
+        },
+        {
+          "name": "Crawford",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "6#",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": []
+        },
+        {
+          "name": "Sedgwick",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S5211",
+          "notes": []
+        },
+        {
+          "name": "Wright",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "9*",
+          "hexLocation": "S5211",
           "notes": [
-            "^"
+            "*"
           ]
         },
         {
-          "name": "1 RI",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E1630 (Beltsville)",
-          "notes": []
-        },
-        {
-          "name": "141 NY",
-          "size": "Regt",
-          "command": "Balt",
+          "name": "Howe",
+          "size": "Div",
+          "command": "VI",
           "type": "Inf",
-          "manpowerValue": "1",
-          "hexLocation": "E2026 (Laurel)",
-          "notes": []
+          "manpowerValue": "8*",
+          "hexLocation": "S5211",
+          "notes": [
+            "*"
+          ]
         },
         {
-          "name": "109 NY",
-          "size": "Regt",
-          "command": "Balt",
+          "name": "Newton",
+          "size": "Div",
+          "command": "VI",
           "type": "Inf",
-          "manpowerValue": "1",
-          "hexLocation": "E2223 (Annapolis Junction)",
-          "notes": []
+          "manpowerValue": "10*",
+          "hexLocation": "S5211",
+          "notes": [
+            "*"
+          ]
         },
         {
-          "name": "Staunton-A",
+          "name": "Art Res-1",
           "size": "Brig",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "E3932 (Annapolis)",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
           "notes": []
+        },
+        {
+          "name": "Art Res-2",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "Art Res-3",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3134 (Seminary)",
+          "notes": []
+        },
+        {
+          "name": "Gamble",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N3134 (Seminary)",
+          "notes": []
+        },
+        {
+          "name": "Devin",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3233 (PA College)",
+          "notes": []
+        },
+        {
+          "name": "Merritt",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S2314 (Mechanicstown)",
+          "notes": []
+        },
+        {
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": []
+        },
+        {
+          "name": "JI Gregg",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "McIntosh",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Huey",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4503 (Hanover)",
+          "notes": []
+        },
+        {
+          "name": "Farnsworth",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3*",
+          "hexLocation": "S4503 (Hanover)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Custer",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3*",
+          "hexLocation": "S4503 (Hanover)",
+          "notes": [
+            "*"
+          ]
         }
       ],
       "confederateGunboats": [],
@@ -2094,131 +2560,149 @@
     {
       "number": 7,
       "name": "The Battle Continues",
-      "gameLength": "9 turns; September 10 to September 18, 1862.",
-      "mapInfo": "Use only the west map. \u2022 The Union player may not move units by rail in that county in",
       "confederateFootnotes": {
-        "*": "Funk is deployed underneath a fort marker"
+        "+": "Indicated units begin the game at Fatigue Level 0 on their exhausted sides",
+        "*": "Indicated units begin the game at Fatigue Level 1 on their exhausted sides, with Disorganized strength markers"
       },
       "unionFootnotes": {
-        "*": "Ward is deployed underneath a fort marker"
+        "+": "Indicated units begin the game at Fatigue Level 0 on their exhausted sides",
+        "*": "Indicated units begin the game at Fatigue Level 1 on their exhausted sides, with Disorganized strength markers"
       },
       "confederateUnits": [
+        {
+          "name": "Ewell",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3201 (Gettysburg)",
+          "notes": []
+        },
+        {
+          "name": "Rodes",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "10+",
+          "hexLocation": "S3201 (Gettysburg)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Early",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "8+",
+          "hexLocation": "N3334 (Benner\u2019s Hill)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Johnson",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "10*",
+          "hexLocation": "S3401 (Wolf Hill)",
+          "notes": [
+            "*"
+          ]
+        },
         {
           "name": "Lee",
           "size": "Army",
           "command": "ANV",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W4414",
+          "hexLocation": "S3102",
           "notes": []
+        },
+        {
+          "name": "Hill",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3102",
+          "notes": []
+        },
+        {
+          "name": "Heth",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "10*",
+          "hexLocation": "S3102",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Pender",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "9*",
+          "hexLocation": "S3102",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Anderson",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "10+",
+          "hexLocation": "S3102",
+          "notes": [
+            "+"
+          ]
         },
         {
           "name": "Longstreet",
           "size": "Corps",
-          "command": "L",
+          "command": "I",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W4414",
-          "notes": []
-        },
-        {
-          "name": "D.R. Jones",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "W4414",
-          "notes": []
-        },
-        {
-          "name": "D.H. Hill-B",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W4415",
+          "hexLocation": "S3103 (Peach Orchard)",
           "notes": []
         },
         {
           "name": "Hood",
           "size": "Div",
-          "command": "L",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W4412",
-          "notes": []
+          "manpowerValue": "11+",
+          "hexLocation": "S3103 (Peach Orchard)",
+          "notes": [
+            "+"
+          ]
         },
         {
-          "name": "Evans",
-          "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "W4212",
-          "notes": []
-        },
-        {
-          "name": "McLaws-B",
+          "name": "McLaws",
           "size": "Div",
-          "command": "L",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W4014",
-          "notes": []
+          "manpowerValue": "10+",
+          "hexLocation": "S3103 (Peach Orchard)",
+          "notes": [
+            "+"
+          ]
         },
         {
-          "name": "Anderson-B",
+          "name": "Pickett",
           "size": "Div",
-          "command": "L",
+          "command": "I",
           "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "W4117",
-          "notes": []
-        },
-        {
-          "name": "Walker",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W4318",
-          "notes": []
-        },
-        {
-          "name": "Jackson",
-          "size": "Corps",
-          "command": "J",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W4214 (Frederick)",
-          "notes": []
-        },
-        {
-          "name": "J.R. Jones",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "8",
-          "hexLocation": "W4214 (Frederick)",
-          "notes": []
-        },
-        {
-          "name": "Lawton",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W4215",
-          "notes": []
-        },
-        {
-          "name": "A.P. Hill",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4316",
-          "notes": []
+          "manpowerValue": "6*",
+          "hexLocation": "S3103 (Peach Orchard)",
+          "notes": [
+            "*"
+          ]
         },
         {
           "name": "Stuart",
@@ -2226,211 +2710,152 @@
           "command": "Cav",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W4923 (Hyattstown)",
+          "hexLocation": "N3533",
           "notes": []
+        },
+        {
+          "name": "A. Jenkins",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3533",
+          "notes": []
+        },
+        {
+          "name": "Chambliss",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1+",
+          "hexLocation": "N3533",
+          "notes": [
+            "+"
+          ]
         },
         {
           "name": "Hampton",
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "W4923 (Hyattstown)",
-          "notes": []
+          "manpowerValue": "2+",
+          "hexLocation": "N3533",
+          "notes": [
+            "+"
+          ]
         },
         {
           "name": "F. Lee",
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "W5016 (New Market)",
-          "notes": []
+          "manpowerValue": "3+",
+          "hexLocation": "N3533",
+          "notes": [
+            "+"
+          ]
         },
         {
-          "name": "7 VA",
-          "size": "Regt",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4219 (Buckeystown)",
-          "notes": []
-        },
-        {
-          "name": "Munford",
-          "size": "Regt",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4425 (Mt. Ephraim)",
-          "notes": []
-        },
-        {
-          "name": "12 VA",
-          "size": "Regt",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4126 (Aqueduct)",
-          "notes": []
-        },
-        {
-          "name": "Funk",
+          "name": "Imboden",
           "size": "Brig",
           "command": "-",
-          "type": "Inf",
-          "manpowerValue": "3*",
-          "hexLocation": "W0330 (Winchester)",
-          "notes": [
-            "*"
-          ]
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N2532 (Cashtown)",
+          "notes": []
+        },
+        {
+          "name": "Jones",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S2504 (Fairfield)",
+          "notes": []
+        },
+        {
+          "name": "Robertson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "S2504 (Fairfield)",
+          "notes": []
         }
       ],
       "unionUnits": [
         {
-          "name": "12 IL",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W1314 (Martinsburg)",
+          "name": "Sykes",
+          "size": "Corps",
+          "command": "V",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3203 (Round Top)",
           "notes": []
         },
         {
-          "name": "White",
-          "size": "Brig",
-          "command": "Shen",
+          "name": "Barnes",
+          "size": "Div",
+          "command": "V",
           "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "W1314 (Martinsburg)",
+          "manpowerValue": "5",
+          "hexLocation": "S3203 (Round Top)",
           "notes": []
         },
         {
-          "name": "D\u2019Utassy",
-          "size": "Brig",
-          "command": "RR",
+          "name": "Ayres",
+          "size": "Div",
+          "command": "V",
           "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2521 (Harpers Ferry)",
+          "manpowerValue": "6",
+          "hexLocation": "S3203 (Round Top)",
           "notes": []
         },
         {
-          "name": "Trimble",
-          "size": "Brig",
-          "command": "RR",
+          "name": "Crawford",
+          "size": "Div",
+          "command": "V",
           "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2521 (Harpers Ferry)",
+          "manpowerValue": "5",
+          "hexLocation": "S3203 (Round Top)",
           "notes": []
         },
         {
-          "name": "Ward",
+          "name": "Art Res-1",
           "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "3*",
-          "hexLocation": "W2521 (Harpers Ferry)",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": []
+        },
+        {
+          "name": "Meade",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3202 (Evergreen Cemetery)",
+          "notes": []
+        },
+        {
+          "name": "Art Res-2",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2*",
+          "hexLocation": "S3202 (Evergreen Cemetery)",
           "notes": [
             "*"
           ]
         },
         {
-          "name": "8 NY",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W2620 (Naval Battery)",
-          "notes": []
-        },
-        {
-          "name": "Ford",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "5#",
-          "hexLocation": "W2720",
-          "notes": []
-        },
-        {
-          "name": "8 IL-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W4431 (Poolesville)",
-          "notes": []
-        },
-        {
-          "name": "1 MA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W5029 (Germantown)",
-          "notes": []
-        },
-        {
-          "name": "1 NY-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W5226 (Nealsville)",
-          "notes": []
-        },
-        {
-          "name": "Franklin",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W4933",
-          "notes": []
-        },
-        {
           "name": "Slocum",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4933",
-          "notes": []
-        },
-        {
-          "name": "Smith",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W5033 (Darnestown)",
-          "notes": []
-        },
-        {
-          "name": "Couch",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "W4633",
-          "notes": []
-        },
-        {
-          "name": "McClellan",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W5329 (Middlebrook)",
-          "notes": []
-        },
-        {
-          "name": "Mansfield",
           "size": "Corps",
           "command": "XII",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W5329 (Middlebrook)",
+          "hexLocation": "S3302 (Culp\u2019s Hill)",
           "notes": []
         },
         {
@@ -2438,206 +2863,162 @@
           "size": "Div",
           "command": "XII",
           "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W5329 (Middlebrook)",
-          "notes": []
+          "manpowerValue": "10+",
+          "hexLocation": "S3302 (Culp\u2019s Hill)",
+          "notes": [
+            "+"
+          ]
         },
         {
-          "name": "Greene",
+          "name": "Geary",
           "size": "Div",
           "command": "XII",
           "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W5429",
-          "notes": []
+          "manpowerValue": "7+",
+          "hexLocation": "S3302 (Culp\u2019s Hill)",
+          "notes": [
+            "+"
+          ]
         },
         {
-          "name": "6 US",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W5717 (Mt. Airy)",
-          "notes": []
-        },
-        {
-          "name": "Sumner",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W5430",
-          "notes": []
-        },
-        {
-          "name": "Richardson",
+          "name": "Howe",
           "size": "Div",
-          "command": "II",
+          "command": "VI",
           "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W5430",
-          "notes": []
-        },
-        {
-          "name": "1 RI",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W5531 (Gaithersburg)",
+          "manpowerValue": "8",
+          "hexLocation": "S3402",
           "notes": []
         },
         {
           "name": "Sedgwick",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W5531 (Gaithersburg)",
-          "notes": []
-        },
-        {
-          "name": "Reno",
           "size": "Corps",
-          "command": "IX",
+          "command": "VI",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W5522 (Methodist Church)",
+          "hexLocation": "S3304",
           "notes": []
         },
         {
-          "name": "Cox",
+          "name": "Wright",
           "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W5522 (Methodist Church)",
-          "notes": []
-        },
-        {
-          "name": "Willcox-A",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W5622",
-          "notes": []
-        },
-        {
-          "name": "Sturgis",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W5723",
-          "notes": []
-        },
-        {
-          "name": "Rodman",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W5823",
-          "notes": []
-        },
-        {
-          "name": "Sykes",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "8",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "French",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "Hooker",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "Union Reinforcement (see special rules)",
-          "notes": []
-        },
-        {
-          "name": "Meade",
-          "size": "Div",
-          "command": "I",
+          "command": "VI",
           "type": "Inf",
           "manpowerValue": "9",
-          "hexLocation": "Union Reinforcement (see special rules)",
+          "hexLocation": "S3304",
           "notes": []
         },
         {
-          "name": "Hatch",
+          "name": "Newton",
           "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "Union Reinforcement (see special rules)",
-          "notes": []
-        },
-        {
-          "name": "Ricketts-A",
-          "size": "Div",
-          "command": "I",
+          "command": "VI",
           "type": "Inf",
           "manpowerValue": "9",
-          "hexLocation": "Union Reinforcement (see special rules)",
+          "hexLocation": "S3304",
           "notes": []
         },
         {
-          "name": "4-Sept 13 Porter",
-          "size": "Corps",
-          "command": "V",
+          "name": "Art Res-3",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3304",
+          "notes": []
+        },
+        {
+          "name": "McIntosh",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2+",
+          "hexLocation": "S3601",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "JI Gregg",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3601",
+          "notes": []
+        },
+        {
+          "name": "Huey",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S4516 (Westminster)",
+          "notes": []
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "W5833",
+          "hexLocation": "S3104",
           "notes": []
         },
         {
-          "name": "4-Sept 13 Morell",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "4-Sept 13 6 PA",
-          "size": "Regt",
-          "command": "-",
+          "name": "Custer",
+          "size": "Brig",
+          "command": "3rd",
           "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W5833",
-          "notes": []
+          "manpowerValue": "2+",
+          "hexLocation": "S3104",
+          "notes": [
+            "+"
+          ]
         },
         {
-          "name": "6-Sept 15 Humphreys",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "7-Sept 16 1 ME",
-          "size": "Regt",
-          "command": "-",
+          "name": "Richmond",
+          "size": "Brig",
+          "command": "3rd",
           "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W5833",
+          "manpowerValue": "3+",
+          "hexLocation": "S3104",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Merritt",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3104",
+          "notes": []
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "Devin",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "Gamble",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
           "notes": []
         }
       ],
@@ -2647,741 +3028,270 @@
     {
       "number": 8,
       "name": "The Wagoneer's Fight",
-      "gameLength": "17-19 turns; September 4 to September 20-22, 1862.",
-      "mapInfo": "Use both the east and west maps. In the set-up instructions, hexes in receives VP only for the county with the highest VP award: the overlap area are listed by the west map\u2019s hex number. +20 Baltimore",
       "confederateFootnotes": {
-        "*": "Funk is deployed underneath a fort marker"
+        "+": "Indicated units begin the game at Fatigue Level 0 on their exhausted sides"
       },
       "unionFootnotes": {
-        "*": "Ward and the 138 PA are deployed underneath fort markers"
+        "+": "Indicated units begin the game at Fatigue Level 0 on their exhausted sides"
       },
       "confederateUnits": [
-        {
-          "name": "D.H. Hill-B",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "W3631 (Big Spring)",
-          "notes": []
-        },
-        {
-          "name": "Funk",
-          "size": "Brig",
-          "command": "-",
-          "type": "Inf",
-          "manpowerValue": "3*",
-          "hexLocation": "W0330 (Winchester)",
-          "notes": [
-            "*"
-          ]
-        },
         {
           "name": "Stuart",
           "size": "Corps",
           "command": "Cav",
           "type": "Ldr",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N3133",
           "notes": []
         },
         {
-          "name": "F. Lee",
+          "name": "A. Jenkins",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3133",
+          "notes": []
+        },
+        {
+          "name": "Chambliss",
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "",
-          "notes": []
+          "manpowerValue": "1+",
+          "hexLocation": "N3133",
+          "notes": [
+            "+"
+          ]
         },
         {
           "name": "Hampton",
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "",
-          "notes": []
+          "manpowerValue": "2+",
+          "hexLocation": "N3133",
+          "notes": [
+            "+"
+          ]
         },
         {
-          "name": "Jackson",
-          "size": "Corps",
-          "command": "J",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Lawton",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "A.P. Hill",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "J.R. Jones",
-          "size": "Div",
-          "command": "J",
-          "type": "Inf",
-          "manpowerValue": "8",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Lee",
-          "size": "Army",
-          "command": "ANV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Longstreet",
-          "size": "Corps",
-          "command": "L",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "D.R. Jones",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Hood",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Evans",
+          "name": "F. Lee",
           "size": "Brig",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "2",
-          "hexLocation": "",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3+",
+          "hexLocation": "N2532 (Cashtown)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Imboden",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N2532 (Cashtown)",
           "notes": []
         },
         {
-          "name": "McLaws-B",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Anderson-B",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Munford",
+          "name": "Jones",
           "size": "Brig",
           "command": "Cav",
           "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "",
+          "hexLocation": "S2504 (Fairfield)",
           "notes": []
         },
         {
-          "name": "Walker",
-          "size": "Div",
-          "command": "L",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "",
+          "name": "Robertson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "S2504 (Fairfield)",
           "notes": []
         },
         {
-          "name": "Naval Battery",
+          "name": "Wagon Train",
           "size": "-",
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "N2532 (Cashtown)",
           "notes": []
+        },
+        {
+          "name": "Wagon Train",
+          "size": "-",
+          "command": "-",
+          "type": "Special",
+          "manpowerValue": "-",
+          "hexLocation": "N2732",
+          "notes": []
+        },
+        {
+          "name": "Wagon Train",
+          "size": "-",
+          "command": "-",
+          "type": "Special",
+          "manpowerValue": "-",
+          "hexLocation": "N2832 (Little\u2019s Store)",
+          "notes": []
+        },
+        {
+          "name": "Wagon Train",
+          "size": "-",
+          "command": "-",
+          "type": "Special",
+          "manpowerValue": "-",
+          "hexLocation": "S2902",
+          "notes": []
+        },
+        {
+          "name": "54 NC",
+          "size": "Regt",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": []
+        },
+        {
+          "name": "58 VA",
+          "size": "Regt",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": []
+        },
+        {
+          "name": "Iverson",
+          "size": "Brig",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "2+",
+          "hexLocation": "N3134 (Seminary)",
+          "notes": [
+            "+"
+          ]
         }
       ],
       "unionUnits": [
         {
-          "name": "12 IL",
-          "size": "Regt",
-          "command": "-",
+          "name": "McIntosh",
+          "size": "Brig",
+          "command": "2nd",
           "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W0820 (Bunker Hill)",
-          "notes": []
-        },
-        {
-          "name": "White",
-          "size": "Brig",
-          "command": "Shen",
-          "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "W1314 (Martinsburg)",
-          "notes": []
-        },
-        {
-          "name": "3 PHB",
-          "size": "Regt",
-          "command": "Shen",
-          "type": "Inf",
-          "manpowerValue": "1",
-          "hexLocation": "W1717 (Kearneysville)",
-          "notes": []
-        },
-        {
-          "name": "D\u2019Utassy",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2521 (Harpers Ferry/Bolivar)",
-          "notes": []
-        },
-        {
-          "name": "Trimble",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "W2521 (Harpers Ferry/Bolivar)",
-          "notes": []
-        },
-        {
-          "name": "Ward",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "2*",
-          "hexLocation": "W2521 (Harpers Ferry/Bolivar)",
+          "manpowerValue": "2+",
+          "hexLocation": "S3601",
           "notes": [
-            "*"
+            "+"
           ]
         },
         {
-          "name": "8 NY",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W2620 (Naval Battery)",
-          "notes": []
-        },
-        {
-          "name": "Ford",
+          "name": "JI Gregg",
           "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "5#",
-          "hexLocation": "W2720",
-          "notes": []
-        },
-        {
-          "name": "87 OH",
-          "size": "Regt",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "1",
-          "hexLocation": "W3121 (Berlin)",
-          "notes": []
-        },
-        {
-          "name": "1 MA",
-          "size": "Regt",
-          "command": "-",
+          "command": "2nd",
           "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "W5033 (Darnestown)",
+          "manpowerValue": "2",
+          "hexLocation": "S3601",
           "notes": []
         },
         {
-          "name": "Heintzelman",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "(-)",
-          "hexLocation": "E0238 (Falls Church Station)",
-          "notes": []
-        },
-        {
-          "name": "Sickles",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "(14)",
-          "hexLocation": "E0238 (Falls Church Station)",
-          "notes": []
-        },
-        {
-          "name": "8 IL-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E0328 (Rockville)",
-          "notes": []
-        },
-        {
-          "name": "Stoneman",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "(10)",
-          "hexLocation": "E0339 (Upton\u2019s Hill)",
-          "notes": []
-        },
-        {
-          "name": "Abercrombie",
-          "size": "Div",
-          "command": "DC",
-          "type": "Inf",
-          "manpowerValue": "(5)",
-          "hexLocation": "E0537 (Ft. Marcy)",
-          "notes": []
-        },
-        {
-          "name": "Sigel",
-          "size": "Corps",
-          "command": "XI",
-          "type": "Ldr",
-          "manpowerValue": "(-)",
-          "hexLocation": "E0638",
-          "notes": []
-        },
-        {
-          "name": "Stahel",
-          "size": "Div",
-          "command": "XI",
-          "type": "Inf",
-          "manpowerValue": "(9)",
-          "hexLocation": "E0638",
-          "notes": []
-        },
-        {
-          "name": "Steinwehr",
-          "size": "Div",
-          "command": "XI",
-          "type": "Inf",
-          "manpowerValue": "(3)",
-          "hexLocation": "E0638",
-          "notes": []
-        },
-        {
-          "name": "Schurz",
-          "size": "Div",
-          "command": "XI",
-          "type": "Inf",
-          "manpowerValue": "(7)",
-          "hexLocation": "E0638",
-          "notes": []
-        },
-        {
-          "name": "1 NY-A",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "E0733 (Stone Tavern)",
-          "notes": []
-        },
-        {
-          "name": "1 RI",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "(1)",
-          "hexLocation": "E0636 (Battery Vermont)",
-          "notes": []
-        },
-        {
-          "name": "Porter",
-          "size": "Corps",
-          "command": "V",
-          "type": "Ldr",
-          "manpowerValue": "(-)",
-          "hexLocation": "E0636 (Battery Vermont)",
-          "notes": []
-        },
-        {
-          "name": "Sykes",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "(8)",
-          "hexLocation": "E0636 (Battery Vermont)",
-          "notes": []
-        },
-        {
-          "name": "Morell",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "(13)",
-          "hexLocation": "E0636 (Battery Vermont)",
-          "notes": []
-        },
-        {
-          "name": "Humphreys",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "(14)",
-          "hexLocation": "E0834 (Ft. Pennsylvania)",
-          "notes": []
-        },
-        {
-          "name": "French",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "(10)",
-          "hexLocation": "E0834 (Ft. Pennsylvania)",
-          "notes": []
-        },
-        {
-          "name": "6 PA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "(1)",
-          "hexLocation": "E0935 (Ft. DeRussy)",
-          "notes": []
-        },
-        {
-          "name": "McClellan",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E0837 (St. Alban\u2019s Church)",
-          "notes": []
-        },
-        {
-          "name": "Mansfield",
-          "size": "Corps",
-          "command": "XII",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E0837 (St. Alban\u2019s Church)",
-          "notes": []
-        },
-        {
-          "name": "Williams",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "E0837 (St. Alban\u2019s Church)",
-          "notes": []
-        },
-        {
-          "name": "Greene",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "E0837 (St. Alban\u2019s Church)",
-          "notes": []
-        },
-        {
-          "name": "Sumner",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E0838 (Georgetown)",
-          "notes": []
-        },
-        {
-          "name": "Richardson",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "E0838 (Georgetown)",
-          "notes": []
-        },
-        {
-          "name": "Sedgwick",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "E0838 (Georgetown)",
-          "notes": []
-        },
-        {
-          "name": "Reno",
-          "size": "Corps",
-          "command": "IX",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E1136",
-          "notes": []
-        },
-        {
-          "name": "Cox",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "E1136",
-          "notes": []
-        },
-        {
-          "name": "Sturgis",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "E1136",
-          "notes": []
-        },
-        {
-          "name": "Willcox-A",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "E1138",
-          "notes": []
-        },
-        {
-          "name": "Rodman",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "E1137",
-          "notes": []
-        },
-        {
-          "name": "Whipple",
-          "size": "Div",
-          "command": "DC",
-          "type": "Inf",
-          "manpowerValue": "(8)",
-          "hexLocation": "E0939 (The White House)",
-          "notes": []
-        },
-        {
-          "name": "Franklin",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E1140 (The Capitol)",
-          "notes": []
-        },
-        {
-          "name": "Slocum",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "E1140 (The Capitol)",
-          "notes": []
-        },
-        {
-          "name": "Smith",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "E1140 (The Capitol)",
-          "notes": []
-        },
-        {
-          "name": "Couch",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "E1140 (The Capitol)",
-          "notes": []
-        },
-        {
-          "name": "Wadsworth",
-          "size": "Div",
-          "command": "DC",
-          "type": "Inf",
-          "manpowerValue": "(4)",
-          "hexLocation": "E1139 (Baltimore Depot)",
-          "notes": []
-        },
-        {
-          "name": "Hooker",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "E1337",
-          "notes": []
-        },
-        {
-          "name": "Meade",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "E1337",
-          "notes": []
-        },
-        {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "E1337",
-          "notes": []
-        },
-        {
-          "name": "Ricketts-A",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "E1337",
-          "notes": []
-        },
-        {
-          "name": "6 US",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "(1)",
-          "hexLocation": "E0736 (Ft. Gaines)",
-          "notes": []
-        },
-        {
-          "name": "3 PA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "(1)",
-          "hexLocation": "E1635 (Bladensburg)",
-          "notes": []
-        },
-        {
-          "name": "1 ME",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "(1)",
-          "hexLocation": "E1334 (Burnt Mills)",
-          "notes": []
-        },
-        {
-          "name": "141 NY",
-          "size": "Regt",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "(1)",
-          "hexLocation": "E2026 (Laurel)",
-          "notes": []
-        },
-        {
-          "name": "109 NY",
-          "size": "Regt",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "(1)",
-          "hexLocation": "E2223 (Annapolis Junction)",
-          "notes": []
-        },
-        {
-          "name": "Johnson",
+          "name": "Huey",
           "size": "Brig",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "(2)",
-          "hexLocation": "E2116 (Ellicott Mills)",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S4516 (Westminster)",
           "notes": []
         },
         {
-          "name": "138 PA",
-          "size": "Regt",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "(1)*",
-          "hexLocation": "E2518 (Relay House)",
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3104",
+          "notes": []
+        },
+        {
+          "name": "Custer",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "2+",
+          "hexLocation": "S3104",
           "notes": [
-            "*"
+            "+"
           ]
         },
         {
-          "name": "12 PA",
-          "size": "Regt",
-          "command": "-",
+          "name": "Richmond",
+          "size": "Brig",
+          "command": "3rd",
           "type": "Cav",
-          "manpowerValue": "(1)",
-          "hexLocation": "E2510 (US Arsenal)",
-          "notes": []
+          "manpowerValue": "3+",
+          "hexLocation": "S3104",
+          "notes": [
+            "+"
+          ]
         },
         {
-          "name": "Kenly-A",
+          "name": "Merritt",
           "size": "Brig",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "(5)",
-          "hexLocation": "E3013 (Mt. Royal Depot)",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3104",
           "notes": []
         },
         {
-          "name": "Emory",
+          "name": "Buford",
           "size": "Div",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "(9)",
-          "hexLocation": "E3115 (Camden Station)",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3611 (Taneytown)",
           "notes": []
         },
         {
-          "name": "18 CT",
-          "size": "Regt",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "(1)",
-          "hexLocation": "E3712 (Back River Bridge)",
-          "notes": []
-        },
-        {
-          "name": "Staunton-A",
+          "name": "Devin",
           "size": "Brig",
-          "command": "Balt",
-          "type": "Inf",
-          "manpowerValue": "(3)",
-          "hexLocation": "E3932 (Annapolis)",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "Gamble",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": []
+        },
+        {
+          "name": "1NY/12PA",
+          "size": "Regt",
+          "command": "WV",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "N0130 (St. Thomas)",
+          "notes": []
+        },
+        {
+          "name": "13PA",
+          "size": "Regt",
+          "command": "HF",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "S1725 (Middletown)",
           "notes": []
         }
       ],
@@ -3391,8 +3301,6 @@
     {
       "number": 9,
       "name": "The Battle that Never Happened",
-      "gameLength": "8 turns, July 5 to July 12, 1863.",
-      "mapInfo": "Use both maps (much of the north map is not needed). The Confederate player gains and loses VP for the following:",
       "confederateFootnotes": {
         "*": "All nine Confederate infantry divisions begin the game at Fatigue Level 0 on their exhausted sides"
       },
@@ -3974,8 +3882,6 @@
     {
       "number": 10,
       "name": "The Gettysburg Campaign",
-      "gameLength": "18 turns; June 22 to July 9, 1863.",
-      "mapInfo": "Use both maps. normally move across. These Union units that retreat or rout off-map are out of play for the rest game. They may not voluntarily \u201crun-away\u201d",
       "confederateFootnotes": {
         "^": "May delay entry (see advanced rule 7.0)"
       },
@@ -4151,7 +4057,7 @@
           "command": "Cav",
           "type": "Cav",
           "manpowerValue": "3",
-          "hexLocation": "See advanced rule 3.2 1",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4160,7 +4066,7 @@
           "command": "Cav",
           "type": "Cav",
           "manpowerValue": "3",
-          "hexLocation": "See advanced rule 3.2 2",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4169,7 +4075,7 @@
           "command": "Cav",
           "type": "Cav",
           "manpowerValue": "2",
-          "hexLocation": "See advanced rule 3.2 2",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4178,7 +4084,7 @@
           "command": "II",
           "type": "Inf",
           "manpowerValue": "1",
-          "hexLocation": "See advanced rule 3.2 3",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4187,7 +4093,7 @@
           "command": "II",
           "type": "Inf",
           "manpowerValue": "1",
-          "hexLocation": "See advanced rule 3.2 3",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4196,7 +4102,7 @@
           "command": "Cav",
           "type": "Cav",
           "manpowerValue": "1",
-          "hexLocation": "See advanced rule 3.2 4",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4205,7 +4111,7 @@
           "command": "Rich",
           "type": "Inf",
           "manpowerValue": "4",
-          "hexLocation": "See advanced rule 3.2 1",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4214,7 +4120,7 @@
           "command": "Rich",
           "type": "Inf",
           "manpowerValue": "4",
-          "hexLocation": "See advanced rule 3.2 2",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4223,7 +4129,7 @@
           "command": "Rich",
           "type": "Inf",
           "manpowerValue": "4",
-          "hexLocation": "See advanced rule 3.2 3",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         },
         {
@@ -4232,16 +4138,7 @@
           "command": "Rich",
           "type": "Inf",
           "manpowerValue": "4",
-          "hexLocation": "See advanced rule 3.2 4",
-          "notes": []
-        },
-        {
-          "name": "Naval Battery",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "",
+          "hexLocation": "See advanced rule 3.2",
           "notes": []
         }
       ],
@@ -4789,7 +4686,7 @@
           "command": "WV",
           "type": "Cav",
           "manpowerValue": "1",
-          "hexLocation": "See advanced rule 4.0 1",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4798,7 +4695,7 @@
           "command": "WV",
           "type": "Inf",
           "manpowerValue": "3",
-          "hexLocation": "See advanced rule 4.0 2",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4807,7 +4704,7 @@
           "command": "WV",
           "type": "Inf",
           "manpowerValue": "3",
-          "hexLocation": "See advanced rule 4.0 2",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4816,7 +4713,7 @@
           "command": "WV",
           "type": "Inf",
           "manpowerValue": "2",
-          "hexLocation": "See advanced rule 4.0 2",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4825,7 +4722,7 @@
           "command": "WV",
           "type": "Inf",
           "manpowerValue": "4",
-          "hexLocation": "See advanced rule 4.0 3",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4834,7 +4731,7 @@
           "command": "Balt",
           "type": "Cav",
           "manpowerValue": "1",
-          "hexLocation": "See advanced rule 4.0 1",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4843,7 +4740,7 @@
           "command": "Balt",
           "type": "Inf",
           "manpowerValue": "5",
-          "hexLocation": "See advanced rule 4.0 2",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4852,7 +4749,7 @@
           "command": "DC",
           "type": "Inf",
           "manpowerValue": "4",
-          "hexLocation": "See advanced rule 4.0 3",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4861,7 +4758,7 @@
           "command": "DC",
           "type": "Inf",
           "manpowerValue": "1",
-          "hexLocation": "See advanced rule 4.0 3",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4870,7 +4767,7 @@
           "command": "DC",
           "type": "Inf",
           "manpowerValue": "4",
-          "hexLocation": "See advanced rule 4.0 4",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4879,7 +4776,7 @@
           "command": "DC",
           "type": "Inf",
           "manpowerValue": "3",
-          "hexLocation": "See advanced rule 4.0 5",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4888,7 +4785,7 @@
           "command": "DC",
           "type": "Inf",
           "manpowerValue": "3",
-          "hexLocation": "See advanced rule 4.0 6",
+          "hexLocation": "See advanced rule 4.0",
           "notes": []
         },
         {
@@ -4897,7 +4794,7 @@
           "command": "PA",
           "type": "Inf",
           "manpowerValue": "3",
-          "hexLocation": "N4907 (Camp Curtin) 1",
+          "hexLocation": "N4907 (Camp Curtin)",
           "notes": []
         },
         {
@@ -4906,7 +4803,7 @@
           "command": "PA",
           "type": "Inf",
           "manpowerValue": "11",
-          "hexLocation": "N4907 (Camp Curtin) 2",
+          "hexLocation": "N4907 (Camp Curtin)",
           "notes": []
         },
         {
@@ -4915,7 +4812,7 @@
           "command": "PA",
           "type": "Inf",
           "manpowerValue": "10",
-          "hexLocation": "N4907 (Camp Curtin) 3",
+          "hexLocation": "N4907 (Camp Curtin)",
           "notes": []
         },
         {
@@ -4924,7 +4821,7 @@
           "command": "PA",
           "type": "Inf",
           "manpowerValue": "7",
-          "hexLocation": "N4907 (Camp Curtin) 4",
+          "hexLocation": "N4907 (Camp Curtin)",
           "notes": []
         },
         {
@@ -4933,7 +4830,7 @@
           "command": "PA",
           "type": "Cav",
           "manpowerValue": "1",
-          "hexLocation": "N4907 (Camp Curtin) 5",
+          "hexLocation": "N4907 (Camp Curtin)",
           "notes": []
         },
         {
@@ -4942,7 +4839,7 @@
           "command": "PA",
           "type": "Cav",
           "manpowerValue": "1",
-          "hexLocation": "N4907 (Camp Curtin) 6",
+          "hexLocation": "N4907 (Camp Curtin)",
           "notes": []
         }
       ],

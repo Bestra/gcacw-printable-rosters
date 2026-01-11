@@ -5,8 +5,6 @@
     {
       "number": 2,
       "name": "The Race for Columbia",
-      "gameLength": "7 turns, November 23\u2013November 29, 1864.",
-      "mapInfo": "",
       "confederateFootnotes": {
         "*": "Placed on map on Exhausted side with Fatigue 1 marker.",
         "+": "Units may not activate on Turn 1 and do not recover on Turn 1 (see special rules)."
@@ -270,7 +268,9 @@
           "type": "Inf",
           "manpowerValue": "2\u2022",
           "hexLocation": "1715 (Columbia)",
-          "notes": []
+          "notes": [
+            "\u2022"
+          ]
         },
         {
           "name": "123 IN",
@@ -407,7 +407,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 0324 (Colored Church)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -438,7 +438,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 0224 (Saw Mill)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -458,7 +458,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 0125",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -521,8 +521,6 @@
     {
       "number": 3,
       "name": "A Great Chance Was Lost",
-      "gameLength": "2 turns, November 28\u2013November 29, 1864.",
-      "mapInfo": "",
       "confederateFootnotes": {
         "*": "May be activated by either Lee or Stewart in a Leader Activation action",
         "+": "May not activate or entrench on Turn 1"
@@ -854,7 +852,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 2413 (Judge Cooper)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -863,7 +861,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 2114 (Elmwood Academy)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -872,7 +870,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 2114 (Elmwood Academy)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -991,8 +989,6 @@
     {
       "number": 4,
       "name": "We Will Make the Fight",
-      "gameLength": "2 turns, November 30\u2013December 1, 1864.",
-      "mapInfo": "",
       "confederateFootnotes": {
         "*": "Begins game on Exhausted side"
       },
@@ -1269,7 +1265,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2* 3811 (Toll house)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -1287,7 +1283,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2* 3712",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -1316,7 +1312,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2* 3612 (Cotton Gin)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -1463,8 +1459,6 @@
     {
       "number": 5,
       "name": "The Enemy Was Badly Whipped",
-      "gameLength": "4 turns, December 4\u2013December 7, 1864.",
-      "mapInfo": "",
       "confederateFootnotes": {},
       "unionFootnotes": {
         "+": "May not activate until Turn 2",
@@ -1623,8 +1617,6 @@
     {
       "number": 6,
       "name": "The Battle of Nashville",
-      "gameLength": "2 turns, December 15\u2013December 16, 1864.",
-      "mapInfo": "",
       "confederateFootnotes": {
         "*": "Begins game under a Breastworks marker"
       },
@@ -2043,8 +2035,6 @@
     {
       "number": 7,
       "name": "Hood's Retreat",
-      "gameLength": "3 turns, December 17\u2013December 19, 1864.",
-      "mapInfo": "",
       "confederateFootnotes": {
         "*": "Begins game on Exhausted side"
       },
@@ -2223,7 +2213,9 @@
           "type": "Ldr",
           "manpowerValue": "-\u2022",
           "hexLocation": "5027 (Wilkerson\u2019s Crossroads)",
-          "notes": []
+          "notes": [
+            "\u2022"
+          ]
         },
         {
           "name": "Jackson",
@@ -2412,11 +2404,9 @@
     {
       "number": 8,
       "name": "That Devil Forrest",
-      "gameLength": "2 turns, December 23\u2013December 24, 1864.",
-      "mapInfo": "",
       "confederateFootnotes": {},
       "unionFootnotes": {
-        "*": "Convert to \u201cNo Effect\u201d if winter weather is in effect (see 4.0)."
+        "*": "Begins game on normal side with Fatigue Level 1 marker"
       },
       "confederateUnits": [
         {
@@ -2627,8 +2617,6 @@
     {
       "number": 9,
       "name": "Hood Strikes North",
-      "gameLength": "32 turns, November 23\u2013December 24, 1864.",
-      "mapInfo": "",
       "confederateFootnotes": {
         "*": "Placed on map on exhausted side with Fatigue 1 marker.",
         "+": "Units may not activate on Turn 1 and do not recover on Turn 1 (see special rules)."
@@ -2973,7 +2961,9 @@
           "type": "Inf",
           "manpowerValue": "2\u2022",
           "hexLocation": "1715 (Columbia)",
-          "notes": []
+          "notes": [
+            "\u2022"
+          ]
         },
         {
           "name": "123 IN",
@@ -3088,7 +3078,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 0324 (Colored Church)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -3108,7 +3098,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 0224 (Saw Mill)",
+          "hexLocation": "",
           "notes": []
         },
         {
@@ -3128,7 +3118,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "Wag 2+ 0125",
+          "hexLocation": "",
           "notes": []
         },
         {

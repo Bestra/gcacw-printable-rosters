@@ -16,8 +16,6 @@ export interface Gunboat {
 export interface Scenario {
   number: number;
   name: string;
-  gameLength: string;
-  mapInfo: string;
   confederateFootnotes: Record<string, string>;
   unionFootnotes: Record<string, string>;
   confederateUnits: Unit[];

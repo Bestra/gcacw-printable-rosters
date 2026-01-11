@@ -5,8 +5,6 @@
     {
       "number": 1,
       "name": "Monocacy",
-      "gameLength": "1 turn; July 9, 1864.",
-      "mapInfo": "Use only the eastern half of the HCR West Map (Hex rows 30xx \u2013 58xx inclusive). At the end of the game, the Confederate VP total is calculated and the players consult the chart below to determine the ",
       "confederateFootnotes": {
         "+": "Ramseur and Rodes-B begin the game on their exhausted sides."
       },
@@ -137,8 +135,6 @@
     {
       "number": 2,
       "name": "Fort Stevens",
-      "gameLength": "2 turns, July 11 to July 12, 1864.",
-      "mapInfo": "Only the HCR East map is used. receive any VPs for occupying a city hex at the end of the game. +4 For each destroyed D.C. area fort hex. The maximum VPs that",
       "confederateFootnotes": {
         "+": "Indicated units begin the game on their exhausted sides at Fatigue Level 1"
       },
@@ -332,8 +328,6 @@
     {
       "number": 3,
       "name": "The Retreat From Washington",
-      "gameLength": "6 turns; July 13 to July 18, 1864.",
-      "mapInfo": "Use both HCR maps and the SJW North map. However, only the ing a friendly-occupied hex (+2 MP to enter a clear, rolling, or rough northern half of the SJW North map will be used, and only the west hal",
       "confederateFootnotes": {
         "*": "Indicated units begin the game at Fatigue Level 2.",
         "+": "Ramseur begins the game at Fatigue Level 2 and on his exhausted side.",
@@ -376,12 +370,12 @@
           ]
         },
         {
-          "name": "Wagon Train",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "",
+          "name": "Early",
+          "size": "District",
+          "command": "(E)-V",
+          "type": "Ldr",
+          "manpowerValue": "E0328",
+          "hexLocation": "(Rockville)",
           "notes": []
         },
         {
@@ -626,6 +620,15 @@
           "notes": []
         },
         {
+          "name": "Crook",
+          "size": "District",
+          "command": "WV",
+          "type": "Ldr",
+          "manpowerValue": "Reinforcement",
+          "hexLocation": "(Turn 3)",
+          "notes": []
+        },
+        {
           "name": "Duval",
           "size": "Div",
           "command": "WV",
@@ -695,13 +698,20 @@
     {
       "number": 4,
       "name": "From Winchester to Washington",
-      "gameLength": "13 days: July 3 to July 15, 1864.",
-      "mapInfo": "Use both HCR maps. Remember that the east map is placed over the Columbia west map. +35 Each VP Phase the Confederate player controls Baltimore or Alexandria counties",
       "confederateFootnotes": {
         "*": "Indicated units begin the game on their exhausted sides."
       },
       "unionFootnotes": {},
       "confederateUnits": [
+        {
+          "name": "Early",
+          "size": "District",
+          "command": "(E)-V",
+          "type": "Ldr",
+          "manpowerValue": "See",
+          "hexLocation": "Special Rule 4",
+          "notes": []
+        },
         {
           "name": "Breckinridge",
           "size": "Corps",
@@ -874,6 +884,15 @@
           "notes": []
         },
         {
+          "name": "Wallace",
+          "size": "District",
+          "command": "M",
+          "type": "Ldr",
+          "manpowerValue": "E3115",
+          "hexLocation": "(Camden Station)",
+          "notes": []
+        },
+        {
           "name": "Kenly-B",
           "size": "Brig",
           "command": "M",
@@ -988,6 +1007,15 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Crook",
+          "size": "District",
+          "command": "WV",
+          "type": "Ldr",
+          "manpowerValue": "See",
+          "hexLocation": "A6.1; WV Reinforcements",
           "notes": []
         },
         {

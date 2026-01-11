@@ -5,8 +5,6 @@
     {
       "number": 1,
       "name": "South Mountain",
-      "gameLength": "1 turn, September 14, 1862.",
-      "mapInfo": "Use only the west map. +7 If a Union infantry unit occupies Boonsboro (W2910). +4 If a Union infantry unit occupies Zittlestown (W3111).",
       "confederateFootnotes": {},
       "unionFootnotes": {},
       "confederateUnits": [
@@ -190,8 +188,6 @@
     {
       "number": 2,
       "name": "Harpers Ferry \u2013 Crampton Gap",
-      "gameLength": "4 turns, September 12 to September 15, 1862.",
-      "mapInfo": "Use only the west map. +8 For each undemoralized Confederate infantry division or brigade in or adjacent to Sharpsburg (W2413). However, the",
       "confederateFootnotes": {
         "*": "Indicated units begin the game on their exhausted sides at Fatigue Level 0 with organized strength makers"
       },
@@ -462,8 +458,6 @@
     {
       "number": 3,
       "name": "McClellan's Opportunity",
-      "gameLength": "3 turns, September 15 to September 17, 1862.",
-      "mapInfo": "Use only the west map. \u2022 +12 If a qualifying Union unit occupies any one hex adjacent to Sharpsburg.",
       "confederateFootnotes": {
         "*": "Indicated units begin the game on their exhausted sides at Fatigue Level 1 with disorganized strength markers"
       },
@@ -978,8 +972,6 @@
     {
       "number": 4,
       "name": "Three Cigars",
-      "gameLength": "6 turns, Sept. 13 to Sept. 18, 1862.",
-      "mapInfo": "Use only the west map. holds a gala ball and he only adds +1 to movement rolls this turn instead of +3.",
       "confederateFootnotes": {
         "^": "Indicated units have a turn 1 movement restriction \u2013 see special rules",
         "*": "Indicated units begin the game on their exhausted sides at fatigue level 0"
@@ -1588,8 +1580,6 @@
     {
       "number": 5,
       "name": "The Baltimore Raid",
-      "gameLength": "7 turns, Sept. 10 to Sept. 16, 1862.",
-      "mapInfo": "Use only the east map. \u2022 Owings Mills (E2207) \u2022 Gambrills Station (E2927)",
       "confederateFootnotes": {},
       "unionFootnotes": {
         "*": "138 PA starts the game under a fort marker"
@@ -1741,8 +1731,6 @@
     {
       "number": 6,
       "name": "The Battle for Washington",
-      "gameLength": "3 turns, Sept. 12 to Sept. 14, 1862.",
-      "mapInfo": "Use only the east map. +? For each of the following RR stations, it is +1 VP if there is a Damage marker in the hex, and +2 VP for a Destroy marker. If a",
       "confederateFootnotes": {},
       "unionFootnotes": {
         "^": "Humphreys & Whipple may not move on turn 1"
@@ -2094,8 +2082,6 @@
     {
       "number": 7,
       "name": "From Frederick to Sharpsburg",
-      "gameLength": "9 turns; September 10 to September 18, 1862.",
-      "mapInfo": "Use only the west map. \u2022 The Union player may not move units by rail in that county in",
       "confederateFootnotes": {
         "*": "Funk is deployed underneath a fort marker"
       },
@@ -2288,7 +2274,7 @@
       ],
       "unionUnits": [
         {
-          "name": "12 IL",
+          "name": "IL",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2297,45 +2283,7 @@
           "notes": []
         },
         {
-          "name": "White",
-          "size": "Brig",
-          "command": "Shen",
-          "type": "Inf",
-          "manpowerValue": "3",
-          "hexLocation": "W1314 (Martinsburg)",
-          "notes": []
-        },
-        {
-          "name": "D\u2019Utassy",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2521 (Harpers Ferry)",
-          "notes": []
-        },
-        {
-          "name": "Trimble",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "W2521 (Harpers Ferry)",
-          "notes": []
-        },
-        {
-          "name": "Ward",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "3*",
-          "hexLocation": "W2521 (Harpers Ferry)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "8 NY",
+          "name": "NY",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2344,16 +2292,7 @@
           "notes": []
         },
         {
-          "name": "Ford",
-          "size": "Brig",
-          "command": "RR",
-          "type": "Inf",
-          "manpowerValue": "5#",
-          "hexLocation": "W2720",
-          "notes": []
-        },
-        {
-          "name": "8 IL-A",
+          "name": "IL-A",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2362,7 +2301,7 @@
           "notes": []
         },
         {
-          "name": "1 MA",
+          "name": "MA",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2371,7 +2310,7 @@
           "notes": []
         },
         {
-          "name": "1 NY-A",
+          "name": "NY-A",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2380,79 +2319,7 @@
           "notes": []
         },
         {
-          "name": "Franklin",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W4933",
-          "notes": []
-        },
-        {
-          "name": "Slocum",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W4933",
-          "notes": []
-        },
-        {
-          "name": "Smith",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W5033 (Darnestown)",
-          "notes": []
-        },
-        {
-          "name": "Couch",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "W4633",
-          "notes": []
-        },
-        {
-          "name": "McClellan",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W5329 (Middlebrook)",
-          "notes": []
-        },
-        {
-          "name": "Mansfield",
-          "size": "Corps",
-          "command": "XII",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W5329 (Middlebrook)",
-          "notes": []
-        },
-        {
-          "name": "Williams",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W5329 (Middlebrook)",
-          "notes": []
-        },
-        {
-          "name": "Greene",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "W5429",
-          "notes": []
-        },
-        {
-          "name": "6 US",
+          "name": "US",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2461,25 +2328,7 @@
           "notes": []
         },
         {
-          "name": "Sumner",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W5430",
-          "notes": []
-        },
-        {
-          "name": "Richardson",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W5430",
-          "notes": []
-        },
-        {
-          "name": "1 RI",
+          "name": "RI",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2488,115 +2337,7 @@
           "notes": []
         },
         {
-          "name": "Sedgwick",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "W5531 (Gaithersburg)",
-          "notes": []
-        },
-        {
-          "name": "Reno",
-          "size": "Corps",
-          "command": "IX",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "W5522 (Methodist Church)",
-          "notes": []
-        },
-        {
-          "name": "Cox",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W5522 (Methodist Church)",
-          "notes": []
-        },
-        {
-          "name": "Willcox-A",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W5622",
-          "notes": []
-        },
-        {
-          "name": "Sturgis",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "W5723",
-          "notes": []
-        },
-        {
-          "name": "Rodman",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "W5823",
-          "notes": []
-        },
-        {
-          "name": "Sykes",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "8",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "French",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "W5833",
-          "notes": []
-        },
-        {
-          "name": "Hooker",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "Union Reinforcement (see special rules)",
-          "notes": []
-        },
-        {
-          "name": "Meade",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "Union Reinforcement (see special rules)",
-          "notes": []
-        },
-        {
-          "name": "Hatch",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "Union Reinforcement (see special rules)",
-          "notes": []
-        },
-        {
-          "name": "Ricketts-A",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "Union Reinforcement (see special rules)",
-          "notes": []
-        },
-        {
-          "name": "4-Sept 13 Porter",
+          "name": "13 Porter",
           "size": "Corps",
           "command": "V",
           "type": "Ldr",
@@ -2605,7 +2346,7 @@
           "notes": []
         },
         {
-          "name": "4-Sept 13 Morell",
+          "name": "13 Morell",
           "size": "Div",
           "command": "V",
           "type": "Inf",
@@ -2614,7 +2355,7 @@
           "notes": []
         },
         {
-          "name": "4-Sept 13 6 PA",
+          "name": "13 6 PA",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2623,7 +2364,7 @@
           "notes": []
         },
         {
-          "name": "6-Sept 15 Humphreys",
+          "name": "15 Humphreys",
           "size": "Div",
           "command": "V",
           "type": "Inf",
@@ -2632,7 +2373,7 @@
           "notes": []
         },
         {
-          "name": "7-Sept 16 1 ME",
+          "name": "16 1 ME",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2647,8 +2388,6 @@
     {
       "number": 8,
       "name": "The Maryland Campaign",
-      "gameLength": "17-19 turns; September 4 to September 20-22, 1862.",
-      "mapInfo": "Use both the east and west maps. In the set-up instructions, hexes in receives VP only for the county with the highest VP award: the overlap area are listed by the west map\u2019s hex number. +20 Baltimore",
       "confederateFootnotes": {
         "*": "Funk is deployed underneath a fort marker"
       },
@@ -2817,15 +2556,6 @@
           "command": "L",
           "type": "Inf",
           "manpowerValue": "5",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Naval Battery",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
           "hexLocation": "",
           "notes": []
         }

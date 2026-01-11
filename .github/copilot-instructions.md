@@ -21,42 +21,48 @@ cd web && npm run dev      # Dev server at localhost:5173
 cd web && npm run build    # Build to web/dist/
 
 # Parser (always use uv, never bare python/pip)
-cd parser && uv run python scenario_parser.py ../data/SomeGame.pdf [game_id]
-cd parser && uv run python convert_to_web.py
+cd parser && uv run python parse_raw_tables.py --all   # Parse all games
+cd parser && uv run python convert_to_web.py           # Generate web JSON
 ```
 
 ## File Locations
 
-| To change...                            | Edit...                                                  |
-| --------------------------------------- | -------------------------------------------------------- |
-| Unit card layout/styling                | `web/src/components/UnitCard.tsx` + `.css`               |
-| Grid layout, footnotes, conventions key | `web/src/components/RosterSheet.tsx` + `.css`            |
-| Game/scenario selection                 | `web/src/App.tsx`                                        |
-| TypeScript types                        | `web/src/types.ts`                                       |
-| PDF parsing logic                       | `parser/scenario_parser.py`                              |
-| Parser → web JSON transform             | `parser/convert_to_web.py`                               |
-| Scenario names for a game               | `SCENARIO_NAMES` dict in `scenario_parser.py` (~line 40) |
-| Games list                              | `GAMES` list in `convert_to_web.py`                      |
+| To change...                            | Edit...                                       |
+| --------------------------------------- | --------------------------------------------- |
+| Unit card layout/styling                | `web/src/components/UnitCard.tsx` + `.css`    |
+| Grid layout, footnotes, conventions key | `web/src/components/RosterSheet.tsx` + `.css` |
+| Game/scenario selection                 | `web/src/App.tsx`                             |
+| TypeScript types                        | `web/src/types.ts`                            |
+| Raw PDF extraction                      | `parser/raw_table_extractor.py`               |
+| Column mappings & game config           | `parser/game_configs.json`                    |
+| Raw table → unit parsing                | `parser/parse_raw_tables.py`                  |
+| Parsed → web JSON transform             | `parser/convert_to_web.py`                    |
+| Games list                              | `GAMES` list in `convert_to_web.py`           |
 
 ## Data Flow
 
 ```
-PDF → scenario_parser.py → {game_id}_scenarios.json (snake_case)
-                         ↓
-                   convert_to_web.py
-                         ↓
-              web/public/data/{game_id}.json (camelCase)
-                         ↓
-                   Web app fetches at runtime
+PDF → raw_table_extractor.py → raw/{game}_raw_tables.json
+                                       ↓
+                              game_configs.json (column mappings)
+                                       ↓
+                              parse_raw_tables.py → parsed/{game}_parsed.json
+                                       ↓
+                              convert_to_web.py → web/public/data/{game}.json
+                                       ↓
+                              Web app fetches at runtime
 ```
 
 ## Architecture
 
 **Parser** (`parser/`)
 
-- `scenario_parser.py` - Extracts units from PDF tables using pdfplumber
+- `raw_table_extractor.py` - Extracts raw table structure from PDFs
+- `game_configs.json` - Data-driven column mappings per game/table
+- `parse_raw_tables.py` - Parses raw tables into structured units
 - `convert_to_web.py` - Transforms snake_case → camelCase for web
-- Outputs: `{game_id}_scenarios.json`, `web/public/data/{game_id}.json`
+- `raw/` - Raw table JSON files (preserved for debugging)
+- `parsed/` - Structured unit data per game
 
 **Web** (`web/`)
 
@@ -74,35 +80,24 @@ PDF → scenario_parser.py → {game_id}_scenarios.json (snake_case)
 - Starting fatigue: parsed from footnotes matching "Fatigue Level X"
 - Location names: extracted from hex parentheticals like "S5510 (Yorktown)"
 
-### Parser quirks
+### Parser details
 
-- Handles `(cntd)` continuation tables across pages
 - Special units (Gunboat, Wagon Train, Naval Battery) parsed with `unit_type="Special"`
 - Footnote symbols: \*, ^, †, ‡, §, $, +
-- Scenario names are hardcoded per-game in `SCENARIO_NAMES` dict
+- Column layouts are configured per-game in `game_configs.json`
 
 ### Adding a new game
 
-1. **Verify scenario names from the PDF first.** Run this to see what the parser finds:
+See `parser/RAW_TABLE_EXTRACTOR.md` for detailed instructions.
 
-   ```bash
-   cd parser && uv run python -c '
-   import pdfplumber, re
-   with pdfplumber.open("../data/NewGame.pdf") as pdf:
-       for i, page in enumerate(pdf.pages[3:], start=4):
-           text = page.extract_text() or ""
-           for line in text.split("\n")[:15]:
-               if re.search(r"scenario\s+\d+:", line, re.IGNORECASE):
-                   print(f"Page {i}: {line.strip()[:80]}")
-   '
-   ```
+Quick summary:
 
-   PDF extraction is unreliable—scenario titles often merge with adjacent text. Cross-reference against the actual PDF to get correct names.
-
-2. Add scenario names to `SCENARIO_NAMES` in `scenario_parser.py`
-3. Add game config to `GAMES` in `convert_to_web.py`
-4. Run: `uv run python scenario_parser.py ../data/NewGame.pdf newgame`
-5. Run: `uv run python convert_to_web.py`
+1. Extract raw tables: `uv run python raw_table_extractor.py ../data/NewGame.pdf newgame`
+2. Add column config to `game_configs.json` if needed
+3. Add game to `GAMES` list in `convert_to_web.py`
+4. Add URL slug mapping in `web/src/utils/slugs.ts`
+5. Parse: `uv run python parse_raw_tables.py newgame`
+6. Convert: `uv run python convert_to_web.py`
 
 ## Validation
 

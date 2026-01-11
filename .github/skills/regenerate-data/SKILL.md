@@ -1,6 +1,6 @@
 ---
 name: regenerate-data
-description: Regenerate web JSON data after parser changes. Use after modifying scenario_parser.py or convert_to_web.py, or when data needs refreshing.
+description: Regenerate web JSON data after parser changes. Use after modifying parse_raw_tables.py, game_configs.json, or convert_to_web.py, or when data needs refreshing.
 ---
 
 # Regenerate Data
@@ -11,8 +11,7 @@ Run the parser and converter to refresh all game data after making changes.
 
 ```bash
 cd parser
-uv run python scenario_parser.py ../data/OTR2_Rules.pdf otr2
-uv run python scenario_parser.py ../data/GTC2_Rules.pdf gtc2
+uv run python parse_raw_tables.py --all
 uv run python convert_to_web.py
 ```
 
@@ -20,7 +19,16 @@ uv run python convert_to_web.py
 
 ```bash
 cd parser
-uv run python scenario_parser.py ../data/<GamePDF>.pdf <game_id>
+uv run python parse_raw_tables.py <game_id>
+uv run python convert_to_web.py
+```
+
+## Re-extract from PDF (if raw tables need updating)
+
+```bash
+cd parser
+uv run python raw_table_extractor.py ../data/<GamePDF>.pdf <game_id>
+uv run python parse_raw_tables.py <game_id>
 uv run python convert_to_web.py
 ```
 
@@ -35,9 +43,11 @@ After regenerating:
 ## Data Flow
 
 ```
-PDF → scenario_parser.py → {game_id}_scenarios.json (snake_case)
-                         ↓
-                   convert_to_web.py
-                         ↓
-              web/public/data/{game_id}.json (camelCase)
+PDF → raw_table_extractor.py → raw/{game}_raw_tables.json
+                                       ↓
+                              game_configs.json (column mappings)
+                                       ↓
+                              parse_raw_tables.py → parsed/{game}_parsed.json
+                                       ↓
+                              convert_to_web.py → web/public/data/{game}.json
 ```

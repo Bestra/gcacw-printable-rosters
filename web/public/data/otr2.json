@@ -5,8 +5,6 @@
     {
       "number": 1,
       "name": "The Warwick Line",
-      "gameLength": "3 turns; April 5 to April 7, 1862.",
-      "mapInfo": "Use only the south map. maps",
       "confederateFootnotes": {
         "*": "Units setup under Fort-Complete markers"
       },
@@ -301,8 +299,6 @@
     {
       "number": 2,
       "name": "Johnston's Retreat",
-      "gameLength": "5 turns; May 4 to May 8, 1862.",
-      "mapInfo": "Use both the north and south maps. another box. \u2022 The Gunboat may perform \u201cDefensive Support\u201d and",
       "confederateFootnotes": {
         "*": "All Confederate infantry, wagon train and artillery units start the game at Fatigue Level 1 on their normal sides."
       },
@@ -365,7 +361,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "2* S4407 (Williamsburg)",
+          "hexLocation": "S4407 (Williamsburg)",
           "notes": []
         },
         {
@@ -374,7 +370,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "2* S4307 (William & Mary Col.)",
+          "hexLocation": "S4307 (William & Mary Col.)",
           "notes": []
         },
         {
@@ -690,18 +686,11 @@
         }
       ],
       "confederateGunboats": [],
-      "unionGunboats": [
-        {
-          "name": "Gunboat",
-          "location": "Display \u2013 York River"
-        }
-      ]
+      "unionGunboats": []
     },
     {
       "number": 3,
       "name": "The Gates of Richmond",
-      "gameLength": "7 turns; May 26 to June 1, 1862.",
-      "mapInfo": "Use only the north map. which placement is possible. 7. Union Reinforcements: The Union Player rolls a die in each Turn",
       "confederateFootnotes": {
         "*": "JR Anderson and Branch begin the game on their exhausted sides at Fatigue Level 0",
         "+": "56 VA, 32 NC and the four \u201cRichmond\u201d units begin the game under Fort-Complete markers",
@@ -1397,8 +1386,6 @@
     {
       "number": 4,
       "name": "Seven Pines",
-      "gameLength": "2 turns; May 31 to June 1, 1862.",
-      "mapInfo": "Use only the north map. 7. Johnston: If the Confederate player attempts a grand assault, the army leader Johnston may be wounded. At the end of an action in which a",
       "confederateFootnotes": {
         "*": "McLaws, Ripley and Walker have special movement restrictions: see Rules 4 and 5.",
         "^": "McLaws begins the game underneath a Breastworks-complete marker"
@@ -1655,8 +1642,6 @@
     {
       "number": 5,
       "name": "Stuart's Ride",
-      "gameLength": "6 turns; June 12 to June 17, 1862.",
-      "mapInfo": "",
       "confederateFootnotes": {},
       "unionFootnotes": {
         "*": "The 2-5 US and 11PA cavalry units begin the game with disorganized strength markers.",
@@ -1775,8 +1760,6 @@
     {
       "number": 6,
       "name": "The Seven Days",
-      "gameLength": "7 turns; June 25 to July 1, 1862.",
-      "mapInfo": "",
       "confederateFootnotes": {
         "*": "Indicated units begin the game under Breastwork complete markers",
         "^": "Indicated units begin the game under Fort-Complete markers",
@@ -2472,7 +2455,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "2 N1627 (Savage Station)",
+          "hexLocation": "N1627 (Savage Station)",
           "notes": []
         },
         {
@@ -2481,7 +2464,7 @@
           "command": "-",
           "type": "Special",
           "manpowerValue": "-",
-          "hexLocation": "2 N1728 (Watkins Mill)",
+          "hexLocation": "N1728 (Watkins Mill)",
           "notes": []
         },
         {
@@ -2525,7 +2508,7 @@
       "unionGunboats": [
         {
           "name": "Gunboat-1",
-          "location": "York River Box"
+          "location": "River Box"
         },
         {
           "name": "Gunboat-2",
@@ -2536,8 +2519,6 @@
     {
       "number": 7,
       "name": "Gaines Mill",
-      "gameLength": "2 turns; June 26 to June 27, 1862.",
-      "mapInfo": "Use only the north map. Longstreet\u2019s, AP Hill\u2019s, and DH Hill\u2019s divisions may move (or attack) into a hex north of Totopotomoy Creek. Since the headwaters of this",
       "confederateFootnotes": {
         "*": "Indicated units begin the game at Fatigue Level 1 on their exhausted side."
       },
@@ -2889,15 +2870,13 @@
       "unionGunboats": [
         {
           "name": "Gunboat-1",
-          "location": "York River Box"
+          "location": "River Box"
         }
       ]
     },
     {
       "number": 8,
       "name": "Retreat to the James",
-      "gameLength": "3 turns; June 29 to July 1, 1862.",
-      "mapInfo": "Use both the north and south maps. Phases; see 10.1.) The new bridge can be destroyed or dismantled (see 10.2).",
       "confederateFootnotes": {
         "*": "Indicated units begin the game under Breastwork-complete markers."
       },
@@ -3386,19 +3365,17 @@
       "unionGunboats": [
         {
           "name": "Gunboat-1",
-          "location": "James River East"
+          "location": "River East"
         },
         {
           "name": "Gunboat-2",
-          "location": "James River East"
+          "location": "River East"
         }
       ]
     },
     {
       "number": 9,
       "name": "The Peninsula Campaign",
-      "gameLength": "112 turns: April 5 to July 25, 1862.",
-      "mapInfo": "",
       "confederateFootnotes": {
         "*": "Indicated units begin game under Fort-Complete Markers"
       },
@@ -5941,11 +5918,11 @@
       "unionGunboats": [
         {
           "name": "Gunboat-1",
-          "location": "Hampton Roads Box (Gunboat Display)"
+          "location": "Box (Gunboat Display)"
         },
         {
           "name": "Gunboat-2",
-          "location": "Hampton Roads Box (Gunboat Display)#"
+          "location": "Box (Gunboat Display)#"
         }
       ]
     }
