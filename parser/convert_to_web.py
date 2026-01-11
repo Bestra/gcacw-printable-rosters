@@ -35,8 +35,30 @@ def convert_unit(unit: dict) -> dict:
     }
 
 
+def is_gunboat(unit: dict) -> bool:
+    """Check if a unit is a gunboat."""
+    name = unit.get("unit_leader", "")
+    return name.startswith("Gunboat") or name.startswith("(Gunboat")
+
+
+def convert_gunboat(unit: dict) -> dict:
+    """Convert a gunboat unit to a simple text representation."""
+    name = unit["unit_leader"]
+    location = unit["hex_location"]
+    return {
+        "name": name,
+        "location": location,
+    }
+
+
 def convert_scenario(scenario: dict) -> dict:
     """Convert a scenario from parser format to web format."""
+    # Separate gunboats from regular units
+    csa_units = [u for u in scenario["confederate_units"] if not is_gunboat(u)]
+    csa_gunboats = [u for u in scenario["confederate_units"] if is_gunboat(u)]
+    usa_units = [u for u in scenario["union_units"] if not is_gunboat(u)]
+    usa_gunboats = [u for u in scenario["union_units"] if is_gunboat(u)]
+    
     return {
         "number": scenario["number"],
         "name": scenario["name"],
@@ -44,8 +66,10 @@ def convert_scenario(scenario: dict) -> dict:
         "mapInfo": scenario["map_info"],
         "confederateFootnotes": scenario["confederate_footnotes"],
         "unionFootnotes": scenario["union_footnotes"],
-        "confederateUnits": [convert_unit(u) for u in scenario["confederate_units"]],
-        "unionUnits": [convert_unit(u) for u in scenario["union_units"]],
+        "confederateUnits": [convert_unit(u) for u in csa_units],
+        "unionUnits": [convert_unit(u) for u in usa_units],
+        "confederateGunboats": [convert_gunboat(u) for u in csa_gunboats],
+        "unionGunboats": [convert_gunboat(u) for u in usa_gunboats],
     }
 
 

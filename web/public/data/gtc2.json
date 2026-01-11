@@ -530,7 +530,9 @@
           "hexLocation": "Union Reinforcement",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 2,
@@ -1183,7 +1185,9 @@
           "hexLocation": "Union Reinforcement",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 3,
@@ -1420,570 +1424,21 @@
           "hexLocation": "N3611 (Tabernacle Church)",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 4,
       "name": "Bloody Spotsylvania",
       "gameLength": "5 turns; May 8 to May 12, 1864. +4 Union control of Guinea Station (N4320).",
       "mapInfo": "Use only the GTC North map. +4 Union control of Stannard\u2019s Mill (N3921). +4 Union control of Massaponax Church (N4016).",
-      "confederateFootnotes": {
-        "*": "Indicated units begin the game under an Abatis marker.",
-        "+": "Rodes, E Johnson and Ramseur begin the game under a Breastworks-Complete marker."
-      },
-      "unionFootnotes": {
-        "*": "Indicated units begin the game under an Abatis marker.",
-        "+": "Indicated units begin the game under a Breastworks-Complete marker."
-      },
-      "confederateUnits": [
-        {
-          "name": "WH Lee",
-          "size": "Div",
-          "command": "WL",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N1806",
-          "notes": []
-        },
-        {
-          "name": "Chambliss",
-          "size": "Brig",
-          "command": "WL",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "N1806",
-          "notes": []
-        },
-        {
-          "name": "Gordon",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "12*",
-          "hexLocation": "N2409",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Ewell",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2410",
-          "notes": []
-        },
-        {
-          "name": "Rodes",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "12+",
-          "hexLocation": "N2410",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "E Johnson",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "10+",
-          "hexLocation": "N2410",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Ramseur-B",
-          "size": "Brig",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "3+",
-          "hexLocation": "N2511",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Early",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2611 (Chewning)",
-          "notes": []
-        },
-        {
-          "name": "Heth-A",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "11*",
-          "hexLocation": "N2611 (Chewning)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Wilcox-A",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "12*",
-          "hexLocation": "N2611 (Chewning)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Lee",
-          "size": "Army",
-          "command": "ANV",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2712 (Widow Tapp)",
-          "notes": []
-        },
-        {
-          "name": "Anderson",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2712 (Widow Tapp)",
-          "notes": []
-        },
-        {
-          "name": "Field",
-          "size": "Div",
-          "command": "F-I",
-          "type": "Inf",
-          "manpowerValue": "8*",
-          "hexLocation": "N2712 (Widow Tapp)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Mahone",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "13*",
-          "hexLocation": "N2712 (Widow Tapp)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Kershaw",
-          "size": "Div",
-          "command": "K-I",
-          "type": "Inf",
-          "manpowerValue": "8*",
-          "hexLocation": "N2812",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Hampton",
-          "size": "Div",
-          "command": "H",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N3014",
-          "notes": []
-        },
-        {
-          "name": "Young",
-          "size": "Brig",
-          "command": "H",
-          "type": "Cav",
-          "manpowerValue": "1*",
-          "hexLocation": "N3014",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Rosser",
-          "size": "Brig",
-          "command": "H",
-          "type": "Cav",
-          "manpowerValue": "1*",
-          "hexLocation": "N3014",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Gordon",
-          "size": "Brig",
-          "command": "WL",
-          "type": "Cav",
-          "manpowerValue": "2*",
-          "hexLocation": "N3014",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Stuart",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N3315 (Alsop)",
-          "notes": []
-        },
-        {
-          "name": "F Lee",
-          "size": "Div",
-          "command": "FL",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N3315 (Alsop)",
-          "notes": []
-        },
-        {
-          "name": "Lomax",
-          "size": "Brig",
-          "command": "FL",
-          "type": "Cav",
-          "manpowerValue": "2#",
-          "hexLocation": "N3315 (Alsop)",
-          "notes": []
-        },
-        {
-          "name": "Wickham",
-          "size": "Brig",
-          "command": "FL",
-          "type": "Cav",
-          "manpowerValue": "3#",
-          "hexLocation": "N3315 (Alsop)",
-          "notes": []
-        }
-      ],
-      "unionUnits": [
-        {
-          "name": "Sedgwick",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2608",
-          "notes": []
-        },
-        {
-          "name": "Wright",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "13*",
-          "hexLocation": "N2608",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Ricketts",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "9*",
-          "hexLocation": "N2608",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Potter",
-          "size": "Div",
-          "command": "X",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "N2608",
-          "notes": []
-        },
-        {
-          "name": "Grant-A",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2609 (Ellwood)",
-          "notes": []
-        },
-        {
-          "name": "Warren-A",
-          "size": "Corps",
-          "command": "V",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2609 (Ellwood)",
-          "notes": []
-        },
-        {
-          "name": "Griffin",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "14+",
-          "hexLocation": "N2609 (Ellwood)",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Crawford",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "6+",
-          "hexLocation": "N2609 (Ellwood)",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Provisional",
-          "size": "Brig",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6*",
-          "hexLocation": "N2609 (Ellwood)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Neill",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "N2708 (Vaucluse Gold Mine)",
-          "notes": []
-        },
-        {
-          "name": "Cutler",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "N2709 (Wilderness Tavern)",
-          "notes": []
-        },
-        {
-          "name": "Burnside-A",
-          "size": "Corps",
-          "command": "IX",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2710",
-          "notes": []
-        },
-        {
-          "name": "Willcox-A",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "11*",
-          "hexLocation": "N2710",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Robinson",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "9*",
-          "hexLocation": "N2810",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Kitching",
-          "size": "Brig",
-          "command": "AP",
-          "type": "Inf",
-          "manpowerValue": "5*",
-          "hexLocation": "N2810",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Hancock-A",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N2811",
-          "notes": []
-        },
-        {
-          "name": "Birney",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "9+",
-          "hexLocation": "N2811",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Gibbon",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "11+",
-          "hexLocation": "N2811",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Mott-A",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "9+",
-          "hexLocation": "N2811",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Stevenson",
-          "size": "Div",
-          "command": "IX",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "N2911",
-          "notes": []
-        },
-        {
-          "name": "Barlow",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "14+",
-          "hexLocation": "N2912 (Trigg)",
-          "notes": [
-            "+"
-          ]
-        },
-        {
-          "name": "Custer",
-          "size": "Brig",
-          "command": "Cav-1",
-          "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "N3013",
-          "notes": []
-        },
-        {
-          "name": "DM Gregg",
-          "size": "Div",
-          "command": "Cav-2",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N3114 (Todd\u2019s Tavern)",
-          "notes": []
-        },
-        {
-          "name": "Davies",
-          "size": "Brig",
-          "command": "Cav-2",
-          "type": "Cav",
-          "manpowerValue": "4#",
-          "hexLocation": "N3114 (Todd\u2019s Tavern)",
-          "notes": []
-        },
-        {
-          "name": "JI Gregg",
-          "size": "Brig",
-          "command": "Cav-2",
-          "type": "Cav",
-          "manpowerValue": "4*",
-          "hexLocation": "N3114 (Todd\u2019s Tavern)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Sheridan",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N3214",
-          "notes": []
-        },
-        {
-          "name": "Merritt",
-          "size": "Div",
-          "command": "Cav-1",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N3214",
-          "notes": []
-        },
-        {
-          "name": "Devin",
-          "size": "Brig",
-          "command": "Cav-1",
-          "type": "Cav",
-          "manpowerValue": "3#",
-          "hexLocation": "N3214",
-          "notes": []
-        },
-        {
-          "name": "Gibbs",
-          "size": "Brig",
-          "command": "Cav-1",
-          "type": "Cav",
-          "manpowerValue": "3#",
-          "hexLocation": "N3214",
-          "notes": []
-        },
-        {
-          "name": "Wilson",
-          "size": "Div",
-          "command": "Cav-3",
-          "type": "Ldr",
-          "manpowerValue": "\u2014",
-          "hexLocation": "N3312",
-          "notes": []
-        },
-        {
-          "name": "Chapman",
-          "size": "Brig",
-          "command": "Cav-3",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "N3312",
-          "notes": []
-        },
-        {
-          "name": "McIntosh",
-          "size": "Brig",
-          "command": "Cav-3",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "N3611 (Tabernacle Church)",
-          "notes": []
-        }
-      ]
+      "confederateFootnotes": {},
+      "unionFootnotes": {},
+      "confederateUnits": [],
+      "unionUnits": [],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 5,
@@ -2189,7 +1644,9 @@
           "notes": []
         }
       ],
-      "unionUnits": []
+      "unionUnits": [],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 6,
@@ -2642,7 +2099,9 @@
           "hexLocation": "N4216",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 7,
@@ -3194,7 +2653,9 @@
           "hexLocation": "N2824 (White House)",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 8,
@@ -3202,11 +2663,7 @@
       "gameLength": "5 turns; June 8 to June 12, 1864. occurrences:",
       "mapInfo": "Use all of the GTC North map, the top one-quarter of the GTC South exit the map. Once a unit exits the map, it may not return. map, and the left half of the OTR North map. (The unused map areas can be",
       "confederateFootnotes": {},
-      "unionFootnotes": {
-        "++": "Convert to Confederate Command Paralysis if Lee is currently",
-        "*": "If Stuart dies, he is not replaced immediately. In the Leader Recovery the Extended March Table. Instead, an extended march occurs only if",
-        "+": "Use E Johnson if Early has already come in to replace a sick or dead Hill. 3. Normal extended march rules are altered: A unit reaching Fatigue"
-      },
+      "unionFootnotes": {},
       "confederateUnits": [
         {
           "name": "Hampton",
@@ -3344,17 +2801,10 @@
           "manpowerValue": "4",
           "hexLocation": "OTR N2312",
           "notes": []
-        },
-        {
-          "name": "(Gunboat-2)",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "",
-          "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 9,
@@ -4523,7 +3973,9 @@
           "hexLocation": "Special Reinforcement",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 10,
@@ -5503,7 +4955,9 @@
           "hexLocation": "Special Reinforcement",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 11,
@@ -6734,7 +6188,9 @@
           "hexLocation": "Special Reinforcement",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 12,
@@ -7844,7 +7300,9 @@
           "hexLocation": "Special Reinforcement",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     }
   ]
 }

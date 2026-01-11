@@ -294,7 +294,9 @@
           "hexLocation": "Reinforcement",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 2,
@@ -685,15 +687,13 @@
           "manpowerValue": "18",
           "hexLocation": "S5314 (Lee\u2019s Mill)",
           "notes": []
-        },
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": [
         {
           "name": "Gunboat",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "Display \u2013 York River",
-          "notes": []
+          "location": "Display \u2013 York River"
         }
       ]
     },
@@ -1390,7 +1390,9 @@
           "hexLocation": "Reinforcement",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 4,
@@ -1646,7 +1648,9 @@
           "hexLocation": "N1930 (White Oak Bridge)",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 5,
@@ -1764,7 +1768,9 @@
           "hexLocation": "N1830",
           "notes": []
         }
-      ]
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
     },
     {
       "number": 6,
@@ -2461,15 +2467,6 @@
           ]
         },
         {
-          "name": "Gunboat-1",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "York River Box",
-          "notes": []
-        },
-        {
           "name": "Wagon Train-A",
           "size": "-",
           "command": "-",
@@ -2522,15 +2519,17 @@
           "manpowerValue": "5",
           "hexLocation": "Reinforcement (see Rule 14)",
           "notes": []
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": [
+        {
+          "name": "Gunboat-1",
+          "location": "York River Box"
         },
         {
           "name": "Gunboat-2",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "Reinforcement (see Rule 8)",
-          "notes": []
+          "location": "Reinforcement (see Rule 8)"
         }
       ]
     },
@@ -2884,15 +2883,13 @@
           "notes": [
             "^"
           ]
-        },
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": [
         {
           "name": "Gunboat-1",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "York River Box",
-          "notes": []
+          "location": "York River Box"
         }
       ]
     },
@@ -2905,7 +2902,7 @@
         "*": "Indicated units begin the game under Breastwork-complete markers."
       },
       "unionFootnotes": {
-        "*": "Confederate units are out of supply only if Union player currently controls",
+        "*": "Morell, McCall and Slocum begin the game with disorganized strength markers",
         "^": "Indicated units begin the game under Breastwork-complete markers",
         "$": "Ferry may not activate or entrench on Turn 1"
       },
@@ -3367,24 +3364,6 @@
           ]
         },
         {
-          "name": "Gunboat-1",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "James River East",
-          "notes": []
-        },
-        {
-          "name": "Gunboat-2",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "James River East",
-          "notes": []
-        },
-        {
           "name": "Kimball",
           "size": "Brig",
           "command": "-",
@@ -3401,24 +3380,17 @@
           "manpowerValue": "5",
           "hexLocation": "Reinforcement",
           "notes": []
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": [
+        {
+          "name": "Gunboat-1",
+          "location": "James River East"
         },
         {
-          "name": "Gunboat",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "",
-          "notes": []
-        },
-        {
-          "name": "Naval Battery",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "",
-          "notes": []
+          "name": "Gunboat-2",
+          "location": "James River East"
         }
       ]
     },
@@ -5371,24 +5343,6 @@
           "notes": []
         },
         {
-          "name": "Gunboat-1",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "Hampton Roads Box (Gunboat Display)",
-          "notes": []
-        },
-        {
-          "name": "Gunboat-2",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "Hampton Roads Box (Gunboat Display)#",
-          "notes": []
-        },
-        {
           "name": "1 NY",
           "size": "Regt",
           "command": "-",
@@ -5981,6 +5935,17 @@
           "notes": [
             "*"
           ]
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": [
+        {
+          "name": "Gunboat-1",
+          "location": "Hampton Roads Box (Gunboat Display)"
+        },
+        {
+          "name": "Gunboat-2",
+          "location": "Hampton Roads Box (Gunboat Display)#"
         }
       ]
     }

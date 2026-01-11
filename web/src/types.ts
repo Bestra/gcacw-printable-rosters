@@ -8,6 +8,11 @@ export interface Unit {
   notes: string[];
 }
 
+export interface Gunboat {
+  name: string;
+  location: string;
+}
+
 export interface Scenario {
   number: number;
   name: string;
@@ -17,6 +22,8 @@ export interface Scenario {
   unionFootnotes: Record<string, string>;
   confederateUnits: Unit[];
   unionUnits: Unit[];
+  confederateGunboats: Gunboat[];
+  unionGunboats: Gunboat[];
 }
 
 export interface GameData {

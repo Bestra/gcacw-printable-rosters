@@ -201,6 +201,14 @@ class ScenarioParser:
                         stop_parsing = True
                         break
                 
+                # Stop if we hit Advanced Game Rules section (marks end of basic scenarios)
+                if re.search(r'advanced game (rules|sequence of play)', line_lower):
+                    stop_parsing = True
+                    break
+                if re.match(r'^\d+\.\d*\s+advanced game', line_lower):
+                    stop_parsing = True
+                    break
+                
                 # Detect section headers (including continuations like "cntd")
                 # But IGNORE continuations "(cntd)" as they belong to previous scenario
                 if 'confederate set-up' in line_lower:

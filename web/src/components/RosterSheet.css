@@ -120,6 +120,44 @@
   color: #666;
 }
 
+/* Gunboats list */
+.roster-sheet__gunboats {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.roster-sheet__gunboats-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.roster-sheet__gunboats-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.75rem;
+}
+
+.roster-sheet__gunboat-item {
+  margin-bottom: 0.125rem;
+}
+
+.roster-sheet__gunboat-item:last-child {
+  margin-bottom: 0;
+}
+
+.roster-sheet__gunboat-name {
+  font-weight: 500;
+}
+
+.roster-sheet__gunboat-location {
+  color: #555;
+}
+
 /* Print styles */
 @media print {
   .roster-sheet {

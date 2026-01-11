@@ -1,4 +1,4 @@
-import type { Scenario, Unit } from "../types";
+import type { Gunboat, Scenario, Unit } from "../types";
 import { UnitCard } from "./UnitCard";
 import "./RosterSheet.css";
 
@@ -122,6 +122,27 @@ function ConventionsKey() {
   );
 }
 
+// Display gunboats as a simple list
+function GunboatsList({ gunboats }: { gunboats: Gunboat[] }) {
+  if (gunboats.length === 0) return null;
+  
+  return (
+    <div className="roster-sheet__gunboats">
+      <h4 className="roster-sheet__gunboats-title">Gunboats</h4>
+      <ul className="roster-sheet__gunboats-list">
+        {gunboats.map((gunboat, index) => (
+          <li key={index} className="roster-sheet__gunboat-item">
+            <span className="roster-sheet__gunboat-name">{gunboat.name}</span>
+            {gunboat.location && (
+              <span className="roster-sheet__gunboat-location"> — {gunboat.location}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
   // Filter out leaders from unit cards
   const combatUnits = (units: Unit[]) => units.filter(u => u.type !== "Ldr");
@@ -168,6 +189,7 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
             />
           ))}
         </div>
+        <GunboatsList gunboats={scenario.confederateGunboats} />
         <FootnotesLegend footnotes={scenario.confederateFootnotes} />
       </section>
 
@@ -188,6 +210,7 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
             />
           ))}
         </div>
+        <GunboatsList gunboats={scenario.unionGunboats} />
         <FootnotesLegend footnotes={scenario.unionFootnotes} />
       </section>
     </div>

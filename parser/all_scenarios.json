@@ -3280,7 +3280,7 @@
       "*": "Indicated units begin the game under Breastwork-complete markers."
     },
     "union_footnotes": {
-      "*": "Confederate units are out of supply only if Union player currently controls",
+      "*": "Morell, McCall and Slocum begin the game with disorganized strength markers",
       "^": "Indicated units begin the game under Breastwork-complete markers",
       "$": "Ferry may not activate or entrench on Turn 1"
     },
@@ -3826,26 +3826,6 @@
         "unit_type": "Inf",
         "manpower_value": "5",
         "hex_location": "Reinforcement",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Gunboat",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Naval Battery",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "",
         "side": "Union",
         "notes": []
       }
