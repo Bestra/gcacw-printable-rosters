@@ -1,0 +1,96 @@
+.unit-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: fit-content;
+}
+
+.unit-card--empty .unit-card__header {
+  border-bottom: 1px solid #ccc;
+}
+
+.unit-card--empty .unit-card__counter-box {
+  border-color: #ccc;
+}
+
+.unit-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1px 3px;
+  gap: 0.5rem;
+  border: 1px solid #000;
+  border-bottom: none;
+  min-width: 100px;
+}
+
+.unit-card__name {
+  font-weight: 500;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.unit-card__command {
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.unit-card__counters {
+  display: flex;
+}
+
+/* Counter box - 0.55" (14mm) to fit 1/2" GCACW counters */
+.unit-card__counter-box {
+  width: 0.55in;
+  height: 0.55in;
+  border: 1px solid #000;
+  border-right: none;
+  background: #fff;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 2px;
+}
+
+.unit-card__counter-box:last-child {
+  border-right: 1px solid #000;
+}
+
+.unit-card__counter-box--info {
+  font-size: 0.5rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.unit-card__mp {
+  font-weight: 600;
+  display: block;
+}
+
+.unit-card__hex {
+  display: block;
+}
+
+.unit-card__fatigue {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Print styles */
+@media print {
+  .unit-card {
+    break-inside: avoid;
+  }
+
+  .unit-card__counter-box {
+    width: 0.55in;
+    height: 0.55in;
+  }
+  
+  .unit-card__counter-box--info {
+    color: #444;
+  }
+}

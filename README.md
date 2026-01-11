@@ -1,34 +1,82 @@
-# GCACW Scenario Parser
+# GCACW Scenario Parser & Roster Generator
 
-A Python tool for parsing scenario setup tables from Great Campaigns of the American Civil War (GCACW) game PDFs.
+Tools for parsing scenario setup tables from Great Campaigns of the American Civil War (GCACW) game PDFs and generating printable roster sheets.
 
-## Features
+## Overview
 
-- Extracts scenario metadata (name, game length, map, notes, special rules)
-- Parses Confederate and Union unit setup tables
-- Handles multi-word unit names (e.g., "RH Anderson", "Art Res-1")
-- Captures footnote symbols (*, ^, †) and their explanations
-- Exports to CSV and JSON formats
+This project has two parts:
 
-## Installation
+1. **Parser** (`parser/`) - Python tool that extracts unit data from PDF rulebooks
+2. **Web App** (`web/`) - React app that generates printable roster sheets
 
-Requires Python 3.10+ and [uv](https://github.com/astral-sh/uv):
+The roster sheets provide a place to track each unit's fortifications, manpower, and fatigue markers during play, reducing counter stacking on the game map.
+
+## Quick Start
+
+### Run the Web App
 
 ```bash
+cd web
+npm install
+npm run dev
+```
+
+Open http://localhost:5173 to view roster sheets. Use `Cmd+P` / `Ctrl+P` to print.
+
+### Parse a New PDF
+
+```bash
+cd parser
+uv run python scenario_parser.py ../data/YourGame.pdf
+uv run python convert_to_web.py
+```
+
+## Project Structure
+
+```
+gcacw-scenario-parser/
+├── parser/                     # Python PDF parser
+│   ├── scenario_parser.py      # Main parser class
+│   ├── convert_to_web.py       # Convert to web JSON format
+│   ├── all_scenarios.json      # Raw parser output
+│   └── all_scenarios_units.csv # Flat CSV export
+├── web/                        # React web app
+│   ├── src/
+│   │   ├── components/         # React components
+│   │   └── types.ts            # TypeScript interfaces
+│   └── public/data/
+│       └── otr2.json           # Web-formatted game data
+├── data/                       # Source PDFs (gitignored)
+└── .github/workflows/
+    └── deploy.yml              # GitHub Pages deployment
+```
+
+## Parser
+
+### Installation
+
+Requires Python 3.14+ and [uv](https://github.com/astral-sh/uv):
+
+```bash
+cd parser
 uv sync
 ```
 
-## Usage
+### Usage
 
 ```bash
-uv run python scenario_parser.py
+# Parse a PDF
+uv run python scenario_parser.py ../data/OTR2_Rules.pdf
+
+# Convert to web format
+uv run python convert_to_web.py
 ```
 
-This will:
-1. Parse `OTR2_Rules.pdf` in the current directory
-2. Output a summary of all scenarios
-3. Export `all_scenarios_units.csv` - flat CSV of all units
-4. Export `all_scenarios.json` - full structured data
+Output files:
+
+- `all_scenarios.json` - Full structured data
+- `all_scenarios_units.csv` - Flat CSV of all units
+- `../web/public/data/otr2.json` - Web-formatted JSON
 
 ### As a Library
 
@@ -38,57 +86,80 @@ from scenario_parser import ScenarioParser
 parser = ScenarioParser("OTR2_Rules.pdf")
 scenarios = parser.parse()
 
-# Get DataFrame of all units
-df = parser.to_dataframe()
-
-# Get JSON string
-json_data = parser.to_json()
-
-# Access individual scenarios
 for scenario in scenarios:
     print(f"{scenario.name}: {len(scenario.confederate_units)} CSA, {len(scenario.union_units)} USA")
 ```
 
-## Data Structure
+### Data Structure
 
-### Scenario
-- `number`: Scenario number (1-9)
-- `name`: Scenario title
-- `start_page`: PDF page number
-- `notes`: Scenario description/notes
-- `map_info`: Which maps to use
-- `game_length`: Duration and dates
-- `special_rules`: List of special rules
-- `footnotes`: Dict mapping symbols to explanations
-- `confederate_units`: List of Unit objects
-- `union_units`: List of Unit objects
+**Scenario:**
 
-### Unit
-- `unit_leader`: Unit name or leader name
-- `size`: Army, Corps, Div, Demi-Div, Brig, Regt
-- `command`: Command affiliation (e.g., "M", "ANV", "III")
-- `unit_type`: Ldr, Inf, Cav, Art
-- `manpower_value`: Strength value (may include markers like *)
-- `hex_location`: Starting hex or placement instructions
-- `side`: "Confederate" or "Union"
-- `notes`: List of footnote markers that apply to this unit
+- `number`, `name`, `start_page`
+- `game_length`, `map_info`, `notes`
+- `special_rules` (list)
+- `footnotes` (dict: symbol → explanation)
+- `confederate_units`, `union_units` (lists)
 
-## Supported PDFs
+**Unit:**
 
-Currently configured for **On To Richmond! (OTR2)** but can be adapted for other GCACW titles.
+- `unit_leader` - Name or leader
+- `size` - Army, Corps, Div, Demi-Div, Brig, Regt
+- `command` - Affiliation (e.g., "M", "ANV", "III")
+- `unit_type` - Ldr, Inf, Cav, Art
+- `manpower_value` - Strength (may include \* for footnotes)
+- `hex_location` - Starting hex
+- `notes` - Footnote markers
 
-## Output Example
+## Web App
 
+### Installation
+
+```bash
+cd web
+npm install
 ```
-Found 9 scenarios
 
-Scenario 1: The Warwick Line
-  Start page: 4
-  Game length: 3 turns; April 5 to April 7, 1862.
-  Confederate units: 15
-  Union units: 15
-  Footnotes: {'*': 'Sedgwick is part of Heintzelman's III Corps'}
+### Development
+
+```bash
+npm run dev
 ```
+
+### Build
+
+```bash
+npm run build
+```
+
+Output goes to `web/dist/`.
+
+### Deployment
+
+Push to `main` branch triggers GitHub Actions deployment to GitHub Pages.
+
+To enable:
+
+1. Go to repo Settings → Pages
+2. Set Source to "GitHub Actions"
+
+## Roster Sheet Layout
+
+Each unit card shows:
+
+- **Header**: Unit name and command
+- **Box 1**: Space for fortification marker
+- **Box 2**: Starting manpower and hex location
+- **Box 3**: Starting fatigue (if non-standard)
+
+Counter boxes are 0.55" (14mm) to fit GCACW 1/2" counters.
+
+## Supported Games
+
+- ✅ On To Richmond! (OTR2) - 9 scenarios, 604 units
+- ⬜ Stonewall Jackson's Way
+- ⬜ Here Come the Rebels
+- ⬜ Roads to Gettysburg
+- ⬜ Grant Takes Command
 
 ## License
 

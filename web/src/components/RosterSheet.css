@@ -1,0 +1,58 @@
+.roster-sheet {
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.5in;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.roster-sheet__header {
+  margin-bottom: 1rem;
+}
+
+.roster-sheet__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.roster-sheet__scenario {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.roster-sheet__length {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.roster-sheet__section {
+  margin-bottom: 1rem;
+}
+
+.roster-sheet__section-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.roster-sheet__units {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+/* Print styles */
+@media print {
+  .roster-sheet {
+    padding: 0;
+    max-width: none;
+  }
+
+  .roster-sheet__section {
+    break-inside: avoid;
+  }
+}

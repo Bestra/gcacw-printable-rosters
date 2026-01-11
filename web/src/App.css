@@ -1,0 +1,28 @@
+.app {
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+.loading,
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.25rem;
+}
+
+.error {
+  color: #c00;
+}
+
+/* Hide UI elements when printing */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .app {
+    background: #fff;
+  }
+}
