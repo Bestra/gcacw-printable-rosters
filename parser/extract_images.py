@@ -1,0 +1,417 @@
+#!/usr/bin/env python3
+"""
+Extract unit counter images from VASSAL modules (.vmod files).
+
+This script:
+1. Extracts images from a VASSAL module (which is a ZIP file)
+2. Maps unit names from parsed game data to image filenames
+3. Copies matched images to the web public directory
+
+Usage:
+    uv run python extract_images.py rtg2 /path/to/RTGII.vmod
+    uv run python extract_images.py rtg2 /path/to/extracted/images/  # if already extracted
+"""
+
+import argparse
+import json
+import os
+import re
+import shutil
+import tempfile
+import zipfile
+from dataclasses import dataclass
+from pathlib import Path
+
+
+@dataclass
+class ImageMatch:
+    """Represents a mapping between a unit and its image file."""
+    unit_leader: str
+    side: str  # 'Confederate' or 'Union'
+    image_filename: str
+    matched: bool = False
+
+
+def normalize_unit_name(name: str) -> str:
+    """
+    Normalize a unit name for matching against VASSAL image filenames.
+    
+    Transformations observed:
+    - "F. Lee" -> "F-Lee" (space and period -> hyphen)
+    - "A. Jenkins" -> "A-Jenkins"
+    - "J. Smith" -> "JSmith" (some variations)
+    - "JI Gregg" -> "JI-Greg" (note: might be typo in VASSAL)
+    - "Art Res-1" -> "Art1"
+    - "1 NY/12 PA" -> "1-NY-12-PA"
+    - "17 VA" -> "17VA" (space removed)
+    """
+    # Remove periods
+    name = name.replace('.', '')
+    
+    # Handle special cases for artillery reserves
+    if name.startswith('Art Res-'):
+        num = name.split('-')[-1]
+        return f"Art{num}"
+    
+    # Handle wagon train and other special units
+    if name.lower() in ['wagon train']:
+        return None  # No image expected
+    
+    # Replace slashes with hyphens
+    name = name.replace('/', '-')
+    
+    # Replace spaces with hyphens, but also try without
+    return name.replace(' ', '-')
+
+
+def get_alternate_names(name: str) -> list[str]:
+    """
+    Generate alternate name variations to try matching.
+    """
+    variations = []
+    
+    base = normalize_unit_name(name)
+    if base is None:
+        return []
+    
+    variations.append(base)
+    
+    # Try without hyphens
+    variations.append(base.replace('-', ''))
+    
+    # Try with underscores
+    variations.append(base.replace('-', '_'))
+    
+    # Handle initials - "JI Gregg" might be "JI-Greg" (single g)
+    if 'Gregg' in base:
+        variations.append(base.replace('Gregg', 'Greg'))
+    
+    # Handle Fessenden vs Fessendon
+    if 'Fessendon' in base:
+        variations.append(base.replace('Fessendon', 'Fessenden'))
+    
+    # Handle Sykes typo in VASSAL (Siykes)
+    if 'Sykes' in base:
+        variations.append(base.replace('Sykes', 'Siykes'))
+    
+    # Handle "DM Gregg" -> "Gregg" (strip leading initials for leaders)
+    # Pattern: one or more capital letters followed by space/hyphen at start
+    if re.match(r'^[A-Z]{1,2}[-\s]', name):
+        stripped = re.sub(r'^[A-Z]{1,2}[-\s]', '', name)
+        stripped_norm = normalize_unit_name(stripped)
+        if stripped_norm:
+            variations.append(stripped_norm)
+            # Also add Greg variant
+            if 'Gregg' in stripped_norm:
+                variations.append(stripped_norm.replace('Gregg', 'Greg'))
+    
+    return variations
+
+
+def find_image_match(unit_leader: str, side: str, unit_type: str, available_set: set[str]) -> str | None:
+    """
+    Find the best matching image filename for a unit.
+    
+    Args:
+        unit_leader: The unit leader name from parsed data
+        side: 'Confederate' or 'Union'
+        unit_type: 'Ldr', 'Inf', 'Cav', 'Art', etc.
+        available_set: Set of available image base names
+        
+    Returns:
+        The matched image base name (e.g., "C_Pender" or "CL_Lee") or None
+    """
+    # Determine prefix based on side and unit type
+    if unit_type == 'Ldr':
+        prefix = 'CL_' if side == 'Confederate' else 'UL_'
+    else:
+        prefix = 'C_' if side == 'Confederate' else 'U_'
+    
+    for variation in get_alternate_names(unit_leader):
+        candidate = f"{prefix}{variation}"
+        if candidate in available_set:
+            return candidate
+    
+    # For leaders, also try with command suffix (e.g., MeadeAP)
+    if unit_type == 'Ldr':
+        for variation in get_alternate_names(unit_leader):
+            # Try with common command suffixes
+            for suffix in ['AP', 'ANV', 'I', 'II', 'III', 'IV', 'V', 'VI', 'XI', 'XII', 'Cav', '1st', '2nd', '3rd']:
+                candidate = f"{prefix}{variation}{suffix}"
+                if candidate in available_set:
+                    return candidate
+    
+    return None
+
+
+def load_parsed_units(game: str) -> tuple[dict[str, str], dict[str, str]]:
+    """
+    Load unique unit leaders from a parsed game file.
+    
+    Returns:
+        Tuple of (confederate_units, union_units) dicts mapping unit_leader -> unit_type
+    """
+    parsed_file = Path(__file__).parent / 'parsed' / f'{game}_parsed.json'
+    
+    with open(parsed_file) as f:
+        data = json.load(f)
+    
+    confederate = {}
+    union = {}
+    
+    for scenario in data:
+        for unit in scenario.get('confederate_units', []):
+            name = unit['unit_leader']
+            utype = unit.get('unit_type', 'Inf')
+            # Keep the first type we encounter (or Ldr takes priority)
+            if name not in confederate or utype == 'Ldr':
+                confederate[name] = utype
+        for unit in scenario.get('union_units', []):
+            name = unit['unit_leader']
+            utype = unit.get('unit_type', 'Inf')
+            if name not in union or utype == 'Ldr':
+                union[name] = utype
+    
+    return confederate, union
+
+
+def find_images_directory(source: Path, game: str) -> Path:
+    """
+    Find the images directory from a source path.
+    
+    Handles:
+    - Direct path to images directory
+    - Path to extracted VMOD directory (with images subdirectory)
+    - Path to directory containing .vmod files (searches for matching game)
+    - Path to .vmod file directly
+    """
+    # If it's a .vmod file, extract it
+    if source.is_file() and source.suffix.lower() == '.vmod':
+        temp_dir = Path(tempfile.mkdtemp())
+        print(f"Extracting {source}...")
+        return extract_vmod(source, temp_dir)
+    
+    # If source/images exists, use it
+    if (source / 'images').is_dir():
+        return source / 'images'
+    
+    # If source itself is an images directory
+    if source.name == 'images' and source.is_dir():
+        return source
+    
+    # Look for .vmod files or extracted directories in source
+    if source.is_dir():
+        # Map game codes to possible VMOD naming patterns
+        game_patterns = {
+            'rtg2': ['RTGII', 'RTG2', 'RtG'],
+            'otr2': ['OTRII', 'OTR2', 'OtR'],
+            'gtc2': ['GTCII', 'GTC2', 'GtC'],
+            'hcr': ['HCR', 'HctR'],
+            'hsn': ['HSN'],
+            'rtw': ['RTW', 'RitWH'],
+        }
+        
+        patterns = game_patterns.get(game.lower(), [game.upper()])
+        
+        # First look for extracted directories (directories with 'images' subdirectory)
+        for item in source.iterdir():
+            if item.is_dir():
+                for pattern in patterns:
+                    if pattern.lower() in item.name.lower():
+                        if (item / 'images').is_dir():
+                            return item / 'images'
+        
+        # Then look for .vmod files
+        for item in source.iterdir():
+            if item.suffix.lower() == '.vmod':
+                for pattern in patterns:
+                    if pattern.lower() in item.name.lower():
+                        temp_dir = Path(tempfile.mkdtemp())
+                        print(f"Extracting {item}...")
+                        return extract_vmod(item, temp_dir)
+    
+    raise ValueError(f"Could not find images directory or VMOD file for {game} in {source}")
+
+
+def extract_vmod(vmod_path: Path, temp_dir: Path) -> Path:
+    """Extract a .vmod file and return the path to the images directory."""
+    with zipfile.ZipFile(vmod_path, 'r') as z:
+        z.extractall(temp_dir)
+    
+    images_dir = temp_dir / 'images'
+    if not images_dir.exists():
+        raise ValueError(f"No 'images' directory found in {vmod_path}")
+    
+    return images_dir
+
+
+def get_available_images(images_dir: Path) -> dict[str, Path]:
+    """
+    Get a dict of available images: base_name -> full path.
+    
+    Includes:
+    - C_ and U_ prefixed files (unit counters)
+    - CL_ and UL_ prefixed files (leader counters)
+    - .jpg and .gif files
+    """
+    images = {}
+    prefixes = ('C_', 'U_', 'CL_', 'UL_')
+    extensions = ('.jpg', '.gif')
+    
+    for f in images_dir.iterdir():
+        if f.suffix.lower() in extensions and f.name.startswith(prefixes):
+            # Skip _d depleted versions - we'll handle those separately
+            if '_d.' in f.name:
+                continue
+            base_name = f.stem  # filename without extension
+            # Prefer .jpg over .gif if both exist
+            if base_name not in images or f.suffix.lower() == '.jpg':
+                images[base_name] = f
+    return images
+
+
+def build_mapping(game: str, images_dir: Path) -> dict:
+    """
+    Build a mapping of unit names to image filenames.
+    
+    Returns a dict with:
+    - matched: dict mapping unit_leader to image basename
+    - unmatched: list of unit_leader names without matches
+    - unused_images: list of images not matched to any unit
+    """
+    confederate_units, union_units = load_parsed_units(game)
+    available_images = get_available_images(images_dir)
+    available_set = set(available_images.keys())
+    
+    matched = {}
+    unmatched = []
+    used_images = set()
+    
+    # Match Confederate units
+    for unit, unit_type in sorted(confederate_units.items()):
+        img = find_image_match(unit, 'Confederate', unit_type, available_set)
+        if img:
+            matched[f"C:{unit}"] = img
+            used_images.add(img)
+        else:
+            unmatched.append(f"Confederate ({unit_type}): {unit}")
+    
+    # Match Union units
+    for unit, unit_type in sorted(union_units.items()):
+        img = find_image_match(unit, 'Union', unit_type, available_set)
+        if img:
+            matched[f"U:{unit}"] = img
+            used_images.add(img)
+        else:
+            unmatched.append(f"Union ({unit_type}): {unit}")
+    
+    # Find unused images (excluding markers, VPs, etc.)
+    unused = []
+    for img_name in sorted(available_set - used_images):
+        # Skip known non-unit images
+        if any(x in img_name for x in ['Sub', 'VP', 'Losses', 'Corp', 'Minor', 'WH-Lee', 'Shen']):
+            continue
+        unused.append(img_name)
+    
+    return {
+        'matched': matched,
+        'unmatched': unmatched,
+        'unused_images': unused,
+        'image_paths': available_images
+    }
+
+
+def copy_images(mapping: dict, output_dir: Path, include_depleted: bool = False):
+    """
+    Copy matched images to the output directory.
+    
+    Args:
+        mapping: Result from build_mapping()
+        output_dir: Directory to copy images to
+        include_depleted: Whether to also copy _d.gif depleted images
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    image_paths = mapping['image_paths']
+    copied = 0
+    
+    for unit_key, img_name in mapping['matched'].items():
+        if img_name in image_paths:
+            src = image_paths[img_name]
+            dst = output_dir / src.name
+            shutil.copy2(src, dst)
+            copied += 1
+            
+            # Also copy depleted version if requested
+            if include_depleted:
+                depleted_name = f"{img_name}_d.gif"
+                depleted_src = src.parent / depleted_name
+                if depleted_src.exists():
+                    shutil.copy2(depleted_src, output_dir / depleted_name)
+    
+    return copied
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Extract unit images from VASSAL modules')
+    parser.add_argument('game', help='Game code (e.g., rtg2, otr2)')
+    parser.add_argument('source', help='Path to .vmod file, extracted directory, or directory containing VMOD files')
+    parser.add_argument('--output', '-o', help='Output directory (default: web/public/images/counters/<game>)')
+    parser.add_argument('--dry-run', '-n', action='store_true', help='Show mapping without copying files')
+    parser.add_argument('--include-depleted', '-d', action='store_true', help='Also copy depleted/exhausted images')
+    
+    args = parser.parse_args()
+    
+    source = Path(args.source).expanduser()  # Handle ~ in paths
+    
+    # Find the images directory using smart detection
+    images_dir = find_images_directory(source, args.game)
+    print(f"Using images from: {images_dir}")
+    
+    mapping = build_mapping(args.game, images_dir)
+    
+    # Print results
+    print(f"\n=== Mapping Results for {args.game} ===\n")
+    print(f"Matched: {len(mapping['matched'])} units")
+    print(f"Unmatched: {len(mapping['unmatched'])} units")
+    print(f"Unused images: {len(mapping['unused_images'])} images")
+    
+    if mapping['unmatched']:
+        print("\n--- Unmatched Units ---")
+        for u in mapping['unmatched']:
+            print(f"  {u}")
+    
+    if mapping['unused_images']:
+        print("\n--- Unused Images ---")
+        for img in mapping['unused_images']:
+            print(f"  {img}")
+    
+    # Save mapping to JSON
+    mapping_file = Path(__file__).parent / 'image_mappings' / f'{args.game}_images.json'
+    mapping_file.parent.mkdir(exist_ok=True)
+    
+    # Create a clean mapping dict for JSON (without Path objects)
+    clean_mapping = {
+        'game': args.game,
+        'matched': mapping['matched'],
+        'unmatched': mapping['unmatched'],
+        'unused_images': mapping['unused_images']
+    }
+    
+    with open(mapping_file, 'w') as f:
+        json.dump(clean_mapping, f, indent=2)
+    print(f"\nMapping saved to: {mapping_file}")
+    
+    if not args.dry_run:
+        # Determine output directory
+        if args.output:
+            output_dir = Path(args.output)
+        else:
+            output_dir = Path(__file__).parent.parent / 'web' / 'public' / 'images' / 'counters' / args.game
+        
+        copied = copy_images(mapping, output_dir, args.include_depleted)
+        print(f"\nCopied {copied} images to: {output_dir}")
+
+
+if __name__ == '__main__':
+    main()
