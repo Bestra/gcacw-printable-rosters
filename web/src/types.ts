@@ -7,6 +7,7 @@ export interface Unit {
   hexLocation: string;
   notes: string[];
   reinforcementSet?: string;
+  tableName?: string;
 }
 
 export interface Gunboat {

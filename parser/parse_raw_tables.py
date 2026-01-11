@@ -31,6 +31,7 @@ class Unit:
     # Optional fields for special tables
     turn: Optional[str] = None  # HCR reinforcement turn
     reinforcement_set: Optional[str] = None  # RTG2/HSN set number
+    table_name: Optional[str] = None  # Source table name (e.g., "First Increment")
 
 
 @dataclass
@@ -156,7 +157,7 @@ class RawTableParser:
                 return True
         return False
     
-    def _parse_special_unit(self, tokens: list, side: str) -> Optional[Unit]:
+    def _parse_special_unit(self, tokens: list, side: str, table_name: str = "") -> Optional[Unit]:
         """Parse a special unit row (Gunboat, Wagon Train, Naval Battery)."""
         if not tokens:
             return None
@@ -194,7 +195,8 @@ class RawTableParser:
             manpower_value="-",
             hex_location=hex_location,
             side=side,
-            notes=[]
+            notes=[],
+            table_name=table_name
         )
     
     def _find_size_index(self, tokens: list) -> tuple[Optional[int], Optional[str]]:
@@ -303,7 +305,8 @@ class RawTableParser:
             side=side,
             notes=sorted(all_notes),
             turn=turn_value,
-            reinforcement_set=set_value
+            reinforcement_set=set_value,
+            table_name=table_name
         )
     
     def parse_row(self, tokens: list, side: str, columns: list, 
@@ -314,7 +317,7 @@ class RawTableParser:
         
         # Check for special units first
         if self._is_special_unit(tokens):
-            return self._parse_special_unit(tokens, side)
+            return self._parse_special_unit(tokens, side, table_name)
         
         # Parse as standard unit
         return self._parse_standard_unit(tokens, side, columns, table_name)

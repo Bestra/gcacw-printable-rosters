@@ -34,6 +34,9 @@ def convert_unit(unit: dict) -> dict:
     # Include reinforcement set if present
     if unit.get("reinforcement_set"):
         result["reinforcementSet"] = unit["reinforcement_set"]
+    # Include table name if present
+    if unit.get("table_name"):
+        result["tableName"] = unit["table_name"]
     return result
 
 

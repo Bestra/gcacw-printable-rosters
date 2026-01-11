@@ -1,5 +1,6 @@
 import type { Unit } from "../types";
 import { parseHexLocation } from "../hexLocationConfig";
+import { getTableAbbreviation } from "../tableNameConfig";
 import "./UnitCard.css";
 
 interface UnitCardProps {
@@ -29,6 +30,9 @@ export function UnitCard({ unit, side, empty, startingFatigue, leaderName }: Uni
   // Parse hex location using shared config
   const { hexCode, locationName } = parseHexLocation(unit.hexLocation);
   
+  // Get table abbreviation (null for default setup tables)
+  const tableAbbrev = getTableAbbreviation(unit.tableName);
+  
   // Format manpower display
   const mpDisplay = unit.manpowerValue !== "-" ? unit.manpowerValue : "";
 
@@ -49,6 +53,7 @@ export function UnitCard({ unit, side, empty, startingFatigue, leaderName }: Uni
           <div className="unit-card__setup-info">
             <span className="unit-card__hex">{hexCode}</span>
             {locationName && <span className="unit-card__location">{locationName}</span>}
+            {tableAbbrev && <span className="unit-card__table">{tableAbbrev}</span>}
           </div>
         </div>
       </div>

@@ -172,6 +172,12 @@
   font-size: 0.7rem;
 }
 
+.flow-leader-header__table {
+  color: #933;
+  font-weight: 600;
+  font-size: 0.65rem;
+}
+
 .flow-leader-header__counter {
   flex-shrink: 0;
 }
@@ -237,6 +243,12 @@
   color: #0066cc;
   font-weight: 500;
   font-size: 0.65rem;
+}
+
+.flow-unit-row__table {
+  color: #933;
+  font-weight: 600;
+  font-size: 0.6rem;
 }
 
 .flow-unit-row__counters {

@@ -18,52 +18,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S4529 (Hood\u2019s Mill)",
-          "notes": []
-        },
-        {
-          "name": "F. Lee",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "S4529 (Hood\u2019s Mill)",
-          "notes": []
-        },
-        {
-          "name": "Hampton",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "S4530",
-          "notes": []
-        },
-        {
-          "name": "Chambliss",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "S4531 (Cooksville)",
-          "notes": []
-        },
-        {
-          "name": "Jones",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "S0116 (Williamsport)",
-          "notes": []
-        },
-        {
-          "name": "Robertson",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Lee",
@@ -72,7 +28,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N0929 (Chambersburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Longstreet",
@@ -81,43 +38,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N0929 (Chambersburg)",
-          "notes": []
-        },
-        {
-          "name": "Hood",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "N0929 (Chambersburg)",
-          "notes": []
-        },
-        {
-          "name": "McLaws",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "15",
-          "hexLocation": "N0929 (Chambersburg)",
-          "notes": []
-        },
-        {
-          "name": "Imboden",
-          "size": "Brig",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "N0929 (Chambersburg)",
-          "notes": []
-        },
-        {
-          "name": "Pickett",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "N1128",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hill",
@@ -126,43 +48,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N1229",
-          "notes": []
-        },
-        {
-          "name": "Anderson",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "15",
-          "hexLocation": "N1229",
-          "notes": []
-        },
-        {
-          "name": "Pender",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "N1330",
-          "notes": []
-        },
-        {
-          "name": "Heth",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "17",
-          "hexLocation": "N1430",
-          "notes": []
-        },
-        {
-          "name": "Law",
-          "size": "Brig",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "N1432 (New Guilford)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Ewell",
@@ -171,7 +58,138 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N3411 (Carlisle Barracks)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "F. Lee",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S4529 (Hood\u2019s Mill)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Hampton",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S4530",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Chambliss",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S4531 (Cooksville)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Jones",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Robertson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Hood",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "N0929 (Chambersburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "McLaws",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N0929 (Chambersburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Imboden",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N0929 (Chambersburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Pickett",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "N1128",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Anderson",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N1229",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Pender",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N1330",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Heth",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "17",
+          "hexLocation": "N1430",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Law",
+          "size": "Brig",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "N1432 (New Guilford)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Rodes",
@@ -180,7 +198,8 @@
           "type": "Inf",
           "manpowerValue": "16",
           "hexLocation": "N3411 (Carlisle Barracks)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Johnson",
@@ -189,7 +208,8 @@
           "type": "Inf",
           "manpowerValue": "14",
           "hexLocation": "N3312 (Carlisle)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "A. Jenkins",
@@ -198,7 +218,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "N4311 (Mechanicsburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Early",
@@ -207,7 +228,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "N5826 (York)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "17 VA",
@@ -216,10 +238,121 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "N5825 (Prospect Hill Cemetery)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
+        {
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3128 (New Market)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sedgwick",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3129 (Monrovia)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sickles",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3017",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Reynolds",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2219 (Lewistown)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Howard",
+          "size": "Corps",
+          "command": "XI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2419 (Utica)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Meade",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2722 (Walkersville)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Slocum",
+          "size": "Corps",
+          "command": "XII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2722 (Walkersville)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S1624",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2426",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hancock",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2924 (Mt Pleasant)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sykes",
+          "size": "Corps",
+          "command": "V",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2424 (Harmony Grove)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
         {
           "name": "7 NY",
           "size": "Regt",
@@ -229,7 +362,8 @@
           "hexLocation": "S5734 (Ellicott Mills)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "6 NY",
@@ -240,7 +374,8 @@
           "hexLocation": "S5734 (Ellicott Mills)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Huey",
@@ -249,7 +384,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3328",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "JI Gregg",
@@ -258,7 +394,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3128 (New Market)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "McIntosh",
@@ -267,25 +404,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3128 (New Market)",
-          "notes": []
-        },
-        {
-          "name": "DM Gregg",
-          "size": "Div",
-          "command": "2nd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3128 (New Market)",
-          "notes": []
-        },
-        {
-          "name": "Sedgwick",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3129 (Monrovia)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wright",
@@ -296,7 +416,8 @@
           "hexLocation": "S3129 (Monrovia)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Howe",
@@ -307,7 +428,8 @@
           "hexLocation": "S3129 (Monrovia)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Newton",
@@ -318,7 +440,8 @@
           "hexLocation": "S3129 (Monrovia)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Stannard",
@@ -329,16 +452,8 @@
           "hexLocation": "S2530",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Sickles",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3017",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Birney",
@@ -347,7 +462,8 @@
           "type": "Inf",
           "manpowerValue": "11#",
           "hexLocation": "S3017",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Humphreys",
@@ -356,16 +472,8 @@
           "type": "Inf",
           "manpowerValue": "10#",
           "hexLocation": "S3017",
-          "notes": []
-        },
-        {
-          "name": "Reynolds",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2219 (Lewistown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wadsworth",
@@ -376,7 +484,8 @@
           "hexLocation": "S2219 (Lewistown)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Robinson",
@@ -387,7 +496,8 @@
           "hexLocation": "S2219 (Lewistown)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Doubleday",
@@ -398,16 +508,8 @@
           "hexLocation": "S2219 (Lewistown)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Howard",
-          "size": "Corps",
-          "command": "XI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2419 (Utica)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Barlow",
@@ -418,7 +520,8 @@
           "hexLocation": "S2419 (Utica)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Steinwehr",
@@ -429,7 +532,8 @@
           "hexLocation": "S2419 (Utica)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Schurz",
@@ -440,25 +544,8 @@
           "hexLocation": "S2419 (Utica)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Meade",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2722 (Walkersville)",
-          "notes": []
-        },
-        {
-          "name": "Slocum",
-          "size": "Corps",
-          "command": "XII",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2722 (Walkersville)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Williams",
@@ -469,7 +556,8 @@
           "hexLocation": "S2722 (Walkersville)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Geary",
@@ -480,7 +568,8 @@
           "hexLocation": "S2722 (Walkersville)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-1",
@@ -491,7 +580,8 @@
           "hexLocation": "S2722 (Walkersville)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-2",
@@ -502,7 +592,8 @@
           "hexLocation": "S2722 (Walkersville)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-3",
@@ -513,7 +604,8 @@
           "hexLocation": "S2722 (Walkersville)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Merritt",
@@ -522,16 +614,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S1725 (Middletown)",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "1st",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S1624",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gamble",
@@ -540,7 +624,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S1624",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Devin",
@@ -549,16 +634,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S1624",
-          "notes": []
-        },
-        {
-          "name": "Kilpatrick",
-          "size": "Div",
-          "command": "3rd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2426",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Farnsworth",
@@ -567,7 +644,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2426",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Custer",
@@ -576,16 +654,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2426",
-          "notes": []
-        },
-        {
-          "name": "Hancock",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2924 (Mt Pleasant)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Caldwell",
@@ -596,7 +666,8 @@
           "hexLocation": "S2924 (Mt Pleasant)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gibbon",
@@ -607,7 +678,8 @@
           "hexLocation": "S2924 (Mt Pleasant)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Hays",
@@ -618,16 +690,8 @@
           "hexLocation": "S2924 (Mt Pleasant)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Sykes",
-          "size": "Corps",
-          "command": "V",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2424 (Harmony Grove)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Barnes",
@@ -638,7 +702,8 @@
           "hexLocation": "S2424 (Harmony Grove)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Ayres",
@@ -649,7 +714,8 @@
           "hexLocation": "S2424 (Harmony Grove)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Crawford",
@@ -660,7 +726,8 @@
           "hexLocation": "S2424 (Harmony Grove)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Lockwood",
@@ -671,7 +738,8 @@
           "hexLocation": "S2326 (Frederick)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Knipe",
@@ -680,7 +748,8 @@
           "type": "Inf",
           "manpowerValue": "2",
           "hexLocation": "N4609 (Stonepeace Church)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Ewen",
@@ -691,7 +760,8 @@
           "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Brisbane",
@@ -702,7 +772,8 @@
           "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Yates",
@@ -713,7 +784,8 @@
           "hexLocation": "N4603 (Marysville)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "J. Smith",
@@ -724,7 +796,8 @@
           "hexLocation": "N4909 (Harrisburg)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -743,7 +816,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S4529 (Hood\u2019s Mill)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "F. Lee",
@@ -752,7 +826,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S4529 (Hood\u2019s Mill)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hampton",
@@ -761,7 +836,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S4530",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Wagon Train",
@@ -770,7 +846,8 @@
           "type": "Special",
           "manpowerValue": "-",
           "hexLocation": "S4530",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Chambliss",
@@ -779,7 +856,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S4531 (Cooksville)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Early",
@@ -788,7 +866,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "N5826 (York)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "17 VA",
@@ -797,10 +876,31 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "N5825 (Prospect Hill Cemetery)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
+        {
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3128 (New Market)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2426",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
         {
           "name": "Knipe",
           "size": "Brig",
@@ -808,7 +908,8 @@
           "type": "Inf",
           "manpowerValue": "2",
           "hexLocation": "N4609 (Stonepeace Church)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Ewen",
@@ -819,7 +920,8 @@
           "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Brisbane",
@@ -830,7 +932,8 @@
           "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "J. Smith",
@@ -841,16 +944,8 @@
           "hexLocation": "N4909 (Harrisburg)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "DM Gregg",
-          "size": "Div",
-          "command": "2nd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3128 (New Market)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "JI Gregg",
@@ -859,7 +954,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3128 (New Market)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "McIntosh",
@@ -868,7 +964,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3128 (New Market)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Huey",
@@ -877,16 +974,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3328",
-          "notes": []
-        },
-        {
-          "name": "Kilpatrick",
-          "size": "Div",
-          "command": "3rd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2426",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Farnsworth",
@@ -895,7 +984,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2426",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Custer",
@@ -904,7 +994,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2426",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -925,7 +1016,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N3411 (Carlisle Barracks)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Rodes",
@@ -934,7 +1026,8 @@
           "type": "Inf",
           "manpowerValue": "16",
           "hexLocation": "N3411 (Carlisle Barracks)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Johnson",
@@ -943,7 +1036,8 @@
           "type": "Inf",
           "manpowerValue": "14",
           "hexLocation": "N3312 (Carlisle)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "A. Jenkins",
@@ -952,7 +1046,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "N4311 (Mechanicsburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Early",
@@ -961,7 +1056,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "N5826 (York)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
@@ -974,7 +1070,8 @@
           "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Ewen",
@@ -985,7 +1082,8 @@
           "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Yates",
@@ -996,7 +1094,8 @@
           "hexLocation": "N4603 (Marysville)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Knipe",
@@ -1005,7 +1104,8 @@
           "type": "Inf",
           "manpowerValue": "2",
           "hexLocation": "N4609 (Stonepeace Church)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "J. Smith",
@@ -1016,7 +1116,8 @@
           "hexLocation": "N4909 (Harrisburg)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -1037,34 +1138,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N2230 (Union Hotel)",
-          "notes": []
-        },
-        {
-          "name": "Pender",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "N2230 (Union Hotel)",
-          "notes": []
-        },
-        {
-          "name": "Heth",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "17",
-          "hexLocation": "N2532 (Cashtown)",
-          "notes": []
-        },
-        {
-          "name": "Anderson",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "15",
-          "hexLocation": "N1531 (Fayetteville)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Ewell",
@@ -1073,7 +1148,38 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N3627 (Heidlersburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Pender",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N2230 (Union Hotel)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Heth",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "17",
+          "hexLocation": "N2532 (Cashtown)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Anderson",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "N1531 (Fayetteville)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Rodes",
@@ -1084,7 +1190,8 @@
           "hexLocation": "N3627 (Heidlersburg)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Early",
@@ -1095,7 +1202,8 @@
           "hexLocation": "N3927 (Coach Shop)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Johnson",
@@ -1104,7 +1212,8 @@
           "type": "Inf",
           "manpowerValue": "14",
           "hexLocation": "N1226 (Scotland)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
@@ -1115,25 +1224,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N3134 (Seminary)",
-          "notes": []
-        },
-        {
-          "name": "Gamble",
-          "size": "Brig",
-          "command": "1st",
-          "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "N3134 (Seminary)",
-          "notes": []
-        },
-        {
-          "name": "Devin",
-          "size": "Brig",
-          "command": "1st",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "N3233 (Alms House)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Reynolds",
@@ -1142,34 +1234,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3103 (Peach Orchard)",
-          "notes": []
-        },
-        {
-          "name": "Wadsworth",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "8#",
-          "hexLocation": "S3103 (Peach Orchard)",
-          "notes": []
-        },
-        {
-          "name": "Doubleday",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "5#",
-          "hexLocation": "S3004",
-          "notes": []
-        },
-        {
-          "name": "Robinson",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "6#",
-          "hexLocation": "S3005 (Greenmount PO)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Howard",
@@ -1178,34 +1244,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S2906",
-          "notes": []
-        },
-        {
-          "name": "Barlow",
-          "size": "Div",
-          "command": "XI",
-          "type": "Inf",
-          "manpowerValue": "5#",
-          "hexLocation": "S2906",
-          "notes": []
-        },
-        {
-          "name": "Steinwehr",
-          "size": "Div",
-          "command": "XI",
-          "type": "Inf",
-          "manpowerValue": "5#",
-          "hexLocation": "S3007",
-          "notes": []
-        },
-        {
-          "name": "Schurz",
-          "size": "Div",
-          "command": "XI",
-          "type": "Inf",
-          "manpowerValue": "6#",
-          "hexLocation": "S3107 (Mill)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Sickles",
@@ -1214,25 +1254,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3310 (Bridgeport)",
-          "notes": []
-        },
-        {
-          "name": "Humphreys",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "S3310 (Bridgeport)",
-          "notes": []
-        },
-        {
-          "name": "Birney",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "11",
-          "hexLocation": "S3110",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Slocum",
@@ -1241,7 +1264,108 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S4007",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Gamble",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "N3134 (Seminary)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Devin",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3233 (Alms House)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Wadsworth",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "S3103 (Peach Orchard)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Doubleday",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "S3004",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Robinson",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "6#",
+          "hexLocation": "S3005 (Greenmount PO)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Barlow",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "S2906",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steinwehr",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "S3007",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Schurz",
+          "size": "Div",
+          "command": "XI",
+          "type": "Inf",
+          "manpowerValue": "6#",
+          "hexLocation": "S3107 (Mill)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Humphreys",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Birney",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "S3110",
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Williams",
@@ -1252,7 +1376,8 @@
           "hexLocation": "S4007",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Geary",
@@ -1263,7 +1388,8 @@
           "hexLocation": "S4007",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -1286,7 +1412,48 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N5223 (Dover)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Army",
+          "command": "ANV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Longstreet",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Hill",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N2230 (Union Hotel)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Ewell",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3627 (Heidlersburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "F. Lee",
@@ -1297,7 +1464,8 @@
           "hexLocation": "N5223 (Dover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hampton",
@@ -1308,7 +1476,8 @@
           "hexLocation": "N5223 (Dover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Chambliss",
@@ -1319,7 +1488,8 @@
           "hexLocation": "N5223 (Dover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Jones",
@@ -1328,7 +1498,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Robertson",
@@ -1337,25 +1508,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
-        },
-        {
-          "name": "Lee",
-          "size": "Army",
-          "command": "ANV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N1731 (Greenwood)",
-          "notes": []
-        },
-        {
-          "name": "Longstreet",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N1731 (Greenwood)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hood",
@@ -1364,7 +1518,8 @@
           "type": "Inf",
           "manpowerValue": "12",
           "hexLocation": "N1731 (Greenwood)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "McLaws",
@@ -1373,7 +1528,8 @@
           "type": "Inf",
           "manpowerValue": "15",
           "hexLocation": "N1731 (Greenwood)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Law",
@@ -1382,7 +1538,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "N1432 (New Guilford)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Pickett",
@@ -1391,7 +1548,8 @@
           "type": "Inf",
           "manpowerValue": "12",
           "hexLocation": "N1128",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Imboden",
@@ -1400,16 +1558,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "N0929 (Chambersburg)",
-          "notes": []
-        },
-        {
-          "name": "Hill",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N2230 (Union Hotel)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Pender",
@@ -1418,7 +1568,8 @@
           "type": "Inf",
           "manpowerValue": "14",
           "hexLocation": "N2230 (Union Hotel)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Heth",
@@ -1427,7 +1578,8 @@
           "type": "Inf",
           "manpowerValue": "17",
           "hexLocation": "N2532 (Cashtown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Anderson",
@@ -1436,7 +1588,8 @@
           "type": "Inf",
           "manpowerValue": "15",
           "hexLocation": "N1531 (Fayetteville)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Johnson",
@@ -1445,16 +1598,8 @@
           "type": "Inf",
           "manpowerValue": "14",
           "hexLocation": "N1226 (Scotland)",
-          "notes": []
-        },
-        {
-          "name": "Ewell",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N3627 (Heidlersburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Rodes",
@@ -1465,7 +1610,8 @@
           "hexLocation": "N3627 (Heidlersburg)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Early",
@@ -1476,7 +1622,8 @@
           "hexLocation": "N3927 (Coach Shop)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "A. Jenkins",
@@ -1485,7 +1632,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "N3824 (Petersburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "17VA",
@@ -1494,7 +1642,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "N3827",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
@@ -1505,7 +1654,108 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S2906",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Howard",
+          "size": "Corps",
+          "command": "XI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2709 (Emmitsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Meade",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sickles",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Slocum",
+          "size": "Corps",
+          "command": "XII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4007",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hancock",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sykes",
+          "size": "Corps",
+          "command": "V",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sedgwick",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S5211",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3134 (Seminary)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4503 (Hanover)",
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wadsworth",
@@ -1514,7 +1764,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S2906",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Doubleday",
@@ -1523,7 +1774,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2906",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Robinson",
@@ -1532,7 +1784,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S2808",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Stannard",
@@ -1543,16 +1796,8 @@
           "hexLocation": "S2711",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Howard",
-          "size": "Corps",
-          "command": "XI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2709 (Emmitsburg)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Barlow",
@@ -1561,7 +1806,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2709 (Emmitsburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Steinwehr",
@@ -1570,7 +1816,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2709 (Emmitsburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Schurz",
@@ -1579,25 +1826,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S2709 (Emmitsburg)",
-          "notes": []
-        },
-        {
-          "name": "Meade",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3310 (Bridgeport)",
-          "notes": []
-        },
-        {
-          "name": "Sickles",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3310 (Bridgeport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Humphreys",
@@ -1606,7 +1836,8 @@
           "type": "Inf",
           "manpowerValue": "10",
           "hexLocation": "S3310 (Bridgeport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Birney",
@@ -1615,16 +1846,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "S3110",
-          "notes": []
-        },
-        {
-          "name": "Slocum",
-          "size": "Corps",
-          "command": "XII",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S4007",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Williams",
@@ -1635,7 +1858,8 @@
           "hexLocation": "S4007",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Geary",
@@ -1646,7 +1870,8 @@
           "hexLocation": "S4007",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Lockwood",
@@ -1657,16 +1882,8 @@
           "hexLocation": "S2709 (Emmitsburg)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Hancock",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3915 (Uniontown)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Caldwell",
@@ -1675,7 +1892,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "S3915 (Uniontown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gibbon",
@@ -1684,7 +1902,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "S3915 (Uniontown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Hays",
@@ -1693,16 +1912,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S3915 (Uniontown)",
-          "notes": []
-        },
-        {
-          "name": "Sykes",
-          "size": "Corps",
-          "command": "V",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S4411 (Union Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Barnes",
@@ -1711,7 +1922,8 @@
           "type": "Inf",
           "manpowerValue": "7#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Ayres",
@@ -1720,7 +1932,8 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Crawford",
@@ -1729,16 +1942,8 @@
           "type": "Inf",
           "manpowerValue": "6#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": []
-        },
-        {
-          "name": "Sedgwick",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S5211",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wright",
@@ -1749,7 +1954,8 @@
           "hexLocation": "S5211",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Howe",
@@ -1760,7 +1966,8 @@
           "hexLocation": "S5211",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Newton",
@@ -1771,7 +1978,8 @@
           "hexLocation": "S5211",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-1",
@@ -1780,7 +1988,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-2",
@@ -1789,7 +1998,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-3",
@@ -1798,16 +2008,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "1st",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N3134 (Seminary)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gamble",
@@ -1816,7 +2018,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "N3134 (Seminary)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Devin",
@@ -1825,7 +2028,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "N3233 (PA College)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Merritt",
@@ -1834,16 +2038,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2314 (Mechanicstown)",
-          "notes": []
-        },
-        {
-          "name": "DM Gregg",
-          "size": "Div",
-          "command": "2nd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S5111 (Manchester)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "JI Gregg",
@@ -1854,7 +2050,8 @@
           "hexLocation": "S5111 (Manchester)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "McIntosh",
@@ -1865,7 +2062,8 @@
           "hexLocation": "S5111 (Manchester)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Huey",
@@ -1876,16 +2074,8 @@
           "hexLocation": "S5111 (Manchester)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Kilpatrick",
-          "size": "Div",
-          "command": "3rd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S4503 (Hanover)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Farnsworth",
@@ -1896,7 +2086,8 @@
           "hexLocation": "S4503 (Hanover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Custer",
@@ -1907,7 +2098,8 @@
           "hexLocation": "S4503 (Hanover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -1930,7 +2122,48 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N5223 (Dover)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Army",
+          "command": "ANV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Longstreet",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N1731 (Greenwood)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Hill",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N2230 (Union Hotel)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Ewell",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3627 (Heidlersburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "F. Lee",
@@ -1941,7 +2174,8 @@
           "hexLocation": "N5223 (Dover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hampton",
@@ -1952,7 +2186,8 @@
           "hexLocation": "N5223 (Dover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Chambliss",
@@ -1963,7 +2198,8 @@
           "hexLocation": "N5223 (Dover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Jones",
@@ -1972,7 +2208,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Robertson",
@@ -1981,25 +2218,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
-        },
-        {
-          "name": "Lee",
-          "size": "Army",
-          "command": "ANV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N1731 (Greenwood)",
-          "notes": []
-        },
-        {
-          "name": "Longstreet",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N1731 (Greenwood)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hood",
@@ -2008,7 +2228,8 @@
           "type": "Inf",
           "manpowerValue": "12",
           "hexLocation": "N1731 (Greenwood)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "McLaws",
@@ -2017,7 +2238,8 @@
           "type": "Inf",
           "manpowerValue": "15",
           "hexLocation": "N1731 (Greenwood)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Law",
@@ -2026,7 +2248,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "N1432 (New Guilford)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Pickett",
@@ -2035,7 +2258,8 @@
           "type": "Inf",
           "manpowerValue": "12",
           "hexLocation": "N1128",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Imboden",
@@ -2044,16 +2268,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "N0929 (Chambersburg)",
-          "notes": []
-        },
-        {
-          "name": "Hill",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N2230 (Union Hotel)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Pender",
@@ -2062,7 +2278,8 @@
           "type": "Inf",
           "manpowerValue": "14",
           "hexLocation": "N2230 (Union Hotel)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Heth",
@@ -2071,7 +2288,8 @@
           "type": "Inf",
           "manpowerValue": "17",
           "hexLocation": "N2532 (Cashtown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Anderson",
@@ -2080,7 +2298,8 @@
           "type": "Inf",
           "manpowerValue": "15",
           "hexLocation": "N1531 (Fayetteville)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Johnson",
@@ -2089,16 +2308,8 @@
           "type": "Inf",
           "manpowerValue": "14",
           "hexLocation": "N1226 (Scotland)",
-          "notes": []
-        },
-        {
-          "name": "Ewell",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N3627 (Heidlersburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Rodes",
@@ -2109,7 +2320,8 @@
           "hexLocation": "N3627 (Heidlersburg)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Early",
@@ -2120,7 +2332,8 @@
           "hexLocation": "N3927 (Coach Shop)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "A. Jenkins",
@@ -2129,7 +2342,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "N3824 (Petersburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "17VA",
@@ -2138,7 +2352,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "N3827",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
@@ -2149,7 +2364,108 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S2906",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Howard",
+          "size": "Corps",
+          "command": "XI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2709 (Emmitsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Meade",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sickles",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3310 (Bridgeport)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Slocum",
+          "size": "Corps",
+          "command": "XII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4007",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hancock",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3915 (Uniontown)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sykes",
+          "size": "Corps",
+          "command": "V",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4411 (Union Mills)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sedgwick",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S5211",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3134 (Seminary)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S5111 (Manchester)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S4503 (Hanover)",
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wadsworth",
@@ -2158,7 +2474,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S2906",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Doubleday",
@@ -2167,7 +2484,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2906",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Robinson",
@@ -2176,7 +2494,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S2808",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Stannard",
@@ -2187,16 +2506,8 @@
           "hexLocation": "S2711",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Howard",
-          "size": "Corps",
-          "command": "XI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2709 (Emmitsburg)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Barlow",
@@ -2205,7 +2516,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2709 (Emmitsburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Steinwehr",
@@ -2214,7 +2526,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2709 (Emmitsburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Schurz",
@@ -2223,25 +2536,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S2709 (Emmitsburg)",
-          "notes": []
-        },
-        {
-          "name": "Meade",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3310 (Bridgeport)",
-          "notes": []
-        },
-        {
-          "name": "Sickles",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3310 (Bridgeport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Humphreys",
@@ -2250,7 +2546,8 @@
           "type": "Inf",
           "manpowerValue": "10",
           "hexLocation": "S3310 (Bridgeport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Birney",
@@ -2259,16 +2556,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "S3110",
-          "notes": []
-        },
-        {
-          "name": "Slocum",
-          "size": "Corps",
-          "command": "XII",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S4007",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Williams",
@@ -2279,7 +2568,8 @@
           "hexLocation": "S4007",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Geary",
@@ -2290,7 +2580,8 @@
           "hexLocation": "S4007",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Lockwood",
@@ -2301,16 +2592,8 @@
           "hexLocation": "S2709 (Emmitsburg)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Hancock",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3915 (Uniontown)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Caldwell",
@@ -2319,7 +2602,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "S3915 (Uniontown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gibbon",
@@ -2328,7 +2612,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "S3915 (Uniontown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Hays",
@@ -2337,16 +2622,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S3915 (Uniontown)",
-          "notes": []
-        },
-        {
-          "name": "Sykes",
-          "size": "Corps",
-          "command": "V",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S4411 (Union Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Barnes",
@@ -2355,7 +2632,8 @@
           "type": "Inf",
           "manpowerValue": "7#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Ayres",
@@ -2364,7 +2642,8 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Crawford",
@@ -2373,16 +2652,8 @@
           "type": "Inf",
           "manpowerValue": "6#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": []
-        },
-        {
-          "name": "Sedgwick",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S5211",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wright",
@@ -2393,7 +2664,8 @@
           "hexLocation": "S5211",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Howe",
@@ -2404,7 +2676,8 @@
           "hexLocation": "S5211",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Newton",
@@ -2415,7 +2688,8 @@
           "hexLocation": "S5211",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-1",
@@ -2424,7 +2698,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-2",
@@ -2433,7 +2708,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-3",
@@ -2442,16 +2718,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "1st",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N3134 (Seminary)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gamble",
@@ -2460,7 +2728,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "N3134 (Seminary)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Devin",
@@ -2469,7 +2738,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "N3233 (PA College)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Merritt",
@@ -2478,16 +2748,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2314 (Mechanicstown)",
-          "notes": []
-        },
-        {
-          "name": "DM Gregg",
-          "size": "Div",
-          "command": "2nd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S5111 (Manchester)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "JI Gregg",
@@ -2498,7 +2760,8 @@
           "hexLocation": "S5111 (Manchester)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "McIntosh",
@@ -2509,7 +2772,8 @@
           "hexLocation": "S5111 (Manchester)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Huey",
@@ -2520,16 +2784,8 @@
           "hexLocation": "S5111 (Manchester)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Kilpatrick",
-          "size": "Div",
-          "command": "3rd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S4503 (Hanover)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Farnsworth",
@@ -2540,7 +2796,8 @@
           "hexLocation": "S4503 (Hanover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Custer",
@@ -2551,7 +2808,8 @@
           "hexLocation": "S4503 (Hanover)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -2576,7 +2834,48 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3201 (Gettysburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Army",
+          "command": "ANV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3102",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Hill",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3102",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Longstreet",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3103 (Peach Orchard)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stuart",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "N3533",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Rodes",
@@ -2587,7 +2886,8 @@
           "hexLocation": "S3201 (Gettysburg)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Early",
@@ -2598,7 +2898,8 @@
           "hexLocation": "N3334 (Benner\u2019s Hill)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Johnson",
@@ -2609,25 +2910,8 @@
           "hexLocation": "S3401 (Wolf Hill)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Lee",
-          "size": "Army",
-          "command": "ANV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3102",
-          "notes": []
-        },
-        {
-          "name": "Hill",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3102",
-          "notes": []
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Heth",
@@ -2638,7 +2922,8 @@
           "hexLocation": "S3102",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Pender",
@@ -2649,7 +2934,8 @@
           "hexLocation": "S3102",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Anderson",
@@ -2660,16 +2946,8 @@
           "hexLocation": "S3102",
           "notes": [
             "+"
-          ]
-        },
-        {
-          "name": "Longstreet",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3103 (Peach Orchard)",
-          "notes": []
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hood",
@@ -2680,7 +2958,8 @@
           "hexLocation": "S3103 (Peach Orchard)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "McLaws",
@@ -2691,7 +2970,8 @@
           "hexLocation": "S3103 (Peach Orchard)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Pickett",
@@ -2702,16 +2982,8 @@
           "hexLocation": "S3103 (Peach Orchard)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Stuart",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N3533",
-          "notes": []
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "A. Jenkins",
@@ -2720,7 +2992,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "N3533",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Chambliss",
@@ -2731,7 +3004,8 @@
           "hexLocation": "N3533",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hampton",
@@ -2742,7 +3016,8 @@
           "hexLocation": "N3533",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "F. Lee",
@@ -2753,7 +3028,8 @@
           "hexLocation": "N3533",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Imboden",
@@ -2762,7 +3038,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "N2532 (Cashtown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Jones",
@@ -2771,7 +3048,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S2504 (Fairfield)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Robertson",
@@ -2780,7 +3058,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S2504 (Fairfield)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
@@ -2791,43 +3070,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3203 (Round Top)",
-          "notes": []
-        },
-        {
-          "name": "Barnes",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "S3203 (Round Top)",
-          "notes": []
-        },
-        {
-          "name": "Ayres",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "S3203 (Round Top)",
-          "notes": []
-        },
-        {
-          "name": "Crawford",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "S3203 (Round Top)",
-          "notes": []
-        },
-        {
-          "name": "Art Res-1",
-          "size": "Brig",
-          "command": "AP",
-          "type": "Art",
-          "manpowerValue": "2",
-          "hexLocation": "S3203 (Round Top)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Meade",
@@ -2836,7 +3080,88 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3202 (Evergreen Cemetery)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Slocum",
+          "size": "Corps",
+          "command": "XII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3302 (Culp\u2019s Hill)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sedgwick",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3304",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3104",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Barnes",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ayres",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crawford",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Art Res-1",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-2",
@@ -2847,16 +3172,8 @@
           "hexLocation": "S3202 (Evergreen Cemetery)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Slocum",
-          "size": "Corps",
-          "command": "XII",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3302 (Culp\u2019s Hill)",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Williams",
@@ -2867,7 +3184,8 @@
           "hexLocation": "S3302 (Culp\u2019s Hill)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Geary",
@@ -2878,7 +3196,8 @@
           "hexLocation": "S3302 (Culp\u2019s Hill)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Howe",
@@ -2887,16 +3206,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S3402",
-          "notes": []
-        },
-        {
-          "name": "Sedgwick",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3304",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wright",
@@ -2905,7 +3216,8 @@
           "type": "Inf",
           "manpowerValue": "9",
           "hexLocation": "S3304",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Newton",
@@ -2914,7 +3226,8 @@
           "type": "Inf",
           "manpowerValue": "9",
           "hexLocation": "S3304",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Art Res-3",
@@ -2923,7 +3236,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S3304",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "McIntosh",
@@ -2934,7 +3248,8 @@
           "hexLocation": "S3601",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "JI Gregg",
@@ -2943,7 +3258,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3601",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Huey",
@@ -2952,16 +3268,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S4516 (Westminster)",
-          "notes": []
-        },
-        {
-          "name": "Kilpatrick",
-          "size": "Div",
-          "command": "3rd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3104",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Custer",
@@ -2972,7 +3280,8 @@
           "hexLocation": "S3104",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Richmond",
@@ -2983,7 +3292,8 @@
           "hexLocation": "S3104",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Merritt",
@@ -2992,16 +3302,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3104",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "1st",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Devin",
@@ -3010,7 +3312,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gamble",
@@ -3019,7 +3322,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -3042,7 +3346,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N3133",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "A. Jenkins",
@@ -3051,7 +3356,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "N3133",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Chambliss",
@@ -3062,7 +3368,8 @@
           "hexLocation": "N3133",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hampton",
@@ -3073,7 +3380,8 @@
           "hexLocation": "N3133",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "F. Lee",
@@ -3084,7 +3392,8 @@
           "hexLocation": "N2532 (Cashtown)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Imboden",
@@ -3093,7 +3402,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "N2532 (Cashtown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Jones",
@@ -3102,7 +3412,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S2504 (Fairfield)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Robertson",
@@ -3111,7 +3422,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S2504 (Fairfield)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Wagon Train",
@@ -3120,7 +3432,8 @@
           "type": "Special",
           "manpowerValue": "-",
           "hexLocation": "N2532 (Cashtown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Wagon Train",
@@ -3129,7 +3442,8 @@
           "type": "Special",
           "manpowerValue": "-",
           "hexLocation": "N2732",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Wagon Train",
@@ -3138,7 +3452,8 @@
           "type": "Special",
           "manpowerValue": "-",
           "hexLocation": "N2832 (Little\u2019s Store)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Wagon Train",
@@ -3147,7 +3462,8 @@
           "type": "Special",
           "manpowerValue": "-",
           "hexLocation": "S2902",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "54 NC",
@@ -3156,7 +3472,8 @@
           "type": "Inf",
           "manpowerValue": "1",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "58 VA",
@@ -3165,7 +3482,8 @@
           "type": "Inf",
           "manpowerValue": "1",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Iverson",
@@ -3176,10 +3494,31 @@
           "hexLocation": "N3134 (Seminary)",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3104",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S3611 (Taneytown)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
         {
           "name": "McIntosh",
           "size": "Brig",
@@ -3189,7 +3528,8 @@
           "hexLocation": "S3601",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "JI Gregg",
@@ -3198,7 +3538,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3601",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Huey",
@@ -3207,16 +3548,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S4516 (Westminster)",
-          "notes": []
-        },
-        {
-          "name": "Kilpatrick",
-          "size": "Div",
-          "command": "3rd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3104",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Custer",
@@ -3227,7 +3560,8 @@
           "hexLocation": "S3104",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Richmond",
@@ -3238,7 +3572,8 @@
           "hexLocation": "S3104",
           "notes": [
             "+"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Merritt",
@@ -3247,16 +3582,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3104",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "1st",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Devin",
@@ -3265,7 +3592,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gamble",
@@ -3274,7 +3602,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3611 (Taneytown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "1NY/12PA",
@@ -3283,7 +3612,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "N0130 (St. Thomas)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "13PA",
@@ -3292,7 +3622,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S1725 (Middletown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -3313,7 +3644,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S2406",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Longstreet",
@@ -3322,7 +3654,38 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S2406",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Hill",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2504 (Fairfield)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Ewell",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2802 (Mineral Mill)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stuart",
+          "size": "Corps",
+          "command": "Cav",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2908 (Saw Mill)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hood",
@@ -3333,7 +3696,8 @@
           "hexLocation": "S2406",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "McLaws",
@@ -3344,7 +3708,8 @@
           "hexLocation": "S2405",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Pickett",
@@ -3355,16 +3720,8 @@
           "hexLocation": "S2404",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Hill",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2504 (Fairfield)",
-          "notes": []
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Heth",
@@ -3375,7 +3732,8 @@
           "hexLocation": "S2504 (Fairfield)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Pender",
@@ -3386,7 +3744,8 @@
           "hexLocation": "S2603",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Anderson",
@@ -3397,16 +3756,8 @@
           "hexLocation": "S2703 (Presb. Church)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Ewell",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2802 (Mineral Mill)",
-          "notes": []
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Early",
@@ -3417,7 +3768,8 @@
           "hexLocation": "S2802 (Mineral Mill)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Rodes",
@@ -3428,7 +3780,8 @@
           "hexLocation": "S2802 (Mineral Mill)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Johnson",
@@ -3439,16 +3792,8 @@
           "hexLocation": "S2802 (Mineral Mill)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Stuart",
-          "size": "Corps",
-          "command": "Cav",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2908 (Saw Mill)",
-          "notes": []
+          ],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "A. Jenkins",
@@ -3457,7 +3802,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S2908 (Saw Mill)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Chambliss",
@@ -3466,7 +3812,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S2908 (Saw Mill)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Jones",
@@ -3475,7 +3822,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S2105",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Robertson",
@@ -3484,7 +3832,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S1807 (Buena Vista Hotel)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Imboden",
@@ -3493,7 +3842,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S0604 (Greencastle)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "F. Lee",
@@ -3502,7 +3852,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S0604 (Greencastle)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hampton",
@@ -3511,7 +3862,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S0604 (Greencastle)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "54 NC",
@@ -3520,7 +3872,8 @@
           "type": "Inf",
           "manpowerValue": "1",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "58 VA",
@@ -3529,7 +3882,8 @@
           "type": "Inf",
           "manpowerValue": "1",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         }
       ],
       "unionUnits": [
@@ -3540,43 +3894,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3203 (Round Top)",
-          "notes": []
-        },
-        {
-          "name": "Barnes",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "S3203 (Round Top)",
-          "notes": []
-        },
-        {
-          "name": "Ayres",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "S3203 (Round Top)",
-          "notes": []
-        },
-        {
-          "name": "Crawford",
-          "size": "Div",
-          "command": "V",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "S3203 (Round Top)",
-          "notes": []
-        },
-        {
-          "name": "Art Res-1",
-          "size": "Brig",
-          "command": "AP",
-          "type": "Art",
-          "manpowerValue": "2",
-          "hexLocation": "S3203 (Round Top)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Meade",
@@ -3585,16 +3904,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3202 (Evergreen Cemetery)",
-          "notes": []
-        },
-        {
-          "name": "Art Res-2",
-          "size": "Brig",
-          "command": "AP",
-          "type": "Art",
-          "manpowerValue": "2",
-          "hexLocation": "S3202 (Evergreen Cemetery)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Slocum",
@@ -3603,34 +3914,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3302 (Culp\u2019s Hill)",
-          "notes": []
-        },
-        {
-          "name": "Williams",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "10",
-          "hexLocation": "S3302 (Culp\u2019s Hill)",
-          "notes": []
-        },
-        {
-          "name": "Geary",
-          "size": "Div",
-          "command": "XII",
-          "type": "Inf",
-          "manpowerValue": "7",
-          "hexLocation": "S3302 (Culp\u2019s Hill)",
-          "notes": []
-        },
-        {
-          "name": "Howe",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "8",
-          "hexLocation": "S3402",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Sedgwick",
@@ -3639,88 +3924,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3304",
-          "notes": []
-        },
-        {
-          "name": "Wright",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "S3304",
-          "notes": []
-        },
-        {
-          "name": "Newton",
-          "size": "Div",
-          "command": "VI",
-          "type": "Inf",
-          "manpowerValue": "9",
-          "hexLocation": "S3304",
-          "notes": []
-        },
-        {
-          "name": "Art Res-3",
-          "size": "Brig",
-          "command": "AP",
-          "type": "Art",
-          "manpowerValue": "2",
-          "hexLocation": "S3304",
-          "notes": []
-        },
-        {
-          "name": "McIntosh",
-          "size": "Brig",
-          "command": "2nd",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "S3204",
-          "notes": []
-        },
-        {
-          "name": "Brisbane",
-          "size": "Brig",
-          "command": "PA",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "N2822",
-          "notes": []
-        },
-        {
-          "name": "Knipe",
-          "size": "Brig",
-          "command": "PA",
-          "type": "Inf",
-          "manpowerValue": "6",
-          "hexLocation": "N2822",
-          "notes": []
-        },
-        {
-          "name": "Ewen",
-          "size": "Brig",
-          "command": "PA",
-          "type": "Inf",
-          "manpowerValue": "4",
-          "hexLocation": "N3320",
-          "notes": []
-        },
-        {
-          "name": "JI Gregg",
-          "size": "Brig",
-          "command": "2nd",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "N3631 (Hunterstown)",
-          "notes": []
-        },
-        {
-          "name": "Huey",
-          "size": "Brig",
-          "command": "2nd",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "S2209",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Kilpatrick",
@@ -3729,34 +3934,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S2109",
-          "notes": []
-        },
-        {
-          "name": "Custer",
-          "size": "Brig",
-          "command": "3rd",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "S2109",
-          "notes": []
-        },
-        {
-          "name": "Richmond",
-          "size": "Brig",
-          "command": "3rd",
-          "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "S2009 (Sabillasville)",
-          "notes": []
-        },
-        {
-          "name": "Merritt",
-          "size": "Brig",
-          "command": "1st",
-          "type": "Cav",
-          "manpowerValue": "2",
-          "hexLocation": "S2314",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Buford",
@@ -3765,7 +3944,208 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3117 (Ladiesburg PO)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Barnes",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ayres",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crawford",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Art Res-1",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3203 (Round Top)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Art Res-2",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3202 (Evergreen Cemetery)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Williams",
+          "size": "Div",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "S3302 (Culp\u2019s Hill)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Geary",
+          "size": "Div",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "S3302 (Culp\u2019s Hill)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Howe",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "S3402",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Wright",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "S3304",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Newton",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "S3304",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Art Res-3",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Art",
+          "manpowerValue": "2",
+          "hexLocation": "S3304",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McIntosh",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S3204",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Brisbane",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "N2822",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Knipe",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "N2822",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ewen",
+          "size": "Brig",
+          "command": "PA",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "N3320",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "JI Gregg",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "N3631 (Hunterstown)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Huey",
+          "size": "Brig",
+          "command": "2nd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S2209",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Custer",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S2109",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Richmond",
+          "size": "Brig",
+          "command": "3rd",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S2009 (Sabillasville)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Merritt",
+          "size": "Brig",
+          "command": "1st",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "S2314",
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Devin",
@@ -3774,7 +4154,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3117 (Ladiesburg PO)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Gamble",
@@ -3783,7 +4164,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3117 (Ladiesburg PO)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "13 PA",
@@ -3792,7 +4174,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S1725 (Middletown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Morris",
@@ -3801,7 +4184,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S1128",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Kenly",
@@ -3810,7 +4194,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2326 (Frederick)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Elliott",
@@ -3819,7 +4204,8 @@
           "type": "Inf",
           "manpowerValue": "4",
           "hexLocation": "S5734 (Ellicott Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "B. Smith",
@@ -3828,7 +4214,8 @@
           "type": "Inf",
           "manpowerValue": "2",
           "hexLocation": "S5734 (Ellicott Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Briggs",
@@ -3837,7 +4224,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S5734 (Ellicott Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Spinola",
@@ -3846,7 +4234,8 @@
           "type": "Inf",
           "manpowerValue": "3",
           "hexLocation": "S5734 (Ellicott Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wells",
@@ -3855,7 +4244,8 @@
           "type": "Inf",
           "manpowerValue": "3",
           "hexLocation": "S5734 (Ellicott Mills)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "1 NY/12 PA",
@@ -3864,7 +4254,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "N0130 (St. Thomas)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "1 CT",
@@ -3873,7 +4264,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S5233 (St. Charles College)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         }
       ],
       "confederateGunboats": [],
@@ -3890,49 +4282,14 @@
       },
       "confederateUnits": [
         {
-          "name": "A. Jenkins",
-          "size": "Brig",
-          "command": "Cav",
-          "type": "Cav",
-          "manpowerValue": "3",
-          "hexLocation": "S0608 (Middleburg)",
-          "notes": []
-        },
-        {
-          "name": "Rodes",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "16",
-          "hexLocation": "S0815 (Funkstown)",
-          "notes": []
-        },
-        {
           "name": "Ewell",
           "size": "Corps",
           "command": "II",
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S0525 (Sharpsburg)",
-          "notes": []
-        },
-        {
-          "name": "Johnson",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "S0525 (Sharpsburg)",
-          "notes": []
-        },
-        {
-          "name": "Early",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "11",
-          "hexLocation": "S0326 (Ferry Hill Place)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hill",
@@ -3941,34 +4298,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S0226 (Shepherdstown)",
-          "notes": []
-        },
-        {
-          "name": "Pender",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "14",
-          "hexLocation": "S0226 (Shepherdstown)",
-          "notes": []
-        },
-        {
-          "name": "Anderson",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "15",
-          "hexLocation": "S0226 (Shepherdstown)",
-          "notes": []
-        },
-        {
-          "name": "Heth",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "17",
-          "hexLocation": "S0226 (Shepherdstown)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Lee",
@@ -3977,7 +4308,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Longstreet",
@@ -3986,34 +4318,8 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S0116 (Williamsport)",
-          "notes": []
-        },
-        {
-          "name": "Pickett",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "12",
-          "hexLocation": "S0116 (Williamsport)",
-          "notes": []
-        },
-        {
-          "name": "McLaws",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "15",
-          "hexLocation": "S0116 (Williamsport)",
-          "notes": []
-        },
-        {
-          "name": "Hood",
-          "size": "Div",
-          "command": "I",
-          "type": "Inf",
-          "manpowerValue": "16",
-          "hexLocation": "S0116 (Williamsport)",
-          "notes": []
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Stuart",
@@ -4022,7 +4328,108 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "S3134 to S5833^",
-          "notes": []
+          "notes": [],
+          "tableName": "Placed Upon Stuart\u2019S Arrival"
+        },
+        {
+          "name": "A. Jenkins",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "S0608 (Middleburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Rodes",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "16",
+          "hexLocation": "S0815 (Funkstown)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Johnson",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "S0525 (Sharpsburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Early",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "S0326 (Ferry Hill Place)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Pender",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "S0226 (Shepherdstown)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Anderson",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "S0226 (Shepherdstown)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Heth",
+          "size": "Div",
+          "command": "III",
+          "type": "Inf",
+          "manpowerValue": "17",
+          "hexLocation": "S0226 (Shepherdstown)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Pickett",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "McLaws",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "15",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Hood",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "16",
+          "hexLocation": "S0116 (Williamsport)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
         },
         {
           "name": "Hampton",
@@ -4031,7 +4438,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S3134 to S5833^",
-          "notes": []
+          "notes": [],
+          "tableName": "Placed Upon Stuart\u2019S Arrival"
         },
         {
           "name": "F. Lee",
@@ -4040,7 +4448,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S3134 to S5833^",
-          "notes": []
+          "notes": [],
+          "tableName": "Placed Upon Stuart\u2019S Arrival"
         },
         {
           "name": "Chambliss",
@@ -4049,7 +4458,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S3134 to S5833^",
-          "notes": []
+          "notes": [],
+          "tableName": "Placed Upon Stuart\u2019S Arrival"
         },
         {
           "name": "Imboden",
@@ -4059,7 +4469,8 @@
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "1"
+          "reinforcementSet": "1",
+          "tableName": "Confederate Reinforcement Track"
         },
         {
           "name": "Jones",
@@ -4069,7 +4480,8 @@
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "2"
+          "reinforcementSet": "2",
+          "tableName": "Confederate Reinforcement Track"
         },
         {
           "name": "Robertson",
@@ -4079,7 +4491,8 @@
           "manpowerValue": "2",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "2"
+          "reinforcementSet": "2",
+          "tableName": "Confederate Reinforcement Track"
         },
         {
           "name": "54 NC",
@@ -4089,7 +4502,8 @@
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "3"
+          "reinforcementSet": "3",
+          "tableName": "Confederate Reinforcement Track"
         },
         {
           "name": "58 VA",
@@ -4099,7 +4513,8 @@
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "3"
+          "reinforcementSet": "3",
+          "tableName": "Confederate Reinforcement Track"
         },
         {
           "name": "12 VA",
@@ -4109,7 +4524,8 @@
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "4"
+          "reinforcementSet": "4",
+          "tableName": "Confederate Reinforcement Track"
         },
         {
           "name": "Corse",
@@ -4119,7 +4535,8 @@
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "1"
+          "reinforcementSet": "1",
+          "tableName": "Richmond Garrison Track"
         },
         {
           "name": "M.Jenkins",
@@ -4129,7 +4546,8 @@
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "2"
+          "reinforcementSet": "2",
+          "tableName": "Richmond Garrison Track"
         },
         {
           "name": "Cooke",
@@ -4139,7 +4557,8 @@
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "3"
+          "reinforcementSet": "3",
+          "tableName": "Richmond Garrison Track"
         },
         {
           "name": "Wise",
@@ -4149,10 +4568,121 @@
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 3.2",
           "notes": [],
-          "reinforcementSet": "4"
+          "reinforcementSet": "4",
+          "tableName": "Richmond Garrison Track"
         }
       ],
       "unionUnits": [
+        {
+          "name": "Reynolds",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
+        },
+        {
+          "name": "Sickles",
+          "size": "Corps",
+          "command": "III",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
+        },
+        {
+          "name": "Howard",
+          "size": "Corps",
+          "command": "XI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
+        },
+        {
+          "name": "Kilpatrick",
+          "size": "Div",
+          "command": "3rd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
+        },
+        {
+          "name": "Hancock",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
+        },
+        {
+          "name": "Sykes",
+          "size": "Corps",
+          "command": "V",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
+        },
+        {
+          "name": "Slocum",
+          "size": "Corps",
+          "command": "XII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
+        },
+        {
+          "name": "Meade",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
+        },
+        {
+          "name": "Buford",
+          "size": "Div",
+          "command": "1st",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
+        },
+        {
+          "name": "DM Gregg",
+          "size": "Div",
+          "command": "2nd",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
+        },
+        {
+          "name": "Sedgwick",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "S2134 to S3534^",
+          "notes": [],
+          "tableName": "Army Of The Potomac Third Increment"
+        },
         {
           "name": "Lockwood",
           "size": "Brig",
@@ -4162,7 +4692,8 @@
           "hexLocation": "S5734 (Ellicott Mills)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "7 NY",
@@ -4173,7 +4704,8 @@
           "hexLocation": "S5734 (Ellicott Mills)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Morris",
@@ -4184,7 +4716,8 @@
           "hexLocation": "S2428 (Frederick Junction)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "6 NY",
@@ -4195,7 +4728,8 @@
           "hexLocation": "S2428 (Frederick Junction)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "2 MA",
@@ -4204,7 +4738,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S1633 (Catoctin Switch)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "13 PA",
@@ -4213,7 +4748,8 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "S1031 (Weverton)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Kenly",
@@ -4224,7 +4760,8 @@
           "hexLocation": "S0732 (Naval Battery)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Elliott",
@@ -4235,7 +4772,8 @@
           "hexLocation": "S0532 (Bolivar Heights)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "B. Smith",
@@ -4246,7 +4784,8 @@
           "hexLocation": "S0533 (Chambers Farm)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Knipe",
@@ -4255,7 +4794,8 @@
           "type": "Inf",
           "manpowerValue": "1",
           "hexLocation": "N0929 (Chambersburg)",
-          "notes": []
+          "notes": [],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Yates",
@@ -4266,7 +4806,8 @@
           "hexLocation": "N4603 (Marysville)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Crooke",
@@ -4277,7 +4818,8 @@
           "hexLocation": "N4603 (Marysville)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Ewen",
@@ -4288,7 +4830,8 @@
           "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Brisbane",
@@ -4299,7 +4842,8 @@
           "hexLocation": "N4809 (Bridgeport)",
           "notes": [
             "*"
-          ]
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "J. Smith",
@@ -4310,16 +4854,8 @@
           "hexLocation": "N4909 (Harrisburg)",
           "notes": [
             "*"
-          ]
-        },
-        {
-          "name": "Reynolds",
-          "size": "Corps",
-          "command": "I",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          ],
+          "tableName": "Union Set-Up"
         },
         {
           "name": "Wadsworth",
@@ -4328,7 +4864,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Robinson",
@@ -4337,7 +4874,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Doubleday",
@@ -4346,16 +4884,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Sickles",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Birney",
@@ -4364,7 +4894,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Humphreys",
@@ -4373,16 +4904,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Howard",
-          "size": "Corps",
-          "command": "XI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Barlow",
@@ -4391,7 +4914,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Steinwehr",
@@ -4400,7 +4924,8 @@
           "type": "Inf",
           "manpowerValue": "5",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Schurz",
@@ -4409,16 +4934,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Kilpatrick",
-          "size": "Div",
-          "command": "3rd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Custer",
@@ -4427,7 +4944,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Farnsworth",
@@ -4436,16 +4954,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Hancock",
-          "size": "Corps",
-          "command": "II",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac First Increment"
         },
         {
           "name": "Caldwell",
@@ -4454,7 +4964,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Gibbon",
@@ -4463,7 +4974,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Hays",
@@ -4472,16 +4984,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Sykes",
-          "size": "Corps",
-          "command": "V",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Barnes",
@@ -4490,7 +4994,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Ayres",
@@ -4499,7 +5004,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Crawford",
@@ -4508,16 +5014,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Slocum",
-          "size": "Corps",
-          "command": "XII",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Williams",
@@ -4526,7 +5024,8 @@
           "type": "Inf",
           "manpowerValue": "7",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Geary",
@@ -4535,16 +5034,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Meade",
-          "size": "Army",
-          "command": "AP",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Art Res-1",
@@ -4553,7 +5044,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Art Res-2",
@@ -4562,7 +5054,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Art Res-3",
@@ -4571,16 +5064,8 @@
           "type": "Art",
           "manpowerValue": "2",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Buford",
-          "size": "Div",
-          "command": "1st",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Gamble",
@@ -4589,7 +5074,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Devin",
@@ -4598,7 +5084,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Merritt",
@@ -4607,16 +5094,8 @@
           "type": "Cav",
           "manpowerValue": "3",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "DM Gregg",
-          "size": "Div",
-          "command": "2nd",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "McIntosh",
@@ -4625,7 +5104,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Huey",
@@ -4634,7 +5114,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "JI Gregg",
@@ -4643,16 +5124,8 @@
           "type": "Cav",
           "manpowerValue": "2",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
-        },
-        {
-          "name": "Sedgwick",
-          "size": "Corps",
-          "command": "VI",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Second Increment"
         },
         {
           "name": "Wright",
@@ -4661,7 +5134,8 @@
           "type": "Inf",
           "manpowerValue": "9",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Third Increment"
         },
         {
           "name": "Howe",
@@ -4670,7 +5144,8 @@
           "type": "Inf",
           "manpowerValue": "8",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Third Increment"
         },
         {
           "name": "Newton",
@@ -4679,7 +5154,8 @@
           "type": "Inf",
           "manpowerValue": "11",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Third Increment"
         },
         {
           "name": "Stannard",
@@ -4688,7 +5164,8 @@
           "type": "Inf",
           "manpowerValue": "6",
           "hexLocation": "S2134 to S3534^",
-          "notes": []
+          "notes": [],
+          "tableName": "Army Of The Potomac Third Increment"
         },
         {
           "name": "1 NY/12 PA",
@@ -4698,7 +5175,8 @@
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "1"
+          "reinforcementSet": "1",
+          "tableName": "West Virginia Reinforcement Track"
         },
         {
           "name": "Mulligan",
@@ -4708,7 +5186,8 @@
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "2"
+          "reinforcementSet": "2",
+          "tableName": "West Virginia Reinforcement Track"
         },
         {
           "name": "Campbell",
@@ -4718,7 +5197,8 @@
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "2"
+          "reinforcementSet": "2",
+          "tableName": "West Virginia Reinforcement Track"
         },
         {
           "name": "Wilkinson",
@@ -4728,7 +5208,8 @@
           "manpowerValue": "2",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "2"
+          "reinforcementSet": "2",
+          "tableName": "West Virginia Reinforcement Track"
         },
         {
           "name": "Pierce",
@@ -4738,7 +5219,8 @@
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "3"
+          "reinforcementSet": "3",
+          "tableName": "West Virginia Reinforcement Track"
         },
         {
           "name": "1 CT",
@@ -4748,7 +5230,8 @@
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "1"
+          "reinforcementSet": "1",
+          "tableName": "Baltimore/Dc Reinforcement Track"
         },
         {
           "name": "Briggs",
@@ -4758,7 +5241,8 @@
           "manpowerValue": "5",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "2"
+          "reinforcementSet": "2",
+          "tableName": "Baltimore/Dc Reinforcement Track"
         },
         {
           "name": "Spinola",
@@ -4768,7 +5252,8 @@
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "3"
+          "reinforcementSet": "3",
+          "tableName": "Baltimore/Dc Reinforcement Track"
         },
         {
           "name": "39 MA",
@@ -4778,7 +5263,8 @@
           "manpowerValue": "1",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "3"
+          "reinforcementSet": "3",
+          "tableName": "Baltimore/Dc Reinforcement Track"
         },
         {
           "name": "Wells",
@@ -4788,7 +5274,8 @@
           "manpowerValue": "4",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "4"
+          "reinforcementSet": "4",
+          "tableName": "Baltimore/Dc Reinforcement Track"
         },
         {
           "name": "Sickel",
@@ -4798,7 +5285,8 @@
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "5"
+          "reinforcementSet": "5",
+          "tableName": "Baltimore/Dc Reinforcement Track"
         },
         {
           "name": "Fessendon",
@@ -4808,7 +5296,8 @@
           "manpowerValue": "3",
           "hexLocation": "See advanced rule 4.0",
           "notes": [],
-          "reinforcementSet": "6"
+          "reinforcementSet": "6",
+          "tableName": "Baltimore/Dc Reinforcement Track"
         },
         {
           "name": "Frick",
@@ -4818,7 +5307,8 @@
           "manpowerValue": "3",
           "hexLocation": "N4907 (Camp Curtin)",
           "notes": [],
-          "reinforcementSet": "1"
+          "reinforcementSet": "1",
+          "tableName": "Pennsylvania Militia Reinforcement Track"
         },
         {
           "name": "Franklin",
@@ -4828,7 +5318,8 @@
           "manpowerValue": "11",
           "hexLocation": "N4907 (Camp Curtin)",
           "notes": [],
-          "reinforcementSet": "2"
+          "reinforcementSet": "2",
+          "tableName": "Pennsylvania Militia Reinforcement Track"
         },
         {
           "name": "Nagle",
@@ -4838,7 +5329,8 @@
           "manpowerValue": "10",
           "hexLocation": "N4907 (Camp Curtin)",
           "notes": [],
-          "reinforcementSet": "3"
+          "reinforcementSet": "3",
+          "tableName": "Pennsylvania Militia Reinforcement Track"
         },
         {
           "name": "Beaver",
@@ -4848,7 +5340,8 @@
           "manpowerValue": "7",
           "hexLocation": "N4907 (Camp Curtin)",
           "notes": [],
-          "reinforcementSet": "4"
+          "reinforcementSet": "4",
+          "tableName": "Pennsylvania Militia Reinforcement Track"
         },
         {
           "name": "20 PA",
@@ -4858,7 +5351,8 @@
           "manpowerValue": "1",
           "hexLocation": "N4907 (Camp Curtin)",
           "notes": [],
-          "reinforcementSet": "5"
+          "reinforcementSet": "5",
+          "tableName": "Pennsylvania Militia Reinforcement Track"
         },
         {
           "name": "1PA",
@@ -4868,7 +5362,8 @@
           "manpowerValue": "1",
           "hexLocation": "N4907 (Camp Curtin)",
           "notes": [],
-          "reinforcementSet": "6"
+          "reinforcementSet": "6",
+          "tableName": "Pennsylvania Militia Reinforcement Track"
         }
       ],
       "confederateGunboats": [],

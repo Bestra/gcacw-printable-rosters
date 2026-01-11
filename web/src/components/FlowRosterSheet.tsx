@@ -1,5 +1,6 @@
 import type { Gunboat, Scenario, Unit } from "../types";
 import { parseHexLocation } from "../hexLocationConfig";
+import { getTableAbbreviation } from "../tableNameConfig";
 import "./FlowRosterSheet.css";
 
 interface FlowRosterSheetProps {
@@ -300,6 +301,7 @@ function UnitRow({
   const fatigue = getStartingFatigue(unit, footnotes);
   const notes = getNoteSymbols(unit);
   const mpDisplay = unit.manpowerValue !== "-" ? unit.manpowerValue : "";
+  const tableAbbrev = getTableAbbreviation(unit.tableName);
   
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
   const showHexLocation = !unit.reinforcementSet || !unit.hexLocation.toLowerCase().startsWith("see");
@@ -313,6 +315,7 @@ function UnitRow({
             {locationName && <span className="flow-unit-row__location">({locationName})</span>}
           </>
         )}
+        {tableAbbrev && <span className="flow-unit-row__table">{tableAbbrev}</span>}
         {unit.reinforcementSet && (
           <span className="flow-unit-row__reinforcement">Reinf Set {unit.reinforcementSet}</span>
         )}
@@ -349,6 +352,7 @@ function LeaderHeader({
   const { hexCode, locationName } = parseHexLocation(leader.hexLocation);
   const fatigue = getStartingFatigue(leader, footnotes);
   const notes = getNoteSymbols(leader);
+  const tableAbbrev = getTableAbbreviation(leader.tableName);
   
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
   const showHexLocation = !leader.reinforcementSet || !leader.hexLocation.toLowerCase().startsWith("see");
@@ -362,6 +366,7 @@ function LeaderHeader({
             {locationName && <span className="flow-leader-header__location">({locationName})</span>}
           </>
         )}
+        {tableAbbrev && <span className="flow-leader-header__table">{tableAbbrev}</span>}
         {leader.reinforcementSet && (
           <span className="flow-leader-header__reinforcement">Reinf Set {leader.reinforcementSet}</span>
         )}

@@ -104,6 +104,14 @@
   line-height: 1.1;
 }
 
+.unit-card__table {
+  display: block;
+  font-size: 0.4rem;
+  color: #933;
+  font-weight: 600;
+  margin-top: 1px;
+}
+
 /* Print styles */
 @media print {
   .unit-card {
