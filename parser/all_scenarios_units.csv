@@ -256,10 +256,16 @@ Carroll-A,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],6,The Seven Days
 Gunboat-2,-,-,Special,-,Reinforcement (see Rule 8),Union,[],6,The Seven Days
 Lee,Army,ANV,Ldr,-,N0926,Confederate,[],7,Gaines Mill
 Longstreet,Div,L,Ldr,-,N0926,Confederate,[],7,Gaines Mill
+RH Anderson,Demi-Div,L,Inf,11,N0926,Confederate,[],7,Gaines Mill
+Pickett,Demi-Div,L,Inf,14,N0926,Confederate,[],7,Gaines Mill
 DH Hill,Div,DH,Ldr,-,N0925,Confederate,[],7,Gaines Mill
+Rodes-C,Demi-Div,DH,Inf,11,N0925,Confederate,[],7,Gaines Mill
+Garland-B,Demi-Div,DH,Inf,11,N0925,Confederate,[],7,Gaines Mill
 Stuart,Div,Cav,Ldr,-,N0515 (Perrin Mill),Confederate,[],7,Gaines Mill
 Cavalry,Brig,Cav,Cav,2,N0515 (Perrin Mill),Confederate,[],7,Gaines Mill
 AP Hill,Div,AH,Ldr,-,N0723,Confederate,[],7,Gaines Mill
+JR Anderson,Demi-Div,AH,Inf,17,N0723,Confederate,[],7,Gaines Mill
+Gregg,Demi-Div,AH,Inf,12,N0724 (Strawberry Hills),Confederate,[],7,Gaines Mill
 Branch,Brig,AH,Inf,7,N0419 (Half Sink),Confederate,[],7,Gaines Mill
 4VA,Regt,Cav,Cav,1,N0512 (Winston),Confederate,[],7,Gaines Mill
 Jackson,Div,J,Ldr,-,N0214 (Race Course),Confederate,[],7,Gaines Mill
@@ -267,24 +273,6 @@ Whiting-B,Div,J,Inf,9*,N0214 (Race Course),Confederate,['*'],7,Gaines Mill
 Ewell,Div,J,Inf,14*,N0415,Confederate,['*'],7,Gaines Mill
 Winder,Div,J,Inf,15*,N0213 (Mill),Confederate,['*'],7,Gaines Mill
 2VA,Regt,Cav,Cav,1*,N0113 (Independence Ch),Confederate,['*'],7,Gaines Mill
-Sedgwick,Div,II,Inf,18*,N1327 (Fair Oak Stn),Union,['*'],7,Gaines Mill
-Art Res-2,Brig,AP,Art,2*,N1327 (Fair Oak Stn),Union,['*'],7,Gaines Mill
-Heintzelman,Corps,III,Ldr,-,N1328 (Seven Pines),Union,[],7,Gaines Mill
-Hooker,Div,III,Inf,19*,N1328 (Seven Pines),Union,['*'],7,Gaines Mill
-Kearny,Div,III,Inf,18*,N1329 (Portuguese Tavern),Union,['*'],7,Gaines Mill
-Peck-A,Div,IV,Inf,13,N1429,Union,[],7,Gaines Mill
-Keyes,Corps,IV,Ldr,-,N1529,Union,[],7,Gaines Mill
-Couch,Div,IV,Inf,17,N1529,Union,[],7,Gaines Mill
-3/8 PA,Regt,-,Cav,1,N1430,Union,[],7,Gaines Mill
-93 NY,Regt,-,Inf,3^,N2823 (White House Stn),Union,['^'],7,Gaines Mill
-Gunboat-1,-,-,Special,-,York River Box,Union,[],7,Gaines Mill
-Wagon Train-A,-,-,Special,2,N1627 (Savage Station),Union,[],7,Gaines Mill
-Wagon Train-B,-,-,Special,2,N1728 (Watkins Mill),Union,[],7,Gaines Mill
-Ferry,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],7,Gaines Mill
-Kimball,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],7,Gaines Mill
-Tyler,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],7,Gaines Mill
-Carroll-A,Brig,-,Inf,5,Reinforcement (see Rule 14),Union,[],7,Gaines Mill
-Gunboat-2,-,-,Special,-,Reinforcement (see Rule 8),Union,[],7,Gaines Mill
 Stoneman,Brig,AP,Inf,3,N1318 (Haw's Shop),Union,[],7,Gaines Mill
 6PA,Regt,Cav,Cav,1,N1119 (Polly Hundley's),Union,[],7,Gaines Mill
 5/6US,Regt,Cav,Cav,1,N1119 (Polly Hundley's),Union,[],7,Gaines Mill
@@ -369,10 +357,13 @@ Wilcox-A,Brig,M,Inf,6,S4912,Confederate,[],9,The Peninsula Campaign
 Colston,Brig,M,Inf,4,S4811 (Grove Wharf),Confederate,[],9,The Peninsula Campaign
 Magruder,Div,M,Ldr,-,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 Pryor,Brig,M,Inf,4,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+McLaws-B,Demi-Div,M,Inf,5,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Rains-B,Demi-Div,DH,Inf,4,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 Rodes-A,Brig,M,Inf,5,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 DH Hill,Div,DH,Ldr,-,S4511 (King’s Mill Wharf),Confederate,[],9,The Peninsula Campaign
+Early-B,Demi-Div,DH,Inf,5,S4511 (King’s Mill Wharf),Confederate,[],9,The Peninsula Campaign
 Featherston,Brig,M,Inf,5,S1403 (Haxall’s Landing),Confederate,[],9,The Peninsula Campaign
 Grifffith,Brig,M,Inf,5,S1806 (Westover),Confederate,[],9,The Peninsula Campaign
 Richmond-1,Regt,-,Inf,1*,N0526 (Public Square),Confederate,['*'],9,The Peninsula Campaign
@@ -384,11 +375,16 @@ Art Res-1,Brig,ANV,Art,2,N0627 (Capitol),Confederate,[],9,The Peninsula Campaign
 Toombs,Brig,M,Inf,5,N0527 (Hollywood Cemetery),Confederate,[],9,The Peninsula Campaign
 7 VA,Regt,HO,Inf,1*,S0413 (Petersburg),Confederate,['*'],9,The Peninsula Campaign
 Walker,Brig,HO,Inf,8,S0513 (Petersburg),Confederate,[],9,The Peninsula Campaign
+DR Jones-A,Demi-Div,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
 Kershaw,Brig,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
 Johnston,Army,ANV,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
 Smith,Div,S,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Whiting-A,Demi-Div,S,Inf,14,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Hood,Demi-Div,S,Inf,9,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
 3 VA,Regt,HU,Inf,1*,S4717 (Harden’s Bluff),Confederate,['*'],9,The Peninsula Campaign
 Longstreet,Div,L,Ldr,-,Turn 7 Reinforcements (see 13.1),Confederate,[],9,The Peninsula Campaign
+Pickett,Demi-Div,L,Inf,10,Turn 7 Reinforcements (see 13.1),Confederate,[],9,The Peninsula Campaign
+RH Anderson,Demi-Div,L,Inf,5,Turn 7 Reinforcements (see 13.1),Confederate,[],9,The Peninsula Campaign
 Stuart,Div,Cav,Ldr,-,Turn 7 Reinforcements (see 13.1),Confederate,[],9,The Peninsula Campaign
 Cavalry,Regt,Cav,Cav,2,Turn 7 Reinforcements (see 13.1),Confederate,[],9,The Peninsula Campaign
 Huger-A,Div,HU,Inf,7,Norfolk Box,Confederate,[],9,The Peninsula Campaign
@@ -408,6 +404,8 @@ Art Res-3,Regt,ANV,Art,2,Richmond Box,Confederate,[],9,The Peninsula Campaign
 5 VA,Regt,Cav,Cav,1,Richmond Box,Confederate,[],9,The Peninsula Campaign
 10 VA,Regt,Cav,Cav,1,Richmond Box,Confederate,[],9,The Peninsula Campaign
 13 VA,Regt,Cav,Cav,1,Richmond Box,Confederate,[],9,The Peninsula Campaign
+Gregg,Demi-Div,AH,Inf,8,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
+JR Anderson,Demi-Div,AH,Inf,8,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
 Branch,Brig,AH,Inf,9,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
 Ripley,Brig,HO,Inf,6,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
 Martin,Brig,-,Inf,9,Dept. of S.C. Box,Confederate,[],9,The Peninsula Campaign
@@ -433,10 +431,13 @@ Pryor,Brig,M,Inf,4*,S5510 (Yorktown) or S5608 (Gloucester Point),Confederate,['*
 Wilcox-A,Brig,M,Inf,6,N4226 (West Point),Confederate,[],9,The Peninsula Campaign
 Colston,Brig,M,Inf,4,S4811 (Grove Wharf),Confederate,[],9,The Peninsula Campaign
 Magruder,Div,M,Ldr,-,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+McLaws-B,Demi-Div,M,Inf,5,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Rains-B,Demi-Div,DH,Inf,4,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 Rodes-A,Brig,M,Inf,5,S4407 (Williamsburg),Confederate,[],9,The Peninsula Campaign
 DH Hill,Div,DH,Ldr,-,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Early-B,Demi-Div,DH,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Featherston,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Grifffith,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Richmond-1,Regt,-,Inf,1*,N0526 (Public Square),Confederate,['*'],9,The Peninsula Campaign
@@ -448,9 +449,12 @@ Art Res-1,Brig,ANV,Art,2,N0627 (Capitol),Confederate,[],9,The Peninsula Campaign
 Toombs,Brig,M,Inf,5,N0527 (Hollywood Cemetery),Confederate,[],9,The Peninsula Campaign
 7 VA,Regt,HO,Inf,1*,S0413 (Petersburg),Confederate,['*'],9,The Peninsula Campaign
 Walker,Brig,HO,Inf,8,S0513 (Petersburg),Confederate,[],9,The Peninsula Campaign
+DR Jones-A,Demi-Div,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
 Kershaw,Brig,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
 Johnston,Army,ANV,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
 Smith,Div,S,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Whiting-A,Demi-Div,S,Inf,14,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Hood,Demi-Div,S,Inf,9,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
 3 VA,Regt,HU,Inf,1*,S4717 (Harden’s Bluff),Confederate,['*'],9,The Peninsula Campaign
 Ward,Brig,M,Inf,2*,S5510 (Yorktown) or S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
 Siege,Regt,M,Art,2*,S5510 (Yorktown),Confederate,['*'],9,The Peninsula Campaign
@@ -459,11 +463,14 @@ Crump,Brig,M,Inf,2*,S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula C
 Wilcox-A,Brig,M,Inf,6,N4226 (West Point),Confederate,[],9,The Peninsula Campaign
 Colston,Brig,M,Inf,4,S4811 (Grove Wharf),Confederate,[],9,The Peninsula Campaign
 Magruder,Div,M,Ldr,-,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+McLaws-B,Demi-Div,M,Inf,5,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Rains-B,Demi-Div,DH,Inf,4,S4407 (Williamsburg),Confederate,[],9,The Peninsula Campaign
 Pryor,Brig,M,Inf,4,N2917 (King William Court House),Confederate,[],9,The Peninsula Campaign
 Rodes-A,Brig,M,Inf,5,N3121 (Lanesville),Confederate,[],9,The Peninsula Campaign
 DH Hill,Div,DH,Ldr,-,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Early-B,Demi-Div,DH,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Featherston,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Grifffith,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Richmond-1,Regt,-,Inf,1*,N0526 (Public Square),Confederate,['*'],9,The Peninsula Campaign
@@ -475,9 +482,12 @@ Art Res-1,Brig,ANV,Art,2,N0627 (Capitol),Confederate,[],9,The Peninsula Campaign
 Toombs,Brig,M,Inf,5,N0527 (Hollywood Cemetery),Confederate,[],9,The Peninsula Campaign
 7 VA,Regt,HO,Inf,1*,S0413 (Petersburg),Confederate,['*'],9,The Peninsula Campaign
 Walker,Brig,HO,Inf,8,S0513 (Petersburg),Confederate,[],9,The Peninsula Campaign
+DR Jones-A,Demi-Div,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
 Kershaw,Brig,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
 Johnston,Army,ANV,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
 Smith,Div,S,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Whiting-A,Demi-Div,S,Inf,14,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Hood,Demi-Div,S,Inf,9,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
 3 VA,Regt,HU,Inf,1*,S4717 (Harden’s Bluff),Confederate,['*'],9,The Peninsula Campaign
 Ward,Brig,M,Inf,2*,S5510 (Yorktown) or S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula Campaign
 Siege,Regt,M,Art,2*,S5510 (Yorktown),Confederate,['*'],9,The Peninsula Campaign
@@ -486,11 +496,14 @@ Crump,Brig,M,Inf,2*,S5608 (Gloucester Point),Confederate,['*'],9,The Peninsula C
 Wilcox-A,Brig,M,Inf,6,N4226 (West Point),Confederate,[],9,The Peninsula Campaign
 Colston,Brig,M,Inf,4,S4811 (Grove Wharf),Confederate,[],9,The Peninsula Campaign
 Magruder,Div,M,Ldr,-,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+McLaws-B,Demi-Div,M,Inf,5,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 Cobb-A,Brig,M,Inf,8,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
 3 VA,Regt,Cav,Cav,1,Any hex within 5 hexes of S5113,Confederate,[],9,The Peninsula Campaign
+Rains-B,Demi-Div,DH,Inf,4,N3931 (Barhamsville),Confederate,[],9,The Peninsula Campaign
 Pryor,Brig,M,Inf,4,N2411 (Aylett’s),Confederate,[],9,The Peninsula Campaign
 Rodes-A,Brig,M,Inf,5,N2917 (King William Court House),Confederate,[],9,The Peninsula Campaign
 DH Hill,Div,DH,Ldr,-,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
+Early-B,Demi-Div,DH,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Featherston,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Grifffith,Brig,M,Inf,5,N2823 (White House Station),Confederate,[],9,The Peninsula Campaign
 Richmond-1,Regt,-,Inf,1*,N0526 (Public Square),Confederate,['*'],9,The Peninsula Campaign
@@ -502,8 +515,11 @@ Art Res-1,Brig,ANV,Art,2,N0627 (Capitol),Confederate,[],9,The Peninsula Campaign
 Toombs,Brig,M,Inf,5,N0314 (Ashland),Confederate,[],9,The Peninsula Campaign
 7 VA,Regt,HO,Inf,1*,S0413 (Petersburg),Confederate,['*'],9,The Peninsula Campaign
 Walker,Brig,HO,Inf,8,S0513 (Petersburg),Confederate,[],9,The Peninsula Campaign
+DR Jones-A,Demi-Div,M,Inf,5,N1209 (Capt. White),Confederate,[],9,The Peninsula Campaign
 Kershaw,Brig,M,Inf,5,N1209 (Capt. White),Confederate,[],9,The Peninsula Campaign
 Johnston,Army,ANV,Ldr,-,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Whiting-A,Demi-Div,S,Inf,14,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
+Hood,Demi-Div,S,Inf,9,N0304 (Chester Depot),Confederate,[],9,The Peninsula Campaign
 3 VA,Regt,HU,Inf,1*,S4717 (Harden’s Bluff),Confederate,['*'],9,The Peninsula Campaign
 Heintzelman,Corps,III,Ldr,-,S5814 (Cockletown),Union,[],9,The Peninsula Campaign
 Porter,Div,III,Inf,21,S5814 (Cockletown),Union,[],9,The Peninsula Campaign

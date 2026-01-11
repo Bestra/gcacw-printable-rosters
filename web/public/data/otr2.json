@@ -2543,8 +2543,8 @@
         "*": "Indicated units begin the game at Fatigue Level 1 on their exhausted side."
       },
       "unionFootnotes": {
-        "^": "93NY begins the game under a Fort-Complete marker.",
         "*": "Indicated units begin the game under a Breastworks-Complete marker.",
+        "^": "93NY begins the game under a Fort-Complete marker.",
         "$": "Naglee may not activate or entrench on Turn 1."
       },
       "confederateUnits": [
@@ -2567,11 +2567,47 @@
           "notes": []
         },
         {
+          "name": "RH Anderson",
+          "size": "Demi-Div",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "N0926",
+          "notes": []
+        },
+        {
+          "name": "Pickett",
+          "size": "Demi-Div",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N0926",
+          "notes": []
+        },
+        {
           "name": "DH Hill",
           "size": "Div",
           "command": "DH",
           "type": "Ldr",
           "manpowerValue": "-",
+          "hexLocation": "N0925",
+          "notes": []
+        },
+        {
+          "name": "Rodes-C",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "N0925",
+          "notes": []
+        },
+        {
+          "name": "Garland-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "11",
           "hexLocation": "N0925",
           "notes": []
         },
@@ -2600,6 +2636,24 @@
           "type": "Ldr",
           "manpowerValue": "-",
           "hexLocation": "N0723",
+          "notes": []
+        },
+        {
+          "name": "JR Anderson",
+          "size": "Demi-Div",
+          "command": "AH",
+          "type": "Inf",
+          "manpowerValue": "17",
+          "hexLocation": "N0723",
+          "notes": []
+        },
+        {
+          "name": "Gregg",
+          "size": "Demi-Div",
+          "command": "AH",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "N0724 (Strawberry Hills)",
           "notes": []
         },
         {
@@ -2675,178 +2729,6 @@
         }
       ],
       "unionUnits": [
-        {
-          "name": "Sedgwick",
-          "size": "Div",
-          "command": "II",
-          "type": "Inf",
-          "manpowerValue": "18*",
-          "hexLocation": "N1327 (Fair Oak Stn)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Art Res-2",
-          "size": "Brig",
-          "command": "AP",
-          "type": "Art",
-          "manpowerValue": "2*",
-          "hexLocation": "N1327 (Fair Oak Stn)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Heintzelman",
-          "size": "Corps",
-          "command": "III",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N1328 (Seven Pines)",
-          "notes": []
-        },
-        {
-          "name": "Hooker",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "19*",
-          "hexLocation": "N1328 (Seven Pines)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Kearny",
-          "size": "Div",
-          "command": "III",
-          "type": "Inf",
-          "manpowerValue": "18*",
-          "hexLocation": "N1329 (Portuguese Tavern)",
-          "notes": [
-            "*"
-          ]
-        },
-        {
-          "name": "Peck-A",
-          "size": "Div",
-          "command": "IV",
-          "type": "Inf",
-          "manpowerValue": "13",
-          "hexLocation": "N1429",
-          "notes": []
-        },
-        {
-          "name": "Keyes",
-          "size": "Corps",
-          "command": "IV",
-          "type": "Ldr",
-          "manpowerValue": "-",
-          "hexLocation": "N1529",
-          "notes": []
-        },
-        {
-          "name": "Couch",
-          "size": "Div",
-          "command": "IV",
-          "type": "Inf",
-          "manpowerValue": "17",
-          "hexLocation": "N1529",
-          "notes": []
-        },
-        {
-          "name": "3/8 PA",
-          "size": "Regt",
-          "command": "-",
-          "type": "Cav",
-          "manpowerValue": "1",
-          "hexLocation": "N1430",
-          "notes": []
-        },
-        {
-          "name": "93 NY",
-          "size": "Regt",
-          "command": "-",
-          "type": "Inf",
-          "manpowerValue": "3^",
-          "hexLocation": "N2823 (White House Stn)",
-          "notes": [
-            "^"
-          ]
-        },
-        {
-          "name": "Gunboat-1",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "York River Box",
-          "notes": []
-        },
-        {
-          "name": "Wagon Train-A",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "2",
-          "hexLocation": "N1627 (Savage Station)",
-          "notes": []
-        },
-        {
-          "name": "Wagon Train-B",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "2",
-          "hexLocation": "N1728 (Watkins Mill)",
-          "notes": []
-        },
-        {
-          "name": "Ferry",
-          "size": "Brig",
-          "command": "-",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "Reinforcement (see Rule 14)",
-          "notes": []
-        },
-        {
-          "name": "Kimball",
-          "size": "Brig",
-          "command": "-",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "Reinforcement (see Rule 14)",
-          "notes": []
-        },
-        {
-          "name": "Tyler",
-          "size": "Brig",
-          "command": "-",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "Reinforcement (see Rule 14)",
-          "notes": []
-        },
-        {
-          "name": "Carroll-A",
-          "size": "Brig",
-          "command": "-",
-          "type": "Inf",
-          "manpowerValue": "5",
-          "hexLocation": "Reinforcement (see Rule 14)",
-          "notes": []
-        },
-        {
-          "name": "Gunboat-2",
-          "size": "-",
-          "command": "-",
-          "type": "Special",
-          "manpowerValue": "-",
-          "hexLocation": "Reinforcement (see Rule 8)",
-          "notes": []
-        },
         {
           "name": "Stoneman",
           "size": "Brig",
@@ -3676,11 +3558,29 @@
           "notes": []
         },
         {
+          "name": "McLaws-B",
+          "size": "Demi-Div",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "Any hex within 5 hexes of S5113",
+          "notes": []
+        },
+        {
           "name": "Cobb-A",
           "size": "Brig",
           "command": "M",
           "type": "Inf",
           "manpowerValue": "8",
+          "hexLocation": "Any hex within 5 hexes of S5113",
+          "notes": []
+        },
+        {
+          "name": "Rains-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "4",
           "hexLocation": "Any hex within 5 hexes of S5113",
           "notes": []
         },
@@ -3708,6 +3608,15 @@
           "command": "DH",
           "type": "Ldr",
           "manpowerValue": "-",
+          "hexLocation": "S4511 (King\u2019s Mill Wharf)",
+          "notes": []
+        },
+        {
+          "name": "Early-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "5",
           "hexLocation": "S4511 (King\u2019s Mill Wharf)",
           "notes": []
         },
@@ -3821,6 +3730,15 @@
           "notes": []
         },
         {
+          "name": "DR Jones-A",
+          "size": "Demi-Div",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "N0314 (Ashland)",
+          "notes": []
+        },
+        {
           "name": "Kershaw",
           "size": "Brig",
           "command": "M",
@@ -3848,6 +3766,24 @@
           "notes": []
         },
         {
+          "name": "Whiting-A",
+          "size": "Demi-Div",
+          "command": "S",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N0304 (Chester Depot)",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Demi-Div",
+          "command": "S",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "N0304 (Chester Depot)",
+          "notes": []
+        },
+        {
           "name": "3 VA",
           "size": "Regt",
           "command": "HU",
@@ -3864,6 +3800,24 @@
           "command": "L",
           "type": "Ldr",
           "manpowerValue": "-",
+          "hexLocation": "Turn 7 Reinforcements (see 13.1)",
+          "notes": []
+        },
+        {
+          "name": "Pickett",
+          "size": "Demi-Div",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "Turn 7 Reinforcements (see 13.1)",
+          "notes": []
+        },
+        {
+          "name": "RH Anderson",
+          "size": "Demi-Div",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "5",
           "hexLocation": "Turn 7 Reinforcements (see 13.1)",
           "notes": []
         },
@@ -4036,6 +3990,24 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "Richmond Box",
+          "notes": []
+        },
+        {
+          "name": "Gregg",
+          "size": "Demi-Div",
+          "command": "AH",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Dept. of S.C. Box",
+          "notes": []
+        },
+        {
+          "name": "JR Anderson",
+          "size": "Demi-Div",
+          "command": "AH",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Dept. of S.C. Box",
           "notes": []
         },
         {
@@ -4274,11 +4246,29 @@
           "notes": []
         },
         {
+          "name": "McLaws-B",
+          "size": "Demi-Div",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "Any hex within 5 hexes of S5113",
+          "notes": []
+        },
+        {
           "name": "Cobb-A",
           "size": "Brig",
           "command": "M",
           "type": "Inf",
           "manpowerValue": "8",
+          "hexLocation": "Any hex within 5 hexes of S5113",
+          "notes": []
+        },
+        {
+          "name": "Rains-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "4",
           "hexLocation": "Any hex within 5 hexes of S5113",
           "notes": []
         },
@@ -4310,6 +4300,15 @@
           "notes": []
         },
         {
+          "name": "Early-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "N2823 (White House Station)",
+          "notes": []
+        },
+        {
           "name": "Featherston",
           "size": "Brig",
           "command": "M",
@@ -4419,6 +4418,15 @@
           "notes": []
         },
         {
+          "name": "DR Jones-A",
+          "size": "Demi-Div",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "N0314 (Ashland)",
+          "notes": []
+        },
+        {
           "name": "Kershaw",
           "size": "Brig",
           "command": "M",
@@ -4442,6 +4450,24 @@
           "command": "S",
           "type": "Ldr",
           "manpowerValue": "-",
+          "hexLocation": "N0304 (Chester Depot)",
+          "notes": []
+        },
+        {
+          "name": "Whiting-A",
+          "size": "Demi-Div",
+          "command": "S",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N0304 (Chester Depot)",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Demi-Div",
+          "command": "S",
+          "type": "Inf",
+          "manpowerValue": "9",
           "hexLocation": "N0304 (Chester Depot)",
           "notes": []
         },
@@ -4528,6 +4554,15 @@
           "notes": []
         },
         {
+          "name": "McLaws-B",
+          "size": "Demi-Div",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "Any hex within 5 hexes of S5113",
+          "notes": []
+        },
+        {
           "name": "Cobb-A",
           "size": "Brig",
           "command": "M",
@@ -4543,6 +4578,15 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "Any hex within 5 hexes of S5113",
+          "notes": []
+        },
+        {
+          "name": "Rains-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "S4407 (Williamsburg)",
           "notes": []
         },
         {
@@ -4573,6 +4617,15 @@
           "notes": []
         },
         {
+          "name": "Early-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "N2823 (White House Station)",
+          "notes": []
+        },
+        {
           "name": "Featherston",
           "size": "Brig",
           "command": "M",
@@ -4682,6 +4735,15 @@
           "notes": []
         },
         {
+          "name": "DR Jones-A",
+          "size": "Demi-Div",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "N0314 (Ashland)",
+          "notes": []
+        },
+        {
           "name": "Kershaw",
           "size": "Brig",
           "command": "M",
@@ -4705,6 +4767,24 @@
           "command": "S",
           "type": "Ldr",
           "manpowerValue": "-",
+          "hexLocation": "N0304 (Chester Depot)",
+          "notes": []
+        },
+        {
+          "name": "Whiting-A",
+          "size": "Demi-Div",
+          "command": "S",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N0304 (Chester Depot)",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Demi-Div",
+          "command": "S",
+          "type": "Inf",
+          "manpowerValue": "9",
           "hexLocation": "N0304 (Chester Depot)",
           "notes": []
         },
@@ -4791,6 +4871,15 @@
           "notes": []
         },
         {
+          "name": "McLaws-B",
+          "size": "Demi-Div",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "Any hex within 5 hexes of S5113",
+          "notes": []
+        },
+        {
           "name": "Cobb-A",
           "size": "Brig",
           "command": "M",
@@ -4806,6 +4895,15 @@
           "type": "Cav",
           "manpowerValue": "1",
           "hexLocation": "Any hex within 5 hexes of S5113",
+          "notes": []
+        },
+        {
+          "name": "Rains-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "N3931 (Barhamsville)",
           "notes": []
         },
         {
@@ -4832,6 +4930,15 @@
           "command": "DH",
           "type": "Ldr",
           "manpowerValue": "-",
+          "hexLocation": "N2823 (White House Station)",
+          "notes": []
+        },
+        {
+          "name": "Early-B",
+          "size": "Demi-Div",
+          "command": "DH",
+          "type": "Inf",
+          "manpowerValue": "5",
           "hexLocation": "N2823 (White House Station)",
           "notes": []
         },
@@ -4945,6 +5052,15 @@
           "notes": []
         },
         {
+          "name": "DR Jones-A",
+          "size": "Demi-Div",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "N1209 (Capt. White)",
+          "notes": []
+        },
+        {
           "name": "Kershaw",
           "size": "Brig",
           "command": "M",
@@ -4959,6 +5075,24 @@
           "command": "ANV",
           "type": "Ldr",
           "manpowerValue": "-",
+          "hexLocation": "N0304 (Chester Depot)",
+          "notes": []
+        },
+        {
+          "name": "Whiting-A",
+          "size": "Demi-Div",
+          "command": "S",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "N0304 (Chester Depot)",
+          "notes": []
+        },
+        {
+          "name": "Hood",
+          "size": "Demi-Div",
+          "command": "S",
+          "type": "Inf",
+          "manpowerValue": "9",
           "hexLocation": "N0304 (Chester Depot)",
           "notes": []
         },

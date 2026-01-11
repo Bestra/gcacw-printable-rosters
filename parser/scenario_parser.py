@@ -44,8 +44,8 @@ class Scenario:
 class ScenarioParser:
     """Parser for GCACW scenario PDFs."""
     
-    # Valid unit sizes - order matters for matching
-    VALID_SIZES = ['Army', 'Corps', 'Demi-Div', 'Div', 'Brig', 'Regt']
+    # Valid unit sizes - order matters for matching (D-Div is abbreviation for Demi-Div)
+    VALID_SIZES = ['Army', 'Corps', 'Demi-Div', 'D-Div', 'Div', 'Brig', 'Regt']
     VALID_TYPES = ['Ldr', 'Inf', 'Cav', 'Art']
     
     def __init__(self, pdf_path: str):
@@ -152,24 +152,54 @@ class ScenarioParser:
             lines = text.split('\n')
             stop_parsing = False
             
+            # On the start page, we need to find the scenario header first
+            # and only process lines AFTER it to avoid picking up previous scenario's tables
+            found_scenario_header_on_start_page = False
+            if page_idx == start_page:
+                # We'll set this to True once we find our scenario header
+                found_scenario_header_on_start_page = False
+            else:
+                # On subsequent pages, we're already past the header
+                found_scenario_header_on_start_page = True
+            
             for line in lines:
                 line_stripped = line.strip()
                 line_lower = line_stripped.lower()
                 
-                # Stop if we hit the next scenario header (but not on start page)
-                if page_idx > start_page:
-                    scenario_match = re.search(r'scenario\s+(\d+):', line_lower)
+                # On the start page, look for our scenario header before processing anything
+                if page_idx == start_page and not found_scenario_header_on_start_page:
+                    scenario_match = re.search(rf'scenario\s+{scenario_num}:', line_lower)
                     if scenario_match:
-                        next_scenario_num = int(scenario_match.group(1))
-                        if next_scenario_num != scenario_num:
-                            stop_parsing = True
-                            break
+                        found_scenario_header_on_start_page = True
+                    # Skip all lines until we find our scenario header
+                    continue
+                
+                # Stop if we hit the next scenario header
+                scenario_match = re.search(r'scenario\s+(\d+):', line_lower)
+                if scenario_match:
+                    next_scenario_num = int(scenario_match.group(1))
+                    if next_scenario_num != scenario_num:
+                        stop_parsing = True
+                        break
                 
                 # Detect section headers (including continuations like "cntd")
+                # But IGNORE continuations "(cntd)" as they belong to previous scenario
                 if 'confederate set-up' in line_lower:
+                    if '(cntd)' in line_lower or 'cntd' in line_lower:
+                        # This is a continuation of a PREVIOUS scenario's table
+                        # Only accept if we're on a page after the start page
+                        # AND we've already been collecting units for this scenario
+                        if current_side is None:
+                            # Haven't started collecting yet, skip this continuation
+                            continue
                     current_side = 'Confederate'
                     continue
                 elif 'union set-up' in line_lower:
+                    if '(cntd)' in line_lower or 'cntd' in line_lower:
+                        # This is a continuation of a PREVIOUS scenario's table
+                        if current_side is None:
+                            # Haven't started collecting yet, skip this continuation
+                            continue
                     current_side = 'Union'
                     continue
                 
@@ -256,10 +286,10 @@ class ScenarioParser:
         size_value = None
         
         for i, part in enumerate(parts):
-            # Check for Demi-Div which might appear as one token
-            if part == 'Demi-Div':
+            # Check for Demi-Div which might appear as one token or as D-Div
+            if part == 'Demi-Div' or part == 'D-Div':
                 size_idx = i
-                size_value = 'Demi-Div'
+                size_value = 'Demi-Div'  # Normalize D-Div to Demi-Div
                 break
             elif part in self.VALID_SIZES:
                 size_idx = i

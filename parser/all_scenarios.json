@@ -2870,8 +2870,8 @@
       "*": "Indicated units begin the game at Fatigue Level 1 on their exhausted side."
     },
     "union_footnotes": {
-      "^": "93NY begins the game under a Fort-Complete marker.",
       "*": "Indicated units begin the game under a Breastworks-Complete marker.",
+      "^": "93NY begins the game under a Fort-Complete marker.",
       "$": "Naglee may not activate or entrench on Turn 1."
     },
     "confederate_units": [
@@ -2896,11 +2896,51 @@
         "notes": []
       },
       {
+        "unit_leader": "RH Anderson",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "N0926",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pickett",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N0926",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "DH Hill",
         "size": "Div",
         "command": "DH",
         "unit_type": "Ldr",
         "manpower_value": "-",
+        "hex_location": "N0925",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rodes-C",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "11",
+        "hex_location": "N0925",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Garland-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "11",
         "hex_location": "N0925",
         "side": "Confederate",
         "notes": []
@@ -2932,6 +2972,26 @@
         "unit_type": "Ldr",
         "manpower_value": "-",
         "hex_location": "N0723",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "JR Anderson",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "17",
+        "hex_location": "N0723",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gregg",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "N0724 (Strawberry Hills)",
         "side": "Confederate",
         "notes": []
       },
@@ -3015,196 +3075,6 @@
       }
     ],
     "union_units": [
-      {
-        "unit_leader": "Sedgwick",
-        "size": "Div",
-        "command": "II",
-        "unit_type": "Inf",
-        "manpower_value": "18*",
-        "hex_location": "N1327 (Fair Oak Stn)",
-        "side": "Union",
-        "notes": [
-          "*"
-        ]
-      },
-      {
-        "unit_leader": "Art Res-2",
-        "size": "Brig",
-        "command": "AP",
-        "unit_type": "Art",
-        "manpower_value": "2*",
-        "hex_location": "N1327 (Fair Oak Stn)",
-        "side": "Union",
-        "notes": [
-          "*"
-        ]
-      },
-      {
-        "unit_leader": "Heintzelman",
-        "size": "Corps",
-        "command": "III",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "N1328 (Seven Pines)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Hooker",
-        "size": "Div",
-        "command": "III",
-        "unit_type": "Inf",
-        "manpower_value": "19*",
-        "hex_location": "N1328 (Seven Pines)",
-        "side": "Union",
-        "notes": [
-          "*"
-        ]
-      },
-      {
-        "unit_leader": "Kearny",
-        "size": "Div",
-        "command": "III",
-        "unit_type": "Inf",
-        "manpower_value": "18*",
-        "hex_location": "N1329 (Portuguese Tavern)",
-        "side": "Union",
-        "notes": [
-          "*"
-        ]
-      },
-      {
-        "unit_leader": "Peck-A",
-        "size": "Div",
-        "command": "IV",
-        "unit_type": "Inf",
-        "manpower_value": "13",
-        "hex_location": "N1429",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Keyes",
-        "size": "Corps",
-        "command": "IV",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "N1529",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Couch",
-        "size": "Div",
-        "command": "IV",
-        "unit_type": "Inf",
-        "manpower_value": "17",
-        "hex_location": "N1529",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "3/8 PA",
-        "size": "Regt",
-        "command": "-",
-        "unit_type": "Cav",
-        "manpower_value": "1",
-        "hex_location": "N1430",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "93 NY",
-        "size": "Regt",
-        "command": "-",
-        "unit_type": "Inf",
-        "manpower_value": "3^",
-        "hex_location": "N2823 (White House Stn)",
-        "side": "Union",
-        "notes": [
-          "^"
-        ]
-      },
-      {
-        "unit_leader": "Gunboat-1",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "York River Box",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Wagon Train-A",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "2",
-        "hex_location": "N1627 (Savage Station)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Wagon Train-B",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "2",
-        "hex_location": "N1728 (Watkins Mill)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Ferry",
-        "size": "Brig",
-        "command": "-",
-        "unit_type": "Inf",
-        "manpower_value": "5",
-        "hex_location": "Reinforcement (see Rule 14)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Kimball",
-        "size": "Brig",
-        "command": "-",
-        "unit_type": "Inf",
-        "manpower_value": "5",
-        "hex_location": "Reinforcement (see Rule 14)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Tyler",
-        "size": "Brig",
-        "command": "-",
-        "unit_type": "Inf",
-        "manpower_value": "5",
-        "hex_location": "Reinforcement (see Rule 14)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Carroll-A",
-        "size": "Brig",
-        "command": "-",
-        "unit_type": "Inf",
-        "manpower_value": "5",
-        "hex_location": "Reinforcement (see Rule 14)",
-        "side": "Union",
-        "notes": []
-      },
-      {
-        "unit_leader": "Gunboat-2",
-        "size": "-",
-        "command": "-",
-        "unit_type": "Special",
-        "manpower_value": "-",
-        "hex_location": "Reinforcement (see Rule 8)",
-        "side": "Union",
-        "notes": []
-      },
       {
         "unit_leader": "Stoneman",
         "size": "Brig",
@@ -4139,11 +4009,31 @@
         "notes": []
       },
       {
+        "unit_leader": "McLaws-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Cobb-A",
         "size": "Brig",
         "command": "M",
         "unit_type": "Inf",
         "manpower_value": "8",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rains-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "4",
         "hex_location": "Any hex within 5 hexes of S5113",
         "side": "Confederate",
         "notes": []
@@ -4174,6 +4064,16 @@
         "command": "DH",
         "unit_type": "Ldr",
         "manpower_value": "-",
+        "hex_location": "S4511 (King\u2019s Mill Wharf)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Early-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "5",
         "hex_location": "S4511 (King\u2019s Mill Wharf)",
         "side": "Confederate",
         "notes": []
@@ -4299,6 +4199,16 @@
         "notes": []
       },
       {
+        "unit_leader": "DR Jones-A",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0314 (Ashland)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Kershaw",
         "size": "Brig",
         "command": "M",
@@ -4329,6 +4239,26 @@
         "notes": []
       },
       {
+        "unit_leader": "Whiting-A",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "9",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "3 VA",
         "size": "Regt",
         "command": "HU",
@@ -4346,6 +4276,26 @@
         "command": "L",
         "unit_type": "Ldr",
         "manpower_value": "-",
+        "hex_location": "Turn 7 Reinforcements (see 13.1)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Pickett",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "10",
+        "hex_location": "Turn 7 Reinforcements (see 13.1)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "RH Anderson",
+        "size": "Demi-Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "5",
         "hex_location": "Turn 7 Reinforcements (see 13.1)",
         "side": "Confederate",
         "notes": []
@@ -4537,6 +4487,26 @@
         "unit_type": "Cav",
         "manpower_value": "1",
         "hex_location": "Richmond Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Gregg",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Dept. of S.C. Box",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "JR Anderson",
+        "size": "Demi-Div",
+        "command": "AH",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "Dept. of S.C. Box",
         "side": "Confederate",
         "notes": []
       },
@@ -4801,11 +4771,31 @@
         "notes": []
       },
       {
+        "unit_leader": "McLaws-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Cobb-A",
         "size": "Brig",
         "command": "M",
         "unit_type": "Inf",
         "manpower_value": "8",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rains-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "4",
         "hex_location": "Any hex within 5 hexes of S5113",
         "side": "Confederate",
         "notes": []
@@ -4841,6 +4831,16 @@
         "notes": []
       },
       {
+        "unit_leader": "Early-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Featherston",
         "size": "Brig",
         "command": "M",
@@ -4961,6 +4961,16 @@
         "notes": []
       },
       {
+        "unit_leader": "DR Jones-A",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0314 (Ashland)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Kershaw",
         "size": "Brig",
         "command": "M",
@@ -4986,6 +4996,26 @@
         "command": "S",
         "unit_type": "Ldr",
         "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-A",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "9",
         "hex_location": "N0304 (Chester Depot)",
         "side": "Confederate",
         "notes": []
@@ -5081,6 +5111,16 @@
         "notes": []
       },
       {
+        "unit_leader": "McLaws-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Cobb-A",
         "size": "Brig",
         "command": "M",
@@ -5097,6 +5137,16 @@
         "unit_type": "Cav",
         "manpower_value": "1",
         "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rains-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "S4407 (Williamsburg)",
         "side": "Confederate",
         "notes": []
       },
@@ -5131,6 +5181,16 @@
         "notes": []
       },
       {
+        "unit_leader": "Early-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Featherston",
         "size": "Brig",
         "command": "M",
@@ -5251,6 +5311,16 @@
         "notes": []
       },
       {
+        "unit_leader": "DR Jones-A",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N0314 (Ashland)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Kershaw",
         "size": "Brig",
         "command": "M",
@@ -5276,6 +5346,26 @@
         "command": "S",
         "unit_type": "Ldr",
         "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-A",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "9",
         "hex_location": "N0304 (Chester Depot)",
         "side": "Confederate",
         "notes": []
@@ -5371,6 +5461,16 @@
         "notes": []
       },
       {
+        "unit_leader": "McLaws-B",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Cobb-A",
         "size": "Brig",
         "command": "M",
@@ -5387,6 +5487,16 @@
         "unit_type": "Cav",
         "manpower_value": "1",
         "hex_location": "Any hex within 5 hexes of S5113",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Rains-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "N3931 (Barhamsville)",
         "side": "Confederate",
         "notes": []
       },
@@ -5416,6 +5526,16 @@
         "command": "DH",
         "unit_type": "Ldr",
         "manpower_value": "-",
+        "hex_location": "N2823 (White House Station)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Early-B",
+        "size": "Demi-Div",
+        "command": "DH",
+        "unit_type": "Inf",
+        "manpower_value": "5",
         "hex_location": "N2823 (White House Station)",
         "side": "Confederate",
         "notes": []
@@ -5541,6 +5661,16 @@
         "notes": []
       },
       {
+        "unit_leader": "DR Jones-A",
+        "size": "Demi-Div",
+        "command": "M",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "N1209 (Capt. White)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
         "unit_leader": "Kershaw",
         "size": "Brig",
         "command": "M",
@@ -5556,6 +5686,26 @@
         "command": "ANV",
         "unit_type": "Ldr",
         "manpower_value": "-",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Whiting-A",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "N0304 (Chester Depot)",
+        "side": "Confederate",
+        "notes": []
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Demi-Div",
+        "command": "S",
+        "unit_type": "Inf",
+        "manpower_value": "9",
         "hex_location": "N0304 (Chester Depot)",
         "side": "Confederate",
         "notes": []
