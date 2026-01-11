@@ -2,14 +2,13 @@ import { useEffect, useState } from "react";
 import { Routes, Route, Navigate, useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { GameSelector } from "./components/GameSelector";
 import { ScenarioSelector } from "./components/ScenarioSelector";
-import { RosterSheet } from "./components/RosterSheet";
 import { HierarchicalRosterSheet } from "./components/HierarchicalRosterSheet";
 import { FlowRosterSheet } from "./components/FlowRosterSheet";
 import { getGameIdFromSlug, getGameSlug, getScenarioSlug, getScenarioNumberFromSlug } from "./utils/slugs";
 import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
 
-type LayoutMode = "grid" | "hierarchical" | "flow";
+type LayoutMode = "hierarchical" | "flow";
 const DEFAULT_LAYOUT: LayoutMode = "hierarchical";
 
 // Get base path from Vite (handles GitHub Pages deployment)
@@ -31,7 +30,7 @@ function ScenarioView({
 
   // Get layout mode from query param, default to hierarchical
   const viewParam = searchParams.get("view");
-  const layoutMode: LayoutMode = viewParam === "grid" || viewParam === "hierarchical" || viewParam === "flow"
+  const layoutMode: LayoutMode = viewParam === "hierarchical" || viewParam === "flow"
     ? viewParam 
     : DEFAULT_LAYOUT;
 
@@ -150,7 +149,6 @@ function ScenarioView({
               value={layoutMode} 
               onChange={(e) => handleLayoutChange(e.target.value as LayoutMode)}
             >
-              <option value="grid">Grid</option>
               <option value="hierarchical">Hierarchical</option>
               <option value="flow">Flow (compact)</option>
             </select>
@@ -158,11 +156,9 @@ function ScenarioView({
         </div>
       </div>
       {scenario && gameData && (
-        layoutMode === "hierarchical" 
-          ? <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} />
-          : layoutMode === "flow"
+        layoutMode === "flow"
           ? <FlowRosterSheet scenario={scenario} gameName={gameData.name} />
-          : <RosterSheet scenario={scenario} gameName={gameData.name} />
+          : <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} />
       )}
     </div>
   );
