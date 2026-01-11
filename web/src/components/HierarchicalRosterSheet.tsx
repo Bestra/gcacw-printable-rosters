@@ -35,7 +35,12 @@ interface CommandGroup {
   units: Unit[];
   subgroups: CommandGroup[]; // Nested groups for Corps -> Div hierarchy
   parentCommand?: string; // Track which Corps this Div belongs to
+  columnIndex?: number; // For multi-column splits (1, 2, 3...)
+  totalColumns?: number; // Total number of columns for this command
 }
+
+// Maximum units per column before splitting into multiple columns
+const MAX_UNITS_PER_COLUMN = 8;
 
 // Check if a command is subordinate to another (e.g., C-Cav is subordinate to Cav)
 function isSubordinateCommand(childCmd: string, parentCmd: string): boolean {
@@ -208,6 +213,76 @@ function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
   return groups;
 }
 
+// Split a single group with many units into multiple column groups
+function splitGroupIntoColumns(group: CommandGroup): CommandGroup[] {
+  const unitCount = group.units.length;
+  
+  // Don't split small groups
+  if (unitCount <= MAX_UNITS_PER_COLUMN) {
+    return [group];
+  }
+  
+  // Calculate number of columns needed
+  const numColumns = Math.ceil(unitCount / MAX_UNITS_PER_COLUMN);
+  
+  // Split units evenly across columns
+  const unitsPerColumn = Math.ceil(unitCount / numColumns);
+  
+  const splitGroups: CommandGroup[] = [];
+  for (let i = 0; i < numColumns; i++) {
+    const startIdx = i * unitsPerColumn;
+    const endIdx = Math.min(startIdx + unitsPerColumn, unitCount);
+    const columnUnits = group.units.slice(startIdx, endIdx);
+    
+    splitGroups.push({
+      ...group,
+      units: columnUnits,
+      // Only show leader in first column
+      leader: i === 0 ? group.leader : null,
+      columnIndex: i + 1,
+      totalColumns: numColumns,
+    });
+  }
+  
+  return splitGroups;
+}
+
+// Split all groups that exceed the column limit
+function splitLargeGroups(groups: CommandGroup[]): CommandGroup[] {
+  const result: CommandGroup[] = [];
+  
+  for (const group of groups) {
+    // First, split the group's own units if needed
+    const splitMain = splitGroupIntoColumns(group);
+    
+    // For groups with subgroups, also split those
+    if (group.subgroups.length > 0) {
+      const splitSubgroups: CommandGroup[] = [];
+      for (const subgroup of group.subgroups) {
+        splitSubgroups.push(...splitGroupIntoColumns(subgroup));
+      }
+      
+      // Add the main group (first split) with split subgroups
+      splitMain[0] = {
+        ...splitMain[0],
+        subgroups: splitSubgroups,
+      };
+      
+      // Subsequent splits don't have subgroups
+      for (let i = 1; i < splitMain.length; i++) {
+        splitMain[i] = {
+          ...splitMain[i],
+          subgroups: [],
+        };
+      }
+    }
+    
+    result.push(...splitMain);
+  }
+  
+  return result;
+}
+
 // Get army-level leader
 function getArmyLeader(units: Unit[]): Unit | null {
   return units.find(u => u.type === "Ldr" && (u.size === "Army" || u.size === "District")) ?? null;
@@ -318,12 +393,19 @@ function CommandGroupSection({
   isSubgroup?: boolean;
 }) {
   const hasSubgroups = group.subgroups.length > 0;
+  const isContinuation = group.columnIndex && group.columnIndex > 1;
+  
+  // Build the title with continuation indicator if needed
+  let titleText = group.displayName;
+  if (isContinuation) {
+    titleText = `${group.displayName} (cont.)`;
+  }
   
   return (
     <div className={`hier-command-group hier-command-group--${side} ${isSubgroup ? 'hier-command-group--subgroup' : ''} ${hasSubgroups ? 'hier-command-group--has-subgroups' : ''}`}>
       <h4 className={`hier-command-group__title ${isSubgroup ? 'hier-command-group__title--subgroup' : ''}`}>
-        {group.displayName}
-        {group.size && <span className="hier-command-group__size"> ({group.size})</span>}
+        {titleText}
+        {group.size && !isContinuation && <span className="hier-command-group__size"> ({group.size})</span>}
       </h4>
       
       {group.leader && (
@@ -420,6 +502,10 @@ function ArmySection({
   const nestedGroups = hierarchy.filter(g => g.subgroups.length > 0);
   const flatGroups = hierarchy.filter(g => g.subgroups.length === 0);
   
+  // Split large groups into multiple columns
+  const splitFlatGroups = splitLargeGroups(flatGroups);
+  const splitNestedGroups = splitLargeGroups(nestedGroups);
+  
   return (
     <section className={`hier-army-section hier-army-section--${side}`}>
       <h3 className="hier-army-section__title">{title}</h3>
@@ -431,11 +517,11 @@ function ArmySection({
       )}
       
       {/* Flat groups in 3-column grid */}
-      {flatGroups.length > 0 && (
+      {splitFlatGroups.length > 0 && (
         <div className="hier-army-section__groups">
-          {flatGroups.map((group, idx) => (
+          {splitFlatGroups.map((group, idx) => (
             <CommandGroupSection 
-              key={`${group.commandCode}-${idx}`}
+              key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
               group={group}
               footnotes={footnotes}
               side={side}
@@ -445,9 +531,9 @@ function ArmySection({
       )}
       
       {/* Nested groups (Corps with divisions) - full width, each with its own 3-column grid */}
-      {nestedGroups.map((group, idx) => (
+      {splitNestedGroups.map((group, idx) => (
         <CommandGroupSection 
-          key={`${group.commandCode}-${idx}`}
+          key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
           group={group}
           footnotes={footnotes}
           side={side}

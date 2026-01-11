@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, Navigate, useParams, useNavigate } from "react-router-dom";
+import { Routes, Route, Navigate, useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { GameSelector } from "./components/GameSelector";
 import { ScenarioSelector } from "./components/ScenarioSelector";
 import { RosterSheet } from "./components/RosterSheet";
@@ -9,6 +9,7 @@ import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
 
 type LayoutMode = "grid" | "hierarchical";
+const DEFAULT_LAYOUT: LayoutMode = "hierarchical";
 
 // Get base path from Vite (handles GitHub Pages deployment)
 const BASE_URL = import.meta.env.BASE_URL;
@@ -16,19 +17,32 @@ const BASE_URL = import.meta.env.BASE_URL;
 function ScenarioView({
   games,
   gamesLoading,
-  layoutMode,
-  onLayoutChange,
 }: {
   games: GameInfo[];
   gamesLoading: boolean;
-  layoutMode: LayoutMode;
-  onLayoutChange: (mode: LayoutMode) => void;
 }) {
   const { gameSlug, scenarioSlug } = useParams<{ gameSlug: string; scenarioSlug: string }>();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [gameData, setGameData] = useState<GameData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Get layout mode from query param, default to hierarchical
+  const viewParam = searchParams.get("view");
+  const layoutMode: LayoutMode = viewParam === "grid" || viewParam === "hierarchical" 
+    ? viewParam 
+    : DEFAULT_LAYOUT;
+
+  const handleLayoutChange = (mode: LayoutMode) => {
+    if (mode === DEFAULT_LAYOUT) {
+      // Remove param if it's the default
+      searchParams.delete("view");
+    } else {
+      searchParams.set("view", mode);
+    }
+    setSearchParams(searchParams, { replace: true });
+  };
 
   const gameId = gameSlug ? getGameIdFromSlug(gameSlug) : null;
   const game = games.find((g) => g.id === gameId);
@@ -125,7 +139,7 @@ function ScenarioView({
             <span>Layout:</span>
             <select 
               value={layoutMode} 
-              onChange={(e) => onLayoutChange(e.target.value as LayoutMode)}
+              onChange={(e) => handleLayoutChange(e.target.value as LayoutMode)}
             >
               <option value="grid">Grid</option>
               <option value="hierarchical">Hierarchical</option>
@@ -192,7 +206,6 @@ function App() {
   const [games, setGames] = useState<GameInfo[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [layoutMode, setLayoutMode] = useState<LayoutMode>("grid");
 
   // Load games index on mount
   useEffect(() => {
@@ -233,8 +246,6 @@ function App() {
           <ScenarioView 
             games={games} 
             gamesLoading={loading} 
-            layoutMode={layoutMode}
-            onLayoutChange={setLayoutMode}
           />
         }
       />
