@@ -67,6 +67,24 @@
   padding: 2px 1px;
 }
 
+.unit-card__counter-box--counter {
+  justify-content: center;
+  padding: 0;
+}
+
+.unit-card__counter-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.unit-card__counter-text {
+  font-size: 0.55rem;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+}
+
 .unit-card__leader {
   display: block;
   font-size: 0.45rem;

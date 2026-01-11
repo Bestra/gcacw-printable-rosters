@@ -157,8 +157,8 @@ function ScenarioView({
       </div>
       {scenario && gameData && (
         layoutMode === "flow"
-          ? <FlowRosterSheet scenario={scenario} gameName={gameData.name} />
-          : <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} />
+          ? <FlowRosterSheet scenario={scenario} gameName={gameData.name} gameId={gameId ?? undefined} />
+          : <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} gameId={gameId ?? undefined} />
       )}
     </div>
   );

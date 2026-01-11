@@ -193,6 +193,18 @@
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 2px;
+  overflow: hidden;
+}
+
+.flow-leader-header__counter-box--has-image {
+  padding: 0;
+  justify-content: center;
+}
+
+.flow-leader-header__counter-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .flow-leader-header__name {
@@ -276,6 +288,18 @@
 .flow-unit-row__counter-box--name {
   justify-content: flex-end;
   padding-bottom: 2px;
+  overflow: hidden;
+}
+
+.flow-unit-row__counter-box--has-image {
+  padding: 0;
+  justify-content: center;
+}
+
+.flow-unit-row__counter-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .flow-unit-row__name {

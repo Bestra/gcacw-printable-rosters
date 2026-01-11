@@ -9,6 +9,7 @@ import {
   buildCommandHierarchy,
   splitLargeGroups,
 } from "../utils/rosterUtils";
+import { getUnitImage } from "../data/imageMap";
 import { FootnotesLegend } from "./shared/FootnotesLegend";
 import { GunboatsList } from "./shared/GunboatsList";
 import "./HierarchicalRosterSheet.css";
@@ -16,6 +17,7 @@ import "./HierarchicalRosterSheet.css";
 interface HierarchicalRosterSheetProps {
   scenario: Scenario;
   gameName: string;
+  gameId?: string;
 }
 
 // Maximum units per column before splitting into multiple columns
@@ -26,16 +28,24 @@ function UnitRow({
   unit, 
   footnotes,
   leaderName,
+  gameId,
+  side,
 }: { 
   unit: Unit;
   footnotes: Record<string, string>;
   leaderName?: string;
+  gameId?: string;
+  side?: "confederate" | "union";
 }) {
   const { hexCode, locationName } = parseHexLocation(unit.hexLocation);
   const fatigue = getStartingFatigue(unit, footnotes);
   const notes = getNoteSymbols(unit);
   const mpDisplay = unit.manpowerValue !== "-" ? unit.manpowerValue : "";
   const tableAbbrev = getTableAbbreviation(unit.tableName);
+  
+  // Look up unit counter image
+  const imageFilename = gameId && side ? getUnitImage(gameId, side, unit.name) : undefined;
+  const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
   
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
   const showHexLocation = !unit.reinforcementSet || !unit.hexLocation.toLowerCase().startsWith("see");
@@ -56,9 +66,17 @@ function UnitRow({
         {leaderName && <span className="hier-unit-row__leader">{leaderName}</span>}
       </div>
       <div className="hier-unit-row__counters">
-        {/* Box 1: Unit name (what it looks like on the board) */}
-        <div className="hier-unit-row__counter-box hier-unit-row__counter-box--name">
-          <span className="hier-unit-row__name">{unit.name}</span>
+        {/* Box 1: Unit counter image or name */}
+        <div className={`hier-unit-row__counter-box hier-unit-row__counter-box--name${imagePath ? ' hier-unit-row__counter-box--has-image' : ''}`}>
+          {imagePath ? (
+            <img 
+              src={imagePath} 
+              alt={unit.name} 
+              className="hier-unit-row__counter-image"
+            />
+          ) : (
+            <span className="hier-unit-row__name">{unit.name}</span>
+          )}
           {notes && <span className="hier-unit-row__notes">{notes}</span>}
         </div>
         {/* Box 2: Fortification */}
@@ -79,15 +97,23 @@ function UnitRow({
 // Leader header for command group
 function LeaderHeader({ 
   leader, 
-  footnotes 
+  footnotes,
+  gameId,
+  side,
 }: { 
   leader: Unit;
   footnotes: Record<string, string>;
+  gameId?: string;
+  side?: "confederate" | "union";
 }) {
   const { hexCode, locationName } = parseHexLocation(leader.hexLocation);
   const fatigue = getStartingFatigue(leader, footnotes);
   const notes = getNoteSymbols(leader);
   const tableAbbrev = getTableAbbreviation(leader.tableName);
+  
+  // Look up leader counter image
+  const imageFilename = gameId && side ? getUnitImage(gameId, side, leader.name) : undefined;
+  const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
   
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
   const showHexLocation = !leader.reinforcementSet || !leader.hexLocation.toLowerCase().startsWith("see");
@@ -95,8 +121,16 @@ function LeaderHeader({
   return (
     <div className="hier-leader-header">
       <div className="hier-leader-header__counter">
-        <div className="hier-leader-header__counter-box">
-          <span className="hier-leader-header__name">{leader.name}</span>
+        <div className={`hier-leader-header__counter-box${imagePath ? ' hier-leader-header__counter-box--has-image' : ''}`}>
+          {imagePath ? (
+            <img 
+              src={imagePath} 
+              alt={leader.name} 
+              className="hier-leader-header__counter-image"
+            />
+          ) : (
+            <span className="hier-leader-header__name">{leader.name}</span>
+          )}
           {notes && <span className="hier-leader-header__notes">{notes}</span>}
         </div>
       </div>
@@ -122,11 +156,13 @@ function CommandGroupSection({
   group, 
   footnotes,
   side,
+  gameId,
   isSubgroup = false,
 }: { 
   group: CommandGroup;
   footnotes: Record<string, string>;
   side: "confederate" | "union";
+  gameId?: string;
   isSubgroup?: boolean;
 }) {
   const hasSubgroups = group.subgroups.length > 0;
@@ -146,7 +182,7 @@ function CommandGroupSection({
       </h4>
       
       {group.leader && (
-        <LeaderHeader leader={group.leader} footnotes={footnotes} />
+        <LeaderHeader leader={group.leader} footnotes={footnotes} gameId={gameId} side={side} />
       )}
       
       {/* Direct units for this command */}
@@ -157,6 +193,8 @@ function CommandGroupSection({
               key={`${unit.name}-${idx}`}
               unit={unit}
               footnotes={footnotes}
+              gameId={gameId}
+              side={side}
             />
           ))}
         </div>
@@ -171,6 +209,7 @@ function CommandGroupSection({
               group={subgroup}
               footnotes={footnotes}
               side={side}
+              gameId={gameId}
               isSubgroup={true}
             />
           ))}
@@ -187,12 +226,14 @@ function ArmySection({
   footnotes,
   gunboats,
   side,
+  gameId,
 }: {
   title: string;
   units: Unit[];
   footnotes: Record<string, string>;
   gunboats: import("../types").Gunboat[];
   side: "confederate" | "union";
+  gameId?: string;
 }) {
   const armyLeader = getArmyLeader(units);
   const hierarchy = buildCommandHierarchy(units);
@@ -210,7 +251,7 @@ function ArmySection({
       <div className="hier-army-section__header">
         <h3 className="hier-army-section__title">{title}</h3>
         {armyLeader && (
-          <LeaderHeader leader={armyLeader} footnotes={footnotes} />
+          <LeaderHeader leader={armyLeader} footnotes={footnotes} gameId={gameId} side={side} />
         )}
       </div>
       
@@ -223,6 +264,7 @@ function ArmySection({
               group={group}
               footnotes={footnotes}
               side={side}
+              gameId={gameId}
             />
           ))}
         </div>
@@ -235,6 +277,7 @@ function ArmySection({
           group={group}
           footnotes={footnotes}
           side={side}
+          gameId={gameId}
         />
       ))}
       
@@ -244,7 +287,7 @@ function ArmySection({
   );
 }
 
-export function HierarchicalRosterSheet({ scenario, gameName }: HierarchicalRosterSheetProps) {
+export function HierarchicalRosterSheet({ scenario, gameName, gameId }: HierarchicalRosterSheetProps) {
   return (
     <div className="hier-roster-sheet">
       <header className="hier-roster-sheet__header">
@@ -258,6 +301,7 @@ export function HierarchicalRosterSheet({ scenario, gameName }: HierarchicalRost
           footnotes={scenario.confederateFootnotes}
           gunboats={scenario.confederateGunboats}
           side="confederate"
+          gameId={gameId}
         />
         
         <ArmySection
@@ -266,6 +310,7 @@ export function HierarchicalRosterSheet({ scenario, gameName }: HierarchicalRost
           footnotes={scenario.unionFootnotes}
           gunboats={scenario.unionGunboats}
           side="union"
+          gameId={gameId}
         />
       </div>
     </div>
