@@ -25,6 +25,12 @@ GAMES = [
         "parser_output": "hsn_scenarios.json",
         "web_output": "hsn.json",
     },
+    {
+        "id": "hcr",
+        "name": "Here Come the Rebels!",
+        "parser_output": "hcr_scenarios.json",
+        "web_output": "hcr.json",
+    },
 ]
 
 

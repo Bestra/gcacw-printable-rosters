@@ -14,6 +14,11 @@
       "id": "hsn",
       "name": "Hood Strikes North",
       "file": "hsn.json"
+    },
+    {
+      "id": "hcr",
+      "name": "Here Come the Rebels!",
+      "file": "hcr.json"
     }
   ]
 }

@@ -2,6 +2,10 @@
 
 Operational guide for working on this codebase.
 
+## Python
+
+- Always use `uv` to run Python scripts, never bare `python` or `pip`.
+
 ## Commands
 
 ```bash

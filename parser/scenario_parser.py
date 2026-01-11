@@ -85,6 +85,16 @@ class ScenarioParser:
             8: "That Devil Forrest",
             9: "Hood Strikes North",
         },
+        "hcr": {
+            1: "South Mountain",
+            2: "Harpers Ferry – Crampton Gap",
+            3: "McClellan's Opportunity",
+            4: "Three Cigars",
+            5: "The Baltimore Raid",
+            6: "The Battle for Washington",
+            7: "From Frederick to Sharpsburg",
+            8: "The Maryland Campaign",
+        },
     }
     
     def __init__(self, pdf_path: str, game_id: str = "otr2"):
