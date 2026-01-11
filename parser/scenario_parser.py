@@ -70,9 +70,9 @@ class ScenarioParser:
             7: "Bethesda Church",
             8: "Trevilian Station",
             9: "The Overland Campaign",
-            10: "Grant Takes Command",
-            11: "The Overland Campaign (Advanced)",
-            12: "Grant Takes Command (Advanced)",
+            10: "Marching to Cold Harbor",
+            11: "Grant's 1864 Offensive",
+            12: "If It Takes All Summer",
         },
     }
     
@@ -402,7 +402,17 @@ class ScenarioParser:
         if match:
             result = match.group(1).strip()
             # Get just the first line
-            return result.split('\n')[0].strip()
+            first_line = result.split('\n')[0].strip()
+            # Extract just the turns and date part (ends with year like 1864.)
+            # Pattern: "X turns; Month Day to Month Day, Year."
+            date_match = re.match(r'^:?\s*(\d+\s+turns?;\s+\w+\s+\d+(?:\s+to\s+\w+\s+\d+)?,\s+\d{4})\.', first_line)
+            if date_match:
+                return date_match.group(1) + "."
+            # Fallback: just get everything up to and including the first "1864." or similar year
+            year_match = re.match(r'^:?\s*(.+?\d{4})\.', first_line)
+            if year_match:
+                return year_match.group(1).lstrip(': ') + "."
+            return first_line
         return ""
     
     def _extract_special_rules(self, text: str) -> list[str]:

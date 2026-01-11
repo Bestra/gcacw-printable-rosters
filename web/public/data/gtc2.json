@@ -5,7 +5,7 @@
     {
       "number": 1,
       "name": "The Battle of the Wilderness",
-      "gameLength": "2 turns; May 5 to May 6, 1864. intersection)",
+      "gameLength": "2 turns; May 5 to May 6, 1864.",
       "mapInfo": "Use only the GTC North map. +18 Union control of Wilderness Tavern (N2709) +15 Union control of hex N2811 (Brock Road/ Plank Road",
       "confederateFootnotes": {
         "*": "Chambliss, Ramseur, and Steuart start under Fort-Complete markers"
@@ -537,7 +537,7 @@
     {
       "number": 2,
       "name": "Grant Crosses the Rapidan",
-      "gameLength": "5 turns; May 4 to May 8, 1864. not participate in an Activate Leader or Assault action.) If a Union",
+      "gameLength": "5 turns; May 4 to May 8, 1864.",
       "mapInfo": "Use only the GTC North map. which move like Union infantry (although they may not force march). If activated, they must perform a March action. (They may",
       "confederateFootnotes": {
         "*": "Chambliss, Rodes, Ramseur, and Steuart start under a Fort-Complete marker",
@@ -1192,7 +1192,7 @@
     {
       "number": 3,
       "name": "Race for Spotsylvania",
-      "gameLength": "1 turn; May 8, 1864. +2 Union control of Crutchfield (N3519).",
+      "gameLength": "1 turn; May 8, 1864.",
       "mapInfo": "Use only the GTC north map. +2 Union control of Harrison (N3416). +2 Union control of Landrum (N3516).",
       "confederateFootnotes": {
         "*": "Lomax and Wickham begin the game at Fatigue Level 1. They are also disorganized, exhausted, and under Abatis markers.",
@@ -1431,7 +1431,7 @@
     {
       "number": 4,
       "name": "Bloody Spotsylvania",
-      "gameLength": "5 turns; May 8 to May 12, 1864. +4 Union control of Guinea Station (N4320).",
+      "gameLength": "5 turns; May 8 to May 12, 1864.",
       "mapInfo": "Use only the GTC North map. +4 Union control of Stannard\u2019s Mill (N3921). +4 Union control of Massaponax Church (N4016).",
       "confederateFootnotes": {},
       "unionFootnotes": {},
@@ -1443,7 +1443,7 @@
     {
       "number": 5,
       "name": "Sheridan Rides South",
-      "gameLength": ": 4 turns; May 9 to May 12, 1864. fort hex within three hexes of a Richmond city hex. Note that the",
+      "gameLength": "4 turns; May 9 to May 12, 1864.",
       "mapInfo": "",
       "confederateFootnotes": {
         "+": "1 MD and 2 MD each begin the game under a Fort-Complete marker."
@@ -1651,7 +1651,7 @@
     {
       "number": 6,
       "name": "Strike Them a Blow!",
-      "gameLength": "4 turns; May 21 to May 24, 1864. +9 Union control of Ashland (OTR N0314).",
+      "gameLength": "4 turns; May 21 to May 24, 1864.",
       "mapInfo": "",
       "confederateFootnotes": {
         "^": "Barton begins the game on the exhausted side.",
@@ -2106,7 +2106,7 @@
     {
       "number": 7,
       "name": "Bethesda Church",
-      "gameLength": ": 3 turns; May 30 to June 1, 1864.",
+      "gameLength": "3 turns; May 30 to June 1, 1864.",
       "mapInfo": "Use only the OTR North map. The Union player gains and loses Victory Points (VP) for the following occurrences:",
       "confederateFootnotes": {
         "*": "Indicated units start under a Breastworks-Complete marker."
@@ -2660,7 +2660,7 @@
     {
       "number": 8,
       "name": "Trevilian Station",
-      "gameLength": "5 turns; June 8 to June 12, 1864. occurrences:",
+      "gameLength": "5 turns; June 8 to June 12, 1864.",
       "mapInfo": "Use all of the GTC North map, the top one-quarter of the GTC South exit the map. Once a unit exits the map, it may not return. map, and the left half of the OTR North map. (The unused map areas can be",
       "confederateFootnotes": {},
       "unionFootnotes": {},
@@ -2809,7 +2809,7 @@
     {
       "number": 9,
       "name": "The Overland Campaign",
-      "gameLength": "40 turns; May 4 to June 12, 1864. Note that the game IX Corps Art 2 3",
+      "gameLength": "40 turns; May 4 to June 12, 1864.",
       "mapInfo": "",
       "confederateFootnotes": {
         "*": "Chambliss, Rodes, Ramseur, Steuart, 1 MD, 2 MD and Johnston start under a Fort-Complete marker.",
@@ -3979,8 +3979,8 @@
     },
     {
       "number": 10,
-      "name": "Grant Takes Command",
-      "gameLength": "17 turns; May 27 to June 12, 1864. Note that the game the following Action Phase.",
+      "name": "Marching to Cold Harbor",
+      "gameLength": "17 turns; May 27 to June 12, 1864.",
       "mapInfo": "",
       "confederateFootnotes": {
         "*": "Indicated units start under a Breastwork-Complete marker.",
@@ -4961,8 +4961,8 @@
     },
     {
       "number": 11,
-      "name": "The Overland Campaign (Advanced)",
-      "gameLength": "40 turns; May 4 to June 12, 1864. Note that the game",
+      "name": "Grant's 1864 Offensive",
+      "gameLength": "40 turns; May 4 to June 12, 1864.",
       "mapInfo": "",
       "confederateFootnotes": {
         "^": "Indicated units may not activate or entrench until Turn 3.",
@@ -6194,8 +6194,8 @@
     },
     {
       "number": 12,
-      "name": "Grant Takes Command (Advanced)",
-      "gameLength": "17 turns; May 27 to June 12, 1864. Note that the game 1. The game starts with a Union Activate Army Leader action (see",
+      "name": "If It Takes All Summer",
+      "gameLength": "17 turns; May 27 to June 12, 1864.",
       "mapInfo": "",
       "confederateFootnotes": {
         "^": "Indicated units start under a Fort-Complete marker.",

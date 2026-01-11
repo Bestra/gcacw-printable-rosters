@@ -72,10 +72,26 @@ PDF → scenario_parser.py → {game_id}_scenarios.json (snake_case)
 
 ### Adding a new game
 
-1. Add scenario names to `SCENARIO_NAMES` in `scenario_parser.py`
-2. Add game config to `GAMES` in `convert_to_web.py`
-3. Run: `uv run python scenario_parser.py ../data/NewGame.pdf newgame`
-4. Run: `uv run python convert_to_web.py`
+1. **Verify scenario names from the PDF first.** Run this to see what the parser finds:
+
+   ```bash
+   cd parser && uv run python -c '
+   import pdfplumber, re
+   with pdfplumber.open("../data/NewGame.pdf") as pdf:
+       for i, page in enumerate(pdf.pages[3:], start=4):
+           text = page.extract_text() or ""
+           for line in text.split("\n")[:15]:
+               if re.search(r"scenario\s+\d+:", line, re.IGNORECASE):
+                   print(f"Page {i}: {line.strip()[:80]}")
+   '
+   ```
+
+   PDF extraction is unreliable—scenario titles often merge with adjacent text. Cross-reference against the actual PDF to get correct names.
+
+2. Add scenario names to `SCENARIO_NAMES` in `scenario_parser.py`
+3. Add game config to `GAMES` in `convert_to_web.py`
+4. Run: `uv run python scenario_parser.py ../data/NewGame.pdf newgame`
+5. Run: `uv run python convert_to_web.py`
 
 ## Validation
 

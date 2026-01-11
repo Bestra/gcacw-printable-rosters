@@ -5,7 +5,7 @@
     "start_page": 4,
     "notes": "This scenario covers the two days of bloody fighting that occurred The Union player gains and loses VP for the following occurrences: when Grant and Lee squared off for the first time in the Wilderness. VP Reason",
     "map_info": "Use only the GTC North map. +18 Union control of Wilderness Tavern (N2709) +15 Union control of hex N2811 (Brock Road/ Plank Road",
-    "game_length": "2 turns; May 5 to May 6, 1864. intersection)",
+    "game_length": "2 turns; May 5 to May 6, 1864.",
     "special_rules": [
       "+12 Union control of hex N2507 (southeast side of Germanna Ford) +12 Union control of Locust Grove (N2311)",
       "Random Events: There are no random events in this scenario. +9 Union control of Chancellorsville (N3210)",
@@ -602,7 +602,7 @@
     "start_page": 7,
     "notes": "George Meade, leading the Army of the Potomac for Ulysses Grant IX Corps Art 2 3 as the campaign opened, proceeded very gingerly into the Wilderness. His 3 NJ 2 3 tentativeness was caused by the need to protect the largest military wagon train in history that was breaking camp at Brandy Station and following the 22 NY 2 3 army south. This scenario highlights Grant\u2019s and Meade\u2019s historical difficulties, 2 OH 2 3 as the Union player must break his winter camps and move his army\u2014and its 13 PA 2 3 s",
     "map_info": "Use only the GTC North map. which move like Union infantry (although they may not force march). If activated, they must perform a March action. (They may",
-    "game_length": "5 turns; May 4 to May 8, 1864. not participate in an Activate Leader or Assault action.) If a Union",
+    "game_length": "5 turns; May 4 to May 8, 1864.",
     "special_rules": [
       "train, it must pay the most severe possible Movement Point penalty for entering a friendly-occupied hex (+2 MP to enter a city, clear, rolling,",
       "Random Events: There are no random events in this scenario. hill, or rough hex; +4 MP to enter a woods, swamp, or mountain",
@@ -1334,7 +1334,7 @@
     "start_page": 10,
     "notes": "After the Battle of the Wilderness, Union morale was boosted The Union player gains and loses VPs for the following occurrences at the end by Grant\u2019s decision to press on south. Grant\u2019s night march on May 7-8 was of the game: designed to steal a march on Lee and get between the Army of Northern Virginia and Richmond. However, Lee anticipated the Union move, setting VP Reason up the race to establish control of Spotsylvania Court House between +12 Union control of Spotsylvania Court House (N3517)",
     "map_info": "Use only the GTC north map. +2 Union control of Harrison (N3416). +2 Union control of Landrum (N3516).",
-    "game_length": "1 turn; May 8, 1864. +2 Union control of Crutchfield (N3519).",
+    "game_length": "1 turn; May 8, 1864.",
     "special_rules": [
       "+2 Union control of Quisenberry (N3618). +3 For each point of Confederate Manpower value lost in combat,",
       "Random Events: There are no random events in this scenario. retreat, or cavalry retreat (not in extended march, force march, or",
@@ -1602,7 +1602,7 @@
     "start_page": 12,
     "notes": "The first five days of the Spotsylvania campaign represented some of The Union player gains and loses VPs for the following occurrences at the end the most desperate fighting of the war, culminating in the bloody struggle at of the game: \u201cThe Angle\u201d on May 12. Out of necessity, Lee\u2019s army invented the defensive style of fighting behind entrenchments that would characterize their efforts VP Reason for the rest of the war. The Army of the Potomac tried some creative responses +25 Union control of ",
     "map_info": "Use only the GTC North map. +4 Union control of Stannard\u2019s Mill (N3921). +4 Union control of Massaponax Church (N4016).",
-    "game_length": "5 turns; May 8 to May 12, 1864. +4 Union control of Guinea Station (N4320).",
+    "game_length": "5 turns; May 8 to May 12, 1864.",
     "special_rules": [
       "above. +2 For each point of Manpower value from Union cavalry units that",
       "Random Events: There is no random event on Turn 1. Random events exit the south map-edge before the end of Turn 3 (see Special are determined normally at the start of Turns 2 through 5. The only Rule 8). applicable events are the various Rain results. No more than two turns -3 For each point of Manp",
@@ -1626,7 +1626,7 @@
     "start_page": 15,
     "notes": "On May 8, Grant and Meade gave Sheridan permission to move The Union player gains and loses Victory Points (VP) for the following aggressively against Stuart\u2019s Confederate cavalry. Hoping to catch Stuart in occurrences: an open battle where the Union numbers could prevail, Sheridan headed south on a raid, realizing that Stuart would have to follow. After damaging the VP Reason Virginia Central Railroad around Beaver Dam Station and putting a scare into +3 If Beaver Dam Station (GTC N3232) is dam",
     "map_info": "",
-    "game_length": ": 4 turns; May 9 to May 12, 1864. fort hex within three hexes of a Richmond city hex. Note that the",
+    "game_length": "4 turns; May 9 to May 12, 1864.",
     "special_rules": [
       "+2 If the Confederate player moves Barton at any time during the game.",
       "Random Events: There are no random events in this scenario. +2 If the Confederate player moves Gracie at any time during the",
@@ -1865,7 +1865,7 @@
     "start_page": 17,
     "notes": "After nearly two weeks of bloody fighting in the trenches of Throughout this scenario, Torbert may freely activate any of these units Spotsylvania, Grant ordered the Army of the Potomac to slide to the south as if they all belong to his Cav-1 division. and east of Lee on the night of May 20. Both Lee and Grant looked at this 6. Confederate Movement Restrictions: The Confederate infantry division new round of maneuvering as prime opportunities to catch their opponent Pickett may not activate or e",
     "map_info": "",
-    "game_length": "4 turns; May 21 to May 24, 1864. +9 Union control of Ashland (OTR N0314).",
+    "game_length": "4 turns; May 21 to May 24, 1864.",
     "special_rules": [
       "+5 Union control of Wickham\u2019s Station (OTR N0612). +6 If the Union does not control Hanover Junction but does control",
       "Random Events: There are no random events in this scenario. Ashland along with one objective from both the following two",
@@ -2372,7 +2372,7 @@
     "start_page": 19,
     "notes": "After the May 28 cavalry clash at Haw\u2019s Shop, Lee and Grant eyed 8. Hex Control: The Union player controls Bethesda Church, Polly each other across Totopotomoy Creek. On May 29, Warren pushed his V Hundley\u2019s Corner, Haw\u2019s Shop, and Old Church at the start of the Corps south over the creek towards Bethesda Church. With the Union flank scenario. The Confederate player controls the other five objectives (see hanging in air, Lee knew that he \u201cmust destroy this army of Grant\u2019s before he Victory Condi",
     "map_info": "Use only the OTR North map. The Union player gains and loses Victory Points (VP) for the following occurrences:",
-    "game_length": ": 3 turns; May 30 to June 1, 1864.",
+    "game_length": "3 turns; May 30 to June 1, 1864.",
     "special_rules": [
       "+10 Union control of Mechanicsville (N0923) +10 Union control of Bethesda Church (N1321)",
       "Random Events: There are no random events in this scenario. +10 Union control of New Cold Harbor (N1423)",
@@ -2993,7 +2993,7 @@
     "start_page": 21,
     "notes": "On June 5, 1864, General David Hunter\u2019s Union army won a \u2022 Louisa Court House (GTC N1329) victory in the Shenandoah Valley at Piedmont, and headed south towards \u2022 Trevilian Station (GTC N0927) Lexington and Lynchburg. Grant decided the time was right to send \u2022 Gordonsville (GTC N0222) Sheridan\u2019s cavalry west to rendezvous with Hunter in Charlottesville. Along To exit the map, a unit must first move to one of the following five the way, Sheridan would strive to damage the Virginia Central Railroa",
     "map_info": "Use all of the GTC North map, the top one-quarter of the GTC South exit the map. Once a unit exits the map, it may not return. map, and the left half of the OTR North map. (The unused map areas can be",
-    "game_length": "5 turns; June 8 to June 12, 1864. occurrences:",
+    "game_length": "5 turns; June 8 to June 12, 1864.",
     "special_rules": [
       "VP Reason +14 If exactly five Union cavalry units exit the map during the game.",
       "Random Events: There are no random events in this scenario. +8 If exactly four Union cavalry units exit the map during the game.",
@@ -3167,7 +3167,7 @@
     "start_page": 42,
     "notes": "This scenario is the standard Advanced Game covering all 40 days of reinforCement GroUp 2 tUrn fatiGUe LeveL the campaign. Willcox-A 2 1 MAPS: Use the GTC North map, the top half of the GTC South map, and reinforCement GroUp 3 tUrn fatiGUe LeveL the left half of the OTR North map (the unused map portions can be folded Burnside-A 2 N/A over and are considered off-map; i.e., OTR N30xx and all columns east of Potter 2 2 there are off-map as are GTC Sxx26 and all rows south of there). Place the Prov",
     "map_info": "",
-    "game_length": "40 turns; May 4 to June 12, 1864. Note that the game IX Corps Art 2 3",
+    "game_length": "40 turns; May 4 to June 12, 1864.",
     "special_rules": [
       "\u2022 No Confederate unit of any manpower or unit type may be adjacent to the ford.",
       "Random Events: Random events are not determined on Turn 1. In any two locations where these conditions are met, the Union player may Random event rolls are made normally on all other turns. place a Minor River Bridge marker without having to roll for success.",
@@ -4467,11 +4467,11 @@
   },
   {
     "number": 10,
-    "name": "Grant Takes Command",
+    "name": "Marching to Cold Harbor",
     "start_page": 47,
     "notes": "This scenario is the abbreviated Advanced Game covering the final \u2022 Beaver Dam Station (GTC N3232) confrontation in front of Richmond. \u2022 Hewlett\u2019s Turnout (GTC N3633) \u2022 Noel\u2019s Turnout (GTC S3201) MAPS: Use the GTC North map, the top half of the GTC South map, and 5. Turn 1: No leader transfer or attachment is allowed at the start of Turn the left half of the OTR North map (the unused map portions can be folded 1. The game starts with a Union Activate Army Leader action (see over and are consider",
     "map_info": "",
-    "game_length": "17 turns; May 27 to June 12, 1864. Note that the game the following Action Phase.",
+    "game_length": "17 turns; May 27 to June 12, 1864.",
     "special_rules": [
       "of each Strategic Cycle to see if Hampton is promoted to lead the Confederate cavalry (see 6.0).",
       "Random Events: Random events are not determined on Turn 1. 11. Upton: The Upton counter is not available in this scenario. Random event rolls are made normally in all other turns.",
@@ -5556,11 +5556,11 @@
   },
   {
     "number": 11,
-    "name": "The Overland Campaign (Advanced)",
+    "name": "Grant's 1864 Offensive",
     "start_page": 57,
     "notes": "",
     "map_info": "",
-    "game_length": "40 turns; May 4 to June 12, 1864. Note that the game",
+    "game_length": "40 turns; May 4 to June 12, 1864.",
     "special_rules": [
       "Rule 10.1. These two bridges may only be constructed over a hexside meeting all of the following conditions:",
       "Random Events: Random events are not determined on Turn 1. \u2022 The hexside is a ford over a minor river; Random event rolls are made normally on all other turns. \u2022 A Union unit of any manpower and unit type must be adjacent to",
@@ -6928,11 +6928,11 @@
   },
   {
     "number": 12,
-    "name": "Grant Takes Command (Advanced)",
+    "name": "If It Takes All Summer",
     "start_page": 62,
     "notes": "",
     "map_info": "",
-    "game_length": "17 turns; May 27 to June 12, 1864. Note that the game 1. The game starts with a Union Activate Army Leader action (see",
+    "game_length": "17 turns; May 27 to June 12, 1864.",
     "special_rules": [
       "9. Lee Sick: Lee is sick to start the scenario. He may recover in any Strategic Cycle (see 6.0).",
       "Random Events: Random events are not determined on Turn 1. 10. Hampton: Stuart has died prior to the scenario. Hampton has not yet Random event rolls are made normally on all other turns. been promoted to lead the Confederate cavalry corps. The Confederate",
