@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web-temp</title>
+    <title>GCACW Printable Rosters</title>
+    <!-- Handle SPA redirects from 404.html on GitHub Pages -->
+    <script>
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        const redirectPath = params.get('p');
+        if (redirectPath) {
+          // Remove the query param and navigate to the real path
+          const newUrl = window.location.pathname.replace(/\/$/, '') + redirectPath;
+          window.history.replaceState(null, '', newUrl);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

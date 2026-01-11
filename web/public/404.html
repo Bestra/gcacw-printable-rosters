@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // MIT License - https://github.com/rafgraph/spa-github-pages
+      // This script takes the current URL and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new URL with only a query string and hash fragment.
+      
+      // Store the path in sessionStorage to retrieve after redirect
+      const pathSegmentsToKeep = 1; // Keep '/gcacw-printable-rosters' base path
+      
+      const repo = '/gcacw-printable-rosters';
+      const fullPath = location.pathname;
+      
+      // Extract the path after the repo name
+      let pathAfterBase = fullPath;
+      if (fullPath.startsWith(repo)) {
+        pathAfterBase = fullPath.slice(repo.length) || '/';
+      }
+      
+      // Redirect to index with path stored in query param
+      const redirectUrl = repo + '/?p=' + encodeURIComponent(pathAfterBase + location.search);
+      location.replace(redirectUrl);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
