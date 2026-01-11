@@ -2,6 +2,8 @@
 
 Printable roster sheets for Great Campaigns of the American Civil War (GCACW) board games.
 
+**🎮 [Try it live](https://bestra.github.io/gcacw-printable-rosters/)**
+
 ## The Problem
 
 GCACW games use stacks of 1/2" counters to track each unit's state—the unit itself, fatigue markers, entrenchments, etc. This creates handling overhead and obscures information during play.
