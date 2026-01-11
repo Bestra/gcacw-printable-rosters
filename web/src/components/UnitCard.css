@@ -63,6 +63,14 @@
   color: #666;
   text-align: center;
   line-height: 1.2;
+  justify-content: space-between;
+  padding: 2px 1px;
+}
+
+.unit-card__leader {
+  display: block;
+  font-size: 0.45rem;
+  color: #888;
 }
 
 .unit-card__mp {

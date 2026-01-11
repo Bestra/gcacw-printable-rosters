@@ -6,9 +6,10 @@ interface UnitCardProps {
   side?: "confederate" | "union";
   empty?: boolean;
   startingFatigue?: string;
+  leaderName?: string;
 }
 
-export function UnitCard({ unit, side, empty, startingFatigue }: UnitCardProps) {
+export function UnitCard({ unit, side, empty, startingFatigue, leaderName }: UnitCardProps) {
   if (empty || !unit) {
     return (
       <div className="unit-card unit-card--empty">
@@ -26,7 +27,11 @@ export function UnitCard({ unit, side, empty, startingFatigue }: UnitCardProps) 
 
   // Extract just the hex code from locations like "S5510 (Yorktown)"
   const hexMatch = unit.hexLocation.match(/^([NS]\d{4})/);
-  const hexCode = hexMatch ? hexMatch[1] : unit.hexLocation.split(" ")[0];
+  let hexCode = hexMatch ? hexMatch[1] : unit.hexLocation.split(" ")[0];
+  
+  // Shorten common long location names
+  if (hexCode === "Reinforcement") hexCode = "Reinf.";
+  if (hexCode === "Confederate") hexCode = "CSA Reinf.";
   
   // Format manpower display
   const mpDisplay = unit.manpowerValue !== "-" ? unit.manpowerValue : "";
@@ -40,7 +45,8 @@ export function UnitCard({ unit, side, empty, startingFatigue }: UnitCardProps) 
       <div className="unit-card__counters">
         <div className="unit-card__counter-box" />
         <div className="unit-card__counter-box unit-card__counter-box--info">
-          {mpDisplay && <span className="unit-card__mp">{mpDisplay}</span>}
+          <span className="unit-card__leader">{leaderName ?? "\u00A0"}</span>
+          <span className="unit-card__mp">{mpDisplay || "\u00A0"}</span>
           <span className="unit-card__hex">{hexCode}</span>
         </div>
         <div className="unit-card__counter-box unit-card__counter-box--info">

@@ -39,6 +39,13 @@
   letter-spacing: 0.05em;
 }
 
+.roster-sheet__army-leader {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #555;
+}
+
 .roster-sheet__units {
   display: flex;
   flex-wrap: wrap;
