@@ -422,14 +422,23 @@ class ScenarioParser:
             # Get just the first line
             first_line = result.split('\n')[0].strip()
             # Extract just the turns and date part (ends with year like 1864.)
-            # Pattern: "X turns; Month Day to Month Day, Year."
-            date_match = re.match(r'^:?\s*(\d+\s+turns?;\s+\w+\s+\d+(?:\s+to\s+\w+\s+\d+)?,\s+\d{4})\.', first_line)
+            # Pattern: "X turns; Month Day to Month Day, Year." or "X turn, Month Day, Year."
+            # Also handle en-dash (–) between dates
+            date_match = re.match(r'^:?\s*(\d+\s+turns?[;,]\s+\w+\s+\d+(?:[\s–-]+(?:to\s+)?\w+\s+\d+)?,\s+\d{4})\.?', first_line)
             if date_match:
                 return date_match.group(1) + "."
             # Fallback: just get everything up to and including the first "1864." or similar year
-            year_match = re.match(r'^:?\s*(.+?\d{4})\.', first_line)
+            # But stop at the period after the year to avoid merged text
+            year_match = re.match(r'^:?\s*(.+?\d{4})\.?', first_line)
             if year_match:
-                return year_match.group(1).lstrip(': ') + "."
+                extracted = year_match.group(1).lstrip(': ')
+                # Sanity check: if result is too long, likely includes merged text
+                if len(extracted) > 60:
+                    # Try to find just the date portion before any lowercase word starts
+                    short_match = re.match(r'^:?\s*(\d+\s+turns?[;,][^a-z]+\d{4})', first_line)
+                    if short_match:
+                        return short_match.group(1).strip() + "."
+                return extracted + "."
             return first_line
         return ""
     
