@@ -8,19 +8,19 @@ export const TABLE_ABBREVIATIONS: Record<string, string | null> = {
   "Union Set-Up": null,
   
   // Army of the Potomac increments
-  "Army Of The Potomac First Increment": "1st Inc",
-  "Army Of The Potomac Second Increment": "2nd Inc",
-  "Army Of The Potomac Third Increment": "3rd Inc",
+  "Army Of The Potomac First Increment": "Inc 1",
+  "Army Of The Potomac Second Increment": "Inc 2",
+  "Army Of The Potomac Third Increment": "Inc 3",
   
   // Reinforcement tracks
-  "Baltimore/Dc Reinforcement Track": "Balt/DC",
+  "Baltimore/Dc Reinforcement Track": "Balt",
   "Confederate Reinforcement Track": "Reinf",
-  "Pennsylvania Militia Reinforcement Track": "PA Militia",
-  "Richmond Garrison Track": "Rich Garr",
+  "Pennsylvania Militia Reinforcement Track": "PA Mil",
+  "Richmond Garrison Track": "Rich",
   "West Virginia Reinforcement Track": "WV",
   
   // Special conditions
-  "Placed Upon Stuart'S Arrival": "Stuart Arr",
+  "Placed Upon Stuart'S Arrival": "Stuart",
 };
 
 /**
@@ -43,10 +43,10 @@ export function getTableAbbreviation(tableName: string | undefined): string | nu
   }
   
   // Increment tables
-  if (lowerName.includes("first increment")) return "1st Inc";
-  if (lowerName.includes("second increment")) return "2nd Inc";
-  if (lowerName.includes("third increment")) return "3rd Inc";
-  if (lowerName.includes("fourth increment")) return "4th Inc";
+  if (lowerName.includes("first increment")) return "Inc 1";
+  if (lowerName.includes("second increment")) return "Inc 2";
+  if (lowerName.includes("third increment")) return "Inc 3";
+  if (lowerName.includes("fourth increment")) return "Inc 4";
   
   // Reinforcement tracks
   if (lowerName.includes("reinforcement")) {

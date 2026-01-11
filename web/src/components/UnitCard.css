@@ -98,6 +98,14 @@
   margin: auto 0;
 }
 
+.unit-card__annotations {
+  display: block;
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: #c00;
+  letter-spacing: 0.1em;
+}
+
 .unit-card__fatigue {
   font-weight: 600;
   color: #000;

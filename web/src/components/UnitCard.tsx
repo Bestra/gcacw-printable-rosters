@@ -70,6 +70,9 @@ export function UnitCard({ unit, side: propSide, empty, startingFatigue, leaderN
         <div className="unit-card__counter-box unit-card__counter-box--info">
           <span className="unit-card__leader">{leaderName ?? "\u00A0"}</span>
           <span className="unit-card__mp">{mpDisplay || "\u00A0"}</span>
+          {unit.notes && unit.notes.length > 0 && (
+            <span className="unit-card__annotations">{unit.notes.join(" ")}</span>
+          )}
         </div>
         <div className="unit-card__counter-box unit-card__counter-box--info">
           {startingFatigue && <span className="unit-card__fatigue">{startingFatigue}</span>}

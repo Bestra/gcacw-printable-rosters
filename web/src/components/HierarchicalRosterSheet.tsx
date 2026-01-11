@@ -13,6 +13,7 @@ import { getUnitImage } from "../data/imageMap";
 import { RosterProvider, useRoster } from "../context/RosterContext";
 import { FootnotesLegend } from "./shared/FootnotesLegend";
 import { GunboatsList } from "./shared/GunboatsList";
+import { AbbreviationsKey } from "./shared/AbbreviationsKey";
 import "./HierarchicalRosterSheet.css";
 
 interface HierarchicalRosterSheetProps {
@@ -60,7 +61,7 @@ function UnitRow({
         )}
         {tableAbbrev && <span className="hier-unit-row__table">{tableAbbrev}</span>}
         {unit.reinforcementSet && (
-          <span className="hier-unit-row__reinforcement">Reinf Set {unit.reinforcementSet}</span>
+          <span className="hier-unit-row__reinforcement">Set {unit.reinforcementSet}</span>
         )}
         {leaderName && <span className="hier-unit-row__leader">{leaderName}</span>}
       </div>
@@ -76,10 +77,11 @@ function UnitRow({
           ) : (
             <span className="hier-unit-row__name">{unit.name}</span>
           )}
+        </div>
+        {/* Box 2: Annotations/Fortification */}
+        <div className="hier-unit-row__counter-box hier-unit-row__counter-box--annotations">
           {notes && <span className="hier-unit-row__notes">{notes}</span>}
         </div>
-        {/* Box 2: Fortification */}
-        <div className="hier-unit-row__counter-box" />
         {/* Box 3: Manpower */}
         <div className="hier-unit-row__counter-box hier-unit-row__counter-box--info">
           <span className="hier-unit-row__mp">{mpDisplay || "\u00A0"}</span>
@@ -127,8 +129,12 @@ function LeaderHeader({
           ) : (
             <span className="hier-leader-header__name">{leader.name}</span>
           )}
-          {notes && <span className="hier-leader-header__notes">{notes}</span>}
         </div>
+        {notes && (
+          <div className="hier-leader-header__annotations-box">
+            <span className="hier-leader-header__notes">{notes}</span>
+          </div>
+        )}
       </div>
       <div className="hier-leader-header__setup">
         {showHexLocation && (
@@ -139,7 +145,7 @@ function LeaderHeader({
         )}
         {tableAbbrev && <span className="hier-leader-header__table">{tableAbbrev}</span>}
         {leader.reinforcementSet && (
-          <span className="hier-leader-header__reinforcement">Reinf Set {leader.reinforcementSet}</span>
+          <span className="hier-leader-header__reinforcement">Set {leader.reinforcementSet}</span>
         )}
         {fatigue && <span className="hier-leader-header__fatigue">{fatigue}</span>}
       </div>
@@ -271,6 +277,7 @@ function ArmySection({
         
         <GunboatsList gunboats={gunboats} />
         <FootnotesLegend footnotes={footnotes} />
+        <AbbreviationsKey units={units} />
       </section>
     </RosterProvider>
   );

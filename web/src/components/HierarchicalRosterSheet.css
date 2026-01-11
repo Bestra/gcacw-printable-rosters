@@ -198,6 +198,7 @@
 
 .hier-leader-header__counter {
   flex-shrink: 0;
+  display: flex;
 }
 
 .hier-leader-header__counter-box {
@@ -221,7 +222,8 @@
 .hier-leader-header__counter-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  transform: scale(1.05);
 }
 
 .hier-leader-header__name {
@@ -233,8 +235,19 @@
 
 .hier-leader-header__notes {
   color: #c00;
-  font-weight: 500;
-  font-size: 0.5rem;
+  font-weight: 600;
+  font-size: 0.6rem;
+}
+
+.hier-leader-header__annotations-box {
+  width: 0.55in;
+  height: 0.55in;
+  border: 1px solid #000;
+  border-left: none;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Unit row */
@@ -253,6 +266,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  justify-content: space-between;
   gap: 0.25rem;
   font-size: 0.7rem;
   margin-bottom: 0;
@@ -279,6 +293,7 @@
   color: #933;
   font-weight: 600;
   font-size: 0.6rem;
+  margin-left: auto;
 }
 
 .hier-unit-row__leader {
@@ -321,7 +336,8 @@
 .hier-unit-row__counter-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  transform: scale(1.05);
 }
 
 .hier-unit-row__name {
@@ -333,8 +349,12 @@
 
 .hier-unit-row__notes {
   color: #c00;
-  font-size: 0.5rem;
-  font-weight: 500;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.hier-unit-row__counter-box--annotations {
+  justify-content: center;
 }
 
 .hier-unit-row__counter-box--info {
@@ -514,7 +534,8 @@
 
   /* Counter size for print */
   .hier-unit-row__counter-box,
-  .hier-leader-header__counter-box {
+  .hier-leader-header__counter-box,
+  .hier-leader-header__annotations-box {
     width: 0.55in;
     height: 0.55in;
   }
