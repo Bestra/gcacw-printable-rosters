@@ -29,6 +29,10 @@ export function UnitCard({ unit, side, empty, startingFatigue, leaderName }: Uni
   const hexMatch = unit.hexLocation.match(/^([NS]\d{4})/);
   let hexCode = hexMatch ? hexMatch[1] : unit.hexLocation.split(" ")[0];
   
+  // Extract parenthetical location name if present (e.g., "Yorktown" from "S5510 (Yorktown)")
+  const locationMatch = unit.hexLocation.match(/\(([^)]+)\)/);
+  const locationName = locationMatch ? locationMatch[1] : undefined;
+  
   // Shorten common long location names
   if (hexCode === "Reinforcement") hexCode = "Reinf.";
   if (hexCode === "Confederate") hexCode = "CSA Reinf.";
@@ -51,6 +55,7 @@ export function UnitCard({ unit, side, empty, startingFatigue, leaderName }: Uni
         </div>
         <div className="unit-card__counter-box unit-card__counter-box--info">
           {startingFatigue && <span className="unit-card__fatigue">{startingFatigue}</span>}
+          {locationName && <span className="unit-card__location">{locationName}</span>}
         </div>
       </div>
     </div>
