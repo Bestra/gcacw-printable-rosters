@@ -49,29 +49,77 @@ function FootnotesLegend({ footnotes }: { footnotes: Record<string, string> }) {
   );
 }
 
-// Build a map from command code to leader name
-function buildLeaderMap(units: Unit[]): Record<string, string> {
-  const leaderMap: Record<string, string> = {};
+// Leader info including name and hex location
+interface LeaderInfo {
+  name: string;
+  hexLocation: string;
+}
+
+// Build a map from command code to leader info
+function buildLeaderMap(units: Unit[]): Record<string, LeaderInfo> {
+  const leaderMap: Record<string, LeaderInfo> = {};
   for (const unit of units) {
     if (unit.type === "Ldr" && unit.command !== "-") {
-      leaderMap[unit.command] = unit.name;
+      leaderMap[unit.command] = {
+        name: unit.name,
+        hexLocation: unit.hexLocation
+      };
     }
   }
   return leaderMap;
 }
 
 // Get leader name for a unit (skip if unit is itself a leader)
-function getLeaderName(unit: Unit, leaderMap: Record<string, string>): string | undefined {
+// If leader shares the same hex as the unit, wrap name in brackets
+function getLeaderName(unit: Unit, leaderMap: Record<string, LeaderInfo>): string | undefined {
   if (unit.type === "Ldr") return undefined;
   if (unit.command === "-") return undefined;
-  return leaderMap[unit.command];
+  const leaderInfo = leaderMap[unit.command];
+  if (!leaderInfo) return undefined;
+  
+  // If leader is in the same hex, wrap in brackets
+  if (leaderInfo.hexLocation === unit.hexLocation) {
+    return `[${leaderInfo.name}]`;
+  }
+  return leaderInfo.name;
 }
 
-// Get army leaders only
+// Get army leaders with their hex locations
 function getArmyLeaders(units: Unit[]): string {
   const armyLeaders = units.filter(u => u.type === "Ldr" && u.size === "Army");
   if (armyLeaders.length === 0) return "";
-  return armyLeaders.map(l => l.name).join(", ");
+  return armyLeaders.map(l => `${l.name} (${l.hexLocation})`).join(", ");
+}
+
+// Key explaining conventions shown on web but not in print
+function ConventionsKey() {
+  return (
+    <div className="roster-sheet__key">
+      <h4 className="roster-sheet__key-title">Key</h4>
+      <dl className="roster-sheet__key-list">
+        <div className="roster-sheet__key-item">
+          <dt>[Leader Name]</dt>
+          <dd>Leader starts in the same hex as this unit</dd>
+        </div>
+        <div className="roster-sheet__key-item">
+          <dt>Leader Name</dt>
+          <dd>Leader starts in a different hex</dd>
+        </div>
+        <div className="roster-sheet__key-item">
+          <dt>Army Leader (hex)</dt>
+          <dd>Army leader's starting hex shown in header</dd>
+        </div>
+        <div className="roster-sheet__key-item">
+          <dt>F1, F2, etc.</dt>
+          <dd>Starting fatigue level</dd>
+        </div>
+        <div className="roster-sheet__key-item">
+          <dt>†, ‡, *, etc.</dt>
+          <dd>See footnotes below each section</dd>
+        </div>
+      </dl>
+    </div>
+  );
 }
 
 export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
@@ -100,6 +148,7 @@ export function RosterSheet({ scenario, gameName }: RosterSheetProps) {
           Scenario {scenario.number}: {scenario.name}
         </h2>
         <p className="roster-sheet__length">{scenario.gameLength}</p>
+        <ConventionsKey />
       </header>
 
       <section className="roster-sheet__section">

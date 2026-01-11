@@ -79,6 +79,47 @@
   color: #333;
 }
 
+.roster-sheet__key {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.roster-sheet__key-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.roster-sheet__key-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+.roster-sheet__key-item {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.roster-sheet__key-item dt {
+  font-weight: 500;
+  color: #333;
+}
+
+.roster-sheet__key-item dt::after {
+  content: ":";
+}
+
+.roster-sheet__key-item dd {
+  margin: 0;
+  color: #666;
+}
+
 /* Print styles */
 @media print {
   .roster-sheet {
@@ -88,5 +129,9 @@
 
   .roster-sheet__section {
     break-inside: avoid;
+  }
+
+  .roster-sheet__key {
+    display: none;
   }
 }
