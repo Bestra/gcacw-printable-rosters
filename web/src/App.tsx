@@ -1,18 +1,174 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Routes, Route, Navigate, useParams, useNavigate } from "react-router-dom";
 import { GameSelector } from "./components/GameSelector";
 import { ScenarioSelector } from "./components/ScenarioSelector";
 import { RosterSheet } from "./components/RosterSheet";
+import { getGameIdFromSlug, getGameSlug, getScenarioSlug, getScenarioNumberFromSlug } from "./utils/slugs";
 import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
 
 // Get base path from Vite (handles GitHub Pages deployment)
 const BASE_URL = import.meta.env.BASE_URL;
 
+function ScenarioView({
+  games,
+  gamesLoading,
+}: {
+  games: GameInfo[];
+  gamesLoading: boolean;
+}) {
+  const { gameSlug, scenarioSlug } = useParams<{ gameSlug: string; scenarioSlug: string }>();
+  const navigate = useNavigate();
+  const [gameData, setGameData] = useState<GameData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const gameId = gameSlug ? getGameIdFromSlug(gameSlug) : null;
+  const game = games.find((g) => g.id === gameId);
+  const scenarioNumber = scenarioSlug ? getScenarioNumberFromSlug(scenarioSlug) : null;
+
+  // Load game data when game changes
+  useEffect(() => {
+    if (!game) {
+      setLoading(false);
+      return;
+    }
+
+    setLoading(true);
+    setGameData(null);
+
+    fetch(`${BASE_URL}data/${game.file}`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`Failed to load ${game.name} data`);
+        return res.json();
+      })
+      .then((data: GameData) => {
+        setGameData(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, [game]);
+
+  // Handle game selection
+  const handleGameSelect = (newGameId: string | null) => {
+    if (newGameId) {
+      const newGame = games.find((g) => g.id === newGameId);
+      if (newGame) {
+        // Navigate to the new game's first scenario (will be handled by redirect)
+        navigate(`/${getGameSlug(newGameId)}`);
+      }
+    }
+  };
+
+  // Handle scenario selection
+  const handleScenarioSelect = (newScenarioNumber: number | null) => {
+    if (newScenarioNumber && gameSlug && gameData) {
+      const scenario = gameData.scenarios.find((s) => s.number === newScenarioNumber);
+      if (scenario) {
+        navigate(`/${gameSlug}/${getScenarioSlug(scenario.number, scenario.name)}`);
+      }
+    }
+  };
+
+  if (error) {
+    return <div className="error">Error: {error}</div>;
+  }
+
+  if (gamesLoading || loading) {
+    return <div className="loading">Loading...</div>;
+  }
+
+  if (!game) {
+    return <div className="error">Game not found: {gameSlug}</div>;
+  }
+
+  const scenario = gameData?.scenarios.find((s) => s.number === scenarioNumber);
+
+  // If scenario not found but we have game data, redirect to first scenario
+  if (gameData && !scenario && gameData.scenarios.length > 0) {
+    const firstScenario = gameData.scenarios[0];
+    return (
+      <Navigate
+        to={`/${gameSlug}/${getScenarioSlug(firstScenario.number, firstScenario.name)}`}
+        replace
+      />
+    );
+  }
+
+  return (
+    <div className="app">
+      <div className="selectors no-print">
+        <GameSelector
+          games={games}
+          selectedGameId={gameId}
+          onSelect={handleGameSelect}
+        />
+        {gameData && (
+          <ScenarioSelector
+            scenarios={gameData.scenarios}
+            selectedNumber={scenarioNumber}
+            onSelect={handleScenarioSelect}
+          />
+        )}
+      </div>
+      {scenario && gameData && (
+        <RosterSheet scenario={scenario} gameName={gameData.name} />
+      )}
+    </div>
+  );
+}
+
+function GameRedirect({ games }: { games: GameInfo[] }) {
+  const { gameSlug } = useParams<{ gameSlug: string }>();
+  const [gameData, setGameData] = useState<GameData | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  const gameId = gameSlug ? getGameIdFromSlug(gameSlug) : null;
+  const game = games.find((g) => g.id === gameId);
+
+  useEffect(() => {
+    if (!game) {
+      setLoading(false);
+      return;
+    }
+
+    fetch(`${BASE_URL}data/${game.file}`)
+      .then((res) => res.json())
+      .then((data: GameData) => {
+        setGameData(data);
+        setLoading(false);
+      })
+      .catch(() => {
+        setLoading(false);
+      });
+  }, [game]);
+
+  if (loading) {
+    return <div className="loading">Loading...</div>;
+  }
+
+  if (!game) {
+    return <div className="error">Game not found: {gameSlug}</div>;
+  }
+
+  if (gameData && gameData.scenarios.length > 0) {
+    const firstScenario = gameData.scenarios[0];
+    return (
+      <Navigate
+        to={`/${gameSlug}/${getScenarioSlug(firstScenario.number, firstScenario.name)}`}
+        replace
+      />
+    );
+  }
+
+  return <div className="error">No scenarios found</div>;
+}
+
 function App() {
   const [games, setGames] = useState<GameInfo[]>([]);
-  const [selectedGameId, setSelectedGameId] = useState<string | null>(null);
-  const [gameData, setGameData] = useState<GameData | null>(null);
-  const [selectedScenario, setSelectedScenario] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -25,10 +181,6 @@ function App() {
       })
       .then((data: GamesIndex) => {
         setGames(data.games);
-        // Auto-select first game
-        if (data.games.length > 0) {
-          setSelectedGameId(data.games[0].id);
-        }
         setLoading(false);
       })
       .catch((err) => {
@@ -37,67 +189,27 @@ function App() {
       });
   }, []);
 
-  // Load game data when game selection changes
-  useEffect(() => {
-    if (!selectedGameId) return;
-
-    const game = games.find((g) => g.id === selectedGameId);
-    if (!game) return;
-
-    setLoading(true);
-    setGameData(null);
-    setSelectedScenario(null);
-
-    fetch(`${BASE_URL}data/${game.file}`)
-      .then((res) => {
-        if (!res.ok) throw new Error(`Failed to load ${game.name} data`);
-        return res.json();
-      })
-      .then((data: GameData) => {
-        setGameData(data);
-        // Auto-select first scenario
-        if (data.scenarios.length > 0) {
-          setSelectedScenario(data.scenarios[0].number);
-        }
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
-  }, [selectedGameId, games]);
-
   if (error) {
     return <div className="error">Error: {error}</div>;
   }
 
-  if (loading && games.length === 0) {
+  if (loading) {
     return <div className="loading">Loading...</div>;
   }
 
-  const scenario = gameData?.scenarios.find((s) => s.number === selectedScenario);
+  // Default redirect to first game
+  const defaultGame = games[0];
+  const defaultRedirect = defaultGame ? `/${getGameSlug(defaultGame.id)}` : "/";
 
   return (
-    <div className="app">
-      <div className="selectors no-print">
-        <GameSelector
-          games={games}
-          selectedGameId={selectedGameId}
-          onSelect={setSelectedGameId}
-        />
-        {gameData && (
-          <ScenarioSelector
-            scenarios={gameData.scenarios}
-            selectedNumber={selectedScenario}
-            onSelect={setSelectedScenario}
-          />
-        )}
-      </div>
-      {loading && <div className="loading">Loading game data...</div>}
-      {scenario && gameData && (
-        <RosterSheet scenario={scenario} gameName={gameData.name} />
-      )}
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigate to={defaultRedirect} replace />} />
+      <Route path="/:gameSlug" element={<GameRedirect games={games} />} />
+      <Route
+        path="/:gameSlug/:scenarioSlug"
+        element={<ScenarioView games={games} gamesLoading={loading} />}
+      />
+    </Routes>
   );
 }
 
