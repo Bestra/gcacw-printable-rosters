@@ -34,12 +34,26 @@ function ScenarioView({
     ? viewParam 
     : DEFAULT_LAYOUT;
 
+  // Get images mode from query param, default to ON
+  const imagesParam = searchParams.get("images");
+  const showImages = imagesParam !== "off"; // Default ON unless explicitly "off"
+
   const handleLayoutChange = (mode: LayoutMode) => {
     if (mode === DEFAULT_LAYOUT) {
       // Remove param if it's the default
       searchParams.delete("view");
     } else {
       searchParams.set("view", mode);
+    }
+    setSearchParams(searchParams, { replace: true });
+  };
+
+  const handleImagesChange = (show: boolean) => {
+    if (show) {
+      // Remove param if it's the default (images on)
+      searchParams.delete("images");
+    } else {
+      searchParams.set("images", "off");
     }
     setSearchParams(searchParams, { replace: true });
   };
@@ -154,11 +168,21 @@ function ScenarioView({
             </select>
           </label>
         </div>
+        <div className="image-toggle">
+          <label>
+            <input
+              type="checkbox"
+              checked={showImages}
+              onChange={(e) => handleImagesChange(e.target.checked)}
+            />
+            <span>Show counter images</span>
+          </label>
+        </div>
       </div>
       {scenario && gameData && (
         layoutMode === "flow"
-          ? <FlowRosterSheet scenario={scenario} gameName={gameData.name} gameId={gameId ?? undefined} showImages={true} />
-          : <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} gameId={gameId ?? undefined} showImages={true} />
+          ? <FlowRosterSheet scenario={scenario} gameName={gameData.name} gameId={gameId ?? undefined} showImages={showImages} />
+          : <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} gameId={gameId ?? undefined} showImages={showImages} />
       )}
     </div>
   );
