@@ -47,6 +47,15 @@ class ScenarioParser:
     VALID_SIZES = ['Army', 'Corps', 'Demi-Div', 'D-Div', 'Div', 'Brig', 'Regt']
     VALID_TYPES = ['Ldr', 'Inf', 'Cav', 'Art']
     
+    # Page ranges for games that share a PDF (1-indexed, inclusive)
+    # Format: (start_page, end_page) or None to parse entire PDF
+    # RTG2_Rules.pdf contains three games: HCR, RTG2, and RTW
+    PAGE_RANGES = {
+        "hcr": (1, 44),    # Here Come the Rebels! scenarios
+        "rtg2": (45, 95),  # Roads to Gettysburg 2 scenarios
+        "rtw": (96, 116),  # RTW scenarios 1-4 (scenario 5 starts on 117)
+    }
+    
     # Known scenario names by game
     SCENARIO_NAMES = {
         "otr2": {
@@ -107,26 +116,49 @@ class ScenarioParser:
             9: "The Battle that Never Happened",
             10: "The Gettysburg Campaign",
         },
+        # RTW: Scenario 5 (Early's Raid) omitted - unit setup references Scenario 4 instead of listing units
+        "rtw": {
+            1: "Monocacy",
+            2: "Fort Stevens",
+            3: "The Retreat From Washington",
+            4: "From Winchester to Washington",
+        },
     }
     
-    def __init__(self, pdf_path: str, game_id: str = "otr2"):
+    def __init__(self, pdf_path: str, game_id: str = "otr2", start_page: int = None, end_page: int = None):
         self.pdf_path = pdf_path
         self.game_id = game_id
         self.scenarios: list[Scenario] = []
         
+        # Use provided page range, or look up from PAGE_RANGES, or use entire PDF
+        if start_page is not None:
+            self.start_page = start_page - 1  # Convert to 0-indexed
+            self.end_page = end_page if end_page else None  # Will be set to len(pdf.pages) later
+        elif game_id in self.PAGE_RANGES:
+            range_start, range_end = self.PAGE_RANGES[game_id]
+            self.start_page = range_start - 1  # Convert to 0-indexed
+            self.end_page = range_end
+        else:
+            self.start_page = 0
+            self.end_page = None  # Will be set to len(pdf.pages) later
+        
     def parse(self) -> list[Scenario]:
-        """Parse the entire PDF and extract all scenarios."""
+        """Parse the PDF and extract all scenarios within the page range."""
         with pdfplumber.open(self.pdf_path) as pdf:
+            # Set end_page if not already set
+            if self.end_page is None:
+                self.end_page = len(pdf.pages)
+            
             # First pass: find all scenario start pages
             scenario_pages = self._find_scenario_pages(pdf)
             
             # Second pass: parse each scenario
             for i, (page_num, scenario_num, scenario_name) in enumerate(scenario_pages):
-                # Determine end page (start of next scenario or end of doc)
+                # Determine end page (start of next scenario or end of range)
                 if i + 1 < len(scenario_pages):
                     end_page = scenario_pages[i + 1][0]
                 else:
-                    end_page = len(pdf.pages)
+                    end_page = self.end_page
                 
                 scenario = self._parse_scenario(pdf, page_num, end_page, scenario_num, scenario_name)
                 self.scenarios.append(scenario)
@@ -144,14 +176,17 @@ class ScenarioParser:
         results = []
         seen_scenarios = set()  # Avoid duplicates
         
-        for i, page in enumerate(pdf.pages):
+        # Only scan within the configured page range
+        for i in range(self.start_page, self.end_page):
+            if i >= len(pdf.pages):
+                break
+            page = pdf.pages[i]
             text = page.extract_text()
             if not text:
                 continue
             
-            # Skip table of contents pages
-            # Early TOC pages (usually pages 1-3)
-            if i < 3:
+            # Skip table of contents pages (only if we're starting from the beginning)
+            if self.start_page == 0 and i < 3:
                 continue
             
             # Also skip pages that contain TOC markers like "Table of Contents" or "Basic Game Scenarios"
@@ -511,9 +546,10 @@ class ScenarioParser:
 def main():
     import sys
     
-    # Accept PDF path and optional game_id as arguments
-    # Usage: python scenario_parser.py [pdf_path] [game_id]
-    # game_id: "otr2" (default) or "gtc2"
+    # Accept PDF path, game_id, and optional page range as arguments
+    # Usage: python scenario_parser.py [pdf_path] [game_id] [start_page] [end_page]
+    # game_id: "otr2" (default), "gtc2", "rtw", etc.
+    # Page range is optional - if not provided, uses PAGE_RANGES config or entire PDF
     if len(sys.argv) > 1:
         pdf_path = sys.argv[1]
     else:
@@ -527,11 +563,22 @@ def main():
     else:
         game_id = "otr2"
     
+    # Parse optional page range
+    start_page = int(sys.argv[3]) if len(sys.argv) > 3 else None
+    end_page = int(sys.argv[4]) if len(sys.argv) > 4 else None
+    
     # Set output filename based on game_id
     output_json = f"{game_id}_scenarios.json" if game_id != "otr2" else "all_scenarios.json"
     
-    print(f"Parsing: {pdf_path} (game: {game_id})")
-    parser = ScenarioParser(pdf_path, game_id)
+    page_info = ""
+    if start_page:
+        page_info = f", pages {start_page}-{end_page or 'end'}"
+    elif game_id in ScenarioParser.PAGE_RANGES:
+        r = ScenarioParser.PAGE_RANGES[game_id]
+        page_info = f", pages {r[0]}-{r[1]} (from config)"
+    
+    print(f"Parsing: {pdf_path} (game: {game_id}{page_info})")
+    parser = ScenarioParser(pdf_path, game_id, start_page, end_page)
     scenarios = parser.parse()
     
     print(f"Found {len(scenarios)} scenarios\n")

@@ -37,6 +37,12 @@ GAMES = [
         "parser_output": "rtg2_scenarios.json",
         "web_output": "rtg2.json",
     },
+    {
+        "id": "rtw",
+        "name": "Rebels in the White House",
+        "parser_output": "rtw_scenarios.json",
+        "web_output": "rtw.json",
+    },
 ]
 
 

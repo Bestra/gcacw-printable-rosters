@@ -1,0 +1,1169 @@
+{
+  "id": "rtw",
+  "name": "Rebels in the White House",
+  "scenarios": [
+    {
+      "number": 1,
+      "name": "Monocacy",
+      "gameLength": "1 turn; July 9, 1864.",
+      "mapInfo": "Use only the eastern half of the HCR West Map (Hex rows 30xx \u2013 58xx inclusive). At the end of the game, the Confederate VP total is calculated and the players consult the chart below to determine the ",
+      "confederateFootnotes": {
+        "+": "Ramseur and Rodes-B begin the game on their exhausted sides."
+      },
+      "unionFootnotes": {
+        "+": "11 MD begins the game under a Breastworks-Build marker"
+      },
+      "confederateUnits": [
+        {
+          "name": "Breckinridge",
+          "size": "Corps",
+          "command": "B-V",
+          "type": "Ldr",
+          "manpowerValue": "W3714",
+          "hexLocation": "",
+          "notes": []
+        },
+        {
+          "name": "Gordon",
+          "size": "Div",
+          "command": "B-V",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "W3714",
+          "notes": []
+        },
+        {
+          "name": "Echols",
+          "size": "Div",
+          "command": "B-V",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3613 (Middletown)",
+          "notes": []
+        },
+        {
+          "name": "Ramseur",
+          "size": "Div",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "5+",
+          "hexLocation": "W3814",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Rodes-B",
+          "size": "Div",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "W3618 (Jefferson)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "McCausland",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "W3917 (Mt Zion Church)",
+          "notes": []
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "11 MD",
+          "size": "Regt",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "1+",
+          "hexLocation": "W4517",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Tyler",
+          "size": "Brig",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W4515",
+          "notes": []
+        },
+        {
+          "name": "McClennan",
+          "size": "Brig",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W4417",
+          "notes": []
+        },
+        {
+          "name": "Ricketts-B",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W4518",
+          "notes": []
+        },
+        {
+          "name": "Staunton-B",
+          "size": "Brig",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "W5017 (Monrovia)",
+          "notes": []
+        },
+        {
+          "name": "8 IL-B",
+          "size": "Regt",
+          "command": "W",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "W4418",
+          "notes": []
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 2,
+      "name": "Fort Stevens",
+      "gameLength": "2 turns, July 11 to July 12, 1864.",
+      "mapInfo": "Only the HCR East map is used. receive any VPs for occupying a city hex at the end of the game. +4 For each destroyed D.C. area fort hex. The maximum VPs that",
+      "confederateFootnotes": {
+        "+": "Indicated units begin the game on their exhausted sides at Fatigue Level 1"
+      },
+      "unionFootnotes": {
+        "^": "Indicated units are reinforcements. See Special Rules for placement location."
+      },
+      "confederateUnits": [
+        {
+          "name": "Breckinridge",
+          "size": "Corps",
+          "command": "B-V",
+          "type": "Ldr",
+          "manpowerValue": "E0428",
+          "hexLocation": "",
+          "notes": []
+        },
+        {
+          "name": "Gordon",
+          "size": "Div",
+          "command": "B-V",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "E0428",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Echols",
+          "size": "Div",
+          "command": "B-V",
+          "type": "Inf",
+          "manpowerValue": "5+",
+          "hexLocation": "E0428",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Ramseur",
+          "size": "Div",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "5+",
+          "hexLocation": "E0428",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Rodes-B",
+          "size": "Div",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "E0428",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Imboden",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1+",
+          "hexLocation": "E0428",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Jackson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1+",
+          "hexLocation": "E0428",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "McCausland",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1+",
+          "hexLocation": "E0632",
+          "notes": [
+            "+"
+          ]
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Lowell-A",
+          "size": "Brig",
+          "command": "W",
+          "type": "Cav",
+          "manpowerValue": "1#",
+          "hexLocation": "E0733 (Stone Tavern)",
+          "notes": []
+        },
+        {
+          "name": "Wisewell",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "E0834 (Ft Pennsylvania)",
+          "notes": []
+        },
+        {
+          "name": "Slough",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "1#",
+          "hexLocation": "E1036 (Columbia College)",
+          "notes": []
+        },
+        {
+          "name": "25 NY",
+          "size": "Regt",
+          "command": "AP",
+          "type": "Inf",
+          "manpowerValue": "1#",
+          "hexLocation": "E1138",
+          "notes": []
+        },
+        {
+          "name": "Briggs",
+          "size": "Regt",
+          "command": "AP",
+          "type": "Inf",
+          "manpowerValue": "1^",
+          "hexLocation": "Reinf on Turn 1 (July 11)",
+          "notes": [
+            "^"
+          ]
+        },
+        {
+          "name": "Wright",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "^",
+          "hexLocation": "Reinf on Turn 1 (July 11)",
+          "notes": [
+            "^"
+          ]
+        },
+        {
+          "name": "Getty",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "11^",
+          "hexLocation": "Reinf on Turn 1 (July 11)",
+          "notes": [
+            "^"
+          ]
+        },
+        {
+          "name": "Beal",
+          "size": "Brig",
+          "command": "XIX",
+          "type": "Inf",
+          "manpowerValue": "1^",
+          "hexLocation": "Reinf on Turn 1 (July 11)",
+          "notes": [
+            "^"
+          ]
+        },
+        {
+          "name": "Russell-A",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "11^",
+          "hexLocation": "Reinf on Turn 2 (July 12)",
+          "notes": [
+            "^"
+          ]
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 3,
+      "name": "The Retreat From Washington",
+      "gameLength": "6 turns; July 13 to July 18, 1864.",
+      "mapInfo": "Use both HCR maps and the SJW North map. However, only the ing a friendly-occupied hex (+2 MP to enter a clear, rolling, or rough northern half of the SJW North map will be used, and only the west hal",
+      "confederateFootnotes": {
+        "*": "Indicated units begin the game at Fatigue Level 2.",
+        "+": "Ramseur begins the game at Fatigue Level 2 and on his exhausted side.",
+        "^": "Indicated units begin the game at Fatigue Level 1 and on their exhausted sides."
+      },
+      "unionFootnotes": {
+        "^^": "Getty begins the game on his exhausted side.",
+        "++": "Slough and Briggs begin the game under Fort-Build 1 markers."
+      },
+      "confederateUnits": [
+        {
+          "name": "Breckinridge",
+          "size": "Corps",
+          "command": "B-V",
+          "type": "Ldr",
+          "manpowerValue": "W5534",
+          "hexLocation": "",
+          "notes": []
+        },
+        {
+          "name": "Echols",
+          "size": "Div",
+          "command": "B-V",
+          "type": "Inf",
+          "manpowerValue": "5*",
+          "hexLocation": "W5534",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Gordon",
+          "size": "Div",
+          "command": "B-V",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "W5633",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Wagon Train",
+          "size": "-",
+          "command": "-",
+          "type": "Special",
+          "manpowerValue": "-",
+          "hexLocation": "",
+          "notes": []
+        },
+        {
+          "name": "Rodes-B",
+          "size": "Div",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "E0328 (Rockville)",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Ramsuer",
+          "size": "Div",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "5+",
+          "hexLocation": "E0428",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Johnson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "3^",
+          "hexLocation": "E0529",
+          "notes": [
+            "^"
+          ]
+        },
+        {
+          "name": "McCausland",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2^",
+          "hexLocation": "N5507 (Offut\u2019s Crossroads)",
+          "notes": [
+            "^"
+          ]
+        },
+        {
+          "name": "Godwin",
+          "size": "Brig",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "4#",
+          "hexLocation": "W0330 (Winchester)",
+          "notes": []
+        },
+        {
+          "name": "Vaughn",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "See Special Rule 5",
+          "notes": []
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Sullivan",
+          "size": "Div",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "W1314 (Martinsburg)",
+          "notes": []
+        },
+        {
+          "name": "1 NY-B",
+          "size": "Regt",
+          "command": "Cav-1-WV",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "W1314 (Martinsburg)",
+          "notes": []
+        },
+        {
+          "name": "Howe",
+          "size": "Div",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "W2620 (Naval Battery)",
+          "notes": []
+        },
+        {
+          "name": "Mulligan",
+          "size": "Brig",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W3219 (Petersville)",
+          "notes": []
+        },
+        {
+          "name": "Blakley",
+          "size": "Brig",
+          "command": "Cav-2-WV",
+          "type": "Cav",
+          "manpowerValue": "4",
+          "hexLocation": "W4620 (Urbana)",
+          "notes": []
+        },
+        {
+          "name": "Wisewell",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "3#",
+          "hexLocation": "E0834 (Ft Pennsylvania)",
+          "notes": []
+        },
+        {
+          "name": "Lowell-A",
+          "size": "Brig",
+          "command": "W",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "E1034 (Ft Stevens)",
+          "notes": []
+        },
+        {
+          "name": "Wright",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "E1034",
+          "hexLocation": "(Ft Stevens)",
+          "notes": []
+        },
+        {
+          "name": "Russell-B",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "E1034 (Ft Stevens)",
+          "notes": []
+        },
+        {
+          "name": "Getty",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "10^^",
+          "hexLocation": "E1034 (Ft Stevens)",
+          "notes": [
+            "^"
+          ]
+        },
+        {
+          "name": "25 NY",
+          "size": "Regt",
+          "command": "AP",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "E1135 (Ft Slocum)",
+          "notes": []
+        },
+        {
+          "name": "Slough",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "1++",
+          "hexLocation": "E1336 (Ft Bunker Hill)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Briggs",
+          "size": "Regt",
+          "command": "AP",
+          "type": "Inf",
+          "manpowerValue": "1++",
+          "hexLocation": "E1336 (Ft Bunker Hill)",
+          "notes": [
+            "+"
+          ]
+        },
+        {
+          "name": "Beal",
+          "size": "Brig",
+          "command": "XIX",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "E1537 (Ft Lincoln)",
+          "notes": []
+        },
+        {
+          "name": "Emory",
+          "size": "Corps",
+          "command": "XIX",
+          "type": "Ldr",
+          "manpowerValue": "Reinforcement",
+          "hexLocation": "(Turn 2)",
+          "notes": []
+        },
+        {
+          "name": "Dwight",
+          "size": "Div",
+          "command": "XIX",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "Reinforcement (Turn 2)",
+          "notes": []
+        },
+        {
+          "name": "Duffie",
+          "size": "Div",
+          "command": "Cav-1-WV",
+          "type": "Ldr",
+          "manpowerValue": "Reinforcement",
+          "hexLocation": "(Turn 2)",
+          "notes": []
+        },
+        {
+          "name": "Tibbits",
+          "size": "Brig",
+          "command": "Cav-1-WV",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "Reinforcement (Turn 2)",
+          "notes": []
+        },
+        {
+          "name": "Wynkoop",
+          "size": "Brig",
+          "command": "Cav-1-WV",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "Reinforcement (Turn 2)",
+          "notes": []
+        },
+        {
+          "name": "Duval",
+          "size": "Div",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "Reinforcement (Turn 3)",
+          "notes": []
+        },
+        {
+          "name": "Ricketts-C",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "Reinforcement (Turn 3)",
+          "notes": []
+        },
+        {
+          "name": "Kenly-C",
+          "size": "Brig",
+          "command": "XIX",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Reinforcement (Turn 3)",
+          "notes": []
+        },
+        {
+          "name": "Averell",
+          "size": "Div",
+          "command": "Cav-2-WV",
+          "type": "Ldr",
+          "manpowerValue": "Reinforcement",
+          "hexLocation": "(Turn 5)",
+          "notes": []
+        },
+        {
+          "name": "Schoonmaker",
+          "size": "Brig",
+          "command": "Cav-2-WV",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Reinforcement (Turn 5)",
+          "notes": []
+        },
+        {
+          "name": "Oley",
+          "size": "Brig",
+          "command": "Cav-2-WV",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "Reinforcement (Turn 5)",
+          "notes": []
+        },
+        {
+          "name": "Powell",
+          "size": "Brig",
+          "command": "Cav-2-WV",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "Reinforcement (Turn 5)",
+          "notes": []
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 4,
+      "name": "From Winchester to Washington",
+      "gameLength": "13 days: July 3 to July 15, 1864.",
+      "mapInfo": "Use both HCR maps. Remember that the east map is placed over the Columbia west map. +35 Each VP Phase the Confederate player controls Baltimore or Alexandria counties",
+      "confederateFootnotes": {
+        "*": "Indicated units begin the game on their exhausted sides."
+      },
+      "unionFootnotes": {},
+      "confederateUnits": [
+        {
+          "name": "Breckinridge",
+          "size": "Corps",
+          "command": "B-V",
+          "type": "Ldr",
+          "manpowerValue": "See",
+          "hexLocation": "Special Rule 4",
+          "notes": []
+        },
+        {
+          "name": "Gordon",
+          "size": "Div",
+          "command": "B-V",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "See Special Rule 4",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Echols",
+          "size": "Div",
+          "command": "B-V",
+          "type": "Inf",
+          "manpowerValue": "7*",
+          "hexLocation": "See Special Rule 4",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Ramseur",
+          "size": "Div",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "See Special Rule 4",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Rodes-B",
+          "size": "Div",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "See Special Rule 4",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Imboden",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1*",
+          "hexLocation": "See Special Rule 4",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "McCausland",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1*",
+          "hexLocation": "See Special Rule 4",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Jackson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1*",
+          "hexLocation": "See Special Rule 4",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Johnson",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "2*",
+          "hexLocation": "See Special Rule 4",
+          "notes": [
+            "*"
+          ]
+        },
+        {
+          "name": "Vaughn",
+          "size": "Brig",
+          "command": "Cav",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "See A2.4",
+          "notes": []
+        },
+        {
+          "name": "Godwin",
+          "size": "Brig",
+          "command": "E-V",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See A2.6",
+          "notes": []
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Sigel",
+          "size": "Div",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W1313 (Martinsburg)",
+          "notes": []
+        },
+        {
+          "name": "Weber",
+          "size": "Brig",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "W2521 (Harpers Ferry)",
+          "notes": []
+        },
+        {
+          "name": "Stahel",
+          "size": "Brig",
+          "command": "Cav-2-WV",
+          "type": "Cav",
+          "manpowerValue": "3",
+          "hexLocation": "W0820 (Bunker Hill)",
+          "notes": []
+        },
+        {
+          "name": "Mulligan",
+          "size": "Brig",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W1222 (Smithfield)",
+          "notes": []
+        },
+        {
+          "name": "1 PHB",
+          "size": "Regt",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "W3522 (Catoctin Switch)",
+          "notes": []
+        },
+        {
+          "name": "11 MD",
+          "size": "Regt",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "W5717 (Mt Airy)",
+          "notes": []
+        },
+        {
+          "name": "Kenly-B",
+          "size": "Brig",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E3115 (Camden Station)",
+          "notes": []
+        },
+        {
+          "name": "144 OH",
+          "size": "Regt",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "E3316 (Fort McHenry)",
+          "notes": []
+        },
+        {
+          "name": "Tyler",
+          "size": "Brig",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "E2518 (Relay House)",
+          "notes": []
+        },
+        {
+          "name": "Root",
+          "size": "Regt",
+          "command": "M",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "E3932 (Annapolis)",
+          "notes": []
+        },
+        {
+          "name": "8 IL-B",
+          "size": "Regt",
+          "command": "W",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "E1139 (Baltimore Depot)",
+          "notes": []
+        },
+        {
+          "name": "Wisewell",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "E1139 (Baltimore Depot)",
+          "notes": []
+        },
+        {
+          "name": "Slough",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "E0944 (Alexandria)",
+          "notes": []
+        },
+        {
+          "name": "Lowell-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "E0238 (Falls Church Station)",
+          "notes": []
+        },
+        {
+          "name": "Sullivan",
+          "size": "Div",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "1 NY-B",
+          "size": "Regt",
+          "command": "Cav-1-WV",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Duffie",
+          "size": "Div",
+          "command": "Cav-1-WV",
+          "type": "Ldr",
+          "manpowerValue": "See",
+          "hexLocation": "A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Tibbits",
+          "size": "Brig",
+          "command": "Cav-1-WV",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Wynkoop",
+          "size": "Brig",
+          "command": "Cav-1-WV",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Duval",
+          "size": "Div",
+          "command": "WV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Averell",
+          "size": "Div",
+          "command": "Cav-2-WV",
+          "type": "Ldr",
+          "manpowerValue": "See",
+          "hexLocation": "A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Schoonmaker",
+          "size": "Brig",
+          "command": "Cav-2-WV",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Oley",
+          "size": "Brig",
+          "command": "Cav-2-WV",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Powell",
+          "size": "Brig",
+          "command": "Cav-2-WV",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "See A6.1; WV Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Beaumont",
+          "size": "Brig",
+          "command": "AP",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Petersburg Box",
+          "notes": []
+        },
+        {
+          "name": "Wright",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "Petersburg",
+          "hexLocation": "Box",
+          "notes": []
+        },
+        {
+          "name": "Russell-B",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "Petersburg Box",
+          "notes": []
+        },
+        {
+          "name": "Getty",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "Petersburg Box",
+          "notes": []
+        },
+        {
+          "name": "Ricketts-C",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "Petersburg Box",
+          "notes": []
+        },
+        {
+          "name": "Burnside-B",
+          "size": "Corps",
+          "command": "IX",
+          "type": "Ldr",
+          "manpowerValue": "Petersburg",
+          "hexLocation": "Box",
+          "notes": []
+        },
+        {
+          "name": "Ledlie",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Petersburg Box",
+          "notes": []
+        },
+        {
+          "name": "Potter",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Petersburg Box",
+          "notes": []
+        },
+        {
+          "name": "Willcox-B",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "Petersburg Box",
+          "notes": []
+        },
+        {
+          "name": "Ferrero",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "Petersburg Box",
+          "notes": []
+        },
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "Petersburg",
+          "hexLocation": "Box",
+          "notes": []
+        },
+        {
+          "name": "Emory",
+          "size": "Corps",
+          "command": "XIX",
+          "type": "Ldr",
+          "manpowerValue": "See",
+          "hexLocation": "A6.2; AP Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Dwight",
+          "size": "Div",
+          "command": "XIX",
+          "type": "Inf",
+          "manpowerValue": "13",
+          "hexLocation": "See A6.2; AP Reinforcements",
+          "notes": []
+        },
+        {
+          "name": "Grover",
+          "size": "Div",
+          "command": "XIX",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "See A6.2; AP Reinforcements",
+          "notes": []
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    }
+  ]
+}

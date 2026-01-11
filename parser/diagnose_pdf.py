@@ -4,7 +4,10 @@ Diagnostic tool to preview PDF table extraction and spot column anomalies.
 Run this before parsing a new game to check for unexpected table structures.
 
 Usage:
-    uv run python diagnose_pdf.py ../data/SomeGame.pdf [page_number]
+    uv run python diagnose_pdf.py ../data/SomeGame.pdf [game_id]
+    uv run python diagnose_pdf.py ../data/SomeGame.pdf [game_id] [page_number]
+    
+If game_id has a configured page range in PAGE_RANGES, only those pages are scanned.
 """
 
 import pdfplumber
@@ -15,6 +18,14 @@ from collections import Counter
 
 VALID_SIZES = ['Army', 'Corps', 'Demi-Div', 'D-Div', 'Div', 'Brig', 'Regt']
 VALID_TYPES = ['Ldr', 'Inf', 'Cav', 'Art']
+
+# Page ranges for games that share a PDF (1-indexed, inclusive)
+# Imported from scenario_parser.py logic
+PAGE_RANGES = {
+    "hcr": (1, 44),    # Here Come the Rebels! scenarios
+    "rtg2": (45, 95),  # Roads to Gettysburg 2 scenarios
+    "rtw": (96, 116),  # RTW scenarios 1-4 (scenario 5 starts on 117)
+}
 
 
 def find_size_index(parts: list[str]) -> int | None:
@@ -119,19 +130,38 @@ def diagnose_page(pdf, page_idx: int):
     return units
 
 
-def diagnose_pdf(pdf_path: str, specific_page: int | None = None):
+def diagnose_pdf(pdf_path: str, game_id: str | None = None, specific_page: int | None = None):
     """Run diagnostics on a PDF."""
+    # Determine page range
+    if specific_page:
+        start_page = specific_page - 1  # Convert to 0-indexed
+        end_page = specific_page
+        page_info = f"page {specific_page}"
+    elif game_id and game_id in PAGE_RANGES:
+        start_page = PAGE_RANGES[game_id][0] - 1  # Convert to 0-indexed
+        end_page = PAGE_RANGES[game_id][1]
+        page_info = f"pages {PAGE_RANGES[game_id][0]}-{PAGE_RANGES[game_id][1]} (from config)"
+    else:
+        start_page = 0
+        end_page = None  # Will be set to len(pdf.pages)
+        page_info = "all pages"
+    
     print(f"Diagnosing: {pdf_path}")
+    if game_id:
+        print(f"Game: {game_id}, scanning {page_info}")
     
     with pdfplumber.open(pdf_path) as pdf:
+        if end_page is None:
+            end_page = len(pdf.pages)
+        
         all_units = []
         
         if specific_page:
             # Diagnose specific page
-            all_units = diagnose_page(pdf, specific_page - 1)  # Convert to 0-indexed
+            all_units = diagnose_page(pdf, start_page)
         else:
-            # Scan all pages for unit tables
-            for page_idx in range(len(pdf.pages)):
+            # Scan pages in range for unit tables
+            for page_idx in range(start_page, min(end_page, len(pdf.pages))):
                 page = pdf.pages[page_idx]
                 text = page.extract_text() or ''
                 
@@ -175,14 +205,27 @@ def diagnose_pdf(pdf_path: str, specific_page: int | None = None):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: uv run python diagnose_pdf.py <pdf_path> [page_number]")
-        print("  page_number: optional, 1-indexed page to analyze")
+        print("Usage: uv run python diagnose_pdf.py <pdf_path> [game_id] [page_number]")
+        print("  game_id: optional, uses PAGE_RANGES config if available (hcr, rtg2, rtw, etc.)")
+        print("  page_number: optional, 1-indexed page to analyze (overrides game_id range)")
         sys.exit(1)
     
     pdf_path = sys.argv[1]
-    specific_page = int(sys.argv[2]) if len(sys.argv) > 2 else None
+    game_id = None
+    specific_page = None
     
-    diagnose_pdf(pdf_path, specific_page)
+    # Parse optional arguments
+    if len(sys.argv) > 2:
+        arg2 = sys.argv[2]
+        # Check if it's a game_id or a page number
+        if arg2.isdigit():
+            specific_page = int(arg2)
+        else:
+            game_id = arg2
+            if len(sys.argv) > 3:
+                specific_page = int(sys.argv[3])
+    
+    diagnose_pdf(pdf_path, game_id, specific_page)
 
 
 if __name__ == "__main__":

@@ -24,6 +24,11 @@
       "id": "rtg2",
       "name": "Roads to Gettysburg 2",
       "file": "rtg2.json"
+    },
+    {
+      "id": "rtw",
+      "name": "Rebels in the White House",
+      "file": "rtw.json"
     }
   ]
 }
