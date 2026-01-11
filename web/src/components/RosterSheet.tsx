@@ -86,7 +86,7 @@ function getLeaderName(unit: Unit, leaderMap: Record<string, LeaderInfo>): strin
 
 // Get army leaders with their hex locations
 function getArmyLeaders(units: Unit[]): string {
-  const armyLeaders = units.filter(u => u.type === "Ldr" && u.size === "Army");
+  const armyLeaders = units.filter(u => u.type === "Ldr" && (u.size === "Army" || u.size === "District"));
   if (armyLeaders.length === 0) return "";
   return armyLeaders.map(l => `${l.name} (${l.hexLocation})`).join(", ");
 }
