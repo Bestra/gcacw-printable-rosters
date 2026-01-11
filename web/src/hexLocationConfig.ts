@@ -103,7 +103,7 @@ export function parseHexLocation(hexLocation: string): { hexCode: string; locati
         return { hexCode };
       }
       
-      if (patternType === "dateReinforcement" || patternType === "namedReinforcement") {
+      if (patternType === "dateReinforcement" || patternType === "namedReinforcement" || patternType === "plainReinforcement") {
         const template = patternConfig.hexCodeTemplate || "{1} Reinf.";
         const hexCode = applyTemplate(template, match);
         return { hexCode };

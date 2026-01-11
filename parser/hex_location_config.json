@@ -74,6 +74,12 @@
             "hexCodeTemplate": "{1} Box"
         },
         {
+            "_comment": "Plain reinforcement: 'Reinforcement' -> 'Reinf.'",
+            "type": "plainReinforcement",
+            "regex": "^[Rr]einforcement$",
+            "hexCodeTemplate": "Reinf."
+        },
+        {
             "_comment": "Date reinforcements: 'May 5 Reinforcement' -> 'May 5 Reinf.'",
             "type": "dateReinforcement",
             "regex": "^([A-Z][a-z]+\\s+\\d+)\\s+[Rr]einforcement$",
