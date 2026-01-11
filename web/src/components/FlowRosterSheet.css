@@ -1,11 +1,11 @@
-.hier-roster-sheet {
+.flow-roster-sheet {
   max-width: 8.5in;
   margin: 0 auto;
   padding: 0.5in;
   font-family: system-ui, -apple-system, sans-serif;
 }
 
-.hier-roster-sheet__header {
+.flow-roster-sheet__header {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 0.85rem;
@@ -13,26 +13,18 @@
   color: #555;
 }
 
-.hier-roster-sheet__armies {
+.flow-roster-sheet__armies {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 /* Army section */
-.hier-army-section {
-  /* No border/padding - just a header with content */
+.flow-army-section {
+  /* Container for army with multi-column content */
 }
 
-.hier-army-section--confederate {
-  /* Styling handled by title */
-}
-
-.hier-army-section--union {
-  /* Styling handled by title */
-}
-
-.hier-army-section__header {
+.flow-army-section__header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -41,7 +33,7 @@
   padding-bottom: 0.25rem;
 }
 
-.hier-army-section__title {
+.flow-army-section__title {
   margin: 0;
   font-size: 1rem;
   font-weight: 700;
@@ -49,24 +41,24 @@
   letter-spacing: 0.1em;
 }
 
-.hier-army-section--confederate .hier-army-section__header {
+.flow-army-section--confederate .flow-army-section__header {
   border-color: #b89a6a;
 }
 
-.hier-army-section--confederate .hier-army-section__title {
+.flow-army-section--confederate .flow-army-section__title {
   color: #8b6914;
 }
 
-.hier-army-section--union .hier-army-section__header {
+.flow-army-section--union .flow-army-section__header {
   border-color: #6a8ab8;
 }
 
-.hier-army-section--union .hier-army-section__title {
+.flow-army-section--union .flow-army-section__title {
   color: #1a4480;
 }
 
 /* Army leader inline with title */
-.hier-army-section__header .hier-leader-header {
+.flow-army-section__header .flow-leader-header {
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
@@ -75,26 +67,30 @@
   margin-bottom: 0;
 }
 
-.hier-army-section__header .hier-leader-header__setup {
+.flow-army-section__header .flow-leader-header__setup {
   margin-bottom: 0;
 }
 
-.hier-army-section__groups {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.375rem;
+/* Multi-column flow container - the key difference! */
+.flow-army-section__columns {
+  column-count: 3;
+  column-gap: 0.375rem;
+  column-fill: balance;
 }
 
-/* Command group */
-.hier-command-group {
+/* Command group - designed to not break across columns */
+.flow-command-group {
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   background: #fff;
   break-inside: avoid;
+  margin-bottom: 0.375rem;
+  /* Prevent orphaned headers */
+  page-break-inside: avoid;
 }
 
-.hier-command-group__title {
+.flow-command-group__title {
   margin: 0 0 0.5rem;
   font-size: 0.875rem;
   font-weight: 700;
@@ -102,53 +98,40 @@
   padding-bottom: 0.25rem;
 }
 
-.hier-command-group__size {
+.flow-command-group__size {
   font-weight: 400;
   color: #666;
   font-size: 0.75rem;
 }
 
-.hier-command-group__units {
+.flow-command-group__units {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-/* Subgroups within a Corps */
-.hier-command-group__subgroups {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* Subgroups within a Corps - also flow naturally */
+.flow-command-group__subgroups {
+  display: flex;
+  flex-direction: column;
   gap: 0.375rem;
   margin-top: 0.375rem;
 }
 
-.hier-command-group--subgroup {
+.flow-command-group--subgroup {
   border: 1px solid #e0e0e0;
   padding: 0.375rem;
   margin-left: 0;
   background: rgba(255, 255, 255, 0.7);
 }
 
-.hier-command-group__title--subgroup {
+.flow-command-group__title--subgroup {
   font-size: 0.8rem;
   color: #444;
 }
 
-/* Corps with subgroups - just a header, no box */
-.hier-command-group--has-subgroups {
-  border: none;
-  background: none;
-  padding: 0;
-  margin-top: 0.5rem;
-}
-
-.hier-command-group--has-subgroups > .hier-command-group__title {
-  border-bottom: 1px solid #999;
-  margin-bottom: 0.375rem;
-}
-
 /* Leader header */
-.hier-leader-header {
+.flow-leader-header {
   display: flex;
   flex-direction: column;
   padding: 0.25rem;
@@ -157,7 +140,7 @@
   margin-bottom: 0.25rem;
 }
 
-.hier-leader-header__setup {
+.flow-leader-header__setup {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -166,34 +149,34 @@
   margin-bottom: 0.125rem;
 }
 
-.hier-leader-header__hex {
+.flow-leader-header__hex {
   color: #333;
   font-family: monospace;
   font-weight: 500;
 }
 
-.hier-leader-header__location {
+.flow-leader-header__location {
   color: #666;
   font-size: 0.7rem;
 }
 
-.hier-leader-header__fatigue {
+.flow-leader-header__fatigue {
   font-weight: 600;
   color: #000;
   font-size: 0.7rem;
 }
 
-.hier-leader-header__reinforcement {
+.flow-leader-header__reinforcement {
   color: #0066cc;
   font-weight: 500;
   font-size: 0.7rem;
 }
 
-.hier-leader-header__counter {
+.flow-leader-header__counter {
   flex-shrink: 0;
 }
 
-.hier-leader-header__counter-box {
+.flow-leader-header__counter-box {
   width: 0.55in;
   height: 0.55in;
   border: 1px solid #000;
@@ -205,32 +188,32 @@
   padding-bottom: 2px;
 }
 
-.hier-leader-header__name {
+.flow-leader-header__name {
   font-weight: 700;
   font-size: 0.6rem;
   text-align: center;
   line-height: 1.1;
 }
 
-.hier-leader-header__notes {
+.flow-leader-header__notes {
   color: #c00;
   font-weight: 500;
   font-size: 0.5rem;
 }
 
 /* Unit row */
-.hier-unit-row {
+.flow-unit-row {
   display: flex;
   flex-direction: column;
   padding: 0.125rem 0.25rem;
   border-bottom: 1px solid #eee;
 }
 
-.hier-unit-row:last-child {
+.flow-unit-row:last-child {
   border-bottom: none;
 }
 
-.hier-unit-row__setup {
+.flow-unit-row__setup {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -239,34 +222,29 @@
   margin-bottom: 0;
 }
 
-.hier-unit-row__hex {
+.flow-unit-row__hex {
   font-family: monospace;
   color: #333;
   font-weight: 500;
 }
 
-.hier-unit-row__location {
+.flow-unit-row__location {
   color: #666;
   font-size: 0.65rem;
 }
 
-.hier-unit-row__reinforcement {
+.flow-unit-row__reinforcement {
   color: #0066cc;
   font-weight: 500;
   font-size: 0.65rem;
 }
 
-.hier-unit-row__leader {
-  font-style: italic;
-  color: #888;
-}
-
-.hier-unit-row__counters {
+.flow-unit-row__counters {
   display: flex;
   flex-shrink: 0;
 }
 
-.hier-unit-row__counter-box {
+.flow-unit-row__counter-box {
   width: 0.55in;
   height: 0.55in;
   border: 1px solid #000;
@@ -278,197 +256,197 @@
   justify-content: center;
 }
 
-.hier-unit-row__counter-box:last-child {
+.flow-unit-row__counter-box:last-child {
   border-right: 1px solid #000;
 }
 
-.hier-unit-row__counter-box--name {
+.flow-unit-row__counter-box--name {
   justify-content: flex-end;
   padding-bottom: 2px;
 }
 
-.hier-unit-row__name {
+.flow-unit-row__name {
   font-weight: 600;
   font-size: 0.6rem;
   text-align: center;
   line-height: 1.1;
 }
 
-.hier-unit-row__notes {
+.flow-unit-row__notes {
   color: #c00;
   font-size: 0.5rem;
   font-weight: 500;
 }
 
-.hier-unit-row__counter-box--info {
+.flow-unit-row__counter-box--info {
   font-size: 0.6rem;
   color: #666;
   text-align: center;
 }
 
-.hier-unit-row__mp {
+.flow-unit-row__mp {
   font-weight: 600;
   color: #000;
   font-size: 0.7rem;
 }
 
-.hier-unit-row__fatigue {
+.flow-unit-row__fatigue {
   font-weight: 600;
   color: #000;
   font-size: 0.7rem;
 }
 
-/* Footnotes */
-.hier-footnotes {
+/* Footnotes - outside of columns */
+.flow-footnotes {
   margin-top: 0.75rem;
   padding: 0.5rem;
   background: #f5f5f5;
   border-radius: 4px;
   font-size: 0.7rem;
+  column-span: all; /* Span across all columns */
 }
 
-.hier-footnotes__item {
+.flow-footnotes__item {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 0.125rem;
 }
 
-.hier-footnotes__item:last-child {
+.flow-footnotes__item:last-child {
   margin-bottom: 0;
 }
 
-.hier-footnotes__symbol {
+.flow-footnotes__symbol {
   font-weight: 600;
   color: #c00;
   min-width: 1rem;
 }
 
-.hier-footnotes__text {
+.flow-footnotes__text {
   color: #333;
 }
 
-/* Gunboats */
-.hier-gunboats {
+/* Gunboats - outside of columns */
+.flow-gunboats {
   margin-top: 0.5rem;
   padding: 0.5rem;
   background: #fafafa;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
+  column-span: all;
 }
 
-.hier-gunboats__title {
+.flow-gunboats__title {
   margin: 0 0 0.25rem;
   font-size: 0.75rem;
   font-weight: 600;
 }
 
-.hier-gunboats__list {
+.flow-gunboats__list {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0.7rem;
 }
 
-.hier-gunboats__item {
+.flow-gunboats__item {
   margin-bottom: 0.125rem;
 }
 
-.hier-gunboats__name {
+.flow-gunboats__name {
   font-weight: 500;
 }
 
-.hier-gunboats__location {
+.flow-gunboats__location {
   color: #555;
 }
 
 /* Print styles */
 @media print {
-  .hier-roster-sheet {
+  .flow-roster-sheet {
     padding: 0.25in;
     max-width: none;
   }
 
-  .hier-roster-sheet__header {
+  .flow-roster-sheet__header {
     margin-bottom: 0.25rem;
     font-size: 0.75rem;
   }
 
-  .hier-roster-sheet__armies {
+  .flow-roster-sheet__armies {
     gap: 0;
   }
 
   /* Remove army section border/outline for print */
-  .hier-army-section {
+  .flow-army-section {
     border: none;
     padding: 0;
     background: none;
   }
 
-  .hier-army-section--confederate,
-  .hier-army-section--union {
+  .flow-army-section--confederate,
+  .flow-army-section--union {
     background: none;
   }
 
   /* Union starts on a new page */
-  .hier-army-section--union {
+  .flow-army-section--union {
     break-before: page;
   }
 
-  .hier-army-section__header {
+  .flow-army-section__header {
     margin-bottom: 0.25rem;
     padding-bottom: 0.125rem;
   }
 
-  .hier-army-section__title {
+  .flow-army-section__title {
     break-after: avoid;
   }
 
-  /* Keep 3-column grid for print */
-  .hier-army-section__groups {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.125rem;
+  /* Keep 3-column flow for print */
+  .flow-army-section__columns {
+    column-count: 3;
+    column-gap: 0.125rem;
+    column-fill: balance;
   }
 
   /* Command groups should not break internally */
-  .hier-command-group {
+  .flow-command-group {
     break-inside: avoid;
     page-break-inside: avoid;
-    background: none;
-    padding: 0.125rem;
-  }
-
-  .hier-command-group__title {
-    margin-bottom: 0.25rem;
-    padding-bottom: 0.125rem;
-  }
-
-  .hier-command-group__subgroups {
-    gap: 0.125rem;
-    margin-top: 0.25rem;
-  }
-
-  .hier-command-group--has-subgroups {
-    margin-top: 0.25rem;
-  }
-
-  .hier-leader-header {
     background: none;
     padding: 0.125rem;
     margin-bottom: 0.125rem;
   }
 
-  .hier-unit-row {
+  .flow-command-group__title {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .flow-command-group__subgroups {
+    gap: 0.125rem;
+    margin-top: 0.25rem;
+  }
+
+  .flow-leader-header {
+    background: none;
+    padding: 0.125rem;
+    margin-bottom: 0.125rem;
+  }
+
+  .flow-unit-row {
     padding: 0.0625rem 0.125rem;
   }
 
-  .hier-footnotes {
+  .flow-footnotes {
     background: none;
     break-inside: avoid;
     margin-top: 0.25rem;
     padding: 0.25rem;
   }
 
-  .hier-gunboats {
+  .flow-gunboats {
     background: none;
     break-inside: avoid;
     margin-top: 0.25rem;
@@ -476,8 +454,8 @@
   }
 
   /* Counter size for print */
-  .hier-unit-row__counter-box,
-  .hier-leader-header__counter-box {
+  .flow-unit-row__counter-box,
+  .flow-leader-header__counter-box {
     width: 0.55in;
     height: 0.55in;
   }

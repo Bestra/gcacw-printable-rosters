@@ -4,11 +4,12 @@ import { GameSelector } from "./components/GameSelector";
 import { ScenarioSelector } from "./components/ScenarioSelector";
 import { RosterSheet } from "./components/RosterSheet";
 import { HierarchicalRosterSheet } from "./components/HierarchicalRosterSheet";
+import { FlowRosterSheet } from "./components/FlowRosterSheet";
 import { getGameIdFromSlug, getGameSlug, getScenarioSlug, getScenarioNumberFromSlug } from "./utils/slugs";
 import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
 
-type LayoutMode = "grid" | "hierarchical";
+type LayoutMode = "grid" | "hierarchical" | "flow";
 const DEFAULT_LAYOUT: LayoutMode = "hierarchical";
 
 // Get base path from Vite (handles GitHub Pages deployment)
@@ -30,7 +31,7 @@ function ScenarioView({
 
   // Get layout mode from query param, default to hierarchical
   const viewParam = searchParams.get("view");
-  const layoutMode: LayoutMode = viewParam === "grid" || viewParam === "hierarchical" 
+  const layoutMode: LayoutMode = viewParam === "grid" || viewParam === "hierarchical" || viewParam === "flow"
     ? viewParam 
     : DEFAULT_LAYOUT;
 
@@ -79,7 +80,10 @@ function ScenarioView({
       const newGame = games.find((g) => g.id === newGameId);
       if (newGame) {
         // Navigate to the new game's first scenario (will be handled by redirect)
-        navigate(`/${getGameSlug(newGameId)}`);
+        // Preserve query params (like view mode)
+        const queryString = searchParams.toString();
+        const path = `/${getGameSlug(newGameId)}`;
+        navigate(queryString ? `${path}?${queryString}` : path);
       }
     }
   };
@@ -89,7 +93,10 @@ function ScenarioView({
     if (newScenarioNumber && gameSlug && gameData) {
       const scenario = gameData.scenarios.find((s) => s.number === newScenarioNumber);
       if (scenario) {
-        navigate(`/${gameSlug}/${getScenarioSlug(scenario.number, scenario.name)}`);
+        // Preserve query params (like view mode)
+        const queryString = searchParams.toString();
+        const path = `/${gameSlug}/${getScenarioSlug(scenario.number, scenario.name)}`;
+        navigate(queryString ? `${path}?${queryString}` : path);
       }
     }
   };
@@ -111,9 +118,11 @@ function ScenarioView({
   // If scenario not found but we have game data, redirect to first scenario
   if (gameData && !scenario && gameData.scenarios.length > 0) {
     const firstScenario = gameData.scenarios[0];
+    const queryString = searchParams.toString();
+    const path = `/${gameSlug}/${getScenarioSlug(firstScenario.number, firstScenario.name)}`;
     return (
       <Navigate
-        to={`/${gameSlug}/${getScenarioSlug(firstScenario.number, firstScenario.name)}`}
+        to={queryString ? `${path}?${queryString}` : path}
         replace
       />
     );
@@ -143,6 +152,7 @@ function ScenarioView({
             >
               <option value="grid">Grid</option>
               <option value="hierarchical">Hierarchical</option>
+              <option value="flow">Flow (compact)</option>
             </select>
           </label>
         </div>
@@ -150,6 +160,8 @@ function ScenarioView({
       {scenario && gameData && (
         layoutMode === "hierarchical" 
           ? <HierarchicalRosterSheet scenario={scenario} gameName={gameData.name} />
+          : layoutMode === "flow"
+          ? <FlowRosterSheet scenario={scenario} gameName={gameData.name} />
           : <RosterSheet scenario={scenario} gameName={gameData.name} />
       )}
     </div>
@@ -158,6 +170,7 @@ function ScenarioView({
 
 function GameRedirect({ games }: { games: GameInfo[] }) {
   const { gameSlug } = useParams<{ gameSlug: string }>();
+  const [searchParams] = useSearchParams();
   const [gameData, setGameData] = useState<GameData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -191,9 +204,11 @@ function GameRedirect({ games }: { games: GameInfo[] }) {
 
   if (gameData && gameData.scenarios.length > 0) {
     const firstScenario = gameData.scenarios[0];
+    const queryString = searchParams.toString();
+    const path = `/${gameSlug}/${getScenarioSlug(firstScenario.number, firstScenario.name)}`;
     return (
       <Navigate
-        to={`/${gameSlug}/${getScenarioSlug(firstScenario.number, firstScenario.name)}`}
+        to={queryString ? `${path}?${queryString}` : path}
         replace
       />
     );

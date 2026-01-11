@@ -1,8 +1,8 @@
 import type { Gunboat, Scenario, Unit } from "../types";
 import { parseHexLocation } from "../hexLocationConfig";
-import "./HierarchicalRosterSheet.css";
+import "./FlowRosterSheet.css";
 
-interface HierarchicalRosterSheetProps {
+interface FlowRosterSheetProps {
   scenario: Scenario;
   gameName: string;
 }
@@ -288,15 +288,13 @@ function getArmyLeader(units: Unit[]): Unit | null {
   return units.find(u => u.type === "Ldr" && (u.size === "Army" || u.size === "District")) ?? null;
 }
 
-// Compact unit row for hierarchical display
+// Compact unit row for flow display
 function UnitRow({ 
   unit, 
   footnotes,
-  leaderName,
 }: { 
   unit: Unit;
   footnotes: Record<string, string>;
-  leaderName?: string;
 }) {
   const { hexCode, locationName } = parseHexLocation(unit.hexLocation);
   const fatigue = getStartingFatigue(unit, footnotes);
@@ -307,34 +305,33 @@ function UnitRow({
   const showHexLocation = !unit.reinforcementSet || !unit.hexLocation.toLowerCase().startsWith("see");
   
   return (
-    <div className="hier-unit-row">
-      <div className="hier-unit-row__setup">
+    <div className="flow-unit-row">
+      <div className="flow-unit-row__setup">
         {showHexLocation && (
           <>
-            <span className="hier-unit-row__hex">{hexCode}</span>
-            {locationName && <span className="hier-unit-row__location">({locationName})</span>}
+            <span className="flow-unit-row__hex">{hexCode}</span>
+            {locationName && <span className="flow-unit-row__location">({locationName})</span>}
           </>
         )}
         {unit.reinforcementSet && (
-          <span className="hier-unit-row__reinforcement">Reinf Set {unit.reinforcementSet}</span>
+          <span className="flow-unit-row__reinforcement">Reinf Set {unit.reinforcementSet}</span>
         )}
-        {leaderName && <span className="hier-unit-row__leader">{leaderName}</span>}
       </div>
-      <div className="hier-unit-row__counters">
-        {/* Box 1: Unit name (what it looks like on the board) */}
-        <div className="hier-unit-row__counter-box hier-unit-row__counter-box--name">
-          <span className="hier-unit-row__name">{unit.name}</span>
-          {notes && <span className="hier-unit-row__notes">{notes}</span>}
+      <div className="flow-unit-row__counters">
+        {/* Box 1: Unit name */}
+        <div className="flow-unit-row__counter-box flow-unit-row__counter-box--name">
+          <span className="flow-unit-row__name">{unit.name}</span>
+          {notes && <span className="flow-unit-row__notes">{notes}</span>}
         </div>
         {/* Box 2: Fortification */}
-        <div className="hier-unit-row__counter-box" />
+        <div className="flow-unit-row__counter-box" />
         {/* Box 3: Manpower */}
-        <div className="hier-unit-row__counter-box hier-unit-row__counter-box--info">
-          <span className="hier-unit-row__mp">{mpDisplay || "\u00A0"}</span>
+        <div className="flow-unit-row__counter-box flow-unit-row__counter-box--info">
+          <span className="flow-unit-row__mp">{mpDisplay || "\u00A0"}</span>
         </div>
         {/* Box 4: Fatigue */}
-        <div className="hier-unit-row__counter-box hier-unit-row__counter-box--info">
-          {fatigue && <span className="hier-unit-row__fatigue">{fatigue}</span>}
+        <div className="flow-unit-row__counter-box flow-unit-row__counter-box--info">
+          {fatigue && <span className="flow-unit-row__fatigue">{fatigue}</span>}
         </div>
       </div>
     </div>
@@ -357,30 +354,30 @@ function LeaderHeader({
   const showHexLocation = !leader.reinforcementSet || !leader.hexLocation.toLowerCase().startsWith("see");
   
   return (
-    <div className="hier-leader-header">
-      <div className="hier-leader-header__setup">
+    <div className="flow-leader-header">
+      <div className="flow-leader-header__setup">
         {showHexLocation && (
           <>
-            <span className="hier-leader-header__hex">{hexCode}</span>
-            {locationName && <span className="hier-leader-header__location">({locationName})</span>}
+            <span className="flow-leader-header__hex">{hexCode}</span>
+            {locationName && <span className="flow-leader-header__location">({locationName})</span>}
           </>
         )}
         {leader.reinforcementSet && (
-          <span className="hier-leader-header__reinforcement">Reinf Set {leader.reinforcementSet}</span>
+          <span className="flow-leader-header__reinforcement">Reinf Set {leader.reinforcementSet}</span>
         )}
-        {fatigue && <span className="hier-leader-header__fatigue">{fatigue}</span>}
+        {fatigue && <span className="flow-leader-header__fatigue">{fatigue}</span>}
       </div>
-      <div className="hier-leader-header__counter">
-        <div className="hier-leader-header__counter-box">
-          <span className="hier-leader-header__name">{leader.name}</span>
-          {notes && <span className="hier-leader-header__notes">{notes}</span>}
+      <div className="flow-leader-header__counter">
+        <div className="flow-leader-header__counter-box">
+          <span className="flow-leader-header__name">{leader.name}</span>
+          {notes && <span className="flow-leader-header__notes">{notes}</span>}
         </div>
       </div>
     </div>
   );
 }
 
-// Command group section
+// Command group section - designed to flow in columns
 function CommandGroupSection({ 
   group, 
   footnotes,
@@ -392,7 +389,6 @@ function CommandGroupSection({
   side: "confederate" | "union";
   isSubgroup?: boolean;
 }) {
-  const hasSubgroups = group.subgroups.length > 0;
   const isContinuation = group.columnIndex && group.columnIndex > 1;
   
   // Build the title with continuation indicator if needed
@@ -402,10 +398,10 @@ function CommandGroupSection({
   }
   
   return (
-    <div className={`hier-command-group hier-command-group--${side} ${isSubgroup ? 'hier-command-group--subgroup' : ''} ${hasSubgroups ? 'hier-command-group--has-subgroups' : ''}`}>
-      <h4 className={`hier-command-group__title ${isSubgroup ? 'hier-command-group__title--subgroup' : ''}`}>
+    <div className={`flow-command-group flow-command-group--${side} ${isSubgroup ? 'flow-command-group--subgroup' : ''}`}>
+      <h4 className={`flow-command-group__title ${isSubgroup ? 'flow-command-group__title--subgroup' : ''}`}>
         {titleText}
-        {group.size && !isContinuation && <span className="hier-command-group__size"> ({group.size})</span>}
+        {group.size && !isContinuation && <span className="flow-command-group__size"> ({group.size})</span>}
       </h4>
       
       {group.leader && (
@@ -414,7 +410,7 @@ function CommandGroupSection({
       
       {/* Direct units for this command */}
       {group.units.length > 0 && (
-        <div className="hier-command-group__units">
+        <div className="flow-command-group__units">
           {group.units.map((unit, idx) => (
             <UnitRow 
               key={`${unit.name}-${idx}`}
@@ -427,7 +423,7 @@ function CommandGroupSection({
       
       {/* Subgroups (e.g., Divisions under a Corps) */}
       {group.subgroups.length > 0 && (
-        <div className="hier-command-group__subgroups">
+        <div className="flow-command-group__subgroups">
           {group.subgroups.map((subgroup, idx) => (
             <CommandGroupSection
               key={`${subgroup.commandCode}-${idx}`}
@@ -449,11 +445,11 @@ function FootnotesLegend({ footnotes }: { footnotes: Record<string, string> }) {
   if (entries.length === 0) return null;
   
   return (
-    <div className="hier-footnotes">
+    <div className="flow-footnotes">
       {entries.map(([symbol, text]) => (
-        <div key={symbol} className="hier-footnotes__item">
-          <span className="hier-footnotes__symbol">{symbol}</span>
-          <span className="hier-footnotes__text">{text}</span>
+        <div key={symbol} className="flow-footnotes__item">
+          <span className="flow-footnotes__symbol">{symbol}</span>
+          <span className="flow-footnotes__text">{text}</span>
         </div>
       ))}
     </div>
@@ -465,14 +461,14 @@ function GunboatsList({ gunboats }: { gunboats: Gunboat[] }) {
   if (gunboats.length === 0) return null;
   
   return (
-    <div className="hier-gunboats">
-      <h4 className="hier-gunboats__title">Gunboats</h4>
-      <ul className="hier-gunboats__list">
+    <div className="flow-gunboats">
+      <h4 className="flow-gunboats__title">Gunboats</h4>
+      <ul className="flow-gunboats__list">
         {gunboats.map((gunboat, index) => (
-          <li key={index} className="hier-gunboats__item">
-            <span className="hier-gunboats__name">{gunboat.name}</span>
+          <li key={index} className="flow-gunboats__item">
+            <span className="flow-gunboats__name">{gunboat.name}</span>
             {gunboat.location && (
-              <span className="hier-gunboats__location"> — {gunboat.location}</span>
+              <span className="flow-gunboats__location"> — {gunboat.location}</span>
             )}
           </li>
         ))}
@@ -481,7 +477,7 @@ function GunboatsList({ gunboats }: { gunboats: Gunboat[] }) {
   );
 }
 
-// Army side section
+// Army side section with CSS multi-column flow
 function ArmySection({
   title,
   units,
@@ -498,46 +494,29 @@ function ArmySection({
   const armyLeader = getArmyLeader(units);
   const hierarchy = buildCommandHierarchy(units);
   
-  // Separate groups with subgroups (Corps with divisions) from flat groups
-  const nestedGroups = hierarchy.filter(g => g.subgroups.length > 0);
-  const flatGroups = hierarchy.filter(g => g.subgroups.length === 0);
-  
   // Split large groups into multiple columns
-  const splitFlatGroups = splitLargeGroups(flatGroups);
-  const splitNestedGroups = splitLargeGroups(nestedGroups);
+  const splitGroups = splitLargeGroups(hierarchy);
   
   return (
-    <section className={`hier-army-section hier-army-section--${side}`}>
-      <div className="hier-army-section__header">
-        <h3 className="hier-army-section__title">{title}</h3>
+    <section className={`flow-army-section flow-army-section--${side}`}>
+      <div className="flow-army-section__header">
+        <h3 className="flow-army-section__title">{title}</h3>
         {armyLeader && (
           <LeaderHeader leader={armyLeader} footnotes={footnotes} />
         )}
       </div>
       
-      {/* Flat groups in 3-column grid */}
-      {splitFlatGroups.length > 0 && (
-        <div className="hier-army-section__groups">
-          {splitFlatGroups.map((group, idx) => (
-            <CommandGroupSection 
-              key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
-              group={group}
-              footnotes={footnotes}
-              side={side}
-            />
-          ))}
-        </div>
-      )}
-      
-      {/* Nested groups (Corps with divisions) - full width, each with its own 3-column grid */}
-      {splitNestedGroups.map((group, idx) => (
-        <CommandGroupSection 
-          key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
-          group={group}
-          footnotes={footnotes}
-          side={side}
-        />
-      ))}
+      {/* Multi-column flow container */}
+      <div className="flow-army-section__columns">
+        {splitGroups.map((group, idx) => (
+          <CommandGroupSection 
+            key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
+            group={group}
+            footnotes={footnotes}
+            side={side}
+          />
+        ))}
+      </div>
       
       <GunboatsList gunboats={gunboats} />
       <FootnotesLegend footnotes={footnotes} />
@@ -545,14 +524,14 @@ function ArmySection({
   );
 }
 
-export function HierarchicalRosterSheet({ scenario, gameName }: HierarchicalRosterSheetProps) {
+export function FlowRosterSheet({ scenario, gameName }: FlowRosterSheetProps) {
   return (
-    <div className="hier-roster-sheet">
-      <header className="hier-roster-sheet__header">
+    <div className="flow-roster-sheet">
+      <header className="flow-roster-sheet__header">
         {gameName} — Scenario {scenario.number}: {scenario.name}
       </header>
       
-      <div className="hier-roster-sheet__armies">
+      <div className="flow-roster-sheet__armies">
         <ArmySection
           title="Confederate"
           units={scenario.confederateUnits}
