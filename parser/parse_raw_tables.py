@@ -57,6 +57,7 @@ class RawTableParser:
     def __init__(self, game_id: str):
         self.game_id = game_id
         self.config = self._load_config()
+        self.unknown_symbols: set[str] = set()  # Track symbols we don't recognize
         
     def _load_config(self) -> dict:
         """Load game configuration."""
@@ -136,10 +137,20 @@ class RawTableParser:
         """Extract footnote symbols from a value. Returns (clean_value, [symbols])."""
         symbols = []
         clean = value
-        for sym in self.config.get("footnote_symbols", []):
+        known_symbols = self.config.get("footnote_symbols", [])
+        
+        # First pass: extract known symbols
+        for sym in known_symbols:
             if sym in clean:
                 symbols.append(sym)
                 clean = clean.replace(sym, "")
+        
+        # Second pass: check for any remaining non-alphanumeric characters that might be unknown symbols
+        # This catches symbols embedded in values like "3†" or "Longstreet*"
+        for char in value:
+            if char not in known_symbols and not char.isalnum() and not char.isspace() and char not in [',', '.', '-', '/', '(', ')', '[', ']']:
+                self.unknown_symbols.add(char)
+        
         return clean.strip(), symbols
     
     def _is_special_unit(self, tokens: list) -> bool:
@@ -443,6 +454,12 @@ def main():
         with open(output_file, "w") as f:
             json.dump([asdict(s) for s in scenarios], f, indent=2)
         print(f"  Exported to {output_file}")
+        
+        # Report any unknown footnote symbols
+        if parser.unknown_symbols:
+            print(f"  ⚠️  WARNING: Found unknown footnote symbols: {sorted(parser.unknown_symbols)}")
+            print("     These symbols are not in game_configs.json footnote_symbols and may not be parsed correctly.")
+            print("     Consider adding them to the defaults.footnote_symbols array.")
 
 
 if __name__ == "__main__":

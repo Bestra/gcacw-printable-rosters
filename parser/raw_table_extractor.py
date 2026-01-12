@@ -52,6 +52,9 @@ class RawScenarioTables:
 class RawTableExtractor:
     """Extracts raw tables from GCACW scenario PDFs."""
     
+    # Known footnote symbols
+    KNOWN_FOOTNOTE_SYMBOLS = {'*', '^', '†', '‡', '§', '$', '+', '#', '&'}
+    
     # Table header patterns - matches table section names
     # These patterns should match ONLY lines that are clearly table headers,
     # not lines that happen to contain these phrases in rules text.
@@ -165,6 +168,7 @@ class RawTableExtractor:
         self.pdf_path = pdf_path
         self.game_id = game_id
         self.scenarios: list[RawScenarioTables] = []
+        self.unknown_symbols: set[str] = set()  # Track symbols we don't recognize
         
         # Use provided page range, or look up from PAGE_RANGES, or use entire PDF
         if start_page is not None:
@@ -340,6 +344,10 @@ class RawTableExtractor:
                     explanation = footnote_match.group(2)
                     if current_table:
                         current_table.annotations[symbol] = explanation
+                        # Check for unknown symbols
+                        for char in symbol:
+                            if char not in self.KNOWN_FOOTNOTE_SYMBOLS:
+                                self.unknown_symbols.add(char)
                     continue
                 
                 # Try to parse as data row
@@ -596,6 +604,12 @@ def main():
     # Export JSON
     extractor.to_json_file(output_json)
     print(f"\nExported raw table data to {output_json}")
+    
+    # Report any unknown footnote symbols
+    if extractor.unknown_symbols:
+        print(f"\n⚠️  WARNING: Found unknown footnote symbols: {sorted(extractor.unknown_symbols)}")
+        print("   These symbols are not in KNOWN_FOOTNOTE_SYMBOLS and may not be parsed correctly.")
+        print("   Consider adding them to the KNOWN_FOOTNOTE_SYMBOLS set.")
 
 
 if __name__ == "__main__":
