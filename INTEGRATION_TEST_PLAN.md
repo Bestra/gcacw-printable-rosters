@@ -23,7 +23,7 @@ Configure Vitest with JSDOM environment, set up path aliases to match Vite confi
 
 Import `@testing-library/jest-dom` matchers (e.g., `toBeInTheDocument()`), set up any global mocks needed (like `import.meta.env.BASE_URL`).
 
-### Step 1.4: Add npm scripts to `package.json`
+### Step 1.4: Add npm scripts to `package.json` ✅
 
 ```json
 "test": "vitest run",
