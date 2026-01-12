@@ -1,0 +1,4516 @@
+{
+  "id": "tom",
+  "name": "Thunder on the Mississippi",
+  "scenarios": [
+    {
+      "number": 1,
+      "name": "The Battle of Port Gibson",
+      "confederateFootnotes": {
+        "*": "Begins game on exhausted side."
+      },
+      "unionFootnotes": {
+        "*": "Begins game on exhausted side."
+      },
+      "confederateUnits": [
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "1 MO (dmnt)",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "1#",
+          "hexLocation": "W4320 (Thompson\u2019s Bluff)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Baldwin",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "W4814 (Grindstone Ford Suspension Bridge)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "1 MO",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "1#",
+          "hexLocation": "W4923 (Coon Island Lake)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tracy",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5%",
+          "hexLocation": "W5121",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W5421 (Buck)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5222 (Shaifer)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "W5222 (Shaifer)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "W5222 (Shaifer)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "10*",
+          "hexLocation": "W5323",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-B",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8*",
+          "hexLocation": "W5423",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-A",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 2,
+      "name": "Invasion and Breakout",
+      "confederateFootnotes": {
+        "*": "May not activate on Turn 1. Exception: May be eligible for \u201cEarly Release\u201d; see Special Rule 5.",
+        "^": "May not activate on Turn 1 and starts Turn 2 at Fatigue Level 1 on normal side.",
+        "$": "Begins game under Fort-Complete marker."
+      },
+      "unionFootnotes": {
+        "^": "Reinforcements on Turn 2; see Special Rule 6."
+      },
+      "confederateUnits": [
+        {
+          "name": "Loring-A",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-*",
+          "hexLocation": "W2405 (Spear)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-*",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tilghman-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "2*",
+          "hexLocation": "W2405 (Spear)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5^",
+          "hexLocation": "W3117 (Warrenton)",
+          "notes": [
+            "^"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Baldwin",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W3317",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tracy",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W4014 (Hankinson\u2019s Bridge)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "1 MO (dmnt)",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "1*",
+          "hexLocation": "W4320 (Thompson\u2019s Bluff)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "2 MO",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "2$!",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [
+            "$"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "1 MO",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "1*",
+          "hexLocation": "W4923 (Coon Island Lake)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W5119 (Port Gibson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-@",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "10#",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-B",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-A",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "8@",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Dennis",
+          "size": "Brig",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "4^",
+          "hexLocation": "Reinforcement Turn 2",
+          "notes": [
+            "^"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crocker",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "10^",
+          "hexLocation": "Reinforcement Turn 2",
+          "notes": [
+            "^"
+          ],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 3,
+      "name": "Unite Your Troops",
+      "confederateFootnotes": {
+        "*": "Begins game under Fort-Complete marker."
+      },
+      "unionFootnotes": {},
+      "confederateUnits": [
+        {
+          "name": "Pemberton",
+          "size": "Army",
+          "command": "AM",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W3915",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W3915",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Loring-A",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4614 (Willows)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "1 MO (dmnt)",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "1*",
+          "hexLocation": "W4118",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Barton",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3915",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Taylor",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3915",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tilghman-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W4614 (Willows)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W4614 (Willows)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W4921 (Ashland)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Baldwin",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W4921 (Ashland)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W4921 (Ashland)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W4921 (Ashland)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "2 MO",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "2*",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4814 (Grindstone Ford Suspension Bridge)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4814 (Grindstone Ford Suspension Bridge)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5119 (Port Gibson)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-B",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "W4814 (Grindstone Ford Suspension Bridge)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crocker",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "W4814 (Grindstone Ford Suspension Bridge)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W5119 (Port Gibson)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "W5119 (Port Gibson)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "W5119 (Port Gibson)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W5119 (Port Gibson)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 4,
+      "name": "Yankee Blitzkrieg",
+      "confederateFootnotes": {
+        "*": "Indicated units may not activate until Turn 3."
+      },
+      "unionFootnotes": {},
+      "confederateUnits": [
+        {
+          "name": "Pemberton",
+          "size": "Army",
+          "command": "AM",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Loring-A",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2909 (Hubbard)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W3113 (Gibson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W2404 (Big Black Bridge)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tilghman-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W3107",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "20 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "W3915",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Vaughn",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "W2510 (Mt. Alban)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Featherston-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W2909 (Hubbard)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Buford-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W2909 (Hubbard)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Barton",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W3113 (Gibson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cumming",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W3113 (Gibson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3113 (Gibson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3113 (Gibson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "1 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "E2533 (Edwards)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Gregg-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "E3023 (Raymond)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "3 KY",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "14 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1*",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Walker-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Reinforcement",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Colquitt",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "Reinforcement",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Maxey-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "Reinforcement",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Evans-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "Reinforcement",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4109",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sherman",
+          "size": "Corps",
+          "command": "XV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4109",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4008",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4005 (Meyer)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steele",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "W4109",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Tuttle",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "W4210 (Rocky Springs)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W4008",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "W4008",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "W4008",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W4008",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-B",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "W4005 (Meyer)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crocker",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "W4106",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "4 IO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "W4614 (Willows)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "6 MO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "W4101 (Utica)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 5,
+      "name": "Loring's Memorandum",
+      "confederateFootnotes": {
+        "*": "On Turn 1, units may neither activate nor entrench unless a unless a Union unit moves adjacent, at which point that specific unit is immediately released"
+      },
+      "unionFootnotes": {
+        "^": "Begins game on exhausted side at Fatigue Level 1."
+      },
+      "confederateUnits": [
+        {
+          "name": "Pemberton",
+          "size": "Army",
+          "command": "AM",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2901 (Mt Moriah)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2901 (Mt Moriah)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Loring-A",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W3107",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W3407",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Walker",
+          "size": "Div",
+          "command": "W",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Vaughn",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "3#",
+          "hexLocation": "W2404 (Big Black Bridge)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W2901 (Mt Moriah)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W2902",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Featherston-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W3107",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Buford-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W3107",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tilghman-C",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W3107",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Baldwin",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W3108 (Whitaker)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Barton",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W3407",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cumming",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W3407",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3407",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3407",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Moore",
+          "size": "Brig",
+          "command": "FOR",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3709 (Fisher Ferry)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "20 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "W3915",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "1 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "E2631",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "3 KY",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "E3023 (Raymond)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Gregg-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "E3023 (Raymond)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Walker-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Colquitt",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "2*",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "14 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1#",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Maxey-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "E4920 (Crystal Springs)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W3602",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E3433 (Auburn)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sherman",
+          "size": "Corps",
+          "command": "XV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E3433 (Auburn)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E3829 (Roach)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "95 OH",
+          "size": "Regt",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "W3206 (Baldwin\u2019s Ferry)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "49/69 IN",
+          "size": "Regt",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "E3233",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "W3602",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "W3603",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W3704",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W3705 (Cayuga)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "4 IO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "E3433 (Auburn)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steele",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "E3433 (Auburn)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Tuttle",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "E3433 (Auburn)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Blair-A",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ransom",
+          "size": "Brig",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-B",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "E3829 (Roach)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crocker",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "E3829 (Roach)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "6 MO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1^",
+          "hexLocation": "E3829 (Roach)",
+          "notes": [
+            "^"
+          ],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 6,
+      "name": "Grant Moves West",
+      "confederateFootnotes": {
+        "+": "Units begin game at Fatigue Level 2 on their normal sides.",
+        "*": "Units may not activate until Turn 2."
+      },
+      "unionFootnotes": {
+        "*": "Units may not activate until Turn 2.",
+        "+": "Units begin game at Fatigue Level 1."
+      },
+      "confederateUnits": [
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2502",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Pemberton",
+          "size": "Army",
+          "command": "AM",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2631",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Loring-A",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2631",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2533 (Edwards)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Barton",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "W2502",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cumming",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "W2502",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5+",
+          "hexLocation": "W2502",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5+",
+          "hexLocation": "W2503",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Vaughn",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "W2404 (Big Black Bridge)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tilghman-C",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "3+",
+          "hexLocation": "E2631",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Buford-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "E2631",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Featherston-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "E2632 (Withers)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-B",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "E2533 (Edwards)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-B",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "4+",
+          "hexLocation": "E2533 (Edwards)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Baldwin",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "W2510 (Mt. Alban)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Waul TX Leg",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1*",
+          "hexLocation": "W3107",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Sherman",
+          "size": "Corps",
+          "command": "XV",
+          "type": "Ldr",
+          "manpowerValue": "-*",
+          "hexLocation": "E2713 (Deaf and Dumb Asylum)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2619",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2619",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E3021",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steele",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11*",
+          "hexLocation": "E2713 (Deaf and Dumb Asylum)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Tuttle",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11*",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-B",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "12+",
+          "hexLocation": "E2619",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crocker",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "9+",
+          "hexLocation": "E2519 (Mississippi College)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "6+",
+          "hexLocation": "E2624",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "7+",
+          "hexLocation": "E3021",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "9+",
+          "hexLocation": "E2522",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Blair-A",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "8+",
+          "hexLocation": "E3228",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8+",
+          "hexLocation": "E3229 (Dillon)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ransom",
+          "size": "Brig",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "3+",
+          "hexLocation": "E3332 (New Auburn)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ewing",
+          "size": "Brig",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "3+",
+          "hexLocation": "W3807 (Crossroads)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 7,
+      "name": "Champion Hill",
+      "confederateFootnotes": {
+        "*": "Units begin game on their exhausted sides.",
+        "+": "Units begin game with disorganized Strength markers.",
+        "^": "Reynolds begins game at Fatigue Level 2."
+      },
+      "unionFootnotes": {},
+      "confederateUnits": [
+        {
+          "name": "Pemberton",
+          "size": "Army",
+          "command": "AM",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2629 (Ratliff)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2629 (Ratliff)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2629 (Ratliff)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2529 (The Crossroad)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Loring-A",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2729 (Ellison)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Barton",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6*+",
+          "hexLocation": "E2629 (Ratliff)",
+          "notes": [
+            "*",
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cumming",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6*+",
+          "hexLocation": "E2629 (Ratliff)",
+          "notes": [
+            "*",
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-B",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "E2629 (Ratliff)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-B",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "E2629 (Ratliff)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5*+",
+          "hexLocation": "E2529 (The Crossroad)",
+          "notes": [
+            "*",
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5^",
+          "hexLocation": "E2531",
+          "notes": [
+            "^"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tilghman-C",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "E2729 (Ellison)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Buford-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "E2729 (Ellison)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Featherston-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6*",
+          "hexLocation": "E2729 (Ellison)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2525 (Jones)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2525 (Jones)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2626 (Chapel Hill Church)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-B",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "E2525 (Jones)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crocker",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "E2323 (White)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-B",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "E2425 (Bolton)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "E2626 (Chapel Hill Church)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "E2726 (Hawkins)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Blair-A",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "E3023 (Raymond)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "E3024",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 8,
+      "name": "I Move At Once",
+      "confederateFootnotes": {},
+      "unionFootnotes": {},
+      "confederateUnits": [
+        {
+          "name": "Johnston",
+          "size": "Army",
+          "command": "AR",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 2A",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Walker",
+          "size": "Div",
+          "command": "W",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 2A",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Pemberton",
+          "size": "Army",
+          "command": "AM",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Loring-A",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Gist-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "E1609 (Midway)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Walker-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "See Special Rule 2A",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Gregg-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "See Special Rule 2A",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Colquitt",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "See Special Rule 2A",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Barton",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cumming",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-B",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-B",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Tilghman-C",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Buford-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Featherston-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "See Special Rule 2B",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Sherman",
+          "size": "Corps",
+          "command": "XV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2713 (Deaf and Dumb Asylum)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 3A",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 3A",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 3B",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steele",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "E2713 (Deaf and Dumb Asylum)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Tuttle",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-B",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "See Special Rule 3A",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crocker",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "See Special Rule 3A",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "See Special Rule 3A",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "See Special Rule 3B",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "See Special Rule 3B",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "See Special Rule 3B",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Blair-A",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "E3023 (Raymond)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ransom",
+          "size": "Brig",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "E3226 (Powell)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 9,
+      "name": "This Is Success",
+      "confederateFootnotes": {
+        "+": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers and Demoralized-1 markers.",
+        "*": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers.",
+        "^": "Units begin the game at Fatigue Level 0 on their exhausted sides with disorganized Strength markers."
+      },
+      "unionFootnotes": {
+        "*": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers."
+      },
+      "confederateUnits": [
+        {
+          "name": "Forney",
+          "size": "Div",
+          "command": "FOR",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W1410 (Snyder\u2019s Bluff)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Smith",
+          "size": "Div",
+          "command": "SMI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2414 (Vicksburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Pemberton",
+          "size": "Army",
+          "command": "AM",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2404 (Big Black Bridge)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Hebert",
+          "size": "Brig",
+          "command": "FOR",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W1410 (Snyder\u2019s Bluff)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Moore",
+          "size": "Brig",
+          "command": "FOR",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W3117 (Warrenton)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Shoup",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W2414 (Vicksburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Baldwin",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Barton",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "4+",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cumming",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "4+",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Lee",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "4*",
+          "hexLocation": "W2405 (Spear)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Vaughn",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W2404 (Big Black Bridge)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Green-B",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3^",
+          "hexLocation": "W2404 (Big Black Bridge)",
+          "notes": [
+            "^"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cockrell-B",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "4^",
+          "hexLocation": "W2505 (Negro Quarters)",
+          "notes": [
+            "^"
+          ],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Waul TX Leg",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "W3108 (Whitaker)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Sherman",
+          "size": "Corps",
+          "command": "XV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2425 (Bolton)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2628",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2628",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2504 (Smith)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steele",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "E2425 (Bolton)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Tuttle",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "E2425 (Bolton)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Blair-A",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "E2731 (Iowe Graveyard)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ewing",
+          "size": "Brig",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "3#",
+          "hexLocation": "E2730 (Coker)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ransom",
+          "size": "Brig",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "E2628",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Quinby",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "5*",
+          "hexLocation": "E2530 (Roberts)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-B",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "11*",
+          "hexLocation": "E2531",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "7&",
+          "hexLocation": "W2504 (Smith)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "7&",
+          "hexLocation": "W2504 (Smith)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-B",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "E2529 (Champion Hill)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8&",
+          "hexLocation": "W2503",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 10,
+      "name": "Army of Relief",
+      "confederateFootnotes": {},
+      "unionFootnotes": {
+        "*": "Units begin game under Breastwork-Complete markers.",
+        "+": "WS Smith is placed on the map with a Fatigue Level of 1."
+      },
+      "confederateUnits": [
+        {
+          "name": "Johnston",
+          "size": "Army",
+          "command": "AR",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Walker",
+          "size": "Div",
+          "command": "W",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Breckinridge",
+          "size": "Div",
+          "command": "BRE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "French",
+          "size": "Div",
+          "command": "FRE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Loring-B",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Wilson",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Gregg-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Gist-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Ector-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "D Adams",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Helm",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stovall",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Evans-B",
+          "size": "Brig",
+          "command": "FRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Maxey-C",
+          "size": "Brig",
+          "command": "FRE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "McNair-B",
+          "size": "Brig",
+          "command": "FRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Buford-B",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "J Adams",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Featherston-B",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cosby",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Whitfield",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "See Special Rule 1",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2411",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Washburn",
+          "size": "Corps",
+          "command": "XVI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "Turn 2 Reinforcement (see Special Rule 6)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Tuttle",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W2312 (Freeman)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McArthur",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "W2411",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Lauman",
+          "size": "Div",
+          "command": "XVI",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "W3114 (Barnes)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Lindsey",
+          "size": "Brig",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W2510 (Mt. Alban)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "W2405 (Spear)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "6 MO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1*",
+          "hexLocation": "W2203 (Brooks)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "5 IL",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1*",
+          "hexLocation": "W1803",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "4 IO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1*",
+          "hexLocation": "W1502",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "2 IL",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1*",
+          "hexLocation": "W1103 (Sulphur Springs)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Mower",
+          "size": "Brig",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "W1006 (Haynes Bluff)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Marine",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1*",
+          "hexLocation": "W1410 (Snyder\u2019s Bluff)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Kimball",
+          "size": "Div",
+          "command": "XVI",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "See Special Rule 2",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "WS Smith",
+          "size": "Div",
+          "command": "XVI",
+          "type": "Inf",
+          "manpowerValue": "14+",
+          "hexLocation": "Turn 2 Reinforcement (see Special Rule 6)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 11,
+      "name": "Inflict All the Punishment You Can",
+      "confederateFootnotes": {},
+      "unionFootnotes": {},
+      "confederateUnits": [
+        {
+          "name": "Johnston",
+          "size": "Army",
+          "command": "AR",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E1629",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Loring-B",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E1629",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Walker",
+          "size": "Div",
+          "command": "W",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E1730",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "French",
+          "size": "Div",
+          "command": "FRE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E1826",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Breckinridge",
+          "size": "Div",
+          "command": "BRE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "E2429 (Midway Station)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Buford-B",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "E1629",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "J Adams",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E1629",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Featherston-B",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "E1629",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Wilson",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "E1730",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Gregg-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E1730",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Gist-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "E1730",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Ector-B",
+          "size": "Brig",
+          "command": "W",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E1730",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Evans-B",
+          "size": "Brig",
+          "command": "FRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E1826",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Maxey-C",
+          "size": "Brig",
+          "command": "FRE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "E1826",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "McNair-B",
+          "size": "Brig",
+          "command": "FRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E1826",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Cosby",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "E1831",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Whitfield",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "E2332 (Forbes)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "1 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "E2531",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Helm",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E2429 (Midway Station)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "Stovall",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E2429 (Midway Station)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        },
+        {
+          "name": "D Adams",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "E2530 (Roberts)",
+          "notes": [],
+          "tableName": "Confederate Set-Up"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Parke",
+          "size": "Corps",
+          "command": "IX",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W1701 (Youngton)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steele",
+          "size": "Corps",
+          "command": "XV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2101",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ord",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "2 IL",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "W1502",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Potter",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "W1701 (Youngton)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Welsh",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "E1833",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Bussey",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "E1833",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "WS Smith",
+          "size": "Div",
+          "command": "XVI",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "E2033",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McArthur",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "W2004 (Tiffentown)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Blair-B",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "W2102 (Cameron)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steele",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "W2101",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Tuttle",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W2101",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "6 MO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "W2203 (Brooks)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-C",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W2406 (Bovina)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W2405 (Spear)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    },
+    {
+      "number": 12,
+      "name": "Starting and Ending the Game",
+      "confederateFootnotes": {
+        "*": "Units may not activate on Turn 1, but may be released early (see Special Rule 3).",
+        "+": "Units may not activate on Turns 1 through 10 and may never be released early. Exception: If a Union infantry unit enters Warren County, these units are",
+        "^": "Reynolds may not activate on Turn 1, may never be released early, and starts Turn 2 at Fatigue Level 1 on its normal side.",
+        "$": "Units begin the game under Fort-Complete markers."
+      },
+      "unionFootnotes": {},
+      "confederateUnits": [
+        {
+          "name": "Pemberton",
+          "size": "Army",
+          "command": "AM",
+          "type": "Ldr",
+          "manpowerValue": "-%",
+          "hexLocation": "W2404 (Big Black Bridge)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Loring-A",
+          "size": "Div",
+          "command": "L",
+          "type": "Ldr",
+          "manpowerValue": "-*",
+          "hexLocation": "W2405 (Spear)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Forney",
+          "size": "Div",
+          "command": "FOR",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "W1711 (Drumgould\u2019s Bluff)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Smith",
+          "size": "Div",
+          "command": "SMI",
+          "type": "Ldr",
+          "manpowerValue": "-+",
+          "hexLocation": "W2011 (Walnut Hills)",
+          "notes": [
+            "+"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Stevenson",
+          "size": "Div",
+          "command": "STE",
+          "type": "Ldr",
+          "manpowerValue": "-#",
+          "hexLocation": "W2414 (Vicksburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Bowen",
+          "size": "Div",
+          "command": "BOW",
+          "type": "Ldr",
+          "manpowerValue": "-*",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Johnston",
+          "size": "Army",
+          "command": "AR",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "Constant Reinforcement Jackson Turn 14 (May 13)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Breckinridge",
+          "size": "Div",
+          "command": "BRE",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "Constant Reinforcement Jackson Turn 33 (June 1)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "14 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1%",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "20 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1%",
+          "hexLocation": "E2712 (Jackson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "27 AL",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1%",
+          "hexLocation": "W2404 (Big Black Bridge)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Tilghman-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "2*",
+          "hexLocation": "W2405 (Spear)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "2 TX",
+          "size": "Regt",
+          "command": "FOR",
+          "type": "Inf",
+          "manpowerValue": "1$+",
+          "hexLocation": "W1410 (Snyder\u2019s Bluff)",
+          "notes": [
+            "$",
+            "+"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Hebert",
+          "size": "Brig",
+          "command": "FOR",
+          "type": "Inf",
+          "manpowerValue": "5$+",
+          "hexLocation": "W1711 (Drumgould\u2019s Bluff)",
+          "notes": [
+            "$",
+            "+"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Vaughn",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "4$+",
+          "hexLocation": "W2011 (Walnut Hills)",
+          "notes": [
+            "$",
+            "+"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Shoup",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "3$+",
+          "hexLocation": "W2414 (Vicksburg)",
+          "notes": [
+            "$",
+            "+"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Barton",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "W2414 (Vicksburg)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Taylor",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "W2515 (Marine Hospital)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "AW Reynolds",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5^",
+          "hexLocation": "W3117 (Warrenton)",
+          "notes": [
+            "^"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Moore",
+          "size": "Brig",
+          "command": "FOR",
+          "type": "Inf",
+          "manpowerValue": "4$+",
+          "hexLocation": "W3117 (Warrenton)",
+          "notes": [
+            "$",
+            "+"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Baldwin",
+          "size": "Brig",
+          "command": "SMI",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W3317",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Tracy",
+          "size": "Brig",
+          "command": "STE",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "W4014 (Hankinson\u2019s Bridge)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "1 MO (dmnt)",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "1*",
+          "hexLocation": "W4320 (Thompson\u2019s Bluff)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Cockrell-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "2 MO",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "2$!",
+          "hexLocation": "W4622 (Grand Gulf)",
+          "notes": [
+            "$"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "1 MO",
+          "size": "Regt",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "1*",
+          "hexLocation": "W4923 (Coon Island Lake)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Green-A",
+          "size": "Brig",
+          "command": "BOW",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W5119 (Port Gibson)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Featherston-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "5",
+          "hexLocation": "Constant Reinforcement Madison County Turn 3 (May 2)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Buford-A",
+          "size": "Brig",
+          "command": "L",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "Constant Reinforcement Jackson Turn 5 (May 4)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Waul TX Leg",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "Constant Reinforcement Yazoo River Turn 6 (May 5)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "1 MS",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Constant Reinforcement Claiborne County Turn 7 (May 6)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Gregg-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "Constant Reinforcement Copiah County Turn 9 (May 8)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "3 KY",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Constant Reinforcement Jackson Turn 12 (May 11)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Walker-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Constant Reinforcement Jackson Turn 13 (May 12)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "24 SC",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "Constant Reinforcement Jackson Turn 14 (May 13)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Maxey-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "Constant Reinforcement Copiah County Turn 14 (May 13)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "25/29 GA",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "Constant Reinforcement Jackson Turn 15 (May 14)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Gist-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Constant Reinforcement Jackson Turn 15 (May 14)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Ector-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Constant Reinforcement Jackson Turn 18 (May 17)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "McNair-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Constant Reinforcement Jackson Turn 18 (May 17)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Evans-A",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "Constant Reinforcement Jackson Turn 23 (May 22)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "D Adams",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "Constant Reinforcement Jackson Turn 33 (June 1)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Helm",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "Constant Reinforcement Jackson Turn 33 (June 1)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Stovall",
+          "size": "Brig",
+          "command": "BRE",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "Constant Reinforcement Jackson Turn 33 (June 1)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Cosby",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "Constant Reinforcement Madison County Turn 35 (June 3)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Whitfield",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "2",
+          "hexLocation": "Constant Reinforcement Madison County Turn 35 (June 3)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        },
+        {
+          "name": "Taliaferro",
+          "size": "Brig",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Variable Reinforcement (Jackson; see 12.2)",
+          "notes": [],
+          "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
+        }
+      ],
+      "unionUnits": [
+        {
+          "name": "Grant",
+          "size": "Army",
+          "command": "AT",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McClernand",
+          "size": "Corps",
+          "command": "XIII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McPherson",
+          "size": "Corps",
+          "command": "XVII",
+          "type": "Ldr",
+          "manpowerValue": "-@",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Sherman",
+          "size": "Corps",
+          "command": "XV",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "Constant Reinforcement Turn 8 (May 7)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Washburn",
+          "size": "Corps",
+          "command": "XVI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "Constant Reinforcement Turn 35 (June 3)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Parke",
+          "size": "Corps",
+          "command": "IX",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "Constant Reinforcement Turn 48 (June 16)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Osterhaus",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "AJ Smith-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hovey-A",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "10#",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Carr",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8#",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Logan-A",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "8@",
+          "hexLocation": "W5228 (Bruinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Dennis",
+          "size": "Brig",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "Constant Reinforcement Turn 2 (May 1)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Crocker",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "Constant Reinforcement Turn 2 (May 1)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "6 MO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Constant Reinforcement Turn 7 (May 6)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "2 IL",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Constant Reinforcement Turn 7 (May 6)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Steele",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "Constant Reinforcement Turn 8 (May 7)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Tuttle",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "11",
+          "hexLocation": "Constant Reinforcement Turn 8 (May 7)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "3 IL",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Constant Reinforcement Turn 9 (May 8)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "4 IO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Constant Reinforcement Turn 10 (May 9)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Blair-A",
+          "size": "Div",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Constant Reinforcement Turn 12 (May 11)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "McArthur",
+          "size": "Div",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Constant Reinforcement Turn 13 (May 12)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Hall",
+          "size": "Brig",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Constant Reinforcement Turn 14 (May 13)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Ewing",
+          "size": "Brig",
+          "command": "XV",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "Constant Reinforcement Turn 16 (May 15)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Bryant",
+          "size": "Brig",
+          "command": "XVI",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "Constant Reinforcement Turn 17 (May 16)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Lauman",
+          "size": "Div",
+          "command": "XVI",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Constant Reinforcement Turn 20 (May 19)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Bussey",
+          "size": "Brig",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Constant Reinforcement Turn 32 (May 31)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Kimball",
+          "size": "Div",
+          "command": "XVI",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "Constant Reinforcement Turn 35 (June 3)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "WS Smith",
+          "size": "Div",
+          "command": "XVI",
+          "type": "Inf",
+          "manpowerValue": "14",
+          "hexLocation": "Constant Reinforcement Turn 44 (June 12)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Herron",
+          "size": "Div",
+          "command": "XIII",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Constant Reinforcement Turn 44 (June 12)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Welsh",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "Constant Reinforcement Turn 48 (June 16)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Potter",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Constant Reinforcement Turn 48 (June 16)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Marine",
+          "size": "Regt",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "1",
+          "hexLocation": "Variable Reinforcement (see 12.1)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "3 IO",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Variable Reinforcement (see 12.1)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "2 WI",
+          "size": "Regt",
+          "command": "-",
+          "type": "Cav",
+          "manpowerValue": "1",
+          "hexLocation": "Variable Reinforcement (see 12.1)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Reid",
+          "size": "Brig",
+          "command": "XVII",
+          "type": "Inf",
+          "manpowerValue": "2",
+          "hexLocation": "Variable Reinforcement (see 12.1)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        },
+        {
+          "name": "Grover",
+          "size": "Div",
+          "command": "-",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "Special Reinforcement (see 3.0)",
+          "notes": [],
+          "tableName": "Union Set-Up"
+        }
+      ],
+      "confederateGunboats": [],
+      "unionGunboats": []
+    }
+  ]
+}

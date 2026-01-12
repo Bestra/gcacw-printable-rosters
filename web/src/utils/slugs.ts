@@ -8,6 +8,7 @@ const gameIdToSlug: Record<string, string> = {
   hcr: "HCR",
   rtg2: "RTGII",
   rwh: "RWH",
+  tom: "TOM",
 };
 
 const slugToGameId: Record<string, string> = {
@@ -17,6 +18,7 @@ const slugToGameId: Record<string, string> = {
   hcr: "hcr",
   rtgii: "rtg2",
   rwh: "rwh",
+  tom: "tom",
 };
 
 /**

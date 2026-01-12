@@ -17,6 +17,7 @@ GAMES = [
     {"id": "hcr", "name": "Here Come the Rebels!"},
     {"id": "rtg2", "name": "Roads to Gettysburg 2"},
     {"id": "rwh", "name": "Rebels in the White House"},
+    {"id": "tom", "name": "Thunder on the Mississippi"},
 ]
 
 

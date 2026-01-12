@@ -29,6 +29,11 @@
       "id": "rwh",
       "name": "Rebels in the White House",
       "file": "rwh.json"
+    },
+    {
+      "id": "tom",
+      "name": "Thunder on the Mississippi",
+      "file": "tom.json"
     }
   ]
 }

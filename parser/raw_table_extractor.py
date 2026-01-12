@@ -44,6 +44,7 @@ class RawScenarioTables:
     scenario_name: str
     start_page: int  # First page of the scenario (1-indexed)
     end_page: int  # Last page of the scenario (1-indexed)
+    advanced_game_rules_page: Optional[int] = None  # Page where advanced rules start (1-indexed)
     confederate_tables: list[RawTable] = field(default_factory=list)
     union_tables: list[RawTable] = field(default_factory=list)
 
@@ -143,6 +144,20 @@ class RawTableExtractor:
             2: "Fort Stevens",
             3: "The Retreat From Washington",
             4: "From Winchester to Washington",
+        },
+        "tom": {
+            1: "The Battle of Port Gibson",
+            2: "Invasion and Breakout",
+            3: "Unite Your Troops",
+            4: "Yankee Blitzkrieg",
+            5: "Loring's Memorandum",
+            6: "Grant Moves West",
+            7: "Champion Hill",
+            8: "I Move At Once",
+            9: "This Is Success",
+            10: "Army of Relief",
+            11: "Inflict All the Punishment You Can",
+            12: "Starting and Ending the Game",
         },
     }
     
@@ -284,6 +299,8 @@ class RawTableExtractor:
                     re.match(r'^the following rules are used only in advanced game', line_lower)
                 )
                 if is_advanced_game_section_header:
+                    # Record the page where advanced rules start
+                    raw_scenario.advanced_game_rules_page = page_idx + 1  # 1-indexed
                     stop_parsing = True
                     break
                 
@@ -558,6 +575,8 @@ def main():
     for scenario in scenarios:
         print(f"\nScenario {scenario.scenario_number}: {scenario.scenario_name}")
         print(f"  Pages: {scenario.start_page}-{scenario.end_page}")
+        if scenario.advanced_game_rules_page:
+            print(f"  Advanced Game Rules start: page {scenario.advanced_game_rules_page}")
         print(f"  Confederate tables: {len(scenario.confederate_tables)}")
         for table in scenario.confederate_tables:
             row_count = len(table.rows)
