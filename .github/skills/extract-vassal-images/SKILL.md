@@ -1,13 +1,16 @@
-# Extract VASSAL Module Images
+---
+name: extract-vassal-images
+description: Extract unit counter images from VASSAL game modules (.vmod files) for roster generation. Use when adding counter images to a game, setting up image mappings for units, or troubleshooting missing/mismatched unit images. Handles both individual pre-rendered images and template-based composite images with automatic counter type detection.
+---
 
-Extract unit counter images from VASSAL modules (.vmod files) for use in the web roster generator.
+# Extract VASSAL Module Images
 
 ## Overview
 
-VASSAL modules are ZIP files containing game piece definitions and images. This skill covers:
+VASSAL modules are ZIP files containing game piece definitions and images. This workflow covers:
 
-1. Understanding module structure
-2. Automatically detecting the counter image system used
+1. Automatically detecting the counter image system used (`detect_counter_type.py`)
+2. Understanding module structure
 3. Extracting and mapping images to parsed unit data
 4. Generating composite images when needed
 
@@ -76,21 +79,28 @@ Only **leaders** have dedicated images. Brigade/division counters are composited
 3. Copies leader images directly
 4. Composites brigade/division images with unit name text overlay
 
+## Quick Start
+
+**For a streamlined extraction workflow, see:**
+
+- **Quick Reference**: `parser/EXTRACT_IMAGES_QUICKSTART.md` - 30-second workflow cheat sheet
+- **Integration Script**: `parser/integrate_game_images.py` - Automates post-extraction setup
+
 ## Extraction Workflow
 
-### Step 1: Detect Counter Type (Recommended)
+### Step 1: Detect Counter Type (CRITICAL - Always Start Here)
 
-Use the automatic counter type detection script:
+Use `detect_counter_type.py` to automatically determine the counter image system:
 
 ```bash
 cd parser && uv run python detect_counter_type.py /path/to/GAME.vmod
 ```
 
-This analyzes the buildFile.xml and image naming patterns to determine:
+This analyzes buildFile.xml and image naming patterns to determine:
 
-- **INDIVIDUAL**: Each unit has a dedicated pre-rendered image
-- **TEMPLATE_COMPOSITE**: Units use generic backgrounds with text overlays
-- **HYBRID**: Mixed (usually leaders are individual, units are templates)
+- **INDIVIDUAL**: Each unit has a dedicated pre-rendered image (e.g., RTG2)
+- **TEMPLATE_COMPOSITE**: Units use generic backgrounds with text overlays (e.g., HCR, OTR2, GTC2, HSN)
+- **HYBRID**: Mixed approach (usually leaders are individual, units are templates)
 
 To analyze all modules in a directory:
 
@@ -150,6 +160,26 @@ cd parser && uv run python generate_counters.py --game gtc2 /path/to/GTC2.vmod
 ```
 
 For new games, add game-specific configuration to `generate_counters.py`.
+
+### Step 6: Integrate into Web App
+
+Use the integration helper script to automate the post-extraction setup:
+
+```bash
+cd parser && uv run python integrate_game_images.py GAME
+```
+
+This automatically:
+
+1. Copies `image_mappings/game_images.json` to `web/src/data/`
+2. Updates `web/src/data/imageMap.ts` with necessary imports and registrations
+3. Validates the setup
+
+Then verify the build:
+
+```bash
+cd web && npm run build
+```
 
 ## Name Matching Challenges
 
@@ -232,6 +262,8 @@ Check the Pillow font loading - the script uses system fonts with fallback to de
 
 - `parser/detect_counter_type.py` - Automatic counter type detection
 - `parser/extract_images.py` - INDIVIDUAL (RTG2-style) extractor
-- `parser/generate_counters.py` - Unified TEMPLATE_COMPOSITE generator (HCR, OTR2, GTC2)
+- `parser/generate_counters.py` - Unified TEMPLATE_COMPOSITE generator (HCR, OTR2, GTC2, HSN)
+- `parser/integrate_game_images.py` - Post-extraction integration automation
 - `parser/image_mappings/*.json` - Generated mappings
+- `parser/EXTRACT_IMAGES_QUICKSTART.md` - Quick reference cheat sheet
 - `web/src/data/imageMap.ts` - TypeScript image map

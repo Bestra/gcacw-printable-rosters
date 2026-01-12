@@ -451,6 +451,132 @@ OTR2_CONFIG = GameConfig(
 
 
 # -----------------------------------------------------------------------------
+# HSN Configuration
+# -----------------------------------------------------------------------------
+
+def hsn_get_name_variants(name: str) -> list[str]:
+    """Generate variants of a name for fuzzy matching (HSN-specific)."""
+    variants = base_get_name_variants(name)
+    
+    # Handle "J Miller" vs "J. Miller"
+    if re.match(r'^[A-Z]\s', name):
+        base = name[2:]
+        variants.append(f"{name[0]}. {base}")
+        variants.append(f"{name[0]}{base}")
+    
+    # Handle "O. Moore" vs "O More" vs "O'More"
+    if 'Moore' in name or 'More' in name:
+        base_name = name.replace('O. Moore', 'O').replace('O Moore', 'O').replace('O. More', 'O').replace('O More', 'O').strip()
+        if not base_name or base_name == 'O':
+            variants.extend(['O More', "O'More", 'O Moore', 'O. Moore'])
+        else:
+            # Has additional qualifiers like "O. Moore (something)"
+            variants.extend([
+                base_name + ' More',
+                base_name + ' Moore', 
+                base_name + '. More',
+                base_name + '. Moore'
+            ])
+    
+    # Handle "R Johnson" vs "R. Johnson" vs "RJohnson"
+    if name == 'R Johnson' or name == 'RJohnson' or name == 'R. Johnson':
+        variants.extend(['R Johnson', 'R. Johnson', 'RJohnson'])
+    
+    # Handle "A. Miller" vs "A Miller" with numbers
+    if 'Miller' in name:
+        # "A. Miller 15" -> "A Miller 15", "A. Miller", "A Miller"
+        variants.append(name.replace('A. Miller', 'A Miller'))
+        variants.append(name.replace('A Miller', 'A. Miller'))
+        if ' ' in name and name.split()[-1].isdigit():
+            base = ' '.join(name.split()[:-1])
+            variants.append(base)
+    
+    # Handle number suffixes: "Cooper 12" -> "Cooper", "LaGrange 13" -> "LaGrange"
+    if ' ' in name and name.split()[-1].isdigit():
+        base = ' '.join(name.split()[:-1])
+        variants.append(base)
+    
+    # Handle USCT qualifier: "Thompson (USCT)" -> "Thompson", "Thompson (USCT) 10" -> "Thompson"
+    if '(USCT)' in name:
+        base = name.replace('(USCT)', '').strip()
+        variants.append(base)
+        # Also handle with number: "Thompson (USCT) 10" -> "Thompson"
+        if ' ' in base and base.split()[-1].isdigit():
+            variants.append(' '.join(base.split()[:-1]))
+    
+    # Handle "Lowrey - A" vs "Lowrey" vs "Lowrey-A"
+    if 'Lowrey' in name:
+        variants.extend(['Lowrey', 'Lowrey - A', 'Lowrey-A'])
+    
+    # Handle "#" suffix: "Lyon#" -> "Lyon"
+    if name.endswith('#'):
+        variants.append(name[:-1])
+    if not name.endswith('#') and 'Lyon' in name:
+        variants.append(name + '#')
+    
+    # Handle "@" suffix for leaders (Breckinridge@)
+    if name.endswith('@'):
+        variants.append(name[:-1])
+    if not name.endswith('@'):
+        variants.append(name + '@')
+    
+    return list(set(variants))
+
+
+def hsn_extract_unit_mappings(buildfile_path: Path) -> dict:
+    """Parse buildFile.xml to extract unit-to-background mappings for HSN."""
+    content = buildfile_path.read_text(encoding='utf-8', errors='ignore')
+    
+    mappings = {
+        "Union": {},
+        "Confederate": {},
+        "Leaders": {"Union": {}, "Confederate": {}}
+    }
+    
+    slot_pattern = r'<VASSAL\.build\.widget\.PieceSlot\s+entryName="([^"]+)"[^>]*>([^<]*)</VASSAL\.build\.widget\.PieceSlot>'
+    
+    for match in re.finditer(slot_pattern, content, re.DOTALL):
+        entry_name = match.group(1)
+        slot_content = match.group(2)
+        
+        image_match = re.search(r'piece;;;([^;]+\.jpg);[^/]+/', slot_content, re.IGNORECASE)
+        if not image_match:
+            continue
+        image_file = image_match.group(1)
+        
+        # Skip markers and non-unit items
+        if any(skip in entry_name.lower() for skip in ['vp', 'wagon', 'control', 'track', 
+                'paralysis', 'game-turn', 'cycle', 'supply', 'event', 'posture', 'mov', 'ope']):
+            continue
+        
+        if 'prototype;Leader' in slot_content:
+            # Union leaders have UL_ prefix, Confederate have CL_ prefix
+            if image_file.startswith('UL_'):
+                mappings["Leaders"]["Union"][entry_name] = image_file
+            elif image_file.startswith('CL_') or image_file.startswith('Cl_'):
+                mappings["Leaders"]["Confederate"][entry_name] = image_file
+        else:
+            # Determine side and type from prototypes
+            type_match = re.search(r'prototype;(USA|CSA)\s+(Infantry|Cavalry)\s+(Division|Brigade|Regiment)', slot_content)
+            if type_match:
+                side = "Union" if type_match.group(1) == "USA" else "Confederate"
+                unit_type = f"{type_match.group(2)} {type_match.group(3)}"
+                mappings[side][entry_name] = {
+                    "image": image_file,
+                    "type": unit_type
+                }
+    
+    return mappings
+
+
+HSN_CONFIG = GameConfig(
+    game_id='hsn',
+    name_variants_fn=hsn_get_name_variants,
+    extract_mappings_fn=hsn_extract_unit_mappings,
+)
+
+
+# -----------------------------------------------------------------------------
 # Game registry
 # -----------------------------------------------------------------------------
 
@@ -458,6 +584,7 @@ GAME_CONFIGS: dict[str, GameConfig] = {
     'gtc2': GTC2_CONFIG,
     'hcr': HCR_CONFIG,
     'otr2': OTR2_CONFIG,
+    'hsn': HSN_CONFIG,
 }
 
 
