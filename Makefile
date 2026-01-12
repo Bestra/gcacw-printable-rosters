@@ -20,8 +20,10 @@ ALL_GAMES := gtc2 hcr hsn otr2 rtg2 rtw
 # Directories
 PARSER_DIR := parser
 WEB_DATA_DIR := web/public/data
+WEB_SRC_DATA_DIR := web/src/data
 RAW_DIR := $(PARSER_DIR)/raw
 PARSED_DIR := $(PARSER_DIR)/parsed
+IMAGE_MAPPINGS_DIR := $(PARSER_DIR)/image_mappings
 
 # Python command (using uv)
 PYTHON := cd $(PARSER_DIR) && uv run python
@@ -39,7 +41,7 @@ all: web
 
 # Build all web JSON files
 .PHONY: web
-web: $(WEB_FILES) $(WEB_DATA_DIR)/games.json
+web: $(WEB_FILES) $(WEB_DATA_DIR)/games.json copy-image-mappings
 
 # Build all parsed JSON files
 .PHONY: parsed
@@ -63,6 +65,12 @@ $(WEB_DATA_DIR)/%.json: $(PARSED_DIR)/%_parsed.json $(PARSER_DIR)/convert_to_web
 $(WEB_DATA_DIR)/games.json: $(PARSER_DIR)/convert_to_web.py
 	@echo "Regenerating games.json..."
 	$(PYTHON) convert_to_web.py
+
+# Copy image mapping JSON files to web/src/data for TypeScript imports
+.PHONY: copy-image-mappings
+copy-image-mappings:
+	@echo "Copying image mappings to web/src/data..."
+	@cp -f $(IMAGE_MAPPINGS_DIR)/*_images.json $(WEB_SRC_DATA_DIR)/ 2>/dev/null || true
 
 # =============================================================================
 # Convenience targets

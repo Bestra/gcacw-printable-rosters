@@ -119,6 +119,11 @@ class RTG2Extractor(GameExtractor):
                     variations.append(stripped_norm.replace('Gregg', 'Greg'))
         
         return variations
+    
+    def get_available_images(self, images_dir: Path) -> dict[str, Path]:
+        """Get available images for RTG2-style games (C_/U_ prefix convention)."""
+        images = {}
+        prefixes = ('C_', 'U_', 'CL_', 'UL_')
         extensions = ('.jpg', '.gif')
         
         for f in images_dir.iterdir():

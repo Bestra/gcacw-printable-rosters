@@ -161,7 +161,7 @@ def generate_counter_image(
     background_path: Path,
     unit_name: str,
     output_path: Path,
-    font_size: int = 12
+    font_size: int = 14
 ):
     """
     Generate a composite counter image with unit name overlaid on background.
