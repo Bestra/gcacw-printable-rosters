@@ -47,9 +47,10 @@ function UnitRow({
   const imageFilename = gameId && showImages ? getUnitImage(gameId, side, unit.name) : undefined;
   const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
   
-  // Check if this game uses template counters (needs HTML text overlay)
+  // Check if this specific counter is a template (starts with U_ or C_) that needs text overlay
   const counterType = gameId ? getCounterType(gameId) : 'individual';
-  const needsTextOverlay = counterType === 'template' && imagePath;
+  const isTemplateCounter = imageFilename && (imageFilename.startsWith('U_') || imageFilename.startsWith('C_'));
+  const needsTextOverlay = counterType === 'template' && imagePath && isTemplateCounter;
   
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
   const showHexLocation = !unit.reinforcementSet || !unit.hexLocation.toLowerCase().startsWith("see");
@@ -119,6 +120,11 @@ function LeaderHeader({
   const imageFilename = gameId && showImages ? getUnitImage(gameId, side, leader.name) : undefined;
   const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
   
+  // Check if this specific counter is a template (starts with U_ or C_) that needs text overlay
+  const counterType = gameId ? getCounterType(gameId) : 'individual';
+  const isTemplateCounter = imageFilename && (imageFilename.startsWith('U_') || imageFilename.startsWith('C_'));
+  const needsTextOverlay = counterType === 'template' && imagePath && isTemplateCounter;
+  
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
   const showHexLocation = !leader.reinforcementSet || !leader.hexLocation.toLowerCase().startsWith("see");
   
@@ -127,7 +133,14 @@ function LeaderHeader({
       <div className="leader-counter">
         <div className={`counter-box${imagePath ? ' has-image' : ''}`}>
           {imagePath ? (
-            <img src={imagePath} alt={leader.name} className="counter-image" />
+            needsTextOverlay ? (
+              <div className="counter-composite">
+                <img src={imagePath} alt={leader.name} className="counter-image" />
+                <span className="counter-overlay">{leader.name}</span>
+              </div>
+            ) : (
+              <img src={imagePath} alt={leader.name} className="counter-image" />
+            )
           ) : (
             <span className="name">{leader.name}</span>
           )}
