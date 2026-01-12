@@ -1,5 +1,6 @@
 {
   "game": "gtc2",
+  "counterType": "template",
   "matched": {
     "U:10/37 Clrd": "U_10-37_Clrd",
     "U:13 PA": "U_13_PA",

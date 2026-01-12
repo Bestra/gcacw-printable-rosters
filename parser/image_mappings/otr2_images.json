@@ -1,5 +1,6 @@
 {
   "game": "otr2",
+  "counterType": "template",
   "matched": {
     "U:1 NY": "U_1_NY",
     "U:1 NY Mrif": "U_1_NY_Mrif",

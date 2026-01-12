@@ -1,5 +1,6 @@
 {
   "game": "hcr",
+  "counterType": "template",
   "matched": {
     "U:1 MA": "U_1_MA",
     "U:1 ME": "U_1_ME",

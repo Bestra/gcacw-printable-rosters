@@ -1,7 +1,7 @@
 import type { Unit } from "../types";
 import { parseHexLocation } from "../hexLocationConfig";
 import { getTableAbbreviation } from "../tableNameConfig";
-import { getUnitImage } from "../data/imageMap";
+import { getUnitImage, getCounterType } from "../data/imageMap";
 import { useRosterOptional } from "../context/RosterContext";
 import "./UnitCard.css";
 
@@ -48,6 +48,10 @@ export function UnitCard({ unit, side: propSide, empty, startingFatigue, leaderN
   // Look up unit counter image
   const imageFilename = gameId && side && showImages ? getUnitImage(gameId, side, unit.name) : undefined;
   const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
+  
+  // Check if this game uses template counters (needs HTML text overlay)
+  const counterType = gameId ? getCounterType(gameId) : 'individual';
+  const needsTextOverlay = counterType === 'template' && imagePath;
 
   return (
     <div className={`unit-card unit-card--${side}`}>
@@ -58,11 +62,22 @@ export function UnitCard({ unit, side: propSide, empty, startingFatigue, leaderN
       <div className="unit-card__counters">
         <div className="unit-card__counter-box unit-card__counter-box--counter">
           {imagePath ? (
-            <img 
-              src={imagePath} 
-              alt={unit.name} 
-              className="unit-card__counter-image"
-            />
+            needsTextOverlay ? (
+              <div className="unit-card__counter-composite">
+                <img 
+                  src={imagePath} 
+                  alt={unit.name} 
+                  className="unit-card__counter-image"
+                />
+                <span className="unit-card__counter-overlay">{unit.name}</span>
+              </div>
+            ) : (
+              <img 
+                src={imagePath} 
+                alt={unit.name} 
+                className="unit-card__counter-image"
+              />
+            )
           ) : (
             <span className="unit-card__counter-text">{unit.name}</span>
           )}

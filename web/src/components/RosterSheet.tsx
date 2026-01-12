@@ -9,7 +9,7 @@ import {
   buildCommandHierarchy,
   splitLargeGroups,
 } from "../utils/rosterUtils";
-import { getUnitImage } from "../data/imageMap";
+import { getUnitImage, getCounterType } from "../data/imageMap";
 import { RosterProvider, useRoster } from "../context/RosterContext";
 import { GunboatsList } from "./shared/GunboatsList";
 import { LegendKey } from "./shared/LegendKey";
@@ -47,6 +47,10 @@ function UnitRow({
   const imageFilename = gameId && showImages ? getUnitImage(gameId, side, unit.name) : undefined;
   const imagePath = imageFilename ? `${import.meta.env.BASE_URL}images/counters/${gameId}/${imageFilename}` : undefined;
   
+  // Check if this game uses template counters (needs HTML text overlay)
+  const counterType = gameId ? getCounterType(gameId) : 'individual';
+  const needsTextOverlay = counterType === 'template' && imagePath;
+  
   // Don't show hex location if it's just a "See rule" reference and we have reinforcement set
   const showHexLocation = !unit.reinforcementSet || !unit.hexLocation.toLowerCase().startsWith("see");
   
@@ -68,7 +72,14 @@ function UnitRow({
         {/* Box 1: Unit counter image or name */}
         <div className={`counter-box name-box${imagePath ? ' has-image' : ''}`}>
           {imagePath ? (
-            <img src={imagePath} alt={unit.name} className="counter-image" />
+            needsTextOverlay ? (
+              <div className="counter-composite">
+                <img src={imagePath} alt={unit.name} className="counter-image" />
+                <span className="counter-overlay">{unit.name}</span>
+              </div>
+            ) : (
+              <img src={imagePath} alt={unit.name} className="counter-image" />
+            )
           ) : (
             <span className="name">{unit.name}</span>
           )}

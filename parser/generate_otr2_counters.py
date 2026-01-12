@@ -237,6 +237,7 @@ def main():
     parser.add_argument('--output', '-o', help='Output directory (default: web/public/images/counters/otr2)')
     parser.add_argument('--dry-run', '-n', action='store_true', help='Show mappings without generating images')
     parser.add_argument('--leaders-only', action='store_true', help='Only copy leader images (no composite generation)')
+    parser.add_argument('--no-text', action='store_true', help='Copy background images without text overlay (for HTML text rendering)')
     
     args = parser.parse_args()
     
@@ -393,6 +394,15 @@ def main():
                 print(f"  Copied: {parsed_name} -> {img_file}")
             elif args.leaders_only:
                 continue
+            elif args.no_text:
+                # Copy background without text overlay (for HTML text rendering)
+                safe_name = parsed_name.replace(' ', '_').replace('.', '').replace("'", "").replace('/', '-')
+                output_file = f"{prefix}_{safe_name}.jpg"
+                dst = output_dir / output_file
+                
+                shutil.copy2(src, dst)
+                image_map[f"{prefix}:{parsed_name}"] = output_file
+                print(f"  Copied (no text): {parsed_name} -> {output_file}")
             else:
                 # Generate composite with unit name overlaid
                 safe_name = parsed_name.replace(' ', '_').replace('.', '').replace("'", "").replace('/', '-')
@@ -418,6 +428,7 @@ def main():
     
     mapping_data = {
         'game': 'otr2',
+        'counterType': 'template',
         'matched': matched,
         'matched_with_ext': matched_with_ext,
         'unmatched': unmatched,
