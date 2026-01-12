@@ -8,14 +8,14 @@ Create a Vitest + React Testing Library test suite that validates all units from
 
 ## Phase 1: Setup Vitest
 
-### Step 1.1: Install dependencies
+### Step 1.1: Install dependencies ✅
 
 ```bash
 cd web
 npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom @vitejs/plugin-react
 ```
 
-### Step 1.2: Create `vitest.config.ts`
+### Step 1.2: Create `vitest.config.ts` ✅
 
 Configure Vitest with JSDOM environment, set up path aliases to match Vite config, and enable globals for cleaner test syntax.
 
