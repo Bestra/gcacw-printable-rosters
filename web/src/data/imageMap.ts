@@ -5,6 +5,7 @@ import otr2Data from "./otr2_images.json";
 import gtc2Data from "./gtc2_images.json";
 import hsnData from "./hsn_images.json";
 import rwhData from "./rwh_images.json";
+import tomData from "./tom_images.json";
 
 export type ImageMap = Record<string, Record<string, string>>;
 export type CounterType = 'template' | 'individual';
@@ -17,6 +18,7 @@ export const imageMap: ImageMap = {
   gtc2: gtc2Data.matched_with_ext,
   hsn: hsnData.matched_with_ext,
   rwh: rwhData.matched_with_ext,
+  tom: tomData.matched_with_ext,
 };
 
 // Map of game to counter type
@@ -29,6 +31,7 @@ export const counterTypeMap: Record<string, CounterType> = {
   gtc2: (gtc2Data as { counterType?: CounterType }).counterType ?? 'template',
   hsn: (hsnData as { counterType?: CounterType }).counterType ?? 'template',
   rwh: (rwhData as { counterType?: CounterType }).counterType ?? 'template',
+  tom: (tomData as { counterType?: CounterType }).counterType ?? 'template',
 };
 
 /**

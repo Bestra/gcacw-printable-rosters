@@ -642,6 +642,119 @@ RWH_CONFIG = GameConfig(
 
 
 # -----------------------------------------------------------------------------
+# TOM (Thunder on Marsh Run) Configuration
+# -----------------------------------------------------------------------------
+
+def tom_get_name_variants(name: str) -> list[str]:
+    """Generate variants of a name for fuzzy matching (TOM-specific)."""
+    variants = base_get_name_variants(name)
+    
+    # Handle "49/69 IN" vs "49 / 69 IN" vs "49/69 IN"
+    if '/' in name:
+        # Add versions with spaces around slash
+        variants.append(re.sub(r'(\d+)/(\d+)', r'\1 / \2', name))
+        # Add version without IN suffix
+        base = re.sub(r'\s+IN$', '', name)
+        if base != name:
+            variants.append(base)
+            variants.append(re.sub(r'(\d+)/(\d+)', r'\1 / \2', base))
+    
+    # Handle "(dmnt)" vs "Dmt" dismounted variants
+    if '(dmnt)' in name.lower():
+        # "1 MO (dmnt)" -> "1 MO Dmt"
+        variants.append(re.sub(r'\s*\(dmnt\)', ' Dmt', name, flags=re.IGNORECASE))
+    if 'dmt' in name.lower():
+        # "1 MO Dmt" -> "1 MO (dmnt)"
+        variants.append(re.sub(r'\s+dmt', ' (dmnt)', name, flags=re.IGNORECASE))
+    
+    # Handle "25/29 GA" style combined regiments
+    if re.match(r'^\d+/\d+\s+[A-Z]{2}', name):
+        variants.append(re.sub(r'(\d+)/(\d+)', r'\1 / \2', name))
+    
+    # Handle "AJ Smith" vs "AJ Smith - A" vs "AJ Smith-A"
+    if 'AJ Smith' in name or 'A J Smith' in name:
+        base = 'AJ Smith'
+        variants.extend([base, 'A J Smith', 'A.J. Smith'])
+        if '-A' in name or ' - A' in name:
+            variants.extend([f'{base} - A', f'{base}-A', 'A J Smith - A', 'A J Smith-A'])
+        if '-B' in name or ' - B' in name:
+            variants.extend([f'{base} - B', f'{base}-B', 'A J Smith - B', 'A J Smith-B'])
+    
+    # Handle "AW Reynolds" vs "A W Reynolds" vs "A.W. Reynolds"
+    if 'AW Reynolds' in name or 'A W Reynolds' in name:
+        variants.extend(['AW Reynolds', 'A W Reynolds', 'A.W. Reynolds'])
+    
+    # Handle "WS Smith" vs "W S Smith" vs "W.S. Smith"
+    if re.match(r'^[A-Z]{2}\s', name):
+        base = name[2:].strip()
+        variants.append(f"{name[0]} {name[1]} {base}")
+        variants.append(f"{name[0]}.{name[1]}. {base}")
+    if re.match(r'^[A-Z]\s[A-Z]\s', name):
+        base = name[4:].strip()
+        variants.append(f"{name[0]}{name[2]} {base}")
+        variants.append(f"{name[0]}.{name[2]}. {base}")
+    
+    return list(set(variants))
+
+
+def tom_extract_unit_mappings(buildfile_path: Path) -> dict:
+    """Parse buildFile.xml to extract unit-to-background mappings for TOM."""
+    content = buildfile_path.read_text(encoding='utf-8', errors='ignore')
+    
+    mappings = {
+        "Union": {},
+        "Confederate": {},
+        "Leaders": {"Union": {}, "Confederate": {}}
+    }
+    
+    slot_pattern = r'<VASSAL\.build\.widget\.PieceSlot\s+entryName="([^"]+)"[^>]*>([^<]*)</VASSAL\.build\.widget\.PieceSlot>'
+    
+    for match in re.finditer(slot_pattern, content, re.DOTALL):
+        entry_name = match.group(1)
+        slot_content = match.group(2)
+        
+        image_match = re.search(r'piece;;;([^;]+\.jpg);[^/]+/', slot_content, re.IGNORECASE)
+        if not image_match:
+            continue
+        image_file = image_match.group(1)
+        
+        # Skip markers and non-unit items
+        if any(skip in entry_name.lower() for skip in ['vp', 'wagon', 'control', 'track',
+                'paralysis', 'game-turn', 'cycle', 'supply', 'event', 'posture', 'mov', 'ope',
+                'ammunition', 'bridge', 'command']):
+            continue
+        if any(skip in image_file.lower() for skip in ['vp', 'control', 'wagon', 'cp.',
+                'track', 'paralysis', 'ammu', 'event']):
+            continue
+        
+        if 'prototype;Leader' in slot_content:
+            # Union leaders have U- prefix, Confederate have C- prefix
+            if image_file.startswith('U-'):
+                mappings["Leaders"]["Union"][entry_name] = image_file
+            elif image_file.startswith('C-'):
+                mappings["Leaders"]["Confederate"][entry_name] = image_file
+        else:
+            # Determine side and type from prototypes
+            type_match = re.search(r'prototype;(USA|CSA)\s+(Infantry|Cavalry)\s+(Division|Brigade|Regiment)', slot_content)
+            if type_match:
+                side = "Union" if type_match.group(1) == "USA" else "Confederate"
+                unit_type = f"{type_match.group(2)} {type_match.group(3)}"
+                mappings[side][entry_name] = {
+                    "image": image_file,
+                    "type": unit_type
+                }
+    
+    return mappings
+
+
+TOM_CONFIG = GameConfig(
+    game_id='tom',
+    name_variants_fn=tom_get_name_variants,
+    extract_mappings_fn=tom_extract_unit_mappings,
+)
+
+
+# -----------------------------------------------------------------------------
 # Game registry
 # -----------------------------------------------------------------------------
 
@@ -651,6 +764,7 @@ GAME_CONFIGS: dict[str, GameConfig] = {
     'otr2': OTR2_CONFIG,
     'hsn': HSN_CONFIG,
     'rwh': RWH_CONFIG,
+    'tom': TOM_CONFIG,
 }
 
 
