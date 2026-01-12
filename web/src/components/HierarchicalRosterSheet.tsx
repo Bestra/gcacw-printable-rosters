@@ -13,28 +13,27 @@ import { getUnitImage } from "../data/imageMap";
 import { RosterProvider, useRoster } from "../context/RosterContext";
 import { GunboatsList } from "./shared/GunboatsList";
 import { LegendKey } from "./shared/LegendKey";
-import "./RosterSheet.css";
+import "./HierarchicalRosterSheet.css";
 
-export type RosterVariant = "flow" | "hierarchical";
-
-interface RosterSheetProps {
+interface HierarchicalRosterSheetProps {
   scenario: Scenario;
   gameName: string;
   gameId?: string;
   showImages: boolean;
-  variant: RosterVariant;
 }
 
 // Maximum units per column before splitting into multiple columns
-const MAX_UNITS_PER_COLUMN = 6;
+const MAX_UNITS_PER_COLUMN = 8;
 
-// Compact unit row
+// Compact unit row for hierarchical display
 function UnitRow({ 
   unit, 
   footnotes,
+  leaderName,
 }: { 
   unit: Unit;
   footnotes: Record<string, string>;
+  leaderName?: string;
 }) {
   const { gameId, side, showImages } = useRoster();
   const { hexCode, locationName } = parseHexLocation(unit.hexLocation);
@@ -51,39 +50,44 @@ function UnitRow({
   const showHexLocation = !unit.reinforcementSet || !unit.hexLocation.toLowerCase().startsWith("see");
   
   return (
-    <div className="unit-row">
-      <div className="setup-info">
+    <div className="hier-unit-row">
+      <div className="hier-unit-row__setup">
         {showHexLocation && (
           <>
-            <span className="hex">{hexCode}</span>
-            {locationName && <span className="location">({locationName})</span>}
+            <span className="hier-unit-row__hex">{hexCode}</span>
+            {locationName && <span className="hier-unit-row__location">({locationName})</span>}
           </>
         )}
-        {tableAbbrev && <span className="table-abbrev">{tableAbbrev}</span>}
+        {tableAbbrev && <span className="hier-unit-row__table">{tableAbbrev}</span>}
         {unit.reinforcementSet && (
-          <span className="reinforcement">Set {unit.reinforcementSet}</span>
+          <span className="hier-unit-row__reinforcement">Set {unit.reinforcementSet}</span>
         )}
+        {leaderName && <span className="hier-unit-row__leader">{leaderName}</span>}
       </div>
-      <div className="counter-boxes">
+      <div className="hier-unit-row__counters">
         {/* Box 1: Unit counter image or name */}
-        <div className={`counter-box name-box${imagePath ? ' has-image' : ''}`}>
+        <div className={`hier-unit-row__counter-box hier-unit-row__counter-box--name${imagePath ? ' hier-unit-row__counter-box--has-image' : ''}`}>
           {imagePath ? (
-            <img src={imagePath} alt={unit.name} className="counter-image" />
+            <img 
+              src={imagePath} 
+              alt={unit.name} 
+              className="hier-unit-row__counter-image"
+            />
           ) : (
-            <span className="name">{unit.name}</span>
+            <span className="hier-unit-row__name">{unit.name}</span>
           )}
         </div>
         {/* Box 2: Annotations/Fortification */}
-        <div className="counter-box annotations-box">
-          {notes && <span className="notes">{notes}</span>}
+        <div className="hier-unit-row__counter-box hier-unit-row__counter-box--annotations">
+          {notes && <span className="hier-unit-row__notes">{notes}</span>}
         </div>
         {/* Box 3: Manpower */}
-        <div className="counter-box info-box">
-          <span className="mp">{mpDisplay || "\u00A0"}</span>
+        <div className="hier-unit-row__counter-box hier-unit-row__counter-box--info">
+          <span className="hier-unit-row__mp">{mpDisplay || "\u00A0"}</span>
         </div>
         {/* Box 4: Fatigue */}
-        <div className="counter-box info-box">
-          {fatigue && <span className="fatigue">{fatigue}</span>}
+        <div className="hier-unit-row__counter-box hier-unit-row__counter-box--info">
+          {fatigue && <span className="hier-unit-row__fatigue">{fatigue}</span>}
         </div>
       </div>
     </div>
@@ -112,33 +116,37 @@ function LeaderHeader({
   const showHexLocation = !leader.reinforcementSet || !leader.hexLocation.toLowerCase().startsWith("see");
   
   return (
-    <div className="leader-header">
-      <div className="leader-counter">
-        <div className={`counter-box${imagePath ? ' has-image' : ''}`}>
+    <div className="hier-leader-header">
+      <div className="hier-leader-header__counter">
+        <div className={`hier-leader-header__counter-box${imagePath ? ' hier-leader-header__counter-box--has-image' : ''}`}>
           {imagePath ? (
-            <img src={imagePath} alt={leader.name} className="counter-image" />
+            <img 
+              src={imagePath} 
+              alt={leader.name} 
+              className="hier-leader-header__counter-image"
+            />
           ) : (
-            <span className="name">{leader.name}</span>
+            <span className="hier-leader-header__name">{leader.name}</span>
           )}
         </div>
         {notes && (
-          <div className="annotations-box">
-            <span className="notes">{notes}</span>
+          <div className="hier-leader-header__annotations-box">
+            <span className="hier-leader-header__notes">{notes}</span>
           </div>
         )}
       </div>
-      <div className="setup-info">
+      <div className="hier-leader-header__setup">
         {showHexLocation && (
           <>
-            <span className="hex">{hexCode}</span>
-            {locationName && <span className="location">({locationName})</span>}
+            <span className="hier-leader-header__hex">{hexCode}</span>
+            {locationName && <span className="hier-leader-header__location">({locationName})</span>}
           </>
         )}
-        {tableAbbrev && <span className="table-abbrev">{tableAbbrev}</span>}
+        {tableAbbrev && <span className="hier-leader-header__table">{tableAbbrev}</span>}
         {leader.reinforcementSet && (
-          <span className="reinforcement">Set {leader.reinforcementSet}</span>
+          <span className="hier-leader-header__reinforcement">Set {leader.reinforcementSet}</span>
         )}
-        {fatigue && <span className="fatigue">{fatigue}</span>}
+        {fatigue && <span className="hier-leader-header__fatigue">{fatigue}</span>}
       </div>
     </div>
   );
@@ -164,18 +172,11 @@ function CommandGroupSection({
     titleText = `${group.displayName} (cont.)`;
   }
   
-  const groupClasses = [
-    "command-group",
-    side,
-    isSubgroup ? "subgroup" : "",
-    hasSubgroups ? "has-subgroups" : "",
-  ].filter(Boolean).join(" ");
-  
   return (
-    <div className={groupClasses}>
-      <h4 className={`group-title${isSubgroup ? ' subgroup-title' : ''}`}>
+    <div className={`hier-command-group hier-command-group--${side} ${isSubgroup ? 'hier-command-group--subgroup' : ''} ${hasSubgroups ? 'hier-command-group--has-subgroups' : ''}`}>
+      <h4 className={`hier-command-group__title ${isSubgroup ? 'hier-command-group__title--subgroup' : ''}`}>
         {titleText}
-        {group.size && !isContinuation && <span className="group-size"> ({group.size})</span>}
+        {group.size && !isContinuation && <span className="hier-command-group__size"> ({group.size})</span>}
       </h4>
       
       {group.leader && (
@@ -184,7 +185,7 @@ function CommandGroupSection({
       
       {/* Direct units for this command */}
       {group.units.length > 0 && (
-        <div className="units-list">
+        <div className="hier-command-group__units">
           {group.units.map((unit, idx) => (
             <UnitRow 
               key={`${unit.name}-${idx}`}
@@ -197,7 +198,7 @@ function CommandGroupSection({
       
       {/* Subgroups (e.g., Divisions under a Corps) */}
       {group.subgroups.length > 0 && (
-        <div className="subgroups">
+        <div className="hier-command-group__subgroups">
           {group.subgroups.map((subgroup, idx) => (
             <CommandGroupSection
               key={`${subgroup.commandCode}-${idx}`}
@@ -221,7 +222,6 @@ function ArmySection({
   side,
   gameId,
   showImages,
-  variant,
 }: {
   title: string;
   units: Unit[];
@@ -230,36 +230,32 @@ function ArmySection({
   side: "confederate" | "union";
   gameId?: string;
   showImages: boolean;
-  variant: RosterVariant;
 }) {
   const armyLeader = getArmyLeader(units);
   const hierarchy = buildCommandHierarchy(units);
   
-  // Split large groups into multiple columns
-  const splitGroups = splitLargeGroups(hierarchy, MAX_UNITS_PER_COLUMN);
+  // Separate groups with subgroups (Corps with divisions) from flat groups
+  const nestedGroups = hierarchy.filter(g => g.subgroups.length > 0);
+  const flatGroups = hierarchy.filter(g => g.subgroups.length === 0);
   
-  // For hierarchical variant, separate nested from flat groups
-  const nestedGroups = variant === "hierarchical" 
-    ? splitGroups.filter(g => g.subgroups.length > 0) 
-    : [];
-  const flatGroups = variant === "hierarchical"
-    ? splitGroups.filter(g => g.subgroups.length === 0)
-    : splitGroups;
+  // Split large groups into multiple columns
+  const splitFlatGroups = splitLargeGroups(flatGroups, MAX_UNITS_PER_COLUMN);
+  const splitNestedGroups = splitLargeGroups(nestedGroups, MAX_UNITS_PER_COLUMN);
   
   return (
     <RosterProvider gameId={gameId} side={side} showImages={showImages}>
-      <section className={`army-section ${side}`}>
-        <div className="army-header">
-          <h3 className="army-title">{title}</h3>
+      <section className={`hier-army-section hier-army-section--${side}`}>
+        <div className="hier-army-section__header">
+          <h3 className="hier-army-section__title">{title}</h3>
           {armyLeader && (
             <LeaderHeader leader={armyLeader} footnotes={footnotes} />
           )}
         </div>
         
-        {/* Groups container - uses CSS columns (flow) or grid (hierarchical) */}
-        {flatGroups.length > 0 && (
-          <div className="groups-container">
-            {flatGroups.map((group, idx) => (
+        {/* Flat groups in 3-column grid */}
+        {splitFlatGroups.length > 0 && (
+          <div className="hier-army-section__groups">
+            {splitFlatGroups.map((group, idx) => (
               <CommandGroupSection 
                 key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
                 group={group}
@@ -269,8 +265,8 @@ function ArmySection({
           </div>
         )}
         
-        {/* Nested groups rendered separately for hierarchical variant */}
-        {nestedGroups.map((group, idx) => (
+        {/* Nested groups (Corps with divisions) - full width, each with its own 3-column grid */}
+        {splitNestedGroups.map((group, idx) => (
           <CommandGroupSection 
             key={`${group.commandCode}-${group.columnIndex || 0}-${idx}`}
             group={group}
@@ -285,14 +281,14 @@ function ArmySection({
   );
 }
 
-export function RosterSheet({ scenario, gameName, gameId, showImages, variant }: RosterSheetProps) {
+export function HierarchicalRosterSheet({ scenario, gameName, gameId, showImages }: HierarchicalRosterSheetProps) {
   return (
-    <div className={`roster-sheet ${variant}`}>
-      <header className="roster-header">
+    <div className="hier-roster-sheet">
+      <header className="hier-roster-sheet__header">
         {gameName} — Scenario {scenario.number}: {scenario.name}
       </header>
       
-      <div className="armies">
+      <div className="hier-roster-sheet__armies">
         <ArmySection
           title="Confederate"
           units={scenario.confederateUnits}
@@ -301,7 +297,6 @@ export function RosterSheet({ scenario, gameName, gameId, showImages, variant }:
           side="confederate"
           gameId={gameId}
           showImages={showImages}
-          variant={variant}
         />
         
         <ArmySection
@@ -312,7 +307,6 @@ export function RosterSheet({ scenario, gameName, gameId, showImages, variant }:
           side="union"
           gameId={gameId}
           showImages={showImages}
-          variant={variant}
         />
       </div>
     </div>

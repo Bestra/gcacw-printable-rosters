@@ -1,0 +1,54 @@
+.legend-key {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  color: #555;
+  padding: 0.25rem 0;
+  border-top: 1px solid #ddd;
+  margin-top: 0.5rem;
+}
+
+.legend-key__section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  align-items: baseline;
+}
+
+.legend-key__title {
+  font-weight: 600;
+  color: #444;
+}
+
+.legend-key__item {
+  display: inline-flex;
+  gap: 0.2rem;
+  align-items: baseline;
+}
+
+.legend-key__symbol {
+  font-weight: 600;
+  color: #666;
+}
+
+.legend-key__abbrev {
+  font-weight: 600;
+  color: #933;
+}
+
+.legend-key__equals {
+  color: #999;
+}
+
+.legend-key__text {
+  color: #555;
+}
+
+@media print {
+  .legend-key {
+    font-size: 0.6rem;
+    margin-top: 0.25rem;
+    padding: 0.125rem 0;
+  }
+}
