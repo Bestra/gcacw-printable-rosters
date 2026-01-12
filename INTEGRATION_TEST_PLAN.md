@@ -19,7 +19,7 @@ npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom @vi
 
 Configure Vitest with JSDOM environment, set up path aliases to match Vite config, and enable globals for cleaner test syntax.
 
-### Step 1.3: Create `tests/setup.ts`
+### Step 1.3: Create `tests/setup.ts` ✅
 
 Import `@testing-library/jest-dom` matchers (e.g., `toBeInTheDocument()`), set up any global mocks needed (like `import.meta.env.BASE_URL`).
 
