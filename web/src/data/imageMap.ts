@@ -2,6 +2,7 @@
 import hcrData from "./hcr_images.json";
 import rtg2Data from "./rtg2_images.json";
 import otr2Data from "./otr2_images.json";
+import gtc2Data from "./gtc2_images.json";
 
 export type ImageMap = Record<string, Record<string, string>>;
 
@@ -10,6 +11,7 @@ export const imageMap: ImageMap = {
   hcr: hcrData.matched_with_ext,
   rtg2: rtg2Data.matched_with_ext,
   otr2: otr2Data.matched_with_ext,
+  gtc2: gtc2Data.matched_with_ext,
 };
 
 /**

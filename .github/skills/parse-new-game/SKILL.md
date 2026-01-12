@@ -123,6 +123,19 @@ This creates `web/public/data/newgame.json` and updates `games.json`.
 3. Check that all scenarios appear in the dropdown
 4. Spot-check unit data against the PDF
 
+## Step 8: Extract Counter Images (Optional)
+
+If you have a VASSAL module (.vmod) for the game, you can extract counter images for display in the web app. See the **extract-vassal-images** skill for detailed instructions.
+
+Quick start:
+
+```bash
+# Detect the counter type
+cd parser && uv run python detect_counter_type.py /path/to/GAME.vmod
+
+# Then run the appropriate extractor based on the detected type
+```
+
 ## Common Issues
 
 - **"Game not found" error**: Missing slug mapping in `web/src/utils/slugs.ts`

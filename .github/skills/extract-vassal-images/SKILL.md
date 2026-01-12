@@ -7,7 +7,7 @@ Extract unit counter images from VASSAL modules (.vmod files) for use in the web
 VASSAL modules are ZIP files containing game piece definitions and images. This skill covers:
 
 1. Understanding module structure
-2. Identifying the counter image system used
+2. Automatically detecting the counter image system used
 3. Extracting and mapping images to parsed unit data
 4. Generating composite images when needed
 
@@ -43,9 +43,9 @@ This XML file defines all game pieces. Key elements:
 
 ## Counter Image Systems
 
-### Type 1: Individual Counter Images (RTG2-style)
+### Type 1: INDIVIDUAL (RTG2-style)
 
-Games like RTG2, OTR2, GTC2 have dedicated images per unit:
+Each unit has a dedicated pre-rendered image with the unit name already on it:
 
 - `C_Lee.jpg` - Confederate unit "Lee"
 - `U_Meade.jpg` - Union unit "Meade"
@@ -54,25 +54,22 @@ Games like RTG2, OTR2, GTC2 have dedicated images per unit:
 
 **Extraction**: Use `extract_images.py` with the game code.
 
-### Type 2: Composite Counters (HCR-style)
+### Type 2: TEMPLATE_COMPOSITE (HCR/OTR2/GTC2-style)
 
-Games like HCR use layered composition:
+Units use generic background images based on corps/type, with unit names overlaid via VASSAL's label mechanism:
 
-- **Background**: Corps/wing identifier + quality + strength (e.g., `I-P-2-4.jpg`)
-- **Manpower overlay**: `UMP_01.gif` to `UMP_16.gif` (Union), `CMP_1.gif` to `CMP_17.gif` (CSA)
-- **Text label**: Unit name rendered dynamically
+- **Background**: Corps/wing identifier + quality + strength (e.g., `I-P-2-4.jpg`, `UII_2_3.jpg`, `USA_I_24.jpg`)
+- **Text label**: Unit name rendered dynamically by VASSAL
 
 Only **leaders** have dedicated images. Brigade/division counters are composited.
 
 **Background image naming patterns:**
 
-- Union: `I-P-2-4.jpg` = Corps I, quality 2, strength 4
-- Confederate: `J-3-4.jpg` = Jackson's Wing, quality 3, strength 4
-- `L-3-2.jpg` = Longstreet's Wing
-- `Balt-N-1-1.jpg` = Baltimore defense units
-- `DC-N-1-0.jpg` = Washington DC defense
+- Union corps: `I-P-2-4.jpg`, `UII_2_3.jpg`, `UV_2_2.jpg`
+- Confederate: `J-3-4.jpg` (Jackson's Wing), `CIII_3_4.jpg`
+- OTR2-style: `USA_I_24.jpg`, `CSA_M_20.jpg`
 
-**Extraction**: Use `generate_hcr_counters.py` which:
+**Extraction**: Use a game-specific generator (e.g., `generate_hcr_counters.py`, `generate_otr2_counters.py`, `generate_gtc2_counters.py`) which:
 
 1. Parses buildFile.xml for unit→background mappings
 2. Loads parsed game data for actual unit names
@@ -81,14 +78,34 @@ Only **leaders** have dedicated images. Brigade/division counters are composited
 
 ## Extraction Workflow
 
-### Step 1: Extract the VMOD
+### Step 1: Detect Counter Type (Recommended)
+
+Use the automatic counter type detection script:
+
+```bash
+cd parser && uv run python detect_counter_type.py /path/to/GAME.vmod
+```
+
+This analyzes the buildFile.xml and image naming patterns to determine:
+
+- **INDIVIDUAL**: Each unit has a dedicated pre-rendered image
+- **TEMPLATE_COMPOSITE**: Units use generic backgrounds with text overlays
+- **HYBRID**: Mixed (usually leaders are individual, units are templates)
+
+To analyze all modules in a directory:
+
+```bash
+cd parser && uv run python detect_counter_type.py --all /path/to/vmods/
+```
+
+### Step 2: Extract the VMOD (if needed for manual inspection)
 
 ```bash
 mkdir /tmp/game_vmod
 unzip "/path/to/GAME.vmod" -d /tmp/game_vmod
 ```
 
-### Step 2: Explore the Images
+### Step 3: Explore the Images
 
 ```bash
 # List all images
@@ -98,7 +115,7 @@ ls /tmp/game_vmod/images/
 ls /tmp/game_vmod/images/ | grep -vE "Map-|Chart|VP|Turn|Control"
 ```
 
-### Step 3: Examine buildFile.xml
+### Step 4: Examine buildFile.xml
 
 ```bash
 # Find piece definitions
@@ -108,37 +125,31 @@ grep -o 'entryName="[^"]*".*piece;;;[^;]*;[^/]*/' buildFile.xml | head -50
 grep "PrototypeDefinition" buildFile.xml | head -20
 ```
 
-### Step 4: Determine Counter System
-
-**Check for individual images:**
-
-```bash
-# RTG2-style: Look for C_/U_ prefixed images
-ls /tmp/game_vmod/images/ | grep -E "^[CU]_"
-```
-
-**Check for composite system:**
-
-```bash
-# HCR-style: Look for corps/manpower markers
-ls /tmp/game_vmod/images/ | grep -E "^[IVX]+-P-|CMP_|UMP_"
-```
-
 ### Step 5: Run Appropriate Extractor
 
-**For RTG2-style games:**
+**For INDIVIDUAL (RTG2-style) games:**
 
 ```bash
 cd parser
 uv run python extract_images.py GAME /path/to/GAME.vmod
 ```
 
-**For HCR-style games:**
+**For TEMPLATE_COMPOSITE games:**
+
+Use or create a game-specific generator. Existing generators:
 
 ```bash
-cd parser
-uv run python generate_hcr_counters.py /path/to/extracted/vmod
+# HCR
+cd parser && uv run python generate_hcr_counters.py /path/to/HCR.vmod
+
+# OTR2
+cd parser && uv run python generate_otr2_counters.py /path/to/OTR2.vmod
+
+# GTC2
+cd parser && uv run python generate_gtc2_counters.py /path/to/GTC2.vmod
 ```
+
+For new games, copy an existing generator and adapt the name matching logic.
 
 ## Name Matching Challenges
 
@@ -188,9 +199,9 @@ Location: `web/public/images/counters/{game}/`
 
 ## Adding a New Game's Images
 
-1. **Identify the counter system** by examining the VMOD
-2. **For RTG2-style**: Add game patterns to `extract_images.py`
-3. **For composite-style**: Create a game-specific generator or adapt `generate_hcr_counters.py`
+1. **Detect the counter system** using `detect_counter_type.py`
+2. **For INDIVIDUAL**: Add game patterns to `extract_images.py`
+3. **For TEMPLATE_COMPOSITE**: Create a game-specific generator or adapt an existing one (e.g., `generate_hcr_counters.py`, `generate_otr2_counters.py`)
 4. **Run the extractor**
 5. **Check unmatched units** and add name normalization as needed
 6. **Update `imageMap.ts`** if not auto-generated
@@ -219,7 +230,10 @@ Check the Pillow font loading - the script uses system fonts with fallback to de
 
 ## Related Files
 
-- `parser/extract_images.py` - RTG2-style extractor
+- `parser/detect_counter_type.py` - Automatic counter type detection
+- `parser/extract_images.py` - INDIVIDUAL (RTG2-style) extractor
 - `parser/generate_hcr_counters.py` - HCR composite generator
+- `parser/generate_otr2_counters.py` - OTR2 composite generator
+- `parser/generate_gtc2_counters.py` - GTC2 composite generator
 - `parser/image_mappings/*.json` - Generated mappings
 - `web/src/data/imageMap.ts` - TypeScript image map
