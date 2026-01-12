@@ -114,8 +114,8 @@
     "C:Tracy": "C_Tracy",
     "C:Vaughn": "C_Vaughn",
     "C:Walker": "C-Walker",
-    "C:Walker-A": "C-Walker",
-    "C:Walker-B": "C-Walker",
+    "C:Walker-A": "C_Walker-A",
+    "C:Walker-B": "C_Walker-B",
     "C:Waul TX Leg": "C_Waul_TX_Leg",
     "C:Whitfield": "C_Whitfield",
     "C:Wilson": "C_Wilson"
@@ -233,8 +233,8 @@
     "C:Tracy": "C_Tracy.jpg",
     "C:Vaughn": "C_Vaughn.jpg",
     "C:Walker": "C-Walker.jpg",
-    "C:Walker-A": "C-Walker.jpg",
-    "C:Walker-B": "C-Walker.jpg",
+    "C:Walker-A": "C_Walker-A.jpg",
+    "C:Walker-B": "C_Walker-B.jpg",
     "C:Waul TX Leg": "C_Waul_TX_Leg.jpg",
     "C:Whitfield": "C_Whitfield.jpg",
     "C:Wilson": "C_Wilson.jpg"

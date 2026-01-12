@@ -79,7 +79,15 @@ Only **leaders** have dedicated images. Brigade/division counters are composited
 3. Copies leader images directly
 4. Composites brigade/division images with unit name text overlay
 
+**Important**: For HYBRID systems where VASSAL adds text labels dynamically (detected by `detect_counter_type.py`), use `--no-text` flag to avoid double text overlay:
+
+```bash
+cd parser && uv run python generate_counters.py tom ~/Documents/vasl/gcacw/TOM_3_17.vmod --no-text
+```
+
 ## Quick Start
+
+**VMOD Files Location**: `~/Documents/vasl/gcacw/` (store all GCACW .vmod files here)
 
 **For a streamlined extraction workflow, see:**
 
@@ -144,20 +152,29 @@ cd parser
 uv run python extract_images.py GAME /path/to/GAME.vmod
 ```
 
-**For TEMPLATE_COMPOSITE games:**
-
-Use the unified generator with the appropriate game_id:
-
-```bash
-# HCR
-cd parser && uv run python generate_counters.py --game hcr /path/to/HCR.vmod
+**For TEMPLATE_COMPOSITE games:**hcr ~/Documents/vasl/gcacw/HCR.vmod
 
 # OTR2
+
+cd parser && uv run python generate_counters.py otr2 ~/Documents/vasl/gcacw/OTR2.vmod
+
+# GTC2
+
+cd parser && uv run python generate_counters.py gtc2 ~/Documents/vasl/gcacw/GTC2.vmod
+
+# TOM (HYBRID - uses --no-text because VASSAL adds labels)
+
+cd parser && uv run python generate_counters.py tom ~/Documents/vasl/gcacw/TOM_3_17.vmod --no-text
+
+# OTR2
+
 cd parser && uv run python generate_counters.py --game otr2 /path/to/OTR2.vmod
 
 # GTC2
+
 cd parser && uv run python generate_counters.py --game gtc2 /path/to/GTC2.vmod
-```
+
+````
 
 For new games, add game-specific configuration to `generate_counters.py`.
 
@@ -167,7 +184,7 @@ Use the integration helper script to automate the post-extraction setup:
 
 ```bash
 cd parser && uv run python integrate_game_images.py GAME
-```
+````
 
 This automatically:
 
