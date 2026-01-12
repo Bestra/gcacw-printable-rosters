@@ -97,6 +97,8 @@ extract-%:
 	@echo "Extracting raw tables for $*..."
 	@if [ "$*" = "tom" ]; then \
 		$(PYTHON) raw_table_extractor.py ../data/TOTM_Rules.pdf $*; \
+	elif [ "$*" = "hcr" ] || [ "$*" = "rwh" ]; then \
+		$(PYTHON) raw_table_extractor.py ../data/RTG2_Rules.pdf $*; \
 	else \
 		$(PYTHON) raw_table_extractor.py ../data/$$(echo $* | tr '[:lower:]' '[:upper:]')_Rules.pdf $*; \
 	fi
