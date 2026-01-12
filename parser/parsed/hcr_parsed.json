@@ -5,6 +5,19 @@
     "start_page": 4,
     "confederate_units": [
       {
+        "unit_leader": "Longstreet",
+        "size": "Corps",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W2502 (Hagerstown)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
         "unit_leader": "5 VA",
         "size": "Regt",
         "command": "Cav",
@@ -14,7 +27,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Garland",
@@ -26,7 +40,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Colquitt",
@@ -38,7 +53,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "D.H. Hill-A",
@@ -50,7 +66,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rodes-A",
@@ -62,19 +79,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Longstreet",
-        "size": "Corps",
-        "command": "L",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W2502 (Hagerstown)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "D.R. Jones",
@@ -86,7 +92,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hood",
@@ -98,7 +105,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Evans",
@@ -110,22 +118,11 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
-      {
-        "unit_leader": "8 IL-A",
-        "size": "Regt",
-        "command": "-",
-        "unit_type": "Cav",
-        "manpower_value": "1",
-        "hex_location": "W3414",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
       {
         "unit_leader": "Reno",
         "size": "Corps",
@@ -136,55 +133,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Sturgis",
-        "size": "Div",
-        "command": "IX",
-        "unit_type": "Inf",
-        "manpower_value": "7",
-        "hex_location": "W3814",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Willcox-A",
-        "size": "Div",
-        "command": "IX",
-        "unit_type": "Inf",
-        "manpower_value": "7",
-        "hex_location": "W3714",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Cox",
-        "size": "Div",
-        "command": "IX",
-        "unit_type": "Inf",
-        "manpower_value": "6",
-        "hex_location": "W3513",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Rodman",
-        "size": "Div",
-        "command": "IX",
-        "unit_type": "Inf",
-        "manpower_value": "6",
-        "hex_location": "W4115",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hooker",
@@ -196,7 +146,73 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "8 IL-A",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "W3414",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Sturgis",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "W3814",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Willcox-A",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "W3714",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Cox",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "W3513",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Rodman",
+        "size": "Div",
+        "command": "IX",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "W4115",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Meade",
@@ -208,7 +224,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hatch",
@@ -220,7 +237,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ricketts-A",
@@ -232,7 +250,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {},
@@ -248,6 +267,32 @@
     "start_page": 5,
     "confederate_units": [
       {
+        "unit_leader": "Jackson",
+        "size": "Corps",
+        "command": "J",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W1509",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Stuart",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W3117 (Burkittsville)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
         "unit_leader": "7 VA",
         "size": "Regt",
         "command": "Cav",
@@ -259,19 +304,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Jackson",
-        "size": "Corps",
-        "command": "J",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W1509",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "A.P. Hill",
@@ -285,7 +319,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "J.R. Jones",
@@ -299,7 +334,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Lawton",
@@ -313,7 +349,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "McLaws-A",
@@ -327,7 +364,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Anderson-A",
@@ -341,7 +379,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Kershaw",
@@ -355,7 +394,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Parham",
@@ -369,7 +409,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Semmes",
@@ -383,19 +424,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stuart",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W3117 (Burkittsville)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hampton",
@@ -407,7 +437,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Munford",
@@ -419,7 +450,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Walker",
@@ -431,10 +463,24 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
+      {
+        "unit_leader": "Franklin",
+        "size": "Corps",
+        "command": "VI",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W4527 (Barnesville)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
       {
         "unit_leader": "12 IL",
         "size": "Regt",
@@ -445,7 +491,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "White",
@@ -457,7 +504,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "D\u2019Utassy",
@@ -467,9 +515,12 @@
         "manpower_value": "4#",
         "hex_location": "W2420 (Bolivar Heights)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Trimble",
@@ -479,9 +530,12 @@
         "manpower_value": "4#",
         "hex_location": "W2421 (Chambers Farm)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ward",
@@ -495,7 +549,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 NY",
@@ -507,7 +562,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ford",
@@ -519,7 +575,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 PA",
@@ -531,19 +588,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Franklin",
-        "size": "Corps",
-        "command": "VI",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W4527 (Barnesville)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Slocum",
@@ -555,7 +601,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Smith",
@@ -567,7 +614,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -579,7 +627,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -608,7 +657,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -620,7 +670,34 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Stuart",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W2920 (Weverton)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Corps",
+        "command": "J",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W2420 (Bolivar Heights)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "D.R. Jones",
@@ -634,7 +711,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Evans",
@@ -648,7 +726,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "F. Lee",
@@ -660,7 +739,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "D.H. Hill-B",
@@ -674,7 +754,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hood",
@@ -688,7 +769,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Toombs",
@@ -700,7 +782,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Anderson-A",
@@ -714,7 +797,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "McLaws-B",
@@ -728,19 +812,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stuart",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W2920 (Weverton)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hampton",
@@ -752,7 +825,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Wright",
@@ -764,7 +838,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Armistead",
@@ -778,7 +853,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Walker",
@@ -790,19 +866,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Jackson",
-        "size": "Corps",
-        "command": "J",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W2420 (Bolivar Heights)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Lawton",
@@ -814,7 +879,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "J.R. Jones",
@@ -826,7 +892,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "A.P. Hill",
@@ -838,7 +905,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Thomas",
@@ -850,7 +918,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "7 VA",
@@ -862,7 +931,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Munford",
@@ -876,7 +946,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -890,7 +961,86 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Corps",
+        "command": "I",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W3211 (Mountain House)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W3312",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W3412 (Bolivar)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Mansfield",
+        "size": "Corps",
+        "command": "XII",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W3412 (Bolivar)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Corps",
+        "command": "V",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W4317 (Frederick Junction)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Franklin",
+        "size": "Corps",
+        "command": "VI",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W2917 (Brownsville)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sturgis",
@@ -904,7 +1054,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Willcox-A",
@@ -918,7 +1069,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Scammon",
@@ -932,7 +1084,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Rodman",
@@ -946,19 +1099,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hooker",
-        "size": "Corps",
-        "command": "I",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W3211 (Mountain House)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Doubleday",
@@ -972,7 +1114,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Meade",
@@ -986,7 +1129,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ricketts-A",
@@ -1000,19 +1144,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Sumner",
-        "size": "Corps",
-        "command": "II",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W3312",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Richardson",
@@ -1024,7 +1157,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sedgwick",
@@ -1036,31 +1170,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "McClellan",
-        "size": "Army",
-        "command": "AP",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W3412 (Bolivar)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Mansfield",
-        "size": "Corps",
-        "command": "XII",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W3412 (Bolivar)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Williams",
@@ -1072,7 +1183,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Greene",
@@ -1084,7 +1196,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sykes",
@@ -1096,7 +1209,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "French",
@@ -1108,19 +1222,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Porter",
-        "size": "Corps",
-        "command": "V",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W4317 (Frederick Junction)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Morell",
@@ -1132,7 +1235,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Humphreys",
@@ -1144,19 +1248,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Franklin",
-        "size": "Corps",
-        "command": "VI",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W2917 (Brownsville)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Slocum",
@@ -1166,9 +1259,12 @@
         "manpower_value": "9#",
         "hex_location": "W2917 (Brownsville)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Smith",
@@ -1180,7 +1276,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -1192,7 +1289,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 US",
@@ -1204,7 +1302,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 IL-A",
@@ -1216,7 +1315,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 RI",
@@ -1228,7 +1328,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 PA",
@@ -1240,7 +1341,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 NY",
@@ -1252,7 +1354,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -1272,18 +1375,6 @@
     "start_page": 10,
     "confederate_units": [
       {
-        "unit_leader": "7 VA",
-        "size": "Regt",
-        "command": "Cav",
-        "unit_type": "Cav",
-        "manpower_value": "1",
-        "hex_location": "W1514 (Opequon Station)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
         "unit_leader": "Jackson",
         "size": "Corps",
         "command": "J",
@@ -1293,121 +1384,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "A.P. Hill",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "10*",
-        "hex_location": "W1514 (Opequon Station)",
-        "side": "Confederate",
-        "notes": [
-          "*"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "J.R. Jones",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "7*",
-        "hex_location": "W1414",
-        "side": "Confederate",
-        "notes": [
-          "*"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Lawton",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "7*",
-        "hex_location": "W1414",
-        "side": "Confederate",
-        "notes": [
-          "*"
-        ],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Walker",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "5",
-        "hex_location": "W2729 (Hillsborough)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Kershaw",
-        "size": "Brig",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "6",
-        "hex_location": "W2720",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Anderson-A",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "4",
-        "hex_location": "W2920 (Weverton)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Parham",
-        "size": "Brig",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "2",
-        "hex_location": "W3017 (Brownsville Gap)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Semmes",
-        "size": "Brig",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "3",
-        "hex_location": "W3017 (Brownsville Gap)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "McLaws-A",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "9",
-        "hex_location": "W2819",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Stuart",
@@ -1419,43 +1397,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hampton",
-        "size": "Brig",
-        "command": "Cav",
-        "unit_type": "Cav",
-        "manpower_value": "2",
-        "hex_location": "W3613 (Middletown)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "F. Lee",
-        "size": "Brig",
-        "command": "Cav",
-        "unit_type": "Cav",
-        "manpower_value": "2",
-        "hex_location": "W4110 (Bethel)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Munford",
-        "size": "Brig",
-        "command": "Cav",
-        "unit_type": "Cav",
-        "manpower_value": "1",
-        "hex_location": "W3718",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Lee",
@@ -1469,7 +1412,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -1483,7 +1427,183 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "7 VA",
+        "size": "Regt",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "W1514 (Opequon Station)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "A.P. Hill",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "10*",
+        "hex_location": "W1514 (Opequon Station)",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "J.R. Jones",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "7*",
+        "hex_location": "W1414",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Lawton",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "7*",
+        "hex_location": "W1414",
+        "side": "Confederate",
+        "notes": [
+          "*"
+        ],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "W2729 (Hillsborough)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Kershaw",
+        "size": "Brig",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "6",
+        "hex_location": "W2720",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Anderson-A",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "W2920 (Weverton)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Parham",
+        "size": "Brig",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "W3017 (Brownsville Gap)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Semmes",
+        "size": "Brig",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "3",
+        "hex_location": "W3017 (Brownsville Gap)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "McLaws-A",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "9",
+        "hex_location": "W2819",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Hampton",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2",
+        "hex_location": "W3613 (Middletown)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "F. Lee",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2",
+        "hex_location": "W4110 (Bethel)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Munford",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "W3718",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "D.R. Jones",
@@ -1497,7 +1617,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hood",
@@ -1511,7 +1632,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Evans",
@@ -1525,7 +1647,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "D.H. Hill-A",
@@ -1537,7 +1660,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rodes-A",
@@ -1549,7 +1673,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Garland",
@@ -1561,7 +1686,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Colquitt",
@@ -1573,10 +1699,102 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
+      {
+        "unit_leader": "Reno",
+        "size": "Corps",
+        "command": "IX",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W4115",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Corps",
+        "command": "I",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W5016 (New Market)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W4818 (Ijamsville)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Mansfield",
+        "size": "Corps",
+        "command": "XII",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W4818 (Ijamsville)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W4620 (Urbana)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Franklin",
+        "size": "Corps",
+        "command": "VI",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W4520",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Corps",
+        "command": "V",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W5833",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
       {
         "unit_leader": "Ward",
         "size": "Brig",
@@ -1589,7 +1807,8 @@
           "+"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "White",
@@ -1599,9 +1818,12 @@
         "manpower_value": "3#",
         "hex_location": "W2521 (Harpers Ferry)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "12 IL",
@@ -1613,7 +1835,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 NY",
@@ -1625,7 +1848,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "D\u2019Utassy",
@@ -1637,7 +1861,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Trimble",
@@ -1649,7 +1874,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ford",
@@ -1661,7 +1887,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 US",
@@ -1673,7 +1900,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 NY-A",
@@ -1685,7 +1913,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 MA",
@@ -1697,7 +1926,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 IL-A",
@@ -1709,19 +1939,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Reno",
-        "size": "Corps",
-        "command": "IX",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W4115",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Willcox-A",
@@ -1733,7 +1952,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sturgis",
@@ -1745,7 +1965,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Rodman",
@@ -1757,7 +1978,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Cox",
@@ -1769,19 +1991,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hooker",
-        "size": "Corps",
-        "command": "I",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W5016 (New Market)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hatch",
@@ -1793,7 +2004,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ricketts-A",
@@ -1805,7 +2017,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Meade",
@@ -1817,31 +2030,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "McClellan",
-        "size": "Army",
-        "command": "AP",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W4818 (Ijamsville)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Mansfield",
-        "size": "Corps",
-        "command": "XII",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W4818 (Ijamsville)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Williams",
@@ -1853,7 +2043,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Greene",
@@ -1865,19 +2056,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Sumner",
-        "size": "Corps",
-        "command": "II",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W4620 (Urbana)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Richardson",
@@ -1889,7 +2069,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sedgwick",
@@ -1901,7 +2082,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "French",
@@ -1913,7 +2095,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 PA",
@@ -1925,19 +2108,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Franklin",
-        "size": "Corps",
-        "command": "VI",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W4520",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Slocum",
@@ -1949,7 +2121,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Smith",
@@ -1961,7 +2134,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -1973,7 +2147,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 RI",
@@ -1987,7 +2162,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 ME",
@@ -1999,19 +2175,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Porter",
-        "size": "Corps",
-        "command": "V",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W5833",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Morell",
@@ -2023,7 +2188,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Humphreys",
@@ -2037,7 +2203,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sykes",
@@ -2049,7 +2216,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -2081,7 +2249,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "F. Lee",
@@ -2093,7 +2262,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hampton",
@@ -2105,7 +2275,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Munford",
@@ -2117,7 +2288,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -2131,7 +2303,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 IL-A",
@@ -2143,7 +2316,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 NY-A",
@@ -2155,7 +2329,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 RI",
@@ -2167,7 +2342,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "141 NY",
@@ -2179,7 +2355,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "109 NY",
@@ -2191,7 +2368,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "138 PA",
@@ -2205,7 +2383,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Johnson",
@@ -2217,7 +2396,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "12 PA",
@@ -2229,7 +2409,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "18 CT",
@@ -2241,7 +2422,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Staunton-A",
@@ -2253,7 +2435,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {},
@@ -2280,7 +2463,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -2292,103 +2476,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "D.H. Hill-B",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "12",
-        "hex_location": "E0122",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Anderson-B",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "14",
-        "hex_location": "E0122",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "D.R. Jones",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "12",
-        "hex_location": "E0122",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Evans",
-        "size": "Brig",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "2",
-        "hex_location": "E0122",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "McLaws-B",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "13",
-        "hex_location": "E0121",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Walker",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "5",
-        "hex_location": "E0121",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hood",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "4",
-        "hex_location": "E0121",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Munford",
-        "size": "Brig",
-        "command": "Cav",
-        "unit_type": "Cav",
-        "manpower_value": "2",
-        "hex_location": "E0125",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Jackson",
@@ -2400,43 +2489,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "A.P. Hill",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "10",
-        "hex_location": "E0320 (Cracklintown)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Lawton",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "7",
-        "hex_location": "E0219",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "J.R. Jones",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "8",
-        "hex_location": "E0120 (Goshen)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Stuart",
@@ -2448,7 +2502,151 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "D.H. Hill-B",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "E0122",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Anderson-B",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "E0122",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "D.R. Jones",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "E0122",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Evans",
+        "size": "Brig",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "E0122",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "McLaws-B",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "E0121",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "5",
+        "hex_location": "E0121",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "E0121",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Munford",
+        "size": "Brig",
+        "command": "Cav",
+        "unit_type": "Cav",
+        "manpower_value": "2",
+        "hex_location": "E0125",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "A.P. Hill",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "10",
+        "hex_location": "E0320 (Cracklintown)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "Lawton",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "E0219",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
+      },
+      {
+        "unit_leader": "J.R. Jones",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "E0120 (Goshen)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "F. Lee",
@@ -2460,7 +2658,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hampton",
@@ -2472,34 +2671,11 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
-      {
-        "unit_leader": "1 MA",
-        "size": "Regt",
-        "command": "-",
-        "unit_type": "Cav",
-        "manpower_value": "1",
-        "hex_location": "E0131",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "8 IL-A",
-        "size": "Regt",
-        "command": "-",
-        "unit_type": "Cav",
-        "manpower_value": "1",
-        "hex_location": "E0328 (Rockville)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
       {
         "unit_leader": "Franklin",
         "size": "Corps",
@@ -2510,43 +2686,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Smith",
-        "size": "Div",
-        "command": "VI",
-        "unit_type": "Inf",
-        "manpower_value": "13",
-        "hex_location": "E0428",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Slocum",
-        "size": "Div",
-        "command": "VI",
-        "unit_type": "Inf",
-        "manpower_value": "10",
-        "hex_location": "E0429",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Couch",
-        "size": "Div",
-        "command": "VI",
-        "unit_type": "Inf",
-        "manpower_value": "12",
-        "hex_location": "E0530 (Montrose)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sumner",
@@ -2558,43 +2699,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Richardson",
-        "size": "Div",
-        "command": "II",
-        "unit_type": "Inf",
-        "manpower_value": "13",
-        "hex_location": "E0728",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Sedgwick",
-        "size": "Div",
-        "command": "II",
-        "unit_type": "Inf",
-        "manpower_value": "13",
-        "hex_location": "E0729 (Enster PO)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "French",
-        "size": "Div",
-        "command": "II",
-        "unit_type": "Inf",
-        "manpower_value": "10",
-        "hex_location": "E1033 (Silver Spring)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Burnside-A",
@@ -2606,7 +2712,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Mansfield",
@@ -2618,7 +2725,112 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "1 MA",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "E0131",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "8 IL-A",
+        "size": "Regt",
+        "command": "-",
+        "unit_type": "Cav",
+        "manpower_value": "1",
+        "hex_location": "E0328 (Rockville)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Smith",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "E0428",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Slocum",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "10",
+        "hex_location": "E0429",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Couch",
+        "size": "Div",
+        "command": "VI",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "E0530 (Montrose)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Richardson",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "E0728",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "Sedgwick",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "E0729 (Enster PO)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
+      },
+      {
+        "unit_leader": "French",
+        "size": "Div",
+        "command": "II",
+        "unit_type": "Inf",
+        "manpower_value": "10",
+        "hex_location": "E1033 (Silver Spring)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Williams",
@@ -2630,7 +2842,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Greene",
@@ -2642,7 +2855,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Humphreys",
@@ -2656,7 +2870,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Whipple",
@@ -2670,7 +2885,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 RI",
@@ -2682,7 +2898,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "141 NY",
@@ -2694,7 +2911,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "109 NY",
@@ -2706,7 +2924,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Staunton-A",
@@ -2718,7 +2937,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {},
@@ -2745,7 +2965,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "Longstreet",
@@ -2757,91 +2978,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "D.R. Jones",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "12",
-        "hex_location": "W4414",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "D.H. Hill-B",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "13",
-        "hex_location": "W4415",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hood",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "4",
-        "hex_location": "W4412",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Evans",
-        "size": "Brig",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "2",
-        "hex_location": "W4212",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "McLaws-B",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "13",
-        "hex_location": "W4014",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Anderson-B",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "14",
-        "hex_location": "W4117",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Walker",
-        "size": "Div",
-        "command": "L",
-        "unit_type": "Inf",
-        "manpower_value": "7",
-        "hex_location": "W4318",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "Jackson",
@@ -2853,43 +2991,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "J.R. Jones",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "8",
-        "hex_location": "W4214 (Frederick)",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Lawton",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "7",
-        "hex_location": "W4215",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "A.P. Hill",
-        "size": "Div",
-        "command": "J",
-        "unit_type": "Inf",
-        "manpower_value": "10",
-        "hex_location": "W4316",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "Stuart",
@@ -2901,7 +3004,138 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "D.R. Jones",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "12",
+        "hex_location": "W4414",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "D.H. Hill-B",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "W4415",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "Hood",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "4",
+        "hex_location": "W4412",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "Evans",
+        "size": "Brig",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "2",
+        "hex_location": "W4212",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "McLaws-B",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "13",
+        "hex_location": "W4014",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "Anderson-B",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "14",
+        "hex_location": "W4117",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "Walker",
+        "size": "Div",
+        "command": "L",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "W4318",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "J.R. Jones",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "8",
+        "hex_location": "W4214 (Frederick)",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "Lawton",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "7",
+        "hex_location": "W4215",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
+      },
+      {
+        "unit_leader": "A.P. Hill",
+        "size": "Div",
+        "command": "J",
+        "unit_type": "Inf",
+        "manpower_value": "10",
+        "hex_location": "W4316",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "Hampton",
@@ -2913,7 +3147,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "F. Lee",
@@ -2925,7 +3160,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "7 VA",
@@ -2937,7 +3173,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "Munford",
@@ -2949,7 +3186,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "12 VA",
@@ -2961,7 +3199,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "Funk",
@@ -2975,10 +3214,24 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 7)"
       }
     ],
     "union_units": [
+      {
+        "unit_leader": "13 Porter",
+        "size": "Corps",
+        "command": "V",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "W5833",
+        "side": "Union",
+        "notes": [],
+        "turn": "4-Sept",
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
+      },
       {
         "unit_leader": "IL",
         "size": "Regt",
@@ -2989,7 +3242,8 @@
         "side": "Union",
         "notes": [],
         "turn": "12",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "NY",
@@ -3001,7 +3255,8 @@
         "side": "Union",
         "notes": [],
         "turn": "8",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "IL-A",
@@ -3013,7 +3268,8 @@
         "side": "Union",
         "notes": [],
         "turn": "8",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "MA",
@@ -3025,7 +3281,8 @@
         "side": "Union",
         "notes": [],
         "turn": "1",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "NY-A",
@@ -3037,7 +3294,8 @@
         "side": "Union",
         "notes": [],
         "turn": "1",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "US",
@@ -3049,7 +3307,8 @@
         "side": "Union",
         "notes": [],
         "turn": "6",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "RI",
@@ -3061,19 +3320,8 @@
         "side": "Union",
         "notes": [],
         "turn": "1",
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "13 Porter",
-        "size": "Corps",
-        "command": "V",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "W5833",
-        "side": "Union",
-        "notes": [],
-        "turn": "4-Sept",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "13 Morell",
@@ -3085,7 +3333,8 @@
         "side": "Union",
         "notes": [],
         "turn": "4-Sept",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "13 6 PA",
@@ -3097,7 +3346,8 @@
         "side": "Union",
         "notes": [],
         "turn": "4-Sept",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "15 Humphreys",
@@ -3109,7 +3359,8 @@
         "side": "Union",
         "notes": [],
         "turn": "6-Sept",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       },
       {
         "unit_leader": "16 1 ME",
@@ -3121,7 +3372,8 @@
         "side": "Union",
         "notes": [],
         "turn": "7-Sept",
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 7)"
       }
     ],
     "confederate_footnotes": {
@@ -3141,6 +3393,58 @@
     "start_page": 29,
     "confederate_units": [
       {
+        "unit_leader": "Stuart",
+        "size": "Corps",
+        "command": "Cav",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Jackson",
+        "size": "Corps",
+        "command": "J",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Lee",
+        "size": "Army",
+        "command": "ANV",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Longstreet",
+        "size": "Corps",
+        "command": "L",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "",
+        "side": "Confederate",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
+      },
+      {
         "unit_leader": "D.H. Hill-B",
         "size": "Div",
         "command": "L",
@@ -3150,7 +3454,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Funk",
@@ -3164,19 +3469,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Stuart",
-        "size": "Corps",
-        "command": "Cav",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "F. Lee",
@@ -3188,7 +3482,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Hampton",
@@ -3200,19 +3495,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Jackson",
-        "size": "Corps",
-        "command": "J",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Lawton",
@@ -3224,7 +3508,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "A.P. Hill",
@@ -3236,7 +3521,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "J.R. Jones",
@@ -3248,31 +3534,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Lee",
-        "size": "Army",
-        "command": "ANV",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Longstreet",
-        "size": "Corps",
-        "command": "L",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "",
-        "side": "Confederate",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "D.R. Jones",
@@ -3284,7 +3547,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Hood",
@@ -3296,7 +3560,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Evans",
@@ -3308,7 +3573,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "McLaws-B",
@@ -3320,7 +3586,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Anderson-B",
@@ -3332,7 +3599,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Munford",
@@ -3344,7 +3612,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Walker",
@@ -3356,10 +3625,128 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up (Scenario 8)"
       }
     ],
     "union_units": [
+      {
+        "unit_leader": "Heintzelman",
+        "size": "Corps",
+        "command": "III",
+        "unit_type": "Ldr",
+        "manpower_value": "(-)",
+        "hex_location": "E0238 (Falls Church Station)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Sigel",
+        "size": "Corps",
+        "command": "XI",
+        "unit_type": "Ldr",
+        "manpower_value": "(-)",
+        "hex_location": "E0638",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Porter",
+        "size": "Corps",
+        "command": "V",
+        "unit_type": "Ldr",
+        "manpower_value": "(-)",
+        "hex_location": "E0636 (Battery Vermont)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "McClellan",
+        "size": "Army",
+        "command": "AP",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "E0837 (St. Alban\u2019s Church)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Mansfield",
+        "size": "Corps",
+        "command": "XII",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "E0837 (St. Alban\u2019s Church)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Sumner",
+        "size": "Corps",
+        "command": "II",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "E0838 (Georgetown)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Reno",
+        "size": "Corps",
+        "command": "IX",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "E1136",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Franklin",
+        "size": "Corps",
+        "command": "VI",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "E1140 (The Capitol)",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
+      {
+        "unit_leader": "Hooker",
+        "size": "Corps",
+        "command": "I",
+        "unit_type": "Ldr",
+        "manpower_value": "-",
+        "hex_location": "E1337",
+        "side": "Union",
+        "notes": [],
+        "turn": null,
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
+      },
       {
         "unit_leader": "12 IL",
         "size": "Regt",
@@ -3370,7 +3757,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "White",
@@ -3382,7 +3770,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "3 PHB",
@@ -3394,7 +3783,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "D\u2019Utassy",
@@ -3406,7 +3796,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Trimble",
@@ -3418,7 +3809,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Ward",
@@ -3432,7 +3824,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "8 NY",
@@ -3444,7 +3837,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Ford",
@@ -3454,9 +3848,12 @@
         "manpower_value": "5#",
         "hex_location": "W2720",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "87 OH",
@@ -3468,7 +3865,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "1 MA",
@@ -3480,19 +3878,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Heintzelman",
-        "size": "Corps",
-        "command": "III",
-        "unit_type": "Ldr",
-        "manpower_value": "(-)",
-        "hex_location": "E0238 (Falls Church Station)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Sickles",
@@ -3504,7 +3891,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "8 IL-A",
@@ -3516,7 +3904,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Stoneman",
@@ -3528,7 +3917,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Abercrombie",
@@ -3540,19 +3930,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Sigel",
-        "size": "Corps",
-        "command": "XI",
-        "unit_type": "Ldr",
-        "manpower_value": "(-)",
-        "hex_location": "E0638",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Stahel",
@@ -3564,7 +3943,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Steinwehr",
@@ -3576,7 +3956,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Schurz",
@@ -3588,7 +3969,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "1 NY-A",
@@ -3600,7 +3982,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "1 RI",
@@ -3612,19 +3995,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Porter",
-        "size": "Corps",
-        "command": "V",
-        "unit_type": "Ldr",
-        "manpower_value": "(-)",
-        "hex_location": "E0636 (Battery Vermont)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Sykes",
@@ -3636,7 +4008,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Morell",
@@ -3648,7 +4021,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Humphreys",
@@ -3660,7 +4034,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "French",
@@ -3672,7 +4047,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "6 PA",
@@ -3684,31 +4060,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "McClellan",
-        "size": "Army",
-        "command": "AP",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "E0837 (St. Alban\u2019s Church)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Mansfield",
-        "size": "Corps",
-        "command": "XII",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "E0837 (St. Alban\u2019s Church)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Williams",
@@ -3720,7 +4073,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Greene",
@@ -3732,19 +4086,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Sumner",
-        "size": "Corps",
-        "command": "II",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "E0838 (Georgetown)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Richardson",
@@ -3756,7 +4099,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Sedgwick",
@@ -3768,19 +4112,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Reno",
-        "size": "Corps",
-        "command": "IX",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "E1136",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Cox",
@@ -3792,7 +4125,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Sturgis",
@@ -3804,7 +4138,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Willcox-A",
@@ -3816,7 +4151,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Rodman",
@@ -3828,7 +4164,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Whipple",
@@ -3840,19 +4177,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Franklin",
-        "size": "Corps",
-        "command": "VI",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "E1140 (The Capitol)",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Slocum",
@@ -3864,7 +4190,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Smith",
@@ -3876,7 +4203,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Couch",
@@ -3888,7 +4216,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Wadsworth",
@@ -3900,19 +4229,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
-      },
-      {
-        "unit_leader": "Hooker",
-        "size": "Corps",
-        "command": "I",
-        "unit_type": "Ldr",
-        "manpower_value": "-",
-        "hex_location": "E1337",
-        "side": "Union",
-        "notes": [],
-        "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Meade",
@@ -3924,7 +4242,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Hatch",
@@ -3936,7 +4255,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Ricketts-A",
@@ -3948,7 +4268,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "6 US",
@@ -3960,7 +4281,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "3 PA",
@@ -3972,7 +4294,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "1 ME",
@@ -3984,7 +4307,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "141 NY",
@@ -3996,7 +4320,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "109 NY",
@@ -4008,7 +4333,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Johnson",
@@ -4020,7 +4346,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "138 PA",
@@ -4034,7 +4361,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "12 PA",
@@ -4046,7 +4374,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Kenly-A",
@@ -4058,7 +4387,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Emory",
@@ -4070,7 +4400,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "18 CT",
@@ -4082,7 +4413,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       },
       {
         "unit_leader": "Staunton-A",
@@ -4094,7 +4426,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up (Scenario 8)"
       }
     ],
     "confederate_footnotes": {

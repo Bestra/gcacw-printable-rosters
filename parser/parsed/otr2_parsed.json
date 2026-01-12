@@ -14,7 +14,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ward",
@@ -28,7 +29,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Siege",
@@ -42,7 +44,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "10 GA",
@@ -56,7 +59,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Wilcox-A",
@@ -68,7 +72,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Colston",
@@ -80,7 +85,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "3 VA",
@@ -92,7 +98,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Pryor",
@@ -104,7 +111,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Cobb-A",
@@ -116,7 +124,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "McLaws-A",
@@ -128,7 +137,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rains-A",
@@ -140,7 +150,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rodes-A",
@@ -152,7 +163,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Early-A",
@@ -164,7 +176,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Featherston",
@@ -176,7 +189,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Griffith",
@@ -188,7 +202,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -202,7 +217,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Heintzelman",
@@ -214,7 +230,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Keyes",
@@ -226,7 +243,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Porter",
@@ -238,7 +256,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hamilton",
@@ -250,7 +269,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sedgwick",
@@ -264,7 +284,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Smith-A",
@@ -276,7 +297,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "5/6 US",
@@ -288,7 +310,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -300,7 +323,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 PA",
@@ -312,7 +336,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "3/8 PA",
@@ -324,7 +349,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sykes-A",
@@ -336,7 +362,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -348,7 +375,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-2",
@@ -360,7 +388,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Horse Art",
@@ -372,7 +401,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -401,7 +431,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Smith",
@@ -413,7 +444,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DR Jones",
@@ -425,7 +457,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -437,7 +470,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DH Hill",
@@ -449,7 +483,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Stuart",
@@ -461,7 +496,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Whiting-A",
@@ -475,7 +511,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hood",
@@ -489,7 +526,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -503,7 +541,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Wagon Train-A",
@@ -515,7 +554,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Wagon Train-B",
@@ -527,7 +567,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DR Jones-A",
@@ -541,7 +582,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "McLaws-B",
@@ -555,7 +597,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Wilcox-B",
@@ -569,7 +612,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Pickett",
@@ -583,7 +627,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Early-B",
@@ -597,7 +642,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rains-B",
@@ -611,7 +657,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "3 VA",
@@ -623,7 +670,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "4 VA",
@@ -635,7 +683,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "1 VA",
@@ -647,7 +696,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -661,7 +711,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Heintzelman",
@@ -673,7 +724,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sumner",
@@ -685,7 +737,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Keyes",
@@ -697,7 +750,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Porter",
@@ -709,7 +763,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hooker",
@@ -721,7 +776,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -733,7 +789,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "5/6 US",
@@ -745,7 +802,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 PA",
@@ -757,7 +815,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Richardson",
@@ -769,7 +828,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Horse Art",
@@ -781,7 +841,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sedgwick",
@@ -793,7 +854,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 IL",
@@ -805,7 +867,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Kearny",
@@ -817,7 +880,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sykes-A",
@@ -829,7 +893,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-2",
@@ -841,7 +906,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "3/8 PA",
@@ -853,7 +919,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -865,7 +932,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Smith-A",
@@ -877,7 +945,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Casey",
@@ -889,7 +958,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -916,7 +986,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -928,7 +999,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DH Hill",
@@ -940,7 +1012,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Smith",
@@ -952,7 +1025,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Magruder",
@@ -964,7 +1038,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Stuart",
@@ -976,7 +1051,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "AP Hill",
@@ -988,7 +1064,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -1000,7 +1077,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Pickett",
@@ -1012,7 +1090,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "RH Anderson",
@@ -1024,7 +1103,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rodes-B",
@@ -1036,7 +1116,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Garland-A",
@@ -1048,7 +1129,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Whiting-A",
@@ -1060,7 +1142,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hood",
@@ -1072,7 +1155,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "McLaws-B",
@@ -1084,7 +1168,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "T Anderson",
@@ -1096,7 +1181,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Cobb-B",
@@ -1108,7 +1194,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Kershaw",
@@ -1120,7 +1207,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Cavalry",
@@ -1132,7 +1220,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "3 VA",
@@ -1144,7 +1233,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "JR Anderson",
@@ -1158,7 +1248,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Branch",
@@ -1172,7 +1263,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "56 VA",
@@ -1186,7 +1278,8 @@
           "+"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Huger-A",
@@ -1200,7 +1293,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "32 NC",
@@ -1215,7 +1309,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Armistead",
@@ -1229,7 +1324,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Wise-B",
@@ -1241,7 +1337,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "8 VA",
@@ -1253,7 +1350,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "9 VA",
@@ -1265,7 +1363,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Richmond-1",
@@ -1280,7 +1379,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Richmond-2",
@@ -1295,7 +1395,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Richmond-3",
@@ -1310,7 +1411,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Richmond-4",
@@ -1325,7 +1427,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ripley",
@@ -1337,7 +1440,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Walker",
@@ -1349,7 +1453,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ewell",
@@ -1361,7 +1466,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -1375,7 +1481,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sumner",
@@ -1387,7 +1494,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Keyes",
@@ -1399,7 +1507,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Heintzelman",
@@ -1411,7 +1520,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Franklin",
@@ -1423,7 +1533,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Porter",
@@ -1435,7 +1546,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "McDowell",
@@ -1447,7 +1559,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sedgwick",
@@ -1459,7 +1572,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Richardson",
@@ -1471,7 +1585,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Casey",
@@ -1483,7 +1598,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -1495,7 +1611,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Kearny",
@@ -1507,7 +1624,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hooker",
@@ -1519,7 +1637,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "3/8 PA",
@@ -1531,7 +1650,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Smith-B",
@@ -1543,7 +1663,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Slocum",
@@ -1555,7 +1676,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Morell",
@@ -1567,7 +1689,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -1579,7 +1702,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Horse Art",
@@ -1591,7 +1715,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sykes-B",
@@ -1603,7 +1728,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-2",
@@ -1615,7 +1741,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Stoneman",
@@ -1627,7 +1754,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 NY",
@@ -1639,7 +1767,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 IL",
@@ -1651,7 +1780,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "5/6 US",
@@ -1663,7 +1793,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 PA",
@@ -1675,7 +1806,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Warren",
@@ -1687,7 +1819,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "93 NY",
@@ -1701,7 +1834,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "King",
@@ -1715,7 +1849,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "McCall-A",
@@ -1729,7 +1864,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ricketts",
@@ -1743,7 +1879,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "2 NY",
@@ -1757,7 +1894,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "4 PA",
@@ -1771,7 +1909,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Shields",
@@ -1783,7 +1922,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 RI",
@@ -1795,7 +1935,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -1827,7 +1968,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -1839,7 +1981,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Smith",
@@ -1851,7 +1994,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DH Hill",
@@ -1863,7 +2007,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "RH Anderson",
@@ -1875,7 +2020,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Pickett",
@@ -1887,7 +2033,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -1899,7 +2046,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ripley",
@@ -1913,7 +2061,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Huger-B",
@@ -1925,7 +2074,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Hood",
@@ -1937,7 +2087,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Whiting-A",
@@ -1949,7 +2100,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Walker",
@@ -1963,7 +2115,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Garland-A",
@@ -1975,7 +2128,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rodes-B",
@@ -1987,7 +2141,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "McLaws-B",
@@ -2002,7 +2157,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -2016,7 +2172,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sumner",
@@ -2028,7 +2185,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Heintzelman",
@@ -2040,7 +2198,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Casey",
@@ -2052,7 +2211,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -2064,7 +2224,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Naglee-A",
@@ -2076,7 +2237,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sedgwick",
@@ -2088,7 +2250,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Richardson",
@@ -2100,7 +2263,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Kearny",
@@ -2112,7 +2276,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Jameson",
@@ -2124,7 +2289,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hooker",
@@ -2136,7 +2302,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -2164,7 +2331,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "1 VA",
@@ -2176,7 +2344,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "9 VA",
@@ -2188,7 +2357,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -2202,7 +2372,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Warren",
@@ -2214,7 +2385,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Buchanan",
@@ -2226,7 +2398,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Reynolds",
@@ -2238,7 +2411,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "93 NY",
@@ -2252,7 +2426,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "11 PA",
@@ -2266,7 +2441,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Meade",
@@ -2278,7 +2454,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "3/8 PA",
@@ -2290,7 +2467,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {},
@@ -2318,7 +2496,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -2330,7 +2509,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DH Hill",
@@ -2342,7 +2522,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Magruder",
@@ -2354,7 +2535,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Stuart",
@@ -2366,7 +2548,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "AP Hill",
@@ -2378,7 +2561,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Jackson",
@@ -2390,7 +2574,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "RH Anderson",
@@ -2402,7 +2587,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Pickett",
@@ -2414,7 +2600,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -2426,7 +2613,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Art Res-2",
@@ -2438,7 +2626,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rodes-C",
@@ -2450,7 +2639,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Garland-B",
@@ -2462,7 +2652,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "McLaws-C",
@@ -2476,7 +2667,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DR Jones-B",
@@ -2490,7 +2682,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Cobb-C",
@@ -2504,7 +2697,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Huger-B",
@@ -2518,7 +2712,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "3 VA",
@@ -2530,7 +2725,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "5 VA",
@@ -2542,7 +2738,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Wise-A",
@@ -2557,7 +2754,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Holmes",
@@ -2571,7 +2769,8 @@
           "+"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "32 NC",
@@ -2586,7 +2785,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Naval Battery",
@@ -2598,7 +2798,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ransom",
@@ -2610,7 +2811,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Cavalry",
@@ -2622,7 +2824,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "JR Anderson",
@@ -2634,7 +2837,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Gregg",
@@ -2646,7 +2850,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "14 SC",
@@ -2660,7 +2865,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Branch",
@@ -2672,7 +2878,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "4 VA",
@@ -2684,7 +2891,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Whiting-B",
@@ -2698,7 +2906,8 @@
           "$"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ewell",
@@ -2712,7 +2921,8 @@
           "$"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Winder",
@@ -2726,7 +2936,8 @@
           "$"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "2 VA",
@@ -2740,7 +2951,8 @@
           "$"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Richmond-1",
@@ -2755,7 +2967,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Richmond-2",
@@ -2770,7 +2983,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Richmond-3",
@@ -2785,7 +2999,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Richmond-4",
@@ -2800,7 +3015,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -2814,7 +3030,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Franklin",
@@ -2826,7 +3043,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "McClellan",
@@ -2838,7 +3056,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sumner",
@@ -2850,7 +3069,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Heintzelman",
@@ -2862,7 +3082,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Keyes",
@@ -2874,7 +3095,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "13 PA",
@@ -2886,7 +3108,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Stoneman",
@@ -2898,7 +3121,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6 PA",
@@ -2910,7 +3134,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "5/6 US",
@@ -2922,7 +3147,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8 IL",
@@ -2934,7 +3160,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "4 PA",
@@ -2946,7 +3173,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "McCall-B",
@@ -2960,7 +3188,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Seymour",
@@ -2974,7 +3203,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sykes-B",
@@ -2988,7 +3218,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Horse Art",
@@ -3002,7 +3233,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Morell",
@@ -3014,7 +3246,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Smith-B",
@@ -3028,7 +3261,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Slocum",
@@ -3042,7 +3276,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -3056,7 +3291,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "1 NY",
@@ -3068,7 +3304,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Richardson",
@@ -3082,7 +3319,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sedgwick",
@@ -3096,7 +3334,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-2",
@@ -3110,7 +3349,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hooker",
@@ -3124,7 +3364,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Kearny",
@@ -3138,7 +3379,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Peck-A",
@@ -3150,7 +3392,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -3162,7 +3405,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "3/8 PA",
@@ -3174,7 +3418,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "93 NY",
@@ -3188,7 +3433,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Gunboat-1",
@@ -3200,7 +3446,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Wagon Train-A",
@@ -3212,7 +3459,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Wagon Train-B",
@@ -3224,7 +3472,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ferry",
@@ -3236,7 +3485,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Kimball",
@@ -3248,7 +3498,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Tyler",
@@ -3260,7 +3511,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Carroll-A",
@@ -3272,7 +3524,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Gunboat-2",
@@ -3284,7 +3537,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -3317,7 +3571,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -3329,7 +3584,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DH Hill",
@@ -3341,7 +3597,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Stuart",
@@ -3353,7 +3610,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "AP Hill",
@@ -3365,7 +3623,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Jackson",
@@ -3377,7 +3636,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "RH Anderson",
@@ -3389,7 +3649,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Pickett",
@@ -3401,7 +3662,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rodes-C",
@@ -3413,7 +3675,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Garland-B",
@@ -3425,7 +3688,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Cavalry",
@@ -3437,7 +3701,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "JR Anderson",
@@ -3449,7 +3714,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Gregg",
@@ -3461,7 +3727,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Branch",
@@ -3473,7 +3740,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "4VA",
@@ -3485,7 +3753,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Whiting-B",
@@ -3499,7 +3768,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ewell",
@@ -3513,7 +3783,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Winder",
@@ -3527,7 +3798,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "2VA",
@@ -3541,7 +3813,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -3555,7 +3828,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Stoneman",
@@ -3567,7 +3841,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "6PA",
@@ -3579,7 +3854,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "5/6US",
@@ -3591,7 +3867,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "8IL",
@@ -3603,7 +3880,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "4PA",
@@ -3615,7 +3893,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "McCall-B",
@@ -3629,7 +3908,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Seymour",
@@ -3643,7 +3923,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Morell",
@@ -3655,7 +3936,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sykes-B",
@@ -3669,7 +3951,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Horse Art",
@@ -3683,7 +3966,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Slocum",
@@ -3695,7 +3979,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Richardson",
@@ -3707,7 +3992,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Peck-B",
@@ -3719,7 +4005,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Naglee-B",
@@ -3733,7 +4020,8 @@
           "$"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "93NY",
@@ -3747,7 +4035,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Gunboat-1",
@@ -3759,7 +4048,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -3790,7 +4080,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Longstreet",
@@ -3802,7 +4093,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DH Hill",
@@ -3814,7 +4106,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Magruder",
@@ -3826,7 +4119,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "AP Hill",
@@ -3838,7 +4132,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Jackson",
@@ -3850,7 +4145,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "RH Anderson",
@@ -3862,7 +4158,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Pickett",
@@ -3874,7 +4171,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Art Res-2",
@@ -3886,7 +4184,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Rodes-C",
@@ -3898,7 +4197,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Garland-B",
@@ -3910,7 +4210,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "McLaws-C",
@@ -3924,7 +4225,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -3936,7 +4238,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "DR Jones-B",
@@ -3950,7 +4253,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Cobb-C",
@@ -3964,7 +4268,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Huger-B",
@@ -3978,7 +4283,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ransom",
@@ -3990,7 +4296,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Holmes",
@@ -4002,7 +4309,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Naval Battery",
@@ -4014,7 +4322,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "JR Anderson",
@@ -4026,7 +4335,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Gregg",
@@ -4038,7 +4348,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Branch",
@@ -4050,7 +4361,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Whiting-B",
@@ -4062,7 +4374,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Ewell",
@@ -4074,7 +4387,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       },
       {
         "unit_leader": "Winder",
@@ -4086,7 +4400,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up"
       }
     ],
     "union_units": [
@@ -4100,7 +4415,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Porter",
@@ -4112,7 +4428,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Franklin",
@@ -4124,7 +4441,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sumner",
@@ -4136,7 +4454,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Heintzelman",
@@ -4148,7 +4467,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Keyes",
@@ -4160,7 +4480,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Morell",
@@ -4174,7 +4495,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Horse Art",
@@ -4186,7 +4508,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Naglee-B",
@@ -4198,7 +4521,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "McCall-B",
@@ -4212,7 +4536,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-1",
@@ -4224,7 +4549,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Art Res-2",
@@ -4236,7 +4562,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sykes-B",
@@ -4248,7 +4575,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Smith-B",
@@ -4260,7 +4588,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Slocum",
@@ -4274,7 +4603,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Richardson",
@@ -4288,7 +4618,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Sedgwick",
@@ -4302,7 +4633,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Hooker",
@@ -4316,7 +4648,8 @@
           "^"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Kearny",
@@ -4328,7 +4661,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Meagher",
@@ -4340,7 +4674,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Peck-B",
@@ -4352,7 +4687,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Couch",
@@ -4364,7 +4700,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Ferry",
@@ -4378,7 +4715,8 @@
           "$"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Gunboat-1",
@@ -4390,7 +4728,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Gunboat-2",
@@ -4402,7 +4741,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Kimball",
@@ -4414,7 +4754,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       },
       {
         "unit_leader": "Tyler",
@@ -4426,7 +4767,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up"
       }
     ],
     "confederate_footnotes": {
@@ -4457,7 +4799,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "DH Hill",
@@ -4469,7 +4812,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Johnston",
@@ -4481,7 +4825,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Smith",
@@ -4493,7 +4838,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Longstreet",
@@ -4505,7 +4851,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Stuart",
@@ -4517,7 +4864,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Jackson",
@@ -4529,7 +4877,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "AP Hill",
@@ -4541,7 +4890,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "DH Hill",
@@ -4553,7 +4903,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Ward",
@@ -4567,7 +4918,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Siege",
@@ -4581,7 +4933,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Crump",
@@ -4595,7 +4948,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "10 GA",
@@ -4609,7 +4963,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Wilcox-A",
@@ -4621,7 +4976,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Colston",
@@ -4633,7 +4989,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Pryor",
@@ -4645,7 +5002,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "McLaws-B",
@@ -4657,7 +5015,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Cobb-A",
@@ -4669,7 +5028,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Rains-B",
@@ -4681,7 +5041,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Rodes-A",
@@ -4693,7 +5054,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "3 VA",
@@ -4705,7 +5067,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Early-B",
@@ -4717,7 +5080,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Featherston",
@@ -4729,7 +5093,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Grifffith",
@@ -4741,7 +5106,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Richmond-1",
@@ -4755,7 +5121,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Richmond-2",
@@ -4769,7 +5136,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Richmond-3",
@@ -4783,7 +5151,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Richmond-4",
@@ -4797,7 +5166,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Wise-B",
@@ -4809,7 +5179,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Art Res-1",
@@ -4821,7 +5192,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Toombs",
@@ -4833,7 +5205,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "7 VA",
@@ -4847,7 +5220,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Walker",
@@ -4859,7 +5233,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "DR Jones-A",
@@ -4871,7 +5246,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Kershaw",
@@ -4883,7 +5259,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Whiting-A",
@@ -4895,7 +5272,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Hood",
@@ -4907,7 +5285,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "3 VA",
@@ -4921,7 +5300,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Pickett",
@@ -4933,7 +5313,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "RH Anderson",
@@ -4945,7 +5326,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Cavalry",
@@ -4957,7 +5339,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Huger-A",
@@ -4969,7 +5352,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Mahone",
@@ -4981,7 +5365,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Armistead",
@@ -4993,7 +5378,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "22 VA",
@@ -5005,7 +5391,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "28 VA",
@@ -5017,7 +5404,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "47 VA",
@@ -5029,7 +5417,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "55 VA",
@@ -5041,7 +5430,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "56 VA",
@@ -5053,7 +5443,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "59 VA",
@@ -5065,7 +5456,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "60 VA",
@@ -5077,7 +5469,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "63 VA",
@@ -5089,7 +5482,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "4 VA HA",
@@ -5101,7 +5495,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Art Res-2",
@@ -5113,7 +5508,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Art Res-3",
@@ -5125,7 +5521,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "5 VA",
@@ -5137,7 +5534,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "10 VA",
@@ -5149,7 +5547,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "13 VA",
@@ -5161,7 +5560,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Gregg",
@@ -5173,7 +5573,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "JR Anderson",
@@ -5185,7 +5586,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Branch",
@@ -5197,7 +5599,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Ripley",
@@ -5209,7 +5612,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Martin",
@@ -5221,7 +5625,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Lawton",
@@ -5233,7 +5638,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Drayton",
@@ -5245,7 +5651,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Evans",
@@ -5257,7 +5664,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "DeSaussure",
@@ -5269,7 +5677,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "40VA",
@@ -5281,7 +5690,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "9VA",
@@ -5293,7 +5703,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Holmes",
@@ -5305,7 +5716,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Ransom",
@@ -5317,7 +5729,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "1 NC",
@@ -5329,7 +5742,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Winder",
@@ -5341,7 +5755,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Ewell",
@@ -5353,7 +5768,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "2 VA",
@@ -5365,7 +5781,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Ward",
@@ -5379,7 +5796,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Siege",
@@ -5393,7 +5811,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Crump",
@@ -5407,7 +5826,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Pryor",
@@ -5421,7 +5841,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "10 GA",
@@ -5435,7 +5856,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Wilcox-A",
@@ -5447,7 +5869,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Colston",
@@ -5459,7 +5882,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "McLaws-B",
@@ -5471,7 +5895,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Cobb-A",
@@ -5483,7 +5908,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Rains-B",
@@ -5495,7 +5921,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "3 VA",
@@ -5507,7 +5934,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Rodes-A",
@@ -5519,7 +5947,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Early-B",
@@ -5531,7 +5960,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Featherston",
@@ -5543,7 +5973,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Grifffith",
@@ -5555,7 +5986,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Richmond-1",
@@ -5569,7 +6001,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Richmond-2",
@@ -5583,7 +6016,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Richmond-3",
@@ -5597,7 +6031,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Richmond-4",
@@ -5611,7 +6046,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Wise-B",
@@ -5623,7 +6059,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Art Res-1",
@@ -5635,7 +6072,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Toombs",
@@ -5647,7 +6085,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "7 VA",
@@ -5661,7 +6100,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Walker",
@@ -5673,7 +6113,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "DR Jones-A",
@@ -5685,7 +6126,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Kershaw",
@@ -5697,7 +6139,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Whiting-A",
@@ -5709,7 +6152,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Hood",
@@ -5721,7 +6165,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "3 VA",
@@ -5735,7 +6180,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Ward",
@@ -5749,7 +6195,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Siege",
@@ -5763,7 +6210,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Crump",
@@ -5777,7 +6225,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "10 GA",
@@ -5791,7 +6240,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Wilcox-A",
@@ -5803,7 +6253,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Colston",
@@ -5815,7 +6266,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "McLaws-B",
@@ -5827,7 +6279,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Cobb-A",
@@ -5839,7 +6292,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "3 VA",
@@ -5851,7 +6305,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Rains-B",
@@ -5863,7 +6318,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Pryor",
@@ -5875,7 +6331,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Rodes-A",
@@ -5887,7 +6344,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Early-B",
@@ -5899,7 +6357,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Featherston",
@@ -5911,7 +6370,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Grifffith",
@@ -5923,7 +6383,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Richmond-1",
@@ -5937,7 +6398,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Richmond-2",
@@ -5951,7 +6413,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Richmond-3",
@@ -5965,7 +6428,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Richmond-4",
@@ -5979,7 +6443,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Wise-B",
@@ -5991,7 +6456,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Art Res-1",
@@ -6003,7 +6469,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Toombs",
@@ -6015,7 +6482,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "7 VA",
@@ -6029,7 +6497,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Walker",
@@ -6041,7 +6510,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "DR Jones-A",
@@ -6053,7 +6523,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Kershaw",
@@ -6065,7 +6536,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Whiting-A",
@@ -6077,7 +6549,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Hood",
@@ -6089,7 +6562,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "3 VA",
@@ -6103,7 +6577,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Ward",
@@ -6117,7 +6592,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Siege",
@@ -6131,7 +6607,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Crump",
@@ -6145,7 +6622,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "10 GA",
@@ -6159,7 +6637,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Wilcox-A",
@@ -6171,7 +6650,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Colston",
@@ -6183,7 +6663,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "McLaws-B",
@@ -6195,7 +6676,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Cobb-A",
@@ -6207,7 +6689,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "3 VA",
@@ -6219,7 +6702,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Rains-B",
@@ -6231,7 +6715,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Pryor",
@@ -6243,7 +6728,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Rodes-A",
@@ -6255,7 +6741,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Early-B",
@@ -6267,7 +6754,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Featherston",
@@ -6279,7 +6767,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Grifffith",
@@ -6291,7 +6780,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Richmond-1",
@@ -6305,7 +6795,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Richmond-2",
@@ -6319,7 +6810,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Richmond-3",
@@ -6333,7 +6825,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Richmond-4",
@@ -6347,7 +6840,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Wise-B",
@@ -6359,7 +6853,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Art Res-1",
@@ -6371,7 +6866,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Toombs",
@@ -6383,7 +6879,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "7 VA",
@@ -6397,7 +6894,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Walker",
@@ -6409,7 +6907,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "DR Jones-A",
@@ -6421,7 +6920,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Kershaw",
@@ -6433,7 +6933,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Whiting-A",
@@ -6445,7 +6946,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Hood",
@@ -6457,7 +6959,8 @@
         "side": "Confederate",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "3 VA",
@@ -6471,7 +6974,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Confederate Set-Up #4 (Tappahannock)"
       }
     ],
     "union_units": [
@@ -6485,7 +6989,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Keyes",
@@ -6497,7 +7002,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "McClellan",
@@ -6509,7 +7015,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Sumner",
@@ -6521,7 +7028,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "McDowell",
@@ -6533,7 +7041,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Burnside",
@@ -6545,7 +7054,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Heintzelman",
@@ -6557,7 +7067,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Keyes",
@@ -6569,7 +7080,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Heintzelman",
@@ -6581,7 +7093,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Keyes",
@@ -6593,7 +7106,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Heintzelman",
@@ -6605,7 +7119,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Keyes",
@@ -6617,7 +7132,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Porter",
@@ -6629,7 +7145,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Kearny",
@@ -6641,7 +7158,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Sedgwick",
@@ -6653,7 +7171,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Smith-A",
@@ -6665,7 +7184,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "5/6 US",
@@ -6677,7 +7197,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Couch",
@@ -6689,7 +7210,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "6 PA",
@@ -6701,7 +7223,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "3/8 PA",
@@ -6713,7 +7236,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Sykes-A",
@@ -6725,7 +7249,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Art Res-1",
@@ -6737,7 +7262,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Art Res-2",
@@ -6749,7 +7275,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Horse Art",
@@ -6761,7 +7288,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Richardson",
@@ -6773,7 +7301,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Hooker",
@@ -6785,7 +7314,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Casey",
@@ -6797,7 +7327,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Franklin",
@@ -6809,7 +7340,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "McCall-A",
@@ -6821,7 +7353,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "King",
@@ -6833,7 +7366,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Ord",
@@ -6845,7 +7379,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Shields",
@@ -6857,7 +7392,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Doubleday",
@@ -6869,7 +7405,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Carroll-B",
@@ -6881,7 +7418,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "2 NY",
@@ -6893,7 +7431,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "4 PA",
@@ -6905,7 +7444,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "1 RI",
@@ -6917,7 +7457,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Viele",
@@ -6929,7 +7470,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Weber",
@@ -6941,7 +7483,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Robinson",
@@ -6953,7 +7496,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "11 PA",
@@ -6965,7 +7509,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Gunboat-1",
@@ -6977,7 +7522,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Gunboat-2",
@@ -6989,7 +7535,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "1 NY",
@@ -7001,7 +7548,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "8 IL",
@@ -7013,7 +7561,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "5 PA",
@@ -7025,7 +7574,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "1 NY Mrif",
@@ -7037,7 +7587,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "59/101 NY",
@@ -7049,7 +7600,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "3/4 NY",
@@ -7061,7 +7613,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "12/25 NY",
@@ -7073,7 +7626,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "7/69 NY",
@@ -7085,7 +7639,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "71/148 NY",
@@ -7097,7 +7652,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "99/115 PA",
@@ -7109,7 +7665,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "11/91 PA",
@@ -7121,7 +7678,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "67/87 PA",
@@ -7133,7 +7691,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "2DE/32MA",
@@ -7145,7 +7704,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "5MD/19WI",
@@ -7157,7 +7717,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Reno",
@@ -7169,7 +7730,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Parke",
@@ -7181,7 +7743,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Foster",
@@ -7193,7 +7756,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Stevens",
@@ -7205,7 +7769,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Wright",
@@ -7217,7 +7782,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #1 (Peninsula)"
       },
       {
         "unit_leader": "Porter",
@@ -7229,7 +7795,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Kearny",
@@ -7241,7 +7808,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Sedgwick",
@@ -7253,7 +7821,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Smith-A",
@@ -7265,7 +7834,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Couch",
@@ -7277,7 +7847,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "5/6 US",
@@ -7289,7 +7860,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "6 PA",
@@ -7303,7 +7875,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "3/8 PA",
@@ -7317,7 +7890,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Sykes-A",
@@ -7331,7 +7905,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Art Res-1",
@@ -7345,7 +7920,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Art Res-2",
@@ -7359,7 +7935,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Horse Art",
@@ -7373,7 +7950,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #2 (Mobjack Bay)"
       },
       {
         "unit_leader": "Porter",
@@ -7385,7 +7963,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Kearny",
@@ -7397,7 +7976,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Sedgwick",
@@ -7409,7 +7989,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Smith-A",
@@ -7421,7 +8002,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Couch",
@@ -7433,7 +8015,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "5/6 US",
@@ -7445,7 +8028,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "6 PA",
@@ -7459,7 +8043,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "3/8 PA",
@@ -7473,7 +8058,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Sykes-A",
@@ -7487,7 +8073,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Art Res-1",
@@ -7501,7 +8088,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Art Res-2",
@@ -7515,7 +8103,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Horse Art",
@@ -7529,7 +8118,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #3 (Urbana)"
       },
       {
         "unit_leader": "Porter",
@@ -7541,7 +8131,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Kearny",
@@ -7553,7 +8144,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Sedgwick",
@@ -7565,7 +8157,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Smith-A",
@@ -7577,7 +8170,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Couch",
@@ -7589,7 +8183,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "5/6 US",
@@ -7601,7 +8196,8 @@
         "side": "Union",
         "notes": [],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "6 PA",
@@ -7615,7 +8211,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "3/8 PA",
@@ -7629,7 +8226,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Sykes-A",
@@ -7643,7 +8241,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Art Res-1",
@@ -7657,7 +8256,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Art Res-2",
@@ -7671,7 +8271,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       },
       {
         "unit_leader": "Horse Art",
@@ -7685,7 +8286,8 @@
           "*"
         ],
         "turn": null,
-        "reinforcement_set": null
+        "reinforcement_set": null,
+        "table_name": "Union Set-Up #4 (Tappahannock)"
       }
     ],
     "confederate_footnotes": {
