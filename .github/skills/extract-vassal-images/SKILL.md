@@ -69,7 +69,7 @@ Only **leaders** have dedicated images. Brigade/division counters are composited
 - Confederate: `J-3-4.jpg` (Jackson's Wing), `CIII_3_4.jpg`
 - OTR2-style: `USA_I_24.jpg`, `CSA_M_20.jpg`
 
-**Extraction**: Use a game-specific generator (e.g., `generate_hcr_counters.py`, `generate_otr2_counters.py`, `generate_gtc2_counters.py`) which:
+**Extraction**: Use the unified generator `generate_counters.py` with the appropriate game_id:
 
 1. Parses buildFile.xml for unit→background mappings
 2. Loads parsed game data for actual unit names
@@ -136,20 +136,20 @@ uv run python extract_images.py GAME /path/to/GAME.vmod
 
 **For TEMPLATE_COMPOSITE games:**
 
-Use or create a game-specific generator. Existing generators:
+Use the unified generator with the appropriate game_id:
 
 ```bash
 # HCR
-cd parser && uv run python generate_hcr_counters.py /path/to/HCR.vmod
+cd parser && uv run python generate_counters.py --game hcr /path/to/HCR.vmod
 
 # OTR2
-cd parser && uv run python generate_otr2_counters.py /path/to/OTR2.vmod
+cd parser && uv run python generate_counters.py --game otr2 /path/to/OTR2.vmod
 
 # GTC2
-cd parser && uv run python generate_gtc2_counters.py /path/to/GTC2.vmod
+cd parser && uv run python generate_counters.py --game gtc2 /path/to/GTC2.vmod
 ```
 
-For new games, copy an existing generator and adapt the name matching logic.
+For new games, add game-specific configuration to `generate_counters.py`.
 
 ## Name Matching Challenges
 
@@ -201,7 +201,7 @@ Location: `web/public/images/counters/{game}/`
 
 1. **Detect the counter system** using `detect_counter_type.py`
 2. **For INDIVIDUAL**: Add game patterns to `extract_images.py`
-3. **For TEMPLATE_COMPOSITE**: Create a game-specific generator or adapt an existing one (e.g., `generate_hcr_counters.py`, `generate_otr2_counters.py`)
+3. **For TEMPLATE_COMPOSITE**: Add game-specific configuration to `generate_counters.py`
 4. **Run the extractor**
 5. **Check unmatched units** and add name normalization as needed
 6. **Update `imageMap.ts`** if not auto-generated
@@ -232,8 +232,6 @@ Check the Pillow font loading - the script uses system fonts with fallback to de
 
 - `parser/detect_counter_type.py` - Automatic counter type detection
 - `parser/extract_images.py` - INDIVIDUAL (RTG2-style) extractor
-- `parser/generate_hcr_counters.py` - HCR composite generator
-- `parser/generate_otr2_counters.py` - OTR2 composite generator
-- `parser/generate_gtc2_counters.py` - GTC2 composite generator
+- `parser/generate_counters.py` - Unified TEMPLATE_COMPOSITE generator (HCR, OTR2, GTC2)
 - `parser/image_mappings/*.json` - Generated mappings
 - `web/src/data/imageMap.ts` - TypeScript image map
