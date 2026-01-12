@@ -24,7 +24,7 @@ VALID_TYPES = ['Ldr', 'Inf', 'Cav', 'Art']
 PAGE_RANGES = {
     "hcr": (1, 44),    # Here Come the Rebels! scenarios
     "rtg2": (45, 95),  # Roads to Gettysburg 2 scenarios
-    "rtw": (96, 116),  # RTW scenarios 1-4 (scenario 5 starts on 117)
+    "rwh": (96, 116),  # RWH scenarios 1-4 (scenario 5 starts on 117)
 }
 
 
@@ -206,7 +206,7 @@ def diagnose_pdf(pdf_path: str, game_id: str | None = None, specific_page: int |
 def main():
     if len(sys.argv) < 2:
         print("Usage: uv run python diagnose_pdf.py <pdf_path> [game_id] [page_number]")
-        print("  game_id: optional, uses PAGE_RANGES config if available (hcr, rtg2, rtw, etc.)")
+        print("  game_id: optional, uses PAGE_RANGES config if available (hcr, rtg2, rwh, etc.)")
         print("  page_number: optional, 1-indexed page to analyze (overrides game_id range)")
         sys.exit(1)
     

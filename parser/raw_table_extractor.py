@@ -75,7 +75,7 @@ class RawTableExtractor:
     PAGE_RANGES = {
         "hcr": (1, 44),
         "rtg2": (45, 95),
-        "rtw": (96, 116),
+        "rwh": (96, 116),
     }
     
     # Known scenario names by game (from scenario_parser.py)
@@ -138,7 +138,7 @@ class RawTableExtractor:
             9: "The Battle that Never Happened",
             10: "The Gettysburg Campaign",
         },
-        "rtw": {
+        "rwh": {
             1: "Monocacy",
             2: "Fort Stevens",
             3: "The Retreat From Washington",

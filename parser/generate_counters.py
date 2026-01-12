@@ -575,6 +575,71 @@ HSN_CONFIG = GameConfig(
     extract_mappings_fn=hsn_extract_unit_mappings,
 )
 
+# -----------------------------------------------------------------------------
+# RWH (Rebels in the White House) Configuration  
+# -----------------------------------------------------------------------------
+
+def rwh_extract_unit_mappings(buildfile_path: Path) -> dict:
+    """Extract unit->background mappings from RWH buildFile.xml."""
+    with open(buildfile_path) as f:
+        content = f.read()
+    
+    mappings = {
+        "Union": {},
+        "Confederate": {},
+        "Leaders": {"Union": {}, "Confederate": {}}
+    }
+    
+    slot_pattern = r'<VASSAL\.build\.widget\.PieceSlot\s+entryName="([^"]+)"[^>]*>([^<]*)</VASSAL\.build\.widget\.PieceSlot>'
+    
+    for match in re.finditer(slot_pattern, content, re.DOTALL):
+        entry_name = match.group(1)
+        slot_content = match.group(2)
+        
+        image_match = re.search(r'piece;;;([^;]+\.jpg);[^/]+/', slot_content, re.IGNORECASE)
+        if not image_match:
+            continue
+        image_file = image_match.group(1)
+        
+        # Skip markers and non-unit items
+        if any(skip in entry_name.lower() for skip in ['vp', 'wagon', 'control', 'track', 
+                'paralysis', 'game-turn', 'cycle', 'supply', 'event', 'posture', 'mov', 'ope']):
+            continue
+        
+        # Determine if it's a leader based on image filename
+        if image_file.startswith('USA-') and len(image_file.split('-')) == 2:
+            # USA-Name.jpg pattern indicates a leader
+            leader_name = image_file.replace('USA-', '').replace('.jpg', '')
+            if leader_name[0].isupper() and leader_name not in ['USA', 'CSA']:
+                mappings["Leaders"]["Union"][entry_name] = image_file
+                continue
+        elif image_file.startswith('CSA-') and len(image_file.split('-')) == 2:
+            leader_name = image_file.replace('CSA-', '').replace('.jpg', '')
+            if leader_name[0].isupper() and leader_name not in ['USA', 'CSA']:
+                mappings["Leaders"]["Confederate"][entry_name] = image_file
+                continue
+        
+        # Units have image patterns like USA-xix-10.jpg, USA-ap00.jpg, CSA-b-10.jpg
+        if image_file.startswith('USA-'):
+            mappings["Union"][entry_name] = {
+                "image": image_file,
+                "type": "Unit"
+            }
+        elif image_file.startswith('CSA-'):
+            mappings["Confederate"][entry_name] = {
+                "image": image_file,
+                "type": "Unit"
+            }
+    
+    return mappings
+
+
+RWH_CONFIG = GameConfig(
+    game_id='rwh',
+    name_variants_fn=base_get_name_variants,
+    extract_mappings_fn=rwh_extract_unit_mappings,
+)
+
 
 # -----------------------------------------------------------------------------
 # Game registry
@@ -585,6 +650,7 @@ GAME_CONFIGS: dict[str, GameConfig] = {
     'hcr': HCR_CONFIG,
     'otr2': OTR2_CONFIG,
     'hsn': HSN_CONFIG,
+    'rwh': RWH_CONFIG,
 }
 
 

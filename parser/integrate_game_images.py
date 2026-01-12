@@ -12,7 +12,7 @@ Usage:
 
 Examples:
     uv run python integrate_game_images.py hsn
-    uv run python integrate_game_images.py rtw --dry-run
+    uv run python integrate_game_images.py rwh --dry-run
 """
 
 import argparse
@@ -111,7 +111,7 @@ def main():
     parser = argparse.ArgumentParser(
         description='Integrate extracted counter images into the web app'
     )
-    parser.add_argument('game_id', help='Game ID (e.g., hsn, rtw)')
+    parser.add_argument('game_id', help='Game ID (e.g., hsn, rwh)')
     parser.add_argument('--dry-run', '-n', action='store_true', 
                        help='Show what would be done without making changes')
     

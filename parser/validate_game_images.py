@@ -131,7 +131,7 @@ def main():
     parser = argparse.ArgumentParser(
         description='Validate counter image setup for a game'
     )
-    parser.add_argument('game_id', nargs='?', help='Game ID (e.g., hsn, rtw)')
+    parser.add_argument('game_id', nargs='?', help='Game ID (e.g., hsn, rwh)')
     parser.add_argument('--all', action='store_true', help='Validate all games')
     
     args = parser.parse_args()

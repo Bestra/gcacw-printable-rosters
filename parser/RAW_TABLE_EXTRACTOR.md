@@ -11,7 +11,7 @@
 | GTC2 | `raw/gtc2_raw_tables.json` | `parsed/gtc2_parsed.json` | `web/public/data/gtc2.json` | ✅ Live |
 | HCR  | `raw/hcr_raw_tables.json`  | `parsed/hcr_parsed.json`  | `web/public/data/hcr.json`  | ✅ Live |
 | HSN  | `raw/hsn_raw_tables.json`  | `parsed/hsn_parsed.json`  | `web/public/data/hsn.json`  | ✅ Live |
-| RTW  | `raw/rtw_raw_tables.json`  | `parsed/rtw_parsed.json`  | `web/public/data/rtw.json`  | ✅ Live |
+| RWH  | `raw/rwh_raw_tables.json`  | `parsed/rwh_parsed.json`  | `web/public/data/rwh.json`  | ✅ Live |
 
 ---
 
@@ -196,7 +196,7 @@ Each scenario contains:
 | 8   | That Devil Forrest          | ✅     | 10 CSA rows, 11 Union rows |
 | 9   | Hood Strikes North          | ✅     | 32 CSA rows, 49 Union rows |
 
-### RTW (Rally 'Round the Flag) - 4 scenarios
+### RWH (Rebels in the White House) - 4 scenarios
 
 | #   | Scenario                      | Status | Notes                      |
 | --- | ----------------------------- | ------ | -------------------------- |

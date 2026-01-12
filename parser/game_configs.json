@@ -105,7 +105,7 @@
         },
         "_note": "HSN headers vary - some have 'Set' column, parser should detect from header_row"
     },
-    "rtw": {
+    "rwh": {
         "name": "Rally Round the Flag",
         "table_patterns": {}
     }

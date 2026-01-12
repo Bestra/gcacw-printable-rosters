@@ -416,7 +416,7 @@ def main():
     import os
     os.makedirs("parsed", exist_ok=True)
     
-    games = ["otr2", "rtg2", "gtc2", "hcr", "hsn", "rtw"] if sys.argv[1] == "--all" else [sys.argv[1]]
+    games = ["otr2", "rtg2", "gtc2", "hcr", "hsn", "rwh"] if sys.argv[1] == "--all" else [sys.argv[1]]
     
     for game_id in games:
         input_file = f"raw/{game_id}_raw_tables.json"

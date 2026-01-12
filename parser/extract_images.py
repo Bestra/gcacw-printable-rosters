@@ -49,7 +49,7 @@ class GameExtractor:
 
 
 class RTG2Extractor(GameExtractor):
-    """Extractor for RTG2 and similar games (OTR2, GTC2, HSN, RTW) using C_/U_ prefix convention."""
+    """Extractor for RTG2 and similar games (OTR2, GTC2, HSN, RWH) using C_/U_ prefix convention."""
     
     def normalize_unit_name(self, name: str) -> str:
         """
@@ -364,7 +364,7 @@ def find_images_directory(source: Path, game: str) -> Path:
             'gtc2': ['GTCII', 'GTC2', 'GtC'],
             'hcr': ['HCR', 'HctR'],
             'hsn': ['HSN'],
-            'rtw': ['RTW', 'RitWH'],
+            'rwh': ['RWH', 'RitWH'],
         }
         
         patterns = game_patterns.get(game.lower(), [game.upper()])

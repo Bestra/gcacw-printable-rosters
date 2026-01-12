@@ -15,7 +15,7 @@
 SHELL := /bin/bash
 
 # All games
-ALL_GAMES := gtc2 hcr hsn otr2 rtg2 rtw
+ALL_GAMES := gtc2 hcr hsn otr2 rtg2 rwh
 
 # Directories
 PARSER_DIR := parser
@@ -141,7 +141,7 @@ help:
 	@echo "  make hsn          - Build Hood Strikes North"
 	@echo "  make otr2         - Build On To Richmond"
 	@echo "  make rtg2         - Build Roads to Gettysburg 2"
-	@echo "  make rtw          - Build Rebels in the White House"
+	@echo "  make rwh          - Build Rebels in the White House"
 	@echo ""
 	@echo "Rebuild targets:"
 	@echo "  make reparse-GAME - Force reparse (e.g., make reparse-otr2)"
