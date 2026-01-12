@@ -95,7 +95,11 @@ reparse-%:
 .PHONY: extract-%
 extract-%:
 	@echo "Extracting raw tables for $*..."
-	$(PYTHON) raw_table_extractor.py ../data/$$(echo $* | tr '[:lower:]' '[:upper:]')_Rules.pdf $*
+	@if [ "$*" = "tom" ]; then \
+		$(PYTHON) raw_table_extractor.py ../data/TOTM_Rules.pdf $*; \
+	else \
+		$(PYTHON) raw_table_extractor.py ../data/$$(echo $* | tr '[:lower:]' '[:upper:]')_Rules.pdf $*; \
+	fi
 
 # =============================================================================
 # Clean targets

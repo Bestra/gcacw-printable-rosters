@@ -7,6 +7,7 @@
       "name": "The Battle of Port Gibson",
       "confederateFootnotes": {
         "*": "Begins game on exhausted side.",
+        "%": "Begins game on exhausted side with disorganized Strength marker. Historical Note: Manpower includes 46th Alabama.",
         "#": "Begins game at Fatigue Level 1 on normal side. Also, is not released at start (see Special Rule 3)."
       },
       "unionFootnotes": {
@@ -76,7 +77,9 @@
           "type": "Inf",
           "manpowerValue": "5%",
           "hexLocation": "W5121",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -3667,6 +3670,7 @@
         "+": "Units may not activate on Turns 1 through 10 and may never be released early. Exception: If a Union infantry unit enters Warren County, these units are",
         "#": "Units may not activate on Turns 1 and 2 and may never be released early.",
         "^": "Reynolds may not activate on Turn 1, may never be released early, and starts Turn 2 at Fatigue Level 1 on its normal side.",
+        "%": "Units and leader may not activate or transfer until Turn 5 and may never be released early.",
         "$": "Units begin the game under Fort-Complete markers."
       },
       "unionFootnotes": {
@@ -3680,7 +3684,9 @@
           "type": "Ldr",
           "manpowerValue": "-%",
           "hexLocation": "W2404 (Big Black Bridge)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
         },
         {
@@ -3770,7 +3776,9 @@
           "type": "Inf",
           "manpowerValue": "1%",
           "hexLocation": "E2712 (Jackson)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
         },
         {
@@ -3780,7 +3788,9 @@
           "type": "Cav",
           "manpowerValue": "1%",
           "hexLocation": "E2712 (Jackson)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
         },
         {
@@ -3790,7 +3800,9 @@
           "type": "Inf",
           "manpowerValue": "1%",
           "hexLocation": "W2404 (Big Black Bridge)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
         },
         {

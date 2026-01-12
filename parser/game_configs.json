@@ -45,7 +45,8 @@
             "+",
             "•",
             "#",
-            "&"
+            "&",
+            "%"
         ],
         "special_unit_patterns": [
             "^Gunboat",

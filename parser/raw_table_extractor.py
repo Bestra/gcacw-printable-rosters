@@ -52,9 +52,6 @@ class RawScenarioTables:
 class RawTableExtractor:
     """Extracts raw tables from GCACW scenario PDFs."""
     
-    # Known footnote symbols
-    KNOWN_FOOTNOTE_SYMBOLS = {'*', '^', '†', '‡', '§', '$', '+', '#', '&'}
-    
     # Table header patterns - matches table section names
     # These patterns should match ONLY lines that are clearly table headers,
     # not lines that happen to contain these phrases in rules text.
@@ -169,6 +166,15 @@ class RawTableExtractor:
         self.game_id = game_id
         self.scenarios: list[RawScenarioTables] = []
         self.unknown_symbols: set[str] = set()  # Track symbols we don't recognize
+        
+        # Load footnote symbols from game_configs.json
+        config_path = os.path.join(os.path.dirname(__file__), 'game_configs.json')
+        with open(config_path) as f:
+            config = json.load(f)
+            self.known_footnote_symbols = set(config['defaults']['footnote_symbols'])
+            # Build regex character class from symbols (escape special regex chars)
+            escaped_symbols = [re.escape(s) for s in self.known_footnote_symbols]
+            self.footnote_regex = re.compile(r'^([' + ''.join(escaped_symbols) + r']+)\s+(.+)$')
         
         # Use provided page range, or look up from PAGE_RANGES, or use entire PDF
         if start_page is not None:
@@ -338,7 +344,7 @@ class RawTableExtractor:
                     continue
                 
                 # Check for footnotes
-                footnote_match = re.match(r'^([\*\^†‡§\$\+#&]+)\s+(.+)$', line_stripped)
+                footnote_match = self.footnote_regex.match(line_stripped)
                 if footnote_match:
                     symbol = footnote_match.group(1)
                     explanation = footnote_match.group(2)
@@ -346,7 +352,7 @@ class RawTableExtractor:
                         current_table.annotations[symbol] = explanation
                         # Check for unknown symbols
                         for char in symbol:
-                            if char not in self.KNOWN_FOOTNOTE_SYMBOLS:
+                            if char not in self.known_footnote_symbols:
                                 self.unknown_symbols.add(char)
                     continue
                 
@@ -608,8 +614,8 @@ def main():
     # Report any unknown footnote symbols
     if extractor.unknown_symbols:
         print(f"\n⚠️  WARNING: Found unknown footnote symbols: {sorted(extractor.unknown_symbols)}")
-        print("   These symbols are not in KNOWN_FOOTNOTE_SYMBOLS and may not be parsed correctly.")
-        print("   Consider adding them to the KNOWN_FOOTNOTE_SYMBOLS set.")
+        print("   These symbols are not in game_configs.json footnote_symbols and may not be parsed correctly.")
+        print("   Consider adding them to the defaults.footnote_symbols array.")
 
 
 if __name__ == "__main__":

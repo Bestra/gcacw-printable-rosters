@@ -83,7 +83,9 @@
         "manpower_value": "5%",
         "hex_location": "W5121",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -205,6 +207,7 @@
     ],
     "confederate_footnotes": {
       "*": "Begins game on exhausted side.",
+      "%": "Begins game on exhausted side with disorganized Strength marker. Historical Note: Manpower includes 46th Alabama.",
       "#": "Begins game at Fatigue Level 1 on normal side. Also, is not released at start (see Special Rule 3)."
     },
     "union_footnotes": {
@@ -4695,7 +4698,9 @@
         "manpower_value": "-%",
         "hex_location": "W2404 (Big Black Bridge)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
@@ -4809,7 +4814,9 @@
         "manpower_value": "1%",
         "hex_location": "E2712 (Jackson)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
@@ -4822,7 +4829,9 @@
         "manpower_value": "1%",
         "hex_location": "E2712 (Jackson)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
@@ -4835,7 +4844,9 @@
         "manpower_value": "1%",
         "hex_location": "W2404 (Big Black Bridge)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
@@ -5823,6 +5834,7 @@
       "+": "Units may not activate on Turns 1 through 10 and may never be released early. Exception: If a Union infantry unit enters Warren County, these units are",
       "#": "Units may not activate on Turns 1 and 2 and may never be released early.",
       "^": "Reynolds may not activate on Turn 1, may never be released early, and starts Turn 2 at Fatigue Level 1 on its normal side.",
+      "%": "Units and leader may not activate or transfer until Turn 5 and may never be released early.",
       "$": "Units begin the game under Fort-Complete markers."
     },
     "union_footnotes": {
