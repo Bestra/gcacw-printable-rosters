@@ -95,7 +95,8 @@
           ]
         ],
         "annotations": {
-          "*": "Begins game on exhausted side."
+          "*": "Begins game on exhausted side.",
+          "#": "Begins game at Fatigue Level 1 on normal side. Also, is not released at start (see Special Rule 3)."
         }
       }
     ],
@@ -433,6 +434,7 @@
           ]
         ],
         "annotations": {
+          "#": "Begins game at Fatigue Level 1 on normal side.",
           "^": "Reinforcements on Turn 2; see Special Rule 6."
         }
       }
@@ -1337,6 +1339,7 @@
           ]
         ],
         "annotations": {
+          "#": "Units may not activate (but may entrench) unless a Union unit moves adjacent, at which point that specific unit is immediately released from this restriction.",
           "*": "On Turn 1, units may neither activate nor entrench unless a unless a Union unit moves adjacent, at which point that specific unit is immediately released"
         }
       }
@@ -2874,7 +2877,9 @@
           ]
         ],
         "annotations": {
-          "*": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers."
+          "*": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers.",
+          "#": "Ewing may not activate until Turn 2.",
+          "&": "Units begin game at Fatigue Level 1 on their normal sides."
         }
       }
     ]
@@ -4272,6 +4277,7 @@
         "annotations": {
           "*": "Units may not activate on Turn 1, but may be released early (see Special Rule 3).",
           "+": "Units may not activate on Turns 1 through 10 and may never be released early. Exception: If a Union infantry unit enters Warren County, these units are",
+          "#": "Units may not activate on Turns 1 and 2 and may never be released early.",
           "^": "Reynolds may not activate on Turn 1, may never be released early, and starts Turn 2 at Fatigue Level 1 on its normal side.",
           "$": "Units begin the game under Fort-Complete markers."
         }
@@ -4727,7 +4733,9 @@
             "3.0)"
           ]
         ],
-        "annotations": {}
+        "annotations": {
+          "#": "Units begin the game at Fatigue Level 1 on their normal sides."
+        }
       }
     ]
   }

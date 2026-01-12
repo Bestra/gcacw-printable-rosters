@@ -334,7 +334,7 @@ class RawTableExtractor:
                     continue
                 
                 # Check for footnotes
-                footnote_match = re.match(r'^([\*\^†‡§\$\+]+)\s+(.+)$', line_stripped)
+                footnote_match = re.match(r'^([\*\^†‡§\$\+#&]+)\s+(.+)$', line_stripped)
                 if footnote_match:
                     symbol = footnote_match.group(1)
                     explanation = footnote_match.group(2)

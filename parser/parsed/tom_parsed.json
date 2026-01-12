@@ -25,7 +25,9 @@
         "manpower_value": "1#",
         "hex_location": "W4320 (Thompson\u2019s Bluff)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -66,7 +68,9 @@
         "manpower_value": "1#",
         "hex_location": "W4923 (Coon Island Lake)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -200,7 +204,8 @@
       }
     ],
     "confederate_footnotes": {
-      "*": "Begins game on exhausted side."
+      "*": "Begins game on exhausted side.",
+      "#": "Begins game at Fatigue Level 1 on normal side. Also, is not released at start (see Special Rule 3)."
     },
     "union_footnotes": {
       "*": "Begins game on exhausted side."
@@ -423,7 +428,9 @@
         "manpower_value": "8#",
         "hex_location": "W5228 (Bruinsburg)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -436,7 +443,9 @@
         "manpower_value": "8#",
         "hex_location": "W5228 (Bruinsburg)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -449,7 +458,9 @@
         "manpower_value": "10#",
         "hex_location": "W5228 (Bruinsburg)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -462,7 +473,9 @@
         "manpower_value": "8#",
         "hex_location": "W5228 (Bruinsburg)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -517,6 +530,7 @@
       "$": "Begins game under Fort-Complete marker."
     },
     "union_footnotes": {
+      "#": "Begins game at Fatigue Level 1 on normal side.",
       "^": "Reinforcements on Turn 2; see Special Rule 6."
     },
     "notes": "",
@@ -1426,7 +1440,9 @@
         "manpower_value": "3#",
         "hex_location": "W2404 (Big Black Bridge)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -1662,7 +1678,9 @@
         "manpower_value": "1#",
         "hex_location": "E2712 (Jackson)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -1922,6 +1940,7 @@
       }
     ],
     "confederate_footnotes": {
+      "#": "Units may not activate (but may entrench) unless a Union unit moves adjacent, at which point that specific unit is immediately released from this restriction.",
       "*": "On Turn 1, units may neither activate nor entrench unless a unless a Union unit moves adjacent, at which point that specific unit is immediately released"
     },
     "union_footnotes": {
@@ -3539,7 +3558,9 @@
         "manpower_value": "3#",
         "hex_location": "E2730 (Coker)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -3595,7 +3616,9 @@
         "manpower_value": "7&",
         "hex_location": "W2504 (Smith)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "&"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -3608,7 +3631,9 @@
         "manpower_value": "7&",
         "hex_location": "W2504 (Smith)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "&"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -3636,7 +3661,9 @@
         "manpower_value": "8&",
         "hex_location": "W2503",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "&"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -3648,7 +3675,9 @@
       "^": "Units begin the game at Fatigue Level 0 on their exhausted sides with disorganized Strength markers."
     },
     "union_footnotes": {
-      "*": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers."
+      "*": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers.",
+      "#": "Ewing may not activate until Turn 2.",
+      "&": "Units begin game at Fatigue Level 1 on their normal sides."
     },
     "notes": "",
     "map_info": "",
@@ -4724,7 +4753,9 @@
         "manpower_value": "-#",
         "hex_location": "W2414 (Vicksburg)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
@@ -4896,7 +4927,9 @@
         "manpower_value": "5#",
         "hex_location": "W2414 (Vicksburg)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
@@ -4909,7 +4942,9 @@
         "manpower_value": "5#",
         "hex_location": "W2515 (Marine Hospital)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
@@ -5392,7 +5427,9 @@
         "manpower_value": "8#",
         "hex_location": "W5228 (Bruinsburg)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -5405,7 +5442,9 @@
         "manpower_value": "8#",
         "hex_location": "W5228 (Bruinsburg)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -5418,7 +5457,9 @@
         "manpower_value": "10#",
         "hex_location": "W5228 (Bruinsburg)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -5431,7 +5472,9 @@
         "manpower_value": "8#",
         "hex_location": "W5228 (Bruinsburg)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -5778,10 +5821,13 @@
     "confederate_footnotes": {
       "*": "Units may not activate on Turn 1, but may be released early (see Special Rule 3).",
       "+": "Units may not activate on Turns 1 through 10 and may never be released early. Exception: If a Union infantry unit enters Warren County, these units are",
+      "#": "Units may not activate on Turns 1 and 2 and may never be released early.",
       "^": "Reynolds may not activate on Turn 1, may never be released early, and starts Turn 2 at Fatigue Level 1 on its normal side.",
       "$": "Units begin the game under Fort-Complete markers."
     },
-    "union_footnotes": {},
+    "union_footnotes": {
+      "#": "Units begin the game at Fatigue Level 1 on their normal sides."
+    },
     "notes": "",
     "map_info": "",
     "game_length": "",

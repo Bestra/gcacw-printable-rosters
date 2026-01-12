@@ -6,7 +6,8 @@
       "number": 1,
       "name": "The Battle of Port Gibson",
       "confederateFootnotes": {
-        "*": "Begins game on exhausted side."
+        "*": "Begins game on exhausted side.",
+        "#": "Begins game at Fatigue Level 1 on normal side. Also, is not released at start (see Special Rule 3)."
       },
       "unionFootnotes": {
         "*": "Begins game on exhausted side."
@@ -29,7 +30,9 @@
           "type": "Inf",
           "manpowerValue": "1#",
           "hexLocation": "W4320 (Thompson\u2019s Bluff)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -61,7 +64,9 @@
           "type": "Inf",
           "manpowerValue": "1#",
           "hexLocation": "W4923 (Coon Island Lake)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -177,6 +182,7 @@
         "$": "Begins game under Fort-Complete marker."
       },
       "unionFootnotes": {
+        "#": "Begins game at Fatigue Level 1 on normal side.",
         "^": "Reinforcements on Turn 2; see Special Rule 6."
       },
       "confederateUnits": [
@@ -345,7 +351,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "W5228 (Bruinsburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -355,7 +363,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "W5228 (Bruinsburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -365,7 +375,9 @@
           "type": "Inf",
           "manpowerValue": "10#",
           "hexLocation": "W5228 (Bruinsburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -375,7 +387,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "W5228 (Bruinsburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1058,6 +1072,7 @@
       "number": 5,
       "name": "Loring's Memorandum",
       "confederateFootnotes": {
+        "#": "Units may not activate (but may entrench) unless a Union unit moves adjacent, at which point that specific unit is immediately released from this restriction.",
         "*": "On Turn 1, units may neither activate nor entrench unless a unless a Union unit moves adjacent, at which point that specific unit is immediately released"
       },
       "unionFootnotes": {
@@ -1121,7 +1136,9 @@
           "type": "Inf",
           "manpowerValue": "3#",
           "hexLocation": "W2404 (Big Black Bridge)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -1303,7 +1320,9 @@
           "type": "Inf",
           "manpowerValue": "1#",
           "hexLocation": "E2712 (Jackson)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -2510,7 +2529,9 @@
         "^": "Units begin the game at Fatigue Level 0 on their exhausted sides with disorganized Strength markers."
       },
       "unionFootnotes": {
-        "*": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers."
+        "*": "Units begin game at Fatigue Level 1 on their exhausted sides with disorganized Strength markers.",
+        "#": "Ewing may not activate until Turn 2.",
+        "&": "Units begin game at Fatigue Level 1 on their normal sides."
       },
       "confederateUnits": [
         {
@@ -2774,7 +2795,9 @@
           "type": "Inf",
           "manpowerValue": "3#",
           "hexLocation": "E2730 (Coker)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -2818,7 +2841,9 @@
           "type": "Inf",
           "manpowerValue": "7&",
           "hexLocation": "W2504 (Smith)",
-          "notes": [],
+          "notes": [
+            "&"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -2828,7 +2853,9 @@
           "type": "Inf",
           "manpowerValue": "7&",
           "hexLocation": "W2504 (Smith)",
-          "notes": [],
+          "notes": [
+            "&"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -2850,7 +2877,9 @@
           "type": "Inf",
           "manpowerValue": "8&",
           "hexLocation": "W2503",
-          "notes": [],
+          "notes": [
+            "&"
+          ],
           "tableName": "Union Set-Up"
         }
       ],
@@ -3636,10 +3665,13 @@
       "confederateFootnotes": {
         "*": "Units may not activate on Turn 1, but may be released early (see Special Rule 3).",
         "+": "Units may not activate on Turns 1 through 10 and may never be released early. Exception: If a Union infantry unit enters Warren County, these units are",
+        "#": "Units may not activate on Turns 1 and 2 and may never be released early.",
         "^": "Reynolds may not activate on Turn 1, may never be released early, and starts Turn 2 at Fatigue Level 1 on its normal side.",
         "$": "Units begin the game under Fort-Complete markers."
       },
-      "unionFootnotes": {},
+      "unionFootnotes": {
+        "#": "Units begin the game at Fatigue Level 1 on their normal sides."
+      },
       "confederateUnits": [
         {
           "name": "Pemberton",
@@ -3694,7 +3726,9 @@
           "type": "Ldr",
           "manpowerValue": "-#",
           "hexLocation": "W2414 (Vicksburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
         },
         {
@@ -3830,7 +3864,9 @@
           "type": "Inf",
           "manpowerValue": "5#",
           "hexLocation": "W2414 (Vicksburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
         },
         {
@@ -3840,7 +3876,9 @@
           "type": "Inf",
           "manpowerValue": "5#",
           "hexLocation": "W2515 (Marine Hospital)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Confederate Set-Up Vicksburg As Seen From The Mississippi River"
         },
         {
@@ -4215,7 +4253,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "W5228 (Bruinsburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -4225,7 +4265,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "W5228 (Bruinsburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -4235,7 +4277,9 @@
           "type": "Inf",
           "manpowerValue": "10#",
           "hexLocation": "W5228 (Bruinsburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -4245,7 +4289,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "W5228 (Bruinsburg)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
