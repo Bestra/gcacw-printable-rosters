@@ -119,6 +119,32 @@ Quick summary:
 5. Add URL slug mapping in `web/src/utils/slugs.ts`
 6. Build: `make newgame`
 
+## Data Inspection Utilities
+
+Utility scripts for debugging and inspecting data at each pipeline stage:
+
+```bash
+# Inspect raw table data (from PDF extraction)
+cd parser && uv run python inspect_raw.py gtc2
+cd parser && uv run python inspect_raw.py gtc2 --scenario 1
+cd parser && uv run python inspect_raw.py gtc2 --scenario 1 --table "Confederate Set-Up"
+
+# Inspect parsed unit data (after parse_raw_tables.py)
+cd parser && uv run python inspect_parsed.py gtc2
+cd parser && uv run python inspect_parsed.py gtc2 --scenario 1
+cd parser && uv run python inspect_parsed.py gtc2 --scenario 1 --side Confederate
+cd parser && uv run python inspect_parsed.py gtc2 --scenario 1 --filter Longstreet
+
+# Compare raw vs parsed data (for debugging parsing issues)
+cd parser && uv run python compare_data.py gtc2 1
+cd parser && uv run python compare_data.py gtc2 1 --side Union
+cd parser && uv run python compare_data.py gtc2 1 --table "Union Set-Up" --row 5
+```
+
+All scripts support `--help` for full usage details.
+
+**Data structure documentation**: See the [data-structures skill](.github/skills/data-structures/SKILL.md) for detailed information about raw, parsed, and web JSON structures.
+
 ## Validation
 
 No automated tests. Validate changes by:
@@ -126,3 +152,4 @@ No automated tests. Validate changes by:
 1. `npm run build` in web/ (catches TypeScript errors)
 2. Visual inspection in browser
 3. Check parsed JSON output for parser changes
+4. Use `inspect_raw.py`, `inspect_parsed.py`, or `compare_data.py` to verify data
