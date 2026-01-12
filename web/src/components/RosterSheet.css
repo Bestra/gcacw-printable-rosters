@@ -224,10 +224,6 @@
 .leader-header .counter-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-}
-
-.roster-sheet.hierarchical .leader-header .counter-image {
   object-fit: cover;
   transform: scale(1.05);
 }
@@ -319,10 +315,6 @@
 .unit-row .counter-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-}
-
-.roster-sheet.hierarchical .unit-row .counter-image {
   object-fit: cover;
   transform: scale(1.05);
 }
