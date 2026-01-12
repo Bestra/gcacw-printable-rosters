@@ -8,16 +8,20 @@ Operational guide for working on this codebase.
 
 **CRITICAL: Avoid shell quoting issues with complex Python code:**
 
-- ✅ Create a temporary `.py` file and run it with `uv run python temp_script.py`
-- ✅ Use heredoc syntax for multi-line Python
+- ✅ Use `create_file` tool to create a `.py` file, then run it with `uv run python script.py`
+- ✅ `uv run python -c "print('hello')"` (simple one-liners only)
 - ❌ NEVER use `uv run python -c` with complex Python code containing nested quotes
+- ❌ NEVER use heredoc (`cat > file.py << 'EOF'`) - terminal buffering corrupts the output
+
+**Why heredocs fail:** Terminal output is captured in chunks and heredoc content gets garbled, duplicated, or truncated. Always use `create_file` tool instead.
 
 Examples:
 
-- ✅ `cd parser && uv run python script.py`
+- ✅ `create_file` tool → `uv run python script.py`
 - ✅ `uv run python -c "print('hello')"` (simple one-liners only)
-- ✅ Create temp script: `echo 'import json...' > temp.py && uv run python temp.py`
-- ❌ `python3 script.py`
+- ❌ `python3 script.py` (wrong Python)
+- ❌ `cat > temp.py << 'EOF'` (heredoc - will fail)
+- ❌ `echo 'import json...' > temp.py` (quoting nightmare)
 - ❌ `uv run python -c "import json; data['key']..."` (nested quotes will fail)
 
 ## Commands
