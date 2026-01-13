@@ -27,6 +27,9 @@ import { extractRawScenarioData, type ExtractedRawData } from "./extract-raw-jso
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Truncation limit for raw LLM output in error cases
+const MAX_RAW_OUTPUT_LENGTH = 2000;
+
 // ============================================================================
 // Types
 // ============================================================================
@@ -240,7 +243,7 @@ async function runLLMEvaluation(prompt: string): Promise<EvalResult> {
         extraUnits: [],
         summary: "Could not parse LLM response as JSON",
         error: true,
-        rawOutput: result.substring(0, 2000),
+        rawOutput: result.substring(0, MAX_RAW_OUTPUT_LENGTH),
       });
     } catch (err) {
       const error = err as Error;
@@ -256,7 +259,7 @@ async function runLLMEvaluation(prompt: string): Promise<EvalResult> {
       // Clean up temp file
       try {
         if (existsSync(tempPromptPath)) {
-          require("fs").unlinkSync(tempPromptPath);
+          unlinkSync(tempPromptPath);
         }
       } catch {
         // Ignore cleanup errors
