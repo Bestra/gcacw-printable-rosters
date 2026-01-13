@@ -139,6 +139,35 @@ test:
 	cd web && npm test
 
 # =============================================================================
+# LLM Evaluation
+# =============================================================================
+
+# Generate DOM snapshots for all games
+.PHONY: snapshots
+snapshots:
+	cd web && npm run snapshots
+
+# Generate snapshot for a single game: make snapshots-game GAME=gtc2
+.PHONY: snapshots-game
+snapshots-game:
+	cd web && SNAPSHOT_GAME=$(GAME) npm run snapshots
+
+# Generate snapshot for a single scenario: make snapshots-single GAME=gtc2 SCENARIO=1
+.PHONY: snapshots-single
+snapshots-single:
+	cd web && SNAPSHOT_GAME=$(GAME) SNAPSHOT_SCENARIO=$(SCENARIO) npm run snapshots
+
+# Run LLM evaluation for all games
+.PHONY: llm-eval
+llm-eval:
+	cd web && npm run llm-eval
+
+# Run LLM evaluation for a single scenario: make llm-eval-single GAME=gtc2 SCENARIO=1
+.PHONY: llm-eval-single
+llm-eval-single:
+	cd web && npx tsx scripts/llm-eval.ts --game $(GAME) --scenario $(SCENARIO)
+
+# =============================================================================
 # Help
 # =============================================================================
 
@@ -167,6 +196,16 @@ help:
 	@echo "PDF extraction (manual step):"
 	@echo "  make extract-GAME - Extract raw tables from PDF"
 	@echo "                      (e.g., make extract-gtc2)"
+	@echo ""
+	@echo "LLM evaluation:"
+	@echo "  make snapshots    - Generate DOM snapshots for all games"
+	@echo "  make snapshots-game GAME=gtc2"
+	@echo "                    - Generate snapshots for a single game"
+	@echo "  make snapshots-single GAME=gtc2 SCENARIO=1"
+	@echo "                    - Generate snapshot for single scenario"
+	@echo "  make llm-eval     - Run LLM evaluation for all games"
+	@echo "  make llm-eval-single GAME=gtc2 SCENARIO=1"
+	@echo "                    - Run LLM evaluation for single scenario"
 	@echo ""
 	@echo "Other targets:"
 	@echo "  make dev          - Start development server"

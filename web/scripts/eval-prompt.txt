@@ -1,0 +1,97 @@
+You are evaluating whether raw PDF table data has been correctly parsed and rendered into a web application.
+
+## Task
+
+Compare the RAW TABLE DATA (extracted from PDF) against the DOM SNAPSHOT (rendered web output) and identify any discrepancies where data was lost, corrupted, or incorrectly transformed during parsing.
+
+## Input Format
+
+You will receive:
+1. **RAW TABLE DATA**: The original data extracted from PDF tables, organized by side (Confederate/Union) with table names and rows
+2. **DOM SNAPSHOT**: The structured JSON representing what the web application renders, including units, leaders, footnotes, and gunboats
+
+## What to Check
+
+For each unit/leader in the raw data:
+
+1. **Unit Names**: Verify the unit name appears correctly in the DOM snapshot
+   - Watch for truncation, missing characters, or merged names
+   - Leader names should appear in the `leaders` array, not `units`
+
+2. **Manpower Values**: Check that manpower values are preserved
+   - Leaders typically have "—" (dash) for manpower
+   - Watch for missing asterisks or symbols that indicate footnotes
+
+3. **Hex Locations**: Verify hex codes and location names are preserved
+   - Parenthetical location names like "(Yorktown)" should be included
+   - Watch for truncation of multi-part hex strings
+
+4. **Command Assignment**: Check that command codes match
+   - Roman numerals (I, II, III) and text codes (ANV, Cav) should be preserved
+
+5. **Unit Type**: Verify type (Inf, Cav, Art, Ldr) is correct
+
+6. **Footnotes**: 
+   - Footnote symbols on units (*, †, ‡, etc.) should appear in the `notes` array
+   - Footnote definitions should appear in the `footnotes` object
+
+7. **Unit Count**: The total number of units + leaders in the DOM should match the raw table row count
+
+## Known Transformations (Not Errors)
+
+These are expected transformations, NOT errors:
+- Leaders (type="Ldr") are separated into a `leaders` array
+- Multi-column raw rows are merged into single unit objects
+- Table names are stored in `tableName` field
+- Footnote symbols are extracted to `notes` array
+
+## Response Format
+
+Respond with a JSON object:
+
+```json
+{
+  "pass": true/false,
+  "unitCountMatch": {
+    "raw": { "confederate": N, "union": N },
+    "dom": { "confederate": N, "union": N },
+    "matches": true/false
+  },
+  "issues": [
+    {
+      "side": "confederate" | "union",
+      "unit": "Unit Name",
+      "field": "name" | "manpowerValue" | "hexLocation" | "command" | "type" | "notes",
+      "expected": "value from raw data",
+      "actual": "value in DOM snapshot",
+      "severity": "critical" | "minor"
+    }
+  ],
+  "missingUnits": [
+    {
+      "side": "confederate" | "union",
+      "rawRow": ["array", "of", "raw", "values"],
+      "tableName": "Table Name"
+    }
+  ],
+  "extraUnits": [
+    {
+      "side": "confederate" | "union",
+      "unitName": "Name not in raw data"
+    }
+  ],
+  "summary": "Brief description of findings"
+}
+```
+
+## Severity Guidelines
+
+- **critical**: Data loss or corruption that affects gameplay (wrong hex, wrong manpower, missing units)
+- **minor**: Formatting differences that don't affect gameplay (whitespace, dash styles)
+
+## Important Notes
+
+- Be thorough but efficient - focus on actual discrepancies
+- If everything matches correctly, return `"pass": true` with empty issue arrays
+- The raw data may have columns in different orders per table - use the header_row to understand column meanings
+- Some raw rows have extra elements from PDF artifacts - focus on the core unit data fields
