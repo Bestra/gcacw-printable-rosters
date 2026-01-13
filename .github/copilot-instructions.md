@@ -31,12 +31,8 @@ Examples:
 make              # Build all web JSON files
 make gtc2         # Build a single game
 make reparse-otr2 # Force rebuild a game
-make dev          # Start dev server
+make dev          # Start dev server (localhost:5173)
 make build        # Production build
-
-# Manual commands (if needed)
-cd web && npm run dev      # Dev server at localhost:5173
-cd web && npm run build    # Build to web/dist/
 
 # Parser (always use uv, never bare python/pip)
 cd parser && uv run python pipeline/parse_raw_tables.py --all   # Parse all games
@@ -45,7 +41,7 @@ cd parser && uv run python pipeline/convert_to_web.py           # Generate web J
 
 ## Dev Server
 
-**When the dev server is running, do NOT restart it or run `npm run build`.**
+**When the dev server is running, do NOT restart it or run `make build`.**
 
 Vite provides hot module replacement (HMR) - changes to `.tsx`, `.ts`, and `.css` files are automatically reflected in the browser without any action needed. Just edit the file and save.
 
@@ -155,7 +151,7 @@ All scripts support `--help` for full usage details.
 
 No automated tests. Validate changes by:
 
-1. `npm run build` in web/ (catches TypeScript errors)
+1. `make build` (catches TypeScript errors)
 2. Visual inspection in browser
 3. Check parsed JSON output for parser changes
 4. Use `utils/inspect_raw.py`, `utils/inspect_parsed.py`, or `utils/compare_data.py` to verify data

@@ -187,7 +187,7 @@ This automatically:
 Then verify the build:
 
 ```bash
-cd web && npm run build
+make build
 ```
 
 ## Name Matching Challenges

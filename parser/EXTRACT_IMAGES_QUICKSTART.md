@@ -125,7 +125,7 @@ This automatically:
 ### Step 4: Verify Build
 
 ```bash
-cd web && npm run build
+make build
 ```
 
 ### Step 5: Validate Setup (Optional)

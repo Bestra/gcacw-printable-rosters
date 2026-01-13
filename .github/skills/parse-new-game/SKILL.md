@@ -118,8 +118,8 @@ This creates `web/public/data/newgame.json` and updates `games.json`.
 
 ## Step 7: Validate
 
-1. Run `cd web && npm run build` to catch TypeScript errors
-2. Run `cd web && npm run dev` and visually inspect the new game
+1. Run `make build` to catch TypeScript errors
+2. Run `make dev` and visually inspect the new game
 3. Check that all scenarios appear in the dropdown
 4. Spot-check unit data against the PDF
 

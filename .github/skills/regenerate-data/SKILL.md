@@ -37,8 +37,8 @@ uv run python pipeline/convert_to_web.py
 After regenerating:
 
 1. Check parser output for reasonable unit counts
-2. Run `cd web && npm run build` to catch any type errors
-3. Visually inspect in browser if needed
+2. Run `make build` to catch any type errors
+3. Visually inspect in browser with `make dev` if needed
 
 ## Data Flow
 

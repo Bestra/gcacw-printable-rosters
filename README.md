@@ -26,7 +26,8 @@ Counter boxes are sized at 0.55" to fit GCACW's 1/2" counters.
 ## Quick Start
 
 ```bash
-cd web && npm install && npm run dev
+cd web && npm install
+make dev
 ```
 
 Open http://localhost:5173, select a game and scenario, then `Cmd+P` / `Ctrl+P` to print.
@@ -46,7 +47,7 @@ The project includes a Python parser that extracts unit data from GCACW rulebook
 
 ## Development
 
-- **Web app**: `cd web && npm run dev`
+- **Web app**: `make dev`
 - **Parser**: Requires Python 3.11+ and [uv](https://github.com/astral-sh/uv)
 - **Deploy**: Push to `main` triggers GitHub Pages deploy
 
