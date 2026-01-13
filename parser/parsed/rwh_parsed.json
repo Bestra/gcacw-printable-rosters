@@ -328,7 +328,9 @@
         "manpower_value": "1#",
         "hex_location": "E0733 (Stone Tavern)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -354,7 +356,9 @@
         "manpower_value": "1#",
         "hex_location": "E1036 (Columbia College)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -367,7 +371,9 @@
         "manpower_value": "1#",
         "hex_location": "E1138",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -573,7 +579,9 @@
         "manpower_value": "4#",
         "hex_location": "W0330 (Winchester)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -692,7 +700,9 @@
         "manpower_value": "8#",
         "hex_location": "W2620 (Naval Battery)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -731,7 +741,9 @@
         "manpower_value": "3#",
         "hex_location": "E0834 (Ft Pennsylvania)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"

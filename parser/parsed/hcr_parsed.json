@@ -573,7 +573,9 @@
         "manpower_value": "5%",
         "hex_location": "W2720",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -877,7 +879,9 @@
         "manpower_value": "7%",
         "hex_location": "W2420 (Bolivar Heights)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -890,7 +894,9 @@
         "manpower_value": "7%",
         "hex_location": "W2421 (Chambers Farm)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -903,7 +909,9 @@
         "manpower_value": "9%",
         "hex_location": "W2521 (Harpers Ferry/Bolivar)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -916,7 +924,9 @@
         "manpower_value": "2%",
         "hex_location": "W2521 (Harpers Ferry/Bolivar)",
         "side": "Confederate",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Confederate Set-Up"
@@ -1274,7 +1284,9 @@
         "manpower_value": "13%",
         "hex_location": "W3016",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -1287,7 +1299,9 @@
         "manpower_value": "12%",
         "hex_location": "W3117 (Burkittsville)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "%"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"

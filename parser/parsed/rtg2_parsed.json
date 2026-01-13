@@ -585,7 +585,9 @@
         "manpower_value": "11#",
         "hex_location": "S3017",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -598,7 +600,9 @@
         "manpower_value": "10#",
         "hex_location": "S3017",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -1646,7 +1650,9 @@
         "manpower_value": "8#",
         "hex_location": "S3103 (Peach Orchard)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -1659,7 +1665,9 @@
         "manpower_value": "5#",
         "hex_location": "S3004",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -1672,7 +1680,9 @@
         "manpower_value": "6#",
         "hex_location": "S3005 (Greenmount PO)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -1685,7 +1695,9 @@
         "manpower_value": "5#",
         "hex_location": "S2906",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -1698,7 +1710,9 @@
         "manpower_value": "5#",
         "hex_location": "S3007",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -1711,7 +1725,9 @@
         "manpower_value": "6#",
         "hex_location": "S3107 (Mill)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -2452,7 +2468,9 @@
         "manpower_value": "7#",
         "hex_location": "S4411 (Union Mills)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -2465,7 +2483,9 @@
         "manpower_value": "8#",
         "hex_location": "S4411 (Union Mills)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -2478,7 +2498,9 @@
         "manpower_value": "6#",
         "hex_location": "S4411 (Union Mills)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -3363,7 +3385,9 @@
         "manpower_value": "7#",
         "hex_location": "S4411 (Union Mills)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -3376,7 +3400,9 @@
         "manpower_value": "8#",
         "hex_location": "S4411 (Union Mills)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"
@@ -3389,7 +3415,9 @@
         "manpower_value": "6#",
         "hex_location": "S4411 (Union Mills)",
         "side": "Union",
-        "notes": [],
+        "notes": [
+          "#"
+        ],
         "turn": null,
         "reinforcement_set": null,
         "table_name": "Union Set-Up"

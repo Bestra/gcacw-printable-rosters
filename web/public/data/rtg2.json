@@ -462,7 +462,9 @@
           "type": "Inf",
           "manpowerValue": "11#",
           "hexLocation": "S3017",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -472,7 +474,9 @@
           "type": "Inf",
           "manpowerValue": "10#",
           "hexLocation": "S3017",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1294,7 +1298,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "S3103 (Peach Orchard)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1304,7 +1310,9 @@
           "type": "Inf",
           "manpowerValue": "5#",
           "hexLocation": "S3004",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1314,7 +1322,9 @@
           "type": "Inf",
           "manpowerValue": "6#",
           "hexLocation": "S3005 (Greenmount PO)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1324,7 +1334,9 @@
           "type": "Inf",
           "manpowerValue": "5#",
           "hexLocation": "S2906",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1334,7 +1346,9 @@
           "type": "Inf",
           "manpowerValue": "5#",
           "hexLocation": "S3007",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1344,7 +1358,9 @@
           "type": "Inf",
           "manpowerValue": "6#",
           "hexLocation": "S3107 (Mill)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1922,7 +1938,9 @@
           "type": "Inf",
           "manpowerValue": "7#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1932,7 +1950,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1942,7 +1962,9 @@
           "type": "Inf",
           "manpowerValue": "6#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -2632,7 +2654,9 @@
           "type": "Inf",
           "manpowerValue": "7#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -2642,7 +2666,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -2652,7 +2678,9 @@
           "type": "Inf",
           "manpowerValue": "6#",
           "hexLocation": "S4411 (Union Mills)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {

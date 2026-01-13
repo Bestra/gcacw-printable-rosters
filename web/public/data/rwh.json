@@ -269,7 +269,9 @@
           "type": "Cav",
           "manpowerValue": "1#",
           "hexLocation": "E0733 (Stone Tavern)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -289,7 +291,9 @@
           "type": "Inf",
           "manpowerValue": "1#",
           "hexLocation": "E1036 (Columbia College)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -299,7 +303,9 @@
           "type": "Inf",
           "manpowerValue": "1#",
           "hexLocation": "E1138",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -466,7 +472,9 @@
           "type": "Inf",
           "manpowerValue": "4#",
           "hexLocation": "W0330 (Winchester)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -558,7 +566,9 @@
           "type": "Inf",
           "manpowerValue": "8#",
           "hexLocation": "W2620 (Naval Battery)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -588,7 +598,9 @@
           "type": "Inf",
           "manpowerValue": "3#",
           "hexLocation": "E0834 (Ft Pennsylvania)",
-          "notes": [],
+          "notes": [
+            "#"
+          ],
           "tableName": "Union Set-Up"
         },
         {

@@ -457,7 +457,9 @@
           "type": "Inf",
           "manpowerValue": "5%",
           "hexLocation": "W2720",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -695,7 +697,9 @@
           "type": "Inf",
           "manpowerValue": "7%",
           "hexLocation": "W2420 (Bolivar Heights)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -705,7 +709,9 @@
           "type": "Inf",
           "manpowerValue": "7%",
           "hexLocation": "W2421 (Chambers Farm)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -715,7 +721,9 @@
           "type": "Inf",
           "manpowerValue": "9%",
           "hexLocation": "W2521 (Harpers Ferry/Bolivar)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -725,7 +733,9 @@
           "type": "Inf",
           "manpowerValue": "2%",
           "hexLocation": "W2521 (Harpers Ferry/Bolivar)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Confederate Set-Up"
         },
         {
@@ -1005,7 +1015,9 @@
           "type": "Inf",
           "manpowerValue": "13%",
           "hexLocation": "W3016",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Union Set-Up"
         },
         {
@@ -1015,7 +1027,9 @@
           "type": "Inf",
           "manpowerValue": "12%",
           "hexLocation": "W3117 (Burkittsville)",
-          "notes": [],
+          "notes": [
+            "%"
+          ],
           "tableName": "Union Set-Up"
         },
         {
