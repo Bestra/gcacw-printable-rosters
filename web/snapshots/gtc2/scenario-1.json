@@ -1,0 +1,398 @@
+{
+  "generatedAt": "2026-01-13T13:06:27.283Z",
+  "gameId": "gtc2",
+  "gameName": "Grant Takes Command",
+  "scenarioNumber": 1,
+  "scenarioName": "The Battle of the Wilderness",
+  "confederate": {
+    "armyLeader": {
+      "name": "Lee",
+      "hex": "N1914"
+    },
+    "commandGroups": [
+      {
+        "title": "II — Ewell (Corps)",
+        "leader": {
+          "name": "Ewell",
+          "hex": "N2311",
+          "location": "Locust Grove"
+        },
+        "units": [
+          {
+            "name": "Ramseur-B",
+            "hex": "N1608",
+            "manpower": "3*",
+            "notes": "*"
+          },
+          {
+            "name": "Steuart-A",
+            "hex": "N1806",
+            "manpower": "3*",
+            "notes": "*"
+          },
+          {
+            "name": "Early",
+            "hex": "N2112",
+            "location": "Rowe’s Mill",
+            "manpower": "10"
+          },
+          {
+            "name": "Rodes",
+            "hex": "N2211",
+            "manpower": "10"
+          },
+          {
+            "name": "E Johnson",
+            "hex": "N2311",
+            "location": "Locust Grove",
+            "manpower": "9"
+          },
+          {
+            "name": "Johnston",
+            "hex": "N3629",
+            "location": "Chilesburg",
+            "manpower": "3"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "III — Hill (Corps)",
+        "leader": {
+          "name": "Hill",
+          "hex": "N1914"
+        },
+        "units": [
+          {
+            "name": "Anderson",
+            "hex": "N1012",
+            "manpower": "15"
+          },
+          {
+            "name": "Wilcox-A",
+            "hex": "N1813",
+            "location": "Verdiersville",
+            "manpower": "16"
+          },
+          {
+            "name": "Heth-A",
+            "hex": "N1914",
+            "manpower": "16"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "I — Longstreet (Corps)",
+        "leader": {
+          "name": "Longstreet",
+          "hex": "N1221",
+          "location": "Brock’s Bridge"
+        },
+        "units": [
+          {
+            "name": "Kershaw",
+            "hex": "N1221",
+            "location": "Brock’s Bridge",
+            "manpower": "10"
+          },
+          {
+            "name": "Field",
+            "hex": "N1221",
+            "location": "Brock’s Bridge",
+            "manpower": "12"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "FL — F Lee (Div)",
+        "leader": {
+          "name": "F Lee",
+          "hex": "N4016",
+          "location": "Massaponax Ch"
+        },
+        "units": [
+          {
+            "name": "Lomax",
+            "hex": "N4016",
+            "location": "Massaponax Ch",
+            "manpower": "2"
+          },
+          {
+            "name": "Wickham",
+            "hex": "N4016",
+            "location": "Massaponax Ch",
+            "manpower": "3"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "WL — WH Lee (Div)",
+        "leader": {
+          "name": "WH Lee",
+          "hex": "N0811"
+        },
+        "units": [
+          {
+            "name": "Chambliss",
+            "hex": "N0811",
+            "manpower": "2*",
+            "notes": "*"
+          },
+          {
+            "name": "1 NC",
+            "hex": "N2409",
+            "manpower": "1"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "H",
+        "units": [
+          {
+            "name": "Rosser",
+            "hex": "N2013",
+            "manpower": "2"
+          }
+        ],
+        "subgroups": []
+      }
+    ],
+    "gunboats": [],
+    "footnotes": {},
+    "unitCount": 16,
+    "leaderCount": 6
+  },
+  "union": {
+    "armyLeader": {
+      "name": "Grant-A",
+      "hex": "N2709",
+      "location": "Wilderness Tavern"
+    },
+    "commandGroups": [
+      {
+        "title": "IX — Burnside-A (Corps)",
+        "leader": {
+          "name": "Burnside-A",
+          "hex": "Union Reinf."
+        },
+        "units": [
+          {
+            "name": "Stevenson",
+            "hex": "N2306",
+            "manpower": "7"
+          },
+          {
+            "name": "Potter",
+            "hex": "Union Reinf.",
+            "manpower": "11"
+          },
+          {
+            "name": "Provisional",
+            "hex": "Union Reinf.",
+            "manpower": "6"
+          },
+          {
+            "name": "Willcox-A",
+            "hex": "Union Reinf.",
+            "manpower": "12"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "II — Hancock-A (Corps)",
+        "leader": {
+          "name": "Hancock-A",
+          "hex": "N3210",
+          "location": "Chancellorsville"
+        },
+        "units": [
+          {
+            "name": "Barlow",
+            "hex": "N3210",
+            "location": "Chancellorsville",
+            "manpower": "16"
+          },
+          {
+            "name": "Gibbon",
+            "hex": "N3210",
+            "location": "Chancellorsville",
+            "manpower": "13"
+          },
+          {
+            "name": "Birney",
+            "hex": "N3210",
+            "location": "Chancellorsville",
+            "manpower": "14"
+          },
+          {
+            "name": "Mott-A",
+            "hex": "N3311",
+            "manpower": "10"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "VI — Sedgwick (Corps)",
+        "leader": {
+          "name": "Sedgwick",
+          "hex": "N2508",
+          "location": "Flat Run Ch"
+        },
+        "units": [
+          {
+            "name": "Ricketts",
+            "hex": "N2507",
+            "manpower": "11"
+          },
+          {
+            "name": "Wright",
+            "hex": "N2508",
+            "location": "Flat Run Ch",
+            "manpower": "15"
+          },
+          {
+            "name": "Getty",
+            "hex": "N2608",
+            "manpower": "18"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "V — Warren-A (Corps)",
+        "leader": {
+          "name": "Warren-A",
+          "hex": "N2709",
+          "location": "Wilderness Tavern"
+        },
+        "units": [
+          {
+            "name": "Griffin",
+            "hex": "N2510",
+            "location": "Saunder’s Field",
+            "manpower": "17"
+          },
+          {
+            "name": "Crawford",
+            "hex": "N2609",
+            "location": "Ellwood",
+            "manpower": "7"
+          },
+          {
+            "name": "Robinson",
+            "hex": "N2709",
+            "location": "Wilderness Tavern",
+            "manpower": "11"
+          },
+          {
+            "name": "Wadsworth",
+            "hex": "N2709",
+            "location": "Wilderness Tavern",
+            "manpower": "14"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "Cav-2 — DM Gregg (Div)",
+        "leader": {
+          "name": "DM Gregg",
+          "hex": "N3312"
+        },
+        "units": [
+          {
+            "name": "Davies",
+            "hex": "N3312",
+            "manpower": "4"
+          },
+          {
+            "name": "JI Gregg",
+            "hex": "N3312",
+            "manpower": "4"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "Cav-1 — Merritt (Div)",
+        "leader": {
+          "name": "Merritt",
+          "hex": "N2304",
+          "location": "Sheppard’s Grove"
+        },
+        "units": [
+          {
+            "name": "Custer",
+            "hex": "N2003",
+            "location": "Salubria",
+            "manpower": "3"
+          },
+          {
+            "name": "Devin",
+            "hex": "N2304",
+            "location": "Sheppard’s Grove",
+            "manpower": "3"
+          },
+          {
+            "name": "Gibbs",
+            "hex": "N2304",
+            "location": "Sheppard’s Grove",
+            "manpower": "3"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "Cav-3 — Wilson (Div)",
+        "leader": {
+          "name": "Wilson",
+          "hex": "N2616"
+        },
+        "units": [
+          {
+            "name": "5 NY",
+            "hex": "N2612",
+            "location": "Parker’s Store",
+            "manpower": "1"
+          },
+          {
+            "name": "McIntosh",
+            "hex": "N2616",
+            "manpower": "2*",
+            "fatigue": "F1",
+            "notes": "*"
+          },
+          {
+            "name": "Chapman",
+            "hex": "N2616",
+            "manpower": "2*",
+            "fatigue": "F1",
+            "notes": "*"
+          }
+        ],
+        "subgroups": []
+      },
+      {
+        "title": "AP",
+        "units": [
+          {
+            "name": "Kitching",
+            "hex": "N3209",
+            "manpower": "5"
+          }
+        ],
+        "subgroups": []
+      }
+    ],
+    "gunboats": [],
+    "footnotes": {},
+    "unitCount": 24,
+    "leaderCount": 8
+  }
+}
