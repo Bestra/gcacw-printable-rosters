@@ -43,7 +43,46 @@ Each stage of the data pipeline is tested in isolation with clear boundaries:
 
 ### Goal
 
-Validate that all units in `web/public/data/{game}.json` render correctly in the DOM. New games are automatically tested with zero configuration.
+Validate that React components render correctly using a hybrid testing approach:
+
+- **Smoke tests**: Verify unit counts match across all real game data
+- **Unit tests**: Verify specific behaviors (footnotes, legend, key) with focused fixtures
+
+### Testing Strategy
+
+#### Smoke Tests (real data)
+
+Load actual game JSON files, render components, verify counts match:
+
+```typescript
+test("renders correct number of units", () => {
+  render(<RosterSheet scenario={realScenario} />);
+  const unitCards = screen.getAllByTestId("unit-card");
+  expect(unitCards).toHaveLength(
+    realScenario.confederateUnits.length + realScenario.unionUnits.length
+  );
+});
+```
+
+#### Unit Tests (focused fixtures)
+
+Hand-crafted minimal data to test specific behaviors:
+
+```typescript
+const fixtureWithFootnote = {
+  number: 1,
+  name: "Test",
+  confederateUnits: [{ name: "Test Unit", notes: ["*"] }],
+  confederateFootnotes: { "*": "Starts fatigued" },
+};
+
+test("footnote symbol appears on unit with note", () => {
+  render(<RosterSheet scenario={fixtureWithFootnote} />);
+  expect(screen.getByText("*")).toBeInTheDocument();
+});
+```
+
+---
 
 ### Phase 1: Setup Vitest ✅
 
@@ -72,80 +111,42 @@ Import `@testing-library/jest-dom` matchers, mock `import.meta.env.BASE_URL`.
 
 ---
 
-### Phase 2: Fixture Utilities
+### Phase 2: Test Files
 
-#### Step 2.1: Create `tests/fixtures/gameDiscovery.ts`
+#### Step 2.1: Create `tests/integration/smokeTests.test.tsx`
 
-Auto-discover all games from `games.json` — no hardcoded list.
-
-```typescript
-export interface GameInfo {
-  id: string;
-  name: string;
-}
-export function discoverGames(): GameInfo[];
-```
-
-#### Step 2.2: Create `tests/fixtures/loadWebData.ts`
-
-Load web JSON for any game.
+Smoke tests across all real game data — verify unit counts.
 
 ```typescript
-import type { GameData } from "../../src/types";
-export function loadWebData(gameId: string): GameData;
-```
-
----
-
-### Phase 3: Integration Test Suite
-
-#### Step 3.1: Create `tests/integration/rosterRendering.test.tsx`
-
-```typescript
-import { discoverGames } from "../fixtures/gameDiscovery";
-import { loadWebData } from "../fixtures/loadWebData";
+import { readFileSync } from "fs";
 import { render, screen } from "@testing-library/react";
-import { RosterSheet } from "../../src/components/RosterSheet";
 
-const games = discoverGames();
-
-describe.each(games)("$name ($id)", ({ id, name }) => {
-  const gameData = loadWebData(id);
-
-  describe.each(gameData.scenarios)("Scenario $number: $name", (scenario) => {
-    test("renders all Confederate units from web JSON", () => {
-      render(
-        <RosterSheet scenario={scenario} gameName={name} showImages={false} />
-      );
-
-      for (const unit of scenario.confederate.units) {
-        expect(screen.getByText(unit.name)).toBeInTheDocument();
-      }
-    });
-
-    test("renders all Union units from web JSON", () => {
-      // Similar structure
-    });
-  });
-});
+// Load games.json, iterate each game/scenario
+// For each scenario: render, count units, assert match
 ```
 
-#### Step 3.2: Test wrapper for context providers (if needed)
+#### Step 2.2: Create `tests/integration/rosterSheet.test.tsx`
 
-Create wrapper component if `RosterSheet` requires additional context.
+Focused unit tests with hand-crafted fixtures:
+
+- Footnote symbols render on units
+- Footnote legend renders with definitions
+- Conventions key renders
+- Leaders render in headers (excluded from unit grid)
+- Gunboats render in separate section
 
 ---
 
 ### What to Assert
 
-| Data Point    | Assertion                                     |
-| ------------- | --------------------------------------------- |
-| Unit names    | Text appears in DOM                           |
-| Unit count    | Number of unit elements matches scenario data |
-| Hex locations | Hex code appears in unit card                 |
-| Footnotes     | Symbol appears on units with notes            |
-| Leaders       | Leader names appear in leader headers         |
-| Gunboats      | Appear in gunboats section                    |
+| Test Type | Data Point | Assertion                             |
+| --------- | ---------- | ------------------------------------- |
+| Smoke     | Unit count | Number of rendered units matches JSON |
+| Unit      | Footnotes  | Symbol appears on unit card           |
+| Unit      | Legend     | Footnote definitions appear           |
+| Unit      | Key        | Conventions key section renders       |
+| Unit      | Leaders    | Leader names in header elements       |
+| Unit      | Gunboats   | Appear in gunboats section            |
 
 ### What NOT to Assert
 
@@ -164,11 +165,9 @@ web/
 ├── package.json                          # ✅ Updated with test scripts
 ├── tests/
 │   ├── setup.ts                          # ✅ Created
-│   ├── fixtures/
-│   │   ├── gameDiscovery.ts              # Discover games from games.json
-│   │   └── loadWebData.ts                # Load web/public/data/*.json
 │   └── integration/
-│       └── rosterRendering.test.tsx      # Main test suite
+│       ├── smokeTests.test.tsx           # Real data: unit counts
+│       └── rosterSheet.test.tsx          # Fixtures: specific behaviors
 ```
 
 ---
@@ -228,14 +227,12 @@ def test_all_scenarios_included():
 
 ## Implementation Order
 
-| Step | Task                              | Status |
-| ---- | --------------------------------- | ------ |
-| 1.1  | Install dependencies              | ✅     |
-| 1.2  | Create `vitest.config.ts`         | ✅     |
-| 1.3  | Create `tests/setup.ts`           | ✅     |
-| 1.4  | Add npm scripts                   | ✅     |
-| 2.1  | Create `gameDiscovery.ts`         |        |
-| 2.2  | Create `loadWebData.ts`           |        |
-| 3.1  | Create `rosterRendering.test.tsx` |        |
-| 3.2  | Test wrapper (if needed)          |        |
-| 4    | Run tests, iterate                |        |
+| Step | Task                          | Status |
+| ---- | ----------------------------- | ------ |
+| 1.1  | Install dependencies          | ✅     |
+| 1.2  | Create `vitest.config.ts`     | ✅     |
+| 1.3  | Create `tests/setup.ts`       | ✅     |
+| 1.4  | Add npm scripts               | ✅     |
+| 2.1  | Create `smokeTests.test.tsx`  |        |
+| 2.2  | Create `rosterSheet.test.tsx` |        |
+| 3    | Run tests, iterate            |        |
