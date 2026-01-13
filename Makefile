@@ -128,6 +128,14 @@ dev:
 build: web
 	cd web && npm run build
 
+.PHONY: test
+test:
+	@echo "Running parser tests..."
+	cd $(PARSER_DIR) && uv run pytest tests/ -v
+	@echo ""
+	@echo "Running web tests..."
+	cd web && npm test
+
 # =============================================================================
 # Help
 # =============================================================================
@@ -161,5 +169,6 @@ help:
 	@echo "Other targets:"
 	@echo "  make dev          - Start development server"
 	@echo "  make build        - Build web app for production"
+	@echo "  make test         - Run all tests (parser + web)"
 	@echo "  make clean        - Remove parsed and web JSON files"
 	@echo "  make help         - Show this help"

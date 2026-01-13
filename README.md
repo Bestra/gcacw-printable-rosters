@@ -50,6 +50,16 @@ The project includes a Python parser that extracts unit data from GCACW rulebook
 - **Parser**: Requires Python 3.11+ and [uv](https://github.com/astral-sh/uv)
 - **Deploy**: Push to `main` triggers GitHub Pages deploy
 
+### Running Tests
+
+```bash
+make test  # Run all tests (parser + web)
+
+# Or individually:
+cd parser && uv run pytest tests/ -v
+cd web && npm test
+```
+
 ## License
 
 MIT
