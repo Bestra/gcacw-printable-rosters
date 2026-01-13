@@ -1,86 +1,26 @@
 {
   "gameId": "gtc2",
   "scenarioNumber": 1,
-  "evaluatedAt": "2026-01-13T13:07:53.836Z",
-  "snapshotGeneratedAt": "2026-01-13T13:06:27.283Z",
+  "evaluatedAt": "2026-01-13T15:16:03.853Z",
+  "evaluationDurationMs": 26060,
+  "snapshotGeneratedAt": "2026-01-13T15:09:59.723Z",
   "snapshotStale": false,
   "result": {
-    "pass": false,
+    "pass": true,
     "unitCountMatch": {
       "raw": {
-        "confederate": 23,
-        "union": 33
+        "confederate": 16,
+        "union": 24
       },
       "dom": {
-        "confederate": 22,
-        "union": 32
+        "confederate": 16,
+        "union": 24
       },
-      "matches": false,
-      "discrepancy": "Missing 1 confederate leader and 1 union leader"
+      "matches": true
     },
-    "issues": [
-      {
-        "side": "confederate",
-        "unit": "Stuart",
-        "field": "leader_missing",
-        "expected": "Stuart (Corps, Cav, Ldr at N2013) should be a command leader",
-        "actual": "Not present in DOM; only his subordinate Rosser appears",
-        "severity": "critical"
-      },
-      {
-        "side": "union",
-        "unit": "Sheridan",
-        "field": "leader_missing",
-        "expected": "Sheridan (Corps, Cav, Ldr at N3312) should be a command leader",
-        "actual": "Not present in DOM; only his subordinate DM Gregg appears",
-        "severity": "critical"
-      },
-      {
-        "side": "union",
-        "unit": "Burnside-A",
-        "field": "hexLocation",
-        "expected": "Union Reinforcement",
-        "actual": "Union Reinf. (truncated)",
-        "severity": "minor"
-      },
-      {
-        "side": "union",
-        "unit": "Sedgwick",
-        "field": "location_name",
-        "expected": "Flat Run Church",
-        "actual": "Flat Run Ch (truncated)",
-        "severity": "minor"
-      }
-    ],
-    "missingUnits": [
-      {
-        "side": "confederate",
-        "rawRow": [
-          "Stuart",
-          "Corps",
-          "Cav",
-          "Ldr",
-          "—",
-          "N2013"
-        ],
-        "tableName": "Confederate Set-Up",
-        "reason": "Leader entry completely missing from DOM"
-      },
-      {
-        "side": "union",
-        "rawRow": [
-          "Sheridan",
-          "Corps",
-          "Cav",
-          "Ldr",
-          "—",
-          "N3312"
-        ],
-        "tableName": "Union Set-Up",
-        "reason": "Leader entry completely missing from DOM"
-      }
-    ],
+    "issues": [],
+    "missingUnits": [],
     "extraUnits": [],
-    "summary": "Critical: Two cavalry corps leaders (Stuart/Confederate and Sheridan/Union) are missing from the DOM snapshot. These are command leaders with no units directly under them (their subordinates appear in the data). Additionally, two location names show truncation (Flat Run Church→Flat Run Ch, Union Reinforcement→Union Reinf.). All other unit data (manpower, hexes, subordinate structure) matches correctly."
+    "summary": "Perfect match. All 40 units and 16 leaders correctly parsed from raw data into DOM snapshot. Multi-column names merged correctly (E Johnson, DM Gregg, JI Gregg, 5 NY, 1 NC). Location names appropriately abbreviated. Footnote symbols preserved. Fatigue levels correctly extracted from annotations and applied to McIntosh and Chapman."
   }
 }

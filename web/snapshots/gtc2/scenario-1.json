@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-13T13:06:27.283Z",
+  "generatedAt": "2026-01-13T15:09:59.723Z",
   "gameId": "gtc2",
   "gameName": "Grant Takes Command",
   "scenarioNumber": 1,
@@ -106,48 +106,58 @@
         "subgroups": []
       },
       {
-        "title": "FL — F Lee (Div)",
+        "title": "Cav — Stuart (Corps)",
         "leader": {
-          "name": "F Lee",
-          "hex": "N4016",
-          "location": "Massaponax Ch"
+          "name": "Stuart",
+          "hex": "N2013"
         },
-        "units": [
+        "units": [],
+        "subgroups": [
           {
-            "name": "Lomax",
-            "hex": "N4016",
-            "location": "Massaponax Ch",
-            "manpower": "2"
+            "title": "FL — F Lee (Div)",
+            "leader": {
+              "name": "F Lee",
+              "hex": "N4016",
+              "location": "Massaponax Ch"
+            },
+            "units": [
+              {
+                "name": "Lomax",
+                "hex": "N4016",
+                "location": "Massaponax Ch",
+                "manpower": "2"
+              },
+              {
+                "name": "Wickham",
+                "hex": "N4016",
+                "location": "Massaponax Ch",
+                "manpower": "3"
+              }
+            ],
+            "subgroups": []
           },
           {
-            "name": "Wickham",
-            "hex": "N4016",
-            "location": "Massaponax Ch",
-            "manpower": "3"
+            "title": "WL — WH Lee (Div)",
+            "leader": {
+              "name": "WH Lee",
+              "hex": "N0811"
+            },
+            "units": [
+              {
+                "name": "Chambliss",
+                "hex": "N0811",
+                "manpower": "2*",
+                "notes": "*"
+              },
+              {
+                "name": "1 NC",
+                "hex": "N2409",
+                "manpower": "1"
+              }
+            ],
+            "subgroups": []
           }
-        ],
-        "subgroups": []
-      },
-      {
-        "title": "WL — WH Lee (Div)",
-        "leader": {
-          "name": "WH Lee",
-          "hex": "N0811"
-        },
-        "units": [
-          {
-            "name": "Chambliss",
-            "hex": "N0811",
-            "manpower": "2*",
-            "notes": "*"
-          },
-          {
-            "name": "1 NC",
-            "hex": "N2409",
-            "manpower": "1"
-          }
-        ],
-        "subgroups": []
+        ]
       },
       {
         "title": "H",
@@ -164,7 +174,7 @@
     "gunboats": [],
     "footnotes": {},
     "unitCount": 16,
-    "leaderCount": 6
+    "leaderCount": 7
   },
   "union": {
     "armyLeader": {
@@ -265,6 +275,95 @@
         "subgroups": []
       },
       {
+        "title": "Cav — Sheridan (Corps)",
+        "leader": {
+          "name": "Sheridan",
+          "hex": "N3312"
+        },
+        "units": [],
+        "subgroups": [
+          {
+            "title": "Cav-2 — DM Gregg (Div)",
+            "leader": {
+              "name": "DM Gregg",
+              "hex": "N3312"
+            },
+            "units": [
+              {
+                "name": "Davies",
+                "hex": "N3312",
+                "manpower": "4"
+              },
+              {
+                "name": "JI Gregg",
+                "hex": "N3312",
+                "manpower": "4"
+              }
+            ],
+            "subgroups": []
+          },
+          {
+            "title": "Cav-1 — Merritt (Div)",
+            "leader": {
+              "name": "Merritt",
+              "hex": "N2304",
+              "location": "Sheppard’s Grove"
+            },
+            "units": [
+              {
+                "name": "Custer",
+                "hex": "N2003",
+                "location": "Salubria",
+                "manpower": "3"
+              },
+              {
+                "name": "Devin",
+                "hex": "N2304",
+                "location": "Sheppard’s Grove",
+                "manpower": "3"
+              },
+              {
+                "name": "Gibbs",
+                "hex": "N2304",
+                "location": "Sheppard’s Grove",
+                "manpower": "3"
+              }
+            ],
+            "subgroups": []
+          },
+          {
+            "title": "Cav-3 — Wilson (Div)",
+            "leader": {
+              "name": "Wilson",
+              "hex": "N2616"
+            },
+            "units": [
+              {
+                "name": "5 NY",
+                "hex": "N2612",
+                "location": "Parker’s Store",
+                "manpower": "1"
+              },
+              {
+                "name": "McIntosh",
+                "hex": "N2616",
+                "manpower": "2*",
+                "fatigue": "F1",
+                "notes": "*"
+              },
+              {
+                "name": "Chapman",
+                "hex": "N2616",
+                "manpower": "2*",
+                "fatigue": "F1",
+                "notes": "*"
+              }
+            ],
+            "subgroups": []
+          }
+        ]
+      },
+      {
         "title": "V — Warren-A (Corps)",
         "leader": {
           "name": "Warren-A",
@@ -300,85 +399,6 @@
         "subgroups": []
       },
       {
-        "title": "Cav-2 — DM Gregg (Div)",
-        "leader": {
-          "name": "DM Gregg",
-          "hex": "N3312"
-        },
-        "units": [
-          {
-            "name": "Davies",
-            "hex": "N3312",
-            "manpower": "4"
-          },
-          {
-            "name": "JI Gregg",
-            "hex": "N3312",
-            "manpower": "4"
-          }
-        ],
-        "subgroups": []
-      },
-      {
-        "title": "Cav-1 — Merritt (Div)",
-        "leader": {
-          "name": "Merritt",
-          "hex": "N2304",
-          "location": "Sheppard’s Grove"
-        },
-        "units": [
-          {
-            "name": "Custer",
-            "hex": "N2003",
-            "location": "Salubria",
-            "manpower": "3"
-          },
-          {
-            "name": "Devin",
-            "hex": "N2304",
-            "location": "Sheppard’s Grove",
-            "manpower": "3"
-          },
-          {
-            "name": "Gibbs",
-            "hex": "N2304",
-            "location": "Sheppard’s Grove",
-            "manpower": "3"
-          }
-        ],
-        "subgroups": []
-      },
-      {
-        "title": "Cav-3 — Wilson (Div)",
-        "leader": {
-          "name": "Wilson",
-          "hex": "N2616"
-        },
-        "units": [
-          {
-            "name": "5 NY",
-            "hex": "N2612",
-            "location": "Parker’s Store",
-            "manpower": "1"
-          },
-          {
-            "name": "McIntosh",
-            "hex": "N2616",
-            "manpower": "2*",
-            "fatigue": "F1",
-            "notes": "*"
-          },
-          {
-            "name": "Chapman",
-            "hex": "N2616",
-            "manpower": "2*",
-            "fatigue": "F1",
-            "notes": "*"
-          }
-        ],
-        "subgroups": []
-      },
-      {
         "title": "AP",
         "units": [
           {
@@ -393,6 +413,6 @@
     "gunboats": [],
     "footnotes": {},
     "unitCount": 24,
-    "leaderCount": 8
+    "leaderCount": 9
   }
 }

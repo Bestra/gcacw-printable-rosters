@@ -96,6 +96,23 @@ export function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
     }
   }
   
+  // Special handling for Cavalry Corps: find Div leaders whose units are cavalry
+  // These divisions may use different command codes (WL, FL, etc.) instead of X-Cav pattern
+  const cavCorpsLeader = corpsLeaders.find(l => l.command === "Cav");
+  if (cavCorpsLeader) {
+    for (const divLeader of divLeaders) {
+      const divCmd = divLeader.command;
+      // Skip if already mapped to a corps
+      if (divToCorps[divCmd]) continue;
+      // Check if this division's units are cavalry
+      const divUnits = unitsByCommand[divCmd] || [];
+      const hasCavUnits = divUnits.some(u => u.type === "Cav");
+      if (hasCavUnits) {
+        divToCorps[divCmd] = "Cav";
+      }
+    }
+  }
+  
   // Build groups
   const groups: CommandGroup[] = [];
   const processedCommands = new Set<string>();

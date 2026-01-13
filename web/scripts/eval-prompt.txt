@@ -44,6 +44,9 @@ These are expected transformations, NOT errors:
 - Multi-column raw rows are merged into single unit objects
 - Table names are stored in `tableName` field
 - Footnote symbols are extracted to `notes` array
+- Units grouped under a Corps/Division leader may have different hex locations than their leader - this is valid (units deploy at their own hex, not the leader's)
+- Location names may be abbreviated (e.g., "Flat Run Church" → "Flat Run Ch", "Massaponax Church" → "Massaponax Ch") - this is acceptable formatting
+- Reinforcement units show "Union Reinf." or similar as location while their subordinates may have specific hex locations
 
 ## Response Format
 
