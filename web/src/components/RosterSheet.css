@@ -109,6 +109,7 @@
   background: #fff;
   break-inside: avoid;
   page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
   margin-bottom: 0.375rem;
 }
 
@@ -458,6 +459,8 @@
   /* Union starts on a new page */
   .army-section.union {
     break-before: page;
+    page-break-before: always;
+    -webkit-column-break-before: always;
   }
 
   .army-header {
@@ -467,6 +470,7 @@
 
   .army-title {
     break-after: avoid;
+    page-break-after: avoid;
   }
 
   /* Keep 3-column layout for print */
@@ -485,6 +489,7 @@
   .command-group {
     break-inside: avoid;
     page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
     background: none;
     padding: 0.125rem;
     margin-bottom: 0.125rem;
