@@ -185,7 +185,7 @@ No test changes needed — unit tests use fixtures, not real game data.
 - [x] `npm test` passes all unit tests
 - [x] Tests cover key behaviors (footnotes, legend, key, leaders, gunboats)
 - [x] Clear error messages on failure
-- [ ] Tests run in CI (GitHub Actions)
+- [x] Tests run in CI (GitHub Actions)
 
 ---
 
@@ -199,3 +199,4 @@ No test changes needed — unit tests use fixtures, not real game data.
 | 1.4  | Add npm scripts               | ✅     |
 | 2.1  | Create `rosterSheet.test.tsx` | ✅     |
 | 3    | Run tests, iterate            | ✅     |
+| 4    | Add GitHub Actions CI         | ✅     |
