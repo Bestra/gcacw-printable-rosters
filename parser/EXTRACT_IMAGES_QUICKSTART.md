@@ -12,7 +12,7 @@
 ### Step 1: Detect Counter Type
 
 ```bash
-cd parser && uv run python detect_counter_type.py /path/to/GAME.vmod
+cd parser && uv run python image_extraction/detect_counter_type.py /path/to/GAME.vmod
 ```
 
 **Output tells you:**
@@ -22,13 +22,13 @@ cd parser && uv run python detect_counter_type.py /path/to/GAME.vmod
 
 ### Step 2A: For TEMPLATE_COMPOSITE Games
 
-If the game is already configured (check `GAME_CONFIGS` in `generate_counters.py`):
+If the game is already configured (check `GAME_CONFIGS` in `image_extraction/generate_counters.py`):
 
 ```bash
-cd parser && uv run python generate_counters.py GAME /path/to/GAME.vmod
+cd parser && uv run python image_extraction/generate_counters.py GAME /path/to/GAME.vmod
 ```
 
-**If NOT configured yet**, add to `generate_counters.py`:
+**If NOT configured yet**, add to `image_extraction/generate_counters.py`:
 
 ```python
 # Add after existing configs, before "Game registry"
@@ -106,15 +106,15 @@ GAME_CONFIGS: dict[str, GameConfig] = {
 ### Step 2B: For INDIVIDUAL Games
 
 ```bash
-cd parser && uv run python extract_images.py GAME /path/to/GAME.vmod
+cd parser && uv run python image_extraction/extract_images.py GAME /path/to/GAME.vmod
 ```
 
-(May need to add game-specific patterns to `extract_images.py`)
+(May need to add game-specific patterns to `image_extraction/extract_images.py`)
 
 ### Step 3: Integrate into Web App
 
 ```bash
-cd parser && uv run python integrate_game_images.py GAME
+cd parser && uv run python image_extraction/integrate_game_images.py GAME
 ```
 
 This automatically:
@@ -131,9 +131,9 @@ cd web && npm run build
 ### Step 5: Validate Setup (Optional)
 
 ```bash
-cd parser && uv run python validate_game_images.py GAME
+cd parser && uv run python image_extraction/validate_game_images.py GAME
 # Or check all games:
-cd parser && uv run python validate_game_images.py --all
+cd parser && uv run python image_extraction/validate_game_images.py --all
 ```
 
 ## Troubleshooting
@@ -202,8 +202,8 @@ if '(USCT)' in name:
 ## Reference Files
 
 - **Full documentation**: `.github/skills/extract-vassal-images/SKILL.md`
-- **Counter detection**: `parser/detect_counter_type.py`
-- **Template generator**: `parser/generate_counters.py`
-- **Individual extractor**: `parser/extract_images.py`
-- **Integration helper**: `parser/integrate_game_images.py`
-- **Validation script**: `parser/validate_game_images.py`
+- **Counter detection**: `parser/image_extraction/detect_counter_type.py`
+- **Template generator**: `parser/image_extraction/generate_counters.py`
+- **Individual extractor**: `parser/image_extraction/extract_images.py`
+- **Integration helper**: `parser/image_extraction/integrate_game_images.py`
+- **Validation script**: `parser/image_extraction/validate_game_images.py`

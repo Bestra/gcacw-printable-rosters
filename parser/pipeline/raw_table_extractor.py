@@ -18,7 +18,11 @@ import re
 import json
 import os
 from dataclasses import dataclass, field, asdict
+from pathlib import Path
 from typing import Optional
+
+# Directory containing this script's parent (the parser directory)
+PARSER_DIR = Path(__file__).parent.parent
 
 
 @dataclass
@@ -167,8 +171,8 @@ class RawTableExtractor:
         self.scenarios: list[RawScenarioTables] = []
         self.unknown_symbols: set[str] = set()  # Track symbols we don't recognize
         
-        # Load footnote symbols from game_configs.json
-        config_path = os.path.join(os.path.dirname(__file__), 'game_configs.json')
+        # Load footnote symbols from game_configs.json (in parent directory)
+        config_path = os.path.join(os.path.dirname(__file__), '..', 'game_configs.json')
         with open(config_path) as f:
             config = json.load(f)
             self.known_footnote_symbols = set(config['defaults']['footnote_symbols'])
@@ -555,7 +559,7 @@ class RawTableExtractor:
 def main():
     import sys
     
-    # Usage: python raw_table_extractor.py [pdf_path] [game_id] [start_page] [end_page]
+    # Usage: python pipeline/raw_table_extractor.py [pdf_path] [game_id] [start_page] [end_page]
     if len(sys.argv) > 1:
         pdf_path = sys.argv[1]
     else:
@@ -569,8 +573,9 @@ def main():
     start_page = int(sys.argv[3]) if len(sys.argv) > 3 else None
     end_page = int(sys.argv[4]) if len(sys.argv) > 4 else None
     
-    os.makedirs("raw", exist_ok=True)
-    output_json = f"raw/{game_id}_raw_tables.json"
+    raw_dir = PARSER_DIR / "raw"
+    raw_dir.mkdir(exist_ok=True)
+    output_json = raw_dir / f"{game_id}_raw_tables.json"
     
     page_info = ""
     if start_page:

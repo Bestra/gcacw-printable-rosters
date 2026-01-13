@@ -52,19 +52,19 @@ parsed: $(PARSED_FILES)
 # =============================================================================
 
 # parsed/{game}_parsed.json depends on raw tables and parser config
-$(PARSED_DIR)/%_parsed.json: $(RAW_DIR)/%_raw_tables.json $(PARSER_DIR)/game_configs.json $(PARSER_DIR)/parse_raw_tables.py
+$(PARSED_DIR)/%_parsed.json: $(RAW_DIR)/%_raw_tables.json $(PARSER_DIR)/game_configs.json $(PARSER_DIR)/pipeline/parse_raw_tables.py
 	@echo "Parsing $*..."
-	$(PYTHON) parse_raw_tables.py $*
+	$(PYTHON) pipeline/parse_raw_tables.py $*
 
 # web/public/data/{game}.json depends on parsed data
-$(WEB_DATA_DIR)/%.json: $(PARSED_DIR)/%_parsed.json $(PARSER_DIR)/convert_to_web.py
+$(WEB_DATA_DIR)/%.json: $(PARSED_DIR)/%_parsed.json $(PARSER_DIR)/pipeline/convert_to_web.py
 	@echo "Converting $* to web format..."
-	$(PYTHON) convert_to_web.py $*
+	$(PYTHON) pipeline/convert_to_web.py $*
 
 # games.json is regenerated when convert_to_web.py changes
-$(WEB_DATA_DIR)/games.json: $(PARSER_DIR)/convert_to_web.py
+$(WEB_DATA_DIR)/games.json: $(PARSER_DIR)/pipeline/convert_to_web.py
 	@echo "Regenerating games.json..."
-	$(PYTHON) convert_to_web.py
+	$(PYTHON) pipeline/convert_to_web.py
 
 # Copy image mapping JSON files to web/src/data for TypeScript imports
 .PHONY: copy-image-mappings
@@ -96,11 +96,11 @@ reparse-%:
 extract-%:
 	@echo "Extracting raw tables for $*..."
 	@if [ "$*" = "tom" ]; then \
-		$(PYTHON) raw_table_extractor.py ../data/TOTM_Rules.pdf $*; \
+		$(PYTHON) pipeline/raw_table_extractor.py ../data/TOTM_Rules.pdf $*; \
 	elif [ "$*" = "hcr" ] || [ "$*" = "rwh" ]; then \
-		$(PYTHON) raw_table_extractor.py ../data/RTG2_Rules.pdf $*; \
+		$(PYTHON) pipeline/raw_table_extractor.py ../data/RTG2_Rules.pdf $*; \
 	else \
-		$(PYTHON) raw_table_extractor.py ../data/$$(echo $* | tr '[:lower:]' '[:upper:]')_Rules.pdf $*; \
+		$(PYTHON) pipeline/raw_table_extractor.py ../data/$$(echo $* | tr '[:lower:]' '[:upper:]')_Rules.pdf $*; \
 	fi
 
 # =============================================================================

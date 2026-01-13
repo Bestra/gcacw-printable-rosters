@@ -6,15 +6,20 @@ This parser reads {game}_raw_tables.json files and converts them to structured
 unit data compatible with the web app.
 
 Usage:
-    uv run python parse_raw_tables.py otr2
-    uv run python parse_raw_tables.py --all
+    uv run python pipeline/parse_raw_tables.py otr2
+    uv run python pipeline/parse_raw_tables.py --all
 """
 
 import json
+import os
 import re
 import sys
 from dataclasses import dataclass, field, asdict
+from pathlib import Path
 from typing import Optional
+
+# Directory containing this script's parent (the parser directory)
+PARSER_DIR = Path(__file__).parent.parent
 
 
 @dataclass
@@ -61,7 +66,8 @@ class RawTableParser:
         
     def _load_config(self) -> dict:
         """Load game configuration."""
-        with open("game_configs.json") as f:
+        config_path = PARSER_DIR / "game_configs.json"
+        with open(config_path) as f:
             all_configs = json.load(f)
         
         # Merge defaults with game-specific config
@@ -419,25 +425,26 @@ class RawTableParser:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: uv run python parse_raw_tables.py <game_id>")
-        print("       uv run python parse_raw_tables.py --all")
+        print("Usage: uv run python pipeline/parse_raw_tables.py <game_id>")
+        print("       uv run python pipeline/parse_raw_tables.py --all")
         sys.exit(1)
     
     # Ensure output directory exists
-    import os
-    os.makedirs("parsed", exist_ok=True)
+    parsed_dir = PARSER_DIR / "parsed"
+    raw_dir = PARSER_DIR / "raw"
+    parsed_dir.mkdir(exist_ok=True)
     
     games = ["otr2", "rtg2", "gtc2", "hcr", "hsn", "rwh"] if sys.argv[1] == "--all" else [sys.argv[1]]
     
     for game_id in games:
-        input_file = f"raw/{game_id}_raw_tables.json"
-        output_file = f"parsed/{game_id}_parsed.json"
+        input_file = raw_dir / f"{game_id}_raw_tables.json"
+        output_file = parsed_dir / f"{game_id}_parsed.json"
         
         print(f"\nParsing {input_file}...")
         parser = RawTableParser(game_id)
         
         try:
-            scenarios = parser.parse_file(input_file)
+            scenarios = parser.parse_file(str(input_file))
         except FileNotFoundError:
             print(f"  Error: {input_file} not found")
             continue

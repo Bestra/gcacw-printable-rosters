@@ -11,25 +11,25 @@ Run the parser and converter to refresh all game data after making changes.
 
 ```bash
 cd parser
-uv run python parse_raw_tables.py --all
-uv run python convert_to_web.py
+uv run python pipeline/parse_raw_tables.py --all
+uv run python pipeline/convert_to_web.py
 ```
 
 ## Single Game
 
 ```bash
 cd parser
-uv run python parse_raw_tables.py <game_id>
-uv run python convert_to_web.py
+uv run python pipeline/parse_raw_tables.py <game_id>
+uv run python pipeline/convert_to_web.py
 ```
 
 ## Re-extract from PDF (if raw tables need updating)
 
 ```bash
 cd parser
-uv run python raw_table_extractor.py ../data/<GamePDF>.pdf <game_id>
-uv run python parse_raw_tables.py <game_id>
-uv run python convert_to_web.py
+uv run python pipeline/raw_table_extractor.py ../data/<GamePDF>.pdf <game_id>
+uv run python pipeline/parse_raw_tables.py <game_id>
+uv run python pipeline/convert_to_web.py
 ```
 
 ## Validate
@@ -43,11 +43,11 @@ After regenerating:
 ## Data Flow
 
 ```
-PDF → raw_table_extractor.py → raw/{game}_raw_tables.json
+PDF → pipeline/raw_table_extractor.py → raw/{game}_raw_tables.json
                                        ↓
                               game_configs.json (column mappings)
                                        ↓
-                              parse_raw_tables.py → parsed/{game}_parsed.json
+                              pipeline/parse_raw_tables.py → parsed/{game}_parsed.json
                                        ↓
-                              convert_to_web.py → web/public/data/{game}.json
+                              pipeline/convert_to_web.py → web/public/data/{game}.json
 ```

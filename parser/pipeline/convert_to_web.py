@@ -87,7 +87,7 @@ def convert_game_data(scenarios: list, game_id: str, game_name: str) -> dict:
 
 
 def main():
-    parser_dir = Path(__file__).parent
+    parser_dir = Path(__file__).parent.parent  # Go up from pipeline/ to parser/
     parsed_dir = parser_dir / "parsed"
     web_data_dir = parser_dir.parent / "web" / "public" / "data"
 

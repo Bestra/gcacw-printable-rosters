@@ -17,7 +17,7 @@ This skill guides the process of adding a new game from the Great Campaigns of t
 Run the raw table extractor to capture table structure from the PDF:
 
 ```bash
-cd parser && uv run python raw_table_extractor.py ../data/NewGame.pdf newgame
+cd parser && uv run python pipeline/raw_table_extractor.py ../data/NewGame.pdf newgame
 ```
 
 This creates `raw/newgame_raw_tables.json` containing all scenario tables with:
@@ -67,7 +67,7 @@ If the game has non-standard columns, add a config entry to `game_configs.json`:
 
 ## Step 3: Add Game Config
 
-Edit `parser/convert_to_web.py` and add to the `GAMES` list:
+Edit `parser/pipeline/convert_to_web.py` and add to the `GAMES` list:
 
 ```python
 GAMES = [
@@ -97,7 +97,7 @@ const slugToGameId: Record<string, string> = {
 ## Step 5: Parse Raw Tables
 
 ```bash
-cd parser && uv run python parse_raw_tables.py newgame
+cd parser && uv run python pipeline/parse_raw_tables.py newgame
 ```
 
 This creates `parsed/newgame_parsed.json` with structured unit data.
@@ -111,7 +111,7 @@ Review the output for:
 ## Step 6: Generate Web Data
 
 ```bash
-cd parser && uv run python convert_to_web.py
+cd parser && uv run python pipeline/convert_to_web.py
 ```
 
 This creates `web/public/data/newgame.json` and updates `games.json`.
@@ -131,7 +131,7 @@ Quick start:
 
 ```bash
 # Detect the counter type
-cd parser && uv run python detect_counter_type.py /path/to/GAME.vmod
+cd parser && uv run python image_extraction/detect_counter_type.py /path/to/GAME.vmod
 
 # Then run the appropriate extractor based on the detected type
 ```

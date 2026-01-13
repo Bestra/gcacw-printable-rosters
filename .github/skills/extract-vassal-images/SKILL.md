@@ -82,7 +82,7 @@ Only **leaders** have dedicated images. Brigade/division counters are composited
 **Important**: For HYBRID systems where VASSAL adds text labels dynamically (detected by `detect_counter_type.py`), use `--no-text` flag to avoid double text overlay:
 
 ```bash
-cd parser && uv run python generate_counters.py tom ~/Documents/vasl/gcacw/TOM_3_17.vmod --no-text
+cd parser && uv run python image_extraction/generate_counters.py tom ~/Documents/vasl/gcacw/TOM_3_17.vmod --no-text
 ```
 
 ## Quick Start
@@ -92,7 +92,7 @@ cd parser && uv run python generate_counters.py tom ~/Documents/vasl/gcacw/TOM_3
 **For a streamlined extraction workflow, see:**
 
 - **Quick Reference**: `parser/EXTRACT_IMAGES_QUICKSTART.md` - 30-second workflow cheat sheet
-- **Integration Script**: `parser/integrate_game_images.py` - Automates post-extraction setup
+- **Integration Script**: `parser/image_extraction/integrate_game_images.py` - Automates post-extraction setup
 
 ## Extraction Workflow
 
@@ -101,7 +101,7 @@ cd parser && uv run python generate_counters.py tom ~/Documents/vasl/gcacw/TOM_3
 Use `detect_counter_type.py` to automatically determine the counter image system:
 
 ```bash
-cd parser && uv run python detect_counter_type.py /path/to/GAME.vmod
+cd parser && uv run python image_extraction/detect_counter_type.py /path/to/GAME.vmod
 ```
 
 This analyzes buildFile.xml and image naming patterns to determine:
@@ -113,7 +113,7 @@ This analyzes buildFile.xml and image naming patterns to determine:
 To analyze all modules in a directory:
 
 ```bash
-cd parser && uv run python detect_counter_type.py --all /path/to/vmods/
+cd parser && uv run python image_extraction/detect_counter_type.py --all /path/to/vmods/
 ```
 
 ### Step 2: Extract the VMOD (if needed for manual inspection)
@@ -149,42 +149,34 @@ grep "PrototypeDefinition" buildFile.xml | head -20
 
 ```bash
 cd parser
-uv run python extract_images.py GAME /path/to/GAME.vmod
+uv run python image_extraction/extract_images.py GAME /path/to/GAME.vmod
 ```
 
-**For TEMPLATE_COMPOSITE games:**hcr ~/Documents/vasl/gcacw/HCR.vmod
+**For TEMPLATE_COMPOSITE games:**
+
+```bash
+# HCR
+cd parser && uv run python image_extraction/generate_counters.py hcr ~/Documents/vasl/gcacw/HCR.vmod
 
 # OTR2
-
-cd parser && uv run python generate_counters.py otr2 ~/Documents/vasl/gcacw/OTR2.vmod
+cd parser && uv run python image_extraction/generate_counters.py otr2 ~/Documents/vasl/gcacw/OTR2.vmod
 
 # GTC2
-
-cd parser && uv run python generate_counters.py gtc2 ~/Documents/vasl/gcacw/GTC2.vmod
+cd parser && uv run python image_extraction/generate_counters.py gtc2 ~/Documents/vasl/gcacw/GTC2.vmod
 
 # TOM (HYBRID - uses --no-text because VASSAL adds labels)
+cd parser && uv run python image_extraction/generate_counters.py tom ~/Documents/vasl/gcacw/TOM_3_17.vmod --no-text
+```
 
-cd parser && uv run python generate_counters.py tom ~/Documents/vasl/gcacw/TOM_3_17.vmod --no-text
-
-# OTR2
-
-cd parser && uv run python generate_counters.py --game otr2 /path/to/OTR2.vmod
-
-# GTC2
-
-cd parser && uv run python generate_counters.py --game gtc2 /path/to/GTC2.vmod
-
-````
-
-For new games, add game-specific configuration to `generate_counters.py`.
+For new games, add game-specific configuration to `image_extraction/generate_counters.py`.
 
 ### Step 6: Integrate into Web App
 
 Use the integration helper script to automate the post-extraction setup:
 
 ```bash
-cd parser && uv run python integrate_game_images.py GAME
-````
+cd parser && uv run python image_extraction/integrate_game_images.py GAME
+```
 
 This automatically:
 
@@ -277,10 +269,10 @@ Check the Pillow font loading - the script uses system fonts with fallback to de
 
 ## Related Files
 
-- `parser/detect_counter_type.py` - Automatic counter type detection
-- `parser/extract_images.py` - INDIVIDUAL (RTG2-style) extractor
-- `parser/generate_counters.py` - Unified TEMPLATE_COMPOSITE generator (HCR, OTR2, GTC2, HSN)
-- `parser/integrate_game_images.py` - Post-extraction integration automation
+- `parser/image_extraction/detect_counter_type.py` - Automatic counter type detection
+- `parser/image_extraction/extract_images.py` - INDIVIDUAL (RTG2-style) extractor
+- `parser/image_extraction/generate_counters.py` - Unified TEMPLATE_COMPOSITE generator (HCR, OTR2, GTC2, HSN)
+- `parser/image_extraction/integrate_game_images.py` - Post-extraction integration automation
 - `parser/image_mappings/*.json` - Generated mappings
 - `parser/EXTRACT_IMAGES_QUICKSTART.md` - Quick reference cheat sheet
 - `web/src/data/imageMap.ts` - TypeScript image map

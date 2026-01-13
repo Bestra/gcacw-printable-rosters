@@ -1,9 +1,9 @@
 /**
  * Hex location parsing using shared configuration.
- * The source of truth is parser/hex_location_config.json
+ * The source of truth is parser/utils/hex_location_config.json
  */
 
-import configJson from "../../parser/hex_location_config.json";
+import configJson from "../../parser/utils/hex_location_config.json";
 
 interface PatternConfig {
   _comment?: string;

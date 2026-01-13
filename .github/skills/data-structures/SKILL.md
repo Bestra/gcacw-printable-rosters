@@ -70,16 +70,16 @@ Three utility scripts help debug data at each stage:
 
 ```bash
 # View raw table data
-cd parser && uv run python inspect_raw.py <game_id>
-cd parser && uv run python inspect_raw.py <game_id> --scenario 1 --table "Confederate Set-Up"
+cd parser && uv run python utils/inspect_raw.py <game_id>
+cd parser && uv run python utils/inspect_raw.py <game_id> --scenario 1 --table "Confederate Set-Up"
 
 # View parsed units
-cd parser && uv run python inspect_parsed.py <game_id>
-cd parser && uv run python inspect_parsed.py <game_id> --scenario 1 --side Confederate
+cd parser && uv run python utils/inspect_parsed.py <game_id>
+cd parser && uv run python utils/inspect_parsed.py <game_id> --scenario 1 --side Confederate
 
 # Compare raw vs parsed (for debugging parsing issues)
-cd parser && uv run python compare_data.py <game_id> <scenario>
-cd parser && uv run python compare_data.py <game_id> <scenario> --side Union --table "Union Set-Up"
+cd parser && uv run python utils/compare_data.py <game_id> <scenario>
+cd parser && uv run python utils/compare_data.py <game_id> <scenario> --side Union --table "Union Set-Up"
 ```
 
 All scripts support `--help` for detailed usage.
@@ -91,7 +91,7 @@ All scripts support `--help` for detailed usage.
 1. Check raw extraction: `uv run python inspect_raw.py <game> --scenario N`
 2. Look for the missing unit in raw table rows
 3. If present in raw but missing in parsed, check column config in `game_configs.json`
-4. If absent from raw, check PDF extraction with `diagnose_pdf.py`
+4. If absent from raw, check PDF extraction with `utils/diagnose_pdf.py`
 
 ### Wrong Unit Attributes
 
@@ -133,7 +133,7 @@ That file contains:
 ## Related Files
 
 - [game_configs.json](../../../parser/game_configs.json) - Column mappings and parsing rules
-- [raw_table_extractor.py](../../../parser/raw_table_extractor.py) - Stage 1: PDF → raw
-- [parse_raw_tables.py](../../../parser/parse_raw_tables.py) - Stage 2: raw → parsed
-- [convert_to_web.py](../../../parser/convert_to_web.py) - Stage 3: parsed → web
+- [raw_table_extractor.py](../../../parser/pipeline/raw_table_extractor.py) - Stage 1: PDF → raw
+- [parse_raw_tables.py](../../../parser/pipeline/parse_raw_tables.py) - Stage 2: raw → parsed
+- [convert_to_web.py](../../../parser/pipeline/convert_to_web.py) - Stage 3: parsed → web
 - [types.ts](../../../web/src/types.ts) - TypeScript interfaces
