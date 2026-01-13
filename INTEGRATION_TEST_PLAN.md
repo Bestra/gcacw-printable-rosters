@@ -43,30 +43,11 @@ Each stage of the data pipeline is tested in isolation with clear boundaries:
 
 ### Goal
 
-Validate that React components render correctly using a hybrid testing approach:
-
-- **Smoke tests**: Verify unit counts match across all real game data
-- **Unit tests**: Verify specific behaviors (footnotes, legend, key) with focused fixtures
+Validate that React components render correctly using focused unit tests with hand-crafted fixtures.
 
 ### Testing Strategy
 
-#### Smoke Tests (real data)
-
-Load actual game JSON files, render components, verify counts match:
-
-```typescript
-test("renders correct number of units", () => {
-  render(<RosterSheet scenario={realScenario} />);
-  const unitCards = screen.getAllByTestId("unit-card");
-  expect(unitCards).toHaveLength(
-    realScenario.confederateUnits.length + realScenario.unionUnits.length
-  );
-});
-```
-
-#### Unit Tests (focused fixtures)
-
-Hand-crafted minimal data to test specific behaviors:
+Use minimal fixture data to test specific behaviors with full control:
 
 ```typescript
 const fixtureWithFootnote = {
@@ -113,22 +94,11 @@ Import `@testing-library/jest-dom` matchers, mock `import.meta.env.BASE_URL`.
 
 ### Phase 2: Test Files
 
-#### Step 2.1: Create `tests/integration/smokeTests.test.tsx`
+#### Step 2.1: Create `tests/integration/rosterSheet.test.tsx`
 
-Smoke tests across all real game data — verify unit counts.
+Unit tests with hand-crafted fixtures:
 
-```typescript
-import { readFileSync } from "fs";
-import { render, screen } from "@testing-library/react";
-
-// Load games.json, iterate each game/scenario
-// For each scenario: render, count units, assert match
-```
-
-#### Step 2.2: Create `tests/integration/rosterSheet.test.tsx`
-
-Focused unit tests with hand-crafted fixtures:
-
+- Unit count matches fixture data
 - Footnote symbols render on units
 - Footnote legend renders with definitions
 - Conventions key renders
@@ -139,14 +109,14 @@ Focused unit tests with hand-crafted fixtures:
 
 ### What to Assert
 
-| Test Type | Data Point | Assertion                             |
-| --------- | ---------- | ------------------------------------- |
-| Smoke     | Unit count | Number of rendered units matches JSON |
-| Unit      | Footnotes  | Symbol appears on unit card           |
-| Unit      | Legend     | Footnote definitions appear           |
-| Unit      | Key        | Conventions key section renders       |
-| Unit      | Leaders    | Leader names in header elements       |
-| Unit      | Gunboats   | Appear in gunboats section            |
+| Data Point | Assertion                                |
+| ---------- | ---------------------------------------- |
+| Unit count | Number of rendered units matches fixture |
+| Footnotes  | Symbol appears on unit card              |
+| Legend     | Footnote definitions appear              |
+| Key        | Conventions key section renders          |
+| Leaders    | Leader names in header elements          |
+| Gunboats   | Appear in gunboats section               |
 
 ### What NOT to Assert
 
@@ -166,8 +136,7 @@ web/
 ├── tests/
 │   ├── setup.ts                          # ✅ Created
 │   └── integration/
-│       ├── smokeTests.test.tsx           # Real data: unit counts
-│       └── rosterSheet.test.tsx          # Fixtures: specific behaviors
+│       └── rosterSheet.test.tsx          # Unit tests
 ```
 
 ---
@@ -207,20 +176,15 @@ def test_all_scenarios_included():
 
 ## Adding a New Game
 
-1. Add entry to `web/public/data/games.json`
-2. Add web data to `web/public/data/{newgame}.json`
-3. **Run `npm test`** — automatically discovered and tested!
-
-**No test code changes needed.**
+No test changes needed — unit tests use fixtures, not real game data.
 
 ---
 
 ## Success Criteria
 
-- [ ] `npm test` runs all games/scenarios in < 30 seconds
-- [ ] All current games (7) pass with all scenarios
-- [ ] Adding a new game automatically adds tests
-- [ ] Clear error messages when a unit is missing from DOM
+- [ ] `npm test` passes all unit tests
+- [ ] Tests cover key behaviors (footnotes, legend, key, leaders, gunboats)
+- [ ] Clear error messages on failure
 - [ ] Tests run in CI (GitHub Actions)
 
 ---
@@ -233,6 +197,5 @@ def test_all_scenarios_included():
 | 1.2  | Create `vitest.config.ts`     | ✅     |
 | 1.3  | Create `tests/setup.ts`       | ✅     |
 | 1.4  | Add npm scripts               | ✅     |
-| 2.1  | Create `smokeTests.test.tsx`  |        |
-| 2.2  | Create `rosterSheet.test.tsx` |        |
+| 2.1  | Create `rosterSheet.test.tsx` |        |
 | 3    | Run tests, iterate            |        |
