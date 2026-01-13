@@ -783,11 +783,11 @@ def tpc_get_name_variants(name: str) -> list[str]:
         variants.append(f"{name[0]}.{name[2]}. {base}")
     
     # Handle "Birney II" vs "Birney - II" vs "Birney-II"
-    if re.search(r'\s+(II|X|XVIII|XIX|XXIV|I|V|VI|IX)$', name):
+    if re.search(r'\s+(II|X|XVIII|XIX|XXIV|XXV|I|V|VI|IX)$', name):
         # "Birney II" -> "Birney - II", "Birney-II"
         variants.append(re.sub(r'\s+([IVX]+)$', r' - \1', name))
         variants.append(re.sub(r'\s+([IVX]+)$', r'-\1', name))
-    if ' - ' in name and re.search(r'\s+-\s+(II|X|XVIII|XIX|XXIV|I|V|VI|IX)$', name):
+    if ' - ' in name and re.search(r'\s+-\s+(II|X|XVIII|XIX|XXIV|XXV|I|V|VI|IX)$', name):
         # "Birney - II" -> "Birney II", "Birney-II"
         variants.append(re.sub(r'\s+-\s+([IVX]+)$', r' \1', name))
         variants.append(re.sub(r'\s+-\s+([IVX]+)$', r'-\1', name))
@@ -795,6 +795,80 @@ def tpc_get_name_variants(name: str) -> list[str]:
         # "Birney-II" -> "Birney II", "Birney - II"
         variants.append(re.sub(r'-([IVX]+)$', r' \1', name))
         variants.append(re.sub(r'-([IVX]+)$', r' - \1', name))
+    
+    # Handle "-B" leader variants: "Hancock-B" vs "Hancock"
+    if re.search(r'-[A-Z]$', name):
+        base = re.sub(r'-[A-Z]$', '', name)
+        variants.append(base)
+    
+    # TPC-specific typos and name variants
+    if 'Warren' in name:
+        variants.append(name.replace('Warren', 'Warrent'))
+    if 'Warrent' in name:
+        variants.append(name.replace('Warrent', 'Warren'))
+    if 'Torbert' in name:
+        variants.append(name.replace('Torbert', 'Torber'))
+    if 'Torber' in name:
+        variants.append(name.replace('Torber', 'Torbert'))
+    if 'AP Hill' in name or 'AP HIll' in name:
+        variants.extend(['AP Hill', 'AP HIll', 'A.P. Hill', 'APHill'])
+    if 'DM Gregg' in name:
+        variants.extend(['DM Gregg', 'DM-Gregg', 'D.M. Gregg'])
+    if 'Merritt' in name:
+        variants.append(name.replace('Merritt', 'Merrit'))
+    if 'Merrit' in name and 'Merritt' not in name:
+        variants.append(name.replace('Merrit', 'Merritt'))
+    if 'Griffin-B' in name or 'Griffin - B' in name:
+        variants.extend(['Griffin-B', 'Griffin - B', 'Griffin B'])
+    
+    # Handle Bartlett/Barlett typo
+    if 'Bartlett' in name:
+        variants.append(name.replace('Bartlett', 'Barlett'))
+    if 'Barlett' in name and 'Bartlett' not in name:
+        variants.append(name.replace('Barlett', 'Bartlett'))
+    
+    # Handle Colquit/Colquitt typo
+    if 'Colquit' in name and 'Colquitt' not in name:
+        variants.append(name.replace('Colquit', 'Colquitt'))
+    if 'Colquitt' in name:
+        variants.append(name.replace('Colquitt', 'Colquit'))
+    
+    # Handle "S. Griffin" vs "S Griffin"
+    if 'S. Griffin' in name:
+        variants.append(name.replace('S. Griffin', 'S Griffin'))
+    if 'S Griffin' in name and 'S. Griffin' not in name:
+        variants.append(name.replace('S Griffin', 'S. Griffin'))
+    
+    # Handle "W. Birney" vs "W Birney"  
+    if 'W. Birney' in name:
+        variants.append(name.replace('W. Birney', 'W Birney'))
+    if 'W Birney' in name and 'W. Birney' not in name:
+        variants.append(name.replace('W Birney', 'W. Birney'))
+    
+    # Handle "Wheaton-A" vs "Wheaton - A"
+    if re.search(r'Wheaton-[A-Z]$', name):
+        variants.append(re.sub(r'Wheaton-([A-Z])$', r'Wheaton - \1', name))
+    if re.search(r'Wheaton - [A-Z]$', name):
+        variants.append(re.sub(r'Wheaton - ([A-Z])$', r'Wheaton-\1', name))
+    
+    # Handle Devens-24th -> Devens (strip corps suffix)
+    if re.search(r'-\d+(st|nd|rd|th)$', name):
+        variants.append(re.sub(r'-\d+(st|nd|rd|th)$', '', name))
+    
+    # Handle corps numbers: "Birney-25th" vs "Birney XXV" vs "Birney (XXIV)"
+    corps_map = {
+        '24th': 'XXIV', 'XXIV': '24th',
+        '25th': 'XXV', 'XXV': '25th',
+        '18th': 'XVIII', 'XVIII': '18th',
+        '19th': 'XIX', 'XIX': '19th',
+    }
+    for pattern, replacement in corps_map.items():
+        if pattern in name:
+            variants.append(name.replace(pattern, replacement))
+            # Also try with/without hyphen
+            if f'-{pattern}' in name:
+                variants.append(name.replace(f'-{pattern}', f' {replacement}'))
+                variants.append(name.replace(f'-{pattern}', f' ({replacement})'))
     
     return list(set(variants))
 
@@ -811,6 +885,22 @@ def tpc_extract_unit_mappings(buildfile_path: Path) -> dict:
     
     slot_pattern = r'<VASSAL\.build\.widget\.PieceSlot\s+entryName="([^"]+)"[^>]*>([^<]*)</VASSAL\.build\.widget\.PieceSlot>'
     
+    # TPC Petersburg Campaign (1864-65) leaders
+    # Note: The VMOD incorrectly uses CL- prefix for many Union leaders, so we must identify by name
+    union_leaders = [
+        'Averell', 'Birney', 'Brooks', 'Burnside', 'Butler', 'Crook', 'Custer', 
+        'DM Gregg', 'Devin', 'Emory', 'Gibbon', 'Grant', 'Griffin', 'Hancock', 
+        'Humphreys', 'Hunter', 'Kautz', 'Mackenzie', 'Meade', 'Merritt', 'Merrit', 
+        'Ord', 'Parke', 'Sheridan', 'Sigel', 'Smith', 'Torbert', 'Upton',
+        'Warren', 'Warrent', 'Weitzel', 'Wilson', 'Wright'
+    ]
+    csa_leaders = [
+        'Anderson', 'AP Hill', 'AP HIll', 'APHill', 'Beauregard', 'BR Johnson',
+        'Breckinridge', 'Early', 'E Johnson', 'Ewell', 'F Lee', 'Field',
+        'Gordon', 'Hampton', 'Heth', 'Hoke', 'Kershaw', 'Lee', 'Longstreet',
+        'Munford', 'Pickett', 'Rosser', 'Stuart', 'WH Lee', 'WE Jones'
+    ]
+    
     for match in re.finditer(slot_pattern, content, re.DOTALL):
         entry_name = match.group(1)
         slot_content = match.group(2)
@@ -823,35 +913,60 @@ def tpc_extract_unit_mappings(buildfile_path: Path) -> dict:
         # Skip markers and non-unit items
         if any(skip in entry_name.lower() for skip in ['vp', 'wagon', 'control', 'track',
                 'paralysis', 'game-turn', 'cycle', 'supply', 'event', 'posture', 'mov', 'ope',
-                'ammunition', 'bridge', 'command', 'replacement']):
+                'ammunition', 'bridge', 'command', 'replacement', 'river', 'rain',
+                'damage', 'destroyed', 'fort', 'unfordable', 'extreme heat', 'late heat']):
             continue
         if any(skip in image_file.lower() for skip in ['vp', 'control', 'wagon', 'cp.',
-                'track', 'paralysis', 'ammu', 'event', 'replacement']):
+                'track', 'paralysis', 'ammu', 'event', 'replacement', 'damage', 'destroy']):
             continue
         
         if 'prototype;Leader' in slot_content:
-            # Determine side based on common leader names or image patterns
-            union_leaders = ['Averell', 'Brooks', 'Burnside', 'Casey', 'Couch', 'Franklin',
-                           'Heintzelman', 'Hooker', 'Keyes', 'Kearney', 'McClellan', 'McDowell',
-                           'Porter', 'Richardson', 'Sedgwick', 'Slocum', 'Stoneman', 'Sumner',
-                           'Sykes', 'Williams']
-            csa_leaders = ['Anderson', 'AP Hill', 'DH Hill', 'Ewell', 'Hampton', 'Holmes',
-                         'Huger', 'Jackson', 'Johnston', 'Lee', 'Longstreet', 'Magruder',
-                         'Stuart', 'Whiting']
+            # Determine side by checking against known leader lists
+            # Note: Some leaders like "Butler" appear on both sides, so we check context
+            is_union = False
+            is_csa = False
             
-            if any(leader in entry_name for leader in union_leaders):
-                mappings["Leaders"]["Union"][entry_name] = image_file
-            elif any(leader in entry_name for leader in csa_leaders):
-                mappings["Leaders"]["Confederate"][entry_name] = image_file
-            else:
-                # Fall back to image file naming if available
-                if image_file.startswith('U-') or image_file.startswith('UL'):
-                    mappings["Leaders"]["Union"][entry_name] = image_file
+            # Check entry name against leader lists
+            for leader in union_leaders:
+                if leader in entry_name:
+                    is_union = True
+                    break
+            for leader in csa_leaders:
+                if leader in entry_name:
+                    is_csa = True
+                    break
+            
+            # If name matches both lists (e.g., "Butler"), use additional context
+            if is_union and is_csa:
+                # Check for Corps affiliations that indicate side
+                if 'AoS' in slot_content or 'AJ' in slot_content or 'AP' in slot_content:
+                    # Army of the Shenandoah/James/Potomac = Union
+                    is_csa = False
+                elif 'CSA' in slot_content:
+                    is_union = False
                 else:
-                    mappings["Leaders"]["Confederate"][entry_name] = image_file
+                    # Butler with "AJ" suffix is Union (Army of James)
+                    if 'Butler' in entry_name and ('AJ' in image_file or '-AJ' in image_file):
+                        is_csa = False
+                    else:
+                        # Default Butler without suffix to Confederate for TPC
+                        is_union = False
+            
+            # If still ambiguous, use image prefix as fallback
+            if not is_union and not is_csa:
+                if image_file.startswith('UL'):
+                    is_union = True
+                else:
+                    is_csa = True
+            
+            if is_union and not is_csa:
+                mappings["Leaders"]["Union"][entry_name] = image_file
+            else:
+                mappings["Leaders"]["Confederate"][entry_name] = image_file
         else:
             # Determine side and type from prototypes
-            type_match = re.search(r'prototype;(USA|CSA)\s+(Infantry|Cavalry)\s+(Division|Brigade|Regiment)', slot_content)
+            # Note: Some entries have Division\emb2 (backslash after type), so don't require word boundary
+            type_match = re.search(r'prototype;(USA|CSA)\s+(Infantry|Cavalry)\s+(Division|Brigade|Regiment|Sub)', slot_content)
             if type_match:
                 side = "Union" if type_match.group(1) == "USA" else "Confederate"
                 unit_type = f"{type_match.group(2)} {type_match.group(3)}"

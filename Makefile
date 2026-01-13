@@ -67,10 +67,12 @@ $(WEB_DATA_DIR)/games.json: $(PARSER_DIR)/pipeline/convert_to_web.py
 	$(PYTHON) pipeline/convert_to_web.py
 
 # Copy image mapping JSON files to web/src/data for TypeScript imports
+# Note: Image mappings may be in parser/image_mappings/ or parser/image_extraction/image_mappings/
 .PHONY: copy-image-mappings
 copy-image-mappings:
 	@echo "Copying image mappings to web/src/data..."
 	@cp -f $(IMAGE_MAPPINGS_DIR)/*_images.json $(WEB_SRC_DATA_DIR)/ 2>/dev/null || true
+	@cp -f $(PARSER_DIR)/image_extraction/image_mappings/*_images.json $(WEB_SRC_DATA_DIR)/ 2>/dev/null || true
 
 # =============================================================================
 # Convenience targets
