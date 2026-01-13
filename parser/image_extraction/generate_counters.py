@@ -755,6 +755,122 @@ TOM_CONFIG = GameConfig(
 
 
 # -----------------------------------------------------------------------------
+# TPC (The Peninsula Campaign) Configuration
+# -----------------------------------------------------------------------------
+
+def tpc_get_name_variants(name: str) -> list[str]:
+    """Generate variants of a name for fuzzy matching (TPC-specific)."""
+    variants = base_get_name_variants(name)
+    
+    # Handle regiment numbers with slashes: "10/37 Clrd" vs "10 / 37 Clrd"
+    if '/' in name:
+        variants.append(re.sub(r'(\d+)/(\d+)', r'\1 / \2', name))
+    
+    # Handle "Clrd" vs "Colored"
+    if 'Clrd' in name:
+        variants.append(name.replace('Clrd', 'Colored'))
+    if 'Colored' in name:
+        variants.append(name.replace('Colored', 'Clrd'))
+    
+    # Handle initials: "AJ Smith" vs "A J Smith" vs "A.J. Smith"
+    if re.match(r'^[A-Z]{2}\s', name):
+        base = name[2:].strip()
+        variants.append(f"{name[0]} {name[1]} {base}")
+        variants.append(f"{name[0]}.{name[1]}. {base}")
+    if re.match(r'^[A-Z]\s[A-Z]\s', name):
+        base = name[4:].strip()
+        variants.append(f"{name[0]}{name[2]} {base}")
+        variants.append(f"{name[0]}.{name[2]}. {base}")
+    
+    # Handle "Birney II" vs "Birney - II" vs "Birney-II"
+    if re.search(r'\s+(II|X|XVIII|XIX|XXIV|I|V|VI|IX)$', name):
+        # "Birney II" -> "Birney - II", "Birney-II"
+        variants.append(re.sub(r'\s+([IVX]+)$', r' - \1', name))
+        variants.append(re.sub(r'\s+([IVX]+)$', r'-\1', name))
+    if ' - ' in name and re.search(r'\s+-\s+(II|X|XVIII|XIX|XXIV|I|V|VI|IX)$', name):
+        # "Birney - II" -> "Birney II", "Birney-II"
+        variants.append(re.sub(r'\s+-\s+([IVX]+)$', r' \1', name))
+        variants.append(re.sub(r'\s+-\s+([IVX]+)$', r'-\1', name))
+    if '-' in name and not ' - ' in name and re.search(r'-([IVX]+)$', name):
+        # "Birney-II" -> "Birney II", "Birney - II"
+        variants.append(re.sub(r'-([IVX]+)$', r' \1', name))
+        variants.append(re.sub(r'-([IVX]+)$', r' - \1', name))
+    
+    return list(set(variants))
+
+
+def tpc_extract_unit_mappings(buildfile_path: Path) -> dict:
+    """Parse buildFile.xml to extract unit-to-background mappings for TPC."""
+    content = buildfile_path.read_text(encoding='utf-8', errors='ignore')
+    
+    mappings = {
+        "Union": {},
+        "Confederate": {},
+        "Leaders": {"Union": {}, "Confederate": {}}
+    }
+    
+    slot_pattern = r'<VASSAL\.build\.widget\.PieceSlot\s+entryName="([^"]+)"[^>]*>([^<]*)</VASSAL\.build\.widget\.PieceSlot>'
+    
+    for match in re.finditer(slot_pattern, content, re.DOTALL):
+        entry_name = match.group(1)
+        slot_content = match.group(2)
+        
+        image_match = re.search(r'piece;;;([^;]+\.jpg);[^/]+/', slot_content, re.IGNORECASE)
+        if not image_match:
+            continue
+        image_file = image_match.group(1)
+        
+        # Skip markers and non-unit items
+        if any(skip in entry_name.lower() for skip in ['vp', 'wagon', 'control', 'track',
+                'paralysis', 'game-turn', 'cycle', 'supply', 'event', 'posture', 'mov', 'ope',
+                'ammunition', 'bridge', 'command', 'replacement']):
+            continue
+        if any(skip in image_file.lower() for skip in ['vp', 'control', 'wagon', 'cp.',
+                'track', 'paralysis', 'ammu', 'event', 'replacement']):
+            continue
+        
+        if 'prototype;Leader' in slot_content:
+            # Determine side based on common leader names or image patterns
+            union_leaders = ['Averell', 'Brooks', 'Burnside', 'Casey', 'Couch', 'Franklin',
+                           'Heintzelman', 'Hooker', 'Keyes', 'Kearney', 'McClellan', 'McDowell',
+                           'Porter', 'Richardson', 'Sedgwick', 'Slocum', 'Stoneman', 'Sumner',
+                           'Sykes', 'Williams']
+            csa_leaders = ['Anderson', 'AP Hill', 'DH Hill', 'Ewell', 'Hampton', 'Holmes',
+                         'Huger', 'Jackson', 'Johnston', 'Lee', 'Longstreet', 'Magruder',
+                         'Stuart', 'Whiting']
+            
+            if any(leader in entry_name for leader in union_leaders):
+                mappings["Leaders"]["Union"][entry_name] = image_file
+            elif any(leader in entry_name for leader in csa_leaders):
+                mappings["Leaders"]["Confederate"][entry_name] = image_file
+            else:
+                # Fall back to image file naming if available
+                if image_file.startswith('U-') or image_file.startswith('UL'):
+                    mappings["Leaders"]["Union"][entry_name] = image_file
+                else:
+                    mappings["Leaders"]["Confederate"][entry_name] = image_file
+        else:
+            # Determine side and type from prototypes
+            type_match = re.search(r'prototype;(USA|CSA)\s+(Infantry|Cavalry)\s+(Division|Brigade|Regiment)', slot_content)
+            if type_match:
+                side = "Union" if type_match.group(1) == "USA" else "Confederate"
+                unit_type = f"{type_match.group(2)} {type_match.group(3)}"
+                mappings[side][entry_name] = {
+                    "image": image_file,
+                    "type": unit_type
+                }
+    
+    return mappings
+
+
+TPC_CONFIG = GameConfig(
+    game_id='tpc',
+    name_variants_fn=tpc_get_name_variants,
+    extract_mappings_fn=tpc_extract_unit_mappings,
+)
+
+
+# -----------------------------------------------------------------------------
 # Game registry
 # -----------------------------------------------------------------------------
 
@@ -765,6 +881,7 @@ GAME_CONFIGS: dict[str, GameConfig] = {
     'hsn': HSN_CONFIG,
     'rwh': RWH_CONFIG,
     'tom': TOM_CONFIG,
+    'tpc': TPC_CONFIG,
 }
 
 
@@ -867,7 +984,7 @@ def run_counter_generation(
     mappings = extract_unit_mappings(buildfile)
     
     # Load parsed data
-    parsed_file = Path(__file__).parent / 'parsed' / f'{game_id}_parsed.json'
+    parsed_file = Path(__file__).parent.parent / 'parsed' / f'{game_id}_parsed.json'
     parsed_units = {'Union': {}, 'Confederate': {}}
     if parsed_file.exists():
         with open(parsed_file) as f:
@@ -914,7 +1031,8 @@ def run_counter_generation(
     
     # Determine output directory
     if output_dir is None:
-        output_dir = Path(__file__).parent.parent / 'web' / 'public' / 'images' / 'counters' / game_id
+        # Go up from parser/image_extraction/ to project root, then into web/
+        output_dir = Path(__file__).parent.parent.parent / 'web' / 'public' / 'images' / 'counters' / game_id
     
     output_dir.mkdir(parents=True, exist_ok=True)
     

@@ -31,7 +31,8 @@ def get_counter_type(game_id: str, mapping_file: Path) -> str:
 
 def update_image_map_ts(game_id: str, counter_type: str, dry_run: bool = False) -> bool:
     """Update imageMap.ts to include the new game."""
-    image_map_path = Path(__file__).parent.parent / 'web' / 'src' / 'data' / 'imageMap.ts'
+    # Go up from parser/image_extraction/ to project root, then into web/
+    image_map_path = Path(__file__).parent.parent.parent / 'web' / 'src' / 'data' / 'imageMap.ts'
     
     if not image_map_path.exists():
         print(f"❌ Error: {image_map_path} not found")
@@ -127,8 +128,9 @@ def main():
         print(f"   Run generate_counters.py or extract_images.py first")
         return 1
     
-    web_data_dir = Path(__file__).parent.parent / 'web' / 'src' / 'data'
-    web_counters_dir = Path(__file__).parent.parent / 'web' / 'public' / 'images' / 'counters' / game_id
+    # Go up from parser/image_extraction/ to project root, then into web/
+    web_data_dir = Path(__file__).parent.parent.parent / 'web' / 'src' / 'data'
+    web_counters_dir = Path(__file__).parent.parent.parent / 'web' / 'public' / 'images' / 'counters' / game_id
     
     if not web_counters_dir.exists() or not list(web_counters_dir.glob('*.jpg')):
         print(f"⚠️  Warning: No counter images found in {web_counters_dir}")

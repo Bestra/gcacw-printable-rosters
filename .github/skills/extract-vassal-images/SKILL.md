@@ -267,6 +267,17 @@ Usually indicates:
 
 Check the Pillow font loading - the script uses system fonts with fallback to default.
 
+### Integration script fails with "No such file or directory"
+
+If `integrate_game_images.py` or the extraction creates files in the wrong location (e.g., `parser/web/` instead of project root `web/`), the path calculations in the scripts may be incorrect. After adding a new game configuration:
+
+1. **Check output directory**: Images should go to `web/public/images/counters/{game}/` at the project root
+2. **Verify paths**: Scripts in `parser/image_extraction/` need `.parent.parent.parent` to reach project root (up from `parser/image_extraction/` → `parser/` → project root)
+3. **Manual integration**: If the integration script's regex fails, manually update `web/src/data/imageMap.ts`:
+   - Add import: `import {game}Data from "./{game}_images.json";`
+   - Add to `imageMap`: `{game}: {game}Data.matched_with_ext,`
+   - Add to `counterTypeMap`: `{game}: ({game}Data as {{ counterType?: CounterType }}).counterType ?? 'template',`
+
 ## Related Files
 
 - `parser/image_extraction/detect_counter_type.py` - Automatic counter type detection
