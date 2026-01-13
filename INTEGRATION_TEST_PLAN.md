@@ -182,9 +182,9 @@ No test changes needed — unit tests use fixtures, not real game data.
 
 ## Success Criteria
 
-- [ ] `npm test` passes all unit tests
-- [ ] Tests cover key behaviors (footnotes, legend, key, leaders, gunboats)
-- [ ] Clear error messages on failure
+- [x] `npm test` passes all unit tests
+- [x] Tests cover key behaviors (footnotes, legend, key, leaders, gunboats)
+- [x] Clear error messages on failure
 - [ ] Tests run in CI (GitHub Actions)
 
 ---
@@ -197,5 +197,5 @@ No test changes needed — unit tests use fixtures, not real game data.
 | 1.2  | Create `vitest.config.ts`     | ✅     |
 | 1.3  | Create `tests/setup.ts`       | ✅     |
 | 1.4  | Add npm scripts               | ✅     |
-| 2.1  | Create `rosterSheet.test.tsx` |        |
-| 3    | Run tests, iterate            |        |
+| 2.1  | Create `rosterSheet.test.tsx` | ✅     |
+| 3    | Run tests, iterate            | ✅     |
