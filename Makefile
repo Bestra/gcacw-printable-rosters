@@ -15,7 +15,7 @@
 SHELL := /bin/bash
 
 # All games
-ALL_GAMES := gtc2 hcr hsn otr2 rtg2 rwh tom
+ALL_GAMES := gtc2 hcr hsn otr2 rtg2 rwh tom tpc
 
 # Directories
 PARSER_DIR := parser

@@ -22,12 +22,40 @@ cd parser && uv run python pipeline/raw_table_extractor.py ../data/NewGame.pdf n
 
 This creates `raw/newgame_raw_tables.json` containing all scenario tables with:
 
-- Scenario names and page ranges
+- Scenario names and page ranges (initially generic "Scenario 1", "Scenario 2", etc.)
 - Confederate and Union tables
 - Raw row tokens (not yet parsed)
 - Footnote annotations
 
 Review the output to verify scenarios were detected correctly.
+
+## Step 1.5: Add Scenario Names (Required)
+
+The initial extraction will use generic names like "Scenario 1", "Scenario 2", etc. You need to manually add the actual scenario names:
+
+1. **Look up scenario names** from the PDF table of contents or scenario headers
+2. **Edit `parser/pipeline/raw_table_extractor.py`** and add to the `SCENARIO_NAMES` dictionary:
+
+```python
+SCENARIO_NAMES = {
+    # ... existing games ...
+    "newgame": {
+        1: "First Scenario Name",
+        2: "Second Scenario Name",
+        3: "Third Scenario Name",
+        # ... etc
+    },
+}
+```
+
+3. **Re-extract raw tables** with the updated names:
+
+```bash
+cd parser && rm raw/newgame_raw_tables.json
+cd parser && uv run python pipeline/raw_table_extractor.py ../data/NewGame.pdf newgame
+```
+
+**Why this is manual**: PDF text extraction quality varies significantly. Scenario names often run into other text on the same line, making reliable auto-extraction impractical. The semi-manual approach ensures correct names every time.
 
 ## Step 2: Check Column Structure
 

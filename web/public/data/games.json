@@ -34,6 +34,11 @@
       "id": "tom",
       "name": "Thunder on the Mississippi",
       "file": "tom.json"
+    },
+    {
+      "id": "tpc",
+      "name": "The Petersburg Campaign",
+      "file": "tpc.json"
     }
   ]
 }

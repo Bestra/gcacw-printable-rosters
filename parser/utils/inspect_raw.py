@@ -24,7 +24,7 @@ from typing import Optional
 
 def load_raw_data(game_id: str) -> list:
     """Load raw table data for a game."""
-    raw_file = Path(__file__).parent / "raw" / f"{game_id}_raw_tables.json"
+    raw_file = Path(__file__).parent.parent / "raw" / f"{game_id}_raw_tables.json"
     if not raw_file.exists():
         print(f"Error: {raw_file} not found")
         print(f"Run: make extract-{game_id}")

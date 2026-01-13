@@ -163,6 +163,20 @@ class RawTableExtractor:
             11: "Inflict All the Punishment You Can",
             12: "Starting and Ending the Game",
         },
+        "tpc": {
+            1: "My Best Achievement",
+            2: "Battle of Jerusalem Plank Road",
+            3: "Sheridan Crosses the James",
+            4: "The Crater",
+            5: "The Fourth Offensive",
+            6: "The Fifth Offensive",
+            7: "Burgess Mill",
+            8: "Hatcher's Run",
+            9: "Five Forks",
+            10: "Retreat to Appomattox",
+            11: "The Petersburg Campaign",
+            12: "The Last Offensive",
+        },
     }
     
     def __init__(self, pdf_path: str, game_id: str = "otr2", start_page: int = None, end_page: int = None):
@@ -218,7 +232,8 @@ class RawTableExtractor:
     
     def _find_scenario_pages(self, pdf) -> list[tuple[int, int, str]]:
         """Find all scenario header pages. Returns [(page_num, scenario_num, name), ...]"""
-        scenario_pattern = re.compile(r'scenario\s+(\d+):', re.IGNORECASE)
+        # Pattern to capture scenario number and name after the colon
+        scenario_pattern = re.compile(r'scenario\s+(\d+):\s*(.+?)(?:\s{2,}|$)', re.IGNORECASE)
         known_names = self.SCENARIO_NAMES.get(self.game_id, {})
         
         results = []
@@ -248,7 +263,20 @@ class RawTableExtractor:
                         continue
                     seen_scenarios.add(scenario_num)
                     
-                    scenario_name = known_names.get(scenario_num, f"Scenario {scenario_num}")
+                    # Try to extract scenario name from the PDF text
+                    extracted_name = match.group(2).strip() if len(match.groups()) > 1 else ""
+                    # Clean up extracted name (remove trailing content, split on multiple spaces)
+                    if extracted_name:
+                        extracted_name = extracted_name.split('...')[0].strip()
+                        # Proper title case the name
+                        extracted_name = extracted_name.title()
+                    
+                    # Use extracted name if valid, otherwise fall back to known names, then generic
+                    if extracted_name and len(extracted_name) > 3:  # Minimum reasonable name length
+                        scenario_name = extracted_name
+                    else:
+                        scenario_name = known_names.get(scenario_num, f"Scenario {scenario_num}")
+                    
                     results.append((i, scenario_num, scenario_name))
                     break
         

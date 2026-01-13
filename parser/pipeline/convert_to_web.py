@@ -18,6 +18,7 @@ GAMES = [
     {"id": "rtg2", "name": "Roads to Gettysburg 2"},
     {"id": "rwh", "name": "Rebels in the White House"},
     {"id": "tom", "name": "Thunder on the Mississippi"},
+    {"id": "tpc", "name": "The Petersburg Campaign"},
 ]
 
 
