@@ -29,11 +29,11 @@ Each stage of the data pipeline is tested in isolation with clear boundaries:
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-| Boundary | Input | Output | Language | Tool |
-|----------|-------|--------|----------|------|
-| **raw → parsed** | `raw/*.json` | `parsed/*.json` | Python | pytest |
-| **parsed → web** | `parsed/*.json` | `web/public/data/*.json` | Python | pytest |
-| **web → DOM** | `web/public/data/*.json` | Rendered components | TypeScript | Vitest |
+| Boundary         | Input                    | Output                   | Language   | Tool   |
+| ---------------- | ------------------------ | ------------------------ | ---------- | ------ |
+| **raw → parsed** | `raw/*.json`             | `parsed/*.json`          | Python     | pytest |
+| **parsed → web** | `parsed/*.json`          | `web/public/data/*.json` | Python     | pytest |
+| **web → DOM**    | `web/public/data/*.json` | Rendered components      | TypeScript | Vitest |
 
 **Key principle:** Each test layer uses the output of the previous stage as its source of truth. No reimplementation of parsing logic across languages.
 
@@ -83,7 +83,7 @@ export interface GameInfo {
   id: string;
   name: string;
 }
-export function discoverGames(): GameInfo[]
+export function discoverGames(): GameInfo[];
 ```
 
 #### Step 2.2: Create `tests/fixtures/loadWebData.ts`
@@ -91,8 +91,8 @@ export function discoverGames(): GameInfo[]
 Load web JSON for any game.
 
 ```typescript
-import type { GameData } from '../../src/types';
-export function loadWebData(gameId: string): GameData
+import type { GameData } from "../../src/types";
+export function loadWebData(gameId: string): GameData;
 ```
 
 ---
@@ -102,26 +102,28 @@ export function loadWebData(gameId: string): GameData
 #### Step 3.1: Create `tests/integration/rosterRendering.test.tsx`
 
 ```typescript
-import { discoverGames } from '../fixtures/gameDiscovery';
-import { loadWebData } from '../fixtures/loadWebData';
-import { render, screen } from '@testing-library/react';
-import { RosterSheet } from '../../src/components/RosterSheet';
+import { discoverGames } from "../fixtures/gameDiscovery";
+import { loadWebData } from "../fixtures/loadWebData";
+import { render, screen } from "@testing-library/react";
+import { RosterSheet } from "../../src/components/RosterSheet";
 
 const games = discoverGames();
 
-describe.each(games)('$name ($id)', ({ id, name }) => {
+describe.each(games)("$name ($id)", ({ id, name }) => {
   const gameData = loadWebData(id);
-  
-  describe.each(gameData.scenarios)('Scenario $number: $name', (scenario) => {
-    test('renders all Confederate units from web JSON', () => {
-      render(<RosterSheet scenario={scenario} gameName={name} showImages={false} />);
-      
+
+  describe.each(gameData.scenarios)("Scenario $number: $name", (scenario) => {
+    test("renders all Confederate units from web JSON", () => {
+      render(
+        <RosterSheet scenario={scenario} gameName={name} showImages={false} />
+      );
+
       for (const unit of scenario.confederate.units) {
         expect(screen.getByText(unit.name)).toBeInTheDocument();
       }
     });
-    
-    test('renders all Union units from web JSON', () => {
+
+    test("renders all Union units from web JSON", () => {
       // Similar structure
     });
   });
@@ -136,14 +138,14 @@ Create wrapper component if `RosterSheet` requires additional context.
 
 ### What to Assert
 
-| Data Point | Assertion |
-|------------|-----------|
-| Unit names | Text appears in DOM |
-| Unit count | Number of unit elements matches scenario data |
-| Hex locations | Hex code appears in unit card |
-| Footnotes | Symbol appears on units with notes |
-| Leaders | Leader names appear in leader headers |
-| Gunboats | Appear in gunboats section |
+| Data Point    | Assertion                                     |
+| ------------- | --------------------------------------------- |
+| Unit names    | Text appears in DOM                           |
+| Unit count    | Number of unit elements matches scenario data |
+| Hex locations | Hex code appears in unit card                 |
+| Footnotes     | Symbol appears on units with notes            |
+| Leaders       | Leader names appear in leader headers         |
+| Gunboats      | Appear in gunboats section                    |
 
 ### What NOT to Assert
 
@@ -181,10 +183,10 @@ Validate that `parse_raw_tables.py` correctly transforms raw table data.
 # parser/tests/test_parse_raw_tables.py
 def test_unit_name_extraction():
     """Multi-cell names are joined correctly"""
-    
+
 def test_footnote_symbols_stripped():
     """Footnote markers removed from values"""
-    
+
 def test_column_mapping_applied():
     """game_configs.json column positions used correctly"""
 ```
@@ -197,7 +199,7 @@ Validate that `convert_to_web.py` correctly transforms parsed data.
 # parser/tests/test_convert_to_web.py
 def test_snake_case_to_camel_case():
     """Field names converted correctly"""
-    
+
 def test_all_scenarios_included():
     """No scenarios dropped during conversion"""
 ```
@@ -226,14 +228,14 @@ def test_all_scenarios_included():
 
 ## Implementation Order
 
-| Step | Task | Status |
-|------|------|--------|
-| 1.1 | Install dependencies | ✅ |
-| 1.2 | Create `vitest.config.ts` | ✅ |
-| 1.3 | Create `tests/setup.ts` | ✅ |
-| 1.4 | Add npm scripts | ✅ |
-| 2.1 | Create `gameDiscovery.ts` | |
-| 2.2 | Create `loadWebData.ts` | |
-| 3.1 | Create `rosterRendering.test.tsx` | |
-| 3.2 | Test wrapper (if needed) | |
-| 4 | Run tests, iterate | |
+| Step | Task                              | Status |
+| ---- | --------------------------------- | ------ |
+| 1.1  | Install dependencies              | ✅     |
+| 1.2  | Create `vitest.config.ts`         | ✅     |
+| 1.3  | Create `tests/setup.ts`           | ✅     |
+| 1.4  | Add npm scripts                   | ✅     |
+| 2.1  | Create `gameDiscovery.ts`         |        |
+| 2.2  | Create `loadWebData.ts`           |        |
+| 3.1  | Create `rosterRendering.test.tsx` |        |
+| 3.2  | Test wrapper (if needed)          |        |
+| 4    | Run tests, iterate                |        |
