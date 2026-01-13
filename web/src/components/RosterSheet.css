@@ -446,11 +446,13 @@
   }
 
   .armies {
+    display: block;
     gap: 0;
   }
 
   /* Remove army section styling for print */
   .army-section {
+    display: block;
     border: none;
     padding: 0;
     background: none;
@@ -460,7 +462,6 @@
   .army-section.union {
     break-before: page;
     page-break-before: always;
-    -webkit-column-break-before: always;
   }
 
   .army-header {
@@ -473,16 +474,27 @@
     page-break-after: avoid;
   }
 
-  /* Keep 3-column layout for print */
+  /* Disable CSS columns for print - Safari doesn't support page breaks inside columns */
   .groups-container {
-    column-count: 3;
-    column-gap: 0.125rem;
-    column-fill: balance;
+    column-count: unset;
+    display: block;
+  }
+
+  .groups-container > .command-group {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.333% - 0.1rem);
+    margin-right: 0.05rem;
   }
 
   .roster-sheet.hierarchical .groups-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.125rem;
+    display: block;
+  }
+
+  .roster-sheet.hierarchical .groups-container > .command-group {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.333% - 0.1rem);
   }
 
   /* Command groups should not break internally */
