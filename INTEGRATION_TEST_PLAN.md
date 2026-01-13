@@ -1,29 +1,68 @@
-# Integration Test Suite Implementation Plan
+# Test Suite Implementation Plan
 
-## Goal
+## Architecture: Layered Testing
 
-Create a Vitest + React Testing Library test suite that validates all units from raw table data appear correctly in the rendered DOM. New games should be automatically tested with zero additional configuration.
+Each stage of the data pipeline is tested in isolation with clear boundaries:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  PDF                                                                        │
+│   ↓                                                                         │
+│  raw_table_extractor.py                                                     │
+│   ↓                                                                         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  raw/{game}_raw_tables.json                                                 │
+│   ↓                                                                         │
+│  parse_raw_tables.py  ←── game_configs.json          [pytest: raw→parsed]   │
+│   ↓                                                                         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  parsed/{game}_parsed.json                                                  │
+│   ↓                                                                         │
+│  convert_to_web.py                                   [pytest: parsed→web]   │
+│   ↓                                                                         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  web/public/data/{game}.json                                                │
+│   ↓                                                                         │
+│  React components                                    [vitest: web→DOM]      │
+│   ↓                                                                         │
+│  Rendered DOM                                                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+| Boundary | Input | Output | Language | Tool |
+|----------|-------|--------|----------|------|
+| **raw → parsed** | `raw/*.json` | `parsed/*.json` | Python | pytest |
+| **parsed → web** | `parsed/*.json` | `web/public/data/*.json` | Python | pytest |
+| **web → DOM** | `web/public/data/*.json` | Rendered components | TypeScript | Vitest |
+
+**Key principle:** Each test layer uses the output of the previous stage as its source of truth. No reimplementation of parsing logic across languages.
 
 ---
 
-## Phase 1: Setup Vitest
+## Part A: Vitest / React Tests (web → DOM)
 
-### Step 1.1: Install dependencies ✅
+### Goal
+
+Validate that all units in `web/public/data/{game}.json` render correctly in the DOM. New games are automatically tested with zero configuration.
+
+### Phase 1: Setup Vitest ✅
+
+#### Step 1.1: Install dependencies ✅
 
 ```bash
 cd web
 npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom @vitejs/plugin-react
 ```
 
-### Step 1.2: Create `vitest.config.ts` ✅
+#### Step 1.2: Create `vitest.config.ts` ✅
 
-Configure Vitest with JSDOM environment, set up path aliases to match Vite config, and enable globals for cleaner test syntax.
+Configure Vitest with JSDOM environment and globals for cleaner test syntax.
 
-### Step 1.3: Create `tests/setup.ts` ✅
+#### Step 1.3: Create `tests/setup.ts` ✅
 
-Import `@testing-library/jest-dom` matchers (e.g., `toBeInTheDocument()`), set up any global mocks needed (like `import.meta.env.BASE_URL`).
+Import `@testing-library/jest-dom` matchers, mock `import.meta.env.BASE_URL`.
 
-### Step 1.4: Add npm scripts to `package.json` ✅
+#### Step 1.4: Add npm scripts to `package.json` ✅
 
 ```json
 "test": "vitest run",
@@ -33,140 +72,80 @@ Import `@testing-library/jest-dom` matchers (e.g., `toBeInTheDocument()`), set u
 
 ---
 
-## Phase 2: Fixture Utilities (Auto-Discovery)
+### Phase 2: Fixture Utilities
 
-### Step 2.1: Create `tests/fixtures/gameDiscovery.ts`
+#### Step 2.1: Create `tests/fixtures/gameDiscovery.ts`
 
-**Purpose:** Automatically discover all games from `games.json` — no hardcoded list.
+Auto-discover all games from `games.json` — no hardcoded list.
 
 ```typescript
-// Reads web/public/data/games.json
-// Returns array of { id, name, file } for all games
+export interface GameInfo {
+  id: string;
+  name: string;
+}
 export function discoverGames(): GameInfo[]
 ```
 
-### Step 2.2: Create `tests/fixtures/loadRawTables.ts`
+#### Step 2.2: Create `tests/fixtures/loadWebData.ts`
 
-**Purpose:** Load raw table JSON for any game.
-
-```typescript
-// Reads parser/raw/{gameId}_raw_tables.json
-// Returns parsed JSON with all scenarios
-export function loadRawTables(gameId: string): RawScenario[]
-```
-
-### Step 2.3: Create `tests/fixtures/loadWebData.ts`
-
-**Purpose:** Load web JSON for comparison/rendering.
+Load web JSON for any game.
 
 ```typescript
-// Reads web/public/data/{gameId}.json
-// Returns GameData with scenarios ready for component props
+import type { GameData } from '../../src/types';
 export function loadWebData(gameId: string): GameData
 ```
 
 ---
 
-## Phase 3: Raw Data Extraction Utilities
+### Phase 3: Integration Test Suite
 
-### Step 3.1: Create `tests/utils/extractUnits.ts`
+#### Step 3.1: Create `tests/integration/rosterRendering.test.tsx`
 
-**Purpose:** Extract unit names from raw table format (mirroring parser logic).
-
-```typescript
-interface ExtractedUnit {
-  name: string;           // Joined from multi-cell names
-  manpowerValue: string;
-  hexLocation: string;
-  side: 'confederate' | 'union';
-}
-
-// Extracts all units from a scenario's raw tables
-export function extractUnitsFromRaw(scenario: RawScenario): {
-  confederate: ExtractedUnit[];
-  union: ExtractedUnit[];
-}
-```
-
-**Key logic to implement:**
-- Join multi-cell unit names (e.g., `["D.H.", "Hill-A"]` → `"D.H. Hill-A"`)
-- Strip footnote symbols from values
-- Identify hex column by pattern (e.g., `W3212`, `S5510`)
-- Handle special units (Gunboats, etc.)
-
-### Step 3.2: Reference `game_configs.json` for column mappings
-
-Each game may have different column layouts. The extraction utility should either:
-- Option A: Read `parser/game_configs.json` for authoritative column positions
-- Option B: Use heuristics (simpler, but may drift from parser)
-
-**Recommendation:** Option A — read the real config to stay in sync.
-
----
-
-## Phase 4: Test Suite Structure
-
-### Step 4.1: Create `tests/integration/dataIntegrity.test.ts`
-
-**Structure:**
 ```typescript
 import { discoverGames } from '../fixtures/gameDiscovery';
-import { loadRawTables } from '../fixtures/loadRawTables';
 import { loadWebData } from '../fixtures/loadWebData';
-import { extractUnitsFromRaw } from '../utils/extractUnits';
-import { render, screen, within } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { RosterSheet } from '../../src/components/RosterSheet';
 
-// Auto-discover all games
 const games = discoverGames();
 
 describe.each(games)('$name ($id)', ({ id, name }) => {
-  const rawData = loadRawTables(id);
-  const webData = loadWebData(id);
+  const gameData = loadWebData(id);
   
-  describe.each(webData.scenarios)('Scenario $number: $name', (scenario) => {
-    // Find matching raw scenario
-    const rawScenario = rawData.find(r => r.scenario_number === scenario.number);
-    const expectedUnits = extractUnitsFromRaw(rawScenario);
-    
-    test('all Confederate units appear in DOM', () => {
-      render(<RosterSheet scenario={scenario} gameName={name} showImages={false} variant="flow" />);
+  describe.each(gameData.scenarios)('Scenario $number: $name', (scenario) => {
+    test('renders all Confederate units from web JSON', () => {
+      render(<RosterSheet scenario={scenario} gameName={name} showImages={false} />);
       
-      const confSection = screen.getByRole('region', { name: /confederate/i });
-      
-      for (const unit of expectedUnits.confederate) {
-        expect(within(confSection).getByText(unit.name)).toBeInTheDocument();
+      for (const unit of scenario.confederate.units) {
+        expect(screen.getByText(unit.name)).toBeInTheDocument();
       }
     });
     
-    test('all Union units appear in DOM', () => {
+    test('renders all Union units from web JSON', () => {
       // Similar structure
     });
   });
 });
 ```
 
-### Step 4.2: Wrapper component for context providers
+#### Step 3.2: Test wrapper for context providers (if needed)
 
-The `RosterSheet` uses `RosterProvider` internally, but may need additional context. Create a test wrapper if needed.
+Create wrapper component if `RosterSheet` requires additional context.
 
 ---
-
-## Phase 5: Test Assertions
 
 ### What to Assert
 
 | Data Point | Assertion |
 |------------|-----------|
-| Unit names | Text appears in correct army section |
-| Unit count | Number of `.unit-row` elements matches expected |
-| Manpower values | MP value appears (or empty if "-") |
+| Unit names | Text appears in DOM |
+| Unit count | Number of unit elements matches scenario data |
 | Hex locations | Hex code appears in unit card |
-| Footnotes rendered | Symbol appears on units that have notes |
-| Leaders rendered | Leader names appear in `.leader-header` elements |
-| Gunboats | Appear in `.gunboats-list` section |
+| Footnotes | Symbol appears on units with notes |
+| Leaders | Leader names appear in leader headers |
+| Gunboats | Appear in gunboats section |
 
-### What NOT to Assert (save for later)
+### What NOT to Assert
 
 - CSS styling/layout
 - Image rendering
@@ -175,53 +154,63 @@ The `RosterSheet` uses `RosterProvider` internally, but may need additional cont
 
 ---
 
-## Phase 6: Adding a New Game (Zero Boilerplate!)
-
-### When you add a new game:
-
-1. Add entry to `web/public/data/games.json` ✓ (already required)
-2. Add raw data to `parser/raw/{newgame}_raw_tables.json` ✓ (already required)
-3. Add web data to `web/public/data/{newgame}.json` ✓ (already required)
-4. **Run tests** — the new game is automatically discovered and tested!
-
-**No test code changes needed.**
-
----
-
-## File Structure Summary
+### File Structure (Vitest)
 
 ```
 web/
-├── vitest.config.ts                      # Vitest configuration
-├── package.json                          # + test scripts
+├── vitest.config.ts                      # ✅ Created
+├── package.json                          # ✅ Updated with test scripts
 ├── tests/
-│   ├── setup.ts                          # Test setup (matchers, mocks)
+│   ├── setup.ts                          # ✅ Created
 │   ├── fixtures/
-│   │   ├── gameDiscovery.ts              # Auto-discover games from games.json
-│   │   ├── loadRawTables.ts              # Load parser/raw/*.json
+│   │   ├── gameDiscovery.ts              # Discover games from games.json
 │   │   └── loadWebData.ts                # Load web/public/data/*.json
-│   ├── utils/
-│   │   └── extractUnits.ts               # Parse raw tables → unit list
 │   └── integration/
-│       └── dataIntegrity.test.ts         # Main test suite
+│       └── rosterRendering.test.tsx      # Main test suite
 ```
 
 ---
 
-## Implementation Order
+## Part B: Pytest Tests (Python pipeline) — Future
 
-| Step | Task | Depends On |
-|------|------|------------|
-| 1 | Install dependencies | - |
-| 2 | Create `vitest.config.ts` | Step 1 |
-| 3 | Create `tests/setup.ts` | Step 2 |
-| 4 | Add npm scripts | Step 1 |
-| 5 | Create `gameDiscovery.ts` | - |
-| 6 | Create `loadRawTables.ts` | - |
-| 7 | Create `loadWebData.ts` | - |
-| 8 | Create `extractUnits.ts` | Step 6 |
-| 9 | Create `dataIntegrity.test.ts` | Steps 5-8 |
-| 10 | Run tests, iterate on assertions | Step 9 |
+### raw → parsed tests
+
+Validate that `parse_raw_tables.py` correctly transforms raw table data.
+
+```python
+# parser/tests/test_parse_raw_tables.py
+def test_unit_name_extraction():
+    """Multi-cell names are joined correctly"""
+    
+def test_footnote_symbols_stripped():
+    """Footnote markers removed from values"""
+    
+def test_column_mapping_applied():
+    """game_configs.json column positions used correctly"""
+```
+
+### parsed → web tests
+
+Validate that `convert_to_web.py` correctly transforms parsed data.
+
+```python
+# parser/tests/test_convert_to_web.py
+def test_snake_case_to_camel_case():
+    """Field names converted correctly"""
+    
+def test_all_scenarios_included():
+    """No scenarios dropped during conversion"""
+```
+
+---
+
+## Adding a New Game
+
+1. Add entry to `web/public/data/games.json`
+2. Add web data to `web/public/data/{newgame}.json`
+3. **Run `npm test`** — automatically discovered and tested!
+
+**No test code changes needed.**
 
 ---
 
@@ -229,18 +218,22 @@ web/
 
 - [ ] `npm test` runs all games/scenarios in < 30 seconds
 - [ ] All current games (7) pass with all scenarios
-- [ ] Adding a new game to `games.json` + data files automatically adds tests
+- [ ] Adding a new game automatically adds tests
 - [ ] Clear error messages when a unit is missing from DOM
 - [ ] Tests run in CI (GitHub Actions)
 
 ---
 
-## Open Questions
+## Implementation Order
 
-1. **Column mapping strategy:** Should `extractUnits.ts` read `game_configs.json` or use heuristics?
-   - *Recommendation:* Read config for accuracy
-
-2. **How to handle intentional filtering?** (e.g., Leaders excluded from grid)
-   - *Solution:* Test leaders separately in leader headers
-
-3. **Parallel test execution?** Vitest runs in parallel by default — may need to verify no state conflicts
+| Step | Task | Status |
+|------|------|--------|
+| 1.1 | Install dependencies | ✅ |
+| 1.2 | Create `vitest.config.ts` | ✅ |
+| 1.3 | Create `tests/setup.ts` | ✅ |
+| 1.4 | Add npm scripts | ✅ |
+| 2.1 | Create `gameDiscovery.ts` | |
+| 2.2 | Create `loadWebData.ts` | |
+| 3.1 | Create `rosterRendering.test.tsx` | |
+| 3.2 | Test wrapper (if needed) | |
+| 4 | Run tests, iterate | |
