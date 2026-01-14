@@ -27,7 +27,7 @@ uv run python pipeline/convert_to_web.py
 
 ```bash
 cd parser
-uv run python pipeline/raw_table_extractor.py ../data/<GamePDF>.pdf <game_id>
+uv run python pipeline/raw_table_extractor.py <game_id>  # Uses {GAME_ID}_RULES_PATH from .env
 uv run python pipeline/parse_raw_tables.py <game_id>
 uv run python pipeline/convert_to_web.py
 ```

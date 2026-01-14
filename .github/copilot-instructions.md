@@ -85,6 +85,18 @@ PDF → pipeline/raw_table_extractor.py → raw/{game}_raw_tables.json
                               Web app fetches at runtime
 ```
 
+### PDF and VASSAL Module Paths
+
+Game resources are configured via environment variables in `parser/.env`:
+
+```bash
+# Example from parser/.env
+GTC2_RULES_PATH=~/Documents/vasl/gcacw/GTC2_Rules.pdf
+GTC2_VASSAL_PATH=~/Documents/vasl/gcacw/GTC2_3_10.vmod
+```
+
+See [parser/.env.example](parser/.env.example) for the complete list of variables.
+
 ## Architecture
 
 **Parser** (`parser/`)
@@ -122,16 +134,18 @@ PDF → pipeline/raw_table_extractor.py → raw/{game}_raw_tables.json
 
 ### Adding a new game
 
-See `parser/RAW_TABLE_EXTRACTOR.md` for detailed instructions.
+See the [parse-new-game skill](.github/skills/parse-new-game/SKILL.md) for detailed instructions.
 
 Quick summary:
 
-1. Extract raw tables: `make extract-newgame` (or manually run pipeline/raw_table_extractor.py)
-2. Add column config to `game_configs.json` if needed
-3. Add game to `GAMES` list in `pipeline/convert_to_web.py`
-4. Add game to `ALL_GAMES` in `Makefile`
-5. Add URL slug mapping in `web/src/utils/slugs.ts`
-6. Build: `make newgame`
+1. Add environment variables to `parser/.env` for PDF and VASSAL paths
+2. Extract raw tables: `make extract-newgame` (or manually run pipeline/raw_table_extractor.py)
+3. Add scenario names to `SCENARIO_NAMES` dict in `pipeline/raw_table_extractor.py`
+4. Add column config to `game_configs.json` if needed
+5. Add game to `GAMES` list in `pipeline/convert_to_web.py`
+6. Add game to `ALL_GAMES` in `Makefile`
+7. Add URL slug mapping in `web/src/utils/slugs.ts`
+8. Build: `make newgame`
 
 ## Data Inspection Utilities
 

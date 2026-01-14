@@ -24,7 +24,7 @@ Instead of building a fully automated parser that handles all PDF edge cases, we
 
 ```bash
 cd parser
-uv run python raw_table_extractor.py ../data/GAME_Rules.pdf game_id
+uv run python raw_table_extractor.py game_id  # Uses {GAME_ID}_RULES_PATH from .env
 ```
 
 This produces `raw/{game_id}_raw_tables.json` with:

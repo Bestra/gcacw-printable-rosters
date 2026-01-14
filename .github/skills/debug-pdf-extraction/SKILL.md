@@ -15,7 +15,7 @@ Create a temporary script to see exactly what pdfplumber extracts:
 # parser/debug_pdf.py
 import pdfplumber
 
-with pdfplumber.open("../data/SomeGame.pdf") as pdf:
+with pdfplumber.open("/path/to/SomeGame.pdf") as pdf:
     page = pdf.pages[PAGE_NUMBER - 1]  # 0-indexed
     text = page.extract_text()
 

@@ -94,16 +94,13 @@ reparse-%:
 # =============================================================================
 
 # Extract raw tables from a PDF: make extract-gtc2
+# Uses environment variables from parser/.env:
+#   {GAME}_RULES_PATH (e.g., GTC2_RULES_PATH)
+# Requires environment variable to be set - no fallback.
 .PHONY: extract-%
 extract-%:
 	@echo "Extracting raw tables for $*..."
-	@if [ "$*" = "tom" ]; then \
-		$(PYTHON) pipeline/raw_table_extractor.py ../data/TOTM_Rules.pdf $*; \
-	elif [ "$*" = "hcr" ] || [ "$*" = "rwh" ]; then \
-		$(PYTHON) pipeline/raw_table_extractor.py ../data/RTG2_Rules.pdf $*; \
-	else \
-		$(PYTHON) pipeline/raw_table_extractor.py ../data/$$(echo $* | tr '[:lower:]' '[:upper:]')_Rules.pdf $*; \
-	fi
+	$(PYTHON) pipeline/raw_table_extractor.py $*
 
 # =============================================================================
 # Clean targets

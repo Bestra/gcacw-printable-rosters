@@ -9,15 +9,30 @@ This skill guides the process of adding a new game from the Great Campaigns of t
 
 ## Prerequisites
 
-- PDF rulebook in `data/` directory (e.g., `data/NewGame_Rules.pdf`)
+- PDF rulebook accessible on your filesystem
 - Python environment with pdfplumber (managed by uv)
+- Environment variables configured in `parser/.env`
+
+### Environment Variable Setup (Required)
+
+Configure file paths using environment variables in `parser/.env`:
+
+```bash
+# Add to parser/.env
+NEWGAME_RULES_PATH=~/Documents/vasl/gcacw/NewGame_Rules.pdf
+NEWGAME_VASSAL_PATH=~/Documents/vasl/gcacw/NewGame.vmod  # Optional, for counter images
+```
 
 ## Step 1: Extract Raw Tables
 
 Run the raw table extractor to capture table structure from the PDF:
 
 ```bash
-cd parser && uv run python pipeline/raw_table_extractor.py ../data/NewGame.pdf newgame
+# Using environment variable (NEWGAME_RULES_PATH from parser/.env):
+cd parser && uv run python pipeline/raw_table_extractor.py newgame
+
+# Or via Makefile:
+make extract-newgame
 ```
 
 This creates `raw/newgame_raw_tables.json` containing all scenario tables with:
@@ -52,7 +67,7 @@ SCENARIO_NAMES = {
 
 ```bash
 cd parser && rm raw/newgame_raw_tables.json
-cd parser && uv run python pipeline/raw_table_extractor.py ../data/NewGame.pdf newgame
+cd parser && uv run python pipeline/raw_table_extractor.py newgame
 ```
 
 **Why this is manual**: PDF text extraction quality varies significantly. Scenario names often run into other text on the same line, making reliable auto-extraction impractical. The semi-manual approach ensures correct names every time.
@@ -158,7 +173,10 @@ If you have a VASSAL module (.vmod) for the game, you can extract counter images
 Quick start:
 
 ```bash
-# Detect the counter type
+# If NEWGAME_VASSAL_PATH is set in parser/.env:
+cd parser && uv run python image_extraction/detect_counter_type.py
+
+# Or with explicit path:
 cd parser && uv run python image_extraction/detect_counter_type.py /path/to/GAME.vmod
 
 # Then run the appropriate extractor based on the detected type

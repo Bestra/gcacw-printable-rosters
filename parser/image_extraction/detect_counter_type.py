@@ -21,11 +21,16 @@ Usage:
 """
 
 import argparse
+import os
 import re
 import tempfile
 import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 def extract_pieces_from_buildfile(buildfile_path: Path) -> list[dict]:

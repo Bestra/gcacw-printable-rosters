@@ -14,6 +14,7 @@ Usage:
 
 import argparse
 import json
+import os
 import re
 import shutil
 import tempfile
@@ -21,6 +22,10 @@ import zipfile
 from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Callable
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 try:
     from PIL import Image, ImageDraw, ImageFont
@@ -1269,7 +1274,7 @@ def run_counter_generation(
 def main():
     parser = argparse.ArgumentParser(description='Generate composite counter images for GCACW games')
     parser.add_argument('game', choices=list(GAME_CONFIGS.keys()), help='Game ID')
-    parser.add_argument('source', help='Path to .vmod file or extracted directory')
+    parser.add_argument('source', nargs='?', help='Path to .vmod file or extracted directory. If omitted, uses {GAME}_VASSAL_PATH from .env')
     parser.add_argument('--output', '-o', help='Output directory')
     parser.add_argument('--dry-run', '-n', action='store_true', help='Show mappings without generating images')
     parser.add_argument('--leaders-only', action='store_true', help='Only copy leader images')
@@ -1277,7 +1282,18 @@ def main():
     
     args = parser.parse_args()
     
-    source = Path(args.source).expanduser()
+    # Determine source path - use argument or environment variable
+    if args.source:
+        source = Path(args.source).expanduser()
+    else:
+        env_var = f"{args.game.upper()}_VASSAL_PATH"
+        vassal_path = os.getenv(env_var)
+        if not vassal_path:
+            print(f"Error: No source path provided and {env_var} not set in .env")
+            print(f"Either provide a path as argument or set {env_var} in parser/.env")
+            return
+        source = Path(vassal_path).expanduser()
+    
     output_dir = Path(args.output) if args.output else None
     
     run_counter_generation(

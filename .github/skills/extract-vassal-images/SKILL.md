@@ -87,6 +87,14 @@ cd parser && uv run python image_extraction/generate_counters.py tom ~/Documents
 
 ## Quick Start
 
+**Environment Variables**: Configure VASSAL module paths in `parser/.env`:
+
+```bash
+# Example from parser/.env
+GTC2_VASSAL_PATH=~/Documents/vasl/gcacw/GTC2_3_10.vmod
+OTR2_VASSAL_PATH=~/Documents/vasl/gcacw/OTR2_3_11.vmod
+```
+
 **VMOD Files Location**: `~/Documents/vasl/gcacw/` (store all GCACW .vmod files here)
 
 **For a streamlined extraction workflow, see:**

@@ -20,6 +20,10 @@ import os
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Directory containing this script's parent (the parser directory)
 PARSER_DIR = Path(__file__).parent.parent
@@ -584,19 +588,45 @@ class RawTableExtractor:
             f.write(self.to_json())
 
 
+def get_pdf_path(game_id: str) -> str:
+    """
+    Get the PDF path for a game from environment variables.
+    
+    Environment variable naming: {GAME_CODE}_RULES_PATH (e.g., GTC2_RULES_PATH)
+    
+    Raises:
+        ValueError: If environment variable is not set
+    """
+    env_var = f"{game_id.upper()}_RULES_PATH"
+    pdf_path = os.getenv(env_var)
+    
+    if not pdf_path:
+        raise ValueError(
+            f"Environment variable {env_var} not set.\n"
+            f"Please set it in parser/.env:\n"
+            f"  {env_var}=~/path/to/{game_id.upper()}_Rules.pdf"
+        )
+    
+    return pdf_path
+
+
 def main():
     import sys
     
     # Usage: python pipeline/raw_table_extractor.py [pdf_path] [game_id] [start_page] [end_page]
-    if len(sys.argv) > 1:
-        pdf_path = sys.argv[1]
-    else:
-        pdf_path = "../data/RTG2_Rules.pdf"
-    
+    # If game_id is provided but not pdf_path, we'll auto-detect the PDF path
     if len(sys.argv) > 2:
+        # Both pdf_path and game_id provided
+        pdf_path = sys.argv[1]
         game_id = sys.argv[2]
+    elif len(sys.argv) > 1:
+        # Only one arg - treat as game_id and auto-detect PDF path
+        game_id = sys.argv[1]
+        pdf_path = get_pdf_path(game_id)
     else:
+        # No args - use defaults
         game_id = "rtg2"
+        pdf_path = get_pdf_path(game_id)
     
     start_page = int(sys.argv[3]) if len(sys.argv) > 3 else None
     end_page = int(sys.argv[4]) if len(sys.argv) > 4 else None

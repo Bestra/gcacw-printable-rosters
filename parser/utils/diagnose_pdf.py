@@ -4,8 +4,8 @@ Diagnostic tool to preview PDF table extraction and spot column anomalies.
 Run this before parsing a new game to check for unexpected table structures.
 
 Usage:
-    uv run python diagnose_pdf.py ../data/SomeGame.pdf [game_id]
-    uv run python diagnose_pdf.py ../data/SomeGame.pdf [game_id] [page_number]
+    uv run python diagnose_pdf.py /path/to/SomeGame.pdf [game_id]
+    uv run python diagnose_pdf.py /path/to/SomeGame.pdf [game_id] [page_number]
     
 If game_id has a configured page range in PAGE_RANGES, only those pages are scanned.
 """

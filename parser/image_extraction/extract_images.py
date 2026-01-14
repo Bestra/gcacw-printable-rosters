@@ -10,6 +10,7 @@ This script:
 Usage:
     uv run python extract_images.py rtg2 /path/to/RTGII.vmod
     uv run python extract_images.py rtg2 /path/to/extracted/images/  # if already extracted
+    uv run python extract_images.py rtg2  # uses RTG2_VASSAL_PATH from .env
 """
 
 import argparse
@@ -21,6 +22,10 @@ import tempfile
 import zipfile
 from dataclasses import dataclass
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 @dataclass
@@ -559,17 +564,38 @@ def generate_typescript_map(game: str, matched_with_ext: dict, ts_file: Path):
     ts_file.write_text('\n'.join(lines))
 
 
+def get_vassal_path(game_id: str) -> str | None:
+    """
+    Get the VASSAL module path for a game from environment variables.
+    
+    Environment variable naming: {GAME_CODE}_VASSAL_PATH (e.g., GTC2_VASSAL_PATH)
+    
+    Returns None if the environment variable is not set.
+    """
+    env_var = f"{game_id.upper()}_VASSAL_PATH"
+    return os.getenv(env_var)
+
+
 def main():
     parser = argparse.ArgumentParser(description='Extract unit images from VASSAL modules')
     parser.add_argument('game', help='Game code (e.g., rtg2, otr2)')
-    parser.add_argument('source', help='Path to .vmod file, extracted directory, or directory containing VMOD files')
+    parser.add_argument('source', nargs='?', help='Path to .vmod file, extracted directory, or directory containing VMOD files. If omitted, uses {GAME}_VASSAL_PATH from .env')
     parser.add_argument('--output', '-o', help='Output directory (default: web/public/images/counters/<game>)')
     parser.add_argument('--dry-run', '-n', action='store_true', help='Show mapping without copying files')
     parser.add_argument('--include-depleted', '-d', action='store_true', help='Also copy depleted/exhausted images')
     
     args = parser.parse_args()
     
-    source = Path(args.source).expanduser()  # Handle ~ in paths
+    # Determine source path - use argument or environment variable
+    if args.source:
+        source = Path(args.source).expanduser()  # Handle ~ in paths
+    else:
+        vassal_path = get_vassal_path(args.game)
+        if not vassal_path:
+            print(f"Error: No source path provided and {args.game.upper()}_VASSAL_PATH not set in .env")
+            print(f"Either provide a path as argument or set {args.game.upper()}_VASSAL_PATH in parser/.env")
+            return 1
+        source = Path(vassal_path).expanduser()
     
     # Find the images directory using smart detection
     images_dir = find_images_directory(source, args.game)
