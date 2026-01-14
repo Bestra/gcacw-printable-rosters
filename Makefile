@@ -159,12 +159,12 @@ snapshots-single:
 
 # Run LLM evaluation for all games
 .PHONY: llm-eval
-llm-eval:
+llm-eval: snapshots
 	cd web && npm run llm-eval
 
 # Run LLM evaluation for a single scenario: make llm-eval-single GAME=gtc2 SCENARIO=1
 .PHONY: llm-eval-single
-llm-eval-single:
+llm-eval-single: snapshots-single
 	cd web && npx tsx scripts/llm-eval.ts --game $(GAME) --scenario $(SCENARIO)
 
 # =============================================================================
