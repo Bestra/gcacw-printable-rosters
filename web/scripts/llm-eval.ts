@@ -16,7 +16,6 @@ import {
   existsSync,
   statSync,
   readdirSync,
-  unlinkSync,
 } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
