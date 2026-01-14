@@ -1,0 +1,36 @@
+{
+  "gameId": "gtc2",
+  "scenarioNumber": 2,
+  "evaluatedAt": "2026-01-14T03:36:37.190Z",
+  "evaluationDurationMs": 40527,
+  "snapshotGeneratedAt": "2026-01-14T03:35:48.764Z",
+  "snapshotStale": false,
+  "result": {
+    "pass": true,
+    "unitCountMatch": {
+      "raw": {
+        "confederate": 26,
+        "union": 43
+      },
+      "dom": {
+        "confederate": 26,
+        "union": 43
+      },
+      "matches": true
+    },
+    "issues": [
+      {
+        "side": "union",
+        "unit": "Horse Art",
+        "field": "name",
+        "expected": "Horse Art",
+        "actual": "Horse Art",
+        "severity": "minor",
+        "note": "Raw data has two-word name 'Horse' 'Art', rendered correctly as 'Horse Art'"
+      }
+    ],
+    "missingUnits": [],
+    "extraUnits": [],
+    "summary": "Data validation PASSED. All 26 Confederate units/leaders and 43 Union units/leaders correctly transferred from raw tables to DOM snapshot. Unit counts match exactly (Confederate: 18 units + 8 leaders = 26; Union: 34 units + 9 leaders = 43). All hex locations, manpower values, footnote symbols, and location parentheticals preserved correctly. Leaders properly separated into leaders array. Multi-part location names (Orange Court House → 'Orange Ct Hse', Flat Run Church → 'Flat Run Ch', etc.) abbreviated as expected formatting transformation."
+  }
+}

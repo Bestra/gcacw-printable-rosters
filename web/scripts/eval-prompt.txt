@@ -36,6 +36,9 @@ For each unit/leader in the raw data:
    - Footnote definitions should appear in the `footnotes` object
 
 7. **Unit Count**: The total number of units + leaders in the DOM should match the raw table row count
+   - **IMPORTANT**: Show your counting work step-by-step for verification
+   - For raw data: count total rows in each side's tables
+   - For DOM: count `unitCount` + `leaderCount` fields, then verify by manually counting units/leaders in the structure
 
 ## Known Transformations (Not Errors)
 
@@ -55,6 +58,22 @@ Respond with a JSON object:
 ```json
 {
   "pass": true/false,
+  "countingWork": {
+    "confederate": {
+      "rawCount": "show your work: e.g., 'Table 1: 26 rows'",
+      "domUnitCount": "count from DOM unitCount field",
+      "domLeaderCount": "count from DOM leaderCount field",
+      "domTotal": "unitCount + leaderCount",
+      "verification": "list each leader name found to verify count"
+    },
+    "union": {
+      "rawCount": "show your work: e.g., 'Table 1: 43 rows'",
+      "domUnitCount": "count from DOM unitCount field",
+      "domLeaderCount": "count from DOM leaderCount field", 
+      "domTotal": "unitCount + leaderCount",
+      "verification": "list each leader name found to verify count"
+    }
+  },
   "unitCountMatch": {
     "raw": { "confederate": N, "union": N },
     "dom": { "confederate": N, "union": N },
@@ -94,6 +113,7 @@ Respond with a JSON object:
 
 ## Important Notes
 
+- **Show all counting work** in the `countingWork` field to prevent arithmetic errors
 - Be thorough but efficient - focus on actual discrepancies
 - If everything matches correctly, return `"pass": true` with empty issue arrays
 - The raw data may have columns in different orders per table - use the header_row to understand column meanings

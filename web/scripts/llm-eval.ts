@@ -198,16 +198,31 @@ ${JSON.stringify(snapshot, null, 2)}
 // LLM Evaluation
 // ============================================================================
 
-async function runLLMEvaluation(prompt: string): Promise<EvalResult> {
-  return new Promise((resolve) => {
-    // Write prompt to temp file to avoid shell escaping issues
-    const tempPromptPath = path.join(__dirname, "..", ".eval-prompt-temp.txt");
-    writeFileSync(tempPromptPath, prompt);
+function ensurePromptsDir(): void {
+  const dir = path.join(__dirname, "..", "eval-prompts");
+  if (!existsSync(dir)) {
+    mkdirSync(dir, { recursive: true });
+  }
+}
 
+function savePromptToFile(
+  gameId: string,
+  scenarioNumber: number,
+  prompt: string
+): string {
+  ensurePromptsDir();
+  const filename = `${gameId}-s${scenarioNumber}.txt`;
+  const promptPath = path.join(__dirname, "..", "eval-prompts", filename);
+  writeFileSync(promptPath, prompt);
+  return promptPath;
+}
+
+async function runLLMEvaluation(promptPath: string): Promise<EvalResult> {
+  return new Promise((resolve) => {
     try {
       // Use copilot CLI with the prompt file
       const result = execSync(
-        `cat "${tempPromptPath}" | copilot --model claude-haiku-4.5 -s`,
+        `cat "${promptPath}" | copilot --model claude-haiku-4.5 -s`,
         {
           encoding: "utf-8",
           maxBuffer: 10 * 1024 * 1024, // 10MB buffer
@@ -255,15 +270,6 @@ async function runLLMEvaluation(prompt: string): Promise<EvalResult> {
         summary: `LLM evaluation failed: ${error.message}`,
         error: true,
       });
-    } finally {
-      // Clean up temp file
-      try {
-        if (existsSync(tempPromptPath)) {
-          unlinkSync(tempPromptPath);
-        }
-      } catch {
-        // Ignore cleanup errors
-      }
     }
   });
 }
@@ -327,9 +333,10 @@ async function evaluateScenario(
     };
   }
 
-  // Build prompt and run evaluation
+  // Build prompt, save it, and run evaluation
   const prompt = buildEvalPrompt(rawData, snapshotData.snapshot);
-  const result = await runLLMEvaluation(prompt);
+  const promptPath = savePromptToFile(gameId, scenarioNumber, prompt);
+  const result = await runLLMEvaluation(promptPath);
 
   const durationMs = Date.now() - startTime;
   const status = result.error ? "⚠" : result.pass ? "✓" : "✗";
