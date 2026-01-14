@@ -11,6 +11,8 @@
     "test": "vitest run --exclude 'scripts/**'",
     "test:watch": "vitest --exclude 'scripts/**'",
     "test:ui": "vitest --ui --exclude 'scripts/**'",
+    "test:smoke": "playwright test",
+    "test:smoke:headed": "playwright test --headed",
     "snapshots": "vitest run scripts/generate-snapshots.test.tsx",
     "snapshots:game": "SNAPSHOT_GAME=$npm_config_game vitest run scripts/generate-snapshots.test.tsx",
     "llm-eval": "npx tsx scripts/llm-eval.ts --all",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.57.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
     "@types/node": "^24.10.8",

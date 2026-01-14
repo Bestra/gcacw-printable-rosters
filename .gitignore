@@ -22,3 +22,8 @@ Thumbs.db
 
 # Playwright MCP
 .playwright-mcp/
+
+# Playwright artifacts
+web/test-results/
+web/playwright-report/
+web/playwright/.cache/
