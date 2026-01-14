@@ -61,6 +61,17 @@ cd parser && uv run pytest tests/ -v
 cd web && npm test
 ```
 
+### LLM Evaluation
+
+An LLM-powered integration test compares raw PDF table data to rendered DOM output:
+
+```bash
+make snapshots   # Generate DOM snapshots (run after data changes)
+make llm-eval    # Run LLM evaluation across all scenarios
+```
+
+See [docs/plans/LLM_EVAL_PLAN.md](docs/plans/LLM_EVAL_PLAN.md) for implementation details.
+
 ## License
 
 MIT

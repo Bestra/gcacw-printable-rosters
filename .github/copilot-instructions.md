@@ -2,6 +2,8 @@
 
 Operational guide for working on this codebase.
 
+Do not use CLAUDE.md, as it won't be included in every prompt like this file is.
+
 ## Python
 
 **CRITICAL: Always use `uv run python` to execute Python. Never use bare `python`, `python3`, or `pip`.**
@@ -37,6 +39,13 @@ make build        # Production build
 # Parser (always use uv, never bare python/pip)
 cd parser && uv run python pipeline/parse_raw_tables.py --all   # Parse all games
 cd parser && uv run python pipeline/convert_to_web.py           # Generate web JSON
+
+# LLM evaluation (DOM snapshot testing)
+make snapshots                              # Generate DOM snapshots for all games
+make snapshots-game GAME=gtc2               # Snapshots for one game
+make snapshots-single GAME=gtc2 SCENARIO=1  # Single snapshot
+make llm-eval                               # Run LLM evaluation (all scenarios)
+make llm-eval-single GAME=gtc2 SCENARIO=1   # Single scenario eval
 ```
 
 ## Dev Server
@@ -58,6 +67,9 @@ Vite provides hot module replacement (HMR) - changes to `.tsx`, `.ts`, and `.css
 | Raw table → unit parsing                | `parser/pipeline/parse_raw_tables.py`               |
 | Parsed → web JSON transform             | `parser/pipeline/convert_to_web.py`                 |
 | Games list                              | `GAMES` list in `parser/pipeline/convert_to_web.py` |
+| DOM snapshot generator                  | `web/scripts/generate-snapshots.test.tsx`           |
+| LLM eval orchestrator                   | `web/scripts/llm-eval.ts`                           |
+| LLM eval prompt template                | `web/scripts/eval-prompt.txt`                       |
 
 ## Data Flow
 
@@ -149,9 +161,11 @@ All scripts support `--help` for full usage details.
 
 ## Validation
 
-No automated tests. Validate changes by:
+Validate changes by:
 
 1. `make build` (catches TypeScript errors)
-2. Visual inspection in browser
-3. Check parsed JSON output for parser changes
-4. Use `utils/inspect_raw.py`, `utils/inspect_parsed.py`, or `utils/compare_data.py` to verify data
+2. `make test` (runs parser + web unit tests)
+3. Visual inspection in browser
+4. Check parsed JSON output for parser changes
+5. Use `utils/inspect_raw.py`, `utils/inspect_parsed.py`, or `utils/compare_data.py` to verify data
+6. `make snapshots && make llm-eval` for LLM-powered integration testing (compares raw PDF data to rendered DOM)

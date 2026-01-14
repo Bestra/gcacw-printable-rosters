@@ -2,7 +2,7 @@
 
 Build an offline integration test with a two-phase workflow: (1) generate and persist DOM snapshots, (2) run LLM evaluation against saved snapshots. Snapshots are committed for regression tracking. Evaluator warns if snapshots are stale.
 
-## Status: ✅ Implemented
+## Status: ✅ Complete (January 2026)
 
 ## Overview
 
