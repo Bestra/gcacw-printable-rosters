@@ -16,7 +16,9 @@
     "snapshots": "vitest run scripts/generate-snapshots.test.tsx",
     "snapshots:game": "SNAPSHOT_GAME=$npm_config_game vitest run scripts/generate-snapshots.test.tsx",
     "llm-eval": "npx tsx scripts/llm-eval.ts --all",
-    "llm-eval:single": "npx tsx scripts/llm-eval.ts"
+    "llm-eval:single": "npx tsx scripts/llm-eval.ts",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -41,6 +43,16 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
     "vite": "^7.2.4",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.17",
+    "storybook": "^10.1.11",
+    "@storybook/react-vite": "^10.1.11",
+    "@chromatic-com/storybook": "^5.0.0",
+    "@storybook/addon-vitest": "^10.1.11",
+    "@storybook/addon-a11y": "^10.1.11",
+    "@storybook/addon-docs": "^10.1.11",
+    "@storybook/addon-onboarding": "^10.1.11",
+    "playwright": "^1.57.0",
+    "@vitest/browser-playwright": "^4.0.17",
+    "@vitest/coverage-v8": "^4.0.17"
   }
 }
