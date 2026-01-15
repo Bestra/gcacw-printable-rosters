@@ -48,6 +48,7 @@ The project includes a Python parser that extracts unit data from GCACW rulebook
 ## Development
 
 - **Web app**: `make dev`
+- **Storybook**: `cd web && npm run storybook` (component development & docs)
 - **Parser**: Requires Python 3.11+ and [uv](https://github.com/astral-sh/uv)
 - **Deploy**: Push to `main` triggers GitHub Pages deploy
 
@@ -60,6 +61,18 @@ make test  # Run all tests (parser + web)
 cd parser && uv run pytest tests/ -v
 cd web && npm test
 ```
+
+### Storybook
+
+Interactive component development and documentation:
+
+```bash
+cd web
+npm run storybook        # Start dev server at http://localhost:6006
+npm run build-storybook  # Build static site
+```
+
+See [web/STORYBOOK.md](web/STORYBOOK.md) for details on using Storybook and writing stories.
 
 ### LLM Evaluation
 
