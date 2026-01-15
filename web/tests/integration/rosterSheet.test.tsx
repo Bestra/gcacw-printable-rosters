@@ -537,4 +537,156 @@ describe("RosterSheet", () => {
       expect(rosterSheet).toHaveClass("hierarchical");
     });
   });
+
+  describe("Unit sorting", () => {
+    test("cavalry units appear after infantry units", () => {
+      const scenario = createScenario({
+        confederateUnits: [
+          createLeader({ name: "Stuart", command: "Cav", size: "Corps" }),
+          createUnit({ name: "Cavalry Brigade", command: "Cav", type: "Cav" }),
+          createLeader({ name: "Longstreet", command: "1", size: "Corps" }),
+          createUnit({ name: "Infantry Brigade", command: "1", type: "Inf" }),
+        ],
+      });
+
+      render(
+        <RosterSheet
+          scenario={scenario}
+          gameName="Test Game"
+          showImages={false}
+          variant="flow"
+        />
+      );
+
+      // Get all command groups
+      const commandGroups = document.querySelectorAll(".command-group");
+      const groupTitles = Array.from(commandGroups).map(
+        (group) => group.querySelector(".group-title")?.textContent || ""
+      );
+
+      // Infantry (command "1") should come before Cavalry (command "Cav")
+      const infIndex = groupTitles.findIndex((title) => title.includes("1 —"));
+      const cavIndex = groupTitles.findIndex((title) => title.includes("Cav —"));
+      
+      expect(infIndex).toBeGreaterThanOrEqual(0);
+      expect(cavIndex).toBeGreaterThanOrEqual(0);
+      expect(infIndex).toBeLessThan(cavIndex);
+    });
+
+    test("units with leaders appear before units without leaders", () => {
+      const scenario = createScenario({
+        confederateUnits: [
+          createUnit({ name: "Independent Unit", command: "Ind", type: "Inf" }),
+          createLeader({ name: "Longstreet", command: "1", size: "Corps" }),
+          createUnit({ name: "Led Unit", command: "1", type: "Inf" }),
+        ],
+      });
+
+      render(
+        <RosterSheet
+          scenario={scenario}
+          gameName="Test Game"
+          showImages={false}
+          variant="flow"
+        />
+      );
+
+      // Get all command groups
+      const commandGroups = document.querySelectorAll(".command-group");
+      const groupTitles = Array.from(commandGroups).map(
+        (group) => group.querySelector(".group-title")?.textContent || ""
+      );
+
+      // Group with leader (command "1") should come before group without leader (command "Ind")
+      const ledIndex = groupTitles.findIndex((title) => title.includes("1 —"));
+      const unleadedIndex = groupTitles.findIndex((title) => title.includes("Ind"));
+      
+      expect(ledIndex).toBeGreaterThanOrEqual(0);
+      expect(unleadedIndex).toBeGreaterThanOrEqual(0);
+      expect(ledIndex).toBeLessThan(unleadedIndex);
+    });
+
+    test("cavalry without leaders still appear at the end", () => {
+      const scenario = createScenario({
+        confederateUnits: [
+          createUnit({ name: "Independent Cavalry", command: "CavInd", type: "Cav" }),
+          createUnit({ name: "Independent Infantry", command: "InfInd", type: "Inf" }),
+          createLeader({ name: "Longstreet", command: "1", size: "Corps" }),
+          createUnit({ name: "Led Infantry", command: "1", type: "Inf" }),
+        ],
+      });
+
+      render(
+        <RosterSheet
+          scenario={scenario}
+          gameName="Test Game"
+          showImages={false}
+          variant="flow"
+        />
+      );
+
+      // Get all command groups
+      const commandGroups = document.querySelectorAll(".command-group");
+      const groupTitles = Array.from(commandGroups).map(
+        (group) => group.querySelector(".group-title")?.textContent || ""
+      );
+
+      // Infantry groups should come before cavalry groups, regardless of leader status
+      const ledInfIndex = groupTitles.findIndex((title) => title.includes("1 —"));
+      const unleadedInfIndex = groupTitles.findIndex((title) => title.includes("InfInd"));
+      const unleadedCavIndex = groupTitles.findIndex((title) => title.includes("CavInd"));
+      
+      expect(ledInfIndex).toBeGreaterThanOrEqual(0);
+      expect(unleadedInfIndex).toBeGreaterThanOrEqual(0);
+      expect(unleadedCavIndex).toBeGreaterThanOrEqual(0);
+      
+      // Both infantry groups should come before cavalry
+      expect(ledInfIndex).toBeLessThan(unleadedCavIndex);
+      expect(unleadedInfIndex).toBeLessThan(unleadedCavIndex);
+    });
+
+    test("led infantry comes first, then led cavalry, then unleaded infantry, then unleaded cavalry", () => {
+      const scenario = createScenario({
+        confederateUnits: [
+          createUnit({ name: "Independent Cavalry", command: "CavInd", type: "Cav" }),
+          createLeader({ name: "Stuart", command: "Cav", size: "Corps" }),
+          createUnit({ name: "Led Cavalry", command: "Cav", type: "Cav" }),
+          createUnit({ name: "Independent Infantry", command: "InfInd", type: "Inf" }),
+          createLeader({ name: "Longstreet", command: "1", size: "Corps" }),
+          createUnit({ name: "Led Infantry", command: "1", type: "Inf" }),
+        ],
+      });
+
+      render(
+        <RosterSheet
+          scenario={scenario}
+          gameName="Test Game"
+          showImages={false}
+          variant="flow"
+        />
+      );
+
+      // Get all command groups
+      const commandGroups = document.querySelectorAll(".command-group");
+      const groupTitles = Array.from(commandGroups).map(
+        (group) => group.querySelector(".group-title")?.textContent || ""
+      );
+
+      const ledInfIndex = groupTitles.findIndex((title) => title.includes("1 —"));
+      const unleadedInfIndex = groupTitles.findIndex((title) => title.includes("InfInd"));
+      const ledCavIndex = groupTitles.findIndex((title) => title.includes("Cav —"));
+      const unleadedCavIndex = groupTitles.findIndex((title) => title.includes("CavInd"));
+      
+      expect(ledInfIndex).toBeGreaterThanOrEqual(0);
+      expect(unleadedInfIndex).toBeGreaterThanOrEqual(0);
+      expect(ledCavIndex).toBeGreaterThanOrEqual(0);
+      expect(unleadedCavIndex).toBeGreaterThanOrEqual(0);
+      
+      // Order should be: led infantry < led cavalry < unleaded infantry < unleaded cavalry
+      // (leader presence is primary sort, then cavalry status within each)
+      expect(ledInfIndex).toBeLessThan(ledCavIndex);
+      expect(ledCavIndex).toBeLessThan(unleadedInfIndex);
+      expect(unleadedInfIndex).toBeLessThan(unleadedCavIndex);
+    });
+  });
 });

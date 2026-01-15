@@ -195,6 +195,10 @@ function CommandGroupSection({
     hasSubgroups ? "has-subgroups" : "",
   ].filter(Boolean).join(" ");
   
+  // Check if this is a cavalry group (all units are cavalry)
+  // Empty groups are treated as non-cavalry for rendering purposes
+  const isCavalryGroup = group.units.length > 0 && group.units.every(u => u.type === "Cav");
+  
   return (
     <div className={groupClasses}>
       <h4 className={`group-title${isSubgroup ? ' subgroup-title' : ''}`}>
@@ -204,6 +208,20 @@ function CommandGroupSection({
       
       {group.leader && (
         <LeaderHeader leader={group.leader} footnotes={footnotes} />
+      )}
+      
+      {/* For cavalry groups with subgroups, show subgroups first */}
+      {isCavalryGroup && group.subgroups.length > 0 && (
+        <div className="subgroups">
+          {group.subgroups.map((subgroup, idx) => (
+            <CommandGroupSection
+              key={`${subgroup.commandCode}-${idx}`}
+              group={subgroup}
+              footnotes={footnotes}
+              isSubgroup={true}
+            />
+          ))}
+        </div>
       )}
       
       {/* Direct units for this command */}
@@ -219,8 +237,8 @@ function CommandGroupSection({
         </div>
       )}
       
-      {/* Subgroups (e.g., Divisions under a Corps) */}
-      {group.subgroups.length > 0 && (
+      {/* For non-cavalry groups, show subgroups after direct units */}
+      {!isCavalryGroup && group.subgroups.length > 0 && (
         <div className="subgroups">
           {group.subgroups.map((subgroup, idx) => (
             <CommandGroupSection

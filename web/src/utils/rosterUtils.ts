@@ -222,7 +222,52 @@ export function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
     });
   }
   
-  return groups;
+  // Sort command groups:
+  // 1. Groups with leaders come before groups without leaders
+  // 2. Cavalry groups come after non-cavalry groups
+  // 3. Within each category, maintain relative order
+  return sortCommandGroups(groups);
+}
+
+// Sort command groups by leader presence and unit type
+// - Units with direct leaders go first (within cavalry and non-cavalry)
+// - Cavalry units go at the end
+// - Within cavalry, divisions with their own leaders come before corps-level units
+function sortCommandGroups(groups: CommandGroup[]): CommandGroup[] {
+  return [...groups].sort((a, b) => {
+    // Check if groups are cavalry (all units in the group are cavalry)
+    // Empty groups are treated as non-cavalry (they shouldn't exist in normal operation)
+    const aIsCavalry = a.units.length > 0 && a.units.every(u => u.type === "Cav");
+    const bIsCavalry = b.units.length > 0 && b.units.every(u => u.type === "Cav");
+    
+    // Check if groups have leaders
+    const aHasLeader = a.leader !== null;
+    const bHasLeader = b.leader !== null;
+    
+    // Get leader sizes for additional sorting within cavalry
+    const aLeaderSize = a.leader?.size || "";
+    const bLeaderSize = b.leader?.size || "";
+    
+    // Primary sort: leader presence (leaders first, regardless of cavalry status)
+    if (aHasLeader !== bHasLeader) {
+      return aHasLeader ? -1 : 1;
+    }
+    
+    // Secondary sort: within same leader category, non-cavalry comes before cavalry
+    if (aIsCavalry !== bIsCavalry) {
+      return aIsCavalry ? 1 : -1;
+    }
+    
+    // Tertiary sort: within cavalry groups with leaders, division leaders come before corps leaders
+    if (aIsCavalry && bIsCavalry && aHasLeader && bHasLeader) {
+      // Div < Corps (divisions are more direct/specific than corps)
+      if (aLeaderSize === "Div" && bLeaderSize === "Corps") return -1;
+      if (aLeaderSize === "Corps" && bLeaderSize === "Div") return 1;
+    }
+    
+    // Otherwise maintain relative order (stable sort)
+    return 0;
+  });
 }
 
 // Split a single group with many units into multiple column groups
