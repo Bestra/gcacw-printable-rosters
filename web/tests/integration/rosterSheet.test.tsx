@@ -645,7 +645,7 @@ describe("RosterSheet", () => {
       expect(unleadedInfIndex).toBeLessThan(unleadedCavIndex);
     });
 
-    test("led infantry comes first, then unleaded infantry, then led cavalry, then unleaded cavalry", () => {
+    test("led infantry comes first, then led cavalry, then unleaded infantry, then unleaded cavalry", () => {
       const scenario = createScenario({
         confederateUnits: [
           createUnit({ name: "Independent Cavalry", command: "CavInd", type: "Cav" }),
@@ -682,10 +682,11 @@ describe("RosterSheet", () => {
       expect(ledCavIndex).toBeGreaterThanOrEqual(0);
       expect(unleadedCavIndex).toBeGreaterThanOrEqual(0);
       
-      // Order should be: led infantry < unleaded infantry < led cavalry < unleaded cavalry
-      expect(ledInfIndex).toBeLessThan(unleadedInfIndex);
-      expect(unleadedInfIndex).toBeLessThan(ledCavIndex);
-      expect(ledCavIndex).toBeLessThan(unleadedCavIndex);
+      // Order should be: led infantry < led cavalry < unleaded infantry < unleaded cavalry
+      // (leader presence is primary sort, then cavalry status within each)
+      expect(ledInfIndex).toBeLessThan(ledCavIndex);
+      expect(ledCavIndex).toBeLessThan(unleadedInfIndex);
+      expect(unleadedInfIndex).toBeLessThan(unleadedCavIndex);
     });
   });
 });
