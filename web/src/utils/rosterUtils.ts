@@ -222,7 +222,39 @@ export function buildCommandHierarchy(units: Unit[]): CommandGroup[] {
     });
   }
   
-  return groups;
+  // Sort command groups:
+  // 1. Groups with leaders come before groups without leaders
+  // 2. Cavalry groups come after non-cavalry groups
+  // 3. Within each category, maintain relative order
+  return sortCommandGroups(groups);
+}
+
+// Sort command groups by leader presence and unit type
+// - Units with direct leaders go first
+// - Cavalry units go at the end
+function sortCommandGroups(groups: CommandGroup[]): CommandGroup[] {
+  return [...groups].sort((a, b) => {
+    // Check if groups are cavalry (all units in the group are cavalry)
+    const aIsCavalry = a.units.every(u => u.type === "Cav");
+    const bIsCavalry = b.units.every(u => u.type === "Cav");
+    
+    // Check if groups have leaders
+    const aHasLeader = a.leader !== null;
+    const bHasLeader = b.leader !== null;
+    
+    // If one is cavalry and the other isn't, non-cavalry comes first
+    if (aIsCavalry !== bIsCavalry) {
+      return aIsCavalry ? 1 : -1;
+    }
+    
+    // Within same cavalry/non-cavalry category, those with leaders come first
+    if (aHasLeader !== bHasLeader) {
+      return aHasLeader ? -1 : 1;
+    }
+    
+    // Otherwise maintain relative order (stable sort)
+    return 0;
+  });
 }
 
 // Split a single group with many units into multiple column groups
