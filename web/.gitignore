@@ -25,3 +25,6 @@ dist-ssr
 
 # LLM evaluation temp files
 .eval-prompt-temp.txt
+
+*storybook.log
+storybook-static
