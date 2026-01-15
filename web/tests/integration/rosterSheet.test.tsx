@@ -1,7 +1,7 @@
 import { describe, test, expect } from "vitest";
 import { render, screen, within } from "@testing-library/react";
 import { RosterSheet } from "../../src/components/RosterSheet";
-import type { Scenario, Unit } from "../../src/types";
+import type { Scenario, Unit, Gunboat } from "../../src/types";
 
 // Helper to create a minimal unit fixture
 function createUnit(overrides: Partial<Unit> = {}): Unit {
