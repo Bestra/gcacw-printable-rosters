@@ -188,3 +188,10 @@ cd parser && uv run python image_extraction/detect_counter_type.py /path/to/GAME
 - **Wrong column parsing**: Check `game_configs.json` for table pattern overrides
 - **Zero units parsed**: Check if the PDF table format differs from expected; may need to re-extract raw tables
 - **Missing scenarios**: Check raw tables JSON to see if scenario headers were detected
+- **Hex codes show only map prefix** (e.g., "HCR" instead of "HCR W0330"): The hex location parser in `parser/utils/hex_location_config.json` needs to recognize the game's map prefix and hex letter format. Update:
+  - `gameMapPrefixes` array: Add new map prefixes (e.g., "HCR", "GTC")
+  - `patterns[0].regex`: Add new hex letters to the character class (e.g., `[NSMW]` for games using W-prefixed hexes)
+
+  Then rebuild with `make build` to pick up the config changes.
+
+  **Note:** `convert_to_web.py` automatically validates hex locations against the config and will warn about unrecognized patterns during conversion. Watch for warnings like "⚠️ Found X unrecognized hex location patterns" in the output.

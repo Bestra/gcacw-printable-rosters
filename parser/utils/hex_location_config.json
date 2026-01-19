@@ -2,6 +2,7 @@
     "_comment": "Configuration for parsing and displaying hex locations. Add new patterns when encountering edge cases in new scenario PDFs.",
     "gameMapPrefixes": [
         "GTC",
+        "HCR",
         "OTR",
         "SIV",
         "SJW"
@@ -28,14 +29,29 @@
     },
     "patterns": [
         {
-            "_comment": "Standard hex codes with optional game prefix: 'GTC N2311 (Locust Grove)'",
+            "_comment": "Standard hex codes with optional game prefix: 'GTC N2311 (Locust Grove)', 'HCR W0330 (Winchester)'",
             "type": "hex",
-            "regex": "^((?:GTC|OTR|SIV|SJW)\\s+)?([NSM]\\d{4})(?:\\s+\\(([^)]+)\\))?$",
+            "regex": "^((?:GTC|HCR|OTR|SIV|SJW)\\s+)?([NSMW]\\d{4})(?:\\s+\\(([^)]+)\\))?$",
             "hexCodeGroups": [
                 1,
                 2
             ],
             "locationGroup": 3
+        },
+        {
+            "_comment": "Plain 4-digit hex codes (HSN format): '0511 (Poplar Grove)', '0118'",
+            "type": "hex",
+            "regex": "^(\\d{4})(?:\\s+\\(([^)]+)\\))?$",
+            "hexCodeGroups": [
+                1
+            ],
+            "locationGroup": 2
+        },
+        {
+            "_comment": "Reinforcement with see rule in parens: 'Reinforcement (see Rule 14)'",
+            "type": "seeRuleReinforcementParen",
+            "regex": "^Reinforcement\\s*\\(see\\s+Rule\\s+(\\d+)\\)$",
+            "hexCodeTemplate": "Reinf. (Rule {1})"
         },
         {
             "_comment": "River box locations: 'York River Box', 'James River East'",
@@ -117,6 +133,102 @@
             "hexCodeTemplate": "{1} to {2}"
         },
         {
+            "_comment": "Plain 4-digit hex range: '0107 to 0114', '3233 to 4534'",
+            "type": "hexRange",
+            "regex": "^(\\d{4})\\s+to\\s+(\\d{4})$",
+            "hexCodeTemplate": "{1} to {2}"
+        },
+        {
+            "_comment": "Double plain hex range (HSN format): '0110 to 0114 0101 to 0109'",
+            "type": "doubleHexRange",
+            "regex": "^(\\d{4})\\s+to\\s+(\\d{4})\\s+(\\d{4})\\s+to\\s+(\\d{4})$",
+            "hexCodeTemplate": "{1}-{2} / {3}-{4}"
+        },
+        {
+            "_comment": "Bare parenthetical location: '(Camden Station)', '(Turn 2)'",
+            "type": "bareParenthetical",
+            "regex": "^\\(([^)]+)\\)$",
+            "hexCodeTemplate": "({1})"
+        },
+        {
+            "_comment": "Rule section reference: 'A6.1; WV Reinforcements'",
+            "type": "ruleReference",
+            "regex": "^([A-Z]?\\d+\\.\\d+);?\\s*(.*)$",
+            "hexCodeTemplate": "{1}"
+        },
+        {
+            "_comment": "Just 'Box' by itself",
+            "type": "plainBox",
+            "regex": "^[Bb]ox$",
+            "hexCodeTemplate": "Box"
+        },
+        {
+            "_comment": "Single letter zone designation (HSN): 'M', 'N'",
+            "type": "zoneDesignation",
+            "regex": "^([A-Z])$",
+            "hexCodeTemplate": "Zone {1}"
+        },
+        {
+            "_comment": "Reinforcement with turn in parens: 'Reinforcement (Turn 2)'",
+            "type": "reinforcementTurnParen",
+            "regex": "^Reinforcement\\s*\\(Turn\\s+(\\d+)\\)$",
+            "hexCodeTemplate": "Turn {1} Reinf."
+        },
+        {
+            "_comment": "Reinforcement Turn X: 'Reinforcement Turn 2'",
+            "type": "reinforcementTurn",
+            "regex": "^Reinforcement\\s+[Tt]urn\\s+(\\d+)$",
+            "hexCodeTemplate": "Turn {1} Reinf."
+        },
+        {
+            "_comment": "Reinf on Turn X: 'Reinf on Turn 1 (July 11)'",
+            "type": "reinfOnTurn",
+            "regex": "^[Rr]einf(?:orcement)?\\s+on\\s+[Tt]urn\\s+(\\d+).*$",
+            "hexCodeTemplate": "Turn {1} Reinf."
+        },
+        {
+            "_comment": "Reinforcement with date and rule: 'Reinforcement December 19th (see 16.2)'",
+            "type": "reinforcementDateRule",
+            "regex": "^Reinforcement\\s+([A-Z][a-z]+\\s+\\d+(?:st|nd|rd|th)?).*$",
+            "hexCodeTemplate": "{1} Reinf."
+        },
+        {
+            "_comment": "See Special Rule X: 'See Special Rule 1', 'See Special Rule 2A'",
+            "type": "seeSpecialRule",
+            "regex": "^See\\s+[Ss]pecial\\s+[Rr]ule\\s*(\\d*[A-Za-z]?)$",
+            "hexCodeTemplate": "Special Rule {1}"
+        },
+        {
+            "_comment": "See advanced rule: 'See advanced rule 3.2'",
+            "type": "seeAdvancedRule",
+            "regex": "^See\\s+[Aa]dvanced\\s+[Rr]ule\\s+(\\d+\\.?\\d*)$",
+            "hexCodeTemplate": "Adv. Rule {1}"
+        },
+        {
+            "_comment": "See section with comma: 'See 4.1, Washington Reinforcements'",
+            "type": "seeSectionComma",
+            "regex": "^See\\s+(\\d+\\.\\d+),?\\s*(.*)$",
+            "hexCodeTemplate": "See {1}"
+        },
+        {
+            "_comment": "See A-prefixed rule: 'See A2.4', 'See A6.1; WV Reinforcements'",
+            "type": "seeAPrefixedRule",
+            "regex": "^See\\s+(A\\d+\\.\\d+).*$",
+            "hexCodeTemplate": "See {1}"
+        },
+        {
+            "_comment": "Special Rule X by itself: 'Special Rule 4'",
+            "type": "specialRuleOnly",
+            "regex": "^Special\\s+Rule\\s+(\\d+)$",
+            "hexCodeTemplate": "Special Rule {1}"
+        },
+        {
+            "_comment": "Variable/Special Reinforcement with parens: 'Variable Reinforcement (see 12.1)'",
+            "type": "variableReinforcement",
+            "regex": "^(Variable|Special)\\s+Reinforcement\\s*\\(.*\\)$",
+            "hexCodeTemplate": "{1} Reinf."
+        },
+        {
             "_comment": "County locations: 'In Hanover County'",
             "type": "county",
             "regex": "^[Ii]n\\s+(.+?)\\s+[Cc]ounty$",
@@ -141,7 +253,8 @@
         "to the next higher number space",
         "the box the gunboat occupies",
         "and combat Phase",
-        "on the display. corresponding"
+        "on the display. corresponding",
+        "Constant Reinforcement"
     ],
     "emptyLocationUnits": [
         "_comment: These unit types often have empty locations due to PDF parsing issues or special rules",

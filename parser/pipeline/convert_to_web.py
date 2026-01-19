@@ -6,6 +6,7 @@ and writes to web/public/data/{game}.json
 """
 
 import json
+import re
 from pathlib import Path
 
 
@@ -22,6 +23,70 @@ GAMES = [
     {"id": "aga", "name": "All Green Alike"},
     {"id": "sjw", "name": "Stonewall Jackson's Way"},
 ]
+
+
+def load_hex_config():
+    """Load hex location config for validation."""
+    config_path = Path(__file__).parent.parent / "utils" / "hex_location_config.json"
+    if not config_path.exists():
+        return None
+    with open(config_path) as f:
+        return json.load(f)
+
+
+def validate_hex_location(hex_loc: str, config: dict) -> tuple[bool, str | None]:
+    """Check if a hex location matches known patterns.
+    
+    Returns (is_valid, reason) where reason explains why it's unrecognized.
+    """
+    if not hex_loc or not hex_loc.strip():
+        return True, None  # Empty is fine
+    
+    hex_loc = hex_loc.strip()
+    
+    # Check known unparseable strings (these are expected)
+    for unparseable in config.get("knownUnparseable", []):
+        if unparseable.lower() in hex_loc.lower():
+            return True, None
+    
+    # Check special locations
+    for pattern in config.get("specialLocations", {}):
+        if hex_loc.lower() == pattern.lower():
+            return True, None
+    
+    # Try each pattern
+    for pattern_config in config.get("patterns", []):
+        flags = 0 if pattern_config.get("type") == "hex" else re.IGNORECASE
+        try:
+            regex = re.compile(pattern_config["regex"], flags)
+            if regex.match(hex_loc):
+                return True, None
+        except re.error:
+            continue
+    
+    # Check if it looks like a hex code we don't recognize
+    # Pattern: optional prefix + letter + 4 digits
+    hex_match = re.match(r'^([A-Z]+)\s+([A-Z])(\d{4})', hex_loc)
+    if hex_match:
+        prefix = hex_match.group(1)
+        letter = hex_match.group(2)
+        known_prefixes = config.get("gameMapPrefixes", [])
+        # Extract known hex letters from first pattern's regex
+        first_pattern = config.get("patterns", [{}])[0].get("regex", "")
+        known_letters_match = re.search(r'\[([A-Z]+)\]', first_pattern)
+        known_letters = known_letters_match.group(1) if known_letters_match else "NSM"
+        
+        if prefix not in known_prefixes:
+            return False, f"Unknown map prefix '{prefix}' (known: {known_prefixes})"
+        if letter not in known_letters:
+            return False, f"Unknown hex letter '{letter}' (known: {known_letters})"
+    
+    # Fallback: if it starts with a known prefix or looks like plain hex, it might be okay
+    # but flag anything else as potentially unrecognized
+    if re.match(r'^[A-Z]\d{4}', hex_loc):
+        return True, None  # Plain hex like N4321
+    
+    return False, "No pattern matched"
 
 
 def convert_unit(unit: dict) -> dict:
@@ -97,6 +162,14 @@ def main():
     # Ensure output directory exists
     web_data_dir.mkdir(parents=True, exist_ok=True)
 
+    # Load hex config for validation
+    hex_config = load_hex_config()
+    if not hex_config:
+        print("Warning: Could not load hex_location_config.json, skipping hex validation")
+    
+    # Track unrecognized hex patterns across all games
+    all_unrecognized = []
+
     # Create games index
     games_index = {"games": []}
 
@@ -115,6 +188,24 @@ def main():
 
         # Convert to web format
         game_data = convert_game_data(scenarios, game_id, game["name"])
+        
+        # Validate hex locations if config is available
+        if hex_config:
+            game_unrecognized = []
+            for scenario in game_data["scenarios"]:
+                for unit in scenario["confederateUnits"] + scenario["unionUnits"]:
+                    hex_loc = unit.get("hexLocation", "")
+                    is_valid, reason = validate_hex_location(hex_loc, hex_config)
+                    if not is_valid:
+                        game_unrecognized.append({
+                            "game": game_id,
+                            "scenario": scenario["number"],
+                            "unit": unit["name"],
+                            "hex": hex_loc,
+                            "reason": reason,
+                        })
+            if game_unrecognized:
+                all_unrecognized.extend(game_unrecognized)
 
         # Write web output
         with open(web_output, "w") as f:
@@ -130,6 +221,27 @@ def main():
             "name": game["name"],
             "file": f"{game_id}.json",
         })
+
+    # Report unrecognized hex patterns
+    if all_unrecognized:
+        print(f"\n⚠️  Found {len(all_unrecognized)} unrecognized hex location patterns:")
+        # Group by reason for cleaner output
+        by_reason: dict[str, list] = {}
+        for item in all_unrecognized:
+            reason = item["reason"] or "Unknown"
+            if reason not in by_reason:
+                by_reason[reason] = []
+            by_reason[reason].append(item)
+        
+        for reason, items in by_reason.items():
+            print(f"\n  {reason}:")
+            # Show up to 5 examples per reason
+            for item in items[:5]:
+                print(f"    - {item['game']} S{item['scenario']}: {item['unit']} at '{item['hex']}'")
+            if len(items) > 5:
+                print(f"    ... and {len(items) - 5} more")
+        
+        print(f"\n  → Update parser/utils/hex_location_config.json to fix")
 
     # Write games index
     games_index_path = web_data_dir / "games.json"
