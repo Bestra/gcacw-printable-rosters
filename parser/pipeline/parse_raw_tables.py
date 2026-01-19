@@ -160,6 +160,57 @@ class RawTableParser:
         
         return clean.strip(), symbols
     
+    # US state abbreviations for detecting split regiment names like ["9", "VT"]
+    US_STATE_ABBREVS = {
+        'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID',
+        'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS',
+        'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK',
+        'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV',
+        'WI', 'WY', 'DC'
+    }
+    
+    def _preprocess_row(self, tokens: list, has_turn_column: bool) -> list:
+        """
+        Preprocess tokens to recombine split values from PDF extraction.
+        
+        Handles:
+        - Split reinforcement dates: ["6-Aug", "24", ...] → ["6-Aug 24", ...]
+        - Split regiment names: ["9", "VT", ...] → ["9 VT", ...]
+        """
+        if not tokens or len(tokens) < 2:
+            return tokens
+        
+        result = []
+        i = 0
+        
+        while i < len(tokens):
+            token = tokens[i]
+            next_token = tokens[i + 1] if i + 1 < len(tokens) else None
+            
+            # Pattern 1: Split turn dates like "6-Aug" + "24" → "6-Aug 24"
+            # Format: \d+-[A-Z][a-z]+ followed by 2-digit year
+            if (has_turn_column and next_token and 
+                re.match(r'^\d+-[A-Z][a-z]+$', token) and 
+                re.match(r'^\d{2}$', next_token)):
+                result.append(f"{token} {next_token}")
+                i += 2
+                continue
+            
+            # Pattern 2: Split regiment names like "9" + "VT" → "9 VT"
+            # Format: digit(s) followed by 2-letter state abbreviation
+            if (next_token and 
+                re.match(r'^\d+$', token) and 
+                next_token.upper() in self.US_STATE_ABBREVS):
+                result.append(f"{token} {next_token}")
+                i += 2
+                continue
+            
+            # No pattern matched, keep token as-is
+            result.append(token)
+            i += 1
+        
+        return result
+    
     def _is_special_unit(self, tokens: list) -> bool:
         """Check if row represents a special unit (Gunboat, Wagon Train, etc.)."""
         if not tokens:
@@ -253,17 +304,23 @@ class RawTableParser:
         name_start = 0
         name_end = size_idx
         
-        # Handle leading "turn" column (HCR)
+        # Handle leading "turn" column (HCR, SJW reinforcements)
+        # Only treat first token as turn if it looks like a date (e.g., "6-Aug 24")
         if columns and columns[0] == "turn":
-            turn_value = tokens[0]
-            name_start = 1
-            # Recalculate size index relative to name
-            size_idx, size_value = self._find_size_index(tokens[1:])
-            if size_idx is not None:
-                size_idx += 1  # Adjust for turn column
-                name_end = size_idx
-            else:
-                return None
+            first_token = tokens[0]
+            # Check if first token looks like a reinforcement turn date
+            if re.match(r'^\d+-[A-Z][a-z]+\s+\d{2}$', first_token):
+                # This is a reinforcement row with a turn value
+                turn_value = first_token
+                name_start = 1
+                # Recalculate size index relative to name
+                size_idx, size_value = self._find_size_index(tokens[1:])
+                if size_idx is not None:
+                    size_idx += 1  # Adjust for turn column
+                    name_end = size_idx
+                else:
+                    return None
+            # else: Normal row without turn value, keep name_start = 0
         
         # Handle "set" column before size (HSN variant)
         # If the token before size is a single digit, it might be a set number
@@ -354,9 +411,14 @@ class RawTableParser:
         if not columns:
             columns = table_config.get("columns", self.config.get("columns", []))
         
+        # Check if this table has a Turn column (for preprocessing)
+        has_turn_column = "turn" in columns
+        
         units = []
         for row in rows:
-            unit = self.parse_row(row, side, columns, table_name)
+            # Preprocess row to recombine split tokens (dates, regiment names)
+            preprocessed_row = self._preprocess_row(row, has_turn_column)
+            unit = self.parse_row(preprocessed_row, side, columns, table_name)
             if unit:
                 units.append(unit)
         

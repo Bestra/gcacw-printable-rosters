@@ -25,7 +25,7 @@ from typing import Optional
 
 def load_parsed_data(game_id: str) -> list:
     """Load parsed scenario data for a game."""
-    parsed_file = Path(__file__).parent / "parsed" / f"{game_id}_parsed.json"
+    parsed_file = Path(__file__).parent.parent / "parsed" / f"{game_id}_parsed.json"
     if not parsed_file.exists():
         print(f"Error: {parsed_file} not found")
         print(f"Run: make reparse-{game_id}")

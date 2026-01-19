@@ -8,6 +8,7 @@ import rwhData from "./rwh_images.json";
 import tomData from "./tom_images.json";
 import tpcData from "./tpc_images.json";
 import agaData from "./aga_images.json";
+import sjwData from "./sjw_images.json";
 
 export type ImageMap = Record<string, Record<string, string>>;
 export type CounterType = 'template' | 'individual';
@@ -23,6 +24,7 @@ export const imageMap: ImageMap = {
   tom: tomData.matched_with_ext,
   tpc: tpcData.matched_with_ext,
   aga: agaData.matched_with_ext,
+  sjw: sjwData.matched_with_ext,
 };
 
 // Map of game to counter type
@@ -38,6 +40,7 @@ export const counterTypeMap: Record<string, CounterType> = {
   tom: (tomData as { counterType?: CounterType }).counterType ?? 'template',
   tpc: (tpcData as { counterType?: CounterType }).counterType ?? 'template',
   aga: (agaData as { counterType?: CounterType }).counterType ?? 'template',
+  sjw: (sjwData as { counterType?: CounterType }).counterType ?? 'template',
 };
 
 /**

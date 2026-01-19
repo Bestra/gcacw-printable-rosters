@@ -1095,6 +1095,91 @@ AGA_CONFIG = GameConfig(
 
 
 # -----------------------------------------------------------------------------
+# SJW (Stonewall Jackson's Way) Configuration
+# -----------------------------------------------------------------------------
+
+def sjw_get_name_variants(name: str) -> list[str]:
+    """Generate variants of a name for fuzzy matching (SJW-specific)."""
+    # SJW shares the same rules as AGA, so start with AGA variants
+    variants = aga_get_name_variants(name)
+    
+    # Handle Confederate leaders with initials
+    # PDF has "A.P. Hill", VASSAL has "AP Hill"
+    initial_leaders = {
+        'A.P. Hill': ['AP Hill', 'A P Hill', 'A. P. Hill'],
+        'D.H. Hill': ['DH Hill', 'D H Hill', 'D. H. Hill'],
+        'D.R. Jones': ['DR Jones', 'D R Jones', 'D. R. Jones', 'Jones'],
+        'F. Lee': ['F Lee', 'Fitzhugh Lee', 'FitzLee'],
+    }
+    for pdf_name, vassal_variants in initial_leaders.items():
+        if name == pdf_name:
+            variants.extend(vassal_variants)
+        if name in vassal_variants:
+            variants.append(pdf_name)
+    
+    return list(set(variants))
+
+
+def sjw_extract_unit_mappings(buildfile_path: Path) -> dict:
+    """Parse buildFile.xml to extract unit-to-background mappings for SJW."""
+    # SJW uses the same structure as AGA (UUU- and CCC- prefixes)
+    content = buildfile_path.read_text(encoding='utf-8', errors='ignore')
+    
+    mappings = {
+        "Union": {},
+        "Confederate": {},
+        "Leaders": {"Union": {}, "Confederate": {}}
+    }
+    
+    slot_pattern = r'<VASSAL\.build\.widget\.PieceSlot\s+entryName="([^"]+)"[^>]*>([^<]*)</VASSAL\.build\.widget\.PieceSlot>'
+    
+    for match in re.finditer(slot_pattern, content, re.DOTALL):
+        entry_name = match.group(1)
+        slot_content = match.group(2)
+        
+        image_match = re.search(r'piece;;;([^;]+\.jpg);[^/]+/', slot_content, re.IGNORECASE)
+        if not image_match:
+            continue
+        image_file = image_match.group(1)
+        
+        # Skip markers and non-unit items
+        # Note: Use longer patterns to avoid false matches (e.g., 'ope' matches 'Pope')
+        if any(skip in entry_name.lower() for skip in ['vp', 'wagon', 'control', 'track',
+                'paralysis', 'game-turn', 'cycle', 'supply', 'event', 'posture', 'movement',
+                'ammunition', 'bridge', 'command', 'operations']):
+            continue
+        if any(skip in image_file.lower() for skip in ['vp', 'control', 'wagon', 'cp.',
+                'track', 'paralysis', 'ammu', 'event']):
+            continue
+        
+        if 'prototype;Leader' in slot_content:
+            # SJW uses UUU- prefix for Union and CCC- prefix for Confederate
+            if image_file.startswith('UUU-'):
+                mappings["Leaders"]["Union"][entry_name] = image_file
+            elif image_file.startswith('CCC-'):
+                mappings["Leaders"]["Confederate"][entry_name] = image_file
+        else:
+            # Determine side and type from prototypes
+            type_match = re.search(r'prototype;(USA|CSA)\s+(Infantry|Cavalry)\s+(Division|Brigade|Regiment)', slot_content)
+            if type_match:
+                side = "Union" if type_match.group(1) == "USA" else "Confederate"
+                unit_type = f"{type_match.group(2)} {type_match.group(3)}"
+                mappings[side][entry_name] = {
+                    "image": image_file,
+                    "type": unit_type
+                }
+    
+    return mappings
+
+
+SJW_CONFIG = GameConfig(
+    game_id='sjw',
+    name_variants_fn=sjw_get_name_variants,
+    extract_mappings_fn=sjw_extract_unit_mappings,
+)
+
+
+# -----------------------------------------------------------------------------
 # Game registry
 # -----------------------------------------------------------------------------
 
@@ -1107,6 +1192,7 @@ GAME_CONFIGS: dict[str, GameConfig] = {
     'tom': TOM_CONFIG,
     'tpc': TPC_CONFIG,
     'aga': AGA_CONFIG,
+    'sjw': SJW_CONFIG,
 }
 
 
