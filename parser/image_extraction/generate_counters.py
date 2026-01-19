@@ -991,6 +991,110 @@ TPC_CONFIG = GameConfig(
 
 
 # -----------------------------------------------------------------------------
+# AGA (All Green Alike) Configuration
+# -----------------------------------------------------------------------------
+
+def aga_get_name_variants(name: str) -> list[str]:
+    """Generate variants of a name for fuzzy matching (AGA-specific)."""
+    variants = base_get_name_variants(name)
+    
+    # Handle Heintzelman typo in VASSAL: "Heintzlmn" vs "Heintzelman"
+    if 'Heintzelman' in name:
+        variants.append(name.replace('Heintzelman', 'Heintzlmn'))
+    if 'Heintzlmn' in name:
+        variants.append(name.replace('Heintzlmn', 'Heintzelman'))
+    
+    # Handle Patterson vs Paterson typo
+    if 'Patterson' in name:
+        variants.append(name.replace('Patterson', 'Paterson'))
+    if 'Paterson' in name:
+        variants.append(name.replace('Paterson', 'Patterson'))
+    
+    # Handle Longenecker vs Longnecker typo
+    if 'Longenecker' in name:
+        variants.append(name.replace('Longenecker', 'Longnecker'))
+    if 'Longnecker' in name:
+        variants.append(name.replace('Longnecker', 'Longenecker'))
+    
+    # Handle "Jones" -> "DR Jones"
+    if name == 'Jones':
+        variants.extend(['DR Jones', 'D R Jones', 'D.R. Jones'])
+    if 'DR Jones' in name or 'D R Jones' in name:
+        variants.append('Jones')
+    
+    # Handle "Heavy Artillery" -> "Heavy Art"
+    if 'Heavy Artillery' in name:
+        variants.append(name.replace('Heavy Artillery', 'Heavy Art'))
+    if 'Heavy Art' in name and 'Heavy Artillery' not in name:
+        variants.append(name.replace('Heavy Art', 'Heavy Artillery'))
+    
+    # Handle space variations: "13 PA" vs "13PA"
+    if re.match(r'^\d+\s+[A-Z]{2}$', name):
+        variants.append(name.replace(' ', ''))
+    if re.match(r'^\d+[A-Z]{2}$', name):
+        variants.append(re.sub(r'^(\d+)([A-Z]{2})$', r'\1 \2', name))
+    
+    return list(set(variants))
+
+
+def aga_extract_unit_mappings(buildfile_path: Path) -> dict:
+    """Parse buildFile.xml to extract unit-to-background mappings for AGA."""
+    content = buildfile_path.read_text(encoding='utf-8', errors='ignore')
+    
+    mappings = {
+        "Union": {},
+        "Confederate": {},
+        "Leaders": {"Union": {}, "Confederate": {}}
+    }
+    
+    slot_pattern = r'<VASSAL\.build\.widget\.PieceSlot\s+entryName="([^"]+)"[^>]*>([^<]*)</VASSAL\.build\.widget\.PieceSlot>'
+    
+    for match in re.finditer(slot_pattern, content, re.DOTALL):
+        entry_name = match.group(1)
+        slot_content = match.group(2)
+        
+        image_match = re.search(r'piece;;;([^;]+\.jpg);[^/]+/', slot_content, re.IGNORECASE)
+        if not image_match:
+            continue
+        image_file = image_match.group(1)
+        
+        # Skip markers and non-unit items
+        if any(skip in entry_name.lower() for skip in ['vp', 'wagon', 'control', 'track',
+                'paralysis', 'game-turn', 'cycle', 'supply', 'event', 'posture', 'mov', 'ope',
+                'ammunition', 'bridge', 'command']):
+            continue
+        if any(skip in image_file.lower() for skip in ['vp', 'control', 'wagon', 'cp.',
+                'track', 'paralysis', 'ammu', 'event']):
+            continue
+        
+        if 'prototype;Leader' in slot_content:
+            # AGA uses UUU- prefix for Union and CCC- prefix for Confederate
+            if image_file.startswith('UUU-'):
+                mappings["Leaders"]["Union"][entry_name] = image_file
+            elif image_file.startswith('CCC-'):
+                mappings["Leaders"]["Confederate"][entry_name] = image_file
+        else:
+            # Determine side and type from prototypes
+            type_match = re.search(r'prototype;(USA|CSA)\s+(Infantry|Cavalry)\s+(Division|Brigade|Regiment)', slot_content)
+            if type_match:
+                side = "Union" if type_match.group(1) == "USA" else "Confederate"
+                unit_type = f"{type_match.group(2)} {type_match.group(3)}"
+                mappings[side][entry_name] = {
+                    "image": image_file,
+                    "type": unit_type
+                }
+    
+    return mappings
+
+
+AGA_CONFIG = GameConfig(
+    game_id='aga',
+    name_variants_fn=aga_get_name_variants,
+    extract_mappings_fn=aga_extract_unit_mappings,
+)
+
+
+# -----------------------------------------------------------------------------
 # Game registry
 # -----------------------------------------------------------------------------
 
@@ -1002,6 +1106,7 @@ GAME_CONFIGS: dict[str, GameConfig] = {
     'rwh': RWH_CONFIG,
     'tom': TOM_CONFIG,
     'tpc': TPC_CONFIG,
+    'aga': AGA_CONFIG,
 }
 
 
