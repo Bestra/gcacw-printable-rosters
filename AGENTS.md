@@ -1,58 +1,69 @@
-# Copilot Instructions
+# Agent Instructions
 
 Operational guide for working on this codebase.
 
-Do not use CLAUDE.md, as it won't be included in every prompt like this file is.
+## Pre-flight Checks
 
-## Python
+Before diving in, verify:
 
-**CRITICAL: Always use `uv run python` to execute Python. Never use bare `python`, `python3`, or `pip`.**
+- **Dev server running?** If yes, don't restart it—Vite HMR handles changes automatically
+- **Right directory?** Parser commands need `cd parser` first
+- **Parser changes?** You'll need to regenerate data afterward (`make` or `make {game}`)
 
-**CRITICAL: Avoid shell quoting issues with complex Python code:**
+## Critical Rules
 
-- ✅ Use `create_file` tool to create a `.py` file, then run it with `uv run python script.py`
-- ✅ `uv run python -c "print('hello')"` (simple one-liners only)
-- ❌ NEVER use `uv run python -c` with complex Python code containing nested quotes
-- ❌ NEVER use heredoc (`cat > file.py << 'EOF'`) - terminal buffering corrupts the output
+### Python: Always use `uv run`
 
-**Why heredocs fail:** Terminal output is captured in chunks and heredoc content gets garbled, duplicated, or truncated. Always use `create_file` tool instead.
+```bash
+# ✅ Correct
+uv run python script.py
+uv run python -c "print('hello')"
 
-Examples:
+# ❌ Wrong - will use system Python
+python3 script.py
+pip install something
+```
 
-- ✅ `create_file` tool → `uv run python script.py`
-- ✅ `uv run python -c "print('hello')"` (simple one-liners only)
-- ❌ `python3 script.py` (wrong Python)
-- ❌ `cat > temp.py << 'EOF'` (heredoc - will fail)
-- ❌ `echo 'import json...' > temp.py` (quoting nightmare)
-- ❌ `uv run python -c "import json; data['key']..."` (nested quotes will fail)
+### Complex Python: Use create_file tool
+
+Terminal buffering corrupts heredocs and complex quoting. Always:
+
+1. Use `create_file` tool to write a `.py` file
+2. Run it with `uv run python script.py`
+3. Delete when done
+
+```bash
+# ❌ These WILL fail
+cat > temp.py << 'EOF'           # Heredoc - gets garbled
+echo 'import json...' > temp.py  # Quoting nightmare
+uv run python -c "data['key']"   # Nested quotes break
+```
 
 ## Commands
 
 ```bash
-# Build pipeline (preferred)
-make              # Build all web JSON files
-make gtc2         # Build a single game
-make reparse-otr2 # Force rebuild a game
-make dev          # Start dev server (localhost:5173)
+# Build (most common)
+make              # Build all web JSON
+make gtc2         # Build single game
+make dev          # Dev server (localhost:5173)
 make build        # Production build
+make test         # Run all tests
 
-# Parser (always use uv, never bare python/pip)
-cd parser && uv run python pipeline/parse_raw_tables.py --all   # Parse all games
-cd parser && uv run python pipeline/convert_to_web.py           # Generate web JSON
+# Parser
+cd parser && uv run python pipeline/parse_raw_tables.py --all
+cd parser && uv run python pipeline/convert_to_web.py
 
-# LLM evaluation (DOM snapshot testing)
-make snapshots                              # Generate DOM snapshots for all games
-make snapshots-game GAME=gtc2               # Snapshots for one game
-make snapshots-single GAME=gtc2 SCENARIO=1  # Single snapshot
-make llm-eval                               # Run LLM evaluation (all scenarios)
-make llm-eval-single GAME=gtc2 SCENARIO=1   # Single scenario eval
+# LLM eval
+make snapshots                              # Generate DOM snapshots
+make llm-eval                               # Run LLM evaluation
+make llm-eval-single GAME=gtc2 SCENARIO=1   # Single scenario
 ```
 
 ## Dev Server
 
 **When the dev server is running, do NOT restart it or run `make build`.**
 
-Vite provides hot module replacement (HMR) - changes to `.tsx`, `.ts`, and `.css` files are automatically reflected in the browser without any action needed. Just edit the file and save.
+Vite HMR handles `.tsx`, `.ts`, and `.css` changes automatically.
 
 ## File Locations
 
@@ -74,109 +85,49 @@ Vite provides hot module replacement (HMR) - changes to `.tsx`, `.ts`, and `.css
 ## Data Flow
 
 ```
-PDF → pipeline/raw_table_extractor.py → raw/{game}_raw_tables.json
+PDF → raw_table_extractor.py → raw/{game}_raw_tables.json
                                        ↓
                               game_configs.json (column mappings)
                                        ↓
-                              pipeline/parse_raw_tables.py → parsed/{game}_parsed.json
+                              parse_raw_tables.py → parsed/{game}_parsed.json
                                        ↓
-                              pipeline/convert_to_web.py → web/public/data/{game}.json
-                                       ↓
-                              Web app fetches at runtime
+                              convert_to_web.py → web/public/data/{game}.json
 ```
 
 ### PDF and VASSAL Module Paths
 
-Game resources are configured via environment variables in `parser/.env`:
-
-```bash
-# Example from parser/.env
-GTC2_RULES_PATH=~/Documents/vasl/gcacw/GTC2_Rules.pdf
-GTC2_VASSAL_PATH=~/Documents/vasl/gcacw/GTC2_3_10.vmod
-```
-
-See [parser/.env.example](parser/.env.example) for the complete list of variables.
+Configure in `parser/.env`. See [parser/.env.example](parser/.env.example) for variable names.
 
 ## Architecture
 
 **Parser** (`parser/`)
 
-- `pipeline/raw_table_extractor.py` - Extracts raw table structure from PDFs
-- `game_configs.json` - Data-driven column mappings per game/table
-- `pipeline/parse_raw_tables.py` - Parses raw tables into structured units
-- `pipeline/convert_to_web.py` - Transforms snake_case → camelCase for web
+- `pipeline/` - Three-stage extraction pipeline (raw → parsed → web)
+- `game_configs.json` - Column mappings per game/table
 - `utils/` - Inspection and debugging utilities
-- `image_extraction/` - Counter image extraction from VASSAL modules
-- `raw/` - Raw table JSON files (preserved for debugging)
-- `parsed/` - Structured unit data per game
+- `image_extraction/` - Counter images from VASSAL modules
 
 **Web** (`web/`)
 
-- `App.tsx` - Loads games.json, then game data, manages selection state
-- `RosterSheet.tsx` - Grid of UnitCards, footnotes legend, conventions key
-- `UnitCard.tsx` - Single unit with 3 counter boxes
-- `types.ts` - TypeScript interfaces (Unit, Scenario, GameData)
+- `App.tsx` - Game/scenario selection
+- `RosterSheet.tsx` - Grid of UnitCards, footnotes, conventions
+- `UnitCard.tsx` - Single unit display
+- `types.ts` - TypeScript interfaces
 
 ## Implementation Details
 
 ### UnitCard display logic
 
 - Leaders (type="Ldr") excluded from roster grid
-- Leader names shown on subordinate units: `[bracketed]` = same hex, plain = different hex
+- Leader names on units: `[bracketed]` = same hex, plain = different hex
 - Starting fatigue: parsed from footnotes matching "Fatigue Level X"
-- Location names: extracted from hex parentheticals like "S5510 (Yorktown)"
+- Location names: from hex parentheticals like "S5510 (Yorktown)"
 
 ### Parser details
 
-- Special units (Gunboat, Wagon Train, Naval Battery) parsed with `unit_type="Special"`
+- Special units (Gunboat, Wagon Train, Naval Battery) → `unit_type="Special"`
 - Footnote symbols: \*, ^, †, ‡, §, $, +
-- Column layouts are configured per-game in `game_configs.json`
-
-### Adding a new game
-
-See the [parse-new-game skill](.github/skills/parse-new-game/SKILL.md) for detailed instructions.
-
-Quick summary:
-
-1. Add environment variables to `parser/.env` for PDF and VASSAL paths
-2. Extract raw tables: `make extract-newgame` (or manually run pipeline/raw_table_extractor.py)
-3. Add scenario names to `SCENARIO_NAMES` dict in `pipeline/raw_table_extractor.py`
-4. Add column config to `game_configs.json` if needed
-5. Add game to `GAMES` list in `pipeline/convert_to_web.py`
-6. Add game to `ALL_GAMES` in `Makefile`
-7. Add URL slug mapping in `web/src/utils/slugs.ts`
-8. Build: `make newgame`
-
-## Data Inspection Utilities
-
-Utility scripts for debugging and inspecting data at each pipeline stage:
-
-```bash
-# Inspect raw table data (from PDF extraction)
-cd parser && uv run python utils/inspect_raw.py gtc2
-cd parser && uv run python utils/inspect_raw.py gtc2 --scenario 1
-cd parser && uv run python utils/inspect_raw.py gtc2 --scenario 1 --table "Confederate Set-Up"
-
-# Inspect parsed unit data (after parse_raw_tables.py)
-cd parser && uv run python utils/inspect_parsed.py gtc2
-cd parser && uv run python utils/inspect_parsed.py gtc2 --scenario 1
-cd parser && uv run python utils/inspect_parsed.py gtc2 --scenario 1 --side Confederate
-cd parser && uv run python utils/inspect_parsed.py gtc2 --scenario 1 --filter Longstreet
-
-# Inspect special units (Wagon Train, Gunboat, Naval Battery)
-cd parser && uv run python utils/inspect_special_units.py              # All games
-cd parser && uv run python utils/inspect_special_units.py hsn          # Single game
-cd parser && uv run python utils/inspect_special_units.py --type wagon # Filter by type
-
-# Compare raw vs parsed data (for debugging parsing issues)
-cd parser && uv run python utils/compare_data.py gtc2 1
-cd parser && uv run python utils/compare_data.py gtc2 1 --side Union
-cd parser && uv run python utils/compare_data.py gtc2 1 --table "Union Set-Up" --row 5
-```
-
-All scripts support `--help` for full usage details.
-
-**Data structure documentation**: See the [data-structures skill](.github/skills/data-structures/SKILL.md) for detailed information about raw, parsed, and web JSON structures.
+- Column layouts configured per-game in `game_configs.json`
 
 ### JSON Structure Quick Reference (for jq)
 
@@ -190,74 +141,6 @@ All scripts support `--help` for full usage details.
 | Unit name field | `unit_leader`                      | `name`                              |
 | Units arrays    | `confederate_units`, `union_units` | `confederateUnits`, `unionUnits`    |
 | Hex location    | `hex_location`                     | `hexLocation`                       |
-
-**Parsed JSON structure** (`parsed/{game}_parsed.json`):
-
-```typescript
-// Root is an array of scenarios
-type ParsedGameData = ParsedScenario[];
-
-interface ParsedScenario {
-  number: number;
-  name: string;
-  start_page: number;
-  game_length: string | null;
-  map_info: string | null;
-  special_rules: string | null;
-  notes: string | null;
-  confederate_units: ParsedUnit[];
-  union_units: ParsedUnit[];
-  confederate_footnotes: Record<string, string>;
-  union_footnotes: Record<string, string>;
-}
-
-interface ParsedUnit {
-  unit_leader: string;
-  size: string; // "Army" | "Corps" | "Div" | "Brig" | "Regt" | "-"
-  command: string;
-  unit_type: string; // "Ldr" | "Inf" | "Cav" | "Art" | "Special"
-  manpower_value: string;
-  hex_location: string;
-  side: string; // "Confederate" | "Union"
-  notes: string[]; // Footnote symbols like ["*", "+"]
-  turn: string | null;
-  reinforcement_set: string | null;
-  table_name: string;
-}
-```
-
-**Web JSON structure** (`web/public/data/{game}.json`):
-
-```typescript
-// See web/src/types.ts for canonical definitions
-interface GameData {
-  id: string;
-  name: string;
-  scenarios: Scenario[]; // Note: wrapped in object, not raw array
-}
-
-interface Scenario {
-  number: number;
-  name: string;
-  confederateUnits: Unit[]; // camelCase
-  unionUnits: Unit[];
-  confederateGunboats: Gunboat[];
-  unionGunboats: Gunboat[];
-  confederateFootnotes: Record<string, string>;
-  unionFootnotes: Record<string, string>;
-}
-
-interface Unit {
-  name: string; // was unit_leader in parsed
-  size: string;
-  command: string;
-  type: string; // was unit_type in parsed
-  manpowerValue: string; // camelCase
-  hexLocation: string; // camelCase
-  notes: string[];
-  tableName?: string;
-}
-```
 
 **Common jq patterns:**
 
@@ -279,3 +162,16 @@ Validate changes by:
 4. Check parsed JSON output for parser changes
 5. Use `utils/inspect_raw.py`, `utils/inspect_parsed.py`, or `utils/compare_data.py` to verify data
 6. `make snapshots && make llm-eval` for LLM-powered integration testing (compares raw PDF data to rendered DOM)
+
+## Skills (Task-Specific Guidance)
+
+These skills are loaded conditionally based on the task. Reference them for detailed workflows:
+
+| Skill                                                                  | When to use                                                       |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [parse-new-game](.github/skills/parse-new-game/SKILL.md)               | Adding a new GCACW game to the system                             |
+| [data-structures](.github/skills/data-structures/SKILL.md)             | Understanding JSON schemas, field mappings, debugging data issues |
+| [regenerate-data](.github/skills/regenerate-data/SKILL.md)             | Refreshing data after parser changes                              |
+| [debug-pdf-extraction](.github/skills/debug-pdf-extraction/SKILL.md)   | Fixing garbled text or missing units from PDF                     |
+| [extract-vassal-images](.github/skills/extract-vassal-images/SKILL.md) | Adding counter images from VASSAL modules                         |
+| [troubleshooting](.github/skills/troubleshooting/SKILL.md)             | Diagnosing bugs, fixing test failures, common mistakes            |

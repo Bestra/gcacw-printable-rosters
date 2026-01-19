@@ -1,6 +1,6 @@
 ---
 name: data-structures
-description: Understand data structures in the GCACW parser pipeline (raw tables, parsed units, web JSON). Use when debugging data issues, understanding field mappings between stages, checking column configurations, or investigating why units are missing or malformed. Essential for work involving raw_table_extractor.py, parse_raw_tables.py, convert_to_web.py, or game_configs.json.
+description: Understand data structures in the GCACW parser pipeline (raw tables, parsed units, web JSON). Use when debugging data issues, understanding field mappings between stages, checking column configurations, or investigating why units are missing or malformed. Includes inspection utilities (inspect_raw.py, inspect_parsed.py, compare_data.py). Essential for work involving raw_table_extractor.py, parse_raw_tables.py, convert_to_web.py, or game_configs.json.
 ---
 
 # Data Structures
