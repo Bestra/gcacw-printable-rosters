@@ -85,6 +85,8 @@ class RawTableExtractor:
         "hcr": (1, 44),
         "rtg2": (45, 95),
         "rwh": (96, 116),
+        "aga": (2, 34),
+        "sjw": (35, 61),
     }
     
     # Known scenario names by game (from scenario_parser.py)
@@ -181,6 +183,26 @@ class RawTableExtractor:
             11: "The Petersburg Campaign",
             12: "The Last Offensive",
         },
+        "aga": {
+            1: "Across The Potomac",
+            2: "Johnston Vs. Patterson",
+            3: "McDowell's Opportunity",
+            4: "An End To Innocence",
+            5: "The Retreat To Washington",
+            6: "The Bull Run Campaign",
+            7: "The Virginia Campaign",
+        },
+        "sjw": {
+            1: "Cedar Mountain",
+            2: "Lee Vs. Pope",
+            3: "Stuart's Raid",
+            4: "Jackson's March",
+            5: "From The Rappahannock To Bull Run",
+            6: "Bag The Whole Crowd",
+            7: "Which Way Did He Go",
+            8: "From The Rapidan To The Rappahannock",
+            9: "From The Rapidan To Manassas",
+        },
     }
     
     def __init__(self, pdf_path: str, game_id: str = "otr2", start_page: int = None, end_page: int = None):
@@ -275,11 +297,14 @@ class RawTableExtractor:
                         # Proper title case the name
                         extracted_name = extracted_name.title()
                     
-                    # Use extracted name if valid, otherwise fall back to known names, then generic
-                    if extracted_name and len(extracted_name) > 3:  # Minimum reasonable name length
+                    # Prefer known names (from SCENARIO_NAMES dict) when available
+                    # Fall back to extracted name if valid, then generic
+                    if scenario_num in known_names:
+                        scenario_name = known_names[scenario_num]
+                    elif extracted_name and len(extracted_name) > 3:  # Minimum reasonable name length
                         scenario_name = extracted_name
                     else:
-                        scenario_name = known_names.get(scenario_num, f"Scenario {scenario_num}")
+                        scenario_name = f"Scenario {scenario_num}"
                     
                     results.append((i, scenario_num, scenario_name))
                     break
@@ -607,7 +632,8 @@ def get_pdf_path(game_id: str) -> str:
             f"  {env_var}=~/path/to/{game_id.upper()}_Rules.pdf"
         )
     
-    return pdf_path
+    # Expand ~ to home directory
+    return os.path.expanduser(pdf_path)
 
 
 def main():

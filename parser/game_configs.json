@@ -112,5 +112,13 @@
     "rwh": {
         "name": "Rally Round the Flag",
         "table_patterns": {}
+    },
+    "sjw": {
+        "name": "Stonewall Jackson's Way",
+        "table_patterns": {},
+        "shared_scenarios": {
+            "8": 9,
+            "_comment": "Scenario 8 uses Scenario 9's setup tables (per PDF page 58)"
+        }
     }
 }

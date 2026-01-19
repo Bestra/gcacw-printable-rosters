@@ -19,10 +19,6 @@ const __dirname = path.dirname(__filename);
 // Types
 // ============================================================================
 
-interface RawTableRow {
-  [index: number]: string;
-}
-
 interface RawTable {
   name: string;
   page_numbers: number[];

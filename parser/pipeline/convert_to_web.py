@@ -19,6 +19,8 @@ GAMES = [
     {"id": "rwh", "name": "Rebels in the White House"},
     {"id": "tom", "name": "Thunder on the Mississippi"},
     {"id": "tpc", "name": "The Petersburg Campaign"},
+    {"id": "aga", "name": "All Green Alike"},
+    {"id": "sjw", "name": "Stonewall Jackson's Way"},
 ]
 
 

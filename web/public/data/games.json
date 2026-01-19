@@ -39,6 +39,16 @@
       "id": "tpc",
       "name": "The Petersburg Campaign",
       "file": "tpc.json"
+    },
+    {
+      "id": "aga",
+      "name": "All Green Alike",
+      "file": "aga.json"
+    },
+    {
+      "id": "sjw",
+      "name": "Stonewall Jackson's Way",
+      "file": "sjw.json"
     }
   ]
 }

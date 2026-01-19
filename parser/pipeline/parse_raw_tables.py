@@ -82,6 +82,7 @@ class RawTableParser:
             "special_unit_patterns": defaults.get("special_unit_patterns", []),
             "table_patterns": game_config.get("table_patterns", {}),
             "scenarios": game_config.get("scenarios", {}),
+            "shared_scenarios": game_config.get("shared_scenarios", {}),
         }
     
     def _get_table_config(self, table_name: str, scenario_num: int) -> dict:
@@ -420,7 +421,29 @@ class RawTableParser:
         with open(filepath) as f:
             raw_scenarios = json.load(f)
         
-        return [self.parse_scenario(s) for s in raw_scenarios]
+        scenarios = [self.parse_scenario(s) for s in raw_scenarios]
+        
+        # Handle shared scenarios (scenarios that use another scenario's setup)
+        shared_scenarios = self.config.get("shared_scenarios", {})
+        if shared_scenarios:
+            # Build lookup by scenario number
+            scenario_by_num = {s.number: s for s in scenarios}
+            
+            for target_str, source_num in shared_scenarios.items():
+                if target_str.startswith("_"):  # Skip comments
+                    continue
+                target_num = int(target_str)
+                target = scenario_by_num.get(target_num)
+                source = scenario_by_num.get(source_num)
+                
+                if target and source and not target.confederate_units and not target.union_units:
+                    # Copy units and footnotes from source to target
+                    target.confederate_units = source.confederate_units.copy()
+                    target.union_units = source.union_units.copy()
+                    target.confederate_footnotes = source.confederate_footnotes.copy()
+                    target.union_footnotes = source.union_footnotes.copy()
+        
+        return scenarios
 
 
 def main():
