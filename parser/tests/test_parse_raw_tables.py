@@ -342,6 +342,28 @@ class TestSpecialUnitParsing:
         assert unit is not None
         assert unit.unit_leader == "Wagon Train"
         assert unit.unit_type == "Special"
+    
+    def test_parse_wagon_train_with_suffix_and_4digit_hex(self, otr2_parser):
+        """Test parsing Wagon Train with A/B/C suffix and 4-digit hex (HSN format)."""
+        # HSN format: ["Wagon", "Train", "A", "-", "-", "Wag", "2+", "0324", "(Colored", "Church)"]
+        tokens = ["Wagon", "Train", "A", "-", "-", "Wag", "2+", "0324", "(Colored", "Church)"]
+        unit = otr2_parser._parse_special_unit(tokens, "Union", "Union Set-Up")
+        
+        assert unit is not None
+        assert unit.unit_leader == "Wagon Train A"
+        assert unit.unit_type == "Special"
+        assert unit.hex_location == "0324 (Colored Church)"
+    
+    def test_parse_wagon_train_with_hyphenated_suffix(self, otr2_parser):
+        """Test parsing Wagon Train with hyphenated suffix (OTR2 format)."""
+        # OTR2 format: ["Wagon", "Train-A", "-", "-", "-", "2*", "S4407", "(Williamsburg)"]
+        tokens = ["Wagon", "Train-A", "-", "-", "-", "2*", "S4407", "(Williamsburg)"]
+        unit = otr2_parser._parse_special_unit(tokens, "Union", "Union Set-Up")
+        
+        assert unit is not None
+        assert unit.unit_leader == "Wagon Train-A"
+        assert unit.unit_type == "Special"
+        assert "S4407" in unit.hex_location
 
 
 # ============================================================================

@@ -895,12 +895,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train A",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "0324 (Colored Church)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -938,12 +938,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train B",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "0224 (Saw Mill)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -966,12 +966,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train C",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "0125",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -1535,12 +1535,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train A",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "2413 (Judge Cooper)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -1548,12 +1548,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train B",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "2114 (Elmwood Academy)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -1561,12 +1561,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train C",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "2114 (Elmwood Academy)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -2145,12 +2145,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train A",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "3811 (Toll house)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -2173,12 +2173,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train B",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "3712",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -2201,12 +2201,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train C",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "3612 (Cotton Gin)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -4728,12 +4728,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train A",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "0324 (Colored Church)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -4756,12 +4756,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train B",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "0224 (Saw Mill)",
         "side": "Union",
         "notes": [],
         "turn": null,
@@ -4784,12 +4784,12 @@
         "table_name": "Union Set-Up"
       },
       {
-        "unit_leader": "Wagon Train",
+        "unit_leader": "Wagon Train C",
         "size": "-",
         "command": "-",
         "unit_type": "Special",
         "manpower_value": "-",
-        "hex_location": "",
+        "hex_location": "0125",
         "side": "Union",
         "notes": [],
         "turn": null,

@@ -238,15 +238,28 @@ class RawTableParser:
         elif len(tokens) >= 2 and re.match(r"^Naval|^Wagon", tokens[0], re.IGNORECASE):
             unit_name = f"{tokens[0]} {tokens[1]}"
             remaining = tokens[2:]
+            # Check for letter suffix (A, B, C) - either as separate token or hyphenated (Train-A)
+            # Hyphenated suffixes like "Train-A" are already included in unit_name
+            if remaining and re.match(r"^[A-C]$", remaining[0]):
+                unit_name = f"{unit_name} {remaining[0]}"
+                remaining = remaining[1:]
         else:
             return None
         
-        # Find hex location - skip dashes and look for hex pattern or keywords
+        # Find hex location - skip dashes, type indicators, and manpower values
+        # Look for hex pattern (with or without N/S prefix) or keywords
         hex_tokens = []
         for i, t in enumerate(remaining):
             if t == "-" or t == "—":
                 continue
-            if re.match(r"^[NS]\d{4}", t) or t.lower() in ["box", "river", "display", "reinforcement"]:
+            # Skip type indicators like "Wag" and manpower values like "2+"
+            if t.lower() in ["wag", "wagon", "special"]:
+                continue
+            # Manpower values are typically 1-2 digits, possibly with footnote symbols
+            # Don't skip 4-digit hex codes
+            if re.match(r"^\d{1,2}[*+#•†‡§$&%]*$", t):
+                continue
+            if re.match(r"^[NS]?\d{4}", t) or t.lower() in ["box", "river", "display", "reinforcement"]:
                 hex_tokens = remaining[i:]
                 break
         

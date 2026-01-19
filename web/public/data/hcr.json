@@ -2528,7 +2528,67 @@
       ],
       "unionUnits": [
         {
-          "name": "13 Porter",
+          "name": "Franklin",
+          "size": "Corps",
+          "command": "VI",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W4933",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "McClellan",
+          "size": "Army",
+          "command": "AP",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5329 (Middlebrook)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Mansfield",
+          "size": "Corps",
+          "command": "XII",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5329 (Middlebrook)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Sumner",
+          "size": "Corps",
+          "command": "II",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5430",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Reno",
+          "size": "Corps",
+          "command": "IX",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "W5522 (Methodist Church)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Hooker",
+          "size": "Corps",
+          "command": "I",
+          "type": "Ldr",
+          "manpowerValue": "-",
+          "hexLocation": "Union Reinforcement (see special rules)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Porter",
           "size": "Corps",
           "command": "V",
           "type": "Ldr",
@@ -2538,7 +2598,7 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "IL",
+          "name": "12 IL",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2548,7 +2608,49 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "NY",
+          "name": "White",
+          "size": "Brig",
+          "command": "Shen",
+          "type": "Inf",
+          "manpowerValue": "3",
+          "hexLocation": "W1314 (Martinsburg)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "D\u2019Utassy",
+          "size": "Brig",
+          "command": "RR",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W2521 (Harpers Ferry)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Trimble",
+          "size": "Brig",
+          "command": "RR",
+          "type": "Inf",
+          "manpowerValue": "4",
+          "hexLocation": "W2521 (Harpers Ferry)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Ward",
+          "size": "Brig",
+          "command": "RR",
+          "type": "Inf",
+          "manpowerValue": "3*",
+          "hexLocation": "W2521 (Harpers Ferry)",
+          "notes": [
+            "*"
+          ],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "8 NY",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2558,7 +2660,19 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "IL-A",
+          "name": "Ford",
+          "size": "Brig",
+          "command": "RR",
+          "type": "Inf",
+          "manpowerValue": "5#",
+          "hexLocation": "W2720",
+          "notes": [
+            "#"
+          ],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "8 IL-A",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2568,7 +2682,7 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "MA",
+          "name": "1 MA",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2578,7 +2692,7 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "NY-A",
+          "name": "1 NY-A",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2588,7 +2702,57 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "US",
+          "name": "Slocum",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "W4933",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Smith",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "13",
+          "hexLocation": "W5033 (Darnestown)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Couch",
+          "size": "Div",
+          "command": "VI",
+          "type": "Inf",
+          "manpowerValue": "12",
+          "hexLocation": "W4633",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Williams",
+          "size": "Div",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "W5329 (Middlebrook)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Greene",
+          "size": "Div",
+          "command": "XII",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "W5429",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "6 US",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2598,7 +2762,17 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "RI",
+          "name": "Richardson",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "13",
+          "hexLocation": "W5430",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "1 RI",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2608,7 +2782,107 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "13 Morell",
+          "name": "Sedgwick",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "13",
+          "hexLocation": "W5531 (Gaithersburg)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Cox",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W5522 (Methodist Church)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Willcox-A",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "W5622",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Sturgis",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "7",
+          "hexLocation": "W5723",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Rodman",
+          "size": "Div",
+          "command": "IX",
+          "type": "Inf",
+          "manpowerValue": "6",
+          "hexLocation": "W5823",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Sykes",
+          "size": "Div",
+          "command": "V",
+          "type": "Inf",
+          "manpowerValue": "8",
+          "hexLocation": "W5833",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "French",
+          "size": "Div",
+          "command": "II",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "W5833",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Meade",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "Union Reinforcement (see special rules)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Hatch",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "10",
+          "hexLocation": "Union Reinforcement (see special rules)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Ricketts-A",
+          "size": "Div",
+          "command": "I",
+          "type": "Inf",
+          "manpowerValue": "9",
+          "hexLocation": "Union Reinforcement (see special rules)",
+          "notes": [],
+          "tableName": "Union Set-Up (Scenario 7)"
+        },
+        {
+          "name": "Morell",
           "size": "Div",
           "command": "V",
           "type": "Inf",
@@ -2618,7 +2892,7 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "13 6 PA",
+          "name": "6 PA",
           "size": "Regt",
           "command": "-",
           "type": "Cav",
@@ -2628,7 +2902,7 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "15 Humphreys",
+          "name": "Humphreys",
           "size": "Div",
           "command": "V",
           "type": "Inf",
@@ -2638,7 +2912,7 @@
           "tableName": "Union Set-Up (Scenario 7)"
         },
         {
-          "name": "16 1 ME",
+          "name": "1 ME",
           "size": "Regt",
           "command": "-",
           "type": "Cav",

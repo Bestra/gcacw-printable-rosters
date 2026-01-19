@@ -884,7 +884,7 @@
           "tableName": "Union Set-Up"
         },
         {
-          "name": "Wagon Train",
+          "name": "Wagon Train A",
           "size": "-",
           "command": "-",
           "type": "Special",
@@ -894,7 +894,7 @@
           "tableName": "Union Set-Up"
         },
         {
-          "name": "Wagon Train",
+          "name": "Wagon Train B",
           "size": "-",
           "command": "-",
           "type": "Special",
@@ -904,7 +904,7 @@
           "tableName": "Union Set-Up"
         },
         {
-          "name": "Wagon Train",
+          "name": "Wagon Train C",
           "size": "-",
           "command": "-",
           "type": "Special",
@@ -4504,7 +4504,7 @@
           "tableName": "Confederate Set-Up"
         },
         {
-          "name": "Wagon Train",
+          "name": "Wagon Train C",
           "size": "-",
           "command": "-",
           "type": "Special",
@@ -4572,7 +4572,7 @@
           "tableName": "Confederate Set-Up"
         },
         {
-          "name": "Wagon Train",
+          "name": "Wagon Train A",
           "size": "-",
           "command": "-",
           "type": "Special",
@@ -4582,7 +4582,7 @@
           "tableName": "Confederate Set-Up"
         },
         {
-          "name": "Wagon Train",
+          "name": "Wagon Train B",
           "size": "-",
           "command": "-",
           "type": "Special",

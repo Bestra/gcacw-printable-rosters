@@ -163,6 +163,11 @@ cd parser && uv run python utils/inspect_parsed.py gtc2 --scenario 1
 cd parser && uv run python utils/inspect_parsed.py gtc2 --scenario 1 --side Confederate
 cd parser && uv run python utils/inspect_parsed.py gtc2 --scenario 1 --filter Longstreet
 
+# Inspect special units (Wagon Train, Gunboat, Naval Battery)
+cd parser && uv run python utils/inspect_special_units.py              # All games
+cd parser && uv run python utils/inspect_special_units.py hsn          # Single game
+cd parser && uv run python utils/inspect_special_units.py --type wagon # Filter by type
+
 # Compare raw vs parsed data (for debugging parsing issues)
 cd parser && uv run python utils/compare_data.py gtc2 1
 cd parser && uv run python utils/compare_data.py gtc2 1 --side Union
@@ -172,6 +177,97 @@ cd parser && uv run python utils/compare_data.py gtc2 1 --table "Union Set-Up" -
 All scripts support `--help` for full usage details.
 
 **Data structure documentation**: See the [data-structures skill](.github/skills/data-structures/SKILL.md) for detailed information about raw, parsed, and web JSON structures.
+
+### JSON Structure Quick Reference (for jq)
+
+**CRITICAL**: Parsed and web JSON have **different structures**:
+
+| Aspect          | Parsed JSON (`parsed/*.json`)      | Web JSON (`web/public/data/*.json`) |
+| --------------- | ---------------------------------- | ----------------------------------- |
+| Root structure  | Array `[...]`                      | Object `{scenarios: [...]}`         |
+| Access scenario | `.[1]` (0-indexed)                 | `.scenarios[1]` (0-indexed)         |
+| Field naming    | `snake_case`                       | `camelCase`                         |
+| Unit name field | `unit_leader`                      | `name`                              |
+| Units arrays    | `confederate_units`, `union_units` | `confederateUnits`, `unionUnits`    |
+| Hex location    | `hex_location`                     | `hexLocation`                       |
+
+**Parsed JSON structure** (`parsed/{game}_parsed.json`):
+
+```typescript
+// Root is an array of scenarios
+type ParsedGameData = ParsedScenario[];
+
+interface ParsedScenario {
+  number: number;
+  name: string;
+  start_page: number;
+  game_length: string | null;
+  map_info: string | null;
+  special_rules: string | null;
+  notes: string | null;
+  confederate_units: ParsedUnit[];
+  union_units: ParsedUnit[];
+  confederate_footnotes: Record<string, string>;
+  union_footnotes: Record<string, string>;
+}
+
+interface ParsedUnit {
+  unit_leader: string;
+  size: string; // "Army" | "Corps" | "Div" | "Brig" | "Regt" | "-"
+  command: string;
+  unit_type: string; // "Ldr" | "Inf" | "Cav" | "Art" | "Special"
+  manpower_value: string;
+  hex_location: string;
+  side: string; // "Confederate" | "Union"
+  notes: string[]; // Footnote symbols like ["*", "+"]
+  turn: string | null;
+  reinforcement_set: string | null;
+  table_name: string;
+}
+```
+
+**Web JSON structure** (`web/public/data/{game}.json`):
+
+```typescript
+// See web/src/types.ts for canonical definitions
+interface GameData {
+  id: string;
+  name: string;
+  scenarios: Scenario[]; // Note: wrapped in object, not raw array
+}
+
+interface Scenario {
+  number: number;
+  name: string;
+  confederateUnits: Unit[]; // camelCase
+  unionUnits: Unit[];
+  confederateGunboats: Gunboat[];
+  unionGunboats: Gunboat[];
+  confederateFootnotes: Record<string, string>;
+  unionFootnotes: Record<string, string>;
+}
+
+interface Unit {
+  name: string; // was unit_leader in parsed
+  size: string;
+  command: string;
+  type: string; // was unit_type in parsed
+  manpowerValue: string; // camelCase
+  hexLocation: string; // camelCase
+  notes: string[];
+  tableName?: string;
+}
+```
+
+**Common jq patterns:**
+
+```bash
+# Parsed JSON - scenario 2 union units containing "Wagon"
+cat parsed/hsn_parsed.json | jq '.[1].union_units[] | select(.unit_leader | contains("Wagon"))'
+
+# Web JSON - same query
+cat web/public/data/hsn.json | jq '.scenarios[1].unionUnits[] | select(.name | contains("Wagon"))'
+```
 
 ## Validation
 
