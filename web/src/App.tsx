@@ -3,11 +3,19 @@ import { Routes, Route, Navigate, useParams, useNavigate, useSearchParams } from
 import { GameSelector } from "./components/GameSelector";
 import { ScenarioSelector } from "./components/ScenarioSelector";
 import { RosterSheet, type RosterVariant } from "./components/RosterSheet";
+import { ScenarioCardSheet } from "./components/ScenarioCardSheet";
 import { getGameIdFromSlug, getGameSlug, getScenarioSlug, getScenarioNumberFromSlug } from "./utils/slugs";
 import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
 
 const DEFAULT_LAYOUT: RosterVariant = "hierarchical";
+const DEFAULT_CONFEDERATE_CARD_COLOR = "#c8c8c4";
+const DEFAULT_UNION_CARD_COLOR = "#b9daea";
+type LayoutMode = RosterVariant | "cards";
+
+function colorParam(value: string | null, fallback: string): string {
+  return value && /^#[0-9a-f]{6}$/i.test(value) ? value : fallback;
+}
 
 // Get base path from Vite (handles GitHub Pages deployment)
 const BASE_URL = import.meta.env.BASE_URL;
@@ -28,20 +36,41 @@ function ScenarioView({
 
   // Get layout mode from query param, default to hierarchical
   const viewParam = searchParams.get("view");
-  const layoutMode: RosterVariant = viewParam === "hierarchical" || viewParam === "flow"
+  const layoutMode: LayoutMode = viewParam === "hierarchical" || viewParam === "flow" || viewParam === "cards"
     ? viewParam 
     : DEFAULT_LAYOUT;
+  const confederateCardColor = colorParam(
+    searchParams.get("confederateColor"),
+    DEFAULT_CONFEDERATE_CARD_COLOR,
+  );
+  const unionCardColor = colorParam(
+    searchParams.get("unionColor"),
+    DEFAULT_UNION_CARD_COLOR,
+  );
 
   // Get images mode from query param, default to ON
   const imagesParam = searchParams.get("images");
   const showImages = imagesParam !== "off"; // Default ON unless explicitly "off"
 
-  const handleLayoutChange = (mode: RosterVariant) => {
+  const handleLayoutChange = (mode: LayoutMode) => {
     if (mode === DEFAULT_LAYOUT) {
       // Remove param if it's the default
       searchParams.delete("view");
     } else {
       searchParams.set("view", mode);
+    }
+    setSearchParams(searchParams, { replace: true });
+  };
+
+  const handleCardColorChange = (
+    param: "confederateColor" | "unionColor",
+    value: string,
+    defaultValue: string,
+  ) => {
+    if (value.toLowerCase() === defaultValue) {
+      searchParams.delete(param);
+    } else {
+      searchParams.set(param, value);
     }
     setSearchParams(searchParams, { replace: true });
   };
@@ -159,15 +188,48 @@ function ScenarioView({
             <span>Layout:</span>
             <select 
               value={layoutMode} 
-              onChange={(e) => handleLayoutChange(e.target.value as RosterVariant)}
+              onChange={(e) => handleLayoutChange(e.target.value as LayoutMode)}
             >
               <option value="hierarchical">Hierarchical</option>
               <option value="flow">Flow (compact)</option>
+              <option value="cards">Playing cards</option>
             </select>
           </label>
         </div>
-        <div className="image-toggle">
-          <label>
+        {layoutMode === "cards" && (
+         <div className="card-color-controls">
+           <label>
+             <span>Confederate:</span>
+             <input
+               type="color"
+               value={confederateCardColor}
+               onChange={(event) =>
+                 handleCardColorChange(
+                   "confederateColor",
+                   event.target.value,
+                   DEFAULT_CONFEDERATE_CARD_COLOR,
+                 )
+               }
+             />
+           </label>
+           <label>
+             <span>Union:</span>
+             <input
+               type="color"
+               value={unionCardColor}
+               onChange={(event) =>
+                 handleCardColorChange(
+                   "unionColor",
+                   event.target.value,
+                   DEFAULT_UNION_CARD_COLOR,
+                 )
+               }
+             />
+           </label>
+         </div>
+        )}
+        {layoutMode !== "cards" && <div className="image-toggle">
+         <label>
             <input
               type="checkbox"
               checked={showImages}
@@ -175,9 +237,18 @@ function ScenarioView({
             />
             <span>Show counter images</span>
           </label>
-        </div>
+        </div>}
       </div>
-      {scenario && gameData && (
+      {scenario && gameData && layoutMode === "cards" && gameId && (
+        <ScenarioCardSheet
+          scenario={scenario}
+          gameName={gameData.name}
+          gameId={gameId}
+          confederateBodyColor={confederateCardColor}
+          unionBodyColor={unionCardColor}
+        />
+      )}
+      {scenario && gameData && layoutMode !== "cards" && (
         <RosterSheet 
           scenario={scenario} 
           gameName={gameData.name} 

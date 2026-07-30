@@ -48,6 +48,29 @@
   cursor: pointer;
 }
 
+.card-color-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.card-color-controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.card-color-controls input[type="color"] {
+  width: 2rem;
+  height: 1.5rem;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
 .loading,
 .error {
   display: flex;

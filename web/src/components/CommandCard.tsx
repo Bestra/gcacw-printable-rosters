@@ -30,7 +30,58 @@ function UnitSymbol({ type }: { type: string }) {
 }
 
 function SideFlag({ side }: { side: CommandCardProps["side"] }) {
-  return <span className={`command-card__flag command-card__flag--${side}`} aria-label={side} />;
+  if (side === "union") {
+    const rows = [7, 7, 6, 7, 7];
+    return (
+      <svg
+        className="command-card__flag"
+        viewBox="0 0 52 32"
+        role="img"
+        aria-label="34-star United States flag"
+      >
+        <rect width="52" height="32" fill="#f4eee0" />
+        {Array.from({ length: 7 }, (_, index) => (
+          <rect key={index} y={index * 5} width="52" height="2.5" fill="#b52e31" />
+        ))}
+        <rect width="23" height="17.5" fill="#234579" />
+        {rows.flatMap((count, row) =>
+          Array.from({ length: count }, (_, column) => (
+            <circle
+              key={`${row}-${column}`}
+              cx={2.2 + column * (18.6 / (count - 1))}
+              cy={2.2 + row * 3.2}
+              r="0.65"
+              fill="#f4eee0"
+            />
+          )),
+        )}
+      </svg>
+    );
+  }
+
+  const stars = Array.from({ length: 11 }, (_, index) => {
+    const angle = (index / 11) * Math.PI * 2 - Math.PI / 2;
+    return {
+      x: 11.5 + Math.cos(angle) * 7,
+      y: 10.5 + Math.sin(angle) * 7,
+    };
+  });
+
+  return (
+    <svg
+      className="command-card__flag"
+      viewBox="0 0 52 32"
+      role="img"
+      aria-label="11-star Confederate First National flag"
+    >
+      <rect width="52" height="32" fill="#b52e31" />
+      <rect y="10.67" width="52" height="10.67" fill="#f4eee0" />
+      <rect width="23" height="21.34" fill="#234579" />
+      {stars.map((star, index) => (
+        <circle key={index} cx={star.x} cy={star.y} r="0.9" fill="#f4eee0" />
+      ))}
+    </svg>
+  );
 }
 
 export function CommandCard({

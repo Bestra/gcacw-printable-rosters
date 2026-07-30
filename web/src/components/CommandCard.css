@@ -48,41 +48,11 @@
 }
 
 .command-card__flag {
-  position: relative;
   align-self: stretch;
   flex: 0 0 0.46in;
+  width: 0.46in;
+  height: 100%;
   border-left: 1px solid rgb(0 0 0 / 38%);
-}
-
-.command-card__flag::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 42%;
-  height: 55%;
-  content: "";
-  background: #234579;
-}
-
-.command-card__flag--union {
-  background: repeating-linear-gradient(
-    to bottom,
-    #b73635 0,
-    #b73635 14.2%,
-    #f4eee0 14.2%,
-    #f4eee0 28.4%
-  );
-}
-
-.command-card__flag--confederate {
-  background: linear-gradient(
-    to bottom,
-    #b52e31 0,
-    #b52e31 33.33%,
-    #f4eee0 33.33%,
-    #f4eee0 66.66%,
-    #b52e31 66.66%
-  );
 }
 
 .command-card__units {

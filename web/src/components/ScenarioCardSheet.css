@@ -1,0 +1,60 @@
+.scenario-card-sheet {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 1rem;
+  background: #e5e1d6;
+}
+
+.scenario-card-sheet__header {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.scenario-card-sheet__side + .scenario-card-sheet__side {
+  margin-top: 1.5rem;
+}
+
+.scenario-card-sheet__side-title {
+  max-width: 11in;
+  margin: 0 auto 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.scenario-card-sheet__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 3.5in);
+  gap: 0.18in;
+  justify-content: center;
+  max-width: 11in;
+  margin: 0 auto;
+}
+
+@media print {
+  @page {
+    margin: 0.35in;
+  }
+
+  .scenario-card-sheet {
+    min-height: auto;
+    padding: 0;
+    background: #fff;
+  }
+
+  .scenario-card-sheet__side + .scenario-card-sheet__side {
+    margin-top: 0;
+  }
+
+  .scenario-card-sheet__side--union {
+    break-before: page;
+  }
+
+  .scenario-card-sheet__cards {
+    grid-template-columns: repeat(2, 3.5in);
+    gap: 0.12in;
+    justify-content: start;
+    max-width: none;
+  }
+}
