@@ -1,10 +1,23 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, Navigate, useParams, useNavigate, useSearchParams } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  Navigate,
+  Link,
+  useParams,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
 import { GameSelector } from "./components/GameSelector";
 import { ScenarioSelector } from "./components/ScenarioSelector";
 import { RosterSheet, type RosterVariant } from "./components/RosterSheet";
 import { ScenarioCardSheet } from "./components/ScenarioCardSheet";
+import { RangeCardSheet } from "./components/RangeCardSheet";
 import { getGameIdFromSlug, getGameSlug, getScenarioSlug, getScenarioNumberFromSlug } from "./utils/slugs";
+import {
+  copyCardPaletteParams,
+  normalizeScenarioRange,
+} from "./utils/rangeUtils";
 import type { GameData, GameInfo, GamesIndex } from "./types";
 import "./App.css";
 
@@ -15,6 +28,66 @@ type LayoutMode = RosterVariant | "cards";
 
 function colorParam(value: string | null, fallback: string): string {
   return value && /^#[0-9a-f]{6}$/i.test(value) ? value : fallback;
+}
+
+function setColorParam(
+  searchParams: URLSearchParams,
+  param: "confederateColor" | "unionColor",
+  value: string,
+  defaultValue: string,
+) {
+  if (value.toLowerCase() === defaultValue) {
+    searchParams.delete(param);
+  } else {
+    searchParams.set(param, value);
+  }
+}
+
+function CardColorControls({
+  confederateColor,
+  unionColor,
+  onChange,
+}: {
+  confederateColor: string;
+  unionColor: string;
+  onChange: (
+    param: "confederateColor" | "unionColor",
+    value: string,
+    defaultValue: string,
+  ) => void;
+}) {
+  return (
+    <div className="card-color-controls">
+      <label>
+        <span>Confederate:</span>
+        <input
+          type="color"
+          value={confederateColor}
+          onChange={(event) =>
+            onChange(
+              "confederateColor",
+              event.target.value,
+              DEFAULT_CONFEDERATE_CARD_COLOR,
+            )
+          }
+        />
+      </label>
+      <label>
+        <span>Union:</span>
+        <input
+          type="color"
+          value={unionColor}
+          onChange={(event) =>
+            onChange(
+              "unionColor",
+              event.target.value,
+              DEFAULT_UNION_CARD_COLOR,
+            )
+          }
+        />
+      </label>
+    </div>
+  );
 }
 
 // Get base path from Vite (handles GitHub Pages deployment)
@@ -67,11 +140,7 @@ function ScenarioView({
     value: string,
     defaultValue: string,
   ) => {
-    if (value.toLowerCase() === defaultValue) {
-      searchParams.delete(param);
-    } else {
-      searchParams.set(param, value);
-    }
+    setColorParam(searchParams, param, value, defaultValue);
     setSearchParams(searchParams, { replace: true });
   };
 
@@ -154,6 +223,12 @@ function ScenarioView({
   }
 
   const scenario = gameData?.scenarios.find((s) => s.number === scenarioNumber);
+  const reusableDeckParams = new URLSearchParams();
+  if (scenarioNumber) {
+    reusableDeckParams.set("from", String(scenarioNumber));
+    reusableDeckParams.set("to", String(scenarioNumber));
+  }
+  copyCardPaletteParams(searchParams, reusableDeckParams);
 
   // If scenario not found but we have game data, redirect to first scenario
   if (gameData && !scenario && gameData.scenarios.length > 0) {
@@ -197,36 +272,21 @@ function ScenarioView({
           </label>
         </div>
         {layoutMode === "cards" && (
-         <div className="card-color-controls">
-           <label>
-             <span>Confederate:</span>
-             <input
-               type="color"
-               value={confederateCardColor}
-               onChange={(event) =>
-                 handleCardColorChange(
-                   "confederateColor",
-                   event.target.value,
-                   DEFAULT_CONFEDERATE_CARD_COLOR,
-                 )
-               }
-             />
-           </label>
-           <label>
-             <span>Union:</span>
-             <input
-               type="color"
-               value={unionCardColor}
-               onChange={(event) =>
-                 handleCardColorChange(
-                   "unionColor",
-                   event.target.value,
-                   DEFAULT_UNION_CARD_COLOR,
-                 )
-               }
-             />
-           </label>
-         </div>
+         <>
+           <CardColorControls
+             confederateColor={confederateCardColor}
+             unionColor={unionCardColor}
+             onChange={handleCardColorChange}
+           />
+           {gameSlug && scenarioNumber && (
+             <Link
+               className="range-card-link"
+               to={`/${gameSlug}/cards?${reusableDeckParams.toString()}`}
+             >
+               Reusable deck
+             </Link>
+           )}
+         </>
         )}
         {layoutMode !== "cards" && <div className="image-toggle">
          <label>
@@ -257,6 +317,178 @@ function ScenarioView({
           variant={layoutMode}
         />
       )}
+    </div>
+  );
+}
+
+function RangeCardView({ games }: { games: GameInfo[] }) {
+  const { gameSlug } = useParams<{ gameSlug: string }>();
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const gameId = gameSlug ? getGameIdFromSlug(gameSlug) : null;
+  const game = games.find((entry) => entry.id === gameId);
+  const [loadState, setLoadState] = useState<{
+    gameId: string | null;
+    gameData: GameData | null;
+    error: string | null;
+  }>({
+    gameId: null,
+    gameData: null,
+    error: null,
+  });
+  const confederateCardColor = colorParam(
+    searchParams.get("confederateColor"),
+    DEFAULT_CONFEDERATE_CARD_COLOR,
+  );
+  const unionCardColor = colorParam(
+    searchParams.get("unionColor"),
+    DEFAULT_UNION_CARD_COLOR,
+  );
+
+  useEffect(() => {
+    if (!game) {
+      return;
+    }
+
+    let cancelled = false;
+    fetch(`${BASE_URL}data/${game.file}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to load ${game.name} data`);
+        }
+        return response.json();
+      })
+      .then((data: GameData) => {
+        if (!cancelled) {
+          setLoadState({
+            gameId: game.id,
+            gameData: data,
+            error: null,
+          });
+        }
+      })
+      .catch((caughtError: Error) => {
+        if (!cancelled) {
+          setLoadState({
+            gameId: game.id,
+            gameData: null,
+            error: caughtError.message,
+          });
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [game]);
+
+  if (!game) {
+    return <div className="error">Game not found: {gameSlug}</div>;
+  }
+  if (loadState.gameId !== game.id) {
+    return <div className="loading">Loading...</div>;
+  }
+  if (loadState.error) {
+    return <div className="error">Error: {loadState.error}</div>;
+  }
+  const gameData = loadState.gameData;
+  if (!gameData || gameData.scenarios.length === 0) {
+    return <div className="error">No scenarios found</div>;
+  }
+
+  const requestedFrom = Number(searchParams.get("from")) || null;
+  const requestedTo = Number(searchParams.get("to")) || null;
+  const range = normalizeScenarioRange(
+    gameData.scenarios,
+    requestedFrom,
+    requestedTo,
+  );
+  const normalizedParams = new URLSearchParams(searchParams);
+  normalizedParams.set("from", String(range.from));
+  normalizedParams.set("to", String(range.to));
+  const needsNormalization =
+    searchParams.get("from") !== String(range.from) ||
+    searchParams.get("to") !== String(range.to);
+
+  if (needsNormalization) {
+    return <Navigate to={`?${normalizedParams.toString()}`} replace />;
+  }
+
+  const updateRange = (from: number, to: number) => {
+    const normalized = normalizeScenarioRange(gameData.scenarios, from, to);
+    searchParams.set("from", String(normalized.from));
+    searchParams.set("to", String(normalized.to));
+    setSearchParams(searchParams, { replace: true });
+  };
+  const handleCardColorChange = (
+    param: "confederateColor" | "unionColor",
+    value: string,
+    defaultValue: string,
+  ) => {
+    setColorParam(searchParams, param, value, defaultValue);
+    setSearchParams(searchParams, { replace: true });
+  };
+  const handleGameSelect = (newGameId: string | null) => {
+    if (!newGameId) {
+      return;
+    }
+    const nextGame = games.find((entry) => entry.id === newGameId);
+    if (nextGame) {
+      const nextParams = new URLSearchParams();
+      copyCardPaletteParams(searchParams, nextParams);
+      const query = nextParams.toString();
+      const path = `/${getGameSlug(nextGame.id)}/cards`;
+      navigate(query ? `${path}?${query}` : path);
+    }
+  };
+  const startingScenario = range.scenarios[0];
+  const scenarioCardParams = new URLSearchParams("view=cards");
+  copyCardPaletteParams(searchParams, scenarioCardParams);
+
+  return (
+    <div className="app">
+      <div className="selectors no-print">
+        <GameSelector
+          games={games}
+          selectedGameId={gameId}
+          onSelect={handleGameSelect}
+        />
+        <ScenarioSelector
+          scenarios={gameData.scenarios}
+          selectedNumber={range.from}
+          label="From:"
+          id="range-from"
+          onSelect={(from) => updateRange(from, Math.max(from, range.to))}
+        />
+        <ScenarioSelector
+          scenarios={gameData.scenarios}
+          selectedNumber={range.to}
+          label="Through:"
+          id="range-to"
+          onSelect={(to) => updateRange(Math.min(range.from, to), to)}
+        />
+        <CardColorControls
+          confederateColor={confederateCardColor}
+          unionColor={unionCardColor}
+          onChange={handleCardColorChange}
+        />
+        <Link
+          className="range-card-link"
+          to={`/${gameSlug}/${getScenarioSlug(
+            startingScenario.number,
+            startingScenario.name,
+          )}?${scenarioCardParams.toString()}`}
+        >
+          Scenario cards
+        </Link>
+      </div>
+      <RangeCardSheet
+        scenarios={range.scenarios}
+        gameName={gameData.name}
+        gameId={gameData.id}
+        confederateBodyColor={confederateCardColor}
+        unionBodyColor={unionCardColor}
+      />
     </div>
   );
 }
@@ -348,6 +580,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Navigate to={defaultRedirect} replace />} />
       <Route path="/:gameSlug" element={<GameRedirect games={games} />} />
+      <Route path="/:gameSlug/cards" element={<RangeCardView games={games} />} />
       <Route
         path="/:gameSlug/:scenarioSlug"
         element={

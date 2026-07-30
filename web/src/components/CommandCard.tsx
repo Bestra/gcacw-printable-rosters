@@ -2,17 +2,26 @@ import type { CSSProperties } from "react";
 import type { Unit } from "../types";
 import "./CommandCard.css";
 
-export interface CommandCardProps {
+export interface CommandCardUnit extends Pick<Unit, "name" | "type"> {
+  scenarioLabel?: string;
+}
+
+interface CommandCardBaseProps {
   title: string;
   side: "confederate" | "union";
   commandColor: string;
   bodyColor?: string;
   footerColor: string;
   gameName: string;
-  scenarioNumber: number;
-  units: Pick<Unit, "name" | "type">[];
+  units: CommandCardUnit[];
   continuation?: boolean;
 }
+
+export type CommandCardProps = CommandCardBaseProps &
+  (
+    | { scenarioNumber: number; scenarioLabel?: never }
+    | { scenarioNumber?: never; scenarioLabel: string }
+  );
 
 function UnitSymbol({ type }: { type: string }) {
   const normalizedType = type.toLowerCase();
@@ -92,6 +101,7 @@ export function CommandCard({
   footerColor,
   gameName,
   scenarioNumber,
+  scenarioLabel,
   units,
   continuation = false,
 }: CommandCardProps) {
@@ -118,14 +128,20 @@ export function CommandCard({
               <span className="command-card__unit-name">{unit.name}</span>
               <UnitSymbol type={unit.type} />
             </div>
-            <div className="command-card__counter-space" aria-label={`${unit.name} counter space`} />
+            <div className="command-card__counter-space" aria-label={`${unit.name} counter space`}>
+              {unit.scenarioLabel && (
+                <span className="command-card__counter-label">
+                  {unit.scenarioLabel}
+                </span>
+              )}
+            </div>
             <div className="command-card__counter-space" aria-label={`${unit.name} status space`} />
           </div>
         ))}
       </div>
 
       <footer className="command-card__footer">
-        <span>Scenario {scenarioNumber}</span>
+        <span>{scenarioLabel ?? `Scenario ${scenarioNumber}`}</span>
         <span>{gameName}</span>
       </footer>
     </article>

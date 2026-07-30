@@ -71,6 +71,14 @@
   border-radius: 3px;
 }
 
+.range-card-link {
+  align-self: center;
+  color: #274f83;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .loading,
 .error {
   display: flex;

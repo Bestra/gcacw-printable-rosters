@@ -5,18 +5,22 @@ interface ScenarioSelectorProps {
   scenarios: Scenario[];
   selectedNumber: number | null;
   onSelect: (number: number) => void;
+  label?: string;
+  id?: string;
 }
 
 export function ScenarioSelector({
   scenarios,
   selectedNumber,
   onSelect,
+  label = "Select Scenario:",
+  id = "scenario-select",
 }: ScenarioSelectorProps) {
   return (
     <div className="scenario-selector no-print">
-      <label htmlFor="scenario-select">Select Scenario:</label>
+      <label htmlFor={id}>{label}</label>
       <select
-        id="scenario-select"
+        id={id}
         value={selectedNumber ?? ""}
         onChange={(e) => onSelect(Number(e.target.value))}
       >

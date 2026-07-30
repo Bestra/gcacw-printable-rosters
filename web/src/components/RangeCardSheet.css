@@ -1,0 +1,10 @@
+.range-card-sheet__summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  justify-content: center;
+  max-width: 11in;
+  margin: -0.5rem auto 1rem;
+  color: #555;
+  font-size: 0.85rem;
+}
