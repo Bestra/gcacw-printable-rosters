@@ -1,0 +1,207 @@
+.command-card {
+  --command-color: #d7aa63;
+  --body-color: #c8c8c4;
+  --footer-color: #315d46;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 0.28in 1fr 0.2in;
+  width: 3.5in;
+  height: 2in;
+  overflow: hidden;
+  color: #151515;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--body-color);
+  border: 1.5px solid #38382f;
+  border-radius: 0.14in;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 24%);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.command-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  padding-left: 0.12in;
+  overflow: hidden;
+  background: var(--command-color);
+  border-bottom: 1px solid rgb(0 0 0 / 38%);
+}
+
+.command-card__title {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 0.14in;
+  font-weight: 700;
+  line-height: 1;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.command-card__continuation {
+  font-size: 0.11in;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.command-card__flag {
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 0.46in;
+  border-left: 1px solid rgb(0 0 0 / 38%);
+}
+
+.command-card__flag::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42%;
+  height: 55%;
+  content: "";
+  background: #234579;
+}
+
+.command-card__flag--union {
+  background: repeating-linear-gradient(
+    to bottom,
+    #b73635 0,
+    #b73635 14.2%,
+    #f4eee0 14.2%,
+    #f4eee0 28.4%
+  );
+}
+
+.command-card__flag--confederate {
+  background: linear-gradient(
+    to bottom,
+    #b52e31 0,
+    #b52e31 33.33%,
+    #f4eee0 33.33%,
+    #f4eee0 66.66%,
+    #b52e31 66.66%
+  );
+}
+
+.command-card__units {
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  gap: 0;
+  min-width: 0;
+  padding: 0.04in 0.03in;
+}
+
+.command-card__unit {
+  display: grid;
+  flex: 0 0 0.52in;
+  grid-template-rows: 0.29in 0.52in 0.52in;
+  gap: 0.025in;
+  min-width: 0;
+}
+
+.command-card__unit-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.command-card__unit-name {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  font-size: 0.085in;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.command-card__symbol {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 0.22in;
+  height: 0.13in;
+  background: var(--command-color);
+  border: 1px solid #111;
+}
+
+.command-card__symbol--infantry::before,
+.command-card__symbol--infantry::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 118%;
+  height: 1px;
+  content: "";
+  background: #111;
+  transform-origin: center;
+}
+
+.command-card__symbol--infantry::before {
+  transform: translate(-50%, -50%) rotate(29deg);
+}
+
+.command-card__symbol--infantry::after {
+  transform: translate(-50%, -50%) rotate(-29deg);
+}
+
+.command-card__symbol--cavalry::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 115%;
+  height: 1px;
+  content: "";
+  background: #111;
+  transform: translate(-50%, -50%) rotate(-29deg);
+}
+
+.command-card__symbol--artillery {
+  display: grid;
+  place-items: center;
+}
+
+.command-card__artillery-dot {
+  width: 0.04in;
+  height: 0.04in;
+  background: #111;
+  border-radius: 50%;
+}
+
+.command-card__counter-space {
+  box-sizing: border-box;
+  width: 0.52in;
+  height: 0.52in;
+  background: rgb(255 255 255 / 20%);
+  border: 1px solid rgb(255 255 255 / 92%);
+  border-radius: 0.035in;
+  box-shadow: inset 0 0 0 1px rgb(74 68 51 / 14%);
+}
+
+.command-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.08in;
+  padding: 0 0.1in;
+  color: #f8f3e6;
+  font-size: 0.08in;
+  line-height: 1;
+  background: var(--footer-color);
+  border-top: 1px solid rgb(0 0 0 / 38%);
+  white-space: nowrap;
+}
+
+@media print {
+  .command-card {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+}
