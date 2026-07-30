@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import type { Unit } from "../types";
+import { getContrastingTextColor } from "../utils/colorUtils";
 import "./CommandCard.css";
 
 export interface CommandCardUnit extends Pick<Unit, "name" | "type"> {
@@ -107,6 +108,7 @@ export function CommandCard({
 }: CommandCardProps) {
   const style = {
     "--command-color": commandColor,
+    "--header-text-color": getContrastingTextColor(commandColor),
     "--body-color": bodyColor ?? (side === "union" ? "#b9daea" : "#c8c8c4"),
     "--footer-color": footerColor,
   } as CSSProperties;

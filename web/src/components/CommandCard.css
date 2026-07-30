@@ -1,5 +1,6 @@
 .command-card {
   --command-color: #d7aa63;
+  --header-text-color: #151515;
   --body-color: #c8c8c4;
   --footer-color: #315d46;
   box-sizing: border-box;
@@ -25,6 +26,7 @@
   min-width: 0;
   padding-left: 0.12in;
   overflow: hidden;
+  color: var(--header-text-color);
   background: var(--command-color);
   border-bottom: 1px solid rgb(0 0 0 / 38%);
 }
